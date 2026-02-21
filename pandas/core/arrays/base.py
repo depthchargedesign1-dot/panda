@@ -1061,6 +1061,7 @@ class ExtensionArray:
             ascending=ascending,
             na_position=na_position,
             mask=np.asarray(self.isna()),
+            **kwargs,
         )
 
     def argmin(self, skipna: bool = True) -> int:
