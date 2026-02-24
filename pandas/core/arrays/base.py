@@ -30,7 +30,10 @@ from pandas._libs import (
 )
 from pandas.compat import set_function_name
 from pandas.compat.numpy import function as nv
-from pandas.errors import AbstractMethodError
+from pandas.errors import (
+    AbstractMethodError,
+    PandasDeprecationWarning,
+)
 from pandas.util._decorators import (
     cache_readonly,
     set_module,
@@ -1010,6 +1013,7 @@ class ExtensionArray:
         ascending: bool = True,
         kind: SortKind = "quicksort",
         na_position: str = "last",
+        stable: bool | None = None,
         **kwargs,
     ) -> np.ndarray:
         """
@@ -1028,8 +1032,16 @@ class ExtensionArray:
         na_position : {'first', 'last'}, default 'last'
             If ``'first'``, put ``NaN`` values at the beginning.
             If ``'last'``, put ``NaN`` values at the end.
-        **kwargs
+        stable : bool, optional, default None
             Passed through to :func:`numpy.argsort`.
+        **kwargs
+            Not used
+
+            .. deprecated:: 3.1.0
+
+                This kwarg Was previously documented as being passed through to
+                :func:`numpy.argsort`, but in fact it was never actually used.
+                It will be removed in a future version.
 
         Returns
         -------
@@ -1052,6 +1064,15 @@ class ExtensionArray:
         # 1. _values_for_argsort : construct the values passed to np.argsort
         # 2. argsort : total control over sorting. In case of overriding this,
         #    it is recommended to also override argmax/argmin
+
+        if len(kwargs) != 0:
+            warnings.warn(
+                "**kwargs was previously accepted but unused; "
+                "will be removed in the future",
+                PandasDeprecationWarning,
+                find_stack_level(),
+            )
+
         ascending = nv.validate_argsort_with_ascending(ascending, (), kwargs)
 
         values = self._values_for_argsort()
@@ -1061,7 +1082,7 @@ class ExtensionArray:
             ascending=ascending,
             na_position=na_position,
             mask=np.asarray(self.isna()),
-            **kwargs,
+            stable=stable,
         )
 
     def argmin(self, skipna: bool = True) -> int:
