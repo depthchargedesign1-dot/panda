@@ -27,7 +27,6 @@ from pandas import (
     date_range,
     isna,
 )
-from pandas.errors import Pandas4Warning
 import pandas._testing as tm
 from pandas.core import ops
 from pandas.core.computation import expressions as expr
