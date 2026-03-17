@@ -411,7 +411,25 @@ class DatetimeArray(dtl.TimelikeOps, dtl.DatelikeOps):
             # [arg-type]
             result = result.as_unit(unit)  # type: ignore[arg-type]
 
-        validate_kwds = {"ambiguous": ambiguous}
+        # GH#55499 derive a scalar ambiguous flag from the first element
+        # of the result so that _validate_frequency can regenerate the
+        # range without requiring the user to pass ambiguous to the
+        # DatetimeIndex constructor.
+        validate_kwds: dict = {}
+        if (
+            result.ndim == 1
+            and len(result) > 0
+            and result.tz is not None
+            and not timezones.is_utc(result.tz)
+        ):
+            local_i8 = result[:1]._local_timestamps()
+            dst_i8 = tzconversion.tz_localize_to_utc(
+                local_i8,
+                result.tz,
+                ambiguous=np.array([True]),
+                creso=result._creso,
+            )
+            validate_kwds["ambiguous"] = bool(result.asi8[0] == dst_i8[0])
         result._maybe_pin_freq(freq, validate_kwds)
         return result
 
