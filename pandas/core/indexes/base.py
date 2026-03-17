@@ -7137,7 +7137,7 @@ class Index(IndexOpsMixin, PandasObject):
                     warnings.filterwarnings(
                         "ignore",
                         "Parsing.*quarterly string",
-                        DeprecationWarning,
+                        Pandas4Warning,
                     )
                     ts_start = Timestamp(start)
                     ts_end = Timestamp(end)
