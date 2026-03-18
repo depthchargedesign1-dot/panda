@@ -26,8 +26,10 @@ from pandas.errors import (
     IndexingError,
     InvalidIndexError,
     LossySetitemError,
+    Pandas4Warning,
 )
 from pandas.errors.cow import _chained_assignment_msg
+from pandas.util._exceptions import find_stack_level
 
 from pandas.core.dtypes.cast import (
     can_hold_element,
@@ -58,6 +60,7 @@ from pandas.core.dtypes.missing import (
     construct_1d_array_from_inferred_fill_value,
     infer_fill_value,
     is_valid_na_for_dtype,
+    isna,
     na_value_for_dtype,
 )
 
@@ -935,6 +938,7 @@ class _LocationIndexer(NDFrameIndexerBase):
         else:
             maybe_callable = com.apply_if_callable(key, self.obj)
             key = self._raise_callable_usage(key, maybe_callable)
+        orig_nrows = self.obj.shape[0]
         orig_obj = self.obj[:].iloc[:0].copy()  # copy to avoid extra refs
         indexer = self._get_setitem_indexer(key)  # may alter self.obj
         self._has_valid_setitem_indexer(key)
@@ -944,15 +948,23 @@ class _LocationIndexer(NDFrameIndexerBase):
         )
         iloc._setitem_with_indexer(indexer, value, self.name)
 
-        self._post_expansion_casting(orig_obj)
+        if self.obj.shape[0] > orig_nrows:
+            # For empty DataFrames, suppress the deprecation warning —
+            # the placeholder dtypes aren't meaningful to preserve.
+            warn = self.obj.ndim == 1 or orig_nrows > 0
+            self._post_expansion_casting(orig_obj, warn_if_cast=warn)
 
-    def _post_expansion_casting(self, orig_obj) -> None:
+    def _post_expansion_casting(self, orig_obj, *, warn_if_cast: bool = True) -> None:
         if orig_obj.shape[0] != self.obj.shape[0]:
             # setitem-with-expansion added new rows.  Try to retain
             #  original dtypes
             if orig_obj.ndim == 1:
                 if orig_obj.dtype != self.obj.dtype:
-                    new_arr = infer_and_maybe_downcast(orig_obj.array, self.obj._values)
+                    new_arr = infer_and_maybe_downcast(
+                        orig_obj.array,
+                        self.obj._values,
+                        warn_if_cast=warn_if_cast,
+                    )
                     new_ser = self.obj._constructor(
                         new_arr, index=self.obj.index, name=self.obj.name
                     )
@@ -964,7 +976,9 @@ class _LocationIndexer(NDFrameIndexerBase):
                 )
                 for i in np.flatnonzero(changed_dtypes):
                     new_arr = infer_and_maybe_downcast(
-                        orig_obj.iloc[:, i].array, self.obj.iloc[:, i]._values
+                        orig_obj.iloc[:, i].array,
+                        self.obj.iloc[:, i]._values,
+                        warn_if_cast=warn_if_cast,
                     )
                     self.obj.isetitem(i, new_arr)
 
@@ -974,7 +988,9 @@ class _LocationIndexer(NDFrameIndexerBase):
                     orig_dtype = orig_obj[col].dtype
                     if new_dtype != orig_dtype:
                         new_arr = infer_and_maybe_downcast(
-                            orig_obj[col].array, self.obj[col]._values
+                            orig_obj[col].array,
+                            self.obj[col]._values,
+                            warn_if_cast=warn_if_cast,
                         )
                         self.obj[col] = new_arr
             else:
@@ -2785,12 +2801,15 @@ class _iLocIndexer(_LocationIndexer):
                     # Every NA value is suitable for object, no conversion needed
                     value = na_value_for_dtype(self.obj.dtype, compat=False)
 
-            new_values = infer_and_maybe_downcast(self.obj.array, [value])
+            new_values = infer_and_maybe_downcast(
+                self.obj.array, [value], warn_if_cast=False
+            )
 
             if len(self.obj._values):
                 # GH#22717 handle casting compatibility that np.concatenate
                 #  does incorrectly
                 new_values = concat_compat([self.obj._values, new_values])
+
             self.obj._mgr = self.obj._constructor(
                 new_values, index=new_index, name=self.obj.name
             )._mgr
@@ -3422,7 +3441,12 @@ def check_dict_or_set_indexers(key) -> None:
         )
 
 
-def infer_and_maybe_downcast(orig: ExtensionArray, new_arr) -> ArrayLike:
+def infer_and_maybe_downcast(
+    orig: ExtensionArray,
+    new_arr,
+    *,
+    warn_if_cast: bool = True,
+) -> ArrayLike:
     new_arr = orig._cast_pointwise_result(new_arr)
 
     dtype = orig.dtype
@@ -3434,4 +3458,36 @@ def infer_and_maybe_downcast(orig: ExtensionArray, new_arr) -> ArrayLike:
 
     if is_np_dtype(new_arr.dtype, "f") and is_np_dtype(dtype, "iu"):
         new_arr = maybe_downcast_to_dtype(new_arr, dtype)
+    elif (
+        warn_if_cast and is_np_dtype(dtype, "fc") and is_np_dtype(new_arr.dtype, "iufc")
+    ):
+        # _cast_pointwise_result may have inferred a narrower numeric dtype
+        # (e.g. int64 from a float64 array with integer values).
+        # Cast back to the original dtype since float/complex can hold
+        # int/float values without loss.
+        new_arr = new_arr.astype(dtype, copy=False)
+
+    if warn_if_cast and new_arr.dtype != dtype:
+        # PDEP6 exception: int/uint -> float when result contains NaN
+        pdep6_allowed = (
+            is_np_dtype(dtype, "iu")
+            and is_np_dtype(new_arr.dtype, "f")
+            and isna(new_arr).any()
+        )
+        # If the original dtype can hold the new values (e.g. object
+        # can hold anything), retaining it in the future is fine.
+        orig_can_hold = can_hold_element(orig, new_arr)
+        if not pdep6_allowed and not orig_can_hold:
+            warnings.warn(
+                f"Setting an item of incompatible dtype is deprecated "
+                f"and will raise in a future version of pandas. "
+                f"The existing dtype is {dtype} but the new values "
+                f"have dtype {new_arr.dtype}. In a future version, the "
+                f"existing dtype will be retained. Cast the object to "
+                f"{new_arr.dtype} before this operation to retain the "
+                f"current behavior.",
+                Pandas4Warning,
+                stacklevel=find_stack_level(),
+            )
+
     return new_arr
