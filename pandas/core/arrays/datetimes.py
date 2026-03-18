@@ -1331,7 +1331,7 @@ default 'raise'
             )
 
         if freq is None:
-            freq = self.freqstr or self.inferred_freq
+            freq = self.freqstr or self._inferred_freq_str
             if isinstance(self.freq, BaseOffset) and hasattr(
                 self.freq, "_period_dtype_code"
             ):
