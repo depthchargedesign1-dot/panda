@@ -100,6 +100,7 @@ Deprecations
 - Deprecated automatic dtype promotion when reindexing with a ``fill_value`` that cannot be held by the original dtype. Explicitly cast to a common dtype instead (:issue:`53910`)
 - Deprecated the ``.name`` property of offset objects (e.g., :class:`~pandas.tseries.offsets.Day`, :class:`~pandas.tseries.offsets.Hour`). Use ``.rule_code`` instead (:issue:`64207`)
 - Deprecated the ``xlrd`` and ``pyxlsb`` engines in :func:`read_excel`. Use ``engine="calamine"`` instead (:issue:`56542`)
+- Deprecated :attr:`Series.dt.freq` returning a string. In a future version, this will return a :class:`DateOffset` object (or ``None``) to match :attr:`DatetimeIndex.freq` (:issue:`XXXXX`)
 -
 
 .. ---------------------------------------------------------------------------
