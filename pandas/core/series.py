@@ -7060,17 +7060,7 @@ class Series(base.IndexOpsMixin, NDFrame):  # type: ignore[misc]
         this_vals, other_vals = ops.fill_binop(this._values, other._values, fill_value)
 
         with np.errstate(all="ignore"):
-            if func in (
-                operator.gt,
-                operator.ge,
-                operator.lt,
-                operator.le,
-                operator.eq,
-                operator.ne,
-            ):
-                result = func(this_vals, other_vals)
-            else:
-                result = ops.arithmetic_op(this_vals, other_vals, func)
+            result = ops.get_array_op(func)(this_vals, other_vals)
 
         name = ops.get_op_result_name(self, other)
 
