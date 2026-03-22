@@ -7060,6 +7060,9 @@ class Series(base.IndexOpsMixin, NDFrame):  # type: ignore[misc]
         this_vals, other_vals = ops.fill_binop(this._values, other._values, fill_value)
 
         with np.errstate(all="ignore"):
+            # GH#63250 Use get_array_op to dispatch to arithmetic_op,
+            # comparison_op, or logical_op so that e.g. _bool_arith_check
+            # is applied consistently for flex methods and dunder methods.
             result = ops.get_array_op(func)(this_vals, other_vals)
 
         name = ops.get_op_result_name(self, other)
