@@ -23,7 +23,6 @@ from pandas._libs import (
 from pandas._libs.tslibs import (
     NaT,
     OutOfBoundsDatetime,
-    Timedelta,
     Timestamp,
     astype_overflowsafe,
     get_supported_dtype,
@@ -77,6 +76,7 @@ from pandas.core.arrays.datetimes import (
 from pandas.core.construction import extract_array
 from pandas.core.indexes.base import Index
 from pandas.core.indexes.datetimes import DatetimeIndex
+from pandas.core.tools.timedeltas import to_timedelta
 
 if TYPE_CHECKING:
     from collections.abc import (
@@ -589,7 +589,8 @@ def _adjust_to_origin(arg, origin, unit):
 
     Returns
     -------
-    ndarray or scalar of adjusted date(s)
+    datetime or date(s) adjusted ndarray or scalar
+        Return type depends on if :param:`origin` is :const:`"julian"`.
     """
     if origin == "julian":
         original = arg
@@ -625,26 +626,25 @@ def _adjust_to_origin(arg, origin, unit):
             if lib.is_integer(origin) or lib.is_float(origin):
                 offset = Timestamp(origin, unit=unit)
             else:
-                offset = Timestamp(origin)
+                time_units: list[TimeUnit] = ["s", "ms", "us", "ns"]
+                ts_unit: TimeUnit = getattr(origin, "unit", unit)
+                ts_unit = "s" if ts_unit not in time_units else ts_unit
+                offset = Timestamp(origin).as_unit(ts_unit)
+
+                base = Timestamp(0)
+                dt_min, dt_max = base.min, base.max
+                if not dt_min < offset < dt_max:
+                    raise OutOfBoundsDatetime
         except OutOfBoundsDatetime as err:
             raise OutOfBoundsDatetime(f"origin {origin} is Out of Bounds") from err
+        except TypeError as err:
+            raise ValueError(f"origin offset {offset} must be tz-naive") from err
         except ValueError as err:
             raise ValueError(
                 f"origin {origin} cannot be converted to a Timestamp"
             ) from err
 
-        if offset.tz is not None:
-            raise ValueError(f"origin offset {offset} must be tz-naive")
-        td_offset = offset - Timestamp(0)
-
-        # convert the offset to the unit of the arg
-        # this should be lossless in terms of precision
-        ioffset = td_offset // Timedelta(1, unit=unit)
-
-        # scalars & ndarray-like can handle the addition
-        if is_list_like(arg) and not isinstance(arg, (ABCSeries, Index, np.ndarray)):
-            arg = np.asarray(arg)
-        arg = arg + ioffset
+        return to_timedelta(arg, unit=unit) + offset
     return arg
 
 
@@ -1021,6 +1021,10 @@ def to_datetime(
         return NaT
 
     if origin != "unix":
+        if origin != "julian":
+            # calculation already done in :func:`_adjust_to_origin`
+            adjusted = _adjust_to_origin(arg, origin, unit)
+            return adjusted
         arg = _adjust_to_origin(arg, origin, unit)
 
     convert_listlike = partial(
