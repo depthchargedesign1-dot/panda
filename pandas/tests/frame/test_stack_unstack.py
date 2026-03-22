@@ -1386,21 +1386,36 @@ def test_unstack_sort_false(frame_or_series, dtype):
     tm.assert_frame_equal(result, expected)
 
 
-def test_unstack_sort_false_unused_levels():
+@pytest.mark.parametrize(
+    "sort, expected_columns",
+    [
+        (
+            False,
+            MultiIndex.from_product([["value"], ["b", "c"]], names=[None, "series"]),
+        ),
+        (
+            True,
+            MultiIndex(
+                levels=[["value"], ["a", "b", "c"]],
+                codes=[[0, 0], [1, 2]],
+                names=[None, "series"],
+            ),
+        ),
+    ],
+)
+def test_unstack_unused_levels(sort, expected_columns):
     # GH#64150
     index = MultiIndex.from_product(
         [["a", "b", "c"], ["M01", "M02"]], names=["series", "period"]
     )
     df = DataFrame({"value": np.arange(6, dtype=np.int64)}, index=index)
 
-    result = df.loc[["b", "c"]].unstack(level="series", sort=False)
+    result = df.loc[["b", "c"]].unstack(level="series", sort=sort)
 
     expected = DataFrame(
         [[2, 4], [3, 5]],
         index=Index(["M01", "M02"], name="period"),
-        columns=MultiIndex.from_product(
-            [["value"], ["b", "c"]], names=[None, "series"]
-        ),
+        columns=expected_columns,
     )
     tm.assert_frame_equal(result, expected)
 
