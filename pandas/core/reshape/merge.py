@@ -2113,27 +2113,26 @@ def get_join_indexers(
                     r = maybe_sequence_to_range(rk)
                     if isinstance(r, range):
                         right = RangeIndex(r.start, r.stop, r.step, name=right.name)
-
-                if (
-                    isinstance(right, RangeIndex)
-                    and lk.ndim == 1
-                    and lk.dtype.kind in "iu"
-                ):
-                    ridx = right.get_indexer(lk)
-                    lidx = None
+                    if (
+                        isinstance(right, RangeIndex)
+                        and lk.ndim == 1
+                        and lk.dtype.kind in "iu"
+                    ):
+                        ridx = right.get_indexer(lk)
+                        lidx = None
+                    else:
+                        lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
                 else:
                     lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
 
-            else:  # how == "right"
-                if (
-                    left.is_monotonic_increasing
-                    and left.is_unique
-                    and left.dtype.kind in "iu"
-                ):
-                    r = maybe_sequence_to_range(lk)
-                    if isinstance(r, range):
-                        left = RangeIndex(r.start, r.stop, r.step, name=left.name)
-
+            elif (
+                left.is_monotonic_increasing
+                and left.is_unique
+                and left.dtype.kind in "iu"
+            ):
+                r = maybe_sequence_to_range(lk)
+                if isinstance(r, range):
+                    left = RangeIndex(r.start, r.stop, r.step, name=left.name)
                 if (
                     isinstance(left, RangeIndex)
                     and rk.ndim == 1
@@ -2143,6 +2142,8 @@ def get_join_indexers(
                     ridx = None
                 else:
                     lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
+            else:
+                lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
 
         else:
             lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
