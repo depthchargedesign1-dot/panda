@@ -3873,7 +3873,7 @@ class Index(IndexOpsMixin, PandasObject):
             indexer = self._engine.get_indexer(tgt_values)  # pyright: ignore[reportArgumentType]
         else:
             tgt_values = target._get_engine_target()
-            indexer = self._engine.get_indexer(tgt_values)  # pyright: ignore[reportArgumentType]
+            indexer = self._engine.get_indexer(tgt_values)  # type: ignore[arg-type]  # pyright: ignore[reportArgumentType]
 
         if method is not None and target._can_hold_na and not target._is_multi:
             # GH#32572 NaT/NaN in the target should not be matched
