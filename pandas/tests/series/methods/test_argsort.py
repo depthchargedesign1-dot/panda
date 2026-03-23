@@ -1,6 +1,8 @@
 import numpy as np
 import pytest
 
+from pandas.errors import Pandas4Warning
+
 from pandas import (
     Series,
     Timestamp,
@@ -86,12 +88,23 @@ class TestSeriesArgsort:
         tm.assert_numpy_array_equal(false_indexer.values, false_expected)
         tm.assert_numpy_array_equal(true_indexer.values, true_expected)
 
-    def test_argsort_pos_arg_stable(self, argsort_stability_series):
+    def test_argsort_deprecated_pos_arg_stable(self, argsort_stability_series):
         ser = argsort_stability_series
-        true_indexer = ser.argsort(0, None, None, True)
-        false_indexer = ser.argsort(0, None, None, False)
 
-        true_expected = false_expected = np.argsort(ser.values, stable=False)
+        with tm.assert_produces_warning(
+            (Pandas4Warning, Pandas4Warning),
+            check_stacklevel=False,
+            match=(
+                "Starting with pandas version 4.0 all arguments of argsort except for "
+                "the argument 'self, axis, kind, order' will be keyword-only."
+            ),
+        ):
+            true_indexer = ser.argsort(0, None, None, True)
+            false_indexer = ser.argsort(0, None, None, False)
+
+        true_expected = np.argsort(ser.values, stable=True)
+        false_expected = np.argsort(ser.values, stable=False)
+
         tm.assert_numpy_array_equal(false_indexer.values, false_expected)
         tm.assert_numpy_array_equal(true_indexer.values, true_expected)
 
@@ -117,9 +130,10 @@ class TestSeriesArgsort:
         stable,
     ):
         ser = argsort_stability_series
-        match = "`kind` and keyword parameters can't be provided at the same time."
         with tm.assert_produces_warning(
-            FutureWarning, match=match, check_stacklevel=False
+            Pandas4Warning,
+            check_stacklevel=False,
+            match="`kind` and `stable` can't be provided at the same time.",
         ):
             np.argsort(ser, kind=kind, stable=stable)
 
@@ -139,9 +153,10 @@ class TestSeriesArgsort:
         stable,
     ):
         ser = argsort_stability_series
-        match = "`kind` and `stable` can't be provided at the same time."
         with tm.assert_produces_warning(
-            FutureWarning, match=match, check_stacklevel=False
+            Pandas4Warning,
+            check_stacklevel=False,
+            match="`kind` and `stable` can't be provided at the same time.",
         ):
             np.argsort(ser, kind=kind, stable=stable)
 
@@ -153,7 +168,7 @@ class TestSeriesArgsort:
             ser.argsort(order=["ts"])
 
         with tm.assert_produces_warning(
-            FutureWarning,
+            (Pandas4Warning, Pandas4Warning),
             check_stacklevel=False,
             match="`order` should match Series.name if specified",
         ):
@@ -168,7 +183,7 @@ class TestSeriesArgsort:
             np.argsort(ser, order=["ts"])
 
         with tm.assert_produces_warning(
-            FutureWarning,
+            (Pandas4Warning, Pandas4Warning),
             check_stacklevel=False,
             match="`order` should match Series.name if specified",
         ):
