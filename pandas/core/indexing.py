@@ -3432,6 +3432,16 @@ def infer_and_maybe_downcast(orig: ExtensionArray, new_arr) -> ArrayLike:
         # [assignment]
         dtype = dtype.numpy_dtype  # type: ignore[assignment]
 
+    # _cast_pointwise_result may return NumpyExtensionArray; unwrap so
+    # maybe_downcast_to_dtype sees a plain np.ndarray it can downcast.
+    arr_type = None
+    if isinstance(new_arr.dtype, NumpyEADtype):
+        arr_type = type(new_arr)
+        new_arr = new_arr._ndarray
+
     if is_np_dtype(new_arr.dtype, "f") and is_np_dtype(dtype, "iu"):
         new_arr = maybe_downcast_to_dtype(new_arr, dtype)
+
+    if arr_type is not None:
+        new_arr = arr_type(new_arr)
     return new_arr
