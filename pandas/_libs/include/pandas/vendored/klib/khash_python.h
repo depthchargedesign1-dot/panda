@@ -3,7 +3,6 @@
 #pragma once
 
 #include <Python.h>
-
 #include <pymem.h>
 #include <string.h>
 
@@ -192,7 +191,32 @@ static inline int tupleobject_cmp(PyTupleObject *a, PyTupleObject *b) {
   return 1;
 }
 
+static inline int pandas_is_NA(PyObject *o) {
+  PyObject *module = NULL;
+  PyObject *type_na = NULL;
+  int result = -1;
+
+  if (NULL == (module = PyImport_ImportModule("pandas._libs.missing"))) {
+    goto end;
+  }
+  if (NULL == (type_na = PyObject_GetAttrString(module, "NAType"))) {
+    goto end;
+  }
+  result = PyObject_IsInstance(o, type_na);
+
+end:
+  Py_XDECREF(module);
+  Py_XDECREF(type_na);
+  if (PyErr_Occurred() != NULL) {
+    PyErr_Clear();
+  }
+  return result > 0;
+}
+
 static inline int pyobject_cmp(PyObject *a, PyObject *b) {
+  if (PyErr_Occurred() != NULL) {
+    return 0;
+  }
   if (a == b) {
     return 1;
   }
@@ -214,11 +238,14 @@ static inline int pyobject_cmp(PyObject *a, PyObject *b) {
   } else if (PyBool_Check(a) != PyBool_Check(b)) {
     // GH#62888: distinguish bool from int, e.g. 0 vs False, 1 vs True
     return 0;
+  } else if (pandas_is_NA(a) || pandas_is_NA(b)) {
+    // GH#57052: PyObject_RichCompareBool would raise
+    // because comparing anything to pd.NA returns pd.NA
+    return 0;
   }
 
   int result = PyObject_RichCompareBool(a, b, Py_EQ);
   if (result < 0) {
-    PyErr_Clear();
     return 0;
   }
   return result;
@@ -295,6 +322,9 @@ static inline Py_hash_t tupleobject_hash(PyTupleObject *key) {
 }
 
 static inline khuint32_t kh_python_hash_func(PyObject *key) {
+  if (PyErr_Occurred() != NULL) {
+    return 0;
+  }
   Py_hash_t hash;
   // For PyObject_Hash holds:
   //    hash(0.0) == 0 == hash(-0.0)
@@ -313,12 +343,19 @@ static inline khuint32_t kh_python_hash_func(PyObject *key) {
   } else if (PyTuple_Check(key)) {
     // hash tuple subclasses as builtin tuples
     hash = tupleobject_hash((PyTupleObject *)key);
+  } else if (PyDict_Check(key) || PyList_Check(key)) {
+    // Before GH 57052 was fixed, all exceptions raised from PyObject_Hash were
+    // suppressed. Existing code that relies on this behaviour is for example:
+    //   * _libs.hashtable.value_count_object via DataFrame.describe
+    //   * _libs.hashtable.ismember_object via Series.isin
+    // Using hash = 0 puts all dict and list objects in the same bucket,
+    // which is bad for performance but that is how it worked before.
+    hash = 0;
   } else {
     hash = PyObject_Hash(key);
   }
 
   if (hash == -1) {
-    PyErr_Clear();
     return 0;
   }
 #if SIZEOF_PY_HASH_T == 4
