@@ -6,6 +6,7 @@ import numpy as np
 import pytest
 
 from pandas._libs.tslibs import iNaT
+from pandas.errors import Pandas4Warning
 
 from pandas.core.dtypes.common import pandas_dtype
 from pandas.core.dtypes.missing import na_value_for_dtype
@@ -837,7 +838,8 @@ def test_min_date_with_nans():
     ).dt.date
     df = DataFrame({"a": [np.nan, "1", np.nan], "b": [0, 1, 1], "c": dates})
 
-    result = df.groupby("b", as_index=False)["c"].min()["c"]
+    with tm.assert_produces_warning(Pandas4Warning, match="as_index"):
+        result = df.groupby("b", as_index=False)["c"].min()["c"]
     expected = pd.to_datetime(
         Series(["2019-05-09", "2019-05-09"], name="c"), format="%Y-%m-%d"
     ).dt.date
@@ -1190,10 +1192,12 @@ def test_series_groupby_nunique(sort, dropna, as_index, with_nan, keys):
         df.loc[8::19, "julie"] = None
         df.loc[9::19, "julie"] = None
     original_df = df.copy()
-    gr = df.groupby(keys, as_index=as_index, sort=sort)
+    with tm.assert_produces_warning(Pandas4Warning, match="as_index"):
+        gr = df.groupby(keys, as_index=as_index, sort=sort)
     left = gr["julie"].nunique(dropna=dropna)
 
-    gr = df.groupby(keys, as_index=as_index, sort=sort)
+    with tm.assert_produces_warning(Pandas4Warning, match="as_index"):
+        gr = df.groupby(keys, as_index=as_index, sort=sort)
     right = gr["julie"].apply(Series.nunique, dropna=dropna)
     if not as_index:
         right = right.reset_index(drop=True)
@@ -1209,7 +1213,8 @@ def test_nunique():
     df = DataFrame({"A": list("abbacc"), "B": list("abxacc"), "C": list("abbacx")})
 
     expected = DataFrame({"A": list("abc"), "B": [1, 2, 1], "C": [1, 1, 2]})
-    result = df.groupby("A", as_index=False).nunique()
+    with tm.assert_produces_warning(Pandas4Warning, match="as_index"):
+        result = df.groupby("A", as_index=False).nunique()
     tm.assert_frame_equal(result, expected)
 
     # as_index

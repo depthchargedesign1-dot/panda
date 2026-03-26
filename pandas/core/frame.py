@@ -12433,7 +12433,7 @@ class DataFrame(NDFrame, OpsMixin):
         self,
         by=None,
         level: IndexLabel | None = None,
-        as_index: bool = True,
+        as_index: bool | lib.NoDefault = lib.no_default,
         sort: bool = True,
         group_keys: bool = True,
         observed: bool = True,
@@ -12472,6 +12472,10 @@ class DataFrame(NDFrame, OpsMixin):
             such as ``head()``, ``tail()``, ``nth()`` and in transformations
             (see the `transformations in the user guide
             <https://pandas.pydata.org/docs/dev/user_guide/groupby.html#transformation>`_).
+
+            .. deprecated:: 3.1.0
+                The ``as_index`` argument is deprecated and will be removed in
+                a future version. Use ``groupby(...).reset_index()`` instead.
         sort : bool, default True
             Sort group keys. Get better performance by turning this off.
             Note this does not influence the order of observations within each
@@ -12650,6 +12654,17 @@ class DataFrame(NDFrame, OpsMixin):
 
         if level is None and by is None:
             raise TypeError("You have to supply one of 'by' and 'level'")
+
+        if as_index is not lib.no_default:
+            warnings.warn(
+                "The 'as_index' argument in groupby is deprecated and "
+                "will be removed in a future version. "
+                "Use groupby(...).reset_index() instead.",
+                Pandas4Warning,
+                stacklevel=find_stack_level(),
+            )
+        else:
+            as_index = True
 
         return DataFrameGroupBy(
             obj=self,

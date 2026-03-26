@@ -608,6 +608,7 @@ Using :meth:`DataFrame.groupby` with ``as_index=True`` and the aggregation ``nun
 *New behavior*:
 
 .. ipython:: python
+   :okwarning:
 
    df.groupby("a", as_index=True).nunique()
 
@@ -626,6 +627,7 @@ Using :meth:`DataFrame.groupby` with ``as_index=False`` and the function ``idxma
 *New behavior*:
 
 .. ipython:: python
+   :okwarning:
 
    df.groupby("a", as_index=False).nunique()
 
@@ -645,6 +647,7 @@ The method :meth:`.DataFrameGroupBy.size` would previously ignore ``as_index=Fal
 *New behavior*:
 
 .. ipython:: python
+   :okwarning:
 
    df.groupby("a", as_index=False).size()
 
@@ -679,6 +682,7 @@ the previous index (:issue:`32240`).
 *New behavior*:
 
 .. ipython:: python
+   :okwarning:
 
    grouped = df.groupby("key", as_index=False)
    result = grouped.agg(min_val=pd.NamedAgg(column="val", aggfunc="min"))
