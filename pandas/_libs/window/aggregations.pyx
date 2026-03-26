@@ -9,6 +9,7 @@ from libcpp.stack cimport stack
 from libcpp.unordered_map cimport unordered_map
 
 from pandas._libs.algos cimport (
+    Moments,
     TiebreakEnumType,
     calc_kurt,
     calc_skew,
@@ -492,26 +493,22 @@ def roll_var(const float64_t[:] values, ndarray[int64_t] start,
 # Rolling skewness
 
 
-cdef void add_skew(float64_t val, int64_t *nobs,
-                   float64_t *mean, float64_t *m2,
-                   float64_t *m3,
+cdef void add_skew(float64_t val, Moments *moments,
                    bint *numerically_unstable,
                    ) noexcept nogil:
     """ add a value from the skew calc """
     cdef:
-        float64_t old_m3 = m3[0]
+        float64_t old_m3 = moments.m3
 
     # Not NaN
     if val == val:
-        moments_add_value(val, nobs, mean, m2, m3, NULL, 3)
-        if fabs(old_m3) * InvCondTol > fabs(m3[0]):
+        moments_add_value(moments, val, 3)
+        if fabs(old_m3) * InvCondTol > fabs(moments.m3):
             # possible catastrophic cancellation
             numerically_unstable[0] = True
 
 
-cdef void remove_skew(float64_t val, int64_t *nobs,
-                      float64_t *mean, float64_t *m2,
-                      float64_t *m3,
+cdef void remove_skew(float64_t val, Moments *moments,
                       bint *numerically_unstable) noexcept nogil:
     """ remove a value from the skew calc """
     cdef:
@@ -529,22 +526,22 @@ cdef void remove_skew(float64_t val, int64_t *nobs,
 
     # Not NaN
     if val == val:
-        nobs[0] -= 1
-        n = <float64_t>(nobs[0])
-        delta = val - mean[0]
+        moments.n -= 1
+        n = <float64_t>(moments.n)
+        delta = val - moments.mean
         delta_n = delta / n
         term1 = delta_n * delta * (n + 1.0)
 
-        m3_update = delta_n * (term1 * (n + 2.0) - 3.0 * m2[0])
-        new_m3 = m3[0] - m3_update
+        m3_update = delta_n * (term1 * (n + 2.0) - 3.0 * moments.m2)
+        new_m3 = moments.m3 - m3_update
 
-        if (fabs(m3_update) + fabs(m3[0])) * InvCondTol > fabs(new_m3):
+        if (fabs(m3_update) + fabs(moments.m3)) * InvCondTol > fabs(new_m3):
             # possible catastrophic cancellation
             numerically_unstable[0] = True
 
-        m3[0] = new_m3
-        m2[0] -= term1
-        mean[0] -= delta_n
+        moments.m3 = new_m3
+        moments.m2 -= term1
+        moments.mean -= delta_n
 
 
 def roll_skew(const float64_t[:] values, ndarray[int64_t] start,
@@ -552,8 +549,8 @@ def roll_skew(const float64_t[:] values, ndarray[int64_t] start,
     cdef:
         Py_ssize_t i, j
         float64_t val
-        float64_t mean, m2, m3
-        int64_t nobs = 0, N = len(start)
+        Moments moments
+        int64_t N = len(start)
         int64_t s, e
         ndarray[float64_t] output
         bint is_monotonic_increasing_bounds
@@ -585,31 +582,35 @@ def roll_skew(const float64_t[:] values, ndarray[int64_t] start,
                 # calculate deletes
                 for j in range(start[i - 1], s):
                     val = values[j]
-                    remove_skew(val, &nobs, &mean, &m2, &m3, &numerically_unstable)
+                    remove_skew(val, &moments, &numerically_unstable)
 
                 # calculate adds
                 for j in range(end[i - 1], e):
                     val = values[j]
-                    add_skew(val, &nobs, &mean, &m2, &m3, &numerically_unstable)
+                    add_skew(val, &moments, &numerically_unstable)
 
             if requires_recompute or numerically_unstable:
 
-                mean = m2 = m3 = 0.0
-                nobs = 0
+                moments.n = 0
+                moments.mean = 0.0
+                moments.m2 = 0.0
+                moments.m3 = 0.0
+                moments.m4 = 0.0
 
                 for j in range(s, e):
                     val = values[j]
-                    add_skew(val, &nobs, &mean, &m2, &m3, &numerically_unstable)
+                    add_skew(val, &moments, &numerically_unstable)
 
                 numerically_unstable = False
 
-            output[i] = NaN if nobs < minp else calc_skew(nobs, m2, m3)
+            output[i] = NaN if moments.n < minp else calc_skew(moments)
 
             if not is_monotonic_increasing_bounds:
-                nobs = 0
-                mean = 0.0
-                m2 = 0.0
-                m3 = 0.0
+                moments.n = 0
+                moments.mean = 0.0
+                moments.m2 = 0.0
+                moments.m3 = 0.0
+                moments.m4 = 0.0
 
     return output
 
@@ -617,26 +618,22 @@ def roll_skew(const float64_t[:] values, ndarray[int64_t] start,
 # Rolling kurtosis
 
 
-cdef void add_kurt(float64_t val, int64_t *nobs,
-                   float64_t *mean, float64_t *m2,
-                   float64_t *m3, float64_t *m4,
+cdef void add_kurt(float64_t val, Moments *moments,
                    bint *numerically_unstable,
                    ) noexcept nogil:
     """ add a value from the kurotic calc """
     cdef:
-        float64_t old_m4 = m4[0]
+        float64_t old_m4 = moments.m4
 
     # Not NaN
     if val == val:
-        moments_add_value(val, nobs, mean, m2, m3, m4, 4)
-        if fabs(old_m4) * InvCondTol > fabs(m4[0]):
+        moments_add_value(moments, val, 4)
+        if fabs(old_m4) * InvCondTol > fabs(moments.m4):
             # possible catastrophic cancellation
             numerically_unstable[0] = True
 
 
-cdef void remove_kurt(float64_t val, int64_t *nobs,
-                      float64_t *mean, float64_t *m2,
-                      float64_t *m3, float64_t *m4,
+cdef void remove_kurt(float64_t val, Moments *moments,
                       bint *numerically_unstable,
                       ) noexcept nogil:
     """ remove a value from the kurotic calc """
@@ -645,37 +642,37 @@ cdef void remove_kurt(float64_t val, int64_t *nobs,
 
     # Not NaN
     if val == val:
-        nobs[0] -= 1
-        n = <float64_t>(nobs[0])
-        delta = val - mean[0]
+        moments.n -= 1
+        n = <float64_t>(moments.n)
+        delta = val - moments.mean
         delta_n = delta / n
         term1 = delta_n * delta * (n + 1.0)
 
         m4_update = delta_n * (
-                4.0 * m3[0]
+                4.0 * moments.m3
                 + delta_n * (
-                    6.0 * m2[0]
+                    6.0 * moments.m2
                     - term1 * (n * n + 3.0 * n + 3.0)
                     )
                 )
-        new_m4 = m4[0] + m4_update
+        new_m4 = moments.m4 + m4_update
 
-        if (fabs(m4_update) + fabs(m4[0])) * InvCondTol > fabs(new_m4):
+        if (fabs(m4_update) + fabs(moments.m4)) * InvCondTol > fabs(new_m4):
             # possible catastrophic cancellation
             numerically_unstable[0] = True
 
-        m4[0] = new_m4
-        m3[0] -= delta_n * (term1 * (n + 2.0) - 3.0 * m2[0])
-        m2[0] -= term1
-        mean[0] -= delta_n
+        moments.m4 = new_m4
+        moments.m3 -= delta_n * (term1 * (n + 2.0) - 3.0 * moments.m2)
+        moments.m2 -= term1
+        moments.mean -= delta_n
 
 
 def roll_kurt(const float64_t[:] values, ndarray[int64_t] start,
               ndarray[int64_t] end, int64_t minp) -> np.ndarray:
     cdef:
         Py_ssize_t i, j
-        float64_t mean, m2, m3, m4
-        int64_t nobs, s, e
+        Moments moments
+        int64_t s, e
         int64_t N = len(start)
         ndarray[float64_t] output
         bint is_monotonic_increasing_bounds
@@ -707,30 +704,32 @@ def roll_kurt(const float64_t[:] values, ndarray[int64_t] start,
                 # and removed
                 # calculate deletes
                 for j in range(start[i - 1], s):
-                    remove_kurt(values[j], &nobs, &mean, &m2, &m3, &m4,
-                                &numerically_unstable)
+                    remove_kurt(values[j], &moments, &numerically_unstable)
 
                 # calculate adds
                 for j in range(end[i - 1], e):
-                    add_kurt(values[j], &nobs, &mean, &m2, &m3, &m4,
-                             &numerically_unstable)
+                    add_kurt(values[j], &moments, &numerically_unstable)
 
             if requires_recompute or numerically_unstable:
 
-                mean = m2 = m3 = m4 = 0.0
-                nobs = 0
+                moments.n = 0
+                moments.mean = 0.0
+                moments.m2 = 0.0
+                moments.m3 = 0.0
+                moments.m4 = 0.0
                 for j in range(s, e):
-                    add_kurt(values[j], &nobs, &mean, &m2, &m3, &m4,
-                             &numerically_unstable)
+                    add_kurt(values[j], &moments, &numerically_unstable)
 
-            output[i] = NaN if nobs < minp else calc_kurt(nobs, m2, m4)
+                numerically_unstable = False
+
+            output[i] = NaN if moments.n < minp else calc_kurt(moments)
 
             if not is_monotonic_increasing_bounds:
-                nobs = 0
-                mean = 0.0
-                m2 = 0.0
-                m3 = 0.0
-                m4 = 0.0
+                moments.n = 0
+                moments.mean = 0.0
+                moments.m2 = 0.0
+                moments.m3 = 0.0
+                moments.m4 = 0.0
 
     return output
 
