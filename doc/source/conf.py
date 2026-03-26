@@ -412,6 +412,8 @@ numpydoc_validation_exclude = {
     r"pandas\.DatetimeIndex\.is_year_start$",
     r"pandas\.DatetimeIndex\.is_year_end$",
     r"pandas\.DatetimeIndex\.is_leap_year$",
+    # PeriodIndex.unit has a minimal docstring (EX01, SS06, SA01)
+    r"pandas\.PeriodIndex\.unit$",
 }
 
 # matplotlib plot directive
