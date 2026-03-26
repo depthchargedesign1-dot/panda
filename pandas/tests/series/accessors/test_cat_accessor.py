@@ -216,8 +216,13 @@ class TestCatAccessor:
             tm.assert_equal(res, exp)
 
         for attr in attr_names:
-            res = getattr(cat.dt, attr)
-            exp = getattr(ser.dt, attr)
+            if attr == "freq" and idx.dtype.kind in "Mm":
+                warn_cls = Pandas4Warning
+            else:
+                warn_cls = None
+            with tm.assert_produces_warning(warn_cls):
+                res = getattr(cat.dt, attr)
+                exp = getattr(ser.dt, attr)
 
             tm.assert_equal(res, exp)
 
