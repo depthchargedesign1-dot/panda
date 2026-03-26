@@ -188,4 +188,21 @@ def _post_convert_dtypes(
                     )
                     df[col] = df[col].astype(cat_dtype)
 
+    # GH#56136 IntegerDtype was used to avoid lossy float64 conversion
+    # in pyarrow, convert back to numpy now that data is categorical
+    if dtype_backend is lib.no_default or dtype_backend == "numpy":
+        from pandas.core.arrays.integer import IntegerDtype as _IntDtype
+
+        for col, col_dtype in zip(df.columns, df.dtypes, strict=True):
+            if isinstance(col_dtype, pd.CategoricalDtype):
+                cat_arr_dtype = col_dtype.categories.dtype
+                if isinstance(cat_arr_dtype, _IntDtype):
+                    new_cat_dtype = pd.CategoricalDtype(
+                        categories=col_dtype.categories.astype(
+                            cat_arr_dtype.numpy_dtype
+                        ),
+                        ordered=col_dtype.ordered,
+                    )
+                    df[col] = df[col].astype(new_cat_dtype)
+
     return df

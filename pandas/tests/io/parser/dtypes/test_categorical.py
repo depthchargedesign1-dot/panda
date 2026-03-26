@@ -26,10 +26,7 @@ pytestmark = pytest.mark.filterwarnings(
     "ignore:Passing a BlockManager to DataFrame:DeprecationWarning"
 )
 
-xfail_pyarrow = pytest.mark.usefixtures("pyarrow_xfail")
 
-
-@xfail_pyarrow  # AssertionError: Attributes of DataFrame.iloc[:, 0] are different
 @pytest.mark.parametrize(
     "dtype",
     [
@@ -39,7 +36,8 @@ xfail_pyarrow = pytest.mark.usefixtures("pyarrow_xfail")
     ],
 )
 def test_categorical_dtype(all_parsers, dtype):
-    # see gh-10153
+    # see gh-10153, gh-56044
+    # categories should have inferred types (not strings) across all engines
     parser = all_parsers
     data = """a,b,c
 1,a,3.4
@@ -47,9 +45,9 @@ def test_categorical_dtype(all_parsers, dtype):
 2,b,4.5"""
     expected = DataFrame(
         {
-            "a": Categorical(["1", "1", "2"]),
+            "a": Categorical([1, 1, 2]),
             "b": Categorical(["a", "a", "b"]),
-            "c": Categorical(["3.4", "3.4", "4.5"]),
+            "c": Categorical([3.4, 3.4, 4.5]),
         }
     )
     actual = parser.read_csv(StringIO(data), dtype=dtype)
@@ -77,9 +75,8 @@ def test_categorical_dtype_single(all_parsers, dtype, request):
     tm.assert_frame_equal(actual, expected)
 
 
-@xfail_pyarrow  # AssertionError: Attributes of DataFrame.iloc[:, 0] are different
 def test_categorical_dtype_unsorted(all_parsers):
-    # see gh-10153
+    # see gh-10153, gh-56044
     parser = all_parsers
     data = """a,b,c
 1,b,3.4
@@ -87,18 +84,17 @@ def test_categorical_dtype_unsorted(all_parsers):
 2,a,4.5"""
     expected = DataFrame(
         {
-            "a": Categorical(["1", "1", "2"]),
+            "a": Categorical([1, 1, 2]),
             "b": Categorical(["b", "b", "a"]),
-            "c": Categorical(["3.4", "3.4", "4.5"]),
+            "c": Categorical([3.4, 3.4, 4.5]),
         }
     )
     actual = parser.read_csv(StringIO(data), dtype="category")
     tm.assert_frame_equal(actual, expected)
 
 
-@xfail_pyarrow  # AssertionError: Attributes of DataFrame.iloc[:, 0] are different
 def test_categorical_dtype_missing(all_parsers):
-    # see gh-10153
+    # see gh-10153, gh-56044
     parser = all_parsers
     data = """a,b,c
 1,b,3.4
@@ -106,29 +102,30 @@ def test_categorical_dtype_missing(all_parsers):
 2,a,4.5"""
     expected = DataFrame(
         {
-            "a": Categorical(["1", "1", "2"]),
+            "a": Categorical([1, 1, 2]),
             "b": Categorical(["b", np.nan, "a"]),
-            "c": Categorical(["3.4", "3.4", "4.5"]),
+            "c": Categorical([3.4, 3.4, 4.5]),
         }
     )
     actual = parser.read_csv(StringIO(data), dtype="category")
     tm.assert_frame_equal(actual, expected)
 
 
-@xfail_pyarrow  # AssertionError: Attributes of DataFrame.iloc[:, 0] are different
 @pytest.mark.slow
 def test_categorical_dtype_high_cardinality_numeric(all_parsers, monkeypatch):
-    # see gh-18186
+    # see gh-18186, gh-56044
     # was an issue with C parser, due to DEFAULT_BUFFER_HEURISTIC
     parser = all_parsers
     heuristic = 2**5
     data = np.sort([str(i) for i in range(heuristic + 1)])
-    expected = DataFrame({"a": Categorical(data, ordered=True)})
+    csv_data = "a\n" + "\n".join(data)
+    int_data = np.array([int(x) for x in data])
+    expected = DataFrame({"a": Categorical(int_data, ordered=True)})
     with monkeypatch.context() as m:
         m.setattr(libparsers, "DEFAULT_BUFFER_HEURISTIC", heuristic)
-        actual = parser.read_csv(StringIO("a\n" + "\n".join(data)), dtype="category")
+        actual = parser.read_csv(StringIO(csv_data), dtype="category")
     actual["a"] = actual["a"].cat.reorder_categories(
-        np.sort(actual.a.cat.categories), ordered=True
+        np.sort(actual["a"].cat.categories), ordered=True
     )
     tm.assert_frame_equal(actual, expected)
 
