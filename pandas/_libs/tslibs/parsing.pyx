@@ -276,6 +276,7 @@ cdef datetime parse_datetime_string(
     bint yearfirst,
     NPY_DATETIMEUNIT* out_bestunit,
     int64_t* nanos,
+    bint* out_is_quarter=NULL,
 ):
     """
     Parse datetime string, only returns datetime.
@@ -314,6 +315,8 @@ cdef datetime parse_datetime_string(
         dt = _parse_dateabbr_string(
             date_string, _DEFAULT_DATETIME, None, out_bestunit, &is_quarter
         )
+        if out_is_quarter != NULL:
+            out_is_quarter[0] = is_quarter
         return dt
     except DateParseError:
         raise
@@ -327,7 +330,8 @@ cdef datetime parse_datetime_string(
 
 
 def parse_datetime_string_with_reso(
-    str date_string, str freq=None, dayfirst=None, yearfirst=None
+    str date_string, str freq=None, dayfirst=None, yearfirst=None,
+    bint warn_quarter=True,
 ):
     # NB: This will break with np.str_ (GH#45580) even though
     #  isinstance(npstrobj, str) evaluates to True, so caller must ensure
@@ -346,6 +350,8 @@ def parse_datetime_string_with_reso(
         If None uses default from print_config
     yearfirst : bool, default None
         If None uses default from print_config
+    warn_quarter : bool, default True
+        Whether to warn when parsing a quarterly string.
 
     Returns
     -------
@@ -423,6 +429,18 @@ def parse_datetime_string_with_reso(
     else:
         if is_quarter:
             reso = "quarter"
+            if warn_quarter:
+                # GH#50907
+                from pandas.errors import Pandas4Warning
+
+                warnings.warn(
+                    f"Parsing '{date_string}' as a quarterly string is "
+                    f"deprecated and will be removed in a future version. "
+                    f"Use pd.Period('{date_string}') or "
+                    f"pd.PeriodIndex with to_timestamp() instead.",
+                    Pandas4Warning,
+                    stacklevel=find_stack_level(),
+                )
         else:
             reso = npy_unit_to_attrname[out_bestunit]
         return parsed, reso

@@ -7160,8 +7160,14 @@ class Index(IndexOpsMixin, PandasObject):
         # attempt to parse and check that the offsets are the same
         if isinstance(start, (str, datetime)) and isinstance(end, (str, datetime)):
             try:
-                ts_start = Timestamp(start)
-                ts_end = Timestamp(end)
+                with warnings.catch_warnings():
+                    warnings.filterwarnings(
+                        "ignore",
+                        "Parsing.*quarterly string",
+                        Pandas4Warning,
+                    )
+                    ts_start = Timestamp(start)
+                    ts_end = Timestamp(end)
             except (ValueError, TypeError):
                 pass
             else:

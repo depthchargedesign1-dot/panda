@@ -89,6 +89,7 @@ class DatetimeIndexOpsMixin(NDArrayBackedExtensionIndex, ABC):
 
     _can_hold_strings = False
     _data: DatetimeArray | TimedeltaArray | PeriodArray
+    _warn_quarter: bool = True
 
     def mean(self, *, skipna: bool = True, axis: int | None = 0):
         """
@@ -451,7 +452,11 @@ class DatetimeIndexOpsMixin(NDArrayBackedExtensionIndex, ABC):
             # GH#45580
             label = str(label)
 
-        parsed, reso_str = parsing.parse_datetime_string_with_reso(label, freqstr)
+        parsed, reso_str = parsing.parse_datetime_string_with_reso(
+            label,
+            freqstr,
+            warn_quarter=self._warn_quarter,
+        )
         reso = Resolution.from_attrname(reso_str)
         return parsed, reso
 
