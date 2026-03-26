@@ -66,6 +66,7 @@ from pandas import (
     Categorical,
     Index,
     MultiIndex,
+    RangeIndex,
     Series,
 )
 import pandas.core.algorithms as algos
@@ -81,6 +82,7 @@ from pandas.core.construction import (
     extract_array,
 )
 from pandas.core.indexes.api import default_index
+from pandas.core.indexes.base import maybe_sequence_to_range
 from pandas.core.sorting import (
     get_group_index,
     is_int64_overflow_possible,
@@ -2093,10 +2095,83 @@ def get_join_indexers(
         and (left.is_unique or right.is_unique)
     ):
         _, lidx, ridx = left.join(right, how=how, return_indexers=True, sort=sort)
+    elif not sort and how in ("left", "right"):
+        lk: ArrayLike
+        rk: ArrayLike
+        if how == "left":
+            lk = left._values
+            if isinstance(lk, np.ndarray):
+                if (
+                    right.is_monotonic_increasing
+                    and right.is_unique
+                    and right.dtype.kind in "iu"
+                ):
+                    if isinstance(right, RangeIndex):
+                        if lk.dtype.kind in "iu":
+                            ridx = right.get_indexer(lk)
+                            lidx = None
+                        else:
+                            rk = right._values
+                            lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
+                    else:
+                        rk = right._values
+                        if isinstance(rk, np.ndarray):
+                            r = maybe_sequence_to_range(rk)
+                            if isinstance(r, range):
+                                right = RangeIndex(
+                                    r.start, r.stop, r.step, name=right.name
+                                )
+                            if isinstance(right, RangeIndex) and lk.dtype.kind in "iu":
+                                ridx = right.get_indexer(lk)
+                                lidx = None
+                            else:
+                                lidx, ridx = get_join_indexers_non_unique(
+                                    lk, rk, sort, how
+                                )
+                        else:
+                            lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
+                else:
+                    rk = right._values
+                    lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
+            else:
+                rk = right._values
+                lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
+        elif (
+            left.is_monotonic_increasing and left.is_unique and left.dtype.kind in "iu"
+        ):
+            rk = right._values
+            if isinstance(rk, np.ndarray):
+                if isinstance(left, RangeIndex):
+                    if rk.dtype.kind in "iu":
+                        lidx = left.get_indexer(rk)
+                        ridx = None
+                    else:
+                        lk = left._values
+                        lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
+                else:
+                    lk = left._values
+                    if isinstance(lk, np.ndarray):
+                        r = maybe_sequence_to_range(lk)
+                        if isinstance(r, range):
+                            left = RangeIndex(r.start, r.stop, r.step, name=left.name)
+                        if isinstance(left, RangeIndex) and rk.dtype.kind in "iu":
+                            lidx = left.get_indexer(rk)
+                            ridx = None
+                        else:
+                            lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
+                    else:
+                        lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
+            else:
+                lk = left._values
+                lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
+        else:
+            lk = left._values
+            rk = right._values
+            lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
     else:
-        lidx, ridx = get_join_indexers_non_unique(
-            left._values, right._values, sort, how
-        )
+        lk = left._values
+        rk = right._values
+        lidx, ridx = get_join_indexers_non_unique(lk, rk, sort, how)
 
     if lidx is not None and is_range_indexer(lidx, len(left)):
         lidx = None
