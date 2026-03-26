@@ -136,25 +136,37 @@ cpdef ndarray[int64_t, ndim=1] unique_deltas(const int64_t[:] arr):
         An ordered ndarray[int64_t]
     """
     cdef:
-        Py_ssize_t i, n = len(arr)
+        Py_ssize_t i, n = len(arr), num_uniques = 0
         int64_t val
         khiter_t k
         kh_int64_t *table
         int ret = 0
-        list uniques = []
+        int64_t *uniques = NULL
         ndarray[int64_t, ndim=1] result
 
     table = kh_init_int64()
     kh_resize_int64(table, 10)
+
+    # n - 1 is the max possible number of unique deltas
+    if n > 1:
+        uniques = <int64_t*>malloc((n - 1) * sizeof(int64_t))
+        if uniques is NULL:
+            kh_destroy_int64(table)
+            raise MemoryError()
+
     for i in range(n - 1):
         val = arr[i + 1] - arr[i]
         k = kh_get_int64(table, val)
         if k == table.n_buckets:
             kh_put_int64(table, val, &ret)
-            uniques.append(val)
+            uniques[num_uniques] = val
+            num_uniques += 1
     kh_destroy_int64(table)
 
-    result = np.array(uniques, dtype=np.int64)
+    result = np.empty(num_uniques, dtype=np.int64)
+    if num_uniques > 0:
+        memcpy(cnp.PyArray_DATA(result), uniques, num_uniques * sizeof(int64_t))
+    free(uniques)
     result.sort()
     return result
 
@@ -347,6 +359,7 @@ def nancorr(const float64_t[:, :] mat, bint cov=False, minp=None):
         uint8_t[:, :] mask
         int64_t nobs = 0
         float64_t vx, vy, dx, dy, meanx, meany, divisor, ssqdmx, ssqdmy, covxy, val
+        bint no_nans
 
     N, K = (<object>mat).shape
     if minp is None:
@@ -356,6 +369,7 @@ def nancorr(const float64_t[:, :] mat, bint cov=False, minp=None):
 
     result = np.empty((K, K), dtype=np.float64)
     mask = np.isfinite(mat).view(np.uint8)
+    no_nans = np.asarray(mask).all()
 
     with nogil:
         for xi in range(K):
@@ -363,18 +377,32 @@ def nancorr(const float64_t[:, :] mat, bint cov=False, minp=None):
                 # Welford's method for the variance-calculation
                 # https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance
                 nobs = ssqdmx = ssqdmy = covxy = meanx = meany = 0
-                for i in range(N):
-                    if mask[i, xi] and mask[i, yi]:
+
+                if no_nans:
+                    nobs = N
+                    for i in range(N):
                         vx = mat[i, xi]
                         vy = mat[i, yi]
-                        nobs += 1
                         dx = vx - meanx
                         dy = vy - meany
-                        meanx += 1. / nobs * dx
-                        meany += 1. / nobs * dy
+                        meanx += 1. / (i + 1) * dx
+                        meany += 1. / (i + 1) * dy
                         ssqdmx += (vx - meanx) * dx
                         ssqdmy += (vy - meany) * dy
                         covxy += (vx - meanx) * dy
+                else:
+                    for i in range(N):
+                        if mask[i, xi] and mask[i, yi]:
+                            vx = mat[i, xi]
+                            vy = mat[i, yi]
+                            nobs += 1
+                            dx = vx - meanx
+                            dy = vy - meany
+                            meanx += 1. / nobs * dx
+                            meany += 1. / nobs * dy
+                            ssqdmx += (vx - meanx) * dx
+                            ssqdmy += (vy - meany) * dy
+                            covxy += (vx - meanx) * dy
 
                 if nobs < minpv:
                     result[xi, yi] = result[yi, xi] = NaN
@@ -401,6 +429,7 @@ def nancorr(const float64_t[:, :] mat, bint cov=False, minp=None):
 
 @cython.boundscheck(False)
 @cython.wraparound(False)
+@cython.cdivision(True)
 def nancorr_spearman(ndarray[float64_t, ndim=2] mat, Py_ssize_t minp=1) -> ndarray:
     cdef:
         Py_ssize_t i, xi, yi, N, K
@@ -547,17 +576,18 @@ def get_fill_indexer(const uint8_t[:] mask, limit=None):
 
     last_valid = -1  # haven't yet seen anything non-NA
 
-    for i in range(N):
-        if not mask[i]:
-            indexer[i] = i
-            last_valid = i
-            fill_count = 0
-        else:
-            if fill_count < lim:
-                indexer[i] = last_valid
+    with nogil:
+        for i in range(N):
+            if not mask[i]:
+                indexer[i] = i
+                last_valid = i
+                fill_count = 0
             else:
-                indexer[i] = -1
-            fill_count += 1
+                if fill_count < lim:
+                    indexer[i] = last_valid
+                else:
+                    indexer[i] = -1
+                fill_count += 1
 
     return indexer
 
@@ -590,36 +620,37 @@ def pad(
 
     cur = old[0]
 
-    while j <= nright - 1 and new[j] < cur:
-        j += 1
+    with nogil(numeric_object_t is not object):
+        while j <= nright - 1 and new[j] < cur:
+            j += 1
 
-    while True:
-        if j == nright:
-            break
+        while True:
+            if j == nright:
+                break
 
-        if i == nleft - 1:
-            while j < nright:
+            if i == nleft - 1:
+                while j < nright:
+                    if new[j] == cur:
+                        indexer[j] = i
+                    elif new[j] > cur and fill_count < lim:
+                        indexer[j] = i
+                        fill_count += 1
+                    j += 1
+                break
+
+            next_val = old[i + 1]
+
+            while j < nright and cur <= new[j] < next_val:
                 if new[j] == cur:
                     indexer[j] = i
-                elif new[j] > cur and fill_count < lim:
+                elif fill_count < lim:
                     indexer[j] = i
                     fill_count += 1
                 j += 1
-            break
 
-        next_val = old[i + 1]
-
-        while j < nright and cur <= new[j] < next_val:
-            if new[j] == cur:
-                indexer[j] = i
-            elif fill_count < lim:
-                indexer[j] = i
-                fill_count += 1
-            j += 1
-
-        fill_count = 0
-        i += 1
-        cur = next_val
+            fill_count = 0
+            i += 1
+            cur = next_val
 
     return indexer
 
@@ -641,19 +672,20 @@ def pad_inplace(numeric_object_t[:] values, uint8_t[:] mask, limit=None):
 
     lim = validate_limit(N, limit)
 
-    val = values[0]
-    prev_mask = mask[0]
-    for i in range(N):
-        if mask[i]:
-            if fill_count >= lim:
-                continue
-            fill_count += 1
-            values[i] = val
-            mask[i] = prev_mask
-        else:
-            fill_count = 0
-            val = values[i]
-            prev_mask = mask[i]
+    with nogil(numeric_object_t is not object):
+        val = values[0]
+        prev_mask = mask[0]
+        for i in range(N):
+            if mask[i]:
+                if fill_count >= lim:
+                    continue
+                fill_count += 1
+                values[i] = val
+                mask[i] = prev_mask
+            else:
+                fill_count = 0
+                val = values[i]
+                prev_mask = mask[i]
 
 
 @cython.boundscheck(False)
@@ -672,19 +704,20 @@ def pad_2d_inplace(numeric_object_t[:, :] values, uint8_t[:, :] mask, limit=None
 
     lim = validate_limit(N, limit)
 
-    for j in range(K):
-        fill_count = 0
-        val = values[j, 0]
-        for i in range(N):
-            if mask[j, i]:
-                if fill_count >= lim or i == 0:
-                    continue
-                fill_count += 1
-                values[j, i] = val
-                mask[j, i] = False
-            else:
-                fill_count = 0
-                val = values[j, i]
+    with nogil(numeric_object_t is not object):
+        for j in range(K):
+            fill_count = 0
+            val = values[j, 0]
+            for i in range(N):
+                if mask[j, i]:
+                    if fill_count >= lim or i == 0:
+                        continue
+                    fill_count += 1
+                    values[j, i] = val
+                    mask[j, i] = False
+                else:
+                    fill_count = 0
+                    val = values[j, i]
 
 
 @cython.boundscheck(False)
@@ -739,36 +772,37 @@ def backfill(
 
     cur = old[nleft - 1]
 
-    while j >= 0 and new[j] > cur:
-        j -= 1
+    with nogil(numeric_object_t is not object):
+        while j >= 0 and new[j] > cur:
+            j -= 1
 
-    while True:
-        if j < 0:
-            break
+        while True:
+            if j < 0:
+                break
 
-        if i == 0:
-            while j >= 0:
+            if i == 0:
+                while j >= 0:
+                    if new[j] == cur:
+                        indexer[j] = i
+                    elif new[j] < cur and fill_count < lim:
+                        indexer[j] = i
+                        fill_count += 1
+                    j -= 1
+                break
+
+            prev = old[i - 1]
+
+            while j >= 0 and prev < new[j] <= cur:
                 if new[j] == cur:
                     indexer[j] = i
                 elif new[j] < cur and fill_count < lim:
                     indexer[j] = i
                     fill_count += 1
                 j -= 1
-            break
 
-        prev = old[i - 1]
-
-        while j >= 0 and prev < new[j] <= cur:
-            if new[j] == cur:
-                indexer[j] = i
-            elif new[j] < cur and fill_count < lim:
-                indexer[j] = i
-                fill_count += 1
-            j -= 1
-
-        fill_count = 0
-        i -= 1
-        cur = prev
+            fill_count = 0
+            i -= 1
+            cur = prev
 
     return indexer
 
@@ -837,8 +871,6 @@ def is_monotonic(const numeric_object_t[:] arr, bint timelike):
                 is_monotonic_dec = 0
                 break
             if not is_monotonic_inc and not is_monotonic_dec:
-                is_monotonic_inc = 0
-                is_monotonic_dec = 0
                 break
             prev = cur
 
@@ -1016,7 +1048,6 @@ def rank_1d(
     # will flip the ordering to still end up with lowest rank.
     # Symmetric logic applies to `na_option == 'bottom'`
     nans_rank_highest = ascending ^ (na_option == "top")
-    nan_fill_val = get_rank_nan_fill_val(nans_rank_highest, <numeric_object_t>0)
     if nans_rank_highest:
         order = [masked_vals, mask]
     else:
@@ -1025,7 +1056,9 @@ def rank_1d(
     if check_labels:
         order.append(labels)
 
-    np.putmask(masked_vals, mask, nan_fill_val)
+    if check_mask:
+        nan_fill_val = get_rank_nan_fill_val(nans_rank_highest, <numeric_object_t>0)
+        np.putmask(masked_vals, mask, nan_fill_val)
     # putmask doesn't accept a memoryview, so we assign as a separate step
     masked_vals_memview = masked_vals
 
@@ -1058,6 +1091,7 @@ def rank_1d(
 
 @cython.wraparound(False)
 @cython.boundscheck(False)
+@cython.cdivision(True)
 cdef void rank_sorted_1d(
     float64_t[::1] out,
     int64_t[::1] grp_sizes,
@@ -1349,7 +1383,7 @@ ctypedef fused out_t:
 @cython.wraparound(False)
 def diff_2d(
     const diff_t[:, :] arr,
-    ndarray[out_t, ndim=2] out,
+    out_t[:, :] out,
     Py_ssize_t periods,
     int axis,
     bint datetimelike=False,
@@ -1358,6 +1392,15 @@ def diff_2d(
         Py_ssize_t i, j, sx, sy, start, stop
         bint f_contig = arr.is_f_contig()
         diff_t left, right
+        # Raw pointer variables for auto-vectorization of inner loops.
+        # Memoryview indexing generates strided pointer arithmetic that
+        # prevents the C compiler from auto-vectorizing even when the
+        # data is contiguous. Using raw typed pointers gives the compiler
+        # unit-stride access patterns it can vectorize.
+        const diff_t *arr_row
+        const diff_t *arr_prev_row
+        out_t *out_row
+        bint rows_contiguous
 
     # Disable for unsupported dtype combinations,
     #  see https://github.com/cython/cython/issues/2646
@@ -1374,6 +1417,13 @@ def diff_2d(
         # We put this inside an indented else block to avoid cython build
         #  warnings about unreachable code
         sx, sy = (<object>arr).shape
+
+        # Check whether both arrays have unit stride along axis 1 (columns),
+        # i.e. rows are contiguous. When true, inner loops over j can use
+        # raw C pointers enabling SIMD auto-vectorization.
+        rows_contiguous = (arr.strides[1] == <Py_ssize_t>sizeof(diff_t) and
+                           out.strides[1] == <Py_ssize_t>sizeof(out_t))
+
         with nogil:
             if f_contig:
                 if axis == 0:
@@ -1414,33 +1464,64 @@ def diff_2d(
                         start, stop = periods, sx
                     else:
                         start, stop = 0, sx + periods
-                    for i in range(start, stop):
-                        for j in range(sy):
-                            left = arr[i, j]
-                            right = arr[i - periods, j]
-                            if out_t is int64_t and datetimelike:
-                                if left == NPY_NAT or right == NPY_NAT:
-                                    out[i, j] = NPY_NAT
+                    if rows_contiguous:
+                        for i in range(start, stop):
+                            arr_row = &arr[i, 0]
+                            arr_prev_row = &arr[i - periods, 0]
+                            out_row = &out[i, 0]
+                            for j in range(sy):
+                                if out_t is int64_t and datetimelike:
+                                    left = arr_row[j]
+                                    right = arr_prev_row[j]
+                                    if left == NPY_NAT or right == NPY_NAT:
+                                        out_row[j] = NPY_NAT
+                                    else:
+                                        out_row[j] = left - right
+                                else:
+                                    out_row[j] = arr_row[j] - arr_prev_row[j]
+                    else:
+                        for i in range(start, stop):
+                            for j in range(sy):
+                                left = arr[i, j]
+                                right = arr[i - periods, j]
+                                if out_t is int64_t and datetimelike:
+                                    if left == NPY_NAT or right == NPY_NAT:
+                                        out[i, j] = NPY_NAT
+                                    else:
+                                        out[i, j] = left - right
                                 else:
                                     out[i, j] = left - right
-                            else:
-                                out[i, j] = left - right
                 else:
                     if periods >= 0:
                         start, stop = periods, sy
                     else:
                         start, stop = 0, sy + periods
-                    for i in range(sx):
-                        for j in range(start, stop):
-                            left = arr[i, j]
-                            right = arr[i, j - periods]
-                            if out_t is int64_t and datetimelike:
-                                if left == NPY_NAT or right == NPY_NAT:
-                                    out[i, j] = NPY_NAT
+                    if rows_contiguous:
+                        for i in range(sx):
+                            arr_row = &arr[i, 0]
+                            out_row = &out[i, 0]
+                            for j in range(start, stop):
+                                if out_t is int64_t and datetimelike:
+                                    left = arr_row[j]
+                                    right = arr_row[j - periods]
+                                    if left == NPY_NAT or right == NPY_NAT:
+                                        out_row[j] = NPY_NAT
+                                    else:
+                                        out_row[j] = left - right
+                                else:
+                                    out_row[j] = arr_row[j] - arr_row[j - periods]
+                    else:
+                        for i in range(sx):
+                            for j in range(start, stop):
+                                left = arr[i, j]
+                                right = arr[i, j - periods]
+                                if out_t is int64_t and datetimelike:
+                                    if left == NPY_NAT or right == NPY_NAT:
+                                        out[i, j] = NPY_NAT
+                                    else:
+                                        out[i, j] = left - right
                                 else:
                                     out[i, j] = left - right
-                            else:
-                                out[i, j] = left - right
 
 
 # ----------------------------------------------------------------------
