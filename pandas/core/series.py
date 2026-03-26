@@ -7004,6 +7004,19 @@ class Series(base.IndexOpsMixin, NDFrame):  # type: ignore[misc]
         return self._construct_result(res_values, name=res_name, other=other)
 
     def _arith_method(self, other, op) -> Series:
+        if isinstance(other, Series):
+            if isinstance(self.index, MultiIndex) and isinstance(
+                other.index, MultiIndex
+            ):
+                # GH#25891
+                warnings.warn(
+                    "The silent alignment on arithmetic operations between 'Series' "
+                    "with non-aligned MultiIndexes is deprecated and "
+                    "will be removed in a future version.",
+                    Pandas4Warning,
+                    stacklevel=find_stack_level(),
+                )
+
         self, other = self._align_for_op(other)
         return base.IndexOpsMixin._arith_method(self, other, op)
 
