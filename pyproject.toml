@@ -169,7 +169,7 @@ enable = ["cpython-freethreading"]
 
 [tool.cibuildwheel.windows]
 environment = {}
-before-build = "pip install delvewheel"
+before-build = "python -m pip install delvewheel"
 # powershell needs to swap quotes?
 test-command = """
   python -c "import pandas as pd; \
