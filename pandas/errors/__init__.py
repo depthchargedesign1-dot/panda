@@ -1053,13 +1053,34 @@ class NoBufferPresent(Exception):
     """
 
 
-class InvalidComparison(Exception):
+class InvalidComparison(Exception):  # numpydoc ignore=SA01
     """
     Exception is raised by _validate_comparison_value to indicate an invalid comparison.
+
+    This is an internal pandas error raised during comparison validation
+    of datetime-like arrays (datetime, timedelta, and period) when the
+    operand type is incompatible. It is caught internally and converted
+    into an array of ``False`` values rather than being propagated to the user.
 
     Notes
     -----
     This is an internal error.
+
+    Examples
+    --------
+    >>> arr = pd.array(pd.date_range("2020", periods=3))
+    >>> arr._validate_comparison_value(42)
+    Traceback (most recent call last):
+    InvalidComparison: 42
+
+    When encountered through public API, the error is caught and
+    comparison returns ``False`` for each element:
+
+    >>> pd.Series(pd.date_range("2020", periods=3)).eq(42)
+    0    False
+    1    False
+    2    False
+    dtype: bool
     """
 
 
