@@ -18,6 +18,7 @@ from typing import (
     overload,
 )
 import warnings
+import uuid
 
 import numpy as np
 
@@ -245,6 +246,7 @@ def to_pyarrow_type(
         except pa.ArrowNotImplementedError:
             pass
     return None
+
 
 
 @set_module("pandas.arrays")
@@ -1135,6 +1137,12 @@ class ArrowExtensionArray(
         return len(self._pa_array)
 
     def __contains__(self, key) -> bool:
+        if isinstance(key, uuid.UUID): #moved to the top so pandas does not try to interpret the UUID object through dtype logic
+            #GH#63511 uuid.UUID not hashable, convert to bytes for the check
+            key = key.bytes
+            # IMPORTANT: avoid dtype.kind logic for None
+        if key is None:#need this if user passes None to not trigger dtype chcecks that make it crash, if want to check missing must use isna()
+            return False
         # https://github.com/pandas-dev/pandas/pull/51307#issuecomment-1426372604
         if isna(key) and key is not self.dtype.na_value:
             if lib.is_float(key) and is_nan_na():
@@ -1142,11 +1150,9 @@ class ArrowExtensionArray(
             elif self.dtype.kind == "f" and lib.is_float(key):
                 # Check specifically for NaN
                 return pc.any(pc.is_nan(self._pa_array)).as_py()
-
             # e.g. date or timestamp types we do not allow None here to match pd.NA
             return False
             # TODO: maybe complex? object?
-
         return bool(super().__contains__(key))
 
     @property
@@ -2486,7 +2492,7 @@ class ArrowExtensionArray(
 
         elif is_integer(key):
             # fast path
-            key = cast("int", key)
+            key = cast(int, key)
             n = len(self)
             if key < 0:
                 key += n
