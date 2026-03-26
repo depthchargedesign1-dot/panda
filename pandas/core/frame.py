@@ -14056,19 +14056,14 @@ class DataFrame(NDFrame, OpsMixin):
 
             * 0 or 'index': apply function to each column.
             * 1 or 'columns': apply function to each row.
-
         raw : bool, default False
-            Determines if row or column is passed as a Series or ndarray object:
+         Determines if row or column is passed as a Series or ndarray object:
 
-            * ``False`` : passes each row or column as a Series to the
-              function.
-            * ``True`` : the passed function will receive ndarray objects
-              instead.
-              If you are just applying a NumPy reduction function this will
-              achieve much better performance.
+         * ``False`` : passes each row or column as a Series to the function.
+         * ``True`` : the passed function will receive ndarray objects instead. If you are just applying a NumPy reduction function this will achieve much better performance.
 
+            
          .. note::
-
                 When ``raw=True``, the result dtype is inferred from the **first**
                 returned value.
 
