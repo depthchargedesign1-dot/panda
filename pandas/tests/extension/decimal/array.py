@@ -297,9 +297,8 @@ class DecimalArray(OpsMixin, ExtensionScalarOpsMixin, ExtensionArray):
 
         return np.asarray(res, dtype=bool)
 
-    # We override fillna here to simulate a 3rd party EA that has done so. This
-    #  lets us test a 3rd-party EA that has not yet updated to include a "copy"
-    #  keyword in its fillna method.
+    # Simulates a 3rd-party EA that hasn't added the `copy` kwarg yet.
+    # Always copies; never modifies in-place.
     def fillna(self, value=None, limit=None):
         return super().fillna(value=value, limit=limit, copy=True)
 

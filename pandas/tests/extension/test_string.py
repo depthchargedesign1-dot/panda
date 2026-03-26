@@ -170,23 +170,14 @@ class TestStringArray(base.ExtensionTests):
         tm.assert_extension_array_equal(result, data)
 
     def test_fillna_readonly(self, data_missing):
-        data = data_missing.copy()
-        data._readonly = True
-
-        # by default fillna(copy=True), then this works fine
-        result = data.fillna(data_missing[1])
-        assert result[0] == data_missing[1]
-        tm.assert_extension_array_equal(data, data_missing)
-
-        # fillna(copy=False) is generally not honored by Arrow-backed array,
-        # but always returns new data -> same result as above
-        if data.dtype.storage == "pyarrow":
-            result = data.fillna(data_missing[1])
-            assert result[0] == data_missing[1]
+        if data_missing.dtype.storage == "pyarrow":
+            # pyarrow-backed strings are immutable, copy=False is ignored,
+            # always returns a new array without raising.
+            self._respects_fillna_copy_false = False
         else:
-            with pytest.raises(ValueError, match="Cannot modify read-only array"):
-                data.fillna(data_missing[1], copy=False)
-        tm.assert_extension_array_equal(data, data_missing)
+            # python-backed strings respect copy=False and raise on read-only.
+            self._respects_fillna_copy_false = True
+        super().test_fillna_readonly(data_missing)
 
     def _get_expected_exception(
         self, op_name: str, obj, other
