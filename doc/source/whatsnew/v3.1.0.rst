@@ -104,6 +104,7 @@ Deprecations
 - Deprecated the ``float_precision`` argument in :func:`read_csv`, :func:`read_table`, and :func:`read_fwf`. All float precision modes now use the same converter (:issue:`64395`)
 - Deprecated the ``xlrd`` and ``pyxlsb`` engines in :func:`read_excel`. Use ``engine="calamine"`` instead (:issue:`56542`)
 - Deprecated the default value of ``exact`` in :func:`assert_index_equal`; in a future version this will default to ``True`` instead of "equiv" (:issue:`57436`)
+- Deprecated the lossy behavior of :attr:`Series.values`, :attr:`Index.values`, :attr:`PeriodIndex.values`, and :attr:`DatetimeIndex.values` for :class:`DatetimeTZDtype` (drops timezone), :class:`PeriodDtype` (returns object-dtype ndarray), and :class:`IntervalDtype` (returns object-dtype ndarray) dtypes. In a future version, ``.values`` will return the underlying ExtensionArray. Use :meth:`~Series.to_numpy` or :attr:`~Series.array` instead (:issue:`54717`, :issue:`55128`).
 -
 
 .. ---------------------------------------------------------------------------
