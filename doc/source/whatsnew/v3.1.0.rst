@@ -104,7 +104,7 @@ Deprecations
 - Deprecated the ``float_precision`` argument in :func:`read_csv`, :func:`read_table`, and :func:`read_fwf`. All float precision modes now use the same converter (:issue:`64395`)
 - Deprecated the ``xlrd`` and ``pyxlsb`` engines in :func:`read_excel`. Use ``engine="calamine"`` instead (:issue:`56542`)
 - Deprecated the default value of ``exact`` in :func:`assert_index_equal`; in a future version this will default to ``True`` instead of "equiv" (:issue:`57436`)
--
+- Deprecated using ``isinstance(obj, DateOffset)`` and ``issubclass(cls, DateOffset)`` to check for non-``DateOffset`` offset types. Use ``isinstance(obj, pd.offsets.Offset)`` instead (:issue:`48262`)
 
 .. ---------------------------------------------------------------------------
 .. _whatsnew_310.performance:

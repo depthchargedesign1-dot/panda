@@ -3,7 +3,7 @@ import pytest
 from pandas import TimedeltaIndex
 
 from pandas.tseries.offsets import (
-    DateOffset,
+    BaseOffset,
     Day,
     Hour,
     MonthEnd,
@@ -20,7 +20,7 @@ class TestFreq:
         # can set to an offset, converting from string if necessary
         idx._data.freq = freq
         assert idx.freq == freq
-        assert isinstance(idx.freq, DateOffset)
+        assert isinstance(idx.freq, BaseOffset)
 
         # can reset to None
         idx._data.freq = None

@@ -25,7 +25,7 @@ from pandas._libs.tslibs.fields import (
     month_position_check,
 )
 from pandas._libs.tslibs.offsets import (
-    DateOffset,
+    BaseOffset,
     Day,
     to_offset,
 )
@@ -577,7 +577,7 @@ def _maybe_coerce_freq(code) -> str:
     str
     """
     assert code is not None
-    if isinstance(code, DateOffset):
+    if isinstance(code, BaseOffset):
         code = PeriodDtype(to_offset(code.rule_code))._freqstr
     # Strip any leading multiplier digits (e.g. '12h' -> 'h') so that
     # is_subperiod / is_superperiod can compare base frequency codes.  GH#50355
