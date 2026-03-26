@@ -2096,6 +2096,8 @@ def get_join_indexers(
     ):
         _, lidx, ridx = left.join(right, how=how, return_indexers=True, sort=sort)
     elif not sort and how in ("left", "right"):
+        lk: ArrayLike
+        rk: ArrayLike
         if how == "left":
             lk = left._values
             if isinstance(lk, np.ndarray):
