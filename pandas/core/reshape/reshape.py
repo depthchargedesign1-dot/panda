@@ -144,7 +144,6 @@ class _Unstacker:
 
         self.removed_name = self.new_index_names.pop(self.level)
         self.removed_level = self.new_index_levels.pop(self.level)
-        self.removed_level_full = index.levels[self.level]
         self.unique_nan_index: int = -1
         if not self.sort:
             unique_codes: np.ndarray = unique(self.index.codes[self.level])
@@ -156,7 +155,13 @@ class _Unstacker:
                 self.unique_nan_index = np.flatnonzero(nan_mask)[0]
 
             self.removed_level = self.removed_level.take(unique_codes)
-            self.removed_level_full = self.removed_level_full.take(unique_codes)
+            # For sort=False, columns should follow order of appearance,
+            # so metadata should match the reordered observed labels.
+            self.removed_level_full = self.removed_level
+        else:
+            # Preserve original level metadata (including unused entries)
+            # for sort=True behavior.
+            self.removed_level_full = index.levels[self.level]
 
         if _global_config["mode"]["performance_warnings"]:
             # Bug fix GH 20601
