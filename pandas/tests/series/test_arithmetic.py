@@ -895,8 +895,11 @@ class TestTimeSeriesArithmetic:
         ts2 = ts_slice.copy()
         ts2.index = [x.date() for x in ts2.index]
 
-        result = ts + ts2
-        result2 = ts2 + ts
+        # GH#62158 alignment joins date-object Index with DatetimeIndex
+        msg = "Indexing a DatetimeIndex with a sequence of datetime.date"
+        with tm.assert_produces_warning(Pandas4Warning, match=msg):
+            result = ts + ts2
+            result2 = ts2 + ts
         expected = ts + ts[5:]
         expected.index = expected.index._with_freq(None)
         tm.assert_series_equal(result, expected)
