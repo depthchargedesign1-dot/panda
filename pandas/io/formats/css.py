@@ -20,6 +20,42 @@ if TYPE_CHECKING:
     )
 
 
+def _lowercase_outside_quotes(value: str) -> str:
+    """
+    Lowercase CSS value content except for quoted substrings.
+
+    This helper function ensures that CSS identifiers (e.g. keywords,
+    color names) are normalized to lower case while preserving the original
+    case of text inside double-quoted string literals.
+
+    This is required for compatibility with Excel number formats when using
+    ``Styler.to_excel()``, where quoted substrings are case-sensitive.
+
+        '#,,"M"' -> must remain '#,,"M"' (not '#,,"m"')
+
+    Without this handling, lowercasing the full value would corrupt Excel
+    number-format strings and may lead to incorrect formatting or invalid XML.
+
+    Parameters
+    ----------
+    value : str
+        The CSS value to normalize
+
+    Returns
+    -------
+    str
+        The CSS value with lowercase applied only outside quoted substrings
+    """
+    parts = re.split(r'(".*?")', value)
+    new_parts = []
+    for part in parts:
+        if part.startswith('"') and part.endswith('"'):
+            new_parts.append(part)  # preserve case
+        else:
+            new_parts.append(part.lower())
+    return "".join(new_parts)
+
+
 def _side_expander(prop_fmt: str) -> Callable:
     """
     Wrapper to expand shorthand property into top, right, bottom, left properties
@@ -391,7 +427,7 @@ class CSSResolver:
     def atomize(self, declarations: Iterable) -> Generator[tuple[str, str]]:
         for prop, value in declarations:
             prop = prop.lower()
-            value = value.lower()
+            value = _lowercase_outside_quotes(value)
             if prop in self.CSS_EXPANSIONS:
                 expand = self.CSS_EXPANSIONS[prop]
                 yield from expand(self, prop, value)
@@ -414,7 +450,8 @@ class CSSResolver:
             prop, sep, val = decl.partition(":")
             prop = prop.strip().lower()
             # TODO: don't lowercase case sensitive parts of values (strings)
-            val = val.strip().lower()
+            raw_val = val.strip()
+            val = _lowercase_outside_quotes(raw_val)
             if sep:
                 yield prop, val
             else:
