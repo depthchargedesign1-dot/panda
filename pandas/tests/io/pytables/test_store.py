@@ -54,14 +54,21 @@ def test_context(temp_h5_path):
         assert type(tbl["a"]) == DataFrame
 
 
+def test_track_times_default_deprecated(temp_h5_path):
+    # GH#51456 - not passing track_times explicitly warns about default change
+    df = DataFrame({"a": [1]})
+    msg = "The default value of 'track_times' in HDFStore.put"
+    with tm.assert_produces_warning(pd.errors.Pandas4Warning, match=msg):
+        with HDFStore(temp_h5_path, mode="w") as hdf:
+            hdf.put("table", df, format="table", data_columns=True)
+
+
 @pytest.mark.xfail(
     Version(tables.hdf5_version) >= Version("2"),
     reason="track_times=False produces non-deterministic files with HDF5 >= 2",
 )
-def test_no_track_times(temp_h5_path):
-    # GH 32682
-    # enables to set track_times (see `pytables` `create_table` documentation)
-
+def test_track_times_false_deterministic(temp_h5_path):
+    # GH#51456 - passing track_times=False explicitly gives deterministic files
     def checksum(filename, hash_factory=hashlib.md5, chunk_num_blocks=128):
         h = hash_factory()
         with open(filename, "rb") as f:
@@ -69,35 +76,33 @@ def test_no_track_times(temp_h5_path):
                 h.update(chunk)
         return h.digest()
 
-    def create_h5_and_return_checksum(temp_h5_path, track_times):
-        df = DataFrame({"a": [1]})
+    df = DataFrame({"a": [1]})
 
-        with HDFStore(temp_h5_path, mode="w") as hdf:
-            hdf.put(
-                "table",
-                df,
-                format="table",
-                data_columns=True,
-                index=None,
-                track_times=track_times,
-            )
+    with HDFStore(temp_h5_path, mode="w") as hdf:
+        hdf.put(
+            "table",
+            df,
+            format="table",
+            data_columns=True,
+            index=None,
+            track_times=False,
+        )
+    checksum_0 = checksum(temp_h5_path)
 
-        return checksum(temp_h5_path)
-
-    checksum_0_tt_false = create_h5_and_return_checksum(temp_h5_path, track_times=False)
-    checksum_0_tt_true = create_h5_and_return_checksum(temp_h5_path, track_times=True)
-
-    # sleep is necessary to create h5 with different creation time
     time.sleep(1)
 
-    checksum_1_tt_false = create_h5_and_return_checksum(temp_h5_path, track_times=False)
-    checksum_1_tt_true = create_h5_and_return_checksum(temp_h5_path, track_times=True)
+    with HDFStore(temp_h5_path, mode="w") as hdf:
+        hdf.put(
+            "table",
+            df,
+            format="table",
+            data_columns=True,
+            index=None,
+            track_times=False,
+        )
+    checksum_1 = checksum(temp_h5_path)
 
-    # checksums are the same if track_time = False
-    assert checksum_0_tt_false == checksum_1_tt_false
-
-    # checksums are NOT same if track_time = True
-    assert checksum_0_tt_true != checksum_1_tt_true
+    assert checksum_0 == checksum_1
 
 
 def test_iter_empty(temp_hdfstore):
@@ -141,7 +146,7 @@ def test_repr(temp_hdfstore, performance_warning, using_infer_string):
     warning = None if using_infer_string else performance_warning
     msg = "cannot\nmap directly to c-types .* dtype='object'"
     with tm.assert_produces_warning(warning, match=msg):
-        store["df"] = df
+        store.put("df", df, track_times=True)
 
     # make a random group in hdf space
     store._handle.create_group(store._handle.root, "bah")
@@ -190,10 +195,14 @@ def test_contains(temp_hdfstore):
 
     # gh-2694: tables.NaturalNameWarning
     with tm.assert_produces_warning(tables.NaturalNameWarning, check_stacklevel=False):
-        store["node())"] = DataFrame(
-            1.1 * np.arange(120).reshape((30, 4)),
-            columns=Index(list("ABCD")),
-            index=Index([f"i-{i}" for i in range(30)]),
+        store.put(
+            "node())",
+            DataFrame(
+                1.1 * np.arange(120).reshape((30, 4)),
+                columns=Index(list("ABCD")),
+                index=Index([f"i-{i}" for i in range(30)]),
+            ),
+            track_times=True,
         )
     assert "node())" in store
 
