@@ -26,8 +26,10 @@ from pandas.errors import (
     IndexingError,
     InvalidIndexError,
     LossySetitemError,
+    Pandas4Warning,
 )
 from pandas.errors.cow import _chained_assignment_msg
+from pandas.util._exceptions import find_stack_level
 
 from pandas.core.dtypes.cast import (
     can_hold_element,
@@ -2803,6 +2805,22 @@ class _iLocIndexer(_LocationIndexer):
             if not len(self.obj.columns):
                 # no columns and scalar
                 raise ValueError("cannot set a frame with no defined columns")
+
+            if isinstance(self.obj.index, MultiIndex) and not isinstance(
+                indexer, tuple
+            ):
+                # GH#17024 scalar key on MultiIndex is ambiguous and
+                # currently flattens the MultiIndex. Deprecate in favor
+                # of requiring a full-length tuple key.
+                warnings.warn(
+                    "Setting a new row on a DataFrame with a MultiIndex using "
+                    "a scalar key that is not a tuple is deprecated and will "
+                    "raise in a future version. Use a tuple key with the "
+                    "appropriate number of levels instead, or explicitly call "
+                    "df.index = df.index.to_flat_index() before expanding.",
+                    Pandas4Warning,
+                    stacklevel=find_stack_level(),
+                )
 
             has_dtype = hasattr(value, "dtype")
             if isinstance(value, ABCSeries):
