@@ -1738,6 +1738,14 @@ class TestTSPlot:
         with temp_file.open(mode="wb") as path:
             pickle.dump(fig, path)
 
+    def test_dataframe_plot_backwards_datetime_index(self):
+        # GH#64819 - DataFrame with descending datetime index should not raise
+        import numpy as np
+
+        dates = ["2026-03-24", "2026-03-23", "2026-03-22"]
+        data = DataFrame([0.5, 1, 2], index=np.array(dates).astype("datetime64"))
+        _check_plot_works(data.plot)
+
 
 def _check_plot_works(f, freq=None, series=None, *args, **kwargs):
     fig = plt.gcf()
