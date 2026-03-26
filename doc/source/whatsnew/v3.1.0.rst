@@ -255,6 +255,7 @@ Reshaping
 ^^^^^^^^^
 - Bug in :func:`merge` where merging on a :class:`MultiIndex` containing ``NaN`` values mapped ``NaN`` keys to the last level value instead of ``NaN`` (:issue:`64492`)
 - In :func:`pivot_table`, when ``values`` is empty, the aggregation will be computed on a Series of all NA values (:issue:`46475`)
+- Bug in :meth:`concat` where concatenating MultiIndex DataFrames would not match the order of level names (:issue:`10187`, :issue:`28311`, :issue:`40849`)
 -
 
 Sparse
