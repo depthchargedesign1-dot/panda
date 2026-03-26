@@ -131,8 +131,8 @@ def take_2d_axis0_{{name}}_{{dest}}(ndarray[{{c_type_in}}, ndim=2] values,
     cdef:
         Py_ssize_t i, j, k, n, idx
         {{c_type_out}} fv
-        {{if c_type_in == c_type_out != "object"}}
-        const {{c_type_out}} *v
+        {{if c_type_in != "object" and c_type_out != "object"}}
+        const {{c_type_in}} *v
         {{c_type_out}} *o
         {{endif}}
 
@@ -164,6 +164,28 @@ def take_2d_axis0_{{name}}_{{dest}}(ndarray[{{c_type_in}}, ndim=2] values,
                     v = &values[indexer[i], 0]
                     o = &out[i, 0]
                     memcpy(o, v, <size_t>(sizeof({{c_type_out}}) * k))
+        elif (values.strides[1] == <Py_ssize_t>sizeof({{c_type_in}}) and
+                out.strides[1] == <Py_ssize_t>sizeof({{c_type_out}})):
+            # Rows are contiguous but below memcpy threshold: use raw
+            # pointers so the C compiler can auto-vectorize the inner loop.
+            if allow_fill:
+                for i in range(n):
+                    idx = indexer[i]
+                    if idx == -1:
+                        o = &out[i, 0]
+                        for j in range(k):
+                            o[j] = fv
+                    else:
+                        v = &values[idx, 0]
+                        o = &out[i, 0]
+                        for j in range(k):
+                            o[j] = v[j]
+            else:
+                for i in range(n):
+                    v = &values[indexer[i], 0]
+                    o = &out[i, 0]
+                    for j in range(k):
+                        o[j] = v[j]
         else:
             if allow_fill:
                 for i in range(n):
@@ -179,19 +201,42 @@ def take_2d_axis0_{{name}}_{{dest}}(ndarray[{{c_type_in}}, ndim=2] values,
                     for j in range(k):
                         out[i, j] = values[indexer[i], j]
         {{else}}
-        if allow_fill:
-            for i in range(n):
-                idx = indexer[i]
-                if idx == -1:
+        if (values.strides[1] == <Py_ssize_t>sizeof({{c_type_in}}) and
+                out.strides[1] == <Py_ssize_t>sizeof({{c_type_out}})):
+            # Rows are contiguous: use raw pointers so the C compiler
+            # can auto-vectorize the inner loop over columns.
+            if allow_fill:
+                for i in range(n):
+                    idx = indexer[i]
+                    if idx == -1:
+                        o = &out[i, 0]
+                        for j in range(k):
+                            o[j] = fv
+                    else:
+                        v = &values[idx, 0]
+                        o = &out[i, 0]
+                        for j in range(k):
+                            o[j] = v[j]
+            else:
+                for i in range(n):
+                    v = &values[indexer[i], 0]
+                    o = &out[i, 0]
                     for j in range(k):
-                        out[i, j] = fv
-                else:
-                    for j in range(k):
-                        out[i, j] = values[idx, j]
+                        o[j] = v[j]
         else:
-            for i in range(n):
-                for j in range(k):
-                    out[i, j] = values[indexer[i], j]
+            if allow_fill:
+                for i in range(n):
+                    idx = indexer[i]
+                    if idx == -1:
+                        for j in range(k):
+                            out[i, j] = fv
+                    else:
+                        for j in range(k):
+                            out[i, j] = values[idx, j]
+            else:
+                for i in range(n):
+                    for j in range(k):
+                        out[i, j] = values[indexer[i], j]
         {{endif}}
     {{else}}
 
@@ -234,6 +279,9 @@ def take_2d_axis1_{{name}}_{{dest}}(ndarray[{{c_type_in}}, ndim=2] values,
     cdef:
         Py_ssize_t i, j, k, n, idx
         {{c_type_out}} fv
+        {{if c_type_in != "object" and c_type_out != "object"}}
+        {{c_type_out}} *o
+        {{endif}}
 
     n = len(values)
     k = len(indexer)
@@ -245,18 +293,35 @@ def take_2d_axis1_{{name}}_{{dest}}(ndarray[{{c_type_in}}, ndim=2] values,
 
     {{if c_type_in != "object" and c_type_out != "object"}}
     with nogil:
-        if allow_fill:
-            for i in range(n):
-                for j in range(k):
-                    idx = indexer[j]
-                    if idx == -1:
-                        out[i, j] = fv
-                    else:
-                        out[i, j] = values[i, idx]
+        if out.strides[1] == <Py_ssize_t>sizeof({{c_type_out}}):
+            # Output rows are contiguous: use raw pointer for stores.
+            if allow_fill:
+                for i in range(n):
+                    o = &out[i, 0]
+                    for j in range(k):
+                        idx = indexer[j]
+                        if idx == -1:
+                            o[j] = fv
+                        else:
+                            o[j] = values[i, idx]
+            else:
+                for i in range(n):
+                    o = &out[i, 0]
+                    for j in range(k):
+                        o[j] = values[i, indexer[j]]
         else:
-            for i in range(n):
-                for j in range(k):
-                    out[i, j] = values[i, indexer[j]]
+            if allow_fill:
+                for i in range(n):
+                    for j in range(k):
+                        idx = indexer[j]
+                        if idx == -1:
+                            out[i, j] = fv
+                        else:
+                            out[i, j] = values[i, idx]
+            else:
+                for i in range(n):
+                    for j in range(k):
+                        out[i, j] = values[i, indexer[j]]
 
     {{else}}
     if allow_fill:
