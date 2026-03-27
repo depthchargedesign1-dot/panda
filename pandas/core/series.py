@@ -4146,7 +4146,7 @@ class Series(base.IndexOpsMixin, NDFrame):  # type: ignore[misc]
 
     @deprecate_nonkeyword_arguments(
         Pandas4Warning,
-        allowed_args=["self, axis, kind, order"],
+        allowed_args=["self", "axis", "kind", "order"],
         name="argsort",
     )
     def argsort(
