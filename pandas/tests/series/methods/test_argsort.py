@@ -1,3 +1,5 @@
+from importlib.metadata import version
+
 import numpy as np
 import pytest
 
@@ -82,8 +84,8 @@ class TestSeriesArgsort:
         true_indexer = ser.argsort(stable=True)
         false_indexer = ser.argsort(stable=False)
 
-        true_expected = np.argsort(ser.values, stable=True)
-        false_expected = np.argsort(ser.values, stable=False)
+        true_expected = np.argsort(ser.values, kind="stable")  # np.argsort(stable=) kwarg is absent in min supported version 1.26
+        false_expected = np.argsort(ser.values, kind="quicksort")
 
         tm.assert_numpy_array_equal(false_indexer.values, false_expected)
         tm.assert_numpy_array_equal(true_indexer.values, true_expected)
@@ -102,17 +104,27 @@ class TestSeriesArgsort:
             true_indexer = ser.argsort(0, None, None, True)
             false_indexer = ser.argsort(0, None, None, False)
 
+        true_expected = np.argsort(ser.values, kind="stable")  # np.argsort(stable=) kwarg is absent in min supported version 1.26
+        false_expected = np.argsort(ser.values, kind="quicksort")
+
+        tm.assert_numpy_array_equal(false_indexer.values, false_expected)
+        tm.assert_numpy_array_equal(true_indexer.values, true_expected)
+
+    @pytest.mark.skipif(
+        version("numpy") < "2",
+        reason="np.argsort kwarg 'stable' was added in NumPy version 2.0.0",
+    )
+    def test_argsort_numpy_stable(self, argsort_stability_series):
+        ser = argsort_stability_series
+
+        true_indexer = np.argsort(ser, stable=True)
+        false_indexer = np.argsort(ser, stable=False)
+
         true_expected = np.argsort(ser.values, stable=True)
         false_expected = np.argsort(ser.values, stable=False)
 
         tm.assert_numpy_array_equal(false_indexer.values, false_expected)
         tm.assert_numpy_array_equal(true_indexer.values, true_expected)
-
-    def test_argsort_numpy_stable(self, argsort_stability_series):
-        ser = argsort_stability_series
-        result = np.argsort(ser)
-        expected = np.argsort(ser.values)
-        tm.assert_numpy_array_equal(result.values, expected)
 
     @pytest.mark.parametrize(
         "kind, stable",
@@ -135,8 +147,12 @@ class TestSeriesArgsort:
             check_stacklevel=False,
             match="`kind` and `stable` can't be provided at the same time.",
         ):
-            np.argsort(ser, kind=kind, stable=stable)
+            ser.argsort(kind=kind, stable=stable)
 
+    @pytest.mark.skipif(
+        version("numpy") < "2",
+        reason="np.argsort kwarg 'stable' was added in NumPy version 2.0.0",
+    )
     @pytest.mark.parametrize(
         "kind, stable",
         [
