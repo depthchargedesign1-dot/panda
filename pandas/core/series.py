@@ -4215,7 +4215,8 @@ class Series(base.IndexOpsMixin, NDFrame):  # type: ignore[misc]
             if stable is not None:
                 warnings.warn(
                     "`kind` and `stable` can't be provided at the same time. "
-                    "`stable` will be ignored.",
+                    "`stable` will be ignored. "
+                    "This will raise an error in a future version.",
                     Pandas4Warning,
                     stacklevel=find_stack_level(),
                 )
@@ -4223,7 +4224,8 @@ class Series(base.IndexOpsMixin, NDFrame):  # type: ignore[misc]
         if order is not None:
             if order not in (self.name, [self.name]):
                 warnings.warn(
-                    "`order` should match Series.name if specified",
+                    "`order` should match Series.name if specified. "
+                    "This will raise an error in a future version.",
                     Pandas4Warning,
                     stacklevel=find_stack_level(),
                 )
