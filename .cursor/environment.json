@@ -1,0 +1,4 @@
+{
+  "name": "pandas 0.20.x",
+  "install": "bash .cursor/cloud-install.sh"
+}
