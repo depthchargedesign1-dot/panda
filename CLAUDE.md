@@ -112,6 +112,9 @@ The store uses the Shopify Google & YouTube channel namespace `mm-google-shoppin
 | `color` | single_line_text_field | main colour, or `Multicolor` |
 | `mpn` | single_line_text_field | the variant SKU |
 
+## Reproduction "signed" prints
+Never call a printed reproduction "signed", "autographed", "hand-signed", "authentic" or "memorabilia". Use **"Printed Signature"** and **"Reproduction Print"** in the title (see `foxyprinting-rebrand/tools/signed_titles.py`), and add the signed-print disclaimer: *"This is a printed reproduction. The signature is printed as part of the design – it is not hand-signed and is not an original autograph…"*
+
 ## Other house rules
 - Never change the live theme ("NEW WAREHOUSE 2020"). Theme work goes to the unpublished **Foxy Pop** theme (`gid://shopify/OnlineStoreTheme/189320528253`). After `themeFilesUpsert`, re-read the files to confirm they saved.
 - Artwork sizes: `foxyprinting-rebrand/plan/artwork-specs.md`.
