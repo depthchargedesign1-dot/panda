@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "f1": { "type": "field", "settings": { "label": "Name", "kind": "text", "max": 20, "required": true } },
+        "f2": { "type": "field", "settings": { "label": "Message", "kind": "textarea", "max": 160, "required": false } },
+        "t1": { "type": "tab", "settings": { "heading": "Delivery & returns", "content": "<p>Made to order in the UK. Most orders dispatch within 1–2 working days. Personalised items can't be returned unless faulty — if something's not right, we'll reprint it.</p>" } },
+        "t2": { "type": "tab", "settings": { "heading": "Personalisation tips", "content": "<p>Double-check spelling — we print exactly what you type. Photos look best at 1500px or larger. Emojis may not print on every product.</p>" } }
+      },
+      "block_order": ["f1", "f2", "t1", "t2"],
+      "settings": { "default_mockup": "flat", "personaliser_heading": "Make it yours" }
+    },
+    "related": { "type": "featured-collection", "settings": { "heading": "Pairs perfectly with", "limit": 4, "tinted": true } }
+  },
+  "order": ["main", "related"]
+}

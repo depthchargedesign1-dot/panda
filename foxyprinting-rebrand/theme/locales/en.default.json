@@ -1,0 +1,106 @@
+{
+  "accessibility": { "skip_to_content": "Skip to content" },
+  "general": {
+    "404_title": "Oops — this page has gone walkies",
+    "404_text": "We couldn't find that page, but we've got thousands of personalised gifts waiting for you.",
+    "announcements": "Announcements",
+    "basket": "Basket",
+    "close": "Close",
+    "days": "Days",
+    "hours": "Hours",
+    "mins": "Mins",
+    "email": "Email address",
+    "example_product": "Example product",
+    "help": "Help",
+    "home": "Home",
+    "main_navigation": "Main navigation",
+    "menu": "Menu",
+    "newsletter_thanks": "Thanks for signing up! Check your inbox for your code.",
+    "next": "Next page",
+    "previous": "Previous page",
+    "pagination": "Pagination",
+    "popular": "Popular",
+    "search": "Search",
+    "search_placeholder": "What would you like to personalise?",
+    "search_results": "{{ count }} results for “{{ terms }}”",
+    "shop_all": "Shop all {{ title }}",
+    "sign_in": "Sign in",
+    "view_all": "View all"
+  },
+  "cart": {
+    "title": "Your basket",
+    "checkout": "Checkout securely",
+    "continue": "Continue shopping",
+    "empty": "Your basket is empty",
+    "note": "Order notes",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "taxes_and_shipping": "VAT included. Delivery calculated at checkout.",
+    "update": "Update basket"
+  },
+  "collections": {
+    "apply": "Apply",
+    "clear_all": "Clear all",
+    "empty": "No products match those filters",
+    "filters": "Filters",
+    "product_count": {
+      "one": "{{ count }} product",
+      "other": "{{ count }} products"
+    },
+    "sort_by": "Sort by"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to basket",
+      "decrease": "Decrease quantity",
+      "increase": "Increase quantity",
+      "description": "Description",
+      "from": "From",
+      "on_sale": "Sale",
+      "personalise_now": "Personalise now",
+      "quantity": "Quantity",
+      "reviews": "reviews",
+      "sold_out": "Sold out",
+      "tax_included": "Includes VAT. Delivery calculated at checkout.",
+      "trending": "Trending",
+      "unavailable": "Unavailable"
+    },
+    "personaliser": {
+      "confirm": "I've checked my spelling and photo — print it exactly as previewed.",
+      "font": "Font",
+      "front": "Front",
+      "inside": "Inside",
+      "live": "Live preview",
+      "live_preview": "Your design",
+      "placeholder": "Enter {{ label }}",
+      "preview_alt": "Live preview of your personalised {{ title }}",
+      "text_colour": "Text colour",
+      "upload": "Upload a photo",
+      "upload_hint": "JPG or PNG, ideally 1500px+",
+      "view": "Preview view"
+    }
+  },
+  "gift_cards": {
+    "title": "Your gift card",
+    "code": "Code",
+    "expired": "Expired on {{ date }}"
+  },
+  "customer": {
+    "account": { "title": "My account" },
+    "activate": "Activate account",
+    "add_address": "Add address",
+    "addresses": "Addresses",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "login": { "title": "Sign in", "submit": "Sign in" },
+    "logout": "Sign out",
+    "no_orders": "You haven't placed any orders yet.",
+    "orders": "Order history",
+    "password": "Password",
+    "password_confirm": "Confirm password",
+    "recover": "Forgotten your password?",
+    "recover_submit": "Send reset link",
+    "register": { "title": "Create an account", "submit": "Create account" },
+    "reset": "Reset password"
+  }
+}

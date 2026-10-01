@@ -1,0 +1,258 @@
+{%- comment -%}
+  Product page with the Foxy live personaliser.
+
+  Personalisation fields come from (first match wins):
+    1. product.metafields.foxy.personalise_fields  (list of labels, e.g. ["Name", "Message", "Photo upload"])
+    2. "Text field" / "Photo upload" blocks added to this section in the theme editor
+  The preview style comes from product.metafields.foxy.mockup (card | drinkware | apparel | bauble | box | flat)
+  or the section's default. Optional product.metafields.foxy.preview_zone (JSON) places text on the real product photo:
+    {"x":0.2,"y":0.6,"w":0.6,"h":0.15,"color":"#ffffff","font":"Baloo 2"}  (values are fractions of the image)
+{%- endcomment -%}
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign mockup = product.metafields.foxy.mockup.value | default: section.settings.default_mockup
+  assign meta_fields = product.metafields.foxy.personalise_fields.value
+  assign field_blocks = section.blocks | where: 'type', 'field'
+  assign has_fields = false
+  if meta_fields != blank or field_blocks.size > 0
+    assign has_fields = true
+  endif
+  assign fonts = settings.personaliser_fonts | split: ','
+  assign colours = settings.personaliser_colours | split: ','
+  assign accent_class = 'accent-pink'
+-%}
+
+<div class="page-width">
+  <nav class="breadcrumbs" aria-label="Breadcrumb" style="margin-top:18px">
+    <a href="{{ routes.root_url }}">{{ 'general.home' | t }}</a> /
+    {% if collection %}<a href="{{ collection.url }}">{{ collection.title }}</a> / {% endif %}
+    <span aria-current="page">{{ product.title }}</span>
+  </nav>
+
+  <div class="product" data-product-section>
+    {%- comment -%} Gallery / live preview {%- endcomment -%}
+    <div class="product__gallery">
+      <div class="product__stage">
+        {%- if has_fields -%}
+          <span class="product__stage-badge badge badge--teal">👀 {{ 'products.personaliser.live_preview' | t }}</span>
+          <canvas width="1000" height="1000" data-personaliser-canvas aria-label="{{ 'products.personaliser.preview_alt' | t: title: product.title | escape }}" role="img"></canvas>
+          {%- if mockup == 'card' -%}
+            <div class="product__view-toggle" role="group" aria-label="{{ 'products.personaliser.view' | t }}">
+              <button type="button" aria-pressed="true" data-view="front">{{ 'products.personaliser.front' | t }}</button>
+              <button type="button" aria-pressed="false" data-view="inside">{{ 'products.personaliser.inside' | t }}</button>
+            </div>
+          {%- endif -%}
+          {%- assign first_image = product.featured_media -%}
+          {%- if first_image -%}
+            <img data-photo-view hidden width="1200" height="1200" src="{{ first_image | image_url: width: 1200 }}" alt="{{ first_image.alt | escape }}">
+          {%- endif -%}
+        {%- elsif product.featured_media -%}
+          <img data-photo-view width="1200" height="1200" src="{{ product.featured_media | image_url: width: 1200 }}" alt="{{ product.featured_media.alt | escape }}" fetchpriority="high">
+        {%- else -%}
+          {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+
+      {%- if product.media.size > 0 -%}
+        <ul class="product__thumbs" data-thumbs>
+          {%- if has_fields -%}
+            <li><button type="button" aria-current="true" data-thumb-live aria-label="{{ 'products.personaliser.live_preview' | t }}"><span style="display:grid;place-items:center;height:100%;font-size:1.6rem">✏️</span></button></li>
+          {%- endif -%}
+          {%- for media in product.media -%}
+            {%- if media.media_type == 'image' -%}
+              <li><button type="button" data-thumb="{{ media | image_url: width: 1200 }}" {% if has_fields == false and forloop.first %}aria-current="true"{% endif %} aria-label="{{ media.alt | default: product.title | escape }}">
+                {{ media | image_url: width: 160 | image_tag: loading: 'lazy', alt: '' }}
+              </button></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} Info + form {%- endcomment -%}
+    <div class="product__info">
+      <h1 class="product__title">{{ product.title }}</h1>
+      {%- if section.settings.show_rating -%}
+        {%- assign rating = product.metafields.reviews.rating.value -%}
+        {%- if rating != blank -%}
+          <div class="product__rating"><span aria-hidden="true">★★★★★</span><span>{{ rating.rating }} / {{ rating.scale_max }} · {{ product.metafields.reviews.rating_count }} {{ 'products.product.reviews' | t }}</span></div>
+        {%- endif -%}
+      {%- endif -%}
+
+      <div class="product__price" data-price-wrap>
+        {%- if current_variant.compare_at_price > current_variant.price -%}<s data-compare>{{ current_variant.compare_at_price | money }}</s>{%- endif -%}
+        <span data-price>{{ current_variant.price | money }}</span>
+      </div>
+      <div class="product__tax">{{ 'products.product.tax_included' | t }}</div>
+
+      <form method="post" action="{{ routes.cart_add_url }}" enctype="multipart/form-data" accept-charset="UTF-8" data-product-form novalidate>
+        <input type="hidden" name="form_type" value="product">
+        <input type="hidden" name="utf8" value="✓">
+        <input type="hidden" name="id" value="{{ current_variant.id }}" data-variant-id>
+
+        {%- unless product.has_only_default_variant -%}
+          {%- for option in product.options_with_values -%}
+            {%- assign option_index = forloop.index0 -%}
+            <fieldset class="option-group" style="margin-bottom:16px">
+              <legend>{{ option.name }}</legend>
+              <div class="option-pills">
+                {%- for value in option.values -%}
+                  {%- assign input_id = 'Option-' | append: section.id | append: '-' | append: option_index | append: '-' | append: forloop.index0 -%}
+                  <input type="radio" id="{{ input_id }}" name="option-{{ option_index }}" value="{{ value | escape }}" data-option-index="{{ option_index }}" {% if option.selected_value == value %}checked{% endif %}>
+                  <label for="{{ input_id }}">{{ value }}</label>
+                {%- endfor -%}
+              </div>
+            </fieldset>
+          {%- endfor -%}
+        {%- endunless -%}
+
+        {%- if has_fields -%}
+          <div class="personaliser {{ accent_class }}" data-personaliser>
+            <div class="personaliser__head">
+              <h2>✏️ {{ section.settings.personaliser_heading }}</h2>
+              <span class="personaliser__live">{{ 'products.personaliser.live' | t }}</span>
+            </div>
+
+            {%- if meta_fields != blank -%}
+              {%- for label in meta_fields -%}
+                {%- liquid
+                  assign l = label | downcase
+                  assign kind = 'text'
+                  if l contains 'photo' or l contains 'upload' or l contains 'logo' or l contains 'artwork'
+                    assign kind = 'image'
+                  elsif l contains 'message' or l contains 'list' or l contains 'reasons' or l contains 'achievements'
+                    assign kind = 'textarea'
+                  endif
+                  assign max = 24
+                  if kind == 'textarea'
+                    assign max = 160
+                  endif
+                -%}
+                {% render 'personaliser-field', label: label, kind: kind, max: max, index: forloop.index0, required: forloop.first %}
+              {%- endfor -%}
+            {%- else -%}
+              {%- for block in field_blocks -%}
+                {% render 'personaliser-field', label: block.settings.label, kind: block.settings.kind, max: block.settings.max, placeholder: block.settings.placeholder, index: forloop.index0, required: block.settings.required, block: block %}
+              {%- endfor -%}
+            {%- endif -%}
+
+            <div class="field">
+              <span class="field__label">{{ 'products.personaliser.font' | t }}</span>
+              <div class="font-choices" data-font-choices>
+                {%- for f in fonts -%}
+                  {%- assign font_name = f | strip -%}
+                  <button type="button" data-font="{{ font_name }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" style="font-family:'{{ font_name }}'">{{ font_name }}</button>
+                {%- endfor -%}
+              </div>
+              <input type="hidden" name="properties[Font]" value="{{ fonts.first | strip }}" data-font-input>
+            </div>
+            <div class="field">
+              <span class="field__label">{{ 'products.personaliser.text_colour' | t }}</span>
+              <div class="colour-choices" data-colour-choices>
+                {%- for c in colours -%}
+                  {%- assign colour_hex = c | strip -%}
+                  <button type="button" data-colour="{{ colour_hex }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" style="background:{{ colour_hex }}" aria-label="{{ colour_hex }}"></button>
+                {%- endfor -%}
+              </div>
+              <input type="hidden" name="properties[Text colour]" value="{{ colours.first | strip }}" data-colour-input>
+            </div>
+
+            {%- if settings.personaliser_require_confirm -%}
+              <label class="confirm"><input type="checkbox" data-confirm required> <span>{{ 'products.personaliser.confirm' | t }}</span></label>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
+        <div class="buy-row" style="margin-top:18px">
+          <div class="qty">
+            <button type="button" data-qty="-1" aria-label="{{ 'products.product.decrease' | t }}">−</button>
+            <input type="number" name="quantity" value="1" min="1" aria-label="{{ 'products.product.quantity' | t }}">
+            <button type="button" data-qty="1" aria-label="{{ 'products.product.increase' | t }}">+</button>
+          </div>
+          <button type="submit" class="btn btn--pink" data-add-button {% unless current_variant.available %}disabled{% endunless %}>
+            {%- if current_variant.available -%}{{ 'products.product.add_to_cart' | t }}{%- else -%}{{ 'products.product.sold_out' | t }}{%- endif -%}
+          </button>
+        </div>
+      </form>
+
+      {%- if section.settings.delivery_text != blank -%}
+        <div class="delivery-note"><span style="font-size:1.6rem" aria-hidden="true">🚚</span><span>{{ section.settings.delivery_text }}</span></div>
+      {%- endif -%}
+
+      <div class="accordion">
+        <details open><summary>{{ 'products.product.description' | t }}</summary><div class="rte">{{ product.description }}</div></details>
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'tab' -%}
+            <details {{ block.shopify_attributes }}><summary>{{ block.settings.heading }}</summary><div class="rte">{{ block.settings.content }}{{ block.settings.page.content }}</div></details>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="application/json" data-product-json>{{ product | json }}</script>
+{%- if has_fields -%}
+  {%- liquid
+    assign base_image = ''
+    if product.featured_media
+      assign base_image = product.featured_media | image_url: width: 1200
+    endif
+  -%}
+  <script type="application/json" data-personaliser-config>
+    {
+      "mockup": {{ mockup | json }},
+      "title": {{ product.title | json }},
+      "productType": {{ product.type | json }},
+      "baseImage": {{ base_image | json }},
+      "useBaseImage": {{ section.settings.use_product_image | json }},
+      "zone": {% if product.metafields.foxy.preview_zone != blank %}{{ product.metafields.foxy.preview_zone.value | json }}{% else %}null{% endif %},
+      "fonts": {{ fonts | json }},
+      "colours": {{ colours | json }}
+    }
+  </script>
+  <script src="{{ 'personaliser.js' | asset_url }}" defer></script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product page",
+  "settings": [
+    { "type": "select", "id": "default_mockup", "label": "Default live-preview style", "default": "flat", "info": "Used when the product has no foxy.mockup metafield.", "options": [
+      { "value": "card", "label": "Greeting card (front + inside)" },
+      { "value": "drinkware", "label": "Mug / tumbler / glass" },
+      { "value": "apparel", "label": "Clothing" },
+      { "value": "bauble", "label": "Bauble / decoration" },
+      { "value": "box", "label": "Box / packaging" },
+      { "value": "flat", "label": "Plaque / block / flat item" }
+    ] },
+    { "type": "checkbox", "id": "use_product_image", "label": "Use the product photo as the design on the mockup", "default": true, "info": "e.g. your card artwork appears on the card front with the customer's name on top." },
+    { "type": "text", "id": "personaliser_heading", "label": "Personaliser heading", "default": "Make it yours" },
+    { "type": "checkbox", "id": "show_rating", "label": "Show product rating", "default": true },
+    { "type": "richtext", "id": "delivery_text", "label": "Delivery note", "default": "<p><strong>Printed in the UK</strong> and dispatched in 1–2 working days. Free delivery over £30.</p>" }
+  ],
+  "blocks": [
+    {
+      "type": "field",
+      "name": "Personalisation field",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "Name" },
+        { "type": "select", "id": "kind", "label": "Type", "default": "text", "options": [
+          { "value": "text", "label": "Single line" }, { "value": "textarea", "label": "Message (multi-line)" }, { "value": "image", "label": "Photo upload" } ] },
+        { "type": "text", "id": "placeholder", "label": "Placeholder" },
+        { "type": "range", "id": "max", "label": "Max characters", "min": 5, "max": 300, "step": 5, "default": 25 },
+        { "type": "checkbox", "id": "required", "label": "Required", "default": true }
+      ]
+    },
+    {
+      "type": "tab",
+      "name": "Info tab",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Delivery & returns" },
+        { "type": "richtext", "id": "content", "label": "Content" },
+        { "type": "page", "id": "page", "label": "Or show a page" }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,212 @@
+/* Foxy Pop theme — core interactions (no dependencies). */
+(function () {
+  'use strict';
+
+  /* ---------- Announcement rotator ---------- */
+  document.querySelectorAll('[data-rotator]').forEach((el) => {
+    const items = el.children;
+    if (items.length < 2) return;
+    let i = 0;
+    const ms = (parseInt(el.dataset.interval, 10) || 5) * 1000;
+    setInterval(() => {
+      items[i].classList.remove('is-active');
+      i = (i + 1) % items.length;
+      items[i].classList.add('is-active');
+    }, ms);
+  });
+
+  /* ---------- Mega menu ---------- */
+  const nav = document.querySelector('[data-mega-nav]');
+  if (nav) {
+    const items = Array.from(nav.querySelectorAll('[data-mega-item]'));
+    const canHover = window.matchMedia('(hover: hover)').matches;
+    let closeTimer = 0;
+    let openTimer = 0;
+
+    const open = (item) => {
+      items.forEach((other) => { if (other !== item) close(other); });
+      item.classList.add('is-open');
+      const trigger = item.querySelector('[data-mega-trigger]');
+      if (trigger) trigger.setAttribute('aria-expanded', 'true');
+    };
+    const close = (item) => {
+      item.classList.remove('is-open');
+      const trigger = item.querySelector('[data-mega-trigger]');
+      if (trigger) trigger.setAttribute('aria-expanded', 'false');
+    };
+    const closeAll = () => items.forEach(close);
+
+    items.forEach((item) => {
+      const trigger = item.querySelector('[data-mega-trigger]');
+      if (!trigger) return;
+      trigger.addEventListener('click', () => (item.classList.contains('is-open') ? close(item) : open(item)));
+      if (canHover) {
+        // Small hover-intent delay so sweeping the mouse across the bar doesn't flash every panel.
+        item.addEventListener('mouseenter', () => {
+          clearTimeout(closeTimer);
+          clearTimeout(openTimer);
+          const anyOpen = items.some((x) => x.classList.contains('is-open'));
+          openTimer = setTimeout(() => open(item), anyOpen ? 0 : 140);
+        });
+        item.addEventListener('mouseleave', () => {
+          clearTimeout(openTimer);
+          closeTimer = setTimeout(() => close(item), 220);
+        });
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const openItem = items.find((x) => x.classList.contains('is-open'));
+        if (openItem) { close(openItem); const t = openItem.querySelector('[data-mega-trigger]'); if (t) t.focus(); }
+      }
+    });
+    document.addEventListener('click', (e) => { if (!nav.contains(e.target)) closeAll(); });
+  }
+
+  /* ---------- Mobile drawer ---------- */
+  const drawer = document.querySelector('[data-drawer]');
+  if (drawer) {
+    const openers = document.querySelectorAll('[data-drawer-open]');
+    const setOpen = (on) => {
+      drawer.classList.toggle('is-open', on);
+      drawer.setAttribute('aria-hidden', String(!on));
+      openers.forEach((b) => b.setAttribute('aria-expanded', String(on)));
+      document.body.style.overflow = on ? 'hidden' : '';
+      if (on) { const c = drawer.querySelector('.drawer__close'); if (c) c.focus(); }
+    };
+    openers.forEach((b) => b.addEventListener('click', () => setOpen(true)));
+    drawer.querySelectorAll('[data-drawer-close]').forEach((b) => b.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && drawer.classList.contains('is-open')) setOpen(false); });
+  }
+
+  /* ---------- Countdown ---------- */
+  document.querySelectorAll('[data-countdown]').forEach((el) => {
+    const target = new Date(el.dataset.countdown.replace(' ', 'T')).getTime();
+    if (isNaN(target)) return;
+    const d = el.querySelector('[data-days]');
+    const h = el.querySelector('[data-hours]');
+    const m = el.querySelector('[data-mins]');
+    const tick = () => {
+      const diff = Math.max(0, target - Date.now());
+      d.textContent = Math.floor(diff / 864e5);
+      h.textContent = String(Math.floor((diff % 864e5) / 36e5)).padStart(2, '0');
+      m.textContent = String(Math.floor((diff % 36e5) / 6e4)).padStart(2, '0');
+    };
+    tick();
+    setInterval(tick, 30000);
+  });
+
+  /* ---------- Money ---------- */
+  function formatMoney(cents) {
+    const fmt = (window.FoxyTheme && window.FoxyTheme.moneyFormat) || '£{{amount}}';
+    const value = (cents / 100).toFixed(2);
+    return fmt.replace(/\{\{\s*(\w+)\s*\}\}/, (_, key) => {
+      if (key === 'amount_no_decimals') return Math.round(cents / 100).toString();
+      if (key === 'amount_with_comma_separator') return value.replace('.', ',');
+      return value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    });
+  }
+
+  /* ---------- Product form ---------- */
+  const section = document.querySelector('[data-product-section]');
+  const productJsonEl = document.querySelector('[data-product-json]');
+  if (section && productJsonEl) {
+    const product = JSON.parse(productJsonEl.textContent);
+    const form = section.querySelector('[data-product-form]');
+    const idInput = form.querySelector('[data-variant-id]');
+    const addBtn = form.querySelector('[data-add-button]');
+    const priceEl = section.querySelector('[data-price]');
+    const strings = (window.FoxyTheme && window.FoxyTheme.strings) || {};
+    const confirm = form.querySelector('[data-confirm]');
+
+    const selectedOptions = () => {
+      const opts = [];
+      form.querySelectorAll('[data-option-index]:checked').forEach((input) => { opts[+input.dataset.optionIndex] = input.value; });
+      return opts;
+    };
+
+    const update = () => {
+      const opts = selectedOptions();
+      const variant = product.variants.find((v) => v.options.every((o, i) => opts[i] === undefined || opts[i] === o));
+      if (variant) {
+        idInput.value = variant.id;
+        if (priceEl) priceEl.textContent = formatMoney(variant.price);
+        addBtn.disabled = !variant.available || (confirm && !confirm.checked);
+        addBtn.textContent = variant.available ? strings.addToCart : strings.soldOut;
+        const url = new URL(window.location.href);
+        url.searchParams.set('variant', variant.id);
+        window.history.replaceState({}, '', url);
+      } else {
+        addBtn.disabled = true;
+        addBtn.textContent = strings.unavailable;
+      }
+      document.dispatchEvent(new CustomEvent('foxy:variant-change', { detail: { variant, options: opts } }));
+    };
+    form.addEventListener('change', (e) => { if (e.target.matches('[data-option-index]')) update(); });
+
+    if (confirm) {
+      addBtn.disabled = true;
+      confirm.addEventListener('change', () => update());
+    }
+
+    form.querySelectorAll('[data-qty]').forEach((btn) => btn.addEventListener('click', () => {
+      const input = form.querySelector('input[name="quantity"]');
+      input.value = Math.max(1, (parseInt(input.value, 10) || 1) + parseInt(btn.dataset.qty, 10));
+    }));
+
+    form.addEventListener('submit', (e) => {
+      const missing = Array.from(form.querySelectorAll('[data-required]')).filter((f) => (f.type === 'file' ? !f.files.length : !f.value.trim()));
+      if (missing.length) {
+        e.preventDefault();
+        missing[0].focus();
+        missing.forEach((f) => { f.style.borderColor = 'var(--fx-sale)'; });
+        return;
+      }
+      addBtn.disabled = true;
+      addBtn.textContent = '…';
+    });
+
+    // Thumbnails switch between the live preview and product photos.
+    const canvas = section.querySelector('[data-personaliser-canvas]');
+    const photoView = section.querySelector('[data-photo-view]');
+    section.querySelectorAll('[data-thumbs] button').forEach((btn) => btn.addEventListener('click', () => {
+      section.querySelectorAll('[data-thumbs] button').forEach((b) => b.setAttribute('aria-current', String(b === btn)));
+      const toggle = section.querySelector('.product__view-toggle');
+      if (btn.hasAttribute('data-thumb-live')) {
+        if (canvas) canvas.hidden = false;
+        if (toggle) toggle.hidden = false;
+        if (photoView && canvas) photoView.hidden = true;
+      } else if (photoView) {
+        photoView.src = btn.dataset.thumb;
+        photoView.hidden = false;
+        if (canvas) canvas.hidden = true;
+        if (toggle) toggle.hidden = true;
+      }
+    }));
+
+    update();
+  }
+
+  /* ---------- Collection: filters & sorting ---------- */
+  const facetToggle = document.querySelector('[data-facets-toggle]');
+  if (facetToggle) {
+    facetToggle.addEventListener('click', () => {
+      const facets = document.querySelector('[data-facets]');
+      const on = !facets.classList.contains('is-open');
+      facets.classList.toggle('is-open', on);
+      facetToggle.setAttribute('aria-expanded', String(on));
+    });
+  }
+  document.querySelectorAll('[data-facets-form]').forEach((form) => {
+    form.addEventListener('change', () => form.submit());
+  });
+  const sort = document.querySelector('[data-sort]');
+  if (sort) {
+    sort.addEventListener('change', () => {
+      const url = new URL(window.location.href);
+      url.searchParams.set('sort_by', sort.value);
+      url.searchParams.delete('page');
+      window.location.href = url.toString();
+    });
+  }
+})();

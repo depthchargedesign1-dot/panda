@@ -1,0 +1,16 @@
+{
+  "current": {
+    "color_primary": "#FF6A13",
+    "color_pink": "#FF2D87",
+    "color_purple": "#7A2BF5",
+    "color_teal": "#00B8A9",
+    "color_yellow": "#FFC83D",
+    "color_ink": "#1D1240",
+    "color_background": "#FFFFFF",
+    "color_tint": "#FFF4EA",
+    "color_sale": "#E8133A"
+  },
+  "presets": {
+    "Foxy Pop": {}
+  }
+}

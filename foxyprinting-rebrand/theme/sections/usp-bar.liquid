@@ -1,0 +1,29 @@
+<div class="section section--tight">
+  <div class="page-width usp-bar">
+    {%- for block in section.blocks -%}
+      <div class="usp {% render 'accent', index: forloop.index0 %}" {{ block.shopify_attributes }}>
+        <span class="usp__icon" aria-hidden="true">{{ block.settings.emoji }}</span>
+        <div><div class="usp__title">{{ block.settings.title }}</div><div class="usp__text">{{ block.settings.text }}</div></div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "USP bar",
+  "max_blocks": 4,
+  "blocks": [
+    { "type": "usp", "name": "USP", "settings": [
+      { "type": "text", "id": "emoji", "label": "Emoji", "default": "🚚" },
+      { "type": "text", "id": "title", "label": "Title", "default": "Fast UK dispatch" },
+      { "type": "text", "id": "text", "label": "Text", "default": "Most orders out in 1–2 days" } ] }
+  ],
+  "presets": [{ "name": "USP bar", "blocks": [
+    { "type": "usp", "settings": { "emoji": "🚚", "title": "Fast UK dispatch", "text": "Most orders out in 1–2 working days" } },
+    { "type": "usp", "settings": { "emoji": "👀", "title": "Live preview", "text": "See your design before you buy" } },
+    { "type": "usp", "settings": { "emoji": "🖨️", "title": "Printed in the UK", "text": "In our own workshop, on our own kit" } },
+    { "type": "usp", "settings": { "emoji": "💯", "title": "Happiness promise", "text": "Not right? We'll reprint it" } }
+  ] }]
+}
+{% endschema %}

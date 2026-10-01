@@ -1,0 +1,627 @@
+[
+ {
+  "title": "Personalised Printed Golf Balls",
+  "handle": "personalised-printed-golf-balls",
+  "descriptionHtml": "<p><strong>Personalised Printed Golf Balls</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Printed golf balls, markers and dart flights - perfect for Father's Day and club prizes.</p><p>Personalise it with: photo/logo upload, name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Golf & Darts Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-golf-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "3 balls"
+     },
+     {
+      "name": "6 balls"
+     },
+     {
+      "name": "12 balls"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "3 balls"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UV-PPGB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "6 balls"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-UV-PPGB-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "12 balls"
+     }
+    ],
+    "price": "39.99",
+    "sku": "FOXY-UV-PPGB-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo/logo upload\", \"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Golf Ball Marker & Divot Tool",
+  "handle": "personalised-golf-ball-marker-divot-tool",
+  "descriptionHtml": "<p><strong>Personalised Golf Ball Marker & Divot Tool</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Printed golf balls, markers and dart flights - perfect for Father's Day and club prizes.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Golf & Darts Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-golf-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-UV-PGBMDT-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Dart Flights",
+  "handle": "personalised-dart-flights",
+  "descriptionHtml": "<p><strong>Personalised Dart Flights</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Printed golf balls, markers and dart flights - perfect for Father's Day and club prizes.</p><p>Personalise it with: name, photo/logo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Golf & Darts Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-golf-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "1 set (3 flights)"
+     },
+     {
+      "name": "3 sets"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "1 set (3 flights)"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-UV-PDF-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "3 sets"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-UV-PDF-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Photo/logo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Golf Gift Set - Printed Balls in Personalised Box",
+  "handle": "golf-gift-set-printed-balls-in-personalised-box",
+  "descriptionHtml": "<p><strong>Golf Gift Set - Printed Balls in Personalised Box</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Printed golf balls, markers and dart flights - perfect for Father's Day and club prizes.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Golf & Darts Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-golf-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-UV-GGSPBIPB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Photo Phone Case",
+  "handle": "personalised-photo-phone-case",
+  "descriptionHtml": "<p><strong>Personalised Photo Phone Case</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Phone cases, chargers, power banks and desk accessories.</p><p>Personalise it with: photo upload, name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Phone Cases & Tech",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-tech-accessories",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Model",
+    "values": [
+     {
+      "name": "iPhone (choose model at checkout)"
+     },
+     {
+      "name": "Samsung Galaxy"
+     },
+     {
+      "name": "Google Pixel"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Model",
+      "name": "iPhone (choose model at checkout)"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UV-PPPC-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Model",
+      "name": "Samsung Galaxy"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UV-PPPC-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Model",
+      "name": "Google Pixel"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UV-PPPC-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Wireless Charging Pad",
+  "handle": "personalised-wireless-charging-pad",
+  "descriptionHtml": "<p><strong>Personalised Wireless Charging Pad</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Phone cases, chargers, power banks and desk accessories.</p><p>Personalise it with: photo upload, name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Phone Cases & Tech",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-tech-accessories",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "21.99",
+    "sku": "FOXY-UV-PWCP-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Power Bank",
+  "handle": "personalised-power-bank",
+  "descriptionHtml": "<p><strong>Personalised Power Bank</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Phone cases, chargers, power banks and desk accessories.</p><p>Personalise it with: photo/logo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Phone Cases & Tech",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-tech-accessories",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UV-PPB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo/logo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Compact Mirror",
+  "handle": "personalised-compact-mirror",
+  "descriptionHtml": "<p><strong>Personalised Compact Mirror</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Phone cases, chargers, power banks and desk accessories.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Phone Cases & Tech",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-tech-accessories",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-2",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-UV-PCM-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Custom Printed Building Bricks",
+  "handle": "custom-printed-building-bricks",
+  "descriptionHtml": "<p><strong>Custom Printed Building Bricks</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Phone cases, chargers, power banks and desk accessories.</p><p>Personalise it with: photo/name upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Phone Cases & Tech",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-tech-accessories",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Single 2x4 brick"
+     },
+     {
+      "name": "Set of 6"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Single 2x4 brick"
+     }
+    ],
+    "price": "3.99",
+    "sku": "FOXY-UV-CPBB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Set of 6"
+     }
+    ],
+    "price": "17.99",
+    "sku": "FOXY-UV-CPBB-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo/name upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised A5 Notebook (UV Printed Cover)",
+  "handle": "personalised-a5-notebook-uv-printed-cover",
+  "descriptionHtml": "<p><strong>Personalised A5 Notebook (UV Printed Cover)</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Phone cases, chargers, power banks and desk accessories.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Phone Cases & Tech",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-tech-accessories",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-UV-PANUPC-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

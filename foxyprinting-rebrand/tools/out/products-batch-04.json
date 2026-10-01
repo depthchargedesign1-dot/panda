@@ -1,0 +1,712 @@
+[
+ {
+  "title": "Printed Medal Inserts (25 mm)",
+  "handle": "printed-medal-inserts-25-mm",
+  "descriptionHtml": "<p><strong>Printed Medal Inserts (25 mm)</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Club awards, medal inserts and recognition plaques.</p><p>Personalise it with: logo upload, event text. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Awards, Medals & Plaques",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-awards-plaques",
+   "dept-business-printing",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "10"
+     },
+     {
+      "name": "25"
+     },
+     {
+      "name": "50"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "10"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UV-PMI2M-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "25"
+     }
+    ],
+    "price": "29.99",
+    "sku": "FOXY-UV-PMI2M-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "50"
+     }
+    ],
+    "price": "49.99",
+    "sku": "FOXY-UV-PMI2M-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Logo upload\", \"Event text\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Acrylic Club Award / Trophy",
+  "handle": "acrylic-club-award-trophy",
+  "descriptionHtml": "<p><strong>Acrylic Club Award / Trophy</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Club awards, medal inserts and recognition plaques.</p><p>Personalise it with: club logo upload, award title, winner name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Awards, Medals & Plaques",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-awards-plaques",
+   "dept-business-printing",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Small 15 cm"
+     },
+     {
+      "name": "Large 20 cm"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Small 15 cm"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UV-ACAT-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Large 20 cm"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UV-ACAT-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Club logo upload\", \"Award title\", \"Winner name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Metal Business Cards (UV on Anodised Aluminium)",
+  "handle": "metal-business-cards-uv-on-anodised-aluminium",
+  "descriptionHtml": "<p><strong>Metal Business Cards (UV on Anodised Aluminium)</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Club awards, medal inserts and recognition plaques.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Awards, Medals & Plaques",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-awards-plaques",
+   "dept-business-printing",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "25"
+     },
+     {
+      "name": "50"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "25"
+     }
+    ],
+    "price": "49.99",
+    "sku": "FOXY-UV-MBCUOAA-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "50"
+     }
+    ],
+    "price": "79.99",
+    "sku": "FOXY-UV-MBCUOAA-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Glass Can Cup with Bamboo Lid & Straw (16oz)",
+  "handle": "personalised-glass-can-cup-with-bamboo-lid-straw-16oz",
+  "descriptionHtml": "<p><strong>Personalised Glass Can Cup with Bamboo Lid & Straw (16oz)</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>The cup of the moment: glass cans, 40oz tumblers and bottles with permanent UV DTF names.</p><p>Personalise it with: name, design. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Glass Can Cups & Tumblers",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glass-can-cups",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Clear"
+     },
+     {
+      "name": "Frosted"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Clear"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-UVDTF-PGCCWBLS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Frosted"
+     }
+    ],
+    "price": "13.99",
+    "sku": "FOXY-UVDTF-PGCCWBLS-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Design\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised 40oz Tumbler with Handle",
+  "handle": "personalised-40oz-tumbler-with-handle",
+  "descriptionHtml": "<p><strong>Personalised 40oz Tumbler with Handle</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>The cup of the moment: glass cans, 40oz tumblers and bottles with permanent UV DTF names.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Glass Can Cups & Tumblers",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glass-can-cups",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Colour",
+    "values": [
+     {
+      "name": "Cream"
+     },
+     {
+      "name": "Black"
+     },
+     {
+      "name": "Pink"
+     },
+     {
+      "name": "Sage"
+     },
+     {
+      "name": "Lilac"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Cream"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-UVDTF-P4TWH-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Black"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-UVDTF-P4TWH-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Pink"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-UVDTF-P4TWH-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Sage"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-UVDTF-P4TWH-04",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Lilac"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-UVDTF-P4TWH-05",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised 20oz Skinny Tumbler",
+  "handle": "personalised-20oz-skinny-tumbler",
+  "descriptionHtml": "<p><strong>Personalised 20oz Skinny Tumbler</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>The cup of the moment: glass cans, 40oz tumblers and bottles with permanent UV DTF names.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Glass Can Cups & Tumblers",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glass-can-cups",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Colour",
+    "values": [
+     {
+      "name": "White"
+     },
+     {
+      "name": "Black"
+     },
+     {
+      "name": "Pink"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "White"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UVDTF-P2ST-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Black"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UVDTF-P2ST-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Pink"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UVDTF-P2ST-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Stainless Steel Water Bottle",
+  "handle": "personalised-stainless-steel-water-bottle",
+  "descriptionHtml": "<p><strong>Personalised Stainless Steel Water Bottle</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>The cup of the moment: glass cans, 40oz tumblers and bottles with permanent UV DTF names.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Glass Can Cups & Tumblers",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glass-can-cups",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "500 ml"
+     },
+     {
+      "name": "750 ml"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "500 ml"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UVDTF-PSSWB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "750 ml"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-UVDTF-PSSWB-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Travel Coffee Cup",
+  "handle": "personalised-travel-coffee-cup",
+  "descriptionHtml": "<p><strong>Personalised Travel Coffee Cup</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>The cup of the moment: glass cans, 40oz tumblers and bottles with permanent UV DTF names.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Glass Can Cups & Tumblers",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glass-can-cups",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UVDTF-PTCC-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Enamel Camping Mug",
+  "handle": "personalised-enamel-camping-mug",
+  "descriptionHtml": "<p><strong>Personalised Enamel Camping Mug</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>The cup of the moment: glass cans, 40oz tumblers and bottles with permanent UV DTF names.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Glass Can Cups & Tumblers",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glass-can-cups",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-UVDTF-PECM-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Hip Flask",
+  "handle": "personalised-hip-flask",
+  "descriptionHtml": "<p><strong>Personalised Hip Flask</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>The cup of the moment: glass cans, 40oz tumblers and bottles with permanent UV DTF names.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Glass Can Cups & Tumblers",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glass-can-cups",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UVDTF-PHF-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "t1": { "type": "tab", "settings": { "heading": "Delivery & returns", "content": "<p>Made to order in the UK. Most orders dispatch within 1–2 working days. Personalised items can't be returned unless faulty — if something's not right, we'll reprint it.</p>" } }
+      },
+      "block_order": ["t1"],
+      "settings": { "default_mockup": "flat" }
+    },
+    "related": { "type": "featured-collection", "settings": { "heading": "You might also like", "limit": 4, "tinted": true } }
+  },
+  "order": ["main", "related"]
+}

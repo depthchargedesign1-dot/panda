@@ -1,0 +1,1006 @@
+[
+ {
+  "title": "UV DTF Cup Wrap Transfer (16oz)",
+  "handle": "uv-dtf-cup-wrap-transfer-16oz",
+  "descriptionHtml": "<p><strong>UV DTF Cup Wrap Transfer (16oz)</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Ready-to-apply transfers and gang sheets for crafters and print shops.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "UV DTF & DTF Transfers (Trade)",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-craft-supplies",
+   "dept-business-printing",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "1"
+     },
+     {
+      "name": "10"
+     },
+     {
+      "name": "25"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "1"
+     }
+    ],
+    "price": "3.49",
+    "sku": "FOXY-UVDTF-UDCWT1-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "10"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-UVDTF-UDCWT1-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "25"
+     }
+    ],
+    "price": "59.99",
+    "sku": "FOXY-UVDTF-UDCWT1-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "UV DTF Gang Sheet",
+  "handle": "uv-dtf-gang-sheet",
+  "descriptionHtml": "<p><strong>UV DTF Gang Sheet</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Ready-to-apply transfers and gang sheets for crafters and print shops.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "UV DTF & DTF Transfers (Trade)",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-craft-supplies",
+   "dept-business-printing",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A4"
+     },
+     {
+      "name": "A3"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A4"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-UVDTF-UDGS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A3"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UVDTF-UDGS-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "DTF Clothing Transfers Gang Sheet",
+  "handle": "dtf-clothing-transfers-gang-sheet",
+  "descriptionHtml": "<p><strong>DTF Clothing Transfers Gang Sheet</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Ready-to-apply transfers and gang sheets for crafters and print shops.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "UV DTF & DTF Transfers (Trade)",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-craft-supplies",
+   "dept-business-printing",
+   "machine-dtf",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A3"
+     },
+     {
+      "name": "56 x 50 cm"
+     },
+     {
+      "name": "56 x 100 cm"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A3"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-DTF-DCTGS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "56 x 50 cm"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-DCTGS-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "56 x 100 cm"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-DTF-DCTGS-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Adult T-Shirt",
+  "handle": "personalised-adult-t-shirt",
+  "descriptionHtml": "<p><strong>Personalised Adult T-Shirt</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Full-colour DTF printing on tees, hoodies and sweats - no minimum order.</p><p>Personalise it with: photo/design upload, text. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Custom T-Shirts & Hoodies",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-custom-clothing",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "S"
+     },
+     {
+      "name": "M"
+     },
+     {
+      "name": "L"
+     },
+     {
+      "name": "XL"
+     },
+     {
+      "name": "2XL"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "S"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-DTF-PATS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "M"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-DTF-PATS-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "L"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-DTF-PATS-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "XL"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-DTF-PATS-04",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "2XL"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-DTF-PATS-05",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo/design upload\", \"Text\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Kids T-Shirt",
+  "handle": "personalised-kids-t-shirt",
+  "descriptionHtml": "<p><strong>Personalised Kids T-Shirt</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Full-colour DTF printing on tees, hoodies and sweats - no minimum order.</p><p>Personalise it with: name, age, design. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Custom T-Shirts & Hoodies",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-custom-clothing",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "3-4 yrs"
+     },
+     {
+      "name": "5-6 yrs"
+     },
+     {
+      "name": "7-8 yrs"
+     },
+     {
+      "name": "9-11 yrs"
+     },
+     {
+      "name": "12-13 yrs"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "3-4 yrs"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-PKTS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "5-6 yrs"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-PKTS-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "7-8 yrs"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-PKTS-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "9-11 yrs"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-PKTS-04",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "12-13 yrs"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-PKTS-05",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Age\", \"Design\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Adult Hoodie",
+  "handle": "personalised-adult-hoodie",
+  "descriptionHtml": "<p><strong>Personalised Adult Hoodie</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Full-colour DTF printing on tees, hoodies and sweats - no minimum order.</p><p>Personalise it with: photo/design upload, text. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Custom T-Shirts & Hoodies",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-custom-clothing",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "S"
+     },
+     {
+      "name": "M"
+     },
+     {
+      "name": "L"
+     },
+     {
+      "name": "XL"
+     },
+     {
+      "name": "2XL"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "S"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-DTF-PAH-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "M"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-DTF-PAH-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "L"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-DTF-PAH-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "XL"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-DTF-PAH-04",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "2XL"
+     }
+    ],
+    "price": "29.99",
+    "sku": "FOXY-DTF-PAH-05",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo/design upload\", \"Text\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Sweatshirt",
+  "handle": "personalised-sweatshirt",
+  "descriptionHtml": "<p><strong>Personalised Sweatshirt</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Full-colour DTF printing on tees, hoodies and sweats - no minimum order.</p><p>Personalise it with: design upload, text. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Custom T-Shirts & Hoodies",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-custom-clothing",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "S"
+     },
+     {
+      "name": "M"
+     },
+     {
+      "name": "L"
+     },
+     {
+      "name": "XL"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "S"
+     }
+    ],
+    "price": "22.99",
+    "sku": "FOXY-DTF-PS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "M"
+     }
+    ],
+    "price": "22.99",
+    "sku": "FOXY-DTF-PS-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "L"
+     }
+    ],
+    "price": "22.99",
+    "sku": "FOXY-DTF-PS-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "XL"
+     }
+    ],
+    "price": "22.99",
+    "sku": "FOXY-DTF-PS-04",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Design upload\", \"Text\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Birthday Age T-Shirt (Kids)",
+  "handle": "birthday-age-t-shirt-kids",
+  "descriptionHtml": "<p><strong>Birthday Age T-Shirt (Kids)</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Full-colour DTF printing on tees, hoodies and sweats - no minimum order.</p><p>Personalise it with: name, age, theme. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Custom T-Shirts & Hoodies",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-custom-clothing",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "1"
+     },
+     {
+      "name": "2"
+     },
+     {
+      "name": "3"
+     },
+     {
+      "name": "4"
+     },
+     {
+      "name": "5"
+     },
+     {
+      "name": "6"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "1"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-BATSK-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "2"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-BATSK-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "3"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-BATSK-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "4"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-BATSK-04",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "5"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-BATSK-05",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "6"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-BATSK-06",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Age\", \"Theme\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Big Brother / Big Sister T-Shirt",
+  "handle": "big-brother-big-sister-t-shirt",
+  "descriptionHtml": "<p><strong>Big Brother / Big Sister T-Shirt</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Full-colour DTF printing on tees, hoodies and sweats - no minimum order.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Custom T-Shirts & Hoodies",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-custom-clothing",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "2-3 yrs"
+     },
+     {
+      "name": "3-4 yrs"
+     },
+     {
+      "name": "5-6 yrs"
+     },
+     {
+      "name": "7-8 yrs"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "2-3 yrs"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-DTF-BBBSTS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "3-4 yrs"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-DTF-BBBSTS-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "5-6 yrs"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-DTF-BBBSTS-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "7-8 yrs"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-DTF-BBBSTS-04",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "School Leavers Hoodie (Names on Back)",
+  "handle": "school-leavers-hoodie-names-on-back",
+  "descriptionHtml": "<p><strong>School Leavers Hoodie (Names on Back)</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Leavers hoodies with every name on the back, plus club and team wear.</p><p>Personalise it with: school name, year, class names list. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "School Leavers & Club Hoodies",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-school-leavers",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-3",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Kids 7-8"
+     },
+     {
+      "name": "Kids 9-11"
+     },
+     {
+      "name": "Kids 12-13"
+     },
+     {
+      "name": "Adult S"
+     },
+     {
+      "name": "Adult M"
+     },
+     {
+      "name": "Adult L"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Kids 7-8"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-DTF-SLHNOB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Kids 9-11"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-DTF-SLHNOB-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Kids 12-13"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-DTF-SLHNOB-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Adult S"
+     }
+    ],
+    "price": "26.99",
+    "sku": "FOXY-DTF-SLHNOB-04",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Adult M"
+     }
+    ],
+    "price": "26.99",
+    "sku": "FOXY-DTF-SLHNOB-05",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Adult L"
+     }
+    ],
+    "price": "26.99",
+    "sku": "FOXY-DTF-SLHNOB-06",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"School name\", \"Year\", \"Class names list\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

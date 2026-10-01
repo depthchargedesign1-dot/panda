@@ -1,0 +1,28 @@
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement": {
+      "type": "announcement-bar",
+      "blocks": {
+        "a1": { "type": "announcement", "settings": { "text": "🚚 Free UK delivery on orders over £30" } },
+        "a2": { "type": "announcement", "settings": { "text": "🎄 Christmas Eve boxes & name baubles are here — order early!" } },
+        "a3": { "type": "announcement", "settings": { "text": "👀 See your personalisation live before you buy" } }
+      },
+      "block_order": ["a1", "a2", "a3"],
+      "settings": { "interval": 5 }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "d1": { "type": "department", "settings": { "menu_item": "Christmas", "colour": "pink", "highlight": true, "promo_eyebrow": "Order by 18 Dec", "promo_heading": "Christmas Eve boxes, baubles & matching jumpers", "promo_button": "Shop Christmas" } },
+        "d2": { "type": "department", "settings": { "menu_item": "Personalised Gifts", "colour": "orange", "promo_eyebrow": "New", "promo_heading": "Acrylic photo blocks & LED night lights" } },
+        "d3": { "type": "department", "settings": { "menu_item": "Home & Drinkware", "colour": "teal", "promo_eyebrow": "Trending", "promo_heading": "Glass can cups & 40oz tumblers with your name" } },
+        "d4": { "type": "department", "settings": { "menu_item": "Business Printing", "colour": "purple", "promo_eyebrow": "For your business", "promo_heading": "Stickers, labels & review stands" } }
+      },
+      "block_order": ["d1", "d2", "d3", "d4"],
+      "settings": { "menu": "foxy-mega-menu" }
+    }
+  },
+  "order": ["announcement", "header"]
+}

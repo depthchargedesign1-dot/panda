@@ -1,0 +1,18 @@
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "m1": { "type": "menu", "settings": { "heading": "Shop", "menu": "main-menu" } },
+        "m2": { "type": "menu", "settings": { "heading": "Help", "menu": "information" } },
+        "m3": { "type": "menu", "settings": { "heading": "About Foxy", "menu": "about-us-menu" } },
+        "m4": { "type": "menu", "settings": { "heading": "Legal", "menu": "footer" } }
+      },
+      "block_order": ["m1", "m2", "m3", "m4"],
+      "settings": {}
+    }
+  },
+  "order": ["footer"]
+}

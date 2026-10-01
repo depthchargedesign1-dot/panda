@@ -1,0 +1,641 @@
+[
+ {
+  "title": "Tap & Scan Google Review Stand (NFC + QR)",
+  "handle": "tap-scan-google-review-stand-nfc-qr",
+  "descriptionHtml": "<p><strong>Tap & Scan Google Review Stand (NFC + QR)</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Acrylic QR/tap-to-review stands, door signs and small-format signage.</p><p>Personalise it with: logo upload, review link. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Signs, QR & Review Stands",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-signs-displays",
+   "dept-business-printing",
+   "machine-uv",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UV-TSGRSNQ-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Logo upload\", \"Review link\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Acrylic QR Code Sign (Scan to Pay / Follow / Wi-Fi)",
+  "handle": "acrylic-qr-code-sign-scan-to-pay-follow-wi-fi",
+  "descriptionHtml": "<p><strong>Acrylic QR Code Sign (Scan to Pay / Follow / Wi-Fi)</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Acrylic QR/tap-to-review stands, door signs and small-format signage.</p><p>Personalise it with: qr link, logo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Signs, QR & Review Stands",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-signs-displays",
+   "dept-business-printing",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A6 stand"
+     },
+     {
+      "name": "A5 stand"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A6 stand"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-UV-AQCSSTPF-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A5 stand"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-UV-AQCSSTPF-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"QR link\", \"Logo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Acrylic Office & Door Sign",
+  "handle": "acrylic-office-door-sign",
+  "descriptionHtml": "<p><strong>Acrylic Office & Door Sign</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Acrylic QR/tap-to-review stands, door signs and small-format signage.</p><p>Personalise it with: text, logo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Signs, QR & Review Stands",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-signs-displays",
+   "dept-business-printing",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "30 x 10 cm"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "30 x 10 cm"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UV-AODS-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Text\", \"Logo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Small Foamex / Dibond Sign",
+  "handle": "small-foamex-dibond-sign",
+  "descriptionHtml": "<p><strong>Small Foamex / Dibond Sign</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Acrylic QR/tap-to-review stands, door signs and small-format signage.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Signs, QR & Review Stands",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-signs-displays",
+   "dept-business-printing",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A4"
+     },
+     {
+      "name": "A3"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A4"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UV-SFDS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A3"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-UV-SFDS-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Halloween Kids T-Shirt",
+  "handle": "personalised-halloween-kids-t-shirt",
+  "descriptionHtml": "<p><strong>Personalised Halloween Kids T-Shirt</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Trick-or-treat bags, spooky tees, treat boxes and party printing.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Halloween",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-halloween",
+   "dept-occasions",
+   "machine-dtf",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "3-4 yrs"
+     },
+     {
+      "name": "5-6 yrs"
+     },
+     {
+      "name": "7-8 yrs"
+     },
+     {
+      "name": "9-11 yrs"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "3-4 yrs"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-PHKTS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "5-6 yrs"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-PHKTS-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "7-8 yrs"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-PHKTS-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "9-11 yrs"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-PHKTS-04",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Halloween Treat Boxes (Pack of 10)",
+  "handle": "halloween-treat-boxes-pack-of-10",
+  "descriptionHtml": "<p><strong>Halloween Treat Boxes (Pack of 10)</strong> - printed and precision-cut in our UK workshop.</p><p>Trick-or-treat bags, spooky tees, treat boxes and party printing.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Halloween",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-halloween",
+   "dept-occasions",
+   "machine-cut",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-CUT-HTBPO1-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "My First Halloween Baby Grow",
+  "handle": "my-first-halloween-baby-grow",
+  "descriptionHtml": "<p><strong>My First Halloween Baby Grow</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Trick-or-treat bags, spooky tees, treat boxes and party printing.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Halloween",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-halloween",
+   "dept-occasions",
+   "machine-dtf",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "0-3 m"
+     },
+     {
+      "name": "3-6 m"
+     },
+     {
+      "name": "6-12 m"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "0-3 m"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-MFHBG-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "3-6 m"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-MFHBG-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "6-12 m"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-MFHBG-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Reasons I Love You Jar",
+  "handle": "reasons-i-love-you-jar",
+  "descriptionHtml": "<p><strong>Reasons I Love You Jar</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Love-themed keepsakes for Valentine's and Mother's Day.</p><p>Personalise it with: names, reasons list. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Valentine's & Mother's Day",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-valentines-mothers-day",
+   "dept-occasions",
+   "machine-uvdtf",
+   "wave-2",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-UVDTF-RILYJ-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Names\", \"Reasons list\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Love Coupon Book",
+  "handle": "personalised-love-coupon-book",
+  "descriptionHtml": "<p><strong>Personalised Love Coupon Book</strong> - printed on premium stock in our UK workshop.</p><p>Love-themed keepsakes for Valentine's and Mother's Day.</p><p>Personalise it with: names. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Valentine's & Mother's Day",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-valentines-mothers-day",
+   "dept-occasions",
+   "machine-press",
+   "wave-2",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-PRESS-PLCB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Names\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Mum Slate Heart",
+  "handle": "personalised-mum-slate-heart",
+  "descriptionHtml": "<p><strong>Personalised Mum Slate Heart</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Love-themed keepsakes for Valentine's and Mother's Day.</p><p>Personalise it with: names. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Valentine's & Mother's Day",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-valentines-mothers-day",
+   "dept-occasions",
+   "machine-uv",
+   "wave-2",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-UV-PMSH-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Names\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

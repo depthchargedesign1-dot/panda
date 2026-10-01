@@ -1,0 +1,126 @@
+{%- liquid
+  assign accents = 'orange,pink,purple,teal,yellow' | split: ','
+  assign accent_i = collection.id | modulo: 5
+  assign accent = accents[accent_i]
+  assign sort_by = collection.sort_by | default: collection.default_sort_by
+-%}
+<div class="collection-hero accent-{{ accent }}">
+  <div class="page-width collection-hero__inner">
+    <div>
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{{ routes.root_url }}">{{ 'general.home' | t }}</a> / <span aria-current="page">{{ collection.title }}</span></nav>
+      <h1>{{ collection.title }}</h1>
+      {%- if collection.description != blank -%}<div class="collection-hero__desc rte">{{ collection.description }}</div>{%- endif -%}
+    </div>
+    {%- if collection.image -%}
+      <div class="collection-hero__image">{{ collection.image | image_url: width: 400 | image_tag: alt: collection.title }}</div>
+    {%- endif -%}
+  </div>
+</div>
+
+{%- paginate collection.products by section.settings.per_page -%}
+<div class="page-width collection-layout accent-{{ accent }}">
+  <aside class="facets" data-facets aria-label="{{ 'collections.filters' | t }}">
+    <form data-facets-form>
+      {%- if collection.sort_by -%}<input type="hidden" name="sort_by" value="{{ collection.sort_by }}">{%- endif -%}
+      {%- for filter in collection.filters -%}
+        <details class="facet" {% if forloop.index <= 3 or filter.active_values.size > 0 %}open{% endif %}>
+          <summary>{{ filter.label }} <span aria-hidden="true">▾</span></summary>
+          {%- case filter.type -%}
+            {%- when 'price_range' -%}
+              <div class="facet__price">
+                <input type="number" name="{{ filter.min_value.param_name }}" placeholder="£ min" value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}" aria-label="Min price">
+                <input type="number" name="{{ filter.max_value.param_name }}" placeholder="£ max" value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}" aria-label="Max price">
+              </div>
+            {%- else -%}
+              <ul>
+                {%- for value in filter.values -%}
+                  <li><label><input type="checkbox" name="{{ value.param_name }}" value="{{ value.value }}" {% if value.active %}checked{% endif %} {% if value.count == 0 and value.active == false %}disabled{% endif %}> {{ value.label }} <span class="facet__count">({{ value.count }})</span></label></li>
+                {%- endfor -%}
+              </ul>
+          {%- endcase -%}
+        </details>
+      {%- endfor -%}
+      <noscript><button class="btn btn--small" type="submit">{{ 'collections.apply' | t }}</button></noscript>
+    </form>
+  </aside>
+
+  <div>
+    {%- if section.settings.show_subcollections and section.settings.subcollection_menu != blank -%}
+      {%- for link in section.settings.subcollection_menu.links -%}
+        {%- if link.url == collection.url and link.links.size > 0 -%}
+          <div class="subcollections">
+            {%- for child in link.links -%}<a href="{{ child.url }}">{{ child.title }}</a>{%- endfor -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+
+    <div class="toolbar">
+      <div style="display:flex;gap:10px;align-items:center">
+        <button type="button" class="btn btn--outline btn--small facets-toggle" data-facets-toggle aria-expanded="false">⚙︎ {{ 'collections.filters' | t }}</button>
+        <span>{{ 'collections.product_count' | t: count: collection.products_count }}</span>
+      </div>
+      <label>
+        <span class="visually-hidden">{{ 'collections.sort_by' | t }}</span>
+        <select data-sort>
+          {%- for option in collection.sort_options -%}
+            <option value="{{ option.value }}" {% if option.value == sort_by %}selected{% endif %}>{{ option.name }}</option>
+          {%- endfor -%}
+        </select>
+      </label>
+    </div>
+
+    {%- liquid
+      assign active = false
+      for filter in collection.filters
+        if filter.active_values.size > 0 or filter.min_value.value or filter.max_value.value
+          assign active = true
+        endif
+      endfor
+    -%}
+    {%- if active -%}
+      <div class="active-filters">
+        {%- for filter in collection.filters -%}
+          {%- for value in filter.active_values -%}<a href="{{ value.url_to_remove }}">{{ value.label }} ✕</a>{%- endfor -%}
+        {%- endfor -%}
+        <a href="{{ collection.url }}?sort_by={{ sort_by }}">{{ 'collections.clear_all' | t }}</a>
+      </div>
+    {%- endif -%}
+
+    {%- if collection.products.size > 0 -%}
+      <ul class="product-grid product-grid--3">
+        {%- for product in collection.products -%}
+          <li>{% render 'product-card', product: product %}</li>
+        {%- endfor -%}
+      </ul>
+    {%- else -%}
+      <div class="empty-state"><div class="empty-state__icon">🦊</div><h2>{{ 'collections.empty' | t }}</h2><a class="btn" href="{{ collection.url }}">{{ 'collections.clear_all' | t }}</a></div>
+    {%- endif -%}
+
+    {%- if paginate.pages > 1 -%}
+      <nav aria-label="{{ 'general.pagination' | t }}">
+        <ul class="pagination">
+          {%- if paginate.previous -%}<li><a href="{{ paginate.previous.url }}" aria-label="{{ 'general.previous' | t }}">←</a></li>{%- endif -%}
+          {%- for part in paginate.parts -%}
+            {%- if part.is_link -%}<li><a href="{{ part.url }}">{{ part.title }}</a></li>
+            {%- elsif part.title == paginate.current_page -%}<li><span class="is-current" aria-current="page">{{ part.title }}</span></li>
+            {%- else -%}<li><span>{{ part.title }}</span></li>{%- endif -%}
+          {%- endfor -%}
+          {%- if paginate.next -%}<li><a href="{{ paginate.next.url }}" aria-label="{{ 'general.next' | t }}">→</a></li>{%- endif -%}
+        </ul>
+      </nav>
+    {%- endif -%}
+  </div>
+</div>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "Collection page",
+  "settings": [
+    { "type": "range", "id": "per_page", "label": "Products per page", "min": 12, "max": 48, "step": 6, "default": 24 },
+    { "type": "checkbox", "id": "show_subcollections", "label": "Show sub-category pills", "default": true },
+    { "type": "link_list", "id": "subcollection_menu", "label": "Menu used for sub-category pills", "info": "If this collection appears in the menu with child links, they show as pills." }
+  ]
+}
+{% endschema %}
