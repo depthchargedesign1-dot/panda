@@ -124,7 +124,7 @@
                       {%- endif -%}
                       {%- for child in link.links -%}
                         {%- if child.links.size > 0 -%}
-                          <div class="mega-col">
+                          <div class="mega-col{% if child.links.size > 12 %} mega-col--long{% endif %}">
                             <a class="mega-col__title" href="{{ child.url }}">{{ child.title }}</a>
                             <ul>
                               {%- for grandchild in child.links -%}

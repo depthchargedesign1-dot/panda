@@ -10,7 +10,7 @@ def c(handle):
     return f"/collections/{handle}"
 
 
-MENU = [
+BASE_MENU = [
     ("Christmas", c("christmas-novelty-gifts"), [
         ("Christmas Eve & Advent", c("new-christmas-eve-boxes"), [
             ("Christmas Eve Boxes", c("new-christmas-eve-boxes")),
@@ -238,6 +238,23 @@ MENU = [
         ]),
     ]),
 ]
+
+
+
+def _with_extra(menu):
+    """Append the generated "More …" columns (plan/menu_extra.json) to their departments."""
+    import json
+    from pathlib import Path
+    path = Path(__file__).with_name("menu_extra.json")
+    extra = json.loads(path.read_text()) if path.exists() else {}
+    out = []
+    for title, url, cols in menu:
+        more = [(col, links[0][1], [tuple(link) for link in links]) for col, links in extra.get(title, {}).items()]
+        out.append((title, url, list(cols) + more))
+    return out
+
+
+MENU = _with_extra(BASE_MENU)
 
 
 def as_json():
