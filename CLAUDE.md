@@ -107,8 +107,8 @@ The store uses the Shopify Google & YouTube channel namespace `mm-google-shoppin
 | `custom_product` | boolean | `true` (personalised, no GTIN) |
 | `condition` | single_line_text_field | `new` |
 | `google_product_category` | single_line_text_field | full Google taxonomy path, e.g. cards: `Arts & Entertainment > Party & Celebration > Gift Giving > Greeting & Note Cards`; mugs: `Home & Garden > Kitchen & Dining > Tableware > Drinkware > Mugs` |
-| `gender` | single_line_text_field | `unisex` / `female` / `male` |
-| `age_group` | single_line_text_field | `adult`, `kids`, `toddler`, `infant` or `newborn` (**not** "Unisex", which older products wrongly use) |
+| `gender` | single_line_text_field | **always `unisex`** (owner's rule) |
+| `age_group` | single_line_text_field | `kids` or `adult`, decided by `foxyprinting-rebrand/tools/age_group.py`: baby grows, kids' cards, kids' invites, school items and santa sacks are `kids`; adult/rude cards are `adult`; celebrity masks are `adult` unless the mask is a children's character; otherwise use common sense from the title (**never** "Unisex") |
 | `color` | single_line_text_field | main colour, or `Multicolor` |
 | `mpn` | single_line_text_field | the variant SKU |
 
