@@ -7,13 +7,14 @@
           "type": "main",
           "settings": {
             "colour": "orange",
-            "eyebrow": "New: we print on (almost) anything",
-            "heading": "Personalised gifts they'll never forget",
-            "text": "Cards, mugs, baby grows, tumblers, slate, acrylic, clothing and more. Add a name, message or photo and watch it appear live.",
-            "button_label": "Start personalising",
-            "button_link": "shopify://collections/all",
-            "button2_label": "Shop Christmas",
-            "button2_link": "shopify://collections/all"
+            "eyebrow": "Our bestsellers",
+            "heading": "Kids' birthday cards",
+            "text": "Add their name, age and your own message, and watch it appear live on the card. Printed and posted next working day.",
+            "button_label": "Shop kids' cards",
+            "button_link": "shopify://collections/kids-cards",
+            "button2_label": "Gifts for kids",
+            "button2_link": "shopify://collections/all",
+            "image": "shopify://shop_images/foxy-hero-kids-birthday-cards.png"
           }
         },
         "side1": {
