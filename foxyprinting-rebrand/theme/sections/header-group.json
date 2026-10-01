@@ -81,11 +81,24 @@
             "promo_image": "shopify://shop_images/foxy-mega-business.png",
             "promo_link": "shopify://collections/business-cards"
           }
+        },
+        "d5": {
+          "type": "department",
+          "settings": {
+            "menu_item": "Photo Gifts",
+            "colour": "teal",
+            "promo_eyebrow": "New range",
+            "promo_heading": "Photo slates, metal prints, cushions & tumblers",
+            "promo_button": "Shop photo gifts",
+            "promo_image": "shopify://shop_images/foxy-promo-photo-gifts.png",
+            "promo_link": "shopify://collections/personalised-photo-slates"
+          }
         }
       },
       "block_order": [
         "d1",
         "d2",
+        "d5",
         "d3",
         "d4"
       ],

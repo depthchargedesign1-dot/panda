@@ -84,6 +84,31 @@ MENU = [
             ("Controller Skins", c("new-gamer-skins")), ("Notebooks", c("new-tech-accessories")),
         ]),
     ]),
+    # Photo gift range made on sublimation blanks (plan/longforte-plan.md).
+    ("Photo Gifts", c("personalised-photo-slates"), [
+        ("Photo Prints & Wall Art", c("personalised-photo-slates"), [
+            ("Photo Slates", c("personalised-photo-slates")),
+            ("Metal Photo Panels", c("personalised-metal-photo-panels")),
+            ("Photo Clocks & Glass Frames", c("personalised-clocks-and-glass-photo-frames")),
+            ("Photo Plaques & Ceramic Tiles", c("personalised-photo-plaques-and-ceramic-tiles")),
+        ]),
+        ("Home & Table", c("personalised-cushions-and-home-textiles"), [
+            ("Cushions, Blankets & Aprons", c("personalised-cushions-and-home-textiles")),
+            ("Coasters & Placemats", c("personalised-coasters-and-placemats")),
+            ("Photo Jigsaws", c("personalised-photo-jigsaws")),
+        ]),
+        ("Drinkware", c("personalised-travel-mugs-tumblers-and-bottles"), [
+            ("Tumblers, Travel Mugs & Bottles", c("personalised-travel-mugs-tumblers-and-bottles")),
+            ("Enamel, Latte & Speciality Mugs", c("personalised-enamel-latte-and-speciality-mugs")),
+        ]),
+        ("Little Gifts", c("personalised-keyrings-and-fridge-magnets"), [
+            ("Keyrings & Fridge Magnets", c("personalised-keyrings-and-fridge-magnets")),
+            ("Teddy Bears & Plush Toys", c("personalised-teddy-bears-and-plush-toys")),
+            ("Kids & Back to School", c("personalised-kids-and-back-to-school")),
+            ("Pet Gifts", c("personalised-pet-gifts")),
+            ("Christmas Baubles & Ornaments", c("personalised-christmas-baubles-and-ornaments")),
+        ]),
+    ]),
     ("Clothing", c("t-shirts"), [
         ("T-Shirts & Hoodies", c("new-custom-clothing"), [
             ("Design Your Own T-Shirt", c("new-custom-clothing")), ("Printed T-Shirts", c("t-shirts")),
