@@ -9,10 +9,10 @@
 <div class="section section--tight">
   <div class="page-width hero-grid">
     {%- if main -%}
-      <div class="hero-tile hero-tile--main {% render 'accent', name: main.settings.colour %}{% if main.settings.dark_text %} hero-tile--dark-text{% endif %}" {{ main.shopify_attributes }}>
+      <div class="hero-tile hero-tile--main {% render 'accent', name: main.settings.colour %}{% if main.settings.image %} hero-tile--has-image{% endif %}{% if main.settings.dark_text %} hero-tile--dark-text{% endif %}" {{ main.shopify_attributes }}>
         <div class="hero-tile__media">
           {%- if main.settings.image -%}
-            {{ main.settings.image | image_url: width: 1600 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '800,1200,1600', sizes: '(min-width: 990px) 65vw, 100vw', alt: main.settings.image.alt }}
+            {{ main.settings.image | image_url: width: 1600 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '800,1200,1600', sizes: '(min-width: 990px) 65vw, 100vw', alt: '' }}
           {%- else -%}
             <span class="hero-tile__blob" style="width:520px;height:520px;right:-120px;top:-160px;background:var(--fx-pink)"></span>
             <span class="hero-tile__blob" style="width:260px;height:260px;right:180px;bottom:-120px;background:var(--fx-yellow)"></span>

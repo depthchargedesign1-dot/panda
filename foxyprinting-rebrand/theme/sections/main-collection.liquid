@@ -4,14 +4,20 @@
   assign accent = accents[accent_i]
   assign sort_by = collection.sort_by | default: collection.default_sort_by
 -%}
-<div class="collection-hero accent-{{ accent }}">
+{%- assign header_image = collection.metafields.foxy.header_image.value -%}
+<div class="collection-hero accent-{{ accent }}{% if header_image %} collection-hero--banner{% endif %}">
+  {%- if header_image -%}
+    <div class="collection-hero__banner">
+      {{ header_image | image_url: width: 1800 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '750,1100,1500,1800', sizes: '100vw', alt: '' }}
+    </div>
+  {%- endif -%}
   <div class="page-width collection-hero__inner">
-    <div>
+    <div class="collection-hero__text">
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{{ routes.root_url }}">{{ 'general.home' | t }}</a> / <span aria-current="page">{{ collection.title }}</span></nav>
       <h1>{{ collection.title }}</h1>
       {%- if collection.description != blank -%}<div class="collection-hero__desc rte">{{ collection.description }}</div>{%- endif -%}
     </div>
-    {%- if collection.image -%}
+    {%- if collection.image and header_image == blank -%}
       <div class="collection-hero__image">{{ collection.image | image_url: width: 400 | image_tag: alt: collection.title }}</div>
     {%- endif -%}
   </div>

@@ -263,6 +263,9 @@ h3, .h3 { font-size: 1.2rem; }
 .hero-tile__text { font-size: 1.12rem; margin: 0 0 22px; opacity: .95; }
 .hero-tile--side .hero-tile__text { font-size: .95rem; margin-bottom: 12px; }
 .hero-tile--dark-text { color: var(--fx-ink); }
+.hero-tile--has-image .hero-tile__content { max-width: 48%; }
+.hero-tile--has-image .hero-tile__media { left: 34%; -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%); mask-image: linear-gradient(90deg, transparent, #000 18%); }
+.hero-tile--has-image .hero-tile__media img { object-position: right center; }
 .hero-tile__cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero-tile--side .hero-tile__link { font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
 
@@ -410,6 +413,15 @@ h3, .h3 { font-size: 1.2rem; }
 .collection-hero__desc { max-width: 720px; opacity: .95; }
 .collection-hero__image { width: 200px; aspect-ratio: 1; border-radius: 50%; overflow: hidden; border: 6px solid rgba(255,255,255,.4); }
 .collection-hero__image img { width: 100%; height: 100%; object-fit: cover; }
+/* Banner-style header: set the collection's "Header banner" metafield (foxy.header_image).
+   Artwork should keep the left ~45% plain so the title sits over it. */
+.collection-hero--banner { padding: 0; min-height: clamp(260px, 26.7vw, 480px); display: flex; align-items: center; }
+.collection-hero--banner::after { display: none; }
+.collection-hero__banner { position: absolute; inset: 0; }
+.collection-hero__banner img { width: 100%; height: 100%; object-fit: cover; object-position: right center; }
+.collection-hero--banner .collection-hero__inner { width: 100%; grid-template-columns: 1fr; padding-top: 36px; padding-bottom: 36px; }
+.collection-hero--banner .collection-hero__text { max-width: min(520px, 42vw); }
+.collection-hero--banner h1 { font-size: clamp(2rem, 3.6vw, 3.2rem); line-height: 1.05; margin-bottom: 10px; text-shadow: 0 2px 0 rgba(29,18,64,.15); }
 .breadcrumbs { font-size: .85rem; margin-bottom: 10px; opacity: .9; }
 .breadcrumbs a { text-decoration: none; }
 .breadcrumbs a:hover { text-decoration: underline; }
@@ -575,6 +587,15 @@ h3, .h3 { font-size: 1.2rem; }
   .facets.is-open { display: block; }
   .facets-toggle { display: inline-flex; }
   .collection-hero__image { display: none; }
+  .collection-hero--banner { display: block; min-height: 0; background: var(--fx-ink); }
+  .collection-hero--banner .collection-hero__banner { position: relative; aspect-ratio: 16 / 9; }
+  .collection-hero--banner .collection-hero__banner img { object-position: right center; }
+  .collection-hero--banner .collection-hero__inner { padding-top: 20px; padding-bottom: 24px; }
+  .collection-hero--banner .collection-hero__text { max-width: none; }
+  .hero-tile--has-image { min-height: 0; flex-direction: column; align-items: stretch; }
+  .hero-tile--has-image .hero-tile__media { position: relative; inset: auto; left: 0; z-index: 0; aspect-ratio: 5 / 4; -webkit-mask-image: none; mask-image: none; }
+  .hero-tile--has-image .hero-tile__media img { object-position: right center; }
+  .hero-tile--has-image .hero-tile__content { max-width: none; }
   .collection-hero__inner { grid-template-columns: 1fr; }
   .product { grid-template-columns: 1fr; gap: 24px; }
   .product__gallery { position: static; }
