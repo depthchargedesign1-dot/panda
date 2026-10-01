@@ -77,7 +77,7 @@ Business cards (standard, rounded, spot-gloss, metal), flyers and leaflets, post
 Lives in [`../theme`](../theme). It's a Shopify Online Store 2.0 theme built for this catalogue:
 
 - **Vistaprint-style layout, much more colourful.** Five brand colours (foxy orange, hot pink, party purple, teal, sunshine yellow) rotate across departments, tiles and badges. All colours and fonts are editable in the theme editor.
-- **Multi-department mega menu.** 11 departments, unlimited columns, 3 levels, an optional promo tile per department, and a mobile drawer with accordions. It's driven by the **Claude Mega Menu** (`foxy-mega-menu`), already created in your store, so you manage the hundreds of categories in *Online Store → Navigation* with no code.
+- **Multi-department mega menu.** 11 departments, unlimited columns, 3 levels, an optional promo tile per department, and a mobile drawer with accordions. It's driven by the **Claude Mega Menu** (`foxy-mega-menu`), already created in your store, so you manage the hundreds of categories in *Content → Menus* with no code.
 - **Live personaliser on product pages.** Customers type a name or message, or upload a photo, and see it drawn instantly on a mockup:
   - **Card:** front and inside views (name and age on the front, message inside in a handwriting font)
   - **Drinkware:** mug, can cup, tumbler, glass or bottle, with the design wrapped round the cylinder
