@@ -4,11 +4,27 @@
   assign accent = accents[accent_i]
   assign sort_by = collection.sort_by | default: collection.default_sort_by
 -%}
-{%- assign header_image = collection.metafields.foxy.header_image.value -%}
-<div class="collection-hero accent-{{ accent }}{% if header_image %} collection-hero--banner{% endif %}">
+{%- liquid
+  assign header_image = collection.metafields.foxy.header_image.value
+  assign banner_group = ''
+  if header_image == blank and section.settings.auto_banners
+    capture banner_group
+      render 'collection-banner-group', collection: collection
+    endcapture
+    assign banner_group = banner_group | strip
+  endif
+-%}
+<div class="collection-hero accent-{{ accent }}{% if header_image or banner_group != blank %} collection-hero--banner{% endif %}">
   {%- if header_image -%}
     <div class="collection-hero__banner">
       {{ header_image | image_url: width: 1800 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '750,1100,1500,1800', sizes: '100vw', alt: '' }}
+    </div>
+  {%- elsif banner_group != blank -%}
+    {%- assign banner_file = 'foxy-header-' | append: banner_group | append: '.png' -%}
+    <div class="collection-hero__banner">
+      <img src="{{ banner_file | file_img_url: '1800x' }}"
+        srcset="{{ banner_file | file_img_url: '750x' }} 750w, {{ banner_file | file_img_url: '1100x' }} 1100w, {{ banner_file | file_img_url: '1500x' }} 1500w, {{ banner_file | file_img_url: '1800x' }} 1800w"
+        sizes="100vw" width="1800" height="771" alt="" loading="eager" fetchpriority="high">
     </div>
   {%- endif -%}
   <div class="page-width collection-hero__inner">
@@ -128,6 +144,7 @@
   "name": "Collection page",
   "settings": [
     { "type": "range", "id": "per_page", "label": "Products per page", "min": 12, "max": 48, "step": 6, "default": 24 },
+    { "type": "checkbox", "id": "auto_banners", "label": "Automatic themed header banners", "info": "Uses the matching foxy-header-*.png banner from Files. A collection's own \"Header banner\" metafield always wins.", "default": true },
     { "type": "checkbox", "id": "show_search", "label": "Show search & sub-category chips", "default": true },
     { "type": "textarea", "id": "search_exclude_tags", "label": "Tags to hide from chips", "info": "Comma-separated. Internal tags (foxy-, range-, dept-, machine-, wave-) are always hidden.", "default": "FACEBOOK,new-arrivals,personalised,trending,third-party-name,Birthday Card,Kids Cards,Adult Cards" },
     { "type": "range", "id": "search_chip_limit", "label": "Chips shown before \"more\"", "min": 6, "max": 48, "step": 2, "default": 18 },
