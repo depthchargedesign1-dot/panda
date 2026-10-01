@@ -44,7 +44,9 @@
             "highlight": true,
             "promo_eyebrow": "Order by 18 Dec",
             "promo_heading": "Christmas Eve boxes, baubles & matching jumpers",
-            "promo_button": "Shop Christmas"
+            "promo_button": "Shop Christmas",
+            "promo_image": "shopify://shop_images/foxy-mega-christmas.png",
+            "promo_link": "shopify://collections/new-christmas-eve-boxes"
           }
         },
         "d2": {
@@ -53,7 +55,9 @@
             "menu_item": "Personalised Gifts",
             "colour": "orange",
             "promo_eyebrow": "New",
-            "promo_heading": "Acrylic photo blocks & LED night lights"
+            "promo_heading": "Acrylic photo blocks & LED night lights",
+            "promo_image": "shopify://shop_images/foxy-mega-personalised-gifts.png",
+            "promo_link": "shopify://collections/new-acrylic-photo-gifts"
           }
         },
         "d3": {
@@ -62,7 +66,9 @@
             "menu_item": "Home & Drinkware",
             "colour": "teal",
             "promo_eyebrow": "Trending",
-            "promo_heading": "Glass can cups & 40oz tumblers with your name"
+            "promo_heading": "Glass can cups & 40oz tumblers with your name",
+            "promo_image": "shopify://shop_images/foxy-mega-drinkware.png",
+            "promo_link": "shopify://collections/new-glass-can-cups"
           }
         },
         "d4": {
@@ -71,7 +77,9 @@
             "menu_item": "Business Printing",
             "colour": "purple",
             "promo_eyebrow": "For your business",
-            "promo_heading": "Stickers, labels & review stands"
+            "promo_heading": "Stickers, labels & review stands",
+            "promo_image": "shopify://shop_images/foxy-mega-business.png",
+            "promo_link": "shopify://collections/business-cards"
           }
         }
       },

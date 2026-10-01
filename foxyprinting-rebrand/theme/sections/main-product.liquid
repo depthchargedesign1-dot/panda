@@ -106,6 +106,9 @@
           {%- endfor -%}
         {%- endunless -%}
 
+        {%- comment -%} Infinite Options (ShopPad) renders its fields here when the app is enabled for this product. {%- endcomment -%}
+        <div id="infiniteoptions-container"></div>
+
         {%- if has_fields -%}
           <div class="personaliser {{ accent_class }}" data-personaliser>
             <div class="personaliser__head">

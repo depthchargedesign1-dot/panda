@@ -24,7 +24,9 @@
             "eyebrow": "Christmas 2026",
             "heading": "Christmas Eve boxes",
             "text": "Personalised with their name",
-            "button_label": "Shop boxes"
+            "button_label": "Shop boxes",
+            "image": "shopify://shop_images/foxy-side-christmas-eve-box.png",
+            "button_link": "shopify://collections/new-christmas-eve-boxes"
           }
         },
         "side2": {
@@ -34,7 +36,9 @@
             "eyebrow": "Trending",
             "heading": "Glass can cups & tumblers",
             "text": "With your name, permanently printed",
-            "button_label": "Shop drinkware"
+            "button_label": "Shop drinkware",
+            "image": "shopify://shop_images/foxy-side-can-cups-tumblers.png",
+            "button_link": "shopify://collections/new-glass-can-cups"
           }
         }
       },
@@ -94,84 +98,108 @@
           "type": "category",
           "settings": {
             "label": "Birthday Cards",
-            "emoji": "🎂"
+            "emoji": "🎂",
+            "image": "shopify://shop_images/foxy-cat-birthday-cards.png",
+            "collection": "all-cards"
           }
         },
         "c2": {
           "type": "category",
           "settings": {
             "label": "Mugs",
-            "emoji": "☕"
+            "emoji": "☕",
+            "image": "shopify://shop_images/foxy-cat-mugs.png",
+            "collection": "mugs"
           }
         },
         "c3": {
           "type": "category",
           "settings": {
             "label": "Baby Grows",
-            "emoji": "👶"
+            "emoji": "👶",
+            "image": "shopify://shop_images/foxy-cat-baby-grows.png",
+            "collection": "baby-vests"
           }
         },
         "c4": {
           "type": "category",
           "settings": {
             "label": "Tumblers & Cups",
-            "emoji": "🥤"
+            "emoji": "🥤",
+            "image": "shopify://shop_images/foxy-cat-tumblers-cups.png",
+            "collection": "new-glass-can-cups"
           }
         },
         "c5": {
           "type": "category",
           "settings": {
             "label": "T-Shirts & Hoodies",
-            "emoji": "👕"
+            "emoji": "👕",
+            "image": "shopify://shop_images/foxy-cat-tees-hoodies.png",
+            "collection": "t-shirts"
           }
         },
         "c6": {
           "type": "category",
           "settings": {
             "label": "Pet Gifts",
-            "emoji": "🐶"
+            "emoji": "🐶",
+            "image": "shopify://shop_images/foxy-cat-pet-gifts.png",
+            "collection": "personalised-pet-products"
           }
         },
         "c7": {
           "type": "category",
           "settings": {
             "label": "Keyrings & Magnets",
-            "emoji": "🔑"
+            "emoji": "🔑",
+            "image": "shopify://shop_images/foxy-cat-keyrings-magnets.png",
+            "collection": "all-retro-gaming-keyrings"
           }
         },
         "c8": {
           "type": "category",
           "settings": {
             "label": "Towels",
-            "emoji": "🛁"
+            "emoji": "🛁",
+            "image": "shopify://shop_images/foxy-cat-towels.png",
+            "collection": "personalised-bath-towels"
           }
         },
         "c9": {
           "type": "category",
           "settings": {
             "label": "Christmas",
-            "emoji": "🎄"
+            "emoji": "🎄",
+            "image": "shopify://shop_images/foxy-cat-christmas.png",
+            "collection": "christmas-novelty-gifts"
           }
         },
         "c10": {
           "type": "category",
           "settings": {
             "label": "Halloween",
-            "emoji": "🎃"
+            "emoji": "🎃",
+            "image": "shopify://shop_images/foxy-cat-halloween.png",
+            "collection": "new-halloween"
           }
         },
         "c11": {
           "type": "category",
           "settings": {
             "label": "Retro Gaming",
-            "emoji": "🎮"
+            "emoji": "🎮",
+            "image": "shopify://shop_images/foxy-cat-retro-gaming.png",
+            "collection": "all-retro-game-cases"
           }
         },
         "c12": {
           "type": "category",
           "settings": {
             "label": "Business Printing",
-            "emoji": "💼"
+            "emoji": "💼",
+            "image": "shopify://shop_images/foxy-cat-business-printing.png",
+            "collection": "business-cards"
           }
         }
       },
@@ -207,7 +235,8 @@
       "settings": {
         "heading": "Bestselling personalised gifts",
         "subheading": "Our customers' favourites this month",
-        "limit": 8
+        "limit": 8,
+        "collection": "bestsellers"
       }
     },
     "how": {
@@ -253,7 +282,9 @@
             "emoji": "💎",
             "tag": "UV printed",
             "title": "Acrylic photo blocks",
-            "text": "Crystal-clear keepsakes, night lights and music plaques."
+            "text": "Crystal-clear keepsakes, night lights and music plaques.",
+            "image": "shopify://shop_images/foxy-tile-acrylic-photo-gifts.png",
+            "link": "shopify://collections/new-acrylic-photo-gifts"
           }
         },
         "f2": {
@@ -262,7 +293,9 @@
             "emoji": "🥤",
             "tag": "UV DTF",
             "title": "Can cups & tumblers",
-            "text": "Your name on glass, steel and more — dishwasher tough."
+            "text": "Your name on glass, steel and more — dishwasher tough.",
+            "image": "shopify://shop_images/foxy-tile-can-cups-tumblers.png",
+            "link": "shopify://collections/new-glass-can-cups"
           }
         },
         "f3": {
@@ -271,7 +304,9 @@
             "emoji": "👕",
             "tag": "DTF clothing",
             "title": "Tees, hoodies & leavers",
-            "text": "Full-colour printing on any garment, no minimum."
+            "text": "Full-colour printing on any garment, no minimum.",
+            "image": "shopify://shop_images/foxy-tile-leavers-hoodies.png",
+            "link": "shopify://collections/hoodies"
           }
         },
         "f4": {
@@ -280,7 +315,9 @@
             "emoji": "📦",
             "tag": "Cut to shape",
             "title": "Boxes & packaging",
-            "text": "Christmas Eve boxes, cupcake boxes, game cases and more."
+            "text": "Christmas Eve boxes, cupcake boxes, game cases and more.",
+            "image": "shopify://shop_images/foxy-tile-boxes-packaging.png",
+            "link": "shopify://collections/new-party-boxes"
           }
         }
       },
@@ -296,7 +333,8 @@
       "settings": {
         "heading": "Christmas gifts they'll treasure",
         "limit": 8,
-        "tinted": true
+        "tinted": true,
+        "collection": "christmas-novelty-gifts"
       }
     },
     "reviews": {
@@ -393,7 +431,9 @@
             "emoji": "🪪",
             "tag": "From £19.99",
             "title": "Business cards",
-            "text": "Standard, rounded, spot-gloss and metal."
+            "text": "Standard, rounded, spot-gloss and metal.",
+            "image": "shopify://shop_images/foxy-tile-business-cards.png",
+            "link": "shopify://collections/business-cards"
           }
         },
         "b2": {
@@ -402,7 +442,9 @@
             "emoji": "🏷️",
             "tag": "From £14.99",
             "title": "Stickers & labels",
-            "text": "Die-cut, kiss-cut and product labels."
+            "text": "Die-cut, kiss-cut and product labels.",
+            "image": "shopify://shop_images/foxy-tile-stickers-labels.png",
+            "link": "shopify://collections/all-phone-case"
           }
         },
         "b3": {
@@ -411,7 +453,9 @@
             "emoji": "⭐",
             "tag": "Trending",
             "title": "Tap-to-review stands",
-            "text": "NFC + QR stands that get you Google reviews."
+            "text": "NFC + QR stands that get you Google reviews.",
+            "image": "shopify://shop_images/foxy-tile-review-stand.png",
+            "link": "shopify://collections/new-signs-displays"
           }
         },
         "b4": {
@@ -420,7 +464,9 @@
             "emoji": "👔",
             "tag": "Workwear",
             "title": "Branded clothing",
-            "text": "Logo polos, hi-vis and teamwear."
+            "text": "Logo polos, hi-vis and teamwear.",
+            "image": "shopify://shop_images/foxy-tile-workwear.png",
+            "link": "shopify://collections/new-workwear"
           }
         }
       },

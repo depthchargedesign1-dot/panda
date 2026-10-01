@@ -33,10 +33,10 @@
     {%- if sides.size > 0 -%}
       <div class="hero-side">
         {%- for block in sides limit: 2 -%}
-          <a class="hero-tile hero-tile--side {% render 'accent', name: block.settings.colour %}{% if block.settings.dark_text %} hero-tile--dark-text{% endif %}" href="{{ block.settings.button_link }}" {{ block.shopify_attributes }}>
+          <a class="hero-tile hero-tile--side {% render 'accent', name: block.settings.colour %}{% if block.settings.image %} hero-tile--side-image{% endif %}{% if block.settings.dark_text %} hero-tile--dark-text{% endif %}" href="{{ block.settings.button_link }}" {{ block.shopify_attributes }}>
             <div class="hero-tile__media">
               {%- if block.settings.image -%}
-                {{ block.settings.image | image_url: width: 800 | image_tag: loading: 'eager', alt: block.settings.image.alt }}
+                {{ block.settings.image | image_url: width: 900 | image_tag: loading: 'eager', widths: '450,900', sizes: '(min-width: 990px) 32vw, 100vw', alt: '' }}
               {%- else -%}
                 <span class="hero-tile__blob" style="width:220px;height:220px;right:-60px;bottom:-80px;background:rgba(255,255,255,.25)"></span>
               {%- endif -%}

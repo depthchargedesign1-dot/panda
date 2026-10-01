@@ -187,6 +187,50 @@
     update();
   }
 
+  /* ---------- Collection: search within + sub-category chips ---------- */
+  document.querySelectorAll('[data-col-search]').forEach((box) => {
+    const input = box.querySelector('[data-col-search-input]');
+    const form = box.querySelector('[data-col-search-form]');
+    const q = box.querySelector('[data-col-search-q]');
+    const chips = Array.from(box.querySelectorAll('[data-chip]'));
+    const more = box.querySelector('[data-col-search-more]');
+    const empty = box.querySelector('[data-col-search-empty]');
+    const scope = box.dataset.scope || '';
+
+    const filterChips = () => {
+      const term = input.value.trim().toLowerCase();
+      let visible = 0;
+      chips.forEach((chip) => {
+        const match = !term || chip.dataset.chip.includes(term);
+        const extraHidden = !term && chip.classList.contains('is-extra') && !box.classList.contains('is-expanded');
+        chip.hidden = !match || extraHidden;
+        if (!chip.hidden) visible++;
+      });
+      if (more) more.hidden = !!term || box.classList.contains('is-expanded');
+      if (empty) empty.hidden = !term || visible > 0;
+    };
+
+    if (more) more.addEventListener('click', () => {
+      box.classList.add('is-expanded');
+      more.setAttribute('aria-expanded', 'true');
+      filterChips();
+    });
+    input.addEventListener('input', filterChips);
+    form.addEventListener('submit', (e) => {
+      const term = input.value.trim();
+      if (!term) { e.preventDefault(); return; }
+      // Exactly one matching chip: go straight to that sub-category.
+      const hits = chips.filter((c) => !c.hidden);
+      if (hits.length === 1 && hits[0].dataset.chip === term.toLowerCase()) {
+        e.preventDefault();
+        window.location.href = hits[0].href;
+        return;
+      }
+      q.value = scope ? `${term} AND ${scope}` : term;
+    });
+    filterChips();
+  });
+
   /* ---------- Collection: filters & sorting ---------- */
   const facetToggle = document.querySelector('[data-facets-toggle]');
   if (facetToggle) {

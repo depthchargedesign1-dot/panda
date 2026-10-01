@@ -63,7 +63,7 @@ const collections = Object.fromEntries(Object.entries(data.collections).map(([ha
   products: c.products.map((h) => byHandle[h]).filter(Boolean), products_count: c.products.length,
   all_products_count: c.products.length, image: null,
   sort_options: [{ value: 'best-selling', name: 'Best selling' }, { value: 'price-ascending', name: 'Price, low to high' }, { value: 'created-descending', name: 'Newest' }],
-  default_sort_by: 'best-selling', filters: c.filters || [], metafields: c.metafields || {}
+  default_sort_by: 'best-selling', filters: c.filters || [], metafields: c.metafields || {}, all_tags: c.all_tags || []
 }]));
 
 function resolveSetting(def, value) {

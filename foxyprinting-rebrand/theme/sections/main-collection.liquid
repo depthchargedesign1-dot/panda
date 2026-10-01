@@ -51,6 +51,9 @@
   </aside>
 
   <div>
+    {%- if section.settings.show_search -%}
+      {% render 'collection-search', collection: collection, current_tags: current_tags, exclude: section.settings.search_exclude_tags, limit: section.settings.search_chip_limit %}
+    {%- endif -%}
     {%- if section.settings.show_subcollections and section.settings.subcollection_menu != blank -%}
       {%- for link in section.settings.subcollection_menu.links -%}
         {%- if link.url == collection.url and link.links.size > 0 -%}
@@ -125,6 +128,9 @@
   "name": "Collection page",
   "settings": [
     { "type": "range", "id": "per_page", "label": "Products per page", "min": 12, "max": 48, "step": 6, "default": 24 },
+    { "type": "checkbox", "id": "show_search", "label": "Show search & sub-category chips", "default": true },
+    { "type": "textarea", "id": "search_exclude_tags", "label": "Tags to hide from chips", "info": "Comma-separated. Internal tags (foxy-, range-, dept-, machine-, wave-) are always hidden.", "default": "FACEBOOK,new-arrivals,personalised,trending,third-party-name,Birthday Card,Kids Cards,Adult Cards" },
+    { "type": "range", "id": "search_chip_limit", "label": "Chips shown before \"more\"", "min": 6, "max": 48, "step": 2, "default": 18 },
     { "type": "checkbox", "id": "show_subcollections", "label": "Show sub-category pills", "default": true },
     { "type": "link_list", "id": "subcollection_menu", "label": "Menu used for sub-category pills", "info": "If this collection appears in the menu with child links, they show as pills." }
   ]

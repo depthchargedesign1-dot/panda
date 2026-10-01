@@ -1,5 +1,7 @@
 {
-  "accessibility": { "skip_to_content": "Skip to content" },
+  "accessibility": {
+    "skip_to_content": "Skip to content"
+  },
   "general": {
     "404_title": "Oops — this page has gone walkies",
     "404_text": "We couldn't find that page, but we've got thousands of personalised gifts waiting for you.",
@@ -47,7 +49,12 @@
       "one": "{{ count }} product",
       "other": "{{ count }} products"
     },
-    "sort_by": "Sort by"
+    "sort_by": "Sort by",
+    "search_within": "Search {{ title }}…",
+    "search": "Search",
+    "all_in": "All {{ title }}",
+    "more_types": "+ {{ count }} more",
+    "no_types": "No matching types – press Search to look through every product here."
   },
   "products": {
     "product": {
@@ -86,13 +93,18 @@
     "expired": "Expired on {{ date }}"
   },
   "customer": {
-    "account": { "title": "My account" },
+    "account": {
+      "title": "My account"
+    },
     "activate": "Activate account",
     "add_address": "Add address",
     "addresses": "Addresses",
     "first_name": "First name",
     "last_name": "Last name",
-    "login": { "title": "Sign in", "submit": "Sign in" },
+    "login": {
+      "title": "Sign in",
+      "submit": "Sign in"
+    },
     "logout": "Sign out",
     "no_orders": "You haven't placed any orders yet.",
     "orders": "Order history",
@@ -100,7 +112,10 @@
     "password_confirm": "Confirm password",
     "recover": "Forgotten your password?",
     "recover_submit": "Send reset link",
-    "register": { "title": "Create an account", "submit": "Create account" },
+    "register": {
+      "title": "Create an account",
+      "submit": "Create account"
+    },
     "reset": "Reset password"
   }
 }
