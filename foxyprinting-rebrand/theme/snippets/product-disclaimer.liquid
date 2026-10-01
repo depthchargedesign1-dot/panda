@@ -1,0 +1,55 @@
+{%- comment -%}
+  Automatic "unofficial / not endorsed" notice for products that use someone
+  else's name, likeness or trademark. Picks wording from the product type,
+  title and tags. A product's own description disclaimer (p.disclaimer) or the
+  metafield foxy.disclaimer always wins, so nothing is shown twice.
+  Params: product
+{%- endcomment -%}
+{%- liquid
+  assign custom = product.metafields.foxy.disclaimer.value
+  if product.description contains 'class="disclaimer"'
+    assign kind = 'none'
+  elsif custom != blank
+    assign kind = 'custom'
+  else
+    assign hay = product.type | append: ' ' | append: product.title | downcase
+    assign title_lc = product.title | downcase
+    assign tags_lc = product.tags | join: ',' | downcase
+    assign kind = 'none'
+    if hay contains 'signed' or hay contains 'autograph'
+      assign kind = 'signed'
+    elsif hay contains 'face mask' or hay contains 'facemask' or hay contains 'tv stars' or title_lc contains 'celebrity'
+      assign kind = 'person'
+    elsif hay contains 'replacement' or hay contains 'game case' or hay contains 'nintendo' or hay contains 'sega' or hay contains 'playstation' or hay contains 'atari' or hay contains 'xbox' or hay contains 'gameboy' or hay contains 'snes' or hay contains 'dreamcast' or hay contains 'retro gaming'
+      assign kind = 'game'
+    elsif hay contains 'perfectdraft' or hay contains 'perfect draft' or hay contains 'perfect skin'
+      assign kind = 'brand'
+    elsif hay contains 'inspired' or hay contains 'theme style' or hay contains 'style theme' or hay contains 'kidshows'
+      assign kind = 'character'
+    elsif hay contains 'football' or hay contains 'premier league' or hay contains ' fc' or hay contains ' united' or hay contains 'rugby' or hay contains 'darts'
+      assign kind = 'sport'
+    elsif tags_lc contains 'third-party-name'
+      assign kind = 'generic'
+    endif
+    if kind == 'game' and hay contains 'case'
+      assign game_case = true
+    endif
+  endif
+-%}
+{%- unless kind == 'none' -%}
+  <div class="product-disclaimer">
+    <strong>{{ 'products.disclaimer.heading' | t }}</strong>
+    <p>
+      {%- case kind -%}
+        {%- when 'custom' -%}{{ custom }}
+        {%- when 'signed' -%}{{ 'products.disclaimer.signed' | t }}
+        {%- when 'person' -%}{{ 'products.disclaimer.person' | t }}
+        {%- when 'game' -%}{{ 'products.disclaimer.game' | t }}{% if game_case %} {{ 'products.disclaimer.game_case' | t }}{% endif %}
+        {%- when 'brand' -%}{{ 'products.disclaimer.brand' | t }}
+        {%- when 'character' -%}{{ 'products.disclaimer.character' | t }}
+        {%- when 'sport' -%}{{ 'products.disclaimer.sport' | t }}
+        {%- else -%}{{ 'products.disclaimer.generic' | t }}
+      {%- endcase -%}
+    </p>
+  </div>
+{%- endunless -%}

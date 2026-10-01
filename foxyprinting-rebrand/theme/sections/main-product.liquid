@@ -184,6 +184,7 @@
 
       <div class="accordion">
         <details open><summary>{{ 'products.product.description' | t }}</summary><div class="rte">{{ product.description }}</div></details>
+        {% render 'product-disclaimer', product: product %}
         {%- for block in section.blocks -%}
           {%- if block.type == 'tab' -%}
             <details {{ block.shopify_attributes }}><summary>{{ block.settings.heading }}</summary><div class="rte">{{ block.settings.content }}{{ block.settings.page.content }}</div></details>

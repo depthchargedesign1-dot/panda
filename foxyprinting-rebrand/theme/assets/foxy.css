@@ -508,6 +508,12 @@ h3, .h3 { font-size: 1.2rem; }
   #infiniteoptions-container input, #infiniteoptions-container select, #infiniteoptions-container textarea { font-size: 16px !important; } /* stops iOS zoom */
 }
 
+/* Unofficial / not-endorsed notice under the description */
+.product-disclaimer { margin: 14px 0 0; padding: 12px 14px; border-left: 4px solid var(--accent, var(--fx-purple)); background: var(--fx-tint); border-radius: 0 12px 12px 0; font-size: .82rem; line-height: 1.5; color: rgba(29,18,64,.8); }
+.product-disclaimer strong { display: block; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 4px; color: var(--fx-ink); }
+.product-disclaimer p { margin: 0; }
+.rte .disclaimer { font-size: .85rem; opacity: .8; }
+
 /* Search inside a collection + sub-category chips */
 .col-search { background: var(--fx-tint); border-radius: calc(var(--fx-radius) + 4px); padding: 16px; margin-bottom: 20px; }
 .col-search__form { position: relative; display: flex; gap: 10px; align-items: center; }
