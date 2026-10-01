@@ -49,6 +49,49 @@ Write like a friendly UK shop owner who makes the product in-house, not like an 
 - The "Why you'll love it" bullets, the "Size & details" list and the buyer questions answered must all be specific to that product type.
 - If the family has no sheet, or a needed fact is marked **ASK**, ask the owner once, write the answer into the sheet, and commit it. Never invent specs, sizes, reviews or delivery promises.
 
+## Third-party names: a disclaimer is REQUIRED
+
+If a product's title, description, tags, design or image uses **any** name or mark that belongs to someone else, it must carry a disclaimer. That includes:
+- a football or sports club, league or player;
+- a TV show, film, book, cartoon or game character;
+- a celebrity or public figure;
+- a band;
+- a console or game publisher (Nintendo, Sega, PlayStation, Xbox, Atari);
+- a brand or logo.
+
+Foxy Printing is not endorsed by, sponsored by or connected to any of them.
+
+**Rules**
+1. Add the disclaimer as the **last block** of the description, under `<h3>Please note</h3>`, in a `<p class="disclaimer">`. Fill in the real name(s). Never leave `[brackets]` in it.
+2. Pick the template that matches the type of name (below). If a product uses two kinds (e.g. a club and a player), combine them into one paragraph.
+3. Never use the words **official, licensed, authentic, genuine, approved, endorsed or merchandise** (meaning official merch) about the product. Don't use club crests, team logos, studio logos or console logos unless the owner confirms a licence.
+4. Use names only to **describe** the design or what it fits (e.g. "for Liverpool fans", "replacement case for SNES games"). Never write them as if the product comes from that brand.
+5. Keep the trademark out of the **SEO title** and **meta description** where you can, and lead with the generic description, e.g. "Personalised Football Fan Birthday Card – Red Team Colours". Google Ads and Merchant Center can disapprove listings that put trademarks in ad text, or that look like counterfeits.
+6. Set the tag `third-party-name` on the product so these items can be found and reviewed later.
+7. If you're unsure whether a name is protected, assume it is and add the disclaimer.
+
+**Templates** (UK English; replace the bracketed parts):
+
+- **Football / sports clubs, leagues, players**
+  > This is an unofficial, fan-made design created and printed by Foxy Printing. It is not endorsed by, sponsored by, or affiliated with [Club name], [League, e.g. the Premier League], or any club, league or player. Club and player names are used only to describe the design and who it's for. All trademarks belong to their respective owners.
+
+- **TV, film, book, cartoon or game characters ("theme inspired")**
+  > This is an unofficial design inspired by [Show/Film/Character]. It is not official merchandise and is not endorsed by, sponsored by, or connected with [Show/Character] or [rights holder, e.g. the studio], or any of their licensees. All names, characters and trademarks belong to their respective owners.
+
+- **Celebrities and public figures (e.g. face masks)**
+  > This is an unofficial novelty product made for fun and fancy dress. [Name] has not endorsed, sponsored or approved this product, and Foxy Printing has no connection with [him/her/them]. The name is used only to describe the design.
+
+- **Video games and consoles (replacement cases, covers, posters, magnets, keyrings)**
+  > This is an unofficial, fan-made [replacement case / cover / print] produced by Foxy Printing. It is not made, endorsed or licensed by [Nintendo / Sega / Sony / Microsoft / Atari / the game's publisher]. [For cases: No game, cartridge or disc is included.] All trademarks and game titles belong to their respective owners and are used only to identify compatibility or theme.
+
+- **Bands and musicians**
+  > This is an unofficial fan design. It is not endorsed by, or connected with, [Band/Artist], their management or record label. All names and trademarks belong to their respective owners.
+
+- **Brands, products and logos (e.g. drink brands, PerfectDraft)**
+  > This is an unofficial product made by Foxy Printing. It is not made, endorsed or approved by [Brand]. [Brand] is a trademark of its owner and is used only to describe compatibility or the design theme.
+
+> **Note for the owner:** a disclaimer makes clear you're not the official brand, and it helps with customers and marketplaces. But it does **not** give permission to use someone else's trademark or artwork. Rights holders can still send takedown notices. For your biggest-selling licensed-style lines, get advice from an IP solicitor or a licence.
+
 **SEO title** (≤ 60 characters): `Primary Keyword | Foxy Printing`, e.g. `Personalised 5th Birthday Card with Name | Foxy Printing`.
 
 **Meta description** (140–155 characters): a benefit plus the personalisation plus a reason to buy now, in natural sentences. Example: "Make their day with a personalised 5th birthday card – add their name, age and your message. Printed on thick card and posted 1st Class."
