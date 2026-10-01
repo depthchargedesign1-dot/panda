@@ -3,92 +3,453 @@
     "hero": {
       "type": "hero-banner",
       "blocks": {
-        "main": { "type": "main", "settings": {
-          "colour": "orange",
-          "eyebrow": "New: we print on (almost) anything",
-          "heading": "Personalised gifts they'll never forget",
-          "text": "Cards, mugs, baby grows, tumblers, slate, acrylic, clothing and more. Add a name, message or photo and watch it appear live.",
-          "button_label": "Start personalising", "button_link": "shopify://collections/all",
-          "button2_label": "Shop Christmas", "button2_link": "shopify://collections/all"
-        } },
-        "side1": { "type": "side", "settings": { "colour": "purple", "eyebrow": "Christmas 2026", "heading": "Christmas Eve boxes", "text": "Personalised with their name", "button_label": "Shop boxes" } },
-        "side2": { "type": "side", "settings": { "colour": "teal", "eyebrow": "Trending", "heading": "Glass can cups & tumblers", "text": "With your name, permanently printed", "button_label": "Shop drinkware" } }
+        "main": {
+          "type": "main",
+          "settings": {
+            "colour": "orange",
+            "eyebrow": "New: we print on (almost) anything",
+            "heading": "Personalised gifts they'll never forget",
+            "text": "Cards, mugs, baby grows, tumblers, slate, acrylic, clothing and more. Add a name, message or photo and watch it appear live.",
+            "button_label": "Start personalising",
+            "button_link": "shopify://collections/all",
+            "button2_label": "Shop Christmas",
+            "button2_link": "shopify://collections/all"
+          }
+        },
+        "side1": {
+          "type": "side",
+          "settings": {
+            "colour": "purple",
+            "eyebrow": "Christmas 2026",
+            "heading": "Christmas Eve boxes",
+            "text": "Personalised with their name",
+            "button_label": "Shop boxes"
+          }
+        },
+        "side2": {
+          "type": "side",
+          "settings": {
+            "colour": "teal",
+            "eyebrow": "Trending",
+            "heading": "Glass can cups & tumblers",
+            "text": "With your name, permanently printed",
+            "button_label": "Shop drinkware"
+          }
+        }
       },
-      "block_order": ["main", "side1", "side2"]
+      "block_order": [
+        "main",
+        "side1",
+        "side2"
+      ]
     },
     "usps": {
       "type": "usp-bar",
       "blocks": {
-        "u1": { "type": "usp", "settings": { "emoji": "🚚", "title": "Fast UK dispatch", "text": "Most orders out in 1–2 working days" } },
-        "u2": { "type": "usp", "settings": { "emoji": "👀", "title": "Live preview", "text": "See your design before you buy" } },
-        "u3": { "type": "usp", "settings": { "emoji": "🖨️", "title": "Printed in the UK", "text": "In our own workshop, on our own kit" } },
-        "u4": { "type": "usp", "settings": { "emoji": "💯", "title": "Happiness promise", "text": "Not right? We'll reprint it" } }
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "emoji": "🚚",
+            "title": "Fast UK dispatch",
+            "text": "Most orders out in 1–2 working days"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "emoji": "👀",
+            "title": "Live preview",
+            "text": "See your design before you buy"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "emoji": "🖨️",
+            "title": "Printed in the UK",
+            "text": "In our own workshop, on our own kit"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "emoji": "💯",
+            "title": "Happiness promise",
+            "text": "Not right? We'll reprint it"
+          }
+        }
       },
-      "block_order": ["u1", "u2", "u3", "u4"]
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ]
     },
     "categories": {
       "type": "category-circles",
       "blocks": {
-        "c1": { "type": "category", "settings": { "label": "Birthday Cards", "emoji": "🎂" } },
-        "c2": { "type": "category", "settings": { "label": "Mugs", "emoji": "☕" } },
-        "c3": { "type": "category", "settings": { "label": "Baby Grows", "emoji": "👶" } },
-        "c4": { "type": "category", "settings": { "label": "Tumblers & Cups", "emoji": "🥤" } },
-        "c5": { "type": "category", "settings": { "label": "T-Shirts & Hoodies", "emoji": "👕" } },
-        "c6": { "type": "category", "settings": { "label": "Pet Gifts", "emoji": "🐶" } },
-        "c7": { "type": "category", "settings": { "label": "Keyrings & Magnets", "emoji": "🔑" } },
-        "c8": { "type": "category", "settings": { "label": "Towels", "emoji": "🛁" } },
-        "c9": { "type": "category", "settings": { "label": "Christmas", "emoji": "🎄" } },
-        "c10": { "type": "category", "settings": { "label": "Halloween", "emoji": "🎃" } },
-        "c11": { "type": "category", "settings": { "label": "Retro Gaming", "emoji": "🎮" } },
-        "c12": { "type": "category", "settings": { "label": "Business Printing", "emoji": "💼" } }
+        "c1": {
+          "type": "category",
+          "settings": {
+            "label": "Birthday Cards",
+            "emoji": "🎂"
+          }
+        },
+        "c2": {
+          "type": "category",
+          "settings": {
+            "label": "Mugs",
+            "emoji": "☕"
+          }
+        },
+        "c3": {
+          "type": "category",
+          "settings": {
+            "label": "Baby Grows",
+            "emoji": "👶"
+          }
+        },
+        "c4": {
+          "type": "category",
+          "settings": {
+            "label": "Tumblers & Cups",
+            "emoji": "🥤"
+          }
+        },
+        "c5": {
+          "type": "category",
+          "settings": {
+            "label": "T-Shirts & Hoodies",
+            "emoji": "👕"
+          }
+        },
+        "c6": {
+          "type": "category",
+          "settings": {
+            "label": "Pet Gifts",
+            "emoji": "🐶"
+          }
+        },
+        "c7": {
+          "type": "category",
+          "settings": {
+            "label": "Keyrings & Magnets",
+            "emoji": "🔑"
+          }
+        },
+        "c8": {
+          "type": "category",
+          "settings": {
+            "label": "Towels",
+            "emoji": "🛁"
+          }
+        },
+        "c9": {
+          "type": "category",
+          "settings": {
+            "label": "Christmas",
+            "emoji": "🎄"
+          }
+        },
+        "c10": {
+          "type": "category",
+          "settings": {
+            "label": "Halloween",
+            "emoji": "🎃"
+          }
+        },
+        "c11": {
+          "type": "category",
+          "settings": {
+            "label": "Retro Gaming",
+            "emoji": "🎮"
+          }
+        },
+        "c12": {
+          "type": "category",
+          "settings": {
+            "label": "Business Printing",
+            "emoji": "💼"
+          }
+        }
       },
-      "block_order": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9", "c10", "c11", "c12"],
-      "settings": { "heading": "Shop by category", "link_label": "See all categories", "link": "shopify://collections/all" }
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8",
+        "c9",
+        "c10",
+        "c11",
+        "c12"
+      ],
+      "settings": {
+        "heading": "Shop by category",
+        "link_label": "See all categories",
+        "link": "shopify://collections/all"
+      }
     },
-    "christmas": { "type": "occasion-countdown", "settings": { "colour": "pink", "date": "2026-12-18 12:00" } },
-    "bestsellers": { "type": "featured-collection", "settings": { "heading": "Bestselling personalised gifts", "subheading": "Our customers' favourites this month", "limit": 8 } },
+    "christmas": {
+      "type": "occasion-countdown",
+      "settings": {
+        "colour": "pink",
+        "date": "2026-12-18 12:00"
+      }
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Bestselling personalised gifts",
+        "subheading": "Our customers' favourites this month",
+        "limit": 8
+      }
+    },
     "how": {
       "type": "steps",
       "blocks": {
-        "s1": { "type": "step", "settings": { "emoji": "🎁", "title": "Pick your gift", "text": "Choose from thousands of cards, mugs, clothing, keepsakes and more." } },
-        "s2": { "type": "step", "settings": { "emoji": "✏️", "title": "Make it theirs", "text": "Type a name, add a message or upload a photo and watch the live preview update." } },
-        "s3": { "type": "step", "settings": { "emoji": "🚚", "title": "We print & post", "text": "Printed in our UK workshop and dispatched fast." } }
+        "s1": {
+          "type": "step",
+          "settings": {
+            "emoji": "🎁",
+            "title": "Pick your gift",
+            "text": "Choose from thousands of cards, mugs, clothing, keepsakes and more."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "emoji": "✏️",
+            "title": "Make it theirs",
+            "text": "Type a name, add a message or upload a photo and watch the live preview update."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "emoji": "🚚",
+            "title": "We print & post",
+            "text": "Printed in our UK workshop and dispatched fast."
+          }
+        }
       },
-      "block_order": ["s1", "s2", "s3"]
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ]
     },
     "new_ranges": {
       "type": "feature-grid",
       "blocks": {
-        "f1": { "type": "tile", "settings": { "emoji": "💎", "tag": "UV printed", "title": "Acrylic photo blocks", "text": "Crystal-clear keepsakes, night lights and music plaques." } },
-        "f2": { "type": "tile", "settings": { "emoji": "🥤", "tag": "UV DTF", "title": "Can cups & tumblers", "text": "Your name on glass, steel and more — dishwasher tough." } },
-        "f3": { "type": "tile", "settings": { "emoji": "👕", "tag": "DTF clothing", "title": "Tees, hoodies & leavers", "text": "Full-colour printing on any garment, no minimum." } },
-        "f4": { "type": "tile", "settings": { "emoji": "📦", "tag": "Cut to shape", "title": "Boxes & packaging", "text": "Christmas Eve boxes, cupcake boxes, game cases and more." } }
+        "f1": {
+          "type": "tile",
+          "settings": {
+            "emoji": "💎",
+            "tag": "UV printed",
+            "title": "Acrylic photo blocks",
+            "text": "Crystal-clear keepsakes, night lights and music plaques."
+          }
+        },
+        "f2": {
+          "type": "tile",
+          "settings": {
+            "emoji": "🥤",
+            "tag": "UV DTF",
+            "title": "Can cups & tumblers",
+            "text": "Your name on glass, steel and more — dishwasher tough."
+          }
+        },
+        "f3": {
+          "type": "tile",
+          "settings": {
+            "emoji": "👕",
+            "tag": "DTF clothing",
+            "title": "Tees, hoodies & leavers",
+            "text": "Full-colour printing on any garment, no minimum."
+          }
+        },
+        "f4": {
+          "type": "tile",
+          "settings": {
+            "emoji": "📦",
+            "tag": "Cut to shape",
+            "title": "Boxes & packaging",
+            "text": "Christmas Eve boxes, cupcake boxes, game cases and more."
+          }
+        }
       },
-      "block_order": ["f1", "f2", "f3", "f4"]
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ]
     },
-    "christmas_products": { "type": "featured-collection", "settings": { "heading": "Christmas gifts they'll treasure", "limit": 8, "tinted": true } },
+    "christmas_products": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Christmas gifts they'll treasure",
+        "limit": 8,
+        "tinted": true
+      }
+    },
     "reviews": {
       "type": "reviews",
       "blocks": {
-        "r1": { "type": "review", "settings": { "quote": "Replace with a real review from your store.", "name": "Customer", "product": "Personalised birthday card" } },
-        "r2": { "type": "review", "settings": { "quote": "Replace with a real review from your store.", "name": "Customer", "product": "Personalised mug" } },
-        "r3": { "type": "review", "settings": { "quote": "Replace with a real review from your store.", "name": "Customer", "product": "Personalised baby grow" } }
+        "r1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Fantastic card",
+            "quote": "Absolutely fantastic card! My grandson will be so thrilled that he has a card with his favourite supercar on it. Superb quality card and very quick delivery. Thank you.",
+            "name": "Jean M.",
+            "verified": true,
+            "product": "Personalised kids' birthday card"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Brother loved the card",
+            "quote": "My brother is a Motörhead/Lemmy big fan and he absolutely loved his birthday card. I ordered in New Zealand and he received it in plenty of time in England.",
+            "name": "Kevin T.",
+            "verified": true,
+            "product": "Personalised music birthday card"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Excellent card",
+            "quote": "Excellent card, excellent print. Fantastic service and fast delivery. Would definitely recommend the product and company.",
+            "name": "Glennis L.",
+            "verified": true,
+            "product": "Personalised A4 card"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Absolutely brilliant service",
+            "quote": "Absolutely brilliant service. Great quality and very fast delivery. Would recommend and will use again.",
+            "name": "John B.",
+            "verified": true,
+            "product": "Custom photo face mask"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "High quality item",
+            "quote": "High quality item, competitively priced and would definitely return for more.",
+            "name": "D. Gray",
+            "verified": true,
+            "product": "Personalised football club certificates"
+          }
+        },
+        "r6": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Great quality",
+            "quote": "Great quality, fast delivery — this was exactly what I wanted, thank you.",
+            "name": "Tracey B.",
+            "verified": true,
+            "product": "Personalised birthday card"
+          }
+        }
       },
-      "block_order": ["r1", "r2", "r3"],
-      "settings": { "heading": "Customers love Foxy" }
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "settings": {
+        "heading": "Customers love Foxy",
+        "subheading": "415 reviews on Judge.me · 411 from verified buyers",
+        "link_label": "Read all reviews",
+        "link": ""
+      }
     },
     "business": {
       "type": "feature-grid",
       "blocks": {
-        "b1": { "type": "tile", "settings": { "emoji": "🪪", "tag": "From £19.99", "title": "Business cards", "text": "Standard, rounded, spot-gloss and metal." } },
-        "b2": { "type": "tile", "settings": { "emoji": "🏷️", "tag": "From £14.99", "title": "Stickers & labels", "text": "Die-cut, kiss-cut and product labels." } },
-        "b3": { "type": "tile", "settings": { "emoji": "⭐", "tag": "Trending", "title": "Tap-to-review stands", "text": "NFC + QR stands that get you Google reviews." } },
-        "b4": { "type": "tile", "settings": { "emoji": "👔", "tag": "Workwear", "title": "Branded clothing", "text": "Logo polos, hi-vis and teamwear." } }
+        "b1": {
+          "type": "tile",
+          "settings": {
+            "emoji": "🪪",
+            "tag": "From £19.99",
+            "title": "Business cards",
+            "text": "Standard, rounded, spot-gloss and metal."
+          }
+        },
+        "b2": {
+          "type": "tile",
+          "settings": {
+            "emoji": "🏷️",
+            "tag": "From £14.99",
+            "title": "Stickers & labels",
+            "text": "Die-cut, kiss-cut and product labels."
+          }
+        },
+        "b3": {
+          "type": "tile",
+          "settings": {
+            "emoji": "⭐",
+            "tag": "Trending",
+            "title": "Tap-to-review stands",
+            "text": "NFC + QR stands that get you Google reviews."
+          }
+        },
+        "b4": {
+          "type": "tile",
+          "settings": {
+            "emoji": "👔",
+            "tag": "Workwear",
+            "title": "Branded clothing",
+            "text": "Logo polos, hi-vis and teamwear."
+          }
+        }
       },
-      "block_order": ["b1", "b2", "b3", "b4"],
-      "settings": { "heading": "Printing for your business", "subheading": "Everything you'd get from the big online printers, made locally by us", "tinted": false }
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "heading": "Printing for your business",
+        "subheading": "Everything you'd get from the big online printers, made locally by us",
+        "tinted": false
+      }
     },
-    "newsletter": { "type": "newsletter" }
+    "newsletter": {
+      "type": "newsletter"
+    }
   },
-  "order": ["hero", "usps", "categories", "christmas", "bestsellers", "how", "new_ranges", "christmas_products", "reviews", "business", "newsletter"]
+  "order": [
+    "hero",
+    "usps",
+    "categories",
+    "christmas",
+    "bestsellers",
+    "how",
+    "new_ranges",
+    "christmas_products",
+    "reviews",
+    "business",
+    "newsletter"
+  ]
 }
