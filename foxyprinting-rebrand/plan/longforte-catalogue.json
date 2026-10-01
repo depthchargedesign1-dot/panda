@@ -1,0 +1,1838 @@
+{
+  "source_notes": "Compiled 2026-10-01 from web search results restricted to longforte.com (www.longforte.com and shop.app are blocked here; WebFetch returned EGRESS_BLOCKED). Facts are taken only from search-result titles/snippets. Prices labelled 'wholesale_seen' are from snippets, which display a '$' symbol; Longforte is a UK site so these are most likely GBP and may be ex or inc VAT - verify in the trade account before costing. RRPs are estimates only (roughly 2.5-4x wholesale where a price was seen, otherwise set against similar personalised gifts). Also researched but held back to keep the first launch to about 70 products: rock matt and panoramic slates, 16x20in and matt metal prints, crystal glass frame, digital alarm clock, glass door sign, placemat gift set, glow-in-the-dark bottle, 20oz skinny tumbler, 15oz and gold-handle mugs, baby t-shirt, cat-lid bottle, golf towel, linen and burlap cushions, bookmarks, ceramic ornaments, and the 11x14in and A5 jigsaws (all are in facts). Excluded: standard 11oz white mugs, bath towels, baby grows, santa sacks, mouse mats (Foxy already sells), phone cases (model churn, see facts), snowglobe bottles (UV DTF/vinyl, not sublimation), lanyards (B2B rather than gifting). Every product must still follow CLAUDE.md: DRAFT status, product-facts.md sheet per family (most of these families need new sheets; anything marked ASK must be asked).",
+  "facts": [
+    {
+      "item": "Photo slate 10x15cm landscape",
+      "details": "10cm x 15cm sublimation photo slate, glossy finish",
+      "source_url": "https://www.longforte.com/products/extra-small-landscape-photo-slate"
+    },
+    {
+      "item": "Photo slate 15x15cm square",
+      "details": "15cm x 15cm square, glossy white coating",
+      "source_url": "https://www.longforte.com/products/small-square-photo-slate"
+    },
+    {
+      "item": "Photo slate 30x30cm square",
+      "details": "30cm x 30cm square, glossy finish",
+      "source_url": "https://www.longforte.com/products/large-square-sublimation-photo-slate"
+    },
+    {
+      "item": "Photo slate 15cm round with stands",
+      "details": "15cm round, glossy white print area on black slate",
+      "source_url": "https://www.longforte.com/products/small-round-photo-slate-with-stands"
+    },
+    {
+      "item": "Photo slate heart 15x15cm",
+      "details": "Small heart, natural black slate with smooth white sublimation coated surface; glossy (matt heart also listed)",
+      "source_url": "https://www.longforte.com/products/photo-slate-heart-shape"
+    },
+    {
+      "item": "Rock photo slate 15x20cm matt",
+      "details": "15cm x 20cm landscape, matt finish, natural textured edges",
+      "source_url": "https://www.longforte.com/products/sublimation-photo-slate-matt-finish-15cm-x-20cm-landscape"
+    },
+    {
+      "item": "Panoramic photo slate 10x20cm",
+      "details": "10cm x 20cm, glossy white coating, long slim format",
+      "source_url": "https://www.longforte.com/products/small-panoramic-photo-slate"
+    },
+    {
+      "item": "Slate coaster 10cm round",
+      "details": "10cm round, glossy, natural black slate with white sublimation surface; full carton of 80",
+      "source_url": "https://www.longforte.com/products/10cm-x-10cm-sublimation-slate-coaster-with-natural-edge-new"
+    },
+    {
+      "item": "Large slate clock 25x40cm",
+      "details": "Solid rock slate, white sublimation coating, clock mechanism and hands, 1 x AA",
+      "source_url": "https://www.longforte.com/products/large-clock-photo-slate"
+    },
+    {
+      "item": "Ultra HD gloss white aluminium sheets 1.15mm",
+      "details": "Pack of 10; sizes seen 4x6in, 5x7in, 6x7.8in (15x20cm), 8x10in, 12x5in (30.5x12.7cm); 1.15mm thick; press 80s at 190C medium pressure",
+      "source_url": "https://www.longforte.com/products/pack-of-10-x-ultra-hd-115mm-thick-sublimation-aluminium-sheets-8-x-10-203cm-x-254cm"
+    },
+    {
+      "item": "Ultra HD gloss silver aluminium sheets 1.15mm",
+      "details": "Pack of 10; sizes seen 11.5x11.5in (29.2cm) and 16x20in (40.6x50.8cm)",
+      "source_url": "https://www.longforte.com/products/ultra-hd-gloss-silver-1-15mm-aluminium-sheets-16-x-20-40-6cm-x-50-8cm-pack-of-10"
+    },
+    {
+      "item": "HD matt white aluminium sheets 1.0mm",
+      "details": "6x7.8in (15x20cm), pack of 10, matt white",
+      "source_url": "https://www.longforte.com/products/hd-matt-white-1-0mm-aluminium-sheets-6-x-7-8-15cm-x-20cm-pack-of-10"
+    },
+    {
+      "item": "Self-adhesive easels for metal sheets",
+      "details": "Black, small, pack of 10 (38mm x 89mm); turns sheets into desk photo panels",
+      "source_url": "https://www.longforte.com/products/pack-of-10-x-small-self-adhesive-black-easel-for-sublimation-metal-sheets-38mm-x-89mm"
+    },
+    {
+      "item": "MDF wall clock 30cm round",
+      "details": "MDF, white printable face, mechanism included, 1 x AA",
+      "source_url": "https://www.longforte.com/products/mdf-sublimation-clock-30cm"
+    },
+    {
+      "item": "Glass wall clock 30cm round",
+      "details": "Glass, mechanism and hands included",
+      "source_url": "https://www.longforte.com/products/sublimation-glass-clock-30cm-round"
+    },
+    {
+      "item": "Glass wall clock 20cm round",
+      "details": "Glass, mechanism and hands",
+      "source_url": "https://www.longforte.com/products/sublimation-glass-clock-round-20cm"
+    },
+    {
+      "item": "Glass wall clock 20cm square",
+      "details": "Image printed on reverse, visible through glass, white back panel",
+      "source_url": "https://www.longforte.com/products/clock-glass-square-20cm-wall-clock"
+    },
+    {
+      "item": "Glass desk clock 20cm square with numbers",
+      "details": "Square glass desk clock with numbers",
+      "source_url": "https://www.longforte.com/products/20cm-glass-clock"
+    },
+    {
+      "item": "Aluminium wall clock square 22.8cm",
+      "details": "1.15mm aluminium, square",
+      "source_url": "https://www.longforte.com/products/clock-1-15mm-aluminium-square-22-8cm-wall-clock"
+    },
+    {
+      "item": "Aluminium wall clock round 19.8cm",
+      "details": "1.15mm aluminium, mechanism, 1 x AA",
+      "source_url": "https://www.longforte.com/collections/clocks/products/clock-1-15mm-aluminium-round-19-8cm-wall-clock"
+    },
+    {
+      "item": "Digital alarm clock with printable inserts",
+      "details": "LCD, up to 7 colour-changing lights, 3 printable inserts 6.6 x 6.6cm",
+      "source_url": "https://www.longforte.com/products/sublimation-digital-alarm-clock-colour-changing-inserts"
+    },
+    {
+      "item": "Glass photo frame 13x18cm with back stand",
+      "details": "Glass frame with back stand",
+      "source_url": "https://www.longforte.com/products/frames-glass-crystal-glass-18cm-x-13cm"
+    },
+    {
+      "item": "Glass photo frame 20x20cm smooth edge",
+      "details": "Glass, smooth edge (clear glass 20x20 also listed)",
+      "source_url": "https://www.longforte.com/products/sublimation-glass-frame-20x20"
+    },
+    {
+      "item": "Glass frame 23x18cm double mirror edge",
+      "details": "Double mirror border, built-in metal stand",
+      "source_url": "https://www.longforte.com/products/sublimation-glass-frame-18x23"
+    },
+    {
+      "item": "Frosted glass frame 14.5x27.5cm",
+      "details": "Frosted glass, landscape, metal rods as stand",
+      "source_url": "https://www.longforte.com/products/landscape-sublimation-frosted-glass-frame-145x275"
+    },
+    {
+      "item": "Frosted glass frame 11x16cm",
+      "details": "Frosted glass",
+      "source_url": "https://www.longforte.com/products/sublimation-frosted-glass-frame-11x16"
+    },
+    {
+      "item": "Crystal glass frame 23x12cm bevelled",
+      "details": "Narrow crystal glass, bevelled",
+      "source_url": "https://www.longforte.com/products/23cm-12cm-narrow-crystal-glass-sublimation-frame"
+    },
+    {
+      "item": "MDF photo panel plaques",
+      "details": "Sizes seen 10x15cm, 15x20cm (snippet price 7.00), 18x27cm, 29.5x29.5cm (11.00), 30x40cm (14.00); glossy; self-standing or wall mounted; protective film",
+      "source_url": "https://www.longforte.com/collections/photo-panels"
+    },
+    {
+      "item": "Round MDF plaque 12in black bevelled edge",
+      "details": "1.5cm thick, black bevelled edge",
+      "source_url": "https://www.longforte.com/collections/back-to-school/products/sublimation-mdf-plaque-round-12"
+    },
+    {
+      "item": "Glass business plaque / door sign",
+      "details": "With standoff fixtures",
+      "source_url": "https://www.longforte.com/products/sublimation-glass-business-plaque-door-sign-with-standoff-fixtures"
+    },
+    {
+      "item": "Ceramic tiles",
+      "details": "Sizes seen 4.25x4.25in, 6x6in, 6x8in, 8x8in, 8x10in, 8x12in; glossy",
+      "source_url": "https://www.longforte.com/products/lrg-ceramic-tile-8x8"
+    },
+    {
+      "item": "Ceramic heart tile 4in",
+      "details": "4in heart, white ceramic, curved edge, glossy",
+      "source_url": "https://www.longforte.com/products/ceramic-new-4in-heart-tile-ornament"
+    },
+    {
+      "item": "MDF coaster square 9.5cm",
+      "details": "With cork base or no cork base, glossy white",
+      "source_url": "https://www.longforte.com/products/coaster-cork-base-square"
+    },
+    {
+      "item": "MDF coaster round 9.5cm",
+      "details": "No cork base; glossy; 190C 60s",
+      "source_url": "https://www.longforte.com/products/mdf-sublimation-coaster-round"
+    },
+    {
+      "item": "MDF coaster rectangle 8.9x12.7cm",
+      "details": "Pack of 10, no cork base",
+      "source_url": "https://www.longforte.com/products/coaster-10-x-mdf-rectangle-no-cork-base-8-9cm-x-12-7cm"
+    },
+    {
+      "item": "Glass coaster round 10cm",
+      "details": "Frosted glass, 0.3cm thick; 180-200C 2.5 min",
+      "source_url": "https://www.longforte.com/products/glass-coaster-round-10cm"
+    },
+    {
+      "item": "Glass coaster square 10cm",
+      "details": "Seen as pack of 120",
+      "source_url": "https://www.longforte.com/products/full-carton-120-x-glass-coasters-square-10cm"
+    },
+    {
+      "item": "MDF placemats with cork base",
+      "details": "20x28cm and 20x26cm, black cork backing; also with box",
+      "source_url": "https://www.longforte.com/products/placemat-mdf-20cm-x-28cm"
+    },
+    {
+      "item": "Hardboard kids placemat",
+      "details": "19x23cm, no cork base",
+      "source_url": "https://www.longforte.com/products/placemat-hardboard-kids-size-no-cork-base-19cm-x-23cm"
+    },
+    {
+      "item": "40oz stainless steel tumbler with lid and straw",
+      "details": "201 stainless steel, glossy white",
+      "source_url": "https://www.longforte.com/products/mugs-stainless-steel-40oz-tumbler-with-lid-white"
+    },
+    {
+      "item": "30oz engravable stainless steel tumbler",
+      "details": "White, sublimation and engravable",
+      "source_url": "https://www.longforte.com/products/mugs-stainless-steel-30oz-tumbler-white-sublimation-and-engravable"
+    },
+    {
+      "item": "20oz stainless steel tumbler black (engravable)",
+      "details": "Snippet price 8.00",
+      "source_url": "https://www.longforte.com/collections/sublimation-tumblers"
+    },
+    {
+      "item": "16oz stainless steel tumbler with straw",
+      "details": "White",
+      "source_url": "https://www.longforte.com/products/mugs-travel-mugs-metal-tumbler-with-straw-white"
+    },
+    {
+      "item": "16oz tumbler with handled lid",
+      "details": "Stainless steel, silver",
+      "source_url": "https://www.longforte.com/products/mugs-stainless-steel-16oz-tumbler-with-handled-lid-silver"
+    },
+    {
+      "item": "14oz stainless steel travel mug",
+      "details": "White, insulated, carton of 48",
+      "source_url": "https://www.longforte.com/products/full-carton-48-x-white-sublimation-travel-mugs"
+    },
+    {
+      "item": "Ceramic travel mug with silicone lid",
+      "details": "12oz double-walled ceramic",
+      "source_url": "https://www.longforte.com/products/ceramic-sublimation-travel-mug-with-silicone-lid"
+    },
+    {
+      "item": "720ml stainless steel tumbler one-touch lid",
+      "details": "720ml",
+      "source_url": "https://www.longforte.com/products/sublimation-tumbler-720ml-stainless-steel-bottle-with-one-touch-lid"
+    },
+    {
+      "item": "PolySteel gloss 450ml tumbler",
+      "details": "Polymer, gloss finish, 450ml",
+      "source_url": "https://www.longforte.com/products/mug-polymer-gloss-finish-450ml-tumbler-polysteel"
+    },
+    {
+      "item": "Aluminium water bottles two lids",
+      "details": "500ml and 600ml white; 600ml with red lids",
+      "source_url": "https://www.longforte.com/products/white-600ml-water-bottle"
+    },
+    {
+      "item": "Glow in dark water bottle 600ml",
+      "details": "Stainless steel, blue",
+      "source_url": "https://www.longforte.com/products/water-bottles-glow-in-dark-600ml-blue-stainless-steel"
+    },
+    {
+      "item": "Glass jar with bamboo lid and straw 550ml",
+      "details": "550ml/18oz can shape, bamboo lid with rubber seal (not leakproof), 11.5cm print area; light blue, red, pink, purple, green, dark blue; snippet prices 5.00-6.00",
+      "source_url": "https://www.longforte.com/products/mugs-glass-550ml-glass-jar-with-bamboo-lid-straw-red"
+    },
+    {
+      "item": "Frosted glass jar with bamboo lid 750ml",
+      "details": "750ml/25oz, not leakproof, snippet price 6.00",
+      "source_url": "https://www.longforte.com/products/mugs-glass-750ml-frosted-glass-jar-with-bamboo-lid"
+    },
+    {
+      "item": "750ml frosted glass skinny tumbler with plastic lid",
+      "details": "Pink, yellow seen",
+      "source_url": "https://www.longforte.com/products/water-bottles-glass-skinny-frosted-pink-750ml-tumbler-with-plastic-lid"
+    },
+    {
+      "item": "Snowglobe bottles/tumblers",
+      "details": "10oz snowglobe bottle (five lid colours), 24oz snowglobe tumbler; double-wall clear; for UV DTF/vinyl, NOT sublimation",
+      "source_url": "https://www.longforte.com/collections/sublimation-tumblers"
+    },
+    {
+      "item": "15oz white ceramic mug",
+      "details": "Carton of 36",
+      "source_url": "https://www.longforte.com/products/36-x-15oz-white-blank-sublimation-mugs"
+    },
+    {
+      "item": "6oz white ceramic mug",
+      "details": "Pack of 12, dishwasher and microwave safe, espresso/kids",
+      "source_url": "https://www.longforte.com/products/mugs-12-x-ceramic-small-6oz-white-mugs"
+    },
+    {
+      "item": "11oz mug with gold handle",
+      "details": "White with reflective gold handle",
+      "source_url": "https://www.longforte.com/products/11oz-white-sublimation-mug-with-gold-handle"
+    },
+    {
+      "item": "11oz mug I Love You red heart inner print",
+      "details": "White with printed red heart inside",
+      "source_url": "https://www.longforte.com/products/special-message-inner-printed-sublimation-mugs-i-love-you"
+    },
+    {
+      "item": "11oz ORCA AAA grade mug",
+      "details": "30um coating, SGS certified dishwasher/microwave/food safe",
+      "source_url": "https://www.longforte.com/products/mugs-11oz-triple-a-grade-orca-coating-mugs"
+    },
+    {
+      "item": "12oz enamel mug with silver rim",
+      "details": "Enamel-coated steel; white, blue, red, green, yellow",
+      "source_url": "https://www.longforte.com/collections/enamel-mugs"
+    },
+    {
+      "item": "12oz latte mug inner and handle coloured",
+      "details": "Conical; black, red, yellow, light blue inner/handle; white exterior (plain white 12oz latte also)",
+      "source_url": "https://www.longforte.com/collections/latte-mugs"
+    },
+    {
+      "item": "11oz colour-changing mug",
+      "details": "Black and red; packs of 48 seen",
+      "source_url": "https://www.longforte.com/products/full-colour-changing-sublimation-mugs-black"
+    },
+    {
+      "item": "11oz clear glass mug",
+      "details": "Pack of 6",
+      "source_url": "https://www.longforte.com/products/clear-glass-mugs-singles"
+    },
+    {
+      "item": "16oz frosted glass trigger beer stein",
+      "details": "Pack of 2; also gradient frosted red; mug press 180C 3 min",
+      "source_url": "https://www.longforte.com/products/frosted-glass-16oz-trigger-beer-stein-for-sublimation-singles"
+    },
+    {
+      "item": "22oz frosted glass slim-handle beer stein",
+      "details": "650ml, box of 2; clear frosted, pink, blue, green",
+      "source_url": "https://www.longforte.com/products/mugs-glass-frosted-box-of-2-x-22oz-slim-handle-beer-steins"
+    },
+    {
+      "item": "20oz ceramic beer stein",
+      "details": "Pack of 24",
+      "source_url": "https://www.longforte.com/collections/beer-mugs-tankards/products/premium-quality-20oz-ceramic-beer-pint-mugs"
+    },
+    {
+      "item": "6oz polymer unbreakable mug",
+      "details": "White, yellow, red, green, blue, pink; BPA-free, dishwasher safe; metal insert needed when pressing; snippet price 3.00",
+      "source_url": "https://www.longforte.com/products/mug-polymer-6oz-unbreakable-mug-white-2"
+    },
+    {
+      "item": "8oz polymer unbreakable cup",
+      "details": "White",
+      "source_url": "https://www.longforte.com/products/mug-polymer-8oz-unbreakable-mug-white"
+    },
+    {
+      "item": "13oz stainless kids sippy cup with spout",
+      "details": "400ml, two handles; snippet price 9.00 (unavailable at time)",
+      "source_url": "https://www.longforte.com/products/water-bottles-kids-13oz-stainless-steel-sippy-cup-with-spout"
+    },
+    {
+      "item": "400ml polymer bottle with cat lid",
+      "details": "Pink",
+      "source_url": "https://www.longforte.com/products/water-bottles-polymer-400ml-cat-lid-pink"
+    },
+    {
+      "item": "Small plastic lunchbox",
+      "details": "Pink, white, blue; printable aluminium insert (pink); BPA-free",
+      "source_url": "https://www.longforte.com/products/plastic-sublimation-lunch-box-white"
+    },
+    {
+      "item": "Kids lunch bag with printable Velcro panel",
+      "details": "Red, blue, black, pink; 4 x 19.5 x 10cm (as listed)",
+      "source_url": "https://www.longforte.com/products/kids-lunchbag-red"
+    },
+    {
+      "item": "Lunchbox with water bottle and handle",
+      "details": "Blue, integrated removable bottle, shoulder strap",
+      "source_url": "https://www.longforte.com/products/childrens-lunchbox-water-bottle-handle-blue"
+    },
+    {
+      "item": "Pencil cases",
+      "details": "Linen 10x24cm (2.00), canvas texture 10x24.5cm (2.00), MDF small 20.5x4.2cm (4.00)",
+      "source_url": "https://www.longforte.com/collections/pencil-cases"
+    },
+    {
+      "item": "Stationery and pencil tin",
+      "details": "Silver, pink, with insert",
+      "source_url": "https://www.longforte.com/products/blank-sublimation-metal-stationery-with-insert"
+    },
+    {
+      "item": "Baby bibs",
+      "details": "100% polyester, coloured border, string ties; pink, blue, red, orange, green, teal; snippet price 1.00",
+      "source_url": "https://www.longforte.com/products/pink-baby-bib-sublimation"
+    },
+    {
+      "item": "Baby t-shirt",
+      "details": "100% polyester; S 6-12m, M 12-18m, L 18-24m; white, pink, light blue, yellow, green; snippet price 4.00",
+      "source_url": "https://www.longforte.com/products/apparel-baby-t-shirt-100-polyester-white"
+    },
+    {
+      "item": "Cushion covers 40cm",
+      "details": "Super soft, canvas, linen/country canvas, burlap, satin (off-white and cream), twill; zip closure",
+      "source_url": "https://www.longforte.com/products/square-cushion-cover-super-soft-finish-40cm"
+    },
+    {
+      "item": "Subliweave satin cushion cover 45cm",
+      "details": "45cm satin",
+      "source_url": "https://www.longforte.com/products/square-cushion-cover-satin-finish-45cm"
+    },
+    {
+      "item": "Cushion cover 9 printable panels",
+      "details": "Black, 40x40cm",
+      "source_url": "https://www.longforte.com/products/cushion-cover-9-printable-panels-black-40cm"
+    },
+    {
+      "item": "Canvas cushion cover 20x28cm rectangle",
+      "details": "Canvas finish",
+      "source_url": "https://www.longforte.com/products/cushion-cover-canvas-finish-20cm-x-28cm-rectangle"
+    },
+    {
+      "item": "Super soft blankets",
+      "details": "75x100cm (6.00) and 110x150cm (8.00); 100% polyester microfibre, fleece-like; 180C 60s",
+      "source_url": "https://www.longforte.com/collections/blankets"
+    },
+    {
+      "item": "Tea towels",
+      "details": "Half panama cotton 46.5x69.5cm (5.00); waffle 100% polyester 40x60cm",
+      "source_url": "https://www.longforte.com/products/towel-microfibre-towel-100-polyester-40cm-x-60cm"
+    },
+    {
+      "item": "Waffle golf towel",
+      "details": "40x50cm, 100% polyester",
+      "source_url": "https://www.longforte.com/products/towels-waffle-golf-towel-100-polyester-40cm-x-50cm"
+    },
+    {
+      "item": "Adult apron with pocket",
+      "details": "White canvas (5.00); cream canvas (4.00); bistro apron 80/20 poly-cotton approx 69x110cm",
+      "source_url": "https://www.longforte.com/products/adult-sublimation-apron-with-pocket-white"
+    },
+    {
+      "item": "Linen tote bag short black handles",
+      "details": "37x42cm, 4.00; linen shopping bag 38x48cm (cartons)",
+      "source_url": "https://www.longforte.com/products/bags-linen-tote-bag-with-short-black-handles-37cm-x-42cm"
+    },
+    {
+      "item": "Drawstring bags",
+      "details": "Canvas 25x30cm with stopper, polyester 41.5x49.5cm, canvas 15x20cm, linen 30x40cm, burlap double 12x17cm, black gym bag",
+      "source_url": "https://www.longforte.com/collections/bags"
+    },
+    {
+      "item": "Metal keyrings with gift box",
+      "details": "Round, oblong, hexagonal, slim rectangle, slim round (3.5x3.5cm print); gloss white insert; packs of 10",
+      "source_url": "https://www.longforte.com/products/metal-keyring-round-shape"
+    },
+    {
+      "item": "MDF double-sided keyrings",
+      "details": "Round, square, T-shirt; packs of 10",
+      "source_url": "https://www.longforte.com/products/mdf-double-sided-sublimation-keyring-round"
+    },
+    {
+      "item": "Nail clipper / bottle opener keyring",
+      "details": "3-in-1, gloss white insert",
+      "source_url": "https://www.longforte.com/products/keyring-sublimation-metal-keyring-nail-clipper"
+    },
+    {
+      "item": "Polymer keyring thick rectangle",
+      "details": "6.5 x 4.5cm, double-sided, pack of 10",
+      "source_url": "https://www.longforte.com/products/keyring-polymer-thick-rectangle-6-5cm-x-4-5cm"
+    },
+    {
+      "item": "Fridge magnets",
+      "details": "Glass rect 5x7cm (pack 10, 14.00); MDF round 6cm, square 7.5cm, rect 5.8x4.2cm; rubber oval/heart/square 5cm, oval 9.5cm",
+      "source_url": "https://www.longforte.com/products/fridge-magnet-10-x-glass-rectangle-5cm-x-7cm"
+    },
+    {
+      "item": "Musical fridge magnet with recorder",
+      "details": "Black; plays music, records voice",
+      "source_url": "https://www.longforte.com/products/sublimation-musical-fridge-magnet-with-in-built-recorder-black"
+    },
+    {
+      "item": "Aluminium bookmarks",
+      "details": "Silver and gold, bundles of 20, ornate edge, hole for tassel",
+      "source_url": "https://www.longforte.com/products/aluminium-bookmark"
+    },
+    {
+      "item": "Lanyards",
+      "details": "White, 2cm wide, 86cm total; with ID badge holder (8.6x5.4cm cards)",
+      "source_url": "https://www.longforte.com/products/sublimation-lanyard-id-badge-holder-white"
+    },
+    {
+      "item": "Christmas bauble with printable insert",
+      "details": "Mirror finish; red, blue/light blue, gold, silver, green; aluminium insert; string and white box; mixed pack of 10",
+      "source_url": "https://www.longforte.com/products/ornaments-christmas-baubles-mixed-pack-of-10"
+    },
+    {
+      "item": "Aluminium double-sided hanging ornaments",
+      "details": "Round 7.6cm, tree 8.3x10.1, snowflake 7.6, stocking 7.6x9, dog bone 6x9.8, snowman 6x10.6, bell 9.8x10.5, heart 7.6; packs of 10",
+      "source_url": "https://www.longforte.com/products/ornaments-10-x-metal-hanging-ornament-tree-8-3cm-x-10-1cm"
+    },
+    {
+      "item": "MDF hanging ornaments with red ribbon",
+      "details": "Double-sided; rectangle, round 5cm, star, reindeer, tree, snowman, heart, square; packs of 10",
+      "source_url": "https://www.longforte.com/products/mdf-christmas-star-shaped-ornament"
+    },
+    {
+      "item": "Ceramic hanging ornaments",
+      "details": "Round (pack of 10) and oval",
+      "source_url": "https://www.longforte.com/products/ceramic-christmas-round-ornament"
+    },
+    {
+      "item": "Christmas stocking red border",
+      "details": "20.5 x 45cm, canvas and polyester, red hanging loop; snippet price 3.00",
+      "source_url": "https://www.longforte.com/products/sublimation-xmas-stocking-with-red-border"
+    },
+    {
+      "item": "Teddy bear with printable t-shirt",
+      "details": "Cream and dark brown; approx 8in; removable 100% polyester t-shirt; from 5.00",
+      "source_url": "https://www.longforte.com/products/soft-toys-cream-teddy-bear-with-printable-t-shirt"
+    },
+    {
+      "item": "Bunny rabbit plush",
+      "details": "White, pink, light brown, grey; from 6.00; keyring versions from 4.00",
+      "source_url": "https://www.longforte.com/products/printa-plush-r-sublimation-bunny-rabbit-plush-toy-white"
+    },
+    {
+      "item": "Teddy bear keyring",
+      "details": "Cream, removable mini white t-shirt",
+      "source_url": "https://www.longforte.com/products/printa-plush-r-sublimation-teddy-bear-keyring-with-printable-t-shirt-cream"
+    },
+    {
+      "item": "Other plush shapes",
+      "details": "Monkeys, pandas, elephants mentioned in range (no specs found)",
+      "source_url": "https://www.longforte.com/collections/printa-plush"
+    },
+    {
+      "item": "Jigsaws cardboard",
+      "details": "A5 felt (2.00); A5 pearl (2.00); A4 80pcs (2.00); A3 pearl 300pcs (4.80); 11x14in 252pcs (4.00); 24x19cm 30pcs (2.00)",
+      "source_url": "https://www.longforte.com/products/jigsaw-puzzles-cardboard-pearl-finish-a3"
+    },
+    {
+      "item": "Jigsaw fabric A5",
+      "details": "80 pieces, hard fabric with cardboard underlay (2.00)",
+      "source_url": "https://www.longforte.com/products/a4-fabric-puzzle-80pcs"
+    },
+    {
+      "item": "Magnetic heart jigsaw 19x19cm",
+      "details": "75 pieces, pearl white (2.40)",
+      "source_url": "https://www.longforte.com/products/jigsaw-puzzles-magnetic-heart"
+    },
+    {
+      "item": "MDF round jigsaw 24pcs",
+      "details": "17cm diameter, presentation case (4.00)",
+      "source_url": "https://www.longforte.com/products/mdf-sublimation-jigsaw-round-24pcs"
+    },
+    {
+      "item": "Adjustable pet bandana",
+      "details": "Small, medium, large; adjustable strap and lead clip; white polyester; satin medium 63x32cm",
+      "source_url": "https://www.longforte.com/products/pet-products-adjustable-pet-bandana-medium"
+    },
+    {
+      "item": "Ceramic dog bowl",
+      "details": "White heavyweight ceramic; carton of 12",
+      "source_url": "https://www.longforte.com/products/carton-12-x-bowls-ceramic-dog-bowl"
+    },
+    {
+      "item": "Dog tags",
+      "details": "Bone with insert; bone black edge 3x4.5cm; heart with insert; rectangle pendant; white stainless steel double-sided",
+      "source_url": "https://www.longforte.com/products/dog-tag-bone-shaped-tag-with-black-edge"
+    },
+    {
+      "item": "Phone cases",
+      "details": "iPhone 16/16 Plus/16 Pro/16 Pro Max in plastic/rubber, black/white/clear, metal insert; older models on clearance",
+      "source_url": "https://www.longforte.com/collections/iphone-16-sublimation-phone-cases"
+    }
+  ],
+  "categories": [
+    {
+      "handle": "lf-photo-slates",
+      "title": "Personalised Photo Slates",
+      "department": "Home & Wall Art",
+      "blurb": "Your favourite photo printed onto natural rock slate with rustic edges: a keepsake that stands on a shelf or mantelpiece.",
+      "products": [
+        {
+          "title": "Personalised Photo Slate – Landscape 10x15cm",
+          "longforte_blank": "Photo Slate 10x15cm glossy",
+          "source_url": "https://www.longforte.com/products/extra-small-landscape-photo-slate",
+          "variants": [
+            "10x15cm landscape"
+          ],
+          "rrp_gbp_estimate": "14.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Message"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Square Photo Slate – Glossy Finish",
+          "longforte_blank": "Photo Slate square glossy",
+          "source_url": "https://www.longforte.com/products/small-square-photo-slate",
+          "variants": [
+            "15x15cm",
+            "30x30cm"
+          ],
+          "rrp_gbp_estimate": "19.99 / 34.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Date"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Round Photo Slate with Stand",
+          "longforte_blank": "Photo Slate 15cm round with stands",
+          "source_url": "https://www.longforte.com/products/small-round-photo-slate-with-stands",
+          "variants": [
+            "15cm round"
+          ],
+          "rrp_gbp_estimate": "19.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Message"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Heart Photo Slate – Anniversary & Wedding Gift",
+          "longforte_blank": "Photo Slate heart 15x15cm",
+          "source_url": "https://www.longforte.com/products/photo-slate-heart-shape",
+          "variants": [
+            "Gloss",
+            "Matt"
+          ],
+          "rrp_gbp_estimate": "19.99",
+          "personalisation_fields": [
+            "Photo",
+            "Names",
+            "Date"
+          ],
+          "mockup": "flat"
+        }
+      ]
+    },
+    {
+      "handle": "lf-metal-photo-panels",
+      "title": "Personalised Metal Photo Panels",
+      "department": "Home & Wall Art",
+      "blurb": "High-gloss aluminium prints with vivid colour, ready to hang or stand on a desk with an easel.",
+      "products": [
+        {
+          "title": "Personalised Metal Photo Print – Gloss White Aluminium",
+          "longforte_blank": "Ultra HD gloss white aluminium sheet 1.15mm",
+          "source_url": "https://www.longforte.com/products/pack-of-10-x-ultra-hd-115mm-thick-sublimation-aluminium-sheets-8-x-10-203cm-x-254cm",
+          "variants": [
+            "4x6in",
+            "5x7in",
+            "6x7.8in (15x20cm)",
+            "8x10in"
+          ],
+          "rrp_gbp_estimate": "14.99 / 17.99 / 19.99 / 27.99",
+          "personalisation_fields": [
+            "Photo",
+            "Caption"
+          ],
+          "mockup": "flat",
+          "notes": "Fixtures not included; add easel option for desk display."
+        },
+        {
+          "title": "Personalised Desk Photo Panel with Easel",
+          "longforte_blank": "Ultra HD gloss white aluminium sheet + self-adhesive black easel",
+          "source_url": "https://www.longforte.com/products/pack-of-10-x-small-self-adhesive-black-easel-for-sublimation-metal-sheets-38mm-x-89mm",
+          "variants": [
+            "4x6in",
+            "5x7in"
+          ],
+          "rrp_gbp_estimate": "17.99 / 21.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Date"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Panoramic Metal Sign – 12x5in",
+          "longforte_blank": "Ultra HD gloss white aluminium 12x5in (30.5x12.7cm)",
+          "source_url": "https://www.longforte.com/products/pack-of-10-x-ultra-hd-1-15mm-thick-sublimation-aluminium-sheets-12-x-5-30-5cm-x-12-7cm",
+          "variants": [
+            "12x5in"
+          ],
+          "rrp_gbp_estimate": "19.99",
+          "personalisation_fields": [
+            "Text",
+            "Name",
+            "Photo"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Square Silver Metal Photo Print",
+          "longforte_blank": "Ultra HD gloss silver aluminium 11.5x11.5in",
+          "source_url": "https://www.longforte.com/products/ultra-hd-gloss-silver-1-15mm-aluminium-sheets-11-5-x-11-5-29-2cm-x-29-2cm-pack-of-10",
+          "variants": [
+            "11.5x11.5in (29.2cm)"
+          ],
+          "rrp_gbp_estimate": "34.99",
+          "personalisation_fields": [
+            "Photo",
+            "Caption"
+          ],
+          "mockup": "flat",
+          "notes": "Silver base shows through light areas of the design."
+        }
+      ]
+    },
+    {
+      "handle": "lf-clocks-glass-frames",
+      "title": "Personalised Clocks & Glass Photo Frames",
+      "department": "Home & Wall Art",
+      "blurb": "Photo clocks and glass frames that turn a favourite picture into something they'll look at every day.",
+      "products": [
+        {
+          "title": "Personalised Photo Wall Clock – 30cm MDF",
+          "longforte_blank": "MDF wall clock 30cm round with mechanism",
+          "source_url": "https://www.longforte.com/products/mdf-sublimation-clock-30cm",
+          "variants": [
+            "30cm round"
+          ],
+          "rrp_gbp_estimate": "29.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Number style"
+          ],
+          "mockup": "flat",
+          "notes": "Needs 1 x AA (not stated whether included)."
+        },
+        {
+          "title": "Personalised Glass Photo Clock",
+          "longforte_blank": "Glass wall clock round/square",
+          "source_url": "https://www.longforte.com/products/sublimation-glass-clock-30cm-round",
+          "variants": [
+            "20cm round",
+            "30cm round",
+            "20cm square"
+          ],
+          "rrp_gbp_estimate": "27.99 / 34.99 / 27.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Metal Photo Clock – Aluminium",
+          "longforte_blank": "1.15mm aluminium wall clock",
+          "source_url": "https://www.longforte.com/products/clock-1-15mm-aluminium-square-22-8cm-wall-clock",
+          "variants": [
+            "19.8cm round",
+            "22.8cm square"
+          ],
+          "rrp_gbp_estimate": "29.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Slate Photo Clock – 25x40cm",
+          "longforte_blank": "Photo slate large clock 25x40cm",
+          "source_url": "https://www.longforte.com/products/large-clock-photo-slate",
+          "variants": [
+            "25x40cm"
+          ],
+          "rrp_gbp_estimate": "44.99",
+          "personalisation_fields": [
+            "Photo",
+            "Family name"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Glass Photo Frame with Stand",
+          "longforte_blank": "Glass photo frames (13x18 back stand / 20x20 smooth edge / 23x18 double mirror edge)",
+          "source_url": "https://www.longforte.com/products/sublimation-glass-frame-18x23",
+          "variants": [
+            "13x18cm",
+            "20x20cm",
+            "23x18cm mirror edge"
+          ],
+          "rrp_gbp_estimate": "19.99 / 24.99 / 27.99",
+          "personalisation_fields": [
+            "Photo",
+            "Names",
+            "Date"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Frosted Glass Photo Frame",
+          "longforte_blank": "Frosted glass frame with metal rod stands",
+          "source_url": "https://www.longforte.com/products/landscape-sublimation-frosted-glass-frame-145x275",
+          "variants": [
+            "11x16cm",
+            "14.5x27.5cm landscape"
+          ],
+          "rrp_gbp_estimate": "19.99 / 26.99",
+          "personalisation_fields": [
+            "Photo",
+            "Message"
+          ],
+          "mockup": "flat"
+        }
+      ]
+    },
+    {
+      "handle": "lf-plaques-tiles",
+      "title": "Personalised Photo Plaques & Ceramic Tiles",
+      "department": "Home & Wall Art",
+      "blurb": "Glossy wooden plaques and ceramic photo tiles for memorials, awards, family photos and house signs.",
+      "products": [
+        {
+          "title": "Personalised Wooden Photo Plaque – Glossy MDF",
+          "longforte_blank": "MDF photo panel plaque",
+          "source_url": "https://www.longforte.com/collections/photo-panels",
+          "variants": [
+            "10x15cm",
+            "15x20cm",
+            "18x27cm",
+            "29.5x29.5cm",
+            "30x40cm"
+          ],
+          "rrp_gbp_estimate": "14.99 / 19.99 / 24.99 / 32.99 / 39.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Message"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "15x20 7.00; 29.5x29.5 11.00; 30x40 14.00 (snippet)"
+        },
+        {
+          "title": "Personalised Round Award Plaque – Black Bevelled Edge",
+          "longforte_blank": "Round MDF plaque 12in, 1.5cm, black bevelled edge",
+          "source_url": "https://www.longforte.com/collections/back-to-school/products/sublimation-mdf-plaque-round-12",
+          "variants": [
+            "12in round"
+          ],
+          "rrp_gbp_estimate": "29.99",
+          "personalisation_fields": [
+            "Name",
+            "Award/Team",
+            "Year",
+            "Photo"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Ceramic Photo Tile",
+          "longforte_blank": "Ceramic tile glossy",
+          "source_url": "https://www.longforte.com/products/lrg-ceramic-tile-6x6",
+          "variants": [
+            "4.25x4.25in",
+            "6x6in",
+            "6x8in",
+            "8x8in",
+            "8x10in",
+            "8x12in"
+          ],
+          "rrp_gbp_estimate": "12.99 / 16.99 / 18.99 / 22.99 / 24.99 / 27.99",
+          "personalisation_fields": [
+            "Photo",
+            "Caption"
+          ],
+          "mockup": "flat",
+          "notes": "Easel/stand not confirmed as included; ASK."
+        },
+        {
+          "title": "Personalised Heart Photo Tile",
+          "longforte_blank": "4in ceramic heart tile",
+          "source_url": "https://www.longforte.com/products/ceramic-new-4in-heart-tile-ornament",
+          "variants": [
+            "4in heart"
+          ],
+          "rrp_gbp_estimate": "14.99",
+          "personalisation_fields": [
+            "Photo",
+            "Names",
+            "Date"
+          ],
+          "mockup": "flat"
+        }
+      ]
+    },
+    {
+      "handle": "lf-coasters-placemats",
+      "title": "Personalised Coasters & Placemats",
+      "department": "Home & Kitchen",
+      "blurb": "Photo coasters and table mats in slate, glass and glossy MDF: sold singly or as sets.",
+      "products": [
+        {
+          "title": "Personalised Slate Photo Coaster – Round 10cm",
+          "longforte_blank": "Slate coaster 10cm round glossy",
+          "source_url": "https://www.longforte.com/products/10cm-x-10cm-sublimation-slate-coaster-with-natural-edge-new",
+          "variants": [
+            "Single",
+            "Set of 4"
+          ],
+          "rrp_gbp_estimate": "9.99 / 29.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Glass Photo Coaster",
+          "longforte_blank": "Glass coaster 10cm frosted",
+          "source_url": "https://www.longforte.com/products/glass-coaster-round-10cm",
+          "variants": [
+            "Round 10cm",
+            "Square 10cm"
+          ],
+          "rrp_gbp_estimate": "9.99 (set of 4 29.99)",
+          "personalisation_fields": [
+            "Photo",
+            "Name"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Wooden Coaster with Cork Base",
+          "longforte_blank": "MDF coaster 9.5cm cork base / no cork",
+          "source_url": "https://www.longforte.com/products/coaster-cork-base-square",
+          "variants": [
+            "Square 9.5cm cork",
+            "Round 9.5cm",
+            "Rectangle 8.9x12.7cm"
+          ],
+          "rrp_gbp_estimate": "7.99 (set of 4 24.99)",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Initials"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Photo Placemat with Cork Base",
+          "longforte_blank": "MDF placemat with cork base",
+          "source_url": "https://www.longforte.com/products/placemat-mdf-20cm-x-28cm",
+          "variants": [
+            "20x26cm",
+            "20x28cm",
+            "Boxed 20x28cm"
+          ],
+          "rrp_gbp_estimate": "14.99 / boxed 17.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Kids Placemat – Name & Pictures",
+          "longforte_blank": "Hardboard kids placemat 19x23cm",
+          "source_url": "https://www.longforte.com/products/placemat-hardboard-kids-size-no-cork-base-19cm-x-23cm",
+          "variants": [
+            "19x23cm"
+          ],
+          "rrp_gbp_estimate": "12.99",
+          "personalisation_fields": [
+            "Name",
+            "Theme",
+            "Photo"
+          ],
+          "mockup": "flat"
+        }
+      ]
+    },
+    {
+      "handle": "lf-tumblers-bottles",
+      "title": "Personalised Travel Mugs, Tumblers & Bottles",
+      "department": "Drinkware",
+      "blurb": "Insulated tumblers, travel mugs and bottles printed all the way round with names, photos and patterns.",
+      "products": [
+        {
+          "title": "Personalised 40oz Tumbler with Handle, Lid & Straw",
+          "longforte_blank": "40oz stainless steel tumbler (201 steel) white",
+          "source_url": "https://www.longforte.com/products/mugs-stainless-steel-40oz-tumbler-with-lid-white",
+          "variants": [
+            "White",
+            "Premium white"
+          ],
+          "rrp_gbp_estimate": "34.99",
+          "personalisation_fields": [
+            "Name",
+            "Pattern",
+            "Photo"
+          ],
+          "mockup": "drinkware",
+          "notes": "Longforte's copy compares it to a well-known brand: never use that brand name in our copy."
+        },
+        {
+          "title": "Personalised Stainless Steel Tumbler with Straw – 16oz",
+          "longforte_blank": "16oz stainless tumbler with straw white",
+          "source_url": "https://www.longforte.com/products/mugs-travel-mugs-metal-tumbler-with-straw-white",
+          "variants": [
+            "16oz white"
+          ],
+          "rrp_gbp_estimate": "22.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo"
+          ],
+          "mockup": "drinkware"
+        },
+        {
+          "title": "Personalised Travel Mug – 14oz Stainless Steel",
+          "longforte_blank": "14oz stainless steel travel mug white",
+          "source_url": "https://www.longforte.com/products/full-carton-48-x-white-sublimation-travel-mugs",
+          "variants": [
+            "14oz white"
+          ],
+          "rrp_gbp_estimate": "21.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo",
+            "Message"
+          ],
+          "mockup": "drinkware"
+        },
+        {
+          "title": "Personalised Ceramic Travel Mug with Silicone Lid",
+          "longforte_blank": "12oz double-walled ceramic travel mug",
+          "source_url": "https://www.longforte.com/products/ceramic-sublimation-travel-mug-with-silicone-lid",
+          "variants": [
+            "12oz"
+          ],
+          "rrp_gbp_estimate": "21.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo"
+          ],
+          "mockup": "drinkware"
+        },
+        {
+          "title": "Personalised Insulated Bottle with One-Touch Lid – 720ml",
+          "longforte_blank": "720ml stainless steel tumbler one-touch lid",
+          "source_url": "https://www.longforte.com/products/sublimation-tumbler-720ml-stainless-steel-bottle-with-one-touch-lid",
+          "variants": [
+            "720ml"
+          ],
+          "rrp_gbp_estimate": "24.99",
+          "personalisation_fields": [
+            "Name",
+            "Pattern"
+          ],
+          "mockup": "drinkware"
+        },
+        {
+          "title": "Personalised Aluminium Water Bottle – Two Lids",
+          "longforte_blank": "Aluminium water bottle two lids",
+          "source_url": "https://www.longforte.com/products/white-600ml-water-bottle",
+          "variants": [
+            "500ml white",
+            "600ml white",
+            "600ml red lids"
+          ],
+          "rrp_gbp_estimate": "16.99",
+          "personalisation_fields": [
+            "Name",
+            "Team/School",
+            "Photo"
+          ],
+          "mockup": "drinkware"
+        }
+      ]
+    },
+    {
+      "handle": "lf-speciality-mugs-glassware",
+      "title": "Personalised Enamel, Latte & Speciality Mugs",
+      "department": "Drinkware",
+      "blurb": "Something different from a standard mug: camping enamel, coloured latte mugs, colour-reveal mugs, glass jars and frosted beer steins.",
+      "products": [
+        {
+          "title": "Personalised Enamel Camping Mug – Silver Rim",
+          "longforte_blank": "12oz enamel mug with silver rim",
+          "source_url": "https://www.longforte.com/collections/enamel-mugs",
+          "variants": [
+            "White",
+            "Blue",
+            "Red",
+            "Green",
+            "Yellow"
+          ],
+          "rrp_gbp_estimate": "16.99",
+          "personalisation_fields": [
+            "Name",
+            "Message",
+            "Photo"
+          ],
+          "mockup": "drinkware"
+        },
+        {
+          "title": "Personalised Latte Mug – Coloured Inside & Handle",
+          "longforte_blank": "12oz latte mug inner and handle coloured",
+          "source_url": "https://www.longforte.com/collections/latte-mugs",
+          "variants": [
+            "Black",
+            "Red",
+            "Yellow",
+            "Light blue",
+            "All white"
+          ],
+          "rrp_gbp_estimate": "15.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo",
+            "Message"
+          ],
+          "mockup": "drinkware"
+        },
+        {
+          "title": "Personalised Colour Changing Photo Mug – Magic Reveal",
+          "longforte_blank": "11oz colour-changing mug",
+          "source_url": "https://www.longforte.com/products/full-colour-changing-sublimation-mugs-black",
+          "variants": [
+            "Black",
+            "Red"
+          ],
+          "rrp_gbp_estimate": "16.99",
+          "personalisation_fields": [
+            "Photo",
+            "Message"
+          ],
+          "mockup": "drinkware"
+        },
+        {
+          "title": "Personalised 'I Love You' Hidden Heart Mug",
+          "longforte_blank": "11oz mug with red heart inner print",
+          "source_url": "https://www.longforte.com/products/special-message-inner-printed-sublimation-mugs-i-love-you",
+          "variants": [
+            "One style"
+          ],
+          "rrp_gbp_estimate": "15.99",
+          "personalisation_fields": [
+            "Names",
+            "Photo",
+            "Date"
+          ],
+          "mockup": "drinkware"
+        },
+        {
+          "title": "Personalised Glass Can Cup with Bamboo Lid & Straw",
+          "longforte_blank": "550ml glass jar with bamboo lid and straw",
+          "source_url": "https://www.longforte.com/products/mugs-glass-550ml-glass-jar-with-bamboo-lid-straw-red",
+          "variants": [
+            "Light blue",
+            "Red",
+            "Pink",
+            "Purple",
+            "Green",
+            "Dark blue",
+            "750ml frosted"
+          ],
+          "rrp_gbp_estimate": "17.99 / 750ml 19.99",
+          "personalisation_fields": [
+            "Name",
+            "Pattern"
+          ],
+          "mockup": "drinkware",
+          "wholesale_seen": "5.00-6.00 (snippet)",
+          "notes": "Not leakproof (stated by supplier)."
+        },
+        {
+          "title": "Personalised Frosted Glass Beer Stein",
+          "longforte_blank": "Frosted glass beer stein 16oz trigger / 22oz slim handle",
+          "source_url": "https://www.longforte.com/products/mugs-glass-frosted-box-of-2-x-22oz-slim-handle-beer-steins",
+          "variants": [
+            "16oz trigger",
+            "22oz slim handle clear frosted",
+            "22oz pink",
+            "22oz blue",
+            "22oz green"
+          ],
+          "rrp_gbp_estimate": "19.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo",
+            "Message"
+          ],
+          "mockup": "drinkware"
+        }
+      ]
+    },
+    {
+      "handle": "lf-kids-school",
+      "title": "Personalised Kids & Back to School",
+      "department": "Kids",
+      "blurb": "Unbreakable cups, lunch boxes, bottles and pencil cases with their name on: ideal for nursery and school.",
+      "products": [
+        {
+          "title": "Personalised Kids Unbreakable Mug – 6oz",
+          "longforte_blank": "6oz polymer unbreakable mug",
+          "source_url": "https://www.longforte.com/products/mug-polymer-6oz-unbreakable-mug-white-2",
+          "variants": [
+            "White",
+            "Yellow",
+            "Red",
+            "Green",
+            "Blue",
+            "Pink"
+          ],
+          "rrp_gbp_estimate": "11.99",
+          "personalisation_fields": [
+            "Name",
+            "Age",
+            "Theme"
+          ],
+          "mockup": "drinkware",
+          "wholesale_seen": "3.00 (snippet)"
+        },
+        {
+          "title": "Personalised Kids Sippy Cup with Spout – Stainless Steel",
+          "longforte_blank": "13oz/400ml stainless sippy cup",
+          "source_url": "https://www.longforte.com/products/water-bottles-kids-13oz-stainless-steel-sippy-cup-with-spout",
+          "variants": [
+            "White"
+          ],
+          "rrp_gbp_estimate": "21.99",
+          "personalisation_fields": [
+            "Name",
+            "Theme"
+          ],
+          "mockup": "drinkware",
+          "wholesale_seen": "9.00 (snippet)"
+        },
+        {
+          "title": "Personalised Kids Lunch Box",
+          "longforte_blank": "Small plastic sublimation lunchbox",
+          "source_url": "https://www.longforte.com/products/plastic-sublimation-lunch-box-white",
+          "variants": [
+            "White",
+            "Pink",
+            "Blue"
+          ],
+          "rrp_gbp_estimate": "14.99",
+          "personalisation_fields": [
+            "Name",
+            "Class",
+            "Theme"
+          ],
+          "mockup": "box"
+        },
+        {
+          "title": "Personalised Kids Lunch Bag with Name Panel",
+          "longforte_blank": "Kids lunch bag with Velcro printable panel",
+          "source_url": "https://www.longforte.com/products/kids-lunchbag-red",
+          "variants": [
+            "Red",
+            "Blue",
+            "Black",
+            "Pink"
+          ],
+          "rrp_gbp_estimate": "16.99",
+          "personalisation_fields": [
+            "Name",
+            "Theme"
+          ],
+          "mockup": "box"
+        },
+        {
+          "title": "Personalised Pencil Case",
+          "longforte_blank": "Linen / canvas / MDF pencil case",
+          "source_url": "https://www.longforte.com/collections/pencil-cases",
+          "variants": [
+            "Linen 10x24cm",
+            "Canvas 10x24.5cm",
+            "Wooden 20.5x4.2cm"
+          ],
+          "rrp_gbp_estimate": "9.99 / 9.99 / 12.99",
+          "personalisation_fields": [
+            "Name",
+            "Class"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "2.00 / 2.00 / 4.00 (snippet)"
+        },
+        {
+          "title": "Personalised Baby Bib",
+          "longforte_blank": "100% polyester baby bib with coloured border",
+          "source_url": "https://www.longforte.com/products/pink-baby-bib-sublimation",
+          "variants": [
+            "Pink",
+            "Blue",
+            "Red",
+            "Orange",
+            "Green",
+            "Teal"
+          ],
+          "rrp_gbp_estimate": "8.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo",
+            "Message"
+          ],
+          "mockup": "apparel",
+          "wholesale_seen": "1.00 (snippet)"
+        }
+      ]
+    },
+    {
+      "handle": "lf-cushions-textiles",
+      "title": "Personalised Cushions & Home Textiles",
+      "department": "Home Textiles",
+      "blurb": "Soft furnishings and kitchen textiles printed with photos, names and messages.",
+      "products": [
+        {
+          "title": "Personalised Photo Cushion – 40cm",
+          "longforte_blank": "40cm cushion cover (super soft / canvas / satin / twill)",
+          "source_url": "https://www.longforte.com/products/square-cushion-cover-super-soft-finish-40cm",
+          "variants": [
+            "Super soft",
+            "Canvas",
+            "Satin",
+            "Cream satin",
+            "Twill",
+            "45cm satin"
+          ],
+          "rrp_gbp_estimate": "19.99 (cover) / 24.99 (with inner)",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Message"
+          ],
+          "mockup": "flat",
+          "notes": "Inner pad not found at Longforte; ASK owner whether to supply inners."
+        },
+        {
+          "title": "Personalised 9 Photo Collage Cushion",
+          "longforte_blank": "Cushion cover 9 printable panels black 40cm",
+          "source_url": "https://www.longforte.com/products/cushion-cover-9-printable-panels-black-40cm",
+          "variants": [
+            "Black 40cm"
+          ],
+          "rrp_gbp_estimate": "24.99",
+          "personalisation_fields": [
+            "9 Photos"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Photo Blanket – Super Soft Fleece",
+          "longforte_blank": "Super soft sublimation blanket",
+          "source_url": "https://www.longforte.com/collections/blankets",
+          "variants": [
+            "75x100cm",
+            "110x150cm"
+          ],
+          "rrp_gbp_estimate": "29.99 / 39.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Message"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "6.00 / 8.00 (snippet)"
+        },
+        {
+          "title": "Personalised Tea Towel",
+          "longforte_blank": "Half panama cotton tea towel 46.5x69.5cm / waffle 40x60cm",
+          "source_url": "https://www.longforte.com/products/towel-microfibre-towel-100-polyester-40cm-x-60cm",
+          "variants": [
+            "Half panama 46.5x69.5cm",
+            "Waffle 40x60cm"
+          ],
+          "rrp_gbp_estimate": "12.99",
+          "personalisation_fields": [
+            "Name",
+            "Photos",
+            "Recipe/Message"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "5.00 half panama (snippet)"
+        },
+        {
+          "title": "Personalised Apron with Pocket",
+          "longforte_blank": "Adult apron with pocket, white or cream canvas",
+          "source_url": "https://www.longforte.com/products/adult-sublimation-apron-with-pocket-white",
+          "variants": [
+            "White canvas",
+            "Cream canvas"
+          ],
+          "rrp_gbp_estimate": "17.99",
+          "personalisation_fields": [
+            "Name",
+            "Title e.g. Head Chef",
+            "Photo"
+          ],
+          "mockup": "apparel",
+          "wholesale_seen": "5.00 / 4.00 (snippet)"
+        },
+        {
+          "title": "Personalised Linen Tote Bag",
+          "longforte_blank": "Linen tote bag short black handles 37x42cm",
+          "source_url": "https://www.longforte.com/products/bags-linen-tote-bag-with-short-black-handles-37cm-x-42cm",
+          "variants": [
+            "37x42cm"
+          ],
+          "rrp_gbp_estimate": "14.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo",
+            "Message"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "4.00 (snippet)"
+        }
+      ]
+    },
+    {
+      "handle": "lf-keyrings-magnets",
+      "title": "Personalised Keyrings, Magnets & Bookmarks",
+      "department": "Gifts & Accessories",
+      "blurb": "Small, affordable photo gifts that fit in a card: keyrings, fridge magnets and bookmarks.",
+      "products": [
+        {
+          "title": "Personalised Metal Photo Keyring in Gift Box",
+          "longforte_blank": "Metal keyring with gift box",
+          "source_url": "https://www.longforte.com/products/metal-keyring-round-shape",
+          "variants": [
+            "Round",
+            "Oblong",
+            "Hexagonal",
+            "Slim rectangle",
+            "Slim round"
+          ],
+          "rrp_gbp_estimate": "9.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Message"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Double-Sided Wooden Keyring",
+          "longforte_blank": "MDF double-sided keyring",
+          "source_url": "https://www.longforte.com/products/mdf-double-sided-sublimation-keyring-round",
+          "variants": [
+            "Round",
+            "Square",
+            "T-shirt"
+          ],
+          "rrp_gbp_estimate": "7.99",
+          "personalisation_fields": [
+            "Photo front",
+            "Photo/Text back"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Bottle Opener & Nail Clipper Keyring",
+          "longforte_blank": "3-in-1 nail clipper / bottle opener keyring",
+          "source_url": "https://www.longforte.com/products/keyring-sublimation-metal-keyring-nail-clipper",
+          "variants": [
+            "One style"
+          ],
+          "rrp_gbp_estimate": "9.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Photo Fridge Magnet",
+          "longforte_blank": "Glass / MDF / rubber fridge magnets",
+          "source_url": "https://www.longforte.com/products/fridge-magnet-10-x-glass-rectangle-5cm-x-7cm",
+          "variants": [
+            "Glass 5x7cm",
+            "Wood round 6cm",
+            "Wood square 7.5cm",
+            "Flexible heart 5cm"
+          ],
+          "rrp_gbp_estimate": "6.99 (set of 3 16.99)",
+          "personalisation_fields": [
+            "Photo",
+            "Name"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "glass pack of 10 14.00 (snippet)"
+        },
+        {
+          "title": "Personalised Musical Photo Magnet – Record Your Message",
+          "longforte_blank": "Musical fridge magnet with recorder black",
+          "source_url": "https://www.longforte.com/products/sublimation-musical-fridge-magnet-with-in-built-recorder-black",
+          "variants": [
+            "Black"
+          ],
+          "rrp_gbp_estimate": "14.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name"
+          ],
+          "mockup": "flat",
+          "notes": "Size and battery details not found; ASK."
+        }
+      ]
+    },
+    {
+      "handle": "lf-christmas-ornaments",
+      "title": "Personalised Christmas Baubles & Ornaments",
+      "department": "Christmas",
+      "blurb": "Photo baubles and tree decorations to treasure every year, plus a classic name stocking.",
+      "products": [
+        {
+          "title": "Personalised Photo Bauble – Mirror Finish",
+          "longforte_blank": "Christmas bauble with printable aluminium insert, boxed",
+          "source_url": "https://www.longforte.com/products/ornaments-christmas-baubles-mixed-pack-of-10",
+          "variants": [
+            "Red",
+            "Blue",
+            "Gold",
+            "Silver",
+            "Green"
+          ],
+          "rrp_gbp_estimate": "12.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Year"
+          ],
+          "mockup": "bauble"
+        },
+        {
+          "title": "Personalised Metal Christmas Tree Decoration – Double-Sided",
+          "longforte_blank": "Aluminium double-sided hanging ornament",
+          "source_url": "https://www.longforte.com/products/ornaments-10-x-metal-hanging-ornament-tree-8-3cm-x-10-1cm",
+          "variants": [
+            "Round",
+            "Tree",
+            "Snowflake",
+            "Stocking",
+            "Snowman",
+            "Bell",
+            "Heart"
+          ],
+          "rrp_gbp_estimate": "8.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name",
+            "Year"
+          ],
+          "mockup": "bauble"
+        },
+        {
+          "title": "Personalised Wooden Christmas Decoration with Ribbon",
+          "longforte_blank": "MDF hanging ornament with red ribbon",
+          "source_url": "https://www.longforte.com/products/mdf-christmas-star-shaped-ornament",
+          "variants": [
+            "Round",
+            "Star",
+            "Heart",
+            "Tree",
+            "Snowman",
+            "Reindeer",
+            "Square",
+            "Rectangle"
+          ],
+          "rrp_gbp_estimate": "7.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo",
+            "Year"
+          ],
+          "mockup": "bauble"
+        },
+        {
+          "title": "Personalised Christmas Stocking – Red Border",
+          "longforte_blank": "Christmas stocking 20.5x45cm red border",
+          "source_url": "https://www.longforte.com/products/sublimation-xmas-stocking-with-red-border",
+          "variants": [
+            "20.5x45cm"
+          ],
+          "rrp_gbp_estimate": "14.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "3.00 (snippet)"
+        },
+        {
+          "title": "Personalised Pet's First Christmas Decoration – Dog Bone",
+          "longforte_blank": "Aluminium double-sided ornament dog bone 6x9.8cm",
+          "source_url": "https://www.longforte.com/products/ornaments-10-x-aluminium-double-sided-hanging-ornament-dog-bone-6cm-x-9-8cm",
+          "variants": [
+            "Dog bone"
+          ],
+          "rrp_gbp_estimate": "8.99",
+          "personalisation_fields": [
+            "Pet name",
+            "Photo",
+            "Year"
+          ],
+          "mockup": "bauble"
+        }
+      ]
+    },
+    {
+      "handle": "lf-plush-toys",
+      "title": "Personalised Teddy Bears & Plush Toys",
+      "department": "Kids",
+      "blurb": "Cuddly soft toys wearing a t-shirt printed with a name, photo or message.",
+      "products": [
+        {
+          "title": "Personalised Teddy Bear with Printed T-Shirt",
+          "longforte_blank": "Teddy bear with removable printable t-shirt",
+          "source_url": "https://www.longforte.com/products/soft-toys-cream-teddy-bear-with-printable-t-shirt",
+          "variants": [
+            "Cream",
+            "Dark brown"
+          ],
+          "rrp_gbp_estimate": "19.99",
+          "personalisation_fields": [
+            "Name",
+            "Message",
+            "Photo"
+          ],
+          "mockup": "apparel",
+          "wholesale_seen": "from 5.00 (snippet)",
+          "notes": "Approx 8in tall."
+        },
+        {
+          "title": "Personalised Bunny Rabbit Soft Toy",
+          "longforte_blank": "Bunny rabbit plush",
+          "source_url": "https://www.longforte.com/products/printa-plush-r-sublimation-bunny-rabbit-plush-toy-white",
+          "variants": [
+            "White",
+            "Pink",
+            "Light brown",
+            "Grey"
+          ],
+          "rrp_gbp_estimate": "21.99",
+          "personalisation_fields": [
+            "Name",
+            "Date of birth",
+            "Message"
+          ],
+          "mockup": "apparel",
+          "wholesale_seen": "from 6.00 (snippet)",
+          "notes": "Printable area/placement not found; ASK."
+        },
+        {
+          "title": "Personalised Mini Bunny Keyring",
+          "longforte_blank": "Bunny rabbit plush keyring",
+          "source_url": "https://www.longforte.com/collections/printa-plush",
+          "variants": [
+            "Colours as stocked"
+          ],
+          "rrp_gbp_estimate": "11.99",
+          "personalisation_fields": [
+            "Name"
+          ],
+          "mockup": "apparel",
+          "wholesale_seen": "from 4.00 (snippet)"
+        },
+        {
+          "title": "Personalised Mini Teddy Bear Keyring",
+          "longforte_blank": "Teddy bear keyring cream with mini t-shirt",
+          "source_url": "https://www.longforte.com/products/printa-plush-r-sublimation-teddy-bear-keyring-with-printable-t-shirt-cream",
+          "variants": [
+            "Cream"
+          ],
+          "rrp_gbp_estimate": "11.99",
+          "personalisation_fields": [
+            "Name",
+            "Short message"
+          ],
+          "mockup": "apparel"
+        }
+      ]
+    },
+    {
+      "handle": "lf-jigsaws",
+      "title": "Personalised Photo Jigsaws",
+      "department": "Toys & Games",
+      "blurb": "Turn a photo into a puzzle: from quick 30-piece kids' jigsaws to 300-piece challenges.",
+      "products": [
+        {
+          "title": "Personalised Photo Jigsaw – A4 80 Pieces",
+          "longforte_blank": "Cardboard jigsaw A4 80 pieces",
+          "source_url": "https://www.longforte.com/products/jigsaw-puzzles-cardboard-a4-80-pieces",
+          "variants": [
+            "A4 80pcs"
+          ],
+          "rrp_gbp_estimate": "14.99",
+          "personalisation_fields": [
+            "Photo",
+            "Message"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "2.00 (snippet)"
+        },
+        {
+          "title": "Personalised Photo Jigsaw – A3 300 Pieces Pearl Finish",
+          "longforte_blank": "Cardboard jigsaw A3 pearl 300 pieces",
+          "source_url": "https://www.longforte.com/products/jigsaw-puzzles-cardboard-pearl-finish-a3",
+          "variants": [
+            "A3 300pcs"
+          ],
+          "rrp_gbp_estimate": "19.99",
+          "personalisation_fields": [
+            "Photo"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "4.80 (snippet)"
+        },
+        {
+          "title": "Personalised Kids Jigsaw – 30 Pieces",
+          "longforte_blank": "Cardboard jigsaw 24x19cm 30 pieces",
+          "source_url": "https://www.longforte.com/products/jigsaw-puzzles-cardboard-24cm-x-19cm-30-pieces",
+          "variants": [
+            "24x19cm 30pcs"
+          ],
+          "rrp_gbp_estimate": "11.99",
+          "personalisation_fields": [
+            "Name",
+            "Photo"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "2.00 (snippet)"
+        },
+        {
+          "title": "Personalised Heart Magnetic Jigsaw",
+          "longforte_blank": "Magnetic heart jigsaw 19x19cm 75 pieces",
+          "source_url": "https://www.longforte.com/products/jigsaw-puzzles-magnetic-heart",
+          "variants": [
+            "19x19cm 75pcs"
+          ],
+          "rrp_gbp_estimate": "14.99",
+          "personalisation_fields": [
+            "Photo",
+            "Names"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "2.40 (snippet)"
+        },
+        {
+          "title": "Personalised Round Wooden Jigsaw in Case – 24 Pieces",
+          "longforte_blank": "MDF round jigsaw 17cm 24 pieces in presentation case",
+          "source_url": "https://www.longforte.com/products/mdf-sublimation-jigsaw-round-24pcs",
+          "variants": [
+            "17cm 24pcs"
+          ],
+          "rrp_gbp_estimate": "16.99",
+          "personalisation_fields": [
+            "Photo",
+            "Name"
+          ],
+          "mockup": "flat",
+          "wholesale_seen": "4.00 (snippet)"
+        }
+      ]
+    },
+    {
+      "handle": "lf-pet-gifts",
+      "title": "Personalised Pet Gifts",
+      "department": "Pets",
+      "blurb": "Bandanas, bowls and tags printed with your pet's name and photo.",
+      "products": [
+        {
+          "title": "Personalised Dog Bandana with Name",
+          "longforte_blank": "Adjustable pet bandana with lead clip",
+          "source_url": "https://www.longforte.com/products/pet-products-adjustable-pet-bandana-medium",
+          "variants": [
+            "Small",
+            "Medium",
+            "Large",
+            "Satin medium 63x32cm"
+          ],
+          "rrp_gbp_estimate": "12.99",
+          "personalisation_fields": [
+            "Pet name",
+            "Pattern",
+            "Phone number"
+          ],
+          "mockup": "apparel"
+        },
+        {
+          "title": "Personalised Ceramic Dog Bowl",
+          "longforte_blank": "White ceramic dog bowl",
+          "source_url": "https://www.longforte.com/products/carton-12-x-bowls-ceramic-dog-bowl",
+          "variants": [
+            "One size (size not found)"
+          ],
+          "rrp_gbp_estimate": "19.99",
+          "personalisation_fields": [
+            "Pet name",
+            "Photo"
+          ],
+          "mockup": "drinkware",
+          "notes": "Bowl diameter/capacity not found; ASK."
+        },
+        {
+          "title": "Personalised Pet ID Tag",
+          "longforte_blank": "Dog tags (bone, heart, rectangle, stainless double-sided)",
+          "source_url": "https://www.longforte.com/products/dog-tag-bone-shaped-tag-with-black-edge",
+          "variants": [
+            "Bone black edge 3x4.5cm",
+            "Bone with insert",
+            "Heart with insert",
+            "Rectangle pendant",
+            "Double-sided stainless"
+          ],
+          "rrp_gbp_estimate": "8.99",
+          "personalisation_fields": [
+            "Pet name",
+            "Phone number",
+            "Photo"
+          ],
+          "mockup": "flat"
+        },
+        {
+          "title": "Personalised Pet Photo Keyring",
+          "longforte_blank": "Metal keyring with gift box / aluminium dog bone ornament",
+          "source_url": "https://www.longforte.com/products/metal-keyring-oblong-shape",
+          "variants": [
+            "Oblong",
+            "Round",
+            "Hexagonal"
+          ],
+          "rrp_gbp_estimate": "9.99",
+          "personalisation_fields": [
+            "Pet photo",
+            "Pet name"
+          ],
+          "mockup": "flat"
+        }
+      ]
+    }
+  ]
+}
