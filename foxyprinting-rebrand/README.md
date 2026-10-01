@@ -18,7 +18,7 @@ The rebrand of [foxyprinting.co.uk](https://www.foxyprinting.co.uk): a new Shopi
 - **34 unpublished smart collections** (handles start `new-`), one per range, populated by `range-…` tags.
 - **"Foxy Mega Menu"** navigation (handle `foxy-mega-menu`): 11 departments, 227 links mixing existing and new collections.
 
-To undo: filter products by tag `foxy-new-2026` and delete them, delete the `new-…` collections, and delete the Foxy Mega Menu.
+To undo: filter products by tag `foxy-new-2026` and delete them, delete the `new-…` collections, and delete the Claude Mega Menu.
 
 ## Rebuild
 ```bash

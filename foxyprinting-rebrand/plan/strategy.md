@@ -77,7 +77,7 @@ Business cards (standard, rounded, spot-gloss, metal), flyers and leaflets, post
 Lives in [`../theme`](../theme). It's a Shopify Online Store 2.0 theme built for this catalogue:
 
 - **Vistaprint-style layout, much more colourful.** Five brand colours (foxy orange, hot pink, party purple, teal, sunshine yellow) rotate across departments, tiles and badges. All colours and fonts are editable in the theme editor.
-- **Multi-department mega menu.** 11 departments, unlimited columns, 3 levels, an optional promo tile per department, and a mobile drawer with accordions. It's driven by the **Foxy Mega Menu** (`foxy-mega-menu`), already created in your store, so you manage the hundreds of categories in *Online Store → Navigation* with no code.
+- **Multi-department mega menu.** 11 departments, unlimited columns, 3 levels, an optional promo tile per department, and a mobile drawer with accordions. It's driven by the **Claude Mega Menu** (`foxy-mega-menu`), already created in your store, so you manage the hundreds of categories in *Online Store → Navigation* with no code.
 - **Live personaliser on product pages.** Customers type a name or message, or upload a photo, and see it drawn instantly on a mockup:
   - **Card:** front and inside views (name and age on the front, message inside in a handwriting font)
   - **Drinkware:** mug, can cup, tumbler, glass or bottle, with the design wrapped round the cylinder
@@ -94,7 +94,7 @@ Lives in [`../theme`](../theme). It's a Shopify Online Store 2.0 theme built for
 ## 5. Go-live checklist
 
 1. **Upload the theme:** Online Store → Themes → Add theme → Upload zip → `dist/foxy-pop-theme.zip`. It installs **unpublished**, so your live "NEW WAREHOUSE 2020" theme is untouched.
-2. Customise → Header: confirm the menu is **Foxy Mega Menu**, upload your logo, and add promo images to the department blocks.
+2. Customise → Header: confirm the menu is **Claude Mega Menu**, upload your logo, and add promo images to the department blocks.
 3. Homepage: pick collections for the Bestsellers and Christmas rows and the category circles, and replace the placeholder reviews with real ones.
 4. Products: add photos to the drafts (or let the live preview stand in as the main image at first), check prices and costs, then set them **Active** and publish the `new-…` collections, starting with Wave 1.
 5. Cards: assign the **product.card** template to card products (bulk edit → Theme template) to switch on the front-and-inside personaliser.
