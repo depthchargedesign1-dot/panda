@@ -290,3 +290,13 @@ Owner: list now, add specs later.
 - **Door hangers:** read and reuse the facts on the existing live door hanger listings (e.g. "Pack of 4"). Otherwise **ASK**. Rude designs are `adult`.
 - **Valentine's teddies:** if they're the same teddy-with-printed-t-shirt as the photo-gifts plush sheet, use that sheet. Otherwise **ASK**.
 - **Baby grows:** see the "Baby grows / baby vests" sheet (sizes and blank are still **ASK**). Football club designs need the football disclaimer and the `third-party-name` tag.
+
+## Cufflinks: personalised square (added 2 Oct 2026)
+Source: the Longforte "Cufflinks – Chrome – Square" sublimation blank, plus the owner's own stock box "(S) Square Cufflinks Gift Box (Sets)" (photo from the owner).
+- **Material:** zinc alloy cufflink, chrome finish, with a printable aluminium insert. The print is dye-sublimated into the insert.
+- **Print area:** 16 x 16 mm per cufflink. Initials, dates, short words, simple logos and close-up face photos work best.
+- **Includes:** one pair (2 cufflinks), presented in the square cufflink gift box (owner's stock).
+- **Personalisation:** a different design on each cufflink is fine (e.g. initials on the left, the wedding date on the right), or a photo or logo on both. Live preview, plus a digital proof on request.
+- **Care:** wipe the face clean with a soft dry cloth. Don't use jewellery cleaner or soak them.
+- **Google:** `Apparel & Accessories > Clothing Accessories > Cufflinks`; age_group `adult`; colour `Silver`.
+- **ASK:** gift box size and colour name (the photo shows a teal/blue box); whether to offer rose gold or curved-square "premier" versions; multi-pair prices for groomsmen and ushers; and the price (currently £14.99, an estimate).
