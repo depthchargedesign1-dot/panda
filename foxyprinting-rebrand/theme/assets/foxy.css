@@ -517,9 +517,42 @@ h3, .h3 { font-size: 1.2rem; }
 #infiniteoptions-container .spb-productoptionswatch:hover { transform: translateY(-1px); border-color: var(--fx-purple) !important; }
 #infiniteoptions-container .spb-productoptionswatch.spb-selected,
 #infiniteoptions-container .spb-productoptionswatch.selected { border-color: var(--fx-pink) !important; box-shadow: 0 0 0 3px rgba(255,45,135,.18); }
-/* File upload */
-#infiniteoptions-container input[type="file"] { width: 100%; padding: 14px; font-size: .95rem; background: var(--fx-tint); border: 2px dashed #E3D5FF; border-radius: 14px; cursor: pointer; }
-#infiniteoptions-container input[type="file"]::file-selector-button { margin-right: 12px; padding: 8px 16px; border: 0; border-radius: 999px; background: var(--fx-ink); color: #fff; font-weight: 800; cursor: pointer; }
+/* File upload: match the personaliser's "Upload a photo" card (.upload) wherever an app adds a file field.
+   Covers the browser's own file input and the Uploadcare widget that Infinite Options uses. */
+#infiniteoptions-container input[type="file"],
+[data-product-form] input[type="file"]:not([data-field]) {
+  display: block; width: 100%; padding: 12px; font: inherit; font-size: .9rem; color: rgba(29,18,64,.75);
+  background: #FCFBFF; border: 2px dashed #D9CEF0; border-radius: 12px; cursor: pointer; transition: border-color .15s, background .15s;
+}
+#infiniteoptions-container input[type="file"]:hover,
+[data-product-form] input[type="file"]:not([data-field]):hover { border-color: var(--fx-purple); background: #fff; }
+#infiniteoptions-container input[type="file"]::file-selector-button,
+[data-product-form] input[type="file"]:not([data-field])::file-selector-button {
+  margin-right: 14px; padding: 10px 18px; border: 0; border-radius: 999px; background: var(--fx-pink); color: #fff;
+  font: inherit; font-weight: 800; cursor: pointer; transition: transform .15s, box-shadow .15s;
+}
+#infiniteoptions-container input[type="file"]::file-selector-button:hover,
+[data-product-form] input[type="file"]:not([data-field])::file-selector-button:hover { transform: translateY(-1px); box-shadow: 0 6px 14px -6px var(--fx-pink); }
+#infiniteoptions-container .uploadcare--widget,
+[data-product-form] .uploadcare--widget {
+  display: flex !important; flex-wrap: wrap; align-items: center; gap: 10px; width: 100%; padding: 12px 14px;
+  background: #FCFBFF; border: 2px dashed #D9CEF0; border-radius: 12px; font: inherit !important; color: var(--fx-ink);
+}
+#infiniteoptions-container .uploadcare--widget::before,
+[data-product-form] .uploadcare--widget::before { content: "📷"; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 10px; background: var(--fx-tint); font-size: 1.3rem; }
+#infiniteoptions-container .uploadcare--widget__button,
+[data-product-form] .uploadcare--widget__button {
+  padding: 10px 18px !important; border: 0 !important; border-radius: 999px !important; background: var(--fx-pink) !important; color: #fff !important;
+  font: inherit !important; font-weight: 800 !important; line-height: 1.2 !important; cursor: pointer; box-shadow: none !important; transition: transform .15s, box-shadow .15s;
+}
+#infiniteoptions-container .uploadcare--widget__button:hover,
+[data-product-form] .uploadcare--widget__button:hover { transform: translateY(-1px); box-shadow: 0 6px 14px -6px var(--fx-pink) !important; }
+#infiniteoptions-container .uploadcare--widget__button_type_remove,
+[data-product-form] .uploadcare--widget__button_type_remove { background: #fff !important; color: var(--fx-ink) !important; border: 2px solid #E7E1F3 !important; }
+#infiniteoptions-container .uploadcare--widget__text,
+[data-product-form] .uploadcare--widget__text { font-size: .88rem; color: rgba(29,18,64,.75); }
+#infiniteoptions-container .uploadcare--widget__file-name,
+[data-product-form] .uploadcare--widget__file-name { font-weight: 700; color: var(--fx-ink); }
 /* Help text, prices and character counters */
 #infiniteoptions-container .spb-productoptiondescription,
 #infiniteoptions-container .spb-help-text,
