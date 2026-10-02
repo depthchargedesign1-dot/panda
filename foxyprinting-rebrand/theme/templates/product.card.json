@@ -11,7 +11,7 @@
       "block_order": ["f1", "f2", "f3", "t1"],
       "settings": { "default_mockup": "card", "personaliser_heading": "Personalise your card", "use_product_image": true }
     },
-    "related": { "type": "featured-collection", "settings": { "heading": "Add a gift", "limit": 4, "tinted": true } }
+    "related": { "type": "related-products", "settings": { "heading": "Add a gift", "limit": 4, "tinted": true } }
   },
   "order": ["main", "related"]
 }
