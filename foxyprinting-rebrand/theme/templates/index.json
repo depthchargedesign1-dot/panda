@@ -598,6 +598,112 @@
         "button2_label": "Make your own",
         "button2_link": "shopify://products/make-your-own-facemask"
       }
+    },
+    "football_posters": {
+      "type": "promo-hero",
+      "blocks": {
+        "l1": {
+          "type": "link",
+          "settings": {
+            "label": "Footballers",
+            "link": "shopify://collections/football-player-autograph"
+          }
+        },
+        "l2": {
+          "type": "link",
+          "settings": {
+            "label": "Football posters",
+            "link": "shopify://collections/football-posters"
+          }
+        },
+        "l3": {
+          "type": "link",
+          "settings": {
+            "label": "A6 football card packs",
+            "link": "shopify://collections/signed-a6-football-poster-card-packs"
+          }
+        },
+        "l4": {
+          "type": "link",
+          "settings": {
+            "label": "Rugby",
+            "link": "shopify://collections/rugby-star-autograph"
+          }
+        },
+        "l5": {
+          "type": "link",
+          "settings": {
+            "label": "Boxing",
+            "link": "shopify://collections/boxer-autograph"
+          }
+        },
+        "l6": {
+          "type": "link",
+          "settings": {
+            "label": "MMA & wrestling",
+            "link": "shopify://collections/mma-wrestling-star-autograph"
+          }
+        },
+        "l7": {
+          "type": "link",
+          "settings": {
+            "label": "Golf",
+            "link": "shopify://collections/golfer-autograph"
+          }
+        },
+        "l8": {
+          "type": "link",
+          "settings": {
+            "label": "Formula 1",
+            "link": "shopify://collections/formula-1-star-autograph"
+          }
+        },
+        "l9": {
+          "type": "link",
+          "settings": {
+            "label": "Horse racing",
+            "link": "shopify://collections/horse-racing-star-autograph"
+          }
+        },
+        "l10": {
+          "type": "link",
+          "settings": {
+            "label": "Snooker",
+            "link": "shopify://collections/snooker-star-autograph"
+          }
+        },
+        "l11": {
+          "type": "link",
+          "settings": {
+            "label": "All sports & stars",
+            "link": "shopify://collections/signed-autographed-prints"
+          }
+        }
+      },
+      "block_order": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "l5",
+        "l6",
+        "l7",
+        "l8",
+        "l9",
+        "l10",
+        "l11"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/foxy-hero-football-poster-prints.png",
+        "colour": "teal",
+        "eyebrow": "For the football fan",
+        "heading": "Football star poster prints",
+        "text": "Reproduction prints with the player's signature printed on, in A4 to A1 or ready framed in black or silver. Prints from £6.99.",
+        "button_label": "Shop football prints",
+        "button_link": "shopify://collections/football-player-autograph",
+        "button2_label": "All sports prints",
+        "button2_link": "shopify://collections/signed-autographed-prints"
+      }
     }
   },
   "order": [
@@ -609,6 +715,7 @@
     "face_masks",
     "how",
     "new_ranges",
+    "football_posters",
     "christmas_products",
     "reviews",
     "business",
