@@ -20,12 +20,12 @@
 - **age_group:** `kids` for kids' cards, `adult` for adult cards.
 
 ## Face masks (celebrity / fancy dress / party)
-- **Material:** 350gsm smooth card, full-colour digital print.
+- **Material:** 350gsm silk card, full-colour digital print (Versant press), semi-waterproof (per the celebrity-face-mask-listing skill spec).
 - **Construction:** cut to shape, pre-cut eye holes, elastic band included.
 - **Packaging:** board-backed envelope.
 - **Uses:** parties, stag and hen dos, fancy dress, birthdays, sports events, weddings (photo booths).
 - **Range:** 8,000+ designs; custom masks from a photo on request.
-- **Price point:** from £3.00.
+- **Price point:** Ready to Wear £2.99; DIY (print only) £1.50 (skill spec, Oct 2026).
 - **Notes:** use the `celebrity-face-mask-listing` skill for these. Never say or imply the mask is official or endorsed. Not suitable for children under 3 (elastic): **ASK** to confirm the wording.
 - **Google category:** Apparel & Accessories > Costumes & Accessories > Masks
 - **age_group:** `adult`
