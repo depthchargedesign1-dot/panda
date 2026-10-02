@@ -314,3 +314,15 @@ Source: the owner's stock roll (photo, 2 Oct 2026).
   - permanent or removable adhesive;
   - thermal transfer or direct thermal printing? Direct thermal fades in sunlight;
 - Until answered, don't claim waterproof, weatherproof, outdoor, oil-proof, smudge-proof or long-lasting.
+
+## Christmas Santa & reindeer cushion covers (added 2 Oct 2026)
+Source: the owner's photos of the printed blank (2 Oct 2026).
+- **Blank:** a ready-printed Christmas cover. Santa and a reindeer peep over a large white panel, with a snowy village along the bottom, snowflakes and a polka-dot border. Two colourways: **Pink** and **Turquoise**.
+- **Fabric:** linen-look woven fabric with a visible weave (photo). Fibre content: **ASK**.
+- **Closure:** concealed zip along one edge (photo).
+- **Personalisation:** name and/or message printed in the white panel. The customer chooses the font and text colour in the personaliser.
+- **Options:** cover only, or with cushion insert (owner). Live and Active since 2 Oct 2026 (owner approved). Prices are estimates: cover £14.99 (matches the existing Santa & reindeer cushion listings), with insert £19.99.
+- **Care:** the existing live Santa & reindeer cushion listing says "Gentle machine wash at 30°C; avoid bleach, tumble dry, ironing and dry cleaning". Reuse that wording.
+- **Google:** `Home & Garden > Decor > Throw Pillows`; age_group `kids`; colour Pink or Turquoise (product level `Multicolor`).
+- **ASK:** cover size (cm), insert size and filling, fibre content, and the price with insert.
+- **Related:** older live listings use the same blank with 5 pre-made designs (handle `personalized-kids-christmas-cushion-custom-name-message-print-santa-reindeer-festive-pillow-with-snowy-village-design-soft-decorative-holiday-gift`).
