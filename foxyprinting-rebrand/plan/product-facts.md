@@ -1,5 +1,7 @@
 # Product fact sheets
 
+**No proofs (owner, 2 Oct 2026):** we don't offer proofs on masks, stickers or boxes. Never write "free digital proof" on those. Pet portraits are the exception: there, the owner emails a proof. For other families still marked "proof on request" (sublimation gifts, keyrings, cufflinks), **ASK** the owner before using that wording.
+
 **Rule:** every product family has its own materials, sizes, care instructions, delivery details and buyer questions. Write each description **only** from the matching sheet below, so a face mask never gets card specs and a Christmas Eve box never gets mug care instructions.
 
 - **ASK** means the owner hasn't confirmed it yet. Ask once, then record the answer here and commit it.
@@ -362,7 +364,7 @@ Source: the existing live listings, which carry the owner's own wording.
 ## Pillow treat / favour boxes (added 2 Oct 2026)
 Source: the live listing `personalised-pillow-treat-boxes` (FOXY-CUT-PPTB) and the owner's request on 2 Oct 2026.
 - **Made:** printed and cut in-house in North Yorkshire on the flatbed cutter. They are supplied flat or empty, ready for sweets, confetti or small gifts.
-- **Personalisation:** name(s), age or date, and a short message. The customer picks a theme design. A free digital proof is available on request.
+- **Personalisation:** name(s), age or date, and a short message. The customer picks a theme design. **No proofs** (owner, 2 Oct 2026): we print exactly what the customer types.
 - **Quantities and prices (owner asked for multi-buy pricing):**
 
   | Boxes | Price | Per box |
@@ -396,7 +398,7 @@ Source: the owner's messages of 2 Oct 2026 and `plan/large-format-plan.md` §3B 
   - **clear**;
   - clear and white **window cling**, sold as a separate listing.
 - **Shapes:** circle, square, rectangle, oval, or custom die-cut to the outline of the design.
-- **Artwork:** the customer uploads a logo or artwork, or our designers set it up. A free digital proof is available on request.
+- **Artwork:** the customer uploads a logo or artwork, or our designers set it up. **No proofs** (owner, 2 Oct 2026): we print the artwork as supplied, so ask for high-resolution files.
 - **For businesses:** logo stickers, packaging seals, "thank you" stickers, product and jar labels.
 - **Outdoor life (owner, 2 Oct 2026):** up to 3 years outdoors.
 - **RRP (owner approved 2 Oct 2026),** price per pack of 50:
