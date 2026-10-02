@@ -301,3 +301,16 @@ Source: the Longforte "Cufflinks – Chrome – Square" sublimation blank, plus 
 - **Google:** `Apparel & Accessories > Clothing Accessories > Cufflinks`; age_group `adult`; colour `Silver`.
 - **Variants (owner, 2 Oct 2026):** Style is Flat Square or Curved Square; Colour is Chrome or Rose Gold. All four are £14.99 (owner confirmed). The product is Active.
 - **ASK:** print area and material of the curved square (Longforte "Premier Range") version; gift box size and colour name (the photo shows a teal/blue box); multi-pair prices for groomsmen and ushers.
+
+## Roll labels: 20 x 40 mm yellow, black print (added 2 Oct 2026)
+Source: the owner's stock roll (photo, 2 Oct 2026).
+- **Label:** 20 x 40 mm rectangle with rounded corners, bright yellow, on a roll of **1,000** (owner).
+- **Print:** black only.
+- **First product:** personalised tool and equipment ID labels ("PROPERTY OF" + name/business + phone). Further ideas: allergen warning stickers, stock/QR labels, cable labels.
+- **Google:** `Office Supplies > General Office Supplies > Labels & Tags`; age_group `adult`; colour `Yellow`.
+- **ASK:**
+  - paper or synthetic (polypropylene)? This decides whether we can say waterproof, oil-resistant or outdoor use;
+  - permanent or removable adhesive;
+  - thermal transfer or direct thermal printing? Direct thermal fades in sunlight;
+  - pack sizes and prices. The current prices are estimates: 50 £4.99, 100 £6.99, 250 £11.99, 500 £17.99, full roll of 1,000 £27.99.
+- Until answered, don't claim waterproof, weatherproof, outdoor, oil-proof, smudge-proof or long-lasting.
