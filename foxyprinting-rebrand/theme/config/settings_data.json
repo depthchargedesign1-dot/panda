@@ -8,7 +8,11 @@
     "color_ink": "#1D1240",
     "color_background": "#FFFFFF",
     "color_tint": "#FFF4EA",
-    "color_sale": "#E8133A"
+    "color_sale": "#E8133A",
+    "social_facebook_link": "https://www.facebook.com/FoxyPrinting",
+    "social_instagram_link": "https://www.instagram.com/foxyprinting",
+    "social_pinterest_link": "https://www.pinterest.co.uk/foxyprinting",
+    "social_x_link": "https://x.com/foxyprinting"
   },
   "presets": {
     "Foxy Pop": {}

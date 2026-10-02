@@ -5,10 +5,10 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "m1": { "type": "menu", "settings": { "heading": "Shop", "menu": "main-menu" } },
-        "m2": { "type": "menu", "settings": { "heading": "Help", "menu": "information" } },
-        "m3": { "type": "menu", "settings": { "heading": "About Foxy", "menu": "about-us-menu" } },
-        "m4": { "type": "menu", "settings": { "heading": "Legal", "menu": "footer" } }
+        "m1": { "type": "menu", "settings": { "heading": "Shop", "menu": "footer-shop" } },
+        "m2": { "type": "menu", "settings": { "heading": "Help & Info", "menu": "footer-help" } },
+        "m3": { "type": "menu", "settings": { "heading": "Trade & Business", "menu": "footer-trade" } },
+        "m4": { "type": "menu", "settings": { "heading": "FoxyBrands", "menu": "foxybrands" } }
       },
       "block_order": ["m1", "m2", "m3", "m4"],
       "settings": {}

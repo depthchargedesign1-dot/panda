@@ -60,10 +60,13 @@
   {
     "name": "Social media",
     "settings": [
-      { "type": "text", "id": "social_facebook_link", "label": "Facebook", "default": "https://www.facebook.com/foxyprinting" },
+      { "type": "text", "id": "social_facebook_link", "label": "Facebook", "default": "https://www.facebook.com/FoxyPrinting" },
       { "type": "text", "id": "social_instagram_link", "label": "Instagram" },
       { "type": "text", "id": "social_tiktok_link", "label": "TikTok" },
-      { "type": "text", "id": "social_pinterest_link", "label": "Pinterest" }
+      { "type": "text", "id": "social_pinterest_link", "label": "Pinterest" },
+      { "type": "text", "id": "social_youtube_link", "label": "YouTube" },
+      { "type": "text", "id": "social_linkedin_link", "label": "LinkedIn" },
+      { "type": "text", "id": "social_x_link", "label": "X (Twitter)" }
     ]
   }
 ]
