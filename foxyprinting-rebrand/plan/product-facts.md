@@ -358,3 +358,30 @@ Source: the existing live listings, which carry the owner's own wording.
 - **Use:** indoors, or outdoors in dry weather. Semi-waterproof card, not fully waterproof.
 - **Google category:** `Arts & Entertainment > Party & Celebration > Party Supplies > Banners`; age_group `kids` for children's birthday bunting, `adult` for VE Day, coronation, adult and hen/stag bunting.
 - **ASK:** flag spacing on the ribbon, ribbon colour, and dispatch time.
+
+## Pillow treat / favour boxes (added 2 Oct 2026)
+Source: the live listing `personalised-pillow-treat-boxes` (FOXY-CUT-PPTB) and the owner's request on 2 Oct 2026.
+- **Made:** printed and cut in-house in North Yorkshire on the flatbed cutter. They are supplied flat or empty, ready for sweets, confetti or small gifts.
+- **Personalisation:** name(s), age or date, and a short message. The customer picks a theme design. A free digital proof is available on request.
+- **Quantities and prices (owner asked for multi-buy pricing):**
+
+  | Boxes | Price | Per box |
+  |---|---|---|
+  | 10 | £6.99 | 70p |
+  | 20 | £12.99 | 65p |
+  | 30 | £17.99 | 60p |
+  | 50 | £27.99 | 56p |
+  | 100 | £49.99 | 50p |
+  | 200 | £89.99 | 45p |
+  | 500 | £199.99 | 40p |
+
+  For comparison, UK personalised pillow boxes sell at about 49p each for 50 and 20–50p each for 100+.
+- **Two listings:**
+  - Kids' party: generic, unbranded themes only. No cartoon or game characters, no console logos. Themes: Dinosaur, Unicorn, Mermaid, Superhero, Gaming, Space, Pirate, Football, Fairy Princess, Jungle Animals.
+  - Weddings and celebrations: Wedding, Engagement, Christmas, Christening, Baby Shower, Hen Party, Anniversary, Thank You.
+- **Google category:** `Arts & Entertainment > Party & Celebration > Gift Giving > Gift Wrapping > Gift Boxes & Tins`. age_group `kids` for the kids' listing and `adult` for weddings and celebrations.
+- **ASK:**
+  - box size (closed dimensions);
+  - card weight and finish;
+  - whether the boxes arrive flat or folded;
+  - dispatch time for 200 and 500 boxes.
