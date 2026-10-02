@@ -121,7 +121,7 @@
                 {%- liquid
                   assign l = label | downcase
                   assign kind = 'text'
-                  if l contains 'photo' or l contains 'upload' or l contains 'logo' or l contains 'artwork'
+                  if l contains 'photo' or l contains 'upload' or l contains 'logo' or l contains 'artwork' or l contains 'badge' or l contains 'crest'
                     assign kind = 'image'
                   elsif l contains 'message' or l contains 'list' or l contains 'reasons' or l contains 'achievements'
                     assign kind = 'textarea'
@@ -129,6 +129,12 @@
                   assign max = 24
                   if kind == 'textarea'
                     assign max = 160
+                  elsif l contains 'number' or l contains 'age'
+                    assign max = 3
+                  elsif l contains 'initials'
+                    assign max = 4
+                  elsif l contains 'slogan' or l contains 'team name' or l contains 'colours'
+                    assign max = 40
                   endif
                 -%}
                 {% render 'personaliser-field', label: label, kind: kind, max: max, index: forloop.index0, required: forloop.first %}
