@@ -20,7 +20,7 @@ The bulk API route is blocked by the Shopify connector's safety policy, so the r
 
 ## Import (owner, about 5 minutes)
 1. Shopify admin → Products → Import → `00-TEST-3-products.csv`, with **"Overwrite products with matching handles"** ticked.
-2. Open those 3 products and check that only the title changed.
-3. Import `01-signed-titles.csv` (6,714 products), then `02-signed-titles.csv` (6,714 products).
+2. Open those 3 products and check that only the title changed. The sizes and frame options (variants), prices and images must all still be there.
+3. Import `01-signed-titles.csv`, then `02-signed-titles.csv`. These leave out the 134 products already fixed through the API.
 
 The Foxy Pop theme also shows a "printed reproduction, not hand-signed" notice on every one of these product pages automatically.
