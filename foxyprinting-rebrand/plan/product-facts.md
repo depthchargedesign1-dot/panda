@@ -319,7 +319,7 @@ Source: the owner's stock roll (photo, 2 Oct 2026).
 Source: the owner's photos of the printed blank (2 Oct 2026).
 - **Blank:** a ready-printed Christmas cover. Santa and a reindeer peep over a large white panel, with a snowy village along the bottom, snowflakes and a polka-dot border. Two colourways: **Pink** and **Turquoise**.
 - **Size:** 40 x 40 cm (owner).
-- **Fabric:** polyester linen (owner), with a visible weave.
+- **Fabric:** heavy-quality polyester linen (owner), with a visible weave.
 - **Closure:** concealed zip along one edge (photo).
 - **Personalisation:** name and/or message printed in the white panel. The customer chooses the font and text colour in the personaliser.
 - **Options:** cover only, or with cushion insert (owner). Live and Active since 2 Oct 2026 (owner approved). Prices (owner confirmed): cover £14.99, with insert £19.99.
