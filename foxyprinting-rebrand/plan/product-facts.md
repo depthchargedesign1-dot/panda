@@ -398,7 +398,8 @@ Source: the owner's messages of 2 Oct 2026 and `plan/large-format-plan.md` §3B 
 - **Shapes:** circle, square, rectangle, oval, or custom die-cut to the outline of the design.
 - **Artwork:** the customer uploads a logo or artwork, or our designers set it up. A free digital proof is available on request.
 - **For businesses:** logo stickers, packaging seals, "thank you" stickers, product and jar labels.
-- **Proposed RRP (owner to confirm),** price per pack of 50:
+- **Outdoor life (owner, 2 Oct 2026):** up to 3 years outdoors.
+- **RRP (owner approved 2 Oct 2026),** price per pack of 50:
   - sizes: 25 mm £9.99, 38 mm £12.99, 51 mm £14.99, 64 mm £17.99, 76 mm £19.99, 102 mm £24.99;
   - quantity multipliers: 100 ×1.6, 250 ×3.2, 500 ×5.5, 1,000 ×9;
   - material uplifts: waterproof & tearproof +15%, clear +20%, metallic +30%;
@@ -407,7 +408,6 @@ Source: the owner's messages of 2 Oct 2026 and `plan/large-format-plan.md` §3B 
 - **Google category:** `Office Supplies > General Office Supplies > Labels`, or for sticker packs `Arts & Entertainment > Hobbies & Creative Arts > Arts & Crafts > Art & Crafting Materials > Embellishments & Trims > Decorative Stickers`. Use **Labels** for business sticker listings. **age_group:** `adult`.
 - **ASK:**
   - vinyl and laminate brand;
-  - outdoor life in years;
   - dishwasher or freezer suitability;
   - minimum and maximum size;
   - dispatch time;
