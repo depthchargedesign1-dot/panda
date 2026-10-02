@@ -41,19 +41,46 @@
       if (!trigger) return;
       trigger.addEventListener('click', () => (item.classList.contains('is-open') ? close(item) : open(item)));
       if (canHover) {
-        // Small hover-intent delay so sweeping the mouse across the bar doesn't flash every panel.
+        // Hover intent. The bar can wrap onto two rows, so moving the mouse down from a department to its
+        // open panel can pass over another department. Switching therefore needs the pointer to rest on the
+        // new department briefly, and is skipped while the pointer is heading down towards the open panel.
         item.addEventListener('mouseenter', () => {
           clearTimeout(closeTimer);
           clearTimeout(openTimer);
-          const anyOpen = items.some((x) => x.classList.contains('is-open'));
-          openTimer = setTimeout(() => open(item), anyOpen ? 0 : 140);
+          const current = items.find((x) => x.classList.contains('is-open'));
+          if (current === item) return;
+          const tryOpen = () => {
+            if (current && headingToPanel(current)) { openTimer = setTimeout(tryOpen, 120); return; }
+            open(item);
+          };
+          openTimer = setTimeout(tryOpen, current ? 260 : 140);
         });
         item.addEventListener('mouseleave', () => {
           clearTimeout(openTimer);
-          closeTimer = setTimeout(() => close(item), 220);
+          closeTimer = setTimeout(() => close(item), 260);
         });
       }
     });
+
+    // Recent pointer positions, used to tell "moving down into the open panel" from "choosing another department".
+    const trail = [];
+    if (canHover) {
+      document.addEventListener('mousemove', (e) => {
+        trail.push({ x: e.clientX, y: e.clientY, t: performance.now() });
+        if (trail.length > 6) trail.shift();
+      }, { passive: true });
+    }
+    const headingToPanel = (openItem) => {
+      const panel = openItem.querySelector('[data-mega-panel]');
+      if (!panel || trail.length < 2) return false;
+      const a = trail[0];
+      const b = trail[trail.length - 1];
+      if (performance.now() - b.t > 150) return false; // the pointer has stopped: the customer is choosing
+      const top = panel.getBoundingClientRect().top;
+      const dx = Math.abs(b.x - a.x);
+      const dy = b.y - a.y;
+      return dy > 0 && dy >= dx * 0.6 && b.y < top + 4;
+    };
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         const openItem = items.find((x) => x.classList.contains('is-open'));
