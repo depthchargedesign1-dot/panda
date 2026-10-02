@@ -21,6 +21,8 @@ The Foxy Printing work lives in `foxyprinting-rebrand/`. The rest of this reposi
    - Tag the product `io-<range>` (e.g. `io-football`) so the owner can attach a matching Infinite Options set in the app if wanted.
 7. Image alt text should describe the product in plain words and include the main keyword once.
 8. Before creating, search the store for an existing product with the same handle or title to avoid duplicates.
+9. To change an existing product, use `productUpdate`, `metafieldsSet` or `productVariantsBulk*`. Don't use `productSet`: on 2 Oct 2026, a `productSet` that sent only one metafield wiped the cufflinks' other `foxy.*` and `mm-google-shopping` metafields. If you must use `productSet`, send every metafield, then re-read the product to check.
+10. Live preview style (`foxy.mockup`): use a drawn style (`card`, `drinkware`, `apparel`, `bauble`, `box`, `flat`) only when the product really is that shape, e.g. a greeting card, a mug or glass, a T-shirt or baby grow, a bauble, a gift box or a plaque. For anything else, use `photo`. It shows the product's own photo with a card of the customer's details.
 
 ## Product copy (description) guidelines
 
