@@ -114,13 +114,30 @@ def show_of(p):
     return None
 
 
-def build(p):
-    name, ok = clean_name(p["title"])
-    if not ok or PACK.search(p["title"]) or CUSTOM.search(p["title"]):
+IDENT_CAT = {  # identification categories (who/*.jsonl) -> mask_copy CATS keys
+    "football": "football", "music": "music", "tv": "tv", "film": "film", "comedy": "comedy", "reality": "reality",
+    "royal": "royal", "politics": "royal", "characters": "film", "models": "celeb", "other": "celeb",
+}
+SPORT_CAT = {"darts": "darts", "golf": "golf", "f1": "f1", "tennis": "tennis", "boxing": "boxing", "cricket": "cricket",
+             "rugby": "rugby", "snooker": "snooker"}
+
+
+def build(p, ident=None):
+    """ident: optional identification record (name, character, show, category, sport, blurb) for this person."""
+    if ident:
+        name, ok = ident["name"], True
+    else:
+        name, ok = clean_name(p["title"])
+    if not ok or (not ident and (PACK.search(p["title"]) or CUSTOM.search(p["title"]))):
         return None
     key = p["handle"]
     cat, label, who, occ = category(p)
     show = show_of(p)
+    if ident:
+        k = SPORT_CAT.get(ident.get("sport") or "", "sport") if ident.get("category") == "sport" else IDENT_CAT.get(ident.get("category"), "celeb")
+        c = next((c for c in CATS if c[0] == k), None)
+        cat, label, who, occ = (c[0], c[2], c[3], c[4]) if c else (DEFAULT[0], DEFAULT[2], DEFAULT[3], DEFAULT[4])
+        show = ident.get("show") or show
     pk = f"{name} face mask"
     o1, o2 = pick(occ, key, "o1"), pick(occ[::-1], key, "o2")
     if o1 == o2:
@@ -174,7 +191,7 @@ def build(p):
                 f"and Foxy Printing has no connection with them. The name is used only to describe the design.")
     e = lambda x: html.escape(x, quote=False)
     body = (
-        f"<p>{e(intro)} {e(intro2)}</p>\n<h2>{e(h2)}</h2>\n<p>{e(how)} {e(custom)}</p>\n"
+        f"<p>{e(ident['blurb']) if ident and ident.get('blurb') else e(intro) + ' ' + e(intro2)}</p>\n<h2>{e(h2)}</h2>\n<p>{e(how)} {e(custom)}</p>\n"
         f"<h3>Why you'll love it</h3>\n<ul>\n" + "".join(f"<li>{e(b)}</li>\n" for b in bullets) + "</ul>\n"
         f"<h3>Size &amp; details</h3>\n<ul>\n<li>Material: 350gsm silk card, full-colour digital print</li>\n"
         f"<li>Finish: semi-waterproof</li>\n<li>Fit: one size for adults; elastic and sticky tabs included</li>\n"
