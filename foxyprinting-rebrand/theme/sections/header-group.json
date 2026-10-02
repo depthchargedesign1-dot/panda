@@ -93,12 +93,25 @@
             "promo_image": "shopify://shop_images/foxy-promo-photo-gifts.png",
             "promo_link": "shopify://collections/personalised-photo-slates"
           }
+        },
+        "d6": {
+          "type": "department",
+          "settings": {
+            "menu_item": "Football",
+            "colour": "yellow",
+            "promo_eyebrow": "For your team",
+            "promo_heading": "Team footballs, stadium flags & knitted bobble hats",
+            "promo_button": "Shop football",
+            "promo_image": "shopify://shop_images/foxy-promo-football.png",
+            "promo_link": "shopify://collections/personalised-football-merchandise"
+          }
         }
       },
       "block_order": [
         "d1",
         "d2",
         "d5",
+        "d6",
         "d3",
         "d4"
       ],

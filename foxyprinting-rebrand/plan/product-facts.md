@@ -85,3 +85,22 @@
 
 ## Magnets, keyrings, coasters, towels, game cases
 - Facts **ASK**. Pull them from the current live listings first, then confirm with the owner.
+
+---
+
+## Football team kit & fan gifts (added 2 Oct 2026)
+Owner answers 2 Oct 2026, plus supplier facts from longforte.com (search snippets; check in the trade account before costing).
+- **Footballs:** size 5 (adult/match) plus a junior size (owner: "size 5 + size 3 or 4"; listed as Size 5 and Size 4). Sublimation-printed panels with team name, badge and player names. Panel material, bladder and weight: **ASK**.
+- **Shin pads:** children's polymer shin pads, ultra-hard, bright white glossy finish, sold as a pair, Small / Medium / Large. Printed by sublimation. Exact size per letter: **ASK**. Source: https://www.longforte.com/products/polymer-football-shinpads
+- **Football socks:** adult sublimation football socks, 45cm, 100% polyester. Source: https://www.longforte.com/products/adult-sublimation-football-socks-45cm
+- **Boot bag:** 100% polyester sublimation drawstring sports bag. Size: **ASK**. Source: https://www.longforte.com/products/blank-sublimation-100-polyester-sports-drawstring-bag-with-pu
+- **Satin scarf:** premium sports scarf with tassels, 16.5cm x 142cm, polyester, shiny glossy satin surface, printable on both sides. Source: https://www.longforte.com/products/sublimation-premium-sports-fashion-scarf-with-tassels
+- **Knitted bobble hat:** fully custom knitted design (jacquard knit in your team colours with the name knitted in). Owner confirmed 2 Oct 2026. Minimum order, lead time, yarn and size: **ASK**.
+- **Stadium / terrace flags:** 3 sizes: 3ft x 2ft, 5ft x 3ft, 8ft x 5ft (owner, 2 Oct 2026). 8ft x 5ft (about 244 x 152cm) is the largest size allowed into Wembley without special permission (supplier info, check before quoting). Fabric, finish (eyelets/sleeve) and print side: **ASK**.
+- **Corner flags:** set of 4, offered two ways: flags with poles, or flags only to fit existing poles (owner, 2 Oct 2026). Flag size, pole height and pole fitting: **ASK**.
+- **Car flag:** 100% polyester, 43cm plastic stand, window clip and fastener. Source: https://www.longforte.com/products/sublimation-car-flag
+- **Pennants:** 18cm x 26cm, premium polyester, bamboo stick and cord; blanks come in packs of 10 (white, green, blue, red). Source: https://www.longforte.com/products/flags-banners-pack-of-10-x-pennant-18cm-x-26cm-white
+- **Bunting:** 9m with about 30 A4 flags, printable both sides. Source: https://www.longforte.com/products/sublimation-bunting-9-metre-a4-size
+- **Rules:** these are for the customer's OWN team (grassroots, Sunday league, school). Never show a real club crest or name in images or titles. If a listing names a pro club, follow the football disclaimer in CLAUDE.md.
+- **Google category:** footballs `Sporting Goods > Athletics > Soccer > Soccer Balls`; shin pads `Sporting Goods > Athletics > Soccer > Soccer Protective Gear > Soccer Shin Guards`; socks `Apparel & Accessories > Clothing > Activewear`; scarves `Apparel & Accessories > Clothing Accessories > Scarves & Shawls > Scarves`; bobble hats `Apparel & Accessories > Clothing Accessories > Hats`; flags `Home & Garden > Decor > Flags & Windsocks`; corner flags `Sporting Goods > Athletics > Soccer > Soccer Corner Flags`. Check every path in Google's taxonomy before use.
+- **age_group:** shin pads and junior footballs `kids`; everything else `adult` unless the title is for a child.

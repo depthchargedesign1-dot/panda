@@ -109,6 +109,41 @@ BASE_MENU = [
             ("Christmas Baubles & Ornaments", c("personalised-christmas-baubles-and-ornaments")),
         ]),
     ]),
+    # Team kit, flags and fan gifts for grassroots clubs (plan/product-facts.md, football sheet).
+    ("Football", c("personalised-football-merchandise"), [
+        ("Team Kit", c("personalised-team-footballs-and-kit"), [
+            ("Personalised Footballs", c("personalised-team-footballs-and-kit")),
+            ("Kids' Shin Pads", c("personalised-team-footballs-and-kit")),
+            ("Football Socks", c("personalised-team-footballs-and-kit")),
+            ("Boot Bags", c("personalised-team-footballs-and-kit")),
+        ]),
+        ("Scarves & Bobble Hats", c("personalised-football-scarves-and-bobble-hats"), [
+            ("Custom Satin Scarves", c("personalised-football-scarves-and-bobble-hats")),
+            ("Knitted Bobble Hats", c("personalised-football-scarves-and-bobble-hats")),
+            ("Printed Badge Scarves", c("scarves")),
+            ("Printed Badge Bobble Hats", c("bobble-hats")),
+        ]),
+        ("Flags", c("custom-football-stadium-and-corner-flags"), [
+            ("Stadium Flags", c("custom-football-stadium-and-corner-flags")),
+            ("Corner Flags", c("custom-football-stadium-and-corner-flags")),
+            ("Car Flags", c("custom-football-stadium-and-corner-flags")),
+            ("Club Bunting", c("custom-football-stadium-and-corner-flags")),
+            ("Terrace Flags", c("football-flags")),
+        ]),
+        ("Coach & Team Gifts", c("football-coach-and-team-gifts"), [
+            ("Thank You Coach Mugs", c("football-coach-and-team-gifts")),
+            ("Coach Keyrings", c("football-coach-and-team-gifts")),
+            ("Team Pennants", c("football-coach-and-team-gifts")),
+        ]),
+        ("Fan Favourites", c("all-football-mugs"), [
+            ("Football Team Mugs", c("all-football-mugs")),
+            ("Football Posters", c("football-posters")),
+            ("Football Coasters", c("football-coasters")),
+            ("Football Bar Mats", c("football-bar-mats")),
+            ("Football Towels", c("football-bath-towels")),
+            ("Footballer Face Masks", c("footballer-face-masks")),
+        ]),
+    ]),
     ("Clothing", c("t-shirts"), [
         ("T-Shirts & Hoodies", c("new-custom-clothing"), [
             ("Design Your Own T-Shirt", c("new-custom-clothing")), ("Printed T-Shirts", c("t-shirts")),
