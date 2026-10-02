@@ -327,3 +327,10 @@ Source: the owner's photos of the printed blank (2 Oct 2026).
 - **Google:** `Home & Garden > Decor > Throw Pillows`; age_group `kids`; colour Pink or Turquoise (product level `Multicolor`).
 - **ASK:** insert filling (the insert is sold to fit the 40 cm cover).
 - **Related:** older live listings use the same blank with 5 pre-made designs (handle `personalized-kids-christmas-cushion-custom-name-message-print-santa-reindeer-festive-pillow-with-snowy-village-design-soft-decorative-holiday-gift`).
+
+## Personalised cap (added 2 Oct 2026)
+- **Blank:** Beechfield Original 5 Panel Cap (B10) from Ralawise (owner).
+- **Colours (24):** Black, White, French Navy, Bright Royal, Bright Red, Burgundy, Bottle Green, Kelly Green, Emerald, Olive, Lime, Yellow, Gold, Orange, Classic Pink, Fuchsia, Purple, Sky Blue, Surf Blue, Light Grey, Graphite, Natural, Sand, Chocolate. Taken from supplier listings, because Ralawise's site couldn't be read from here; remove any that aren't in stock.
+- **Price:** £12.99 for every colour (owner). SKUs FOXY-DTF-PC-01 (Black) to FOXY-DTF-PC-24.
+- **Print:** DTF, full colour.
+- **ASK:** fabric content, closure type and size (one size?).
