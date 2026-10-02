@@ -1,0 +1,25 @@
+{%- comment -%}
+  Clothing multi-buy banner, shown under the price on products in the "clothing-multi-buy" collection.
+  The discounts themselves are Shopify automatic discounts (Discounts in admin): change the tiers there
+  and in the text below together.
+{%- endcomment -%}
+{%- liquid
+  assign show_multibuy = false
+  for c in product.collections
+    if c.handle == 'clothing-multi-buy'
+      assign show_multibuy = true
+      break
+    endif
+  endfor
+-%}
+{%- if show_multibuy -%}
+  <div class="multibuy" role="note">
+    <span class="multibuy__title">👕 Multi-buy savings</span>
+    <ul class="multibuy__tiers">
+      <li><strong>Buy 3</strong> save 5%</li>
+      <li><strong>Buy 10</strong> save 20%</li>
+      <li><strong>Buy 20+</strong> save 30%</li>
+    </ul>
+    <span class="multibuy__note">Mix sizes, colours and designs. The discount comes off automatically at checkout. <a href="/collections/clothing-multi-buy">Shop all clothing deals</a></span>
+  </div>
+{%- endif -%}

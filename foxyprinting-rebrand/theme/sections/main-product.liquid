@@ -89,6 +89,7 @@
         <span data-price>{{ current_variant.price | money }}</span>
       </div>
       <div class="product__tax">{{ 'products.product.tax_included' | t }}</div>
+      {% render 'multibuy-banner', product: product %}
 
       <form method="post" action="{{ routes.cart_add_url }}" enctype="multipart/form-data" accept-charset="UTF-8" data-product-form novalidate>
         <input type="hidden" name="form_type" value="product">

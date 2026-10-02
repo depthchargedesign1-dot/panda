@@ -783,3 +783,12 @@ h3, .h3 { font-size: 1.2rem; }
 /* Review extras */
 .review__title { font-size: 1.02rem; margin: 8px 0 0; }
 .review__verified { display: inline-block; margin-left: 6px; font-size: .72rem; font-weight: 800; color: #007A70; background: #E9FBF8; padding: 2px 8px; border-radius: 999px; vertical-align: middle; }
+
+/* Clothing multi-buy banner (snippets/multibuy-banner.liquid) */
+.multibuy { display: grid; gap: 8px; padding: 14px 16px; border-radius: calc(var(--fx-radius) + 2px); background: linear-gradient(120deg, #FFF0F7, #F4EDFF); border: 2px solid #F3D3EA; }
+.multibuy__title { font-weight: 800; font-size: .95rem; color: var(--fx-ink); }
+.multibuy__tiers { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.multibuy__tiers li { padding: 6px 12px; border-radius: 999px; background: #fff; font-size: .88rem; box-shadow: 0 2px 8px -4px rgba(29,18,64,.25); }
+.multibuy__tiers strong { color: var(--fx-pink); }
+.multibuy__note { font-size: .82rem; opacity: .8; }
+.multibuy__note a { color: var(--fx-purple); font-weight: 700; }
