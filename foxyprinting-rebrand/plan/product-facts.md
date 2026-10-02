@@ -412,3 +412,30 @@ Source: the owner's messages of 2 Oct 2026 and `plan/large-format-plan.md` §3B 
   - minimum and maximum size;
   - dispatch time;
   - design fee.
+
+## Personalised photo party face masks (added 2 Oct 2026, owner priority)
+Source: the face mask sheet above, plus the live "N X Personalised Custom Photo Party Face Masks" listings.
+- **Made from:** the customer's own photo. Printed in full colour on 350gsm silk card, semi-waterproof, in a board-backed envelope.
+- **Styles:**
+  - **Ready Cut:** cut to the face shape, eye holes cut, elastic and sticky tabs supplied.
+  - **DIY:** printed only; the customer cuts it out; elastic and tabs supplied.
+- **No minimum:** order just 1. Multipacks are available. Owner's wording: "Any Name Any Person or Image".
+- **Uses:** stag dos (the groom's face), hen parties (the bride's face), birthdays, weddings and photo booths, leaving dos and retirements, office and Christmas parties, sports teams.
+- **Current price ladder** (live listings, packs of 5–50):
+  - DIY ≈ £1 a mask (5 for £4, 12 for £11, 50 for £49);
+  - Ready Cut ≈ £2 a mask (5 for £7, 12 for £23, 50 for £99);
+  - single custom mask £2.49.
+- **Market, Oct 2026:**
+  - FunkyBunky: single £4.99, 10 ready-to-wear £28;
+  - Party People: DIY 99p, ready-to-wear £1.49;
+  - celebrity-facemasks.com (our sister site): 10 DIY £8, single £1.99.
+- **Google:**
+  - category `Apparel & Accessories > Costumes & Accessories > Masks`;
+  - custom_product true; age_group adult; gender unisex;
+  - custom_label_0 `personalised-masks`.
+- **ASK:**
+  - dispatch time, especially for stag and hen dates;
+  - whether one pack can mix different faces, and how many;
+  - a "mask on a stick" option (competitors offer it);
+  - whether a proof is emailed;
+  - the final price ladder (proposal in `plan/personalised-masks-plan.md`).
