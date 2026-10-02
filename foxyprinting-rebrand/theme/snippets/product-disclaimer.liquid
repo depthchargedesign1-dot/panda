@@ -7,31 +7,66 @@
 {%- endcomment -%}
 {%- liquid
   assign custom = product.metafields.foxy.disclaimer.value
+  assign tags_lc = product.tags | join: ',' | downcase
+  assign type_lc = product.type | downcase
+  # Whole-word matching: pad with spaces and turn punctuation into spaces, so "designed" never matches "signed".
+  assign hay = product.type | append: ' ' | append: product.title | downcase | replace: '-', ' ' | replace: '–', ' ' | replace: ',', ' ' | replace: '.', ' ' | replace: '(', ' ' | replace: ')', ' ' | replace: '/', ' ' | replace: '|', ' ' | replace: ':', ' ' | replace: '&', ' ' | replace: "'", ''
+  assign hay = ' ' | append: hay | append: ' '
+  assign kind = 'none'
+
+  # The customer's own photo or team: nobody else's name or likeness is used.
+  assign own_design = false
+  if hay contains ' your own ' or hay contains ' make your own ' or hay contains ' custom photo ' or hay contains ' personalised photo ' or hay contains ' your photo ' or hay contains ' your face ' or hay contains ' your team ' or hay contains ' your club ' or hay contains ' team colours '
+    assign own_design = true
+  endif
+
+  assign tagged = false
+  if tags_lc contains 'third-party-name'
+    assign tagged = true
+  endif
+  assign new_range = false
+  if tags_lc contains 'foxy-new-2026' and tagged == false
+    assign new_range = true
+  endif
+
+  # Club and league names. Liquid has no and/or precedence, so build this up step by step.
+  assign club = false
+  if type_lc contains 'football' or tags_lc contains 'football mug' or tags_lc contains 'keep calm football' or tags_lc contains 'football crazy'
+    assign club = true
+  elsif hay contains ' premier league ' or hay contains ' fc ' or hay contains ' afc ' or hay contains ' united ' or hay contains ' rugby '
+    assign club = true
+  endif
+  if own_design
+    assign club = false
+  endif
+
   if product.description contains 'class="disclaimer"'
     assign kind = 'none'
   elsif custom != blank
     assign kind = 'custom'
-  else
-    assign hay = product.type | append: ' ' | append: product.title | downcase
-    assign title_lc = product.title | downcase
-    assign tags_lc = product.tags | join: ',' | downcase
+  elsif new_range
+    # New 2026 products are written to the house rules: any disclaimer they need is in the description.
     assign kind = 'none'
-    if hay contains 'signed' or hay contains 'autograph'
+  else
+    if hay contains ' signed ' or hay contains ' autograph' or hay contains ' printed signature '
       assign kind = 'signed'
-    elsif hay contains 'face mask' or hay contains 'facemask' or hay contains 'tv stars' or title_lc contains 'celebrity'
-      assign kind = 'person'
-    elsif hay contains 'replacement' or hay contains 'game case' or hay contains 'nintendo' or hay contains 'sega' or hay contains 'playstation' or hay contains 'atari' or hay contains 'xbox' or hay contains 'gameboy' or hay contains 'snes' or hay contains 'dreamcast' or hay contains 'retro gaming'
+    elsif hay contains ' face mask' or hay contains ' facemask' or hay contains ' tv stars ' or hay contains ' celebrity '
+      if own_design == false or hay contains ' celebrity '
+        assign kind = 'person'
+      endif
+    elsif hay contains ' replacement case' or hay contains ' replacement game' or hay contains ' game case' or hay contains ' nintendo' or hay contains ' sega ' or hay contains ' playstation' or hay contains ' atari ' or hay contains ' xbox' or hay contains ' gameboy' or hay contains ' game boy' or hay contains ' snes ' or hay contains ' dreamcast' or hay contains ' retro gaming ' or hay contains ' megadrive' or hay contains ' mega drive'
       assign kind = 'game'
-    elsif hay contains 'perfectdraft' or hay contains 'perfect draft' or hay contains 'perfect skin'
+    elsif hay contains ' perfectdraft' or hay contains ' perfect draft' or hay contains ' perfect skin'
       assign kind = 'brand'
-    elsif hay contains 'inspired' or hay contains 'theme style' or hay contains 'style theme' or hay contains 'kidshows'
-      assign kind = 'character'
-    elsif hay contains 'football' or hay contains 'premier league' or hay contains ' fc' or hay contains ' united' or hay contains 'rugby' or hay contains 'darts'
+    elsif club
+      # Club and league names (checked before "inspired", so "Oxford United INSPIRED" mugs get the club wording).
       assign kind = 'sport'
-    elsif tags_lc contains 'third-party-name'
+    elsif hay contains ' inspired ' or hay contains ' theme style ' or hay contains ' style theme ' or hay contains ' kidshows '
+      assign kind = 'character'
+    elsif tagged
       assign kind = 'generic'
     endif
-    if kind == 'game' and hay contains 'case'
+    if kind == 'game' and hay contains ' case'
       assign game_case = true
     endif
   endif
