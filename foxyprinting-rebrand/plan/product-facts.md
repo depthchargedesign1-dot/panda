@@ -433,9 +433,10 @@ Source: the face mask sheet above, plus the live "N X Personalised Custom Photo 
   - category `Apparel & Accessories > Costumes & Accessories > Masks`;
   - custom_product true; age_group adult; gender unisex;
   - custom_label_0 `personalised-masks`.
+- **Dispatch (owner, 2 Oct 2026):** next working day.
+- **Mixed faces (owner, 2 Oct 2026):** yes, one pack can mix different faces.
+- **Prices (owner approved, 2 Oct 2026):** the ladder in `plan/personalised-masks-plan.md`.
 - **ASK:**
-  - dispatch time, especially for stag and hen dates;
-  - whether one pack can mix different faces, and how many;
   - a "mask on a stick" option (competitors offer it);
   - whether a proof is emailed;
-  - the final price ladder (proposal in `plan/personalised-masks-plan.md`).
+  - the maximum number of different faces in one pack.
