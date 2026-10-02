@@ -398,7 +398,7 @@ Source: the owner's messages of 2 Oct 2026 and `plan/large-format-plan.md` §3B 
   - **clear**;
   - clear and white **window cling**, sold as a separate listing.
 - **Shapes:** circle, square, rectangle, oval, or custom die-cut to the outline of the design.
-- **Artwork:** the customer uploads a logo or artwork, or our designers set it up. **No proofs** (owner, 2 Oct 2026): we print the artwork as supplied, so ask for high-resolution files.
+- **Artwork (owner, 2 Oct 2026):** the customer supplies their own artwork or logo. Our team may tidy it up for free before printing (e.g. cleaning edges, adding the cut line). **No proofs.** Don't offer a design-from-scratch service or mention a design fee.
 - **For businesses:** logo stickers, packaging seals, "thank you" stickers, product and jar labels.
 - **Outdoor life (owner, 2 Oct 2026):** up to 3 years outdoors.
 - **RRP (owner approved 2 Oct 2026),** price per pack of 50:
@@ -412,8 +412,7 @@ Source: the owner's messages of 2 Oct 2026 and `plan/large-format-plan.md` §3B 
   - vinyl and laminate brand;
   - dishwasher or freezer suitability;
   - minimum and maximum size;
-  - dispatch time;
-  - design fee.
+  - dispatch time.
 
 ## Personalised photo party face masks (added 2 Oct 2026, owner priority)
 Source: the face mask sheet above, plus the live "N X Personalised Custom Photo Party Face Masks" listings.
