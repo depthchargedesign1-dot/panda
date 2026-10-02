@@ -334,3 +334,17 @@ Source: the owner's photos of the printed blank (2 Oct 2026).
 - **Price:** £12.99 for every colour (owner). SKUs FOXY-DTF-PC-01 (Black) to FOXY-DTF-PC-24.
 - **Print:** DTF, full colour.
 - **ASK:** fabric content, closure type and size (one size?).
+
+## Personalised adult T-shirt: AWDis 150 T (AT001) (added 2 Oct 2026)
+- **Blank:** AWDis 150 T (AT001) from Ralawise (owner). Relaxed fit, unisex, 150gsm, 100% cotton PurePrint (Heather Grey is 90% cotton, 10% viscose). Ribbed crew neck, taped back neck, twin-needle stitching, side seams.
+- **Colours (25):** Arctic White, Deep Black, Heather Grey, Solid Charcoal, New French Navy, Royal Blue, Sapphire Blue, Sky Blue, Cornflower Blue, Airforce Blue, Fire Red, Burgundy, Hot Pink, Baby Pink, Purple, Dusty Lilac, Bottle Green, Kelly Green, Earthy Green, Seafoam, Sun Yellow, Orange Crush, Desert Sand, Natural Stone, Mocha Brown. Taken from supplier listings; remove any that aren't in stock.
+- **Sizes and measurements (cm, ±2):**
+
+| Size | S | M | L | XL | 2XL | 3XL | 4XL | 5XL |
+|---|---|---|---|---|---|---|---|---|
+| Chest (pit to pit) | 48 | 52 | 56 | 60 | 65 | 70 | 75 | 80 |
+| Body length | 71 | 73 | 75 | 77 | 79 | 82 | 85 | 88 |
+| Sleeve | 22 | 23 | 24 | 25 | 26 | 27 | 27 | 27 |
+
+- **Size guide:** page `size-guide-adult-t-shirt`, linked through the product metafield `foxy.size_guide` (page reference). The theme shows a "Size guide" button next to Size.
+- **Prices:** S to XL £14.99 and 2XL £16.99 (existing); 3XL to 5XL £17.99 (estimate, **ASK** owner).

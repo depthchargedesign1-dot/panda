@@ -20,6 +20,7 @@
   assign fonts = settings.personaliser_fonts | split: ','
   assign colours = settings.personaliser_colours | split: ','
   assign accent_class = 'accent-pink'
+  assign size_guide = product.metafields.foxy.size_guide.value
 -%}
 
 <div class="page-width">
@@ -100,7 +101,12 @@
           {%- for option in product.options_with_values -%}
             {%- assign option_index = forloop.index0 -%}
             <fieldset class="option-group" style="margin-bottom:16px">
-              <legend>{{ option.name }}</legend>
+              <legend>{{ option.name }}
+                {%- assign option_lc = option.name | downcase -%}
+                {%- if size_guide != blank and option_lc contains 'size' -%}
+                  <button type="button" class="size-guide-link" data-size-guide-open>📏 Size guide</button>
+                {%- endif -%}
+              </legend>
               <div class="option-pills">
                 {%- for value in option.values -%}
                   {%- assign input_id = 'Option-' | append: section.id | append: '-' | append: option_index | append: '-' | append: forloop.index0 -%}
@@ -215,6 +221,26 @@
   </div>
 </div>
 
+{%- if size_guide != blank -%}
+  <dialog class="size-guide-dialog" data-size-guide aria-labelledby="SizeGuideTitle">
+    <div class="size-guide-dialog__head">
+      <h2 id="SizeGuideTitle">{{ size_guide.title }}</h2>
+      <button type="button" class="size-guide-dialog__close" data-size-guide-close aria-label="Close">{% render 'icon', name: 'close' %}</button>
+    </div>
+    <div class="rte">{{ size_guide.content }}</div>
+  </dialog>
+  <script>
+    (function () {
+      var d = document.querySelector('[data-size-guide]');
+      if (!d) return;
+      document.querySelectorAll('[data-size-guide-open]').forEach(function (b) {
+        b.addEventListener('click', function () { if (d.showModal) d.showModal(); else d.setAttribute('open', ''); });
+      });
+      d.querySelector('[data-size-guide-close]').addEventListener('click', function () { d.close ? d.close() : d.removeAttribute('open'); });
+      d.addEventListener('click', function (e) { if (e.target === d && d.close) d.close(); });
+    })();
+  </script>
+{%- endif -%}
 <script type="application/json" data-product-json>{{ product | json }}</script>
 {%- if has_fields -%}
   {%- liquid
