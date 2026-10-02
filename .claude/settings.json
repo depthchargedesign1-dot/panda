@@ -32,7 +32,9 @@
       "mcp__Higgsfield__media_import_url",
       "mcp__Higgsfield__models_explore",
       "mcp__Higgsfield__balance",
-      "mcp__Higgsfield__get_preferences"
+      "mcp__Higgsfield__get_preferences",
+      "mcp__Higgsfield",
+      "mcp__Shopify"
     ]
   }
 }
