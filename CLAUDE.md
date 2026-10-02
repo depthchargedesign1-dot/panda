@@ -128,3 +128,6 @@ Never call a printed reproduction "signed", "autographed", "hand-signed", "authe
 - Never change the live theme ("NEW WAREHOUSE 2020"). Theme work goes to the unpublished **Foxy Pop** theme (`gid://shopify/OnlineStoreTheme/189320528253`). After `themeFilesUpsert`, re-read the files to confirm they saved.
 - Artwork sizes: `foxyprinting-rebrand/plan/artwork-specs.md`.
 - The owner prefers that routine commands for this project are run without asking.
+
+## Before launch: Google Merchant Center & Google Ads review (owner's request, 2 Oct 2026)
+When the owner says the new site is nearly ready (before publishing Foxy Pop or setting the new products Active), work through `foxyprinting-rebrand/plan/launch-checklist.md` with them. It covers what needs checking or updating in Google Merchant Center and Google Ads. Remind the owner of this when launch comes up.
