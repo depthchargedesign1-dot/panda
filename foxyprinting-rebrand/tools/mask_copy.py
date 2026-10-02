@@ -172,7 +172,7 @@ def build(p, ident=None):
         "Pre-cut eye holes, with elastic and sticky tabs included",
         "Full-colour digital print for a sharp, recognisable face",
         "Posted flat in a board-backed envelope to keep it crease-free",
-        "One size for adults",
+        "Full A4 size (297 x 210 mm), so it covers an adult face",
         f"An easy, cheap way to theme {o1}",
         "Brilliant for photo booths and group shots",
     ]
@@ -193,7 +193,7 @@ def build(p, ident=None):
     body = (
         f"<p>{e(ident['blurb']) if ident and ident.get('blurb') else e(intro) + ' ' + e(intro2)}</p>\n<h2>{e(h2)}</h2>\n<p>{e(how)} {e(custom)}</p>\n"
         f"<h3>Why you'll love it</h3>\n<ul>\n" + "".join(f"<li>{e(b)}</li>\n" for b in bullets) + "</ul>\n"
-        f"<h3>Size &amp; details</h3>\n<ul>\n<li>Material: 350gsm silk card, full-colour digital print</li>\n"
+        f"<h3>Size &amp; details</h3>\n<ul>\n<li>Size: 297 x 210 mm (A4), a full adult-size face</li>\n<li>Material: 350gsm silk card, full-colour digital print</li>\n"
         f"<li>Finish: semi-waterproof</li>\n<li>Fit: one size for adults; elastic and sticky tabs included</li>\n"
         f"<li>Pre-cut eye holes; cut to the shape of the face</li>\n<li>Packaging: board-backed envelope</li>\n</ul>\n"
         f"<h3>Delivery</h3>\n<p>Printed in our UK workshop and posted to you. Dispatch and postage options are shown at checkout.</p>\n"

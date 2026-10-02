@@ -23,6 +23,7 @@
 
 ## Face masks (celebrity / fancy dress / party)
 - **Material:** 350gsm silk card, full-colour digital print (Versant press), semi-waterproof (per the celebrity-face-mask-listing skill spec).
+- **Size (owner, 2 Oct 2026):** every face mask, celebrity and personalised, is 297 x 210 mm (A4).
 - **Construction:** cut to shape, pre-cut eye holes, elastic band included.
 - **Packaging:** board-backed envelope.
 - **Uses:** parties, stag and hen dos, fancy dress, birthdays, sports events, weddings (photo booths).
