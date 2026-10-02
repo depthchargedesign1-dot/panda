@@ -166,23 +166,42 @@
       addBtn.textContent = '…';
     });
 
-    // Thumbnails switch between the live preview and product photos.
-    const canvas = section.querySelector('[data-personaliser-canvas]');
+    // Thumbnails switch between the product photos (shown first) and the live preview (last).
+    const liveView = section.querySelector('[data-live-view]');
     const photoView = section.querySelector('[data-photo-view]');
-    section.querySelectorAll('[data-thumbs] button').forEach((btn) => btn.addEventListener('click', () => {
-      section.querySelectorAll('[data-thumbs] button').forEach((b) => b.setAttribute('aria-current', String(b === btn)));
-      const toggle = section.querySelector('.product__view-toggle');
-      if (btn.hasAttribute('data-thumb-live')) {
-        if (canvas) canvas.hidden = false;
-        if (toggle) toggle.hidden = false;
-        if (photoView && canvas) photoView.hidden = true;
-      } else if (photoView) {
-        photoView.src = btn.dataset.thumb;
-        photoView.hidden = false;
-        if (canvas) canvas.hidden = true;
-        if (toggle) toggle.hidden = true;
+    const thumbs = Array.from(section.querySelectorAll('[data-thumbs] button'));
+    const showStage = (btn) => {
+      thumbs.forEach((b) => b.setAttribute('aria-current', String(b === btn)));
+      const live = !!(btn && btn.hasAttribute('data-thumb-live'));
+      if (liveView) liveView.hidden = !live;
+      if (photoView) {
+        photoView.hidden = live && !!liveView;
+        if (!live && btn) {
+          photoView.src = btn.dataset.thumb;
+          const img = btn.querySelector('img');
+          photoView.alt = btn.getAttribute('aria-label') || (img && img.alt) || '';
+        }
       }
+    };
+    thumbs.forEach((btn) => btn.addEventListener('click', () => showStage(btn)));
+    const liveThumb = section.querySelector('[data-thumb-live]');
+    window.FoxyGallery = {
+      showLive: () => { if (liveThumb) showStage(liveThumb); },
+      isLive: () => !!(liveView && !liveView.hidden)
+    };
+    section.querySelectorAll('[data-show-preview]').forEach((btn) => btn.addEventListener('click', () => {
+      window.FoxyGallery.showLive();
+      const stage = section.querySelector('[data-stage]');
+      if (stage && stage.getBoundingClientRect().bottom < 80) stage.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }));
+    // Picking a variant (e.g. Rose Gold) shows that variant's photo unless the customer is looking at their design.
+    document.addEventListener('foxy:variant-change', (e) => {
+      const v = e.detail && e.detail.variant;
+      const id = v && v.featured_media && v.featured_media.id;
+      if (!id || window.FoxyGallery.isLive()) return;
+      const btn = thumbs.find((b) => b.dataset.mediaId === String(id));
+      if (btn) showStage(btn);
+    });
 
     update();
   }

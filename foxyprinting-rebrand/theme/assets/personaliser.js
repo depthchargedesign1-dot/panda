@@ -1,7 +1,10 @@
 /*
  * Foxy live personaliser
  * Draws a live mockup of the customer's design on a <canvas> as they type.
- * Mockups: card (front + inside), drinkware (cylindrical wrap), apparel, bauble, box, flat (plaques, blocks, slate, wood, acrylic).
+ * Mockups: card (front + inside), drinkware (cylindrical wrap), apparel, bauble, box, flat (plaques, blocks, slate, wood, acrylic),
+ * and "photo": the product's own photo with a proof card of everything the customer has entered.
+ * A drawn mockup is only used when the product really is that shape (see resolveMode); anything else
+ * (bobble hats, scarves, footballs, cufflinks…) uses "photo", so a hat never shows up as a T-shirt.
  * No external dependencies. Values are submitted as normal line item properties by the product form.
  */
 (function () {
@@ -28,6 +31,24 @@
     tint: css.getPropertyValue('--fx-tint').trim() || '#FFF4EA'
   };
   const title = (config.title || '').toLowerCase();
+  const kindText = (title + ' ' + (config.productType || '')).toLowerCase();
+
+  // Each drawn mockup is only trusted for products that really look like it.
+  const MOCKUP_FITS = {
+    card: /\b(cards?|invitations?|invites?)\b/,
+    drinkware: /\b(mugs?|cups?|glass(es)?|tumblers?|bottles?|flasks?|flutes?|tankards?|steins?|jars?)\b/,
+    apparel: /\b(t-?shirts?|tees?|hoodies?|sweatshirts?|jumpers?|vests?|baby ?grows?|bodysuits?|totes?|bags?|aprons?|bandanas?|bibs?|sash(es)?|pyjamas?)\b/,
+    bauble: /\b(baubles?|ornaments?|decorations?)\b|magic key/,
+    box: /\b(box(es)?|advent|game cases?|sleeves?|calendars?)\b/,
+    flat: /\b(slates?|plaques?|blocks?|acrylic|wooden|wood|signs?|coasters?|keyrings?|magnets?|tags?|medals?|frames?|panels?|tiles?|prints?|posters?|bookmarks?|led|golf balls?|awards?|stands?|clocks?|placemats?|jigsaws?|canvas|chopping|boards?)\b/
+  };
+  function resolveMode() {
+    const m = String(config.mockup || 'photo').toLowerCase();
+    const fits = MOCKUP_FITS[m];
+    if (fits && fits.test(kindText)) return m;
+    return 'photo';
+  }
+  const mode = resolveMode();
 
   const state = {
     view: 'front',
@@ -67,18 +88,27 @@
         if (!file) { field.image = null; draw(); return; }
         const url = URL.createObjectURL(file);
         const img = new Image();
-        img.onload = () => { field.image = img; draw(); };
+        img.onload = () => { field.image = img; started(); draw(); };
         img.src = url;
         if (thumb) thumb.innerHTML = '<img alt="" src="' + url + '">';
       });
     } else {
       input.addEventListener('input', () => {
         field.value = input.value;
+        started();
         if (counter) counter.textContent = input.value.length + '/' + input.maxLength;
         draw();
       });
     }
   });
+
+  // The stage shows the product photo first; the first time the customer personalises, switch to their design.
+  let hasStarted = false;
+  function started() {
+    if (hasStarted) return;
+    hasStarted = true;
+    if (window.FoxyGallery) window.FoxyGallery.showLive();
+  }
 
   const textFields = state.fields.filter((f) => f.kind !== 'image');
   if (textFields.length && !textFields.some((f) => f.role === 'primary')) textFields[0].role = 'primary';
@@ -114,6 +144,9 @@
   }));
   document.addEventListener('foxy:variant-change', (e) => {
     state.variantOptions = (e.detail && e.detail.options) || [];
+    const v = e.detail && e.detail.variant;
+    const src = v && v.featured_media && v.featured_media.preview_image && v.featured_media.preview_image.src;
+    if (mode === 'photo' && src) loadBase(src + (src.indexOf('?') === -1 ? '?' : '&') + 'width=1200');
     draw();
   });
 
@@ -122,11 +155,13 @@
     return document.fonts.load('700 48px "' + name + '"').catch(() => {});
   }
 
-  if (config.baseImage && config.useBaseImage !== false) {
+  function loadBase(src) {
     const img = new Image();
     img.onload = () => { state.base = img; draw(); };
-    img.src = config.baseImage;
+    img.src = src;
   }
+  // The photo proof always needs the product photo; drawn mockups use it only when the theme setting allows.
+  if (config.baseImage && (config.useBaseImage !== false || mode === 'photo')) loadBase(config.baseImage);
 
   /* ------------------------------------------------------------------ helpers */
 
@@ -663,7 +698,80 @@
     }
   }
 
+  /* ------------------------------------------------------------------ photo proof
+   * The product's real photo with a clean card listing what will be printed.
+   */
+  function shortLabel(label) {
+    return label.replace(/\s*\((?:optional|e\.g\.?[^)]*)\)/ig, '').replace(/\s+e\.g\..*$/i, '').trim();
+  }
+
+  function drawPhotoProof() {
+    const texts = state.fields.filter((f) => f.kind !== 'image');
+    const filled = texts.filter((f) => f.value.trim());
+    // Show what they've typed; before they start, show the first few fields as faint placeholders.
+    const rows = (filled.length ? filled : texts.slice(0, 3)).slice(0, 4);
+    const withPhoto = hasPhotoField();
+    const rowH = rows.length > 2 ? 78 : 96;
+    const cardH = rows.length || withPhoto ? Math.max(withPhoto ? 290 : 0, 74 + rows.length * rowH + 20) : 0;
+
+    // Product photo sits above the card so the card never covers it.
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, W, H);
+    const areaH = cardH ? H - cardH - 64 : H;
+    if (state.base) {
+      const s = Math.min(W / state.base.width, areaH / state.base.height);
+      const iw = state.base.width * s;
+      const ih = state.base.height * s;
+      ctx.drawImage(state.base, (W - iw) / 2, (areaH - ih) / 2 + 10, iw, ih);
+    } else {
+      background();
+    }
+    if (!cardH) return;
+
+    const pad = 34;
+    const x = 50; const w = W - 100; const y = H - cardH - 34;
+
+    ctx.save();
+    shadow(40, 14);
+    ctx.fillStyle = 'rgba(255,255,255,.95)';
+    roundRect(ctx, x, y, w, cardH, 26); ctx.fill();
+    noShadow();
+    ctx.restore();
+
+    ctx.save();
+    ctx.font = fontStr(24, 'Baloo 2', 800);
+    ctx.fillStyle = brand.purple;
+    ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillText('YOUR PERSONALISATION', x + pad, y + 40);
+    ctx.restore();
+
+    let tx = x + pad;
+    let tw = w - pad * 2;
+    if (withPhoto) {
+      const ps = Math.min(cardH - 90, 230);
+      photoSlot(x + pad, y + 70, ps, ps, 18);
+      tx = x + pad * 2 + ps;
+      tw = w - pad * 3 - ps;
+    }
+    rows.forEach((f, i) => {
+      const ry = y + 74 + i * rowH;
+      ctx.save();
+      ctx.font = fontStr(20, 'Baloo 2', 700);
+      ctx.fillStyle = 'rgba(29,18,64,.55)';
+      ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+      ctx.fillText(shortLabel(f.label).toUpperCase(), tx, ry);
+      ctx.restore();
+      const empty = !f.value.trim();
+      const value = empty ? (f.input.placeholder || f.label) : f.value.replace(/\s*\n\s*/g, ' ');
+      drawFitted({ text: value, placeholder: value, empty }, tx, ry + 24 + (rowH - 30) / 2, tw, rowH - 34, { align: 'left', minSize: 18 });
+    });
+  }
+
   /* ------------------------------------------------------------------ render loop */
+
+  // A small copy of the preview sits inside the personaliser so phone users can see it while typing.
+  const mini = root.querySelector('[data-personaliser-mini]');
+  const miniCtx = mini && mini.getContext('2d');
 
   let raf = 0;
   function draw() {
@@ -673,7 +781,8 @@
 
   function render() {
     ctx.clearRect(0, 0, W, H);
-    switch (config.mockup) {
+    switch (mode) {
+      case 'photo': drawPhotoProof(); break;
       case 'card': drawCard(); break;
       case 'drinkware': drawDrinkware(); break;
       case 'apparel': drawApparel(); break;
@@ -681,9 +790,13 @@
       case 'box': drawBox(); break;
       default: drawFlat();
     }
+    if (mini) {
+      miniCtx.clearRect(0, 0, mini.width, mini.height);
+      miniCtx.drawImage(canvas, 0, 0, mini.width, mini.height);
+    }
   }
 
-  window.FoxyPersonaliser = { redraw: draw, state };
+  window.FoxyPersonaliser = { redraw: draw, state, mode };
   loadFont(state.font).then(draw);
   draw();
 })();

@@ -32,39 +32,44 @@
   <div class="product" data-product-section>
     {%- comment -%} Gallery / live preview {%- endcomment -%}
     <div class="product__gallery">
-      <div class="product__stage">
-        {%- if has_fields -%}
-          <span class="product__stage-badge badge badge--teal">👀 {{ 'products.personaliser.live_preview' | t }}</span>
-          <canvas width="1000" height="1000" data-personaliser-canvas aria-label="{{ 'products.personaliser.preview_alt' | t: title: product.title | escape }}" role="img"></canvas>
-          {%- if mockup == 'card' -%}
-            <div class="product__view-toggle" role="group" aria-label="{{ 'products.personaliser.view' | t }}">
-              <button type="button" aria-pressed="true" data-view="front">{{ 'products.personaliser.front' | t }}</button>
-              <button type="button" aria-pressed="false" data-view="inside">{{ 'products.personaliser.inside' | t }}</button>
-            </div>
-          {%- endif -%}
-          {%- assign first_image = product.featured_media -%}
-          {%- if first_image -%}
-            <img data-photo-view hidden width="1200" height="1200" src="{{ first_image | image_url: width: 1200 }}" alt="{{ first_image.alt | escape }}">
-          {%- endif -%}
-        {%- elsif product.featured_media -%}
+      {%- comment -%}
+        Order (owner's request): the product's own photos first, then the rest of the gallery, and the live
+        personalised preview last. The preview takes over the stage when the customer starts personalising.
+      {%- endcomment -%}
+      <div class="product__stage" data-stage>
+        {%- if product.featured_media -%}
           <img data-photo-view width="1200" height="1200" src="{{ product.featured_media | image_url: width: 1200 }}" alt="{{ product.featured_media.alt | escape }}" fetchpriority="high">
-        {%- else -%}
+        {%- elsif has_fields == false -%}
           {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+        {%- if has_fields -%}
+          <div class="product__live" data-live-view {% if product.featured_media %}hidden{% endif %}>
+            <span class="product__stage-badge badge badge--teal">✏️ {{ 'products.personaliser.live_preview' | t }}</span>
+            <canvas width="1000" height="1000" data-personaliser-canvas aria-label="{{ 'products.personaliser.preview_alt' | t: title: product.title | escape }}" role="img"></canvas>
+            {%- if mockup == 'card' -%}
+              <div class="product__view-toggle" role="group" aria-label="{{ 'products.personaliser.view' | t }}">
+                <button type="button" aria-pressed="true" data-view="front">{{ 'products.personaliser.front' | t }}</button>
+                <button type="button" aria-pressed="false" data-view="inside">{{ 'products.personaliser.inside' | t }}</button>
+              </div>
+            {%- endif -%}
+          </div>
         {%- endif -%}
       </div>
 
-      {%- if product.media.size > 0 -%}
+      {%- if product.media.size > 0 or has_fields -%}
         <ul class="product__thumbs" data-thumbs>
-          {%- if has_fields -%}
-            <li><button type="button" aria-current="true" data-thumb-live aria-label="{{ 'products.personaliser.live_preview' | t }}"><span style="display:grid;place-items:center;height:100%;font-size:1.6rem">✏️</span></button></li>
-          {%- endif -%}
+          {%- assign first_done = false -%}
           {%- for media in product.media -%}
             {%- if media.media_type == 'image' -%}
-              <li><button type="button" data-thumb="{{ media | image_url: width: 1200 }}" {% if has_fields == false and forloop.first %}aria-current="true"{% endif %} aria-label="{{ media.alt | default: product.title | escape }}">
+              <li><button type="button" data-thumb="{{ media | image_url: width: 1200 }}" data-media-id="{{ media.id }}" {% if first_done == false %}aria-current="true"{% endif %} aria-label="{{ media.alt | default: product.title | escape }}">
                 {{ media | image_url: width: 160 | image_tag: loading: 'lazy', alt: '' }}
               </button></li>
+              {%- assign first_done = true -%}
             {%- endif -%}
           {%- endfor -%}
+          {%- if has_fields -%}
+            <li><button type="button" class="product__thumb-live" data-thumb-live {% if first_done == false %}aria-current="true"{% endif %} aria-label="{{ 'products.personaliser.live_preview' | t }}"><span aria-hidden="true">✏️</span><small>{{ 'products.personaliser.live_preview' | t }}</small></button></li>
+          {%- endif -%}
         </ul>
       {%- endif -%}
     </div>
@@ -113,8 +118,9 @@
           <div class="personaliser {{ accent_class }}" data-personaliser>
             <div class="personaliser__head">
               <h2>✏️ {{ section.settings.personaliser_heading }}</h2>
-              <span class="personaliser__live">{{ 'products.personaliser.live' | t }}</span>
+              <button type="button" class="personaliser__live" data-show-preview>{{ 'products.personaliser.live' | t }}</button>
             </div>
+            <canvas class="personaliser__mini" width="500" height="500" data-personaliser-mini aria-hidden="true"></canvas>
 
             {%- if meta_fields != blank -%}
               {%- for label in meta_fields -%}
@@ -221,6 +227,7 @@
       "mockup": {{ mockup | json }},
       "title": {{ product.title | json }},
       "productType": {{ product.type | json }},
+      "tags": {{ product.tags | json }},
       "baseImage": {{ base_image | json }},
       "useBaseImage": {{ section.settings.use_product_image | json }},
       "zone": {% if product.metafields.foxy.preview_zone != blank %}{{ product.metafields.foxy.preview_zone.value | json }}{% else %}null{% endif %},
