@@ -434,9 +434,9 @@ Source: the face mask sheet above, plus the live "N X Personalised Custom Photo 
   - custom_product true; age_group adult; gender unisex;
   - custom_label_0 `personalised-masks`.
 - **Dispatch (owner, 2 Oct 2026):** next working day.
+- **On a Stick (owner, 2 Oct 2026):** offered as a third style. The mask is cut to shape on a stick instead of elastic. Proposed price: Ready Cut + about 50p a mask (owner to confirm).
+- **No proofs (owner, 2 Oct 2026):** we print the photo as supplied. Never promise a proof on masks; ask for a clear, front-facing, well-lit photo instead.
 - **Mixed faces (owner, 2 Oct 2026):** yes, one pack can mix different faces.
 - **Prices (owner approved, 2 Oct 2026):** the ladder in `plan/personalised-masks-plan.md`.
 - **ASK:**
-  - a "mask on a stick" option (competitors offer it);
-  - whether a proof is emailed;
   - the maximum number of different faces in one pack.
