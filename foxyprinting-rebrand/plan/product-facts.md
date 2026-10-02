@@ -299,4 +299,5 @@ Source: the Longforte "Cufflinks – Chrome – Square" sublimation blank, plus 
 - **Personalisation:** a different design on each cufflink is fine (e.g. initials on the left, the wedding date on the right), or a photo or logo on both. Live preview, plus a digital proof on request.
 - **Care:** wipe the face clean with a soft dry cloth. Don't use jewellery cleaner or soak them.
 - **Google:** `Apparel & Accessories > Clothing Accessories > Cufflinks`; age_group `adult`; colour `Silver`.
-- **ASK:** gift box size and colour name (the photo shows a teal/blue box); whether to offer rose gold or curved-square "premier" versions; multi-pair prices for groomsmen and ushers; and the price (currently £14.99, an estimate).
+- **Variants (owner, 2 Oct 2026):** Style is Flat Square or Curved Square; Colour is Chrome or Rose Gold. All four are £14.99 (owner confirmed). The product is Active.
+- **ASK:** print area and material of the curved square (Longforte "Premier Range") version; gift box size and colour name (the photo shows a teal/blue box); multi-pair prices for groomsmen and ushers.
