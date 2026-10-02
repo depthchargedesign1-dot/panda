@@ -10,6 +10,15 @@ The Foxy Printing work lives in `foxyprinting-rebrand/`. The rest of this reposi
 4. Set the **Google Shopping fields** (see below) so the product is ready for Google Ads / Merchant Center.
 5. Set **Product type**, **vendor "Foxy Printing"**, sensible **tags**, and a unique **SKU** on every variant (`FOXY-<machine>-<initials>-NN`, see `foxyprinting-rebrand/tools/build_plan.py`).
 6. Personalised products: use template suffix `personalised` (cards: `card`). Set metafields `foxy.mockup` and `foxy.personalise_fields` so the live preview works.
+   - Give every personalised product a **full set of personalisation options** that suits it (owner's request), not just one name box. For example:
+     - team items: Team name, Club badge upload, Player name, Number, Initials, Team colours;
+     - photo gifts: Photo upload, Name, Message;
+     - kids' items: Child's name, Age.
+   - How the theme reads the labels:
+     - "upload", "photo", "logo", "badge" or "crest" becomes an image upload;
+     - "message" becomes a longer text box;
+     - "number" and "age" are limited to 3 characters, "initials" to 4.
+   - Tag the product `io-<range>` (e.g. `io-football`) so the owner can attach a matching Infinite Options set in the app if wanted.
 7. Image alt text should describe the product in plain words and include the main keyword once.
 8. Before creating, search the store for an existing product with the same handle or title to avoid duplicates.
 
