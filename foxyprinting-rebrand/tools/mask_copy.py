@@ -35,7 +35,7 @@ CATS = [  # (key, test on tags+type+title, label, who it's for, occasions)
     ("snooker", r"snooker", "snooker star", "snooker fans", ["a snooker hall night out", "a cue-sports birthday", "a club tournament social"]),
     ("sport", r"sport|athlet|olymp|cycl|basketball|nfl|wrestl|ufc|mma", "sports star", "sports fans",
      ["a sports-themed birthday", "a big-game watch party", "a club awards night"]),
-    ("royal", r"royal|politic|king|queen|prince|princess|prime minister", "public figure", "anyone who loves a laugh at the big names",
+    ("royal", r"\broyal|politic|\bking\b|\bqueen\b|\bprince\b|\bprincess\b|prime minister|president", "public figure", "anyone who loves a laugh at the big names",
      ["a street party", "an election-night get-together", "a jubilee-style garden party"]),
     ("music", r"music|singer|rapper|band|pop\b|rock|x ?factor|eurovision|musician", "music star", "music fans",
      ["a concert pre-party", "a karaoke night", "a festival weekend", "a tribute-act birthday"]),
@@ -93,7 +93,13 @@ def clean_name(title):
 
 def category(p):
     # The title is the most reliable source, then the product type, then tags (tags are noisy).
-    for hay in (p["title"], p.get("productType") or "", " ".join(p.get("tags", []))):
+    generic = r"celebrity tv stars|actor movie tv celebrity|tv stars and celebrit\w*|\btv stars\b|fancy dress face mask|celebrity facemask"
+    if re.search(r"\bTV STARS?\s+(20\d\d|Celebrity)", p["title"]):
+        return next((c[0], c[2], c[3], c[4]) for c in CATS if c[0] == "tv")
+    title = re.sub(generic, " ", p["title"], flags=re.I)
+    ptype = re.sub(generic, " ", p.get("productType") or "", flags=re.I)
+    tags = " ".join(t for t in p.get("tags", []) if not re.fullmatch(r"(?i)tv stars( stars)?|tv stars and celebrity masks|facebook|new-arrivals|new", t))
+    for hay in (title, ptype, tags):
         for key, rx, label, who, occ in CATS:
             if re.search(rx, hay, re.I):
                 return key, label, who, occ
