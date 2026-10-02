@@ -237,3 +237,32 @@ All families below: printed in-house by dye-sublimation in our North Yorkshire w
 - **Google category:** Animals & Pet Supplies > Pet Supplies > Pet Apparel (bandana); Animals & Pet Supplies > Pet Supplies > Pet Bowls, Feeders & Waterers (bowl); Apparel & Accessories > Handbag & Wallet Accessories > Keychains (keyring)
 - **age_group:** `adult`
 - **Note:** Pet ID Tag not created in this range: a product with handle `personalised-pet-id-tag` already exists (range-pet-clothing, UV).
+
+---
+
+## Printed glassware: full-colour UV DTF (added 2 Oct 2026)
+Owner answers, 2 Oct 2026.
+- **Selling point:** full-colour UV DTF prints (logos, photos, names, any colours), not plain engraving like most shops.
+- **Blanks stocked:** nonic pint glass 20oz; stout tulip pint glass; champagne flute; gin balloon glass; whisky (rocks) tumbler. Capacities other than the 20oz pint: **ASK**.
+- **Print:** UV DTF, permanent full-colour print on the outside of the glass, kept 10mm below the rim.
+- **Care (owner's wording):** hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle.
+- **Uses:** milestone birthdays (18th, 21st, 30th, 40th, 50th, 60th) on flutes; dads, home bars and pubs on pints; business, pub and brewery logos; weddings and hen dos.
+- **Trademarks:** never use "Guinness", the harp or any brewery or brand name or logo. Call it a "stout glass" or "tulip pint glass". Customers' own logos are fine (they confirm they have the rights).
+- **Google category:** `Home & Garden > Kitchen & Dining > Tableware > Drinkware` (choose the matching child: Beer Glasses, Stemware or Tumblers; check tax.yml).
+- **age_group:** `adult`.
+
+## Home bar, garden bar & man cave (added 2 Oct 2026)
+Owner confirmed they can make: sublimation metal pub and bar signs, rubber-backed bar runners and mats, a hanging double-sided garden pub sign, and acrylic, wood or UV-printed bar plaques and "licence" signs.
+- **Metal signs:** printed on the 1.15mm gloss white aluminium sheets (see "Metal photo panels" sheet for sizes). Outdoor durability and fixings: **ASK**.
+- **Bar runners and mats:** use only facts stated on the existing live bar-mat listings; otherwise **ASK** (size, rubber thickness).
+- **Hanging garden pub sign:** double-sided. Material, size and bracket: **ASK** (owner to confirm).
+- **Plaques and licence signs:** material options acrylic, wood or UV print. Sizes: **ASK**.
+- **Google category:** signs and plaques `Home & Garden > Decor > Decorative Plaques`; bar runners `Home & Garden > Kitchen & Dining > Barware`, child as fits (check tax.yml).
+- **age_group:** `adult`.
+
+## Gaming & desk mats: large sublimation mats (added 2 Oct 2026)
+- **Sizes:** 2 sizes, listed as "Large" and "Extra Large". Exact dimensions **ASK** (owner to confirm later), so leave dimensions out of the copy until then.
+- **Print:** dye-sublimation, full colour, edge to edge. Base, thickness and stitched edge: **ASK**, unless the existing live XL mouse mat listing states them.
+- **Designs:** the owner's Dropbox designs in `/DCD TEAMWEAR2/cut files/Nicole Cut Files/Gaming mats/For Amazon/GAMING MATS/` (cute and pet designs with mockups), plus new original gaming designs (pixel and arcade style, no game, console or publisher names or characters) and pet-photo personalised mats.
+- **Google category:** `Electronics > Electronics Accessories > Computer Accessories > Mouse Pads` (check tax.yml).
+- **age_group:** `adult` (kids only if the design is clearly for children).

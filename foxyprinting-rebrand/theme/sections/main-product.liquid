@@ -120,6 +120,7 @@
               {%- for label in meta_fields -%}
                 {%- liquid
                   assign l = label | downcase
+                  assign words = l | replace: '(', ' ' | replace: ')', ' ' | replace: ':', ' ' | split: ' '
                   assign kind = 'text'
                   if l contains 'photo' or l contains 'upload' or l contains 'logo' or l contains 'artwork' or l contains 'badge' or l contains 'crest'
                     assign kind = 'image'
@@ -127,11 +128,17 @@
                     assign kind = 'textarea'
                   endif
                   assign max = 24
+                  assign is_phone = false
+                  if l contains 'phone'
+                    assign is_phone = true
+                  endif
                   if kind == 'textarea'
                     assign max = 160
-                  elsif l contains 'number' or l contains 'age'
+                  elsif words contains 'age'
                     assign max = 3
-                  elsif l contains 'initials'
+                  elsif words contains 'number' and is_phone == false
+                    assign max = 3
+                  elsif words contains 'initials'
                     assign max = 4
                   elsif l contains 'slogan' or l contains 'team name' or l contains 'colours'
                     assign max = 40

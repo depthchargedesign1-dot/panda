@@ -17,7 +17,7 @@ The Foxy Printing work lives in `foxyprinting-rebrand/`. The rest of this reposi
    - How the theme reads the labels:
      - "upload", "photo", "logo", "badge" or "crest" becomes an image upload;
      - "message" becomes a longer text box;
-     - "number" and "age" are limited to 3 characters, "initials" to 4.
+     - the words "number" and "age" are limited to 3 characters (phone numbers excluded), "initials" to 4.
    - Tag the product `io-<range>` (e.g. `io-football`) so the owner can attach a matching Infinite Options set in the app if wanted.
 7. Image alt text should describe the product in plain words and include the main keyword once.
 8. Before creating, search the store for an existing product with the same handle or title to avoid duplicates.
