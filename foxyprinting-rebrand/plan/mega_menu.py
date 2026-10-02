@@ -209,6 +209,18 @@ BASE_MENU = [
             ("Posters & Canvas", c("posters-canvas-art")), ("Signed Prints", c("signed-autographed-prints")),
             ("Word Art Prints", c("personalised-word-art-prints")),
         ]),
+        ("Printed Glassware", c("personalised-printed-glassware"), [
+            ("Pint & Stout Glasses", c("personalised-printed-glassware")),
+            ("Logo Pint Glasses", c("personalised-printed-glassware")),
+            ("18th & 21st Champagne Flutes", c("personalised-printed-glassware")),
+            ("Gin & Whisky Glasses", c("personalised-printed-glassware")),
+        ]),
+        ("Home Bar & Man Cave", c("home-bar-garden-bar-and-man-cave"), [
+            ("Pub & Bar Signs", c("home-bar-garden-bar-and-man-cave")),
+            ("Garden Bar", c("home-bar-garden-bar-and-man-cave")),
+            ("Bar Runners & Mats", c("home-bar-garden-bar-and-man-cave")),
+            ("Bar Plaques & Pump Clips", c("home-bar-garden-bar-and-man-cave")),
+        ]),
     ]),
     ("Occasions", c("occasion-birthday"), [
         ("Celebrations", c("occasion-birthday"), [
@@ -266,6 +278,11 @@ BASE_MENU = [
             ("All Face Masks", c("all-facemasks")), ("Footballers", c("footballer-face-masks")),
             ("TV Stars", c("tv-star-masks")), ("Movie Actors", c("movie-actor-face-masks")),
             ("Your Own Face", c("custom-printed-face-masks")),
+        ]),
+        ("Gaming & Desk Mats", c("gaming-and-desk-mats"), [
+            ("Gaming Mats", c("gaming-and-desk-mats")),
+            ("Cute & Pet Desk Mats", c("gaming-and-desk-mats")),
+            ("Personalised Gamer Tag Mats", c("gaming-and-desk-mats")),
         ]),
         ("Sports Fans", c("football-posters"), [
             ("Football Posters", c("football-posters")), ("Signed Prints", c("signed-autographed-prints")),
