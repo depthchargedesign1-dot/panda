@@ -73,7 +73,8 @@ BASE_MENU = [
         ]),
         ("Gifts for Him", c("fathers-day-gifts-1"), [
             ("Golf & Darts", c("new-golf-gifts")), ("Whisky & Pint Glasses", c("new-glassware")),
-            ("Bar Mats", c("personalised-bar-mats")), ("Father's Day Gifts", c("fathers-day-gifts-1")),
+            ("Bar Mats", c("personalised-bar-mats")), ("Personalised Cufflinks", c("new-cufflinks")),
+            ("Father's Day Gifts", c("fathers-day-gifts-1")),
         ]),
         ("Gifts for Her", c("new-candles-jars"), [
             ("Gin & Wine Glasses", c("new-glassware")), ("Candles & Jars", c("new-candles-jars")),
