@@ -266,3 +266,27 @@ Owner confirmed they can make: sublimation metal pub and bar signs, rubber-backe
 - **Designs:** the owner's Dropbox designs in `/DCD TEAMWEAR2/cut files/Nicole Cut Files/Gaming mats/For Amazon/GAMING MATS/` (cute and pet designs with mockups), plus new original gaming designs (pixel and arcade style, no game, console or publisher names or characters) and pet-photo personalised mats.
 - **Google category:** `Electronics > Electronics Accessories > Computer Accessories > Mouse Pads` (check tax.yml).
 - **age_group:** `adult` (kids only if the design is clearly for children).
+
+---
+
+## Posters & prints: standard sizes and frames (from the live poster listings, 2 Oct 2026)
+- **Print only:** A4 £4.99, A3 £8.99, A2 £12.99, A1 £19.99, A0 £24.99.
+- **Framed:** A4 + Black, Silver, Gold or White frame £14.99; A3 + Black, Silver, Gold or White frame £19.99.
+- **Paper stock, finish, frame material and glazing:** **ASK**.
+- **Celebrity and athlete posters:** "unofficial", with the celebrity disclaimer (sports disclaimer for athletes and clubs). Never "signed" or "autographed" unless it's a Printed Signature reproduction (see signed-prints rule).
+- **Google category:** `Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork`. **age_group:** `adult`.
+
+## Pet portraits: "your pet as a historical character" (added 2 Oct 2026)
+- **Designs:** 15 characters, 2 versions each (owner's artwork in Dropbox `/!! BEN JOE OWEN NEW PRODUCTS XMAS 2026 !!!/PET PORTRAITS - Copy`): Admiral, Churchill, Cleopatra, Custer, Henry VIII, Kitchener, Lincoln, Mona Lisa, Mozart, Napoleon, Pearl Earring, Roman Emperor, Shakespeare, Victoria, Washington.
+- **How it works (owner, 2 Oct 2026):** the customer uploads a photo of their cat or dog. Our team puts their pet into the character and emails a proof before printing. An AI live preview with a watermark is planned next.
+- **Sizes and prices (owner: poster prices + £10):** print only A4 £14.99, A3 £18.99, A2 £22.99, A1 £29.99, A0 £34.99; framed A4 (Black, Silver, Gold or White) £24.99; framed A3 (Black, Silver, Gold or White) £29.99.
+- **Photo tips for customers:** a clear, well-lit, front-facing photo of the pet's face works best.
+- **Google category:** posters path above. **age_group:** `adult`.
+
+## Golf towels, wheelie bin stickers, door hangers, Valentine's teddies (added 2 Oct 2026)
+Owner: list now, add specs later.
+- **Golf towels:** size, fabric, clip or hook, and print method: **ASK**. Google: `Sporting Goods > Outdoor Recreation > Golf > Golf Towels`.
+- **Wheelie bin stickers:** size, vinyl type, outdoor life, and number per pack: **ASK**. Google: `Home & Garden > Decor > Home Decor Decals`.
+- **Door hangers:** read and reuse the facts on the existing live door hanger listings (e.g. "Pack of 4"). Otherwise **ASK**. Rude designs are `adult`.
+- **Valentine's teddies:** if they're the same teddy-with-printed-t-shirt as the photo-gifts plush sheet, use that sheet. Otherwise **ASK**.
+- **Baby grows:** see the "Baby grows / baby vests" sheet (sizes and blank are still **ASK**). Football club designs need the football disclaimer and the `third-party-name` tag.
