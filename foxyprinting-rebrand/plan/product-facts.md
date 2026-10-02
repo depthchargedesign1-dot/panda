@@ -1,6 +1,6 @@
 # Product fact sheets
 
-**No proofs (owner, 2 Oct 2026):** we don't offer proofs on any product **except pet portraits**, where the owner emails a proof. Never write "free digital proof" or "proof on request" anywhere else. Use: "We print exactly what you enter, so please check names and spelling in the live preview before you order." Lines below that still mention proofs are superseded by this rule.
+**No proofs (owner, 2 Oct 2026):** we don't offer proofs on any product **except pet portraits**, where the owner emails a proof. Never write "free digital proof" or "proof on request" anywhere else. Use: "We print exactly what you enter, so please check names and spelling in the live preview before you order." Reason (owner): proofs are possible, but waiting for customer replies delays orders, so we do not advertise them; the live preview does the job. Lines below that still mention proofs are superseded by this rule.
 
 **Rule:** every product family has its own materials, sizes, care instructions, delivery details and buyer questions. Write each description **only** from the matching sheet below, so a face mask never gets card specs and a Christmas Eve box never gets mug care instructions.
 
