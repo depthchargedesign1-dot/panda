@@ -9,6 +9,7 @@ The Foxy Printing work lives in `foxyprinting-rebrand/`. The rest of this reposi
 3. Set the **SEO title and meta description** (`seo { title description }`) on every product.
 4. Set the **Google Shopping fields** (see below) so the product is ready for Google Ads / Merchant Center.
 5. Set **Product type**, **vendor "Foxy Printing"**, sensible **tags**, and a unique **SKU** on every variant (`FOXY-<machine>-<initials>-NN`, see `foxyprinting-rebrand/tools/build_plan.py`).
+   - **Longforte blanks** (owner's rule, 2 Oct 2026): the SKU is Longforte's own product code, then `-FOXY-NN`. For example, the hi-vis kids backpack is `BACKPACK-NEON-ORA-FOXY-01` (Neon Orange & Pink) and `BACKPACK-NEON-GRN-FOXY-02` (Neon Green & Blue). Look up the code on longforte.com (via web search) and never guess it.
 6. Personalised products: use template suffix `personalised` (cards: `card`). Set metafields `foxy.mockup` and `foxy.personalise_fields` so the live preview works.
    - Give every personalised product a **full set of personalisation options** that suits it (owner's request), not just one name box. For example:
      - team items: Team name, Club badge upload, Player name, Number, Initials, Team colours;
