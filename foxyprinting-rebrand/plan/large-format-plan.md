@@ -272,6 +272,20 @@ The customer uploads a logo, or we design it ("professional designers" upsell, e
 | 19 | Soap & Bath Bomb Labels (waterproof) | soap labels | rectangle |
 | 20 | Gym, Club & Team Logo Stickers | club stickers | die-cut |
 
+**Our own past work** (owner, 2 Oct 2026; artwork in `plan/examples/business-stickers/`):
+- Waffle Shake 'N' Roll: dessert bar, circle;
+- Masala Bowl: takeaway, flat-colour circle;
+- Deborah's Pies: black circle with metallic-effect logo;
+- Hannie Cakes: "Thank you for trusting…" with Instagram handle, ring layout;
+- Label Warning Music: black stamp style with a QR code.
+
+These are customers' logos. **Only show them on the store once each customer has agreed.** Until then, use them as layout guides for mockups with made-up business names. They show the five layouts to offer as starting designs:
+- logo circle;
+- flat brand circle;
+- metallic-look logo;
+- thank-you ring with social handle;
+- stamp with QR code.
+
 Food and cosmetic labels: we print the customer's text. They're responsible for allergen and ingredient wording, and for honey grade and weight rules. Say that clearly on the listing. Don't give legal advice.
 
 ---
