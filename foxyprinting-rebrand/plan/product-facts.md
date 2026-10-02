@@ -348,3 +348,13 @@ Source: the owner's photos of the printed blank (2 Oct 2026).
 
 - **Size guide:** page `size-guide-adult-t-shirt`, linked through the product metafield `foxy.size_guide` (page reference). The theme shows a "Size guide" button next to Size.
 - **Prices:** S to XL £14.99 and 2XL £16.99 (existing); 3XL to 5XL £17.99 (estimate, **ASK** owner).
+
+## Party bunting: printed card (collection `party-buntin`, added 2 Oct 2026)
+Source: the existing live listings, which carry the owner's own wording.
+- **Flags:** standard flags are A5 (210 x 148 mm), printed on 300gsm silk card, semi-waterproof. "Extra large" flags are offered on some listings; use the size given in that listing's own description or variant names. If none is given, just say "extra large flags" with no measurement.
+- **What's included:** as named in the variants, e.g. "3m Ribbon & 16 Standard Bunting Flags" or "3m Ribbon & 16 EXTRA LARGE Bunting Flags". Per-metre listings (e.g. VE Day) are priced per metre (1m, 2m, 5m, 10m, 20m).
+- **Assembly:** "simply thread and hang", meaning the customer threads the flags onto the ribbon.
+- **Personalisation:** child's name, age and party details (owner's existing wording: "customised with your child's name, age and any special party information").
+- **Use:** indoors, or outdoors in dry weather. Semi-waterproof card, not fully waterproof.
+- **Google category:** `Arts & Entertainment > Party & Celebration > Party Supplies > Banners`; age_group `kids` for children's birthday bunting, `adult` for VE Day, coronation, adult and hen/stag bunting.
+- **ASK:** exact extra-large flag size, flag spacing on the ribbon, ribbon colour, and dispatch time.
