@@ -111,7 +111,8 @@ BASE_MENU = [
     ]),
     # Team kit, flags and fan gifts for grassroots clubs (plan/product-facts.md, football sheet).
     ("Football", c("personalised-football-merchandise"), [
-        ("Team Kit", c("personalised-team-footballs-and-kit"), [
+        ("Football Merchandise", c("personalised-football-merchandise"), [
+            ("All Football Merchandise", c("personalised-football-merchandise")),
             ("Personalised Footballs", c("personalised-team-footballs-and-kit")),
             ("Kids' Shin Pads", c("personalised-team-footballs-and-kit")),
             ("Football Socks", c("personalised-team-footballs-and-kit")),
