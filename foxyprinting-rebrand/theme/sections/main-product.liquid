@@ -37,13 +37,15 @@
         Order (owner's request): the product's own photos first, then the rest of the gallery, and the live
         personalised preview last. The preview takes over the stage when the customer starts personalising.
       {%- endcomment -%}
+      {%- assign show_live = false -%}
+      {%- if has_fields and section.settings.live_preview -%}{%- assign show_live = true -%}{%- endif -%}
       <div class="product__stage" data-stage>
         {%- if product.featured_media -%}
           <img data-photo-view width="1200" height="1200" src="{{ product.featured_media | image_url: width: 1200 }}" alt="{{ product.featured_media.alt | escape }}" fetchpriority="high">
-        {%- elsif has_fields == false -%}
+        {%- elsif show_live == false -%}
           {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
-        {%- if has_fields -%}
+        {%- if show_live -%}
           <div class="product__live" data-live-view {% if product.featured_media %}hidden{% endif %}>
             <span class="product__stage-badge badge badge--teal">✏️ {{ 'products.personaliser.live_preview' | t }}</span>
             <canvas width="1000" height="1000" data-personaliser-canvas aria-label="{{ 'products.personaliser.preview_alt' | t: title: product.title | escape }}" role="img"></canvas>
@@ -57,7 +59,7 @@
         {%- endif -%}
       </div>
 
-      {%- if product.media.size > 0 or has_fields -%}
+      {%- if product.media.size > 0 or show_live -%}
         <ul class="product__thumbs" data-thumbs>
           {%- assign first_done = false -%}
           {%- for media in product.media -%}
@@ -68,7 +70,7 @@
               {%- assign first_done = true -%}
             {%- endif -%}
           {%- endfor -%}
-          {%- if has_fields -%}
+          {%- if show_live -%}
             <li><button type="button" class="product__thumb-live" data-thumb-live {% if first_done == false %}aria-current="true"{% endif %} aria-label="{{ 'products.personaliser.live_preview' | t }}"><span aria-hidden="true">✏️</span><small>{{ 'products.personaliser.live_preview' | t }}</small></button></li>
           {%- endif -%}
         </ul>
@@ -125,9 +127,9 @@
           <div class="personaliser {{ accent_class }}" data-personaliser>
             <div class="personaliser__head">
               <h2>✏️ {{ section.settings.personaliser_heading }}</h2>
-              <button type="button" class="personaliser__live" data-show-preview>{{ 'products.personaliser.live' | t }}</button>
+              {%- if show_live -%}<button type="button" class="personaliser__live" data-show-preview>{{ 'products.personaliser.live' | t }}</button>{%- endif -%}
             </div>
-            <canvas class="personaliser__mini" width="500" height="500" data-personaliser-mini aria-hidden="true"></canvas>
+            {%- if show_live -%}<canvas class="personaliser__mini" width="500" height="500" data-personaliser-mini aria-hidden="true"></canvas>{%- endif -%}
 
             {%- if meta_fields != blank -%}
               {%- for label in meta_fields -%}
@@ -137,7 +139,7 @@
                   assign kind = 'text'
                   if l contains 'photo' or l contains 'upload' or l contains 'logo' or l contains 'artwork' or l contains 'badge' or l contains 'crest'
                     assign kind = 'image'
-                  elsif l contains 'message' or l contains 'list' or l contains 'reasons' or l contains 'achievements'
+                  elsif l contains 'message' or l contains 'list' or l contains 'reasons' or l contains 'achievements' or l contains 'notes' or l contains 'how many'
                     assign kind = 'textarea'
                   endif
                   assign max = 24
@@ -242,7 +244,38 @@
   </script>
 {%- endif -%}
 <script type="application/json" data-product-json>{{ product | json }}</script>
-{%- if has_fields -%}
+{%- if has_fields and section.settings.live_preview == false -%}
+  <script>
+    /* Live preview switched off: keep the field helpers (character counters, photo thumbnails, font and colour choices). */
+    (function () {
+      var root = document.querySelector('[data-product-section]');
+      if (!root) return;
+      root.querySelectorAll('[data-field]').forEach(function (input) {
+        var field = input.closest('.field');
+        var counter = field && field.querySelector('[data-count]');
+        if (input.type === 'file') {
+          input.addEventListener('change', function () {
+            var thumb = field && field.querySelector('[data-upload-thumb]');
+            var file = input.files && input.files[0];
+            if (thumb && file) thumb.innerHTML = '<img alt="" src="' + URL.createObjectURL(file) + '">';
+          });
+        } else if (counter) {
+          input.addEventListener('input', function () { counter.textContent = input.value.length + '/' + input.maxLength; });
+        }
+      });
+      [['data-font', 'data-font-input'], ['data-colour', 'data-colour-input']].forEach(function (pair) {
+        var input = root.querySelector('[' + pair[1] + ']');
+        root.querySelectorAll('[' + pair[0] + ']').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            if (input) input.value = btn.getAttribute(pair[0]);
+            root.querySelectorAll('[' + pair[0] + ']').forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+          });
+        });
+      });
+    })();
+  </script>
+{%- endif -%}
+{%- if has_fields and section.settings.live_preview -%}
   {%- liquid
     assign base_image = ''
     if product.featured_media
@@ -277,6 +310,7 @@
       { "value": "box", "label": "Box / packaging" },
       { "value": "flat", "label": "Plaque / block / flat item" }
     ] },
+    { "type": "checkbox", "id": "live_preview", "label": "Show the live preview", "default": false, "info": "Off: customers still fill in the personalisation boxes, but no drawn preview is shown." },
     { "type": "checkbox", "id": "use_product_image", "label": "Use the product photo as the design on the mockup", "default": true, "info": "e.g. your card artwork appears on the card front with the customer's name on top." },
     { "type": "text", "id": "personaliser_heading", "label": "Personaliser heading", "default": "Make it yours" },
     { "type": "checkbox", "id": "show_rating", "label": "Show product rating", "default": true },

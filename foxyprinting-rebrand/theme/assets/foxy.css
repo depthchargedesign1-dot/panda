@@ -805,3 +805,19 @@ h3, .h3 { font-size: 1.2rem; }
 .size-guide th, .size-guide td { padding: 9px 10px; border-bottom: 1px solid #EEE9F7; text-align: left; white-space: nowrap; }
 .size-guide thead th { background: var(--fx-tint); font-weight: 800; }
 .size-guide-dialog .rte { overflow-x: auto; }
+
+/* Mobile fix (2 Oct 2026): grid columns must be allowed to shrink. Without minmax(0, …) the
+   single-line chip row in the collection search (and long product titles) stretched the column
+   wider than the phone, so the product grid ran off the screen. */
+.collection-layout { grid-template-columns: 260px minmax(0, 1fr); }
+.collection-layout > *, .product-grid > li { min-width: 0; }
+.product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.product-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 989px) {
+  .collection-layout { grid-template-columns: minmax(0, 1fr); }
+  .product-grid, .product-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 749px) {
+  .product-grid, .product-grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .col-search__chips { max-width: 100%; }
+}
