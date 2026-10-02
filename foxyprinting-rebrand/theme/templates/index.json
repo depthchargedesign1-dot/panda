@@ -704,6 +704,88 @@
         "button2_label": "All sports prints",
         "button2_link": "shopify://collections/signed-autographed-prints"
       }
+    },
+    "personalised_masks": {
+      "type": "promo-hero",
+      "blocks": {
+        "p1": {
+          "type": "link",
+          "settings": {
+            "label": "Stag do",
+            "link": "shopify://collections/stag-do-face-masks"
+          }
+        },
+        "p2": {
+          "type": "link",
+          "settings": {
+            "label": "Hen party",
+            "link": "shopify://collections/hen-party-face-masks"
+          }
+        },
+        "p3": {
+          "type": "link",
+          "settings": {
+            "label": "Birthday",
+            "link": "shopify://products/personalised-birthday-face-masks"
+          }
+        },
+        "p4": {
+          "type": "link",
+          "settings": {
+            "label": "Wedding photo booth",
+            "link": "shopify://products/wedding-photo-booth-face-masks"
+          }
+        },
+        "p5": {
+          "type": "link",
+          "settings": {
+            "label": "Leaving do & retirement",
+            "link": "shopify://products/leaving-do-retirement-face-masks"
+          }
+        },
+        "p6": {
+          "type": "link",
+          "settings": {
+            "label": "Office & Christmas parties",
+            "link": "shopify://products/office-christmas-party-face-masks"
+          }
+        },
+        "p7": {
+          "type": "link",
+          "settings": {
+            "label": "Mix & match multipack",
+            "link": "shopify://products/mix-and-match-photo-face-mask-multipack"
+          }
+        },
+        "p8": {
+          "type": "link",
+          "settings": {
+            "label": "All personalised masks",
+            "link": "shopify://collections/personalised-face-masks"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/hf_20261002_185839_687c62a3-273b-45d4-a2c4-9babd8a0b1da.png",
+        "colour": "orange",
+        "eyebrow": "No minimum – order just 1",
+        "heading": "Your face on a party mask",
+        "text": "Upload a photo and we'll print it on a full A4 card face mask. Ready cut, DIY or on a stick, from 1 to 50 masks, dispatched the next working day.",
+        "button_label": "Upload your photo",
+        "button_link": "shopify://products/personalised-photo-face-masks",
+        "button2_label": "Stag & hen masks",
+        "button2_link": "shopify://collections/stag-do-face-masks"
+      }
     }
   },
   "order": [
@@ -712,6 +794,7 @@
     "categories",
     "christmas",
     "bestsellers",
+    "personalised_masks",
     "face_masks",
     "how",
     "new_ranges",
