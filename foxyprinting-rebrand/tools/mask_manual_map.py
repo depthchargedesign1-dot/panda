@@ -313,3 +313,264 @@ D.update({
 636: P("Lucas Bravo", "tv", EIP), 637: P("Lucien Laviscount", "tv", EIP), 638: P("Philippine Leroy-Beaulieu", "tv", EIP),
 639: P("Samuel Arnold", "tv", EIP),
 })
+
+JTV = "Jane the Virgin"; JP = "Jurassic Park"; TGM = "Top Gun: Maverick"; OITNB = "Orange Is the New Black"; OFF = "The Office"
+GG = "The Golden Girls"; SG = "Still Game"; FNAF = "Five Nights at Freddy's"; DAD = "Dumb and Dumber"; LB = "Little Britain"
+
+
+def CP(a, b):  # couple pack
+    return K([a, b], 2, note="couple")
+
+
+D.update({
+640: P("William Abadie", "tv", EIP),
+641: P("Andrea Navedo", "tv", JTV), 642: P("Gina Rodriguez", "tv", JTV), 643: P("Ivonne Coll", "tv", JTV), 644: P("Jaime Camil", "tv", JTV),
+645: P("Justin Baldoni", "tv", JTV), 646: P("Yael Grobglas", "tv", JTV),
+647: P("Ariana Richards", "film", JP), 648: P("BD Wong", "film", JP), 649: P("Joseph Mazzello", "film", JP, title_spelling="Joseph Mazzallo"),
+650: P("Laura Dern", "film", JP), 651: P("Richard Attenborough", "film", JP), 652: P("Wayne Knight", "film", JP),
+653: P("Antony Starr", "tv", "The Boys", title_spelling="Anthony Star"),
+654: P("Glen Powell", "film", TGM), 655: P("Jay Ellis", "film", TGM), 656: P("Lewis Pullman", "film", TGM), 657: P("Miles Teller", "film", TGM),
+658: P("Monica Barbaro", "film", TGM),
+659: P("B.J. Novak", "tv", OFF, character="Ryan Bailey Howard"),
+660: P("José María Yazpik", "tv", "Narcos", title_spelling="Jose Maria Yazpik"), 661: P("Michael Peña", "tv", "Narcos"),
+662: P("Jason Biggs", "tv", OITNB), 663: P("Kate Mulgrew", "tv", OITNB), 664: P("Laura Prepon", "tv", OITNB), 665: P("Michelle Hurst", "tv", OITNB),
+666: P("King Charles III", "royal", note="on sticks"),
+667: K([], 6, FR, "tv"),
+668: P("King Charles III", "royal", note="Coronation 2023"),
+669: P("Jesy Nelson", "music"),
+670: K([], 5, cat="music", group="One Direction"),
+671: P("Kate Middleton", "royal", title_spelling="Princess Kate Middleton"), 672: P("Camilla Parker Bowles", "royal"),
+673: K([], 8, cat="royal", note="Royal Family Coronation 2023"),
+674: P("Cooper", "tv", "The Farm"), 675: P("Kaleb", "tv", "The Farm"),
+676: K(["Jeremy Clarkson", "Kaleb Cooper"], 3, "The Farm", "tv", note="3-pack; title names only these"),
+677: P("Lloyd", "film", DAD), 678: P("Harry", "film", DAD), 679: K([], None, DAD, "film"),
+680: P("King Charles III", "royal", note="with crown masks"),
+681: K(["King Charles III"], 5, cat="royal", note="5 of the same mask + crowns"),
+682: K(["King Charles III"], 12, cat="royal", note="12 of the same mask"),
+683: P("Queen Camilla", "royal"), 684: K(["Queen Camilla"], 10, cat="royal", note="10 of the same mask"),
+685: K([], 5, cat="music", group="Spice Girls"),
+686: P("21 Savage", "music"), 687: P("070 Shake", "music"), 688: P("Raye", "music"), 689: P("Raye", "music"), 690: P("Rema", "music"),
+691: P("Sinach", "music"), 692: P("SZA", "music"), 693: P("Venbee", "music"),
+694: P("Lou", "comedy", LB), 695: K([], 3, LB, "comedy"),
+696: K([], 7, "Ryder Cup", "golf", note="European team 2023"),
+697: C(note="personalised face beach towel (male)"), 698: C(note="personalised face beach towel (female)"), 699: C(note="personalised celebrity face beach towel"),
+700: K(["Francis Ngannou", "Tyson Fury"], 2, cat="boxing", title_spelling="Francis Nganou"),
+701: K([], None, cat="music", group="Tenacious D"),
+702: K([], None, note="'Queen' pack - band or royal not clear from title"),
+703: P("Axl Rose", "music", band="Guns N' Roses"), 704: K([], 3, LB, "comedy"),
+705: G("Beavis", "Beavis and Butt-Head"), 706: G("Butt-Head", "Beavis and Butt-Head"),
+707: K([], 9, "Ryder Cup", "golf", note="American team 2023"),
+708: G("Foxy", FNAF), 709: G("Bonnie", FNAF), 710: G("Chica", FNAF), 711: G("Freddy Fazbear", FNAF), 712: G("Golden Freddy", FNAF),
+713: G("The Marionette", FNAF), 714: G("Springtrap", FNAF),
+715: P("Mackenyu", "tv", "One Piece", character="Roronoa Zoro"), 716: P("Iñaki Godoy", "tv", "One Piece", character="Monkey D. Luffy"),
+717: K([], None, "One Piece", "tv", note="Straw Hat crew"),
+718: P("John Krasinski", "tv", OFF, character="Jim"), 719: P("Leslie David Baker", "tv", OFF, character="Stanley"),
+720: P("Rainn Wilson", "tv", OFF, character="Dwight"),
+721: P("Lord Alan Sugar"), 722: P("Sacha Baron Cohen", character="Borat"), 723: U("Wham - band name; single mask or pack?"),
+724: P("Emma Watson", "film", "Beauty and the Beast"), 725: P("Baby", "film", "Dirty Dancing"), 726: G("Barbie", "Barbie"),
+727: P("Blanche", "tv", GG), 728: P("Anthony Stewart Head", "tv", "Buffy the Vampire Slayer", character="Giles"),
+729: P("Dorothy", "tv", GG), 730: P("Rose", "tv", GG), 731: P("Sophia", "tv", GG), 732: P("Chris Packham"),
+733: P("Edith", "tv", SG),
+734: P("Hafþór Júlíus Björnsson", "tv", "Game of Thrones", character="The Mountain", title_spelling="Hafbor Julius Thor Bjornsson"),
+735: P("Jennifer Grey", character="Baby"), 736: G("Morty", "Rick and Morty"),
+737: P("Roger Lloyd-Pack", "tv", OFAH, character="Trigger"), 738: P("José de Sousa", "darts"),
+739: P("Leonardo DiCaprio", "film", "Django Unchained", note="laughing meme"),
+740: P("Kiefer Sutherland", "film", "The Lost Boys", character="David", title_spelling="Keifer Sutherland"),
+741: P("Zoe Saldaña", title_spelling="Zoey Saldaña"), 742: P("Isa", "tv", SG), 743: P("Liam", "tv", "Benidorm"), 744: P("Mateo", "tv", "Benidorm"),
+745: G("Imperial Stormtrooper", "Star Wars"),
+746: CP("Adam Brody", "Leighton Meester"), 747: CP("Alicia Keys", "Swizz Beatz") | {"title_spelling": "Swiss Beatz"},
+748: CP("Beyoncé", "Jay-Z"), 749: CP("Blake Lively", "Ryan Reynolds"), 750: CP("Brad Takei", "George Takei"),
+751: CP("Chrissy Teigen", "John Legend"), 752: CP("Cynthia Nixon", "Christine Marinoni"), 753: CP("Dax Shepard", "Kristen Bell"),
+754: CP("Denzel Washington", "Pauletta Washington"), 755: CP("Elton John", "David Furnish"), 756: CP("Emily Blunt", "John Krasinski"),
+757: CP("Enrique Iglesias", "Anna Kournikova"), 758: CP("Freddie Prinze Jr.", "Sarah Michelle Gellar"), 759: CP("Goldie Hawn", "Kurt Russell"),
+760: CP("Harrison Ford", "Calista Flockhart"), 761: CP("Jason Momoa", "Lisa Bonet"), 762: CP("Judd Apatow", "Leslie Mann"),
+763: CP("Julia Louis-Dreyfus", "Brad Hall"), 764: CP("Julia Roberts", "Danny Moder"), 765: CP("Justin Mikita", "Jesse Tyler Ferguson"),
+766: CP("Kevin Bacon", "Kyra Sedgwick"), 767: CP("Lance Bass", "Michael Turchin"), 768: CP("LeBron James", "Savannah Brinson"),
+769: CP("Lily Tomlin", "Jane Wagner"), 770: CP("Mark Consuelos", "Kelly Ripa"), 771: CP("Matthew Broderick", "Sarah Jessica Parker"),
+772: CP("Matthew McConaughey", "Camila Alves"), 773: CP("Maya Rudolph", "Paul Thomas Anderson"), 774: CP("Melissa McCarthy", "Ben Falcone"),
+775: CP("Neil Patrick Harris", "David Burtka"), 776: CP("Oprah Winfrey", "Stedman Graham"), 777: CP("Penélope Cruz", "Javier Bardem"),
+778: CP("Pink", "Carey Hart"), 779: CP("RuPaul", "Georges LeBar"), 780: CP("Sarah Paulson", "Holland Taylor"), 781: CP("Seth Rogen", "Lauren Miller"),
+782: CP("Steve Carell", "Nancy Walls"), 783: CP("Thandie Newton", "Ol Parker"), 784: CP("Tim McGraw", "Faith Hill"),
+785: CP("Tom Brady", "Gisele Bündchen") | {"title_spelling": "Gisele Bundchen"}, 786: CP("Tom Hanks", "Rita Wilson"),
+787: CP("Victoria Beckham", "David Beckham"), 788: CP("Viola Davis", "Julius Tennon"), 789: CP("Will Smith", "Jada Pinkett Smith"),
+790: CP("Angelina Jolie", "Brad Pitt"), 791: CP("Ashton Kutcher", "Mila Kunis"), 792: CP("Ben Affleck", "Jennifer Lopez"),
+793: CP("Chris Brown", "Rihanna"), 794: CP("Ellen DeGeneres", "Portia de Rossi"), 795: CP("Gwen Stefani", "Blake Shelton"),
+796: CP("Iman", "David Bowie"), 797: CP("Jesse Plemons", "Kirsten Dunst"), 798: CP("John F. Kennedy Jr.", "Carolyn Bessette Kennedy"),
+799: CP("Justin Bieber", "Hailey Bieber"), 800: CP("Kim Kardashian", "Kanye"), 801: CP("Leslie Mann", "Judd Apatow"),
+802: CP("Matthew McConaughey", "Sarah Jessica Parker"), 803: CP("Meghan Markle", "Prince Harry"), 804: CP("Michelle Obama", "Barack Obama"),
+805: CP("Nicole Kidman", "Keith Urban"), 806: CP("Prince William", "Catherine Middleton"), 807: CP("Priyanka Chopra", "Nick Jonas"),
+808: CP("Ryan Gosling", "Eva Mendes"), 809: CP("Sarah Hyland", "Wells Adams"), 810: CP("Savannah Brinson", "LeBron James"),
+811: CP("Sue Bird", "Megan Rapinoe"), 812: CP("Tom Holland", "Zendaya"), 813: CP("Tracy Pollan", "Michael J. Fox"),
+814: P("Kôji Yakusho", "film"), 815: P("Mahershala Ali", "film"), 816: P("Michael Peña", "film"), 817: P("Timothée Chalamet", "film"),
+818: P("Kôji Yakusho", "film"), 819: P("Michael Peña", "film"), 820: P("Timothée Chalamet", "film", "Wonka"), 821: P("Xolo Maridueña", "film"),
+822: P("Cara De La Hoyde", "reality", LI), 823: P("Chloë Crowhurst", "reality", LI),
+824: P("Ekin-Su Cülcüloğlu", "reality", LI, title_spelling="Ekinsu Cülcüloglu"), 825: P("Jessica Shears", "reality", LI),
+826: P("Sophie Piper", "reality", LI), 827: P("Tom Powell", "reality", LI),
+828: P("Malin Åkerman", "tv", "Eurovision", title_spelling="Malin åkerman"),
+829: K([], None, "Eurovision", "music", note="2024 super pack"), 830: K([], None, "Eurovision", "music", note="2024 pack 1"),
+831: K([], None, "Eurovision", "music", note="2024 pack 2"),
+832: K([], None, cat="music", group="ABBA"),
+833: P("Marc Guéhi", "football"), 834: P("Paul Gascoigne", note="'96 blond, 'Gazza'"),
+835: K(["Foden", "Gazza"], 2, cat="football", note="England Euros blonde pack"),
+836: K([], None, cat="football", note="England Euros 2024 pack 3"), 837: K([], None, cat="football", note="England Euros 2024 pack 2"),
+838: K([], None, cat="football", note="England Euros 2024 pack 1"), 839: K([], None, cat="football", note="England Euros 2024 pack 4"),
+840: P("Jayne Torvill"), 841: P("Christopher Dean"), 842: P("Tam", "tv", SG),
+843: P("Michael Keaton", "film", "Beetlejuice"), 844: P("Sarah Connor", "film", "The Terminator"),
+845: P("Aragorn", "film", "The Lord of the Rings"), 846: G("Gromit", "Wallace & Gromit", title_spelling="Grommit"),
+847: G("Jigsaw puppet", "Saw"), 848: P("Jim Carrey", "film", "The Mask", note="Mask of Loki"),
+849: P("Slash", "music", band="Guns N' Roses"), 850: G("Zippy", "Rainbow"),
+851: P("Adil C", "music"), 852: P("Ayo Sk3tch", "music"), 853: P("Britti", "music"), 854: P("DNorri", "music"), 855: P("Sekou", "music"),
+856: P("Eiza González", "tv", "3 Body Problem", character="Auggie Salazar"),
+857: P("Noémie Schmidt"), 858: P("Aitana Sánchez-Gijón"), 859: P("Blanca Suárez"), 860: P("Magdalena Dębicka"), 861: P("Chino Darín"),
+862: P("Eduard Fernández"), 863: P("Sergi López"), 864: P("Michael Keaton", "film", "Beetlejuice", note="2024"),
+865: G("Deadpool", "Deadpool"), 866: P("Zendaya", "film", "Dune", character="Chani"),
+867: P("Colin Farrell", "tv", "The Penguin", title_spelling="Collin Farrell"), 868: P("Zoë Kravitz", character="Catwoman"), 869: P("Zoë Kravitz"),
+870: P("Abigail Morris", note="The Last Dinner Party"), 871: P("Charli XCX", title_spelling="Charlie XCX"), 872: P("Naoya", "boxing"),
+873: P("Endrick", "football"), 874: P("Gavi", "football"), 875: P("Pedri", "football"),
+876: P("Dricus du Plessis", "sport", note="'Stillknocks'"), 877: P("Chico", "music", XF), 878: U("Future - reads as a word"), 879: P("Gunna"),
+})
+
+AAA = "Agatha All Along"; BR = "Baby Reindeer"; TPC = "The Perfect Couple"; SAB = "Shadow and Bone"
+
+D.update({
+880: P("Hozier"), 881: P("Latto"), 882: P("Marc Guéhi", "football"), 883: P("Iga Świątek", "tennis"),
+884: P("21 Savage"), 885: P("Akon"), 886: P("Alex Rodriguez", note="A-Rod"), 887: P("Biggie"), 888: P("Beyoncé", title_spelling="Beyonce"),
+889: U("Clara - first name only"), 890: P("DaBaby"), 891: P("Drake"), 892: P("Draya"), 893: P("Druski"), 894: P("Eminem"),
+895: U("Fabulous - reads as a word"), 896: P("Giggs"), 897: P("GloRilla", title_spelling="Glorilla"), 898: P("Jhené Aiko"),
+899: P("Ali Ahn", "tv", AAA), 900: P("Aubrey Plaza", "tv", AAA), 901: P("Debra Jo Rupp", "tv", AAA, title_spelling="Debra Joe Rupp"),
+902: P("Joe Locke", "tv", AAA), 903: P("Kathryn Hahn", "tv", AAA), 904: P("Patti LuPone", "tv", AAA), 905: P("Sasheer Zamata", "tv", AAA),
+906: P("Jess Gunning", "tv", BR), 907: P("Nava Mau", "tv", BR), 908: P("Nina Sosanya", "tv", BR), 909: P("Richard Gadd", "tv", BR),
+910: P("Shalom Brune-Franklin", "tv", BR), 911: P("Tom Goodman-Hill", "tv", BR),
+912: P("Emma Myers", "tv", "Wednesday", character="Enid Sinclair"), 913: P("Luis Guzmán", "tv", "Wednesday", character="Gomez Addams"),
+914: P("Bill Camp", "tv", TPC), 915: P("Billy Howle", "tv", TPC), 916: P("Dakota Fanning", "tv", TPC), 917: P("Eve Hewson", "tv", TPC),
+918: P("Isabelle Adjani", "tv", TPC), 919: P("Ishaan Khatter", "tv", TPC), 920: P("Jack Reynor", "tv", TPC), 921: P("Liev Schreiber", "tv", TPC),
+922: P("Meghann Fahy", "tv", TPC), 923: P("Michael Beach", "tv", TPC), 924: P("Nicole Kidman", "tv", TPC),
+925: P("Quavo"), 926: P("Raye"), 927: P("Rosalía", title_spelling="Rosalia"), 928: P("Saweetie"), 929: P("SZA"), 930: P("Tyla"),
+931: P("YG", "music"), 932: P("Columbo"),
+933: CP("Adam Brody", "Leighton Meester"), 934: CP("Alicia Keys", "Swizz Beatz") | {"title_spelling": "Swiss Beatz"},
+935: CP("Beyoncé", "Jay-Z"), 936: CP("Blake Lively", "Ryan Reynolds"), 937: CP("Brad Takei", "George Takei"),
+938: CP("Chrissy Teigen", "John Legend"), 939: CP("Cynthia Nixon", "Christine Marinoni"), 940: CP("Dax Shepard", "Kristen Bell"),
+941: CP("Denzel Washington", "Pauletta Washington"), 942: CP("Elton John", "David Furnish"), 943: CP("Emily Blunt", "John Krasinski"),
+944: CP("Enrique Iglesias", "Anna Kournikova"), 945: CP("Freddie Prinze Jr.", "Sarah Michelle Gellar"), 946: CP("Goldie Hawn", "Kurt Russell"),
+947: CP("Harrison Ford", "Calista Flockhart"), 948: CP("Jason Momoa", "Lisa Bonet"), 949: CP("Judd Apatow", "Leslie Mann"),
+950: CP("Julia Louis-Dreyfus", "Brad Hall"), 951: CP("Julia Roberts", "Danny Moder"), 952: CP("Justin Mikita", "Jesse Tyler Ferguson"),
+953: CP("Kevin Bacon", "Kyra Sedgwick"), 954: CP("Lance Bass", "Michael Turchin"), 955: CP("LeBron James", "Savannah Brinson"),
+956: CP("Lily Tomlin", "Jane Wagner"), 957: CP("Mark Consuelos", "Kelly Ripa"), 958: CP("Matthew Broderick", "Sarah Jessica Parker"),
+959: CP("Matthew McConaughey", "Camila Alves"), 960: CP("Maya Rudolph", "Paul Thomas Anderson"), 961: CP("Melissa McCarthy", "Ben Falcone"),
+962: CP("Neil Patrick Harris", "David Burtka"), 963: CP("Oprah Winfrey", "Stedman Graham"), 964: CP("Penélope Cruz", "Javier Bardem"),
+965: CP("Pink", "Carey Hart"), 966: CP("RuPaul", "Georges LeBar"), 967: CP("Sarah Paulson", "Holland Taylor"), 968: CP("Seth Rogen", "Lauren Miller"),
+969: CP("Steve Carell", "Nancy Walls"), 970: CP("Thandie Newton", "Ol Parker"), 971: CP("Tim McGraw", "Faith Hill"),
+972: CP("Tom Brady", "Gisele Bündchen") | {"title_spelling": "Gisele Bundchen"}, 973: CP("Tom Hanks", "Rita Wilson"),
+974: CP("Victoria Beckham", "David Beckham"), 975: CP("Viola Davis", "Julius Tennon"), 976: CP("Will Smith", "Jada Pinkett Smith"),
+977: CP("Geri Horner", "Christian Horner") | {"title_spelling": "Gerry Corner", "note": "couple; title says 'Gerry Corner' - check"},
+978: K(["Jake Gyllenhaal", "Conor McGregor"], 2, "Road House", "film", note="couple pack"),
+979: CP("Mark Zuckerberg", "Priscilla Chan"),
+980: CP("Angelina Jolie", "Brad Pitt"), 981: CP("Ashton Kutcher", "Mila Kunis"), 982: CP("Ben Affleck", "Jennifer Lopez"),
+983: CP("Chris Brown", "Rihanna"), 984: CP("Ellen DeGeneres", "Portia de Rossi"), 985: CP("Gwen Stefani", "Blake Shelton"),
+986: CP("Iman", "David Bowie"), 987: CP("Jesse Plemons", "Kirsten Dunst"), 988: CP("John F. Kennedy Jr.", "Carolyn Bessette Kennedy"),
+989: CP("Justin Bieber", "Hailey Bieber"), 990: CP("Kim Kardashian", "Ye"), 991: CP("Leslie Mann", "Judd Apatow"),
+992: CP("Meghan Markle", "Prince Harry"), 993: CP("Michelle Obama", "Barack Obama"), 994: CP("Nicole Kidman", "Keith Urban"),
+995: CP("Prince William", "Catherine Middleton"), 996: CP("Priyanka Chopra", "Nick Jonas"), 997: CP("Ryan Gosling", "Eva Mendes"),
+998: CP("Sarah Hyland", "Wells Adams"), 999: CP("Savannah Brinson", "LeBron James"), 1000: CP("Sue Bird", "Megan Rapinoe"),
+1001: CP("Tom Holland", "Zendaya"), 1002: CP("Tracy Pollan", "Michael J. Fox"),
+1003: P("Dawn Sutcliffe", "tv", "Gavin & Stacey"),
+1004: P("Pete Sutcliffe", "tv", "Gavin & Stacey", title_spelling="Peter Sutcliffe", note="character; avoid 'Peter Sutcliffe' (shares a notorious real name)"),
+1005: P("Toby Jones", "tv", "Mr Bates vs The Post Office", character="Alan Bates"),
+1006: U("Camille - first name only", category="film"), 1007: P("Karla Sofía Gascón", "film", title_spelling="Karla Sofía Gascon"),
+1008: P("Sofía Vergara", "film"), 1009: P("Zendaya", "film"),
+1010: P("Michael Peña", "tv", "Narcos"), 1011: P("21 Savage"), 1012: P("Arrdee"), 1013: P("Joji"),
+1014: P("Amita Suman", "tv", SAB), 1015: P("Archie Renaux", "tv", SAB), 1016: P("Kit Young", "tv", SAB), 1017: P("Ben Barnes", "tv", SAB),
+1018: P("Zoë Wanamaker", "tv", SAB, title_spelling="Zoe Wanamaker"), 1019: P("Jessie Mei Li", "tv", SAB),
+1020: G("Vecna", "Stranger Things"), 1021: P("Dave", "tv", "Top Boy"), 1022: P("Kano", "tv", "Top Boy"),
+1023: P("David Castañeda", "tv", "The Umbrella Academy"), 1024: P("Moisés Arias", "tv", "Fallout"),
+1025: G("Cecil", "Invincible"), 1026: G("Mark", "Invincible"),
+1027: P("Akon"), 1028: P("A-Rod"), 1029: P("Beyoncé", title_spelling="Beyonce"), 1030: P("JT", "music", note="City Girls"),
+1031: P("DaBaby", title_spelling="Dababy"), 1032: P("Drake"), 1033: P("Druski"), 1034: P("Eminem"), 1035: P("Fabolous"),
+1036: P("Giggs"), 1037: P("GloRilla", title_spelling="Glorilla"), 1038: P("Jhené Aiko"), 1039: P("Lizzo"),
+})
+
+GOL = "Gangs of London"; FB = "football"
+
+
+def KP(name, group):
+    return P(name, "music", group=group)
+
+
+D.update({
+1040: P("Maluma"), 1041: P("Mase"), 1042: P("MGK"), 1043: P("Ne-Yo"), 1044: P("Obama"), 1045: P("Offset"),
+1046: P("Oprah", title_spelling="Oprah C"), 1047: P("Rihanna"), 1048: P("Safaree"), 1049: P("Saweetie"), 1050: P("Shaq"),
+1051: P("Timbaland"), 1052: P("Trump"),
+1053: P("Giant", "tv", "Gladiators"), 1054: P("Sabre", "tv", "Gladiators"),
+1055: P("Koba", "tv", GOL), 1056: P("Lale", "tv", GOL), 1057: P("Merwan", "tv", GOL),
+1058: P("Gunther", "sport", "WWE"), 1059: P("Naomi", "sport", "WWE"), 1060: P("Penta", "sport", "WWE"), 1061: P("Sheamus", "sport", "WWE"),
+1062: G("The Grabber", "The Black Phone", note="'Silent' design"), 1063: G("The Grabber", "The Black Phone", note="'Frown' design"),
+1064: G("The Grabber", "The Black Phone", note="'Grin' design"),
+1065: P("DanTDM", title_spelling="Dan TDM"), 1066: P("Oliver Bearman", "f1", note="sunglasses and cap"),
+1067: P("Gabriel Magalhães", FB), 1068: P("Viktor Gyökeres", FB), 1069: P("Emiliano Martínez", FB), 1070: P("Evanilson", FB),
+1071: P("Fabian Hürzeler", FB), 1072: P("Jan Paul van Hecke", FB), 1073: P("Pascal Groß", FB), 1074: P("Enzo Fernández", FB),
+1075: P("João Pedro", FB), 1076: P("Moisés Caicedo", FB), 1077: P("Daniel Muñoz", FB), 1078: P("Ismaïla Sarr", FB),
+1079: P("Jørgen Strand Larsen", FB), 1080: P("Raúl Jiménez", FB), 1081: P("Saša Lukić", FB), 1082: P("Ibrahima Konaté", FB),
+1083: P("Jérémy Doku", FB), 1084: P("Joško Gvardiol", FB), 1085: P("Marc Guéhi", FB), 1086: P("Rayan Aït-Nouri", FB),
+1087: P("Rodri", FB), 1088: P("Rúben Dias", FB), 1089: P("Benjamin Šeško", FB), 1090: P("Casemiro", FB),
+1091: P("Bruno Guimarães", FB), 1092: P("Fabian Schär", FB), 1093: P("Joelinton", FB), 1094: P("André", FB), 1095: P("André", FB),
+1096: P("João Gomes", FB), 1097: P("José Sá", FB), 1098: P("Ladislav Krejčí", FB), 1099: P("Matheus Mané", FB),
+1100: P("Hide the Pain Harold", note="meme"), 1101: P("KSI"), 1102: P("Logan Paul", note="black eye"),
+1103: P("Mrwhosetheboss", title_spelling="Mr Whose The Boss"), 1104: P("PewDiePie"), 1105: P("Vikkstar"),
+1106: P("Fabien Galthié", "rugby"), 1107: P("Mickaël Guillard", "rugby"), 1108: P("Oscar Jégou", "rugby"),
+1109: P("Josh van der Flier", "rugby"), 1110: P("Gonzalo Quesada", "rugby"), 1111: P("Duhan van der Merwe", "rugby"),
+1112: K([], None, cat="rugby", note="Ireland Six Nations players & coach"), 1113: K([], None, cat="rugby", note="England Six Nations players & coach"),
+1114: K([], None, cat="rugby", note="France Six Nations players & coach"), 1115: K([], None, cat="rugby", note="Italy Six Nations players & coach"),
+1116: K([], None, cat="rugby", note="Scotland Six Nations players & coach"), 1117: K([], None, cat="rugby", note="Wales Six Nations players & coach"),
+1118: U("Gymskin - not clear if a person"),
+1119: P("A-Train", "tv"), 1120: P("Firecracker", "tv"), 1121: P("Homelander", "tv"), 1122: P("Hughie", "tv"), 1123: P("Ryan", "tv"),
+1124: P("Starlight", "tv"),
+1125: K([], 6, cat=FB, note="Belgium football legends"), 1126: K([], 6, cat=FB, note="Brazil football legends"),
+1127: K([], 6, cat=FB, note="England football legends"), 1128: K([], 6, cat=FB, note="France football legends"),
+1129: K([], 6, cat=FB, note="Germany football legends"), 1130: K([], 6, cat=FB, note="football legends"),
+1131: K([], 6, cat=FB, note="Netherlands football stars"), 1132: K([], 6, cat=FB, note="Portugal football stars"),
+1133: K([], 6, cat=FB, note="Senegal football stars"), 1134: K([], 6, cat=FB, note="Spain football stars"),
+1135: P("Gabriel Magalhães", FB), 1136: P("Marc Guéhi", FB), 1137: P("Jules Koundé", FB), 1138: P("Kylian Mbappé", FB),
+1139: P("Antonio Rüdiger", FB), 1140: P("Leroy Sané", FB), 1141: P("Micky van de Ven"), 1142: P("Roberto Martínez", FB),
+1143: P("Sadio Mané", FB), 1144: P("Luis de la Fuente", FB), 1145: P("Pau Cubarsí", FB), 1146: P("Sergiño Dest", FB),
+1147: C(pack_size=5, category=FB, note="pick any 5 football masks"), 1148: C(pack_size=10, category=FB, note="pick any 10 football masks"),
+1149: K([], 6, cat=FB, note="Scotland players & manager"),
+1150: KP("Hoshi", "SEVENTEEN"), 1151: KP("Jay", "ENHYPEN"), 1152: KP("Seungkwan", "SEVENTEEN"), 1153: KP("Soobin", "TXT"),
+1154: KP("Sunoo", "ENHYPEN"), 1155: KP("Taehyun", "TXT"), 1156: KP("Jiung", "P1Harmony"), 1157: KP("Jungwon", "ENHYPEN"),
+1158: KP("Lisa", "BLACKPINK"), 1159: KP("Mingyu", "SEVENTEEN"), 1160: KP("Rosé", "BLACKPINK"), 1161: KP("Sunghoon", "ENHYPEN"),
+1162: KP("Woozi", "SEVENTEEN"), 1163: KP("Yoonchae", "KATSEYE"), 1164: KP("DK", "SEVENTEEN"), 1165: KP("Jake", "ENHYPEN"),
+1166: KP("Jongseob", "P1Harmony"), 1167: KP("Megan", "KATSEYE"), 1168: KP("Ni-ki", "ENHYPEN"), 1169: KP("S.Coups", "SEVENTEEN"),
+1170: KP("Jun", "SEVENTEEN"), 1171: KP("Wonwoo", "SEVENTEEN"), 1172: KP("Jennie", "BLACKPINK"), 1173: KP("Kazuha", "LE SSERAFIM"),
+1174: KP("Keeho", "P1Harmony"), 1175: KP("Lara", "KATSEYE"), 1176: KP("Manon", "KATSEYE"), 1177: KP("Sophia", "KATSEYE"),
+1178: KP("Soul", "P1Harmony"), 1179: KP("Beomgyu", "TXT"), 1180: KP("Daniela", "KATSEYE"), 1181: KP("Evan", "ENHYPEN"),
+1182: KP("Hongjoong", "ATEEZ"), 1183: KP("Intak", "P1Harmony"), 1184: KP("Jisoo", "BLACKPINK"), 1185: KP("San", "ATEEZ"),
+1186: KP("The8", "SEVENTEEN"), 1187: KP("Theo", "P1Harmony"), 1188: KP("Wooyoung", "ATEEZ"), 1189: KP("Yeonjun", "TXT"),
+1190: KP("Seonghwa", "ATEEZ"), 1191: KP("Vernon", "SEVENTEEN"),
+1192: P("Eumaeus"), 1193: P("Odysseus"), 1194: P("Telemachus"),
+1195: G("Halloween masks", pack_size=5, note="set of 5"),
+})
+
+# second thoughts on single-word stage names: the title itself makes the person clear
+D[895] = P("Fabolous", title_spelling="Fabulous", note="spelling from sister listing 'Fabolous - John David Jackson'")
+D[878] = P("Future")
+
+
+def main():
+    rows = list(csv.DictReader(open(SRC, encoding="utf-8")))
+    missing = [i for i in range(len(rows)) if i not in D]
+    extra = [i for i in D if i >= len(rows)]
+    assert not missing and not extra, (missing, extra)
+    out = {}
+    for i, r in enumerate(rows):
+        d = dict(D[i])
+        d["title"] = r["Title"]
+        assert r["Handle"] not in out, r["Handle"]
+        out[r["Handle"]] = d
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1)
+    c = collections.Counter(v["type"] for v in out.values())
+    print(len(out), dict(c))
+    print(collections.Counter(v.get("category") for v in out.values() if v["type"] == "person"))
+
+
+if __name__ == "__main__":
+    main()
