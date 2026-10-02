@@ -306,7 +306,7 @@ Source: the Longforte "Cufflinks – Chrome – Square" sublimation blank, plus 
 Source: the owner's stock roll (photo, 2 Oct 2026).
 - **Label:** 20 x 40 mm rectangle with rounded corners, bright yellow, on a roll of **1,000** (owner).
 - **Print:** black only.
-- **Products:** personalised tool labels (Active; owner confirmed prices on 2 Oct 2026) and allergen warning stickers (Draft). Both use the same packs and prices: 50 £4.99, 100 £6.99, 250 £11.99, 500 £17.99, 1,000 £27.99. Further ideas: stock/QR labels and cable labels.
+- **Products:** personalised tool labels (Active; owner confirmed prices on 2 Oct 2026) and allergen warning stickers (Active since 2 Oct 2026, owner approved). Both use the same packs and prices: 50 £4.99, 100 £6.99, 250 £11.99, 500 £17.99, 1,000 £27.99. Further ideas: stock/QR labels and cable labels.
 - **Allergen stickers:** they highlight allergens only. Always say they don't replace a full ingredients label and that the buyer is responsible for the wording. Never claim they meet Natasha's Law or any other labelling law.
 - **Google:** `Office Supplies > General Office Supplies > Labels & Tags`; age_group `adult`; colour `Yellow`.
 - **ASK:**
