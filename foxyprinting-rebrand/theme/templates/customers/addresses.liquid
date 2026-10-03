@@ -1,0 +1,19 @@
+<div class="section"><div class="page-width page-narrow">
+  <p><a href="{{ routes.account_url }}">← {{ 'customer.account.title' | t }}</a></p>
+  <h1>{{ 'customer.addresses' | t }}</h1>
+  {%- for address in customer.addresses -%}
+    <div class="review" style="margin-bottom:12px">{{ address | format_address }}
+      <form method="post" action="{{ address.url }}"><input type="hidden" name="_method" value="delete"><button class="btn btn--outline btn--small" type="submit">{{ 'cart.remove' | t }}</button></form>
+    </div>
+  {%- endfor -%}
+  {%- form 'customer_address', customer.new_address -%}
+    {{ form.errors | default_errors }}
+    <div class="form-field"><label for="AddrName">{{ 'customer.first_name' | t }}</label><input id="AddrName" name="address[first_name]" value="{{ form.first_name }}"></div>
+    <div class="form-field"><label for="AddrLast">{{ 'customer.last_name' | t }}</label><input id="AddrLast" name="address[last_name]" value="{{ form.last_name }}"></div>
+    <div class="form-field"><label for="Addr1">Address</label><input id="Addr1" name="address[address1]" value="{{ form.address1 }}"></div>
+    <div class="form-field"><label for="AddrCity">Town / city</label><input id="AddrCity" name="address[city]" value="{{ form.city }}"></div>
+    <div class="form-field"><label for="AddrZip">Postcode</label><input id="AddrZip" name="address[zip]" value="{{ form.zip }}"></div>
+    <input type="hidden" name="address[country]" value="United Kingdom">
+    <button class="btn" type="submit">{{ 'customer.add_address' | t }}</button>
+  {%- endform -%}
+</div></div>

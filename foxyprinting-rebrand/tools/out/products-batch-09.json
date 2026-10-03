@@ -1,0 +1,627 @@
+[
+ {
+  "title": "Personalised Pet Blanket",
+  "handle": "personalised-pet-blanket",
+  "descriptionHtml": "<p><strong>Personalised Pet Blanket</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Bandanas, dog hoodies, pet blankets, ID tags and bowls.</p><p>Personalise it with: pet name, photo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Pet Bandanas & Accessories",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-pet-clothing",
+   "dept-pets",
+   "machine-dtf",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Small"
+     },
+     {
+      "name": "Large"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Small"
+     }
+    ],
+    "price": "17.99",
+    "sku": "FOXY-DTF-PPB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Large"
+     }
+    ],
+    "price": "22.99",
+    "sku": "FOXY-DTF-PPB-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Pet name\", \"Photo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Pet ID Tag",
+  "handle": "personalised-pet-id-tag",
+  "descriptionHtml": "<p><strong>Personalised Pet ID Tag</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Bandanas, dog hoodies, pet blankets, ID tags and bowls.</p><p>Personalise it with: pet name, phone number. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Pet Bandanas & Accessories",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-pet-clothing",
+   "dept-pets",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Bone"
+     },
+     {
+      "name": "Round"
+     },
+     {
+      "name": "Heart"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Bone"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-UV-PPIT-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Round"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-UV-PPIT-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Heart"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-UV-PPIT-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Pet name\", \"Phone number\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Stainless Steel Pet Bowl",
+  "handle": "personalised-stainless-steel-pet-bowl",
+  "descriptionHtml": "<p><strong>Personalised Stainless Steel Pet Bowl</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Bandanas, dog hoodies, pet blankets, ID tags and bowls.</p><p>Personalise it with: pet name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Pet Bandanas & Accessories",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-pet-clothing",
+   "dept-pets",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Small"
+     },
+     {
+      "name": "Large"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Small"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UVDTF-PSSPB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Large"
+     }
+    ],
+    "price": "17.99",
+    "sku": "FOXY-UVDTF-PSSPB-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Pet name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Pet Treat Jar",
+  "handle": "personalised-pet-treat-jar",
+  "descriptionHtml": "<p><strong>Personalised Pet Treat Jar</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Bandanas, dog hoodies, pet blankets, ID tags and bowls.</p><p>Personalise it with: pet name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Pet Bandanas & Accessories",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-pet-clothing",
+   "dept-pets",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-UVDTF-PPTJ-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Pet name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Custom Pet Portrait Print",
+  "handle": "custom-pet-portrait-print",
+  "descriptionHtml": "<p><strong>Custom Pet Portrait Print</strong> - printed on premium stock in our UK workshop.</p><p>Bandanas, dog hoodies, pet blankets, ID tags and bowls.</p><p>Personalise it with: photo upload, pet name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Pet Bandanas & Accessories",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-pet-clothing",
+   "dept-pets",
+   "machine-press",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A4"
+     },
+     {
+      "name": "A3"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A4"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-PRESS-CPPP-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A3"
+     }
+    ],
+    "price": "26.99",
+    "sku": "FOXY-PRESS-CPPP-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Pet name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Tote Bag",
+  "handle": "personalised-tote-bag",
+  "descriptionHtml": "<p><strong>Personalised Tote Bag</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Totes, PE bags, aprons, caps and party sashes.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Bags, Aprons & Textiles",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-bags-aprons-textiles",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "8.99",
+    "sku": "FOXY-DTF-PTB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Drawstring PE Bag",
+  "handle": "personalised-drawstring-pe-bag",
+  "descriptionHtml": "<p><strong>Personalised Drawstring PE Bag</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Totes, PE bags, aprons, caps and party sashes.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Bags, Aprons & Textiles",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-bags-aprons-textiles",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "8.99",
+    "sku": "FOXY-DTF-PDPB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Apron",
+  "handle": "personalised-apron",
+  "descriptionHtml": "<p><strong>Personalised Apron</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Totes, PE bags, aprons, caps and party sashes.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Bags, Aprons & Textiles",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-bags-aprons-textiles",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Kids"
+     },
+     {
+      "name": "Adult"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Kids"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-PA-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Adult"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-DTF-PA-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Cap",
+  "handle": "personalised-cap",
+  "descriptionHtml": "<p><strong>Personalised Cap</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Totes, PE bags, aprons, caps and party sashes.</p><p>Personalise it with: text, logo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Bags, Aprons & Textiles",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-bags-aprons-textiles",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-DTF-PC-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Text\", \"Logo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Party Sash",
+  "handle": "personalised-party-sash",
+  "descriptionHtml": "<p><strong>Personalised Party Sash</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Totes, PE bags, aprons, caps and party sashes.</p><p>Personalise it with: text. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Bags, Aprons & Textiles",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-bags-aprons-textiles",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-DTF-PPS-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Text\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

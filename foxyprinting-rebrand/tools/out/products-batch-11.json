@@ -1,0 +1,624 @@
+[
+ {
+  "title": "Christmas Elf Arrival Kit",
+  "handle": "christmas-elf-arrival-kit",
+  "descriptionHtml": "<p><strong>Christmas Elf Arrival Kit</strong> - printed and precision-cut in our UK workshop.</p><p>Personalised Christmas Eve boxes, fill-your-own advent calendars and selection box sleeves.</p><p>Personalise it with: child's name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Christmas Eve Boxes & Advent Calendars",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-eve-boxes",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-CUT-CEAK-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Child's name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Printed Cupcake Boxes (Window)",
+  "handle": "printed-cupcake-boxes-window",
+  "descriptionHtml": "<p><strong>Printed Cupcake Boxes (Window)</strong> - printed and precision-cut in our UK workshop.</p><p>Cupcake, favour, pillow and popcorn boxes printed to match your party.</p><p>Personalise it with: name/logo, design. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Party, Favour & Treat Boxes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-party-boxes",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "1 cupcake x10"
+     },
+     {
+      "name": "4 cupcakes x10"
+     },
+     {
+      "name": "6 cupcakes x10"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "1 cupcake x10"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-CUT-PCBW-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "4 cupcakes x10"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-CUT-PCBW-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "6 cupcakes x10"
+     }
+    ],
+    "price": "17.99",
+    "sku": "FOXY-CUT-PCBW-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name/logo\", \"Design\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Party Favour Boxes",
+  "handle": "personalised-party-favour-boxes",
+  "descriptionHtml": "<p><strong>Personalised Party Favour Boxes</strong> - printed and precision-cut in our UK workshop.</p><p>Cupcake, favour, pillow and popcorn boxes printed to match your party.</p><p>Personalise it with: name, age, theme. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Party, Favour & Treat Boxes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-party-boxes",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "10"
+     },
+     {
+      "name": "25"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "10"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-CUT-PPFB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "25"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-CUT-PPFB-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Age\", \"Theme\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Wedding Favour Boxes",
+  "handle": "wedding-favour-boxes",
+  "descriptionHtml": "<p><strong>Wedding Favour Boxes</strong> - printed and precision-cut in our UK workshop.</p><p>Cupcake, favour, pillow and popcorn boxes printed to match your party.</p><p>Personalise it with: names, date. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Party, Favour & Treat Boxes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-party-boxes",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "25"
+     },
+     {
+      "name": "50"
+     },
+     {
+      "name": "100"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "25"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-CUT-WFB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "50"
+     }
+    ],
+    "price": "34.99",
+    "sku": "FOXY-CUT-WFB-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "100"
+     }
+    ],
+    "price": "59.99",
+    "sku": "FOXY-CUT-WFB-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Names\", \"Date\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Popcorn Boxes (Movie Night)",
+  "handle": "personalised-popcorn-boxes-movie-night",
+  "descriptionHtml": "<p><strong>Personalised Popcorn Boxes (Movie Night)</strong> - printed and precision-cut in our UK workshop.</p><p>Cupcake, favour, pillow and popcorn boxes printed to match your party.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Party, Favour & Treat Boxes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-party-boxes",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "10"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "10"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-CUT-PPBMN-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Pillow Treat Boxes",
+  "handle": "personalised-pillow-treat-boxes",
+  "descriptionHtml": "<p><strong>Personalised Pillow Treat Boxes</strong> - printed and precision-cut in our UK workshop.</p><p>Cupcake, favour, pillow and popcorn boxes printed to match your party.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Party, Favour & Treat Boxes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-party-boxes",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "10"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "10"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-CUT-PPTB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Golf Ball Box (3-Ball)",
+  "handle": "personalised-golf-ball-box-3-ball",
+  "descriptionHtml": "<p><strong>Personalised Golf Ball Box (3-Ball)</strong> - printed and precision-cut in our UK workshop.</p><p>Mug boxes, bauble boxes, golf ball boxes and letterbox gifts.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Gift Boxes & Letterbox Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-gift-packaging",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Empty box"
+     },
+     {
+      "name": "With 3 printed balls"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Empty box"
+     }
+    ],
+    "price": "4.99",
+    "sku": "FOXY-CUT-PGBB3B-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "With 3 printed balls"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-CUT-PGBB3B-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Mug Gift Box (Add-On)",
+  "handle": "mug-gift-box-add-on",
+  "descriptionHtml": "<p><strong>Mug Gift Box (Add-On)</strong> - printed and precision-cut in our UK workshop.</p><p>Mug boxes, bauble boxes, golf ball boxes and letterbox gifts.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Gift Boxes & Letterbox Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-gift-packaging",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-0"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "2.49",
+    "sku": "FOXY-CUT-MGBAO-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   }
+  ]
+ },
+ {
+  "title": "Bauble Gift Box (Add-On)",
+  "handle": "bauble-gift-box-add-on",
+  "descriptionHtml": "<p><strong>Bauble Gift Box (Add-On)</strong> - printed and precision-cut in our UK workshop.</p><p>Mug boxes, bauble boxes, golf ball boxes and letterbox gifts.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Gift Boxes & Letterbox Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-gift-packaging",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-1"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "1.99",
+    "sku": "FOXY-CUT-BGBAO-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   }
+  ]
+ },
+ {
+  "title": "Personalised Letterbox Gift Box",
+  "handle": "personalised-letterbox-gift-box",
+  "descriptionHtml": "<p><strong>Personalised Letterbox Gift Box</strong> - printed and precision-cut in our UK workshop.</p><p>Mug boxes, bauble boxes, golf ball boxes and letterbox gifts.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Gift Boxes & Letterbox Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-gift-packaging",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Empty printed box"
+     },
+     {
+      "name": "Hug in a Box (filled)"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Empty printed box"
+     }
+    ],
+    "price": "4.99",
+    "sku": "FOXY-CUT-PLGB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Hug in a Box (filled)"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-CUT-PLGB-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

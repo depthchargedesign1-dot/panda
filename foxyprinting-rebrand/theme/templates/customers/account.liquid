@@ -1,0 +1,14 @@
+<div class="section"><div class="page-width">
+  <h1>{{ 'customer.account.title' | t }}</h1>
+  <p><a href="{{ routes.account_logout_url }}">{{ 'customer.logout' | t }}</a> · <a href="{{ routes.account_addresses_url }}">{{ 'customer.addresses' | t }}</a></p>
+  <h2>{{ 'customer.orders' | t }}</h2>
+  {%- paginate customer.orders by 20 -%}
+    {%- if customer.orders.size > 0 -%}
+      <ul class="cart-items">
+        {%- for order in customer.orders -%}
+          <li class="cart-item" style="grid-template-columns:1fr auto auto"><a href="{{ order.customer_url }}"><strong>{{ order.name }}</strong></a><span>{{ order.created_at | date: '%d %b %Y' }} · {{ order.fulfillment_status_label }}</span><strong>{{ order.total_price | money }}</strong></li>
+        {%- endfor -%}
+      </ul>
+    {%- else -%}<p>{{ 'customer.no_orders' | t }}</p>{%- endif -%}
+  {%- endpaginate -%}
+</div></div>

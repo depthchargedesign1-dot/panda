@@ -1,0 +1,87 @@
+{%- comment -%}
+  Contact / trade application form. Uses Shopify's contact form, so every submission is emailed to the
+  store's sender email and listed in Shopify admin (Customers, when "Accepts marketing" is ticked).
+  Style "contact" = general enquiries; "trade" = trade account and designer programme applications.
+{%- endcomment -%}
+{%- assign kind = section.settings.kind -%}
+<div class="section">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <div class="section-heading" style="justify-content:center;text-align:center"><div><h2><span class="squiggle">{{ section.settings.heading }}</span></h2>
+        {%- if section.settings.intro != blank -%}<div class="rte">{{ section.settings.intro }}</div>{%- endif -%}</div></div>
+    {%- endif -%}
+
+    {%- form 'contact', class: 'foxy-form', id: section.id -%}
+      {%- if form.posted_successfully? -%}
+        <p class="foxy-form__success" role="status">{{ section.settings.success }}</p>
+      {%- endif -%}
+      {%- if form.errors -%}
+        <div class="foxy-form__error" role="alert">{{ form.errors | default_errors }}</div>
+      {%- endif -%}
+
+      {%- if kind == 'trade' -%}
+        <input type="hidden" name="contact[Form]" value="Trade account / designer programme application">
+      {%- else -%}
+        <input type="hidden" name="contact[Form]" value="Contact form">
+      {%- endif -%}
+
+      <div class="foxy-form__grid">
+        <label>Your name <input type="text" name="contact[name]" autocomplete="name" required value="{{ form.name }}"></label>
+        <label>Email <input type="email" name="contact[email]" autocomplete="email" required value="{{ form.email }}"></label>
+        <label>Phone <input type="tel" name="contact[phone]" autocomplete="tel" value="{{ form.phone }}"></label>
+        {%- if kind == 'trade' -%}
+          <label>Business or brand name <input type="text" name="contact[Business name]" autocomplete="organization"></label>
+        {%- else -%}
+          <label>Order number (if you have one) <input type="text" name="contact[Order number]"></label>
+        {%- endif -%}
+      </div>
+
+      {%- if kind == 'trade' -%}
+        <label>I'm interested in
+          <select name="contact[Interested in]" required>
+            <option value="Trade account">A trade account (buy printing at trade prices)</option>
+            <option value="Designer programme">The designer programme (sell my designs on Foxy Printing)</option>
+            <option value="Both">Both</option>
+          </select>
+        </label>
+        <div class="foxy-form__grid">
+          <label>What do you do?
+            <select name="contact[Business type]">
+              <option>Printer or print shop</option>
+              <option>Crafter or small gift business</option>
+              <option>Designer or illustrator</option>
+              <option>Club, school or charity</option>
+              <option>Other business</option>
+            </select>
+          </label>
+          <label>Website, Etsy or social media link <input type="text" name="contact[Website or portfolio]" placeholder="https://"></label>
+        </div>
+        <label>Roughly how much would you order each month? <input type="text" name="contact[Monthly volume]" placeholder="e.g. 50 mugs, 200 transfers"></label>
+        <label>Tell us about your business or designs <textarea name="contact[body]" required placeholder="What would you like us to print, or what kind of designs do you make?">{{ form.body }}</textarea></label>
+        <p class="foxy-form__note">Designers: please link to examples of your work rather than attaching files. We'll ask for print-ready artwork once we've agreed which designs to use. Only send artwork you created and own.</p>
+      {%- else -%}
+        <label>Message <textarea name="contact[body]" required>{{ form.body }}</textarea></label>
+      {%- endif -%}
+
+      <div><button type="submit" class="btn btn--pink">{{ section.settings.button }}</button></div>
+      <p class="foxy-form__note">We'll only use your details to reply to you. Prefer to talk? Call us on 01439 771468.</p>
+    {%- endform -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contact form",
+  "settings": [
+    { "type": "select", "id": "kind", "label": "Form type", "default": "contact", "options": [
+      { "value": "contact", "label": "General contact" },
+      { "value": "trade", "label": "Trade account / designer application" }
+    ] },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Get in touch" },
+    { "type": "richtext", "id": "intro", "label": "Intro text" },
+    { "type": "text", "id": "button", "label": "Button text", "default": "Send message" },
+    { "type": "text", "id": "success", "label": "Thank-you message", "default": "Thanks! Your message has been sent and we'll reply within 1–2 working days." }
+  ],
+  "presets": [{ "name": "Contact form" }]
+}
+{% endschema %}

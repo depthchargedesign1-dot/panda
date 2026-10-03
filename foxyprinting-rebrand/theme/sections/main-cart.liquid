@@ -1,0 +1,52 @@
+<div class="section">
+  <div class="page-width">
+    <h1>{{ 'cart.title' | t }}</h1>
+    {%- if cart.item_count > 0 -%}
+      <form action="{{ routes.cart_url }}" method="post" class="cart">
+        <ul class="cart-items">
+          {%- for item in cart.items -%}
+            <li class="cart-item">
+              <a class="cart-item__media" href="{{ item.url }}">
+                {%- if item.image -%}{{ item.image | image_url: width: 200 | image_tag: alt: item.title }}{%- else -%}{{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}{%- endif -%}
+              </a>
+              <div>
+                <a href="{{ item.url }}" style="font-weight:800;text-decoration:none">{{ item.product.title }}</a>
+                {%- unless item.product.has_only_default_variant -%}<div>{{ item.variant.title }}</div>{%- endunless -%}
+                {%- if item.properties.size > 0 -%}
+                  <ul class="cart-item__props">
+                    {%- for p in item.properties -%}
+                      {%- assign first_char = p.first | slice: 0 -%}
+                      {%- if p.last != blank and first_char != '_' -%}
+                        <li><strong>{{ p.first }}:</strong>
+                          {%- if p.last contains '/uploads/' -%} <a href="{{ p.last }}" target="_blank" rel="noopener">{{ p.last | split: '/' | last }}</a>{%- else -%} {{ p.last }}{%- endif -%}
+                        </li>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+                <div style="display:flex;gap:10px;align-items:center;margin-top:10px">
+                  <label class="visually-hidden" for="Qty-{{ item.key }}">{{ 'products.product.quantity' | t }}</label>
+                  <input id="Qty-{{ item.key }}" type="number" name="updates[]" value="{{ item.quantity }}" min="0" style="width:70px;height:40px;border:2px solid #E7E1F3;border-radius:10px;text-align:center">
+                  <a href="{{ item.url_to_remove }}" style="font-size:.85rem">{{ 'cart.remove' | t }}</a>
+                </div>
+              </div>
+              <div class="cart-item__total"><strong>{{ item.final_line_price | money }}</strong></div>
+            </li>
+          {%- endfor -%}
+        </ul>
+        <div class="cart-summary">
+          <div class="cart-summary__row"><span>{{ 'cart.subtotal' | t }}</span><span>{{ cart.total_price | money }}</span></div>
+          <p style="font-size:.85rem;opacity:.75">{{ 'cart.taxes_and_shipping' | t }}</p>
+          <label class="field" for="CartNote"><span class="field__label">{{ 'cart.note' | t }}</span><textarea id="CartNote" name="note" style="border:2px solid #E7E1F3;border-radius:12px;padding:10px">{{ cart.note }}</textarea></label>
+          <button type="submit" name="checkout" class="btn btn--pink btn--block">{{ 'cart.checkout' | t }}</button>
+          <button type="submit" name="update" class="btn btn--outline btn--block" style="margin-top:10px">{{ 'cart.update' | t }}</button>
+        </div>
+      </form>
+    {%- else -%}
+      <div class="empty-state"><div class="empty-state__icon">🛒</div><h2>{{ 'cart.empty' | t }}</h2><a class="btn" href="{{ routes.all_products_collection_url }}">{{ 'cart.continue' | t }}</a></div>
+    {%- endif -%}
+  </div>
+</div>
+{% schema %}
+{ "name": "Cart" }
+{% endschema %}

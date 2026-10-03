@@ -1,0 +1,22 @@
+{% layout none %}
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ 'gift_cards.title' | t }} – {{ shop.name }}</title>
+  {{ content_for_header }}
+  {{ 'foxy.css' | asset_url | stylesheet_tag }}
+  <style>:root{--fx-primary:{{ settings.color_primary }};--fx-pink:{{ settings.color_pink }};--fx-purple:{{ settings.color_purple }};--fx-ink:{{ settings.color_ink }};--fx-tint:{{ settings.color_tint }};--fx-radius:16px;--fx-page-width:720px}</style>
+</head>
+<body>
+  <div class="page-width" style="text-align:center;padding:60px 16px">
+    <div class="newsletter">
+      <h1>{{ shop.name }}</h1>
+      <p style="font-size:2.4rem;font-weight:800">{{ gift_card.balance | money }}</p>
+      <p>{{ 'gift_cards.code' | t }}: <strong>{{ gift_card.code | format_code }}</strong></p>
+      {%- if gift_card.expired -%}<p>{{ 'gift_cards.expired' | t: date: gift_card.expires_on }}</p>{%- endif -%}
+    </div>
+    <p style="margin-top:24px"><a class="btn" href="{{ shop.url }}">{{ 'cart.continue' | t }}</a></p>
+  </div>
+</body>
+</html>

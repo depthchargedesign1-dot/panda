@@ -1,0 +1,9 @@
+<div class="section"><div class="page-width page-narrow">
+  <h1>{{ 'customer.activate' | t }}</h1>
+  {%- form 'activate_customer_password' -%}
+    {{ form.errors | default_errors }}
+    <div class="form-field"><label for="ActPassword">{{ 'customer.password' | t }}</label><input type="password" name="customer[password]" id="ActPassword" required></div>
+    <div class="form-field"><label for="ActConfirm">{{ 'customer.password_confirm' | t }}</label><input type="password" name="customer[password_confirmation]" id="ActConfirm" required></div>
+    <button class="btn" type="submit">{{ 'customer.activate' | t }}</button>
+  {%- endform -%}
+</div></div>

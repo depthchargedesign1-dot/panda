@@ -1,0 +1,78 @@
+<footer class="site-footer">
+  <div class="site-footer__stripe"></div>
+  <div class="page-width footer-grid">
+    <div class="footer-col footer-brand">
+      <span class="header-logo__text" style="color:#fff">Foxy<span>Printing</span></span>
+      <p>{{ section.settings.about }}</p>
+      {%- if section.settings.reviews_url != blank -%}
+        <a class="footer-reviews" href="{{ section.settings.reviews_url }}">
+          <span class="footer-reviews__stars" aria-hidden="true">{%- for i in (1..5) -%}{% render 'icon', name: 'star' %}{%- endfor -%}</span>
+          <span>{{ section.settings.reviews_text }}</span>
+        </a>
+      {%- endif -%}
+      {%- liquid
+        assign socials = 'facebook,instagram,tiktok,pinterest,youtube,linkedin,x' | split: ','
+        assign labels = 'Facebook,Instagram,TikTok,Pinterest,YouTube,LinkedIn,X (Twitter)' | split: ','
+      -%}
+      <p class="footer-social__title">{{ section.settings.social_heading }}</p>
+      <div class="footer-social">
+        {%- for s in socials -%}
+          {%- assign key = 'social_' | append: s | append: '_link' -%}
+          {%- assign url = settings[key] -%}
+          {%- if url != blank -%}<a href="{{ url }}" target="_blank" rel="noopener" aria-label="{{ labels[forloop.index0] }}">{% render 'icon', name: s %}</a>{%- endif -%}
+        {%- endfor -%}
+      </div>
+      {%- if section.settings.trade_url != blank -%}
+        <a class="btn btn--yellow footer-trade" href="{{ section.settings.trade_url }}">{{ section.settings.trade_label }}</a>
+      {%- endif -%}
+    </div>
+    {%- for block in section.blocks -%}
+      <div class="footer-col" {{ block.shopify_attributes }}>
+        <h3>{{ block.settings.heading | default: block.settings.menu.title }}</h3>
+        {%- if block.settings.menu != blank -%}
+          <ul>
+            {%- for link in block.settings.menu.links -%}
+              {%- assign external = false -%}
+              {%- if link.url contains '://' -%}{%- unless link.url contains request.host -%}{%- assign external = true -%}{%- endunless -%}{%- endif -%}
+              <li><a href="{{ link.url }}"{% if external %} target="_blank" rel="noopener"{% endif %}>{{ link.title }}{% if external %} <span aria-hidden="true">↗</span>{% endif %}</a></li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+  <div class="page-width footer-bottom">
+    <span>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. {{ section.settings.legal }}</span>
+    {%- if section.settings.show_payment_icons -%}
+      <ul class="payment-icons">
+        {%- for type in shop.enabled_payment_types -%}
+          <li>{{ type | payment_type_svg_tag }}</li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "max_blocks": 5,
+  "settings": [
+    { "type": "textarea", "id": "about", "label": "About text", "default": "Personalised gifts, cards, clothing and print — designed by you, printed by us in the UK." },
+    { "type": "text", "id": "legal", "label": "Legal line", "default": "All rights reserved." },
+    { "type": "checkbox", "id": "show_payment_icons", "label": "Show payment icons", "default": true },
+    { "type": "header", "content": "Reviews, socials and trade" },
+    { "type": "text", "id": "reviews_text", "label": "Reviews link text", "default": "415 reviews – read what customers say" },
+    { "type": "text", "id": "reviews_url", "label": "Reviews link", "default": "/pages/reviews" },
+    { "type": "text", "id": "social_heading", "label": "Social heading", "default": "Follow Foxy" },
+    { "type": "paragraph", "content": "Social media links are set in Theme settings → Social media." },
+    { "type": "text", "id": "trade_label", "label": "Trade button text", "default": "Request a trade account" },
+    { "type": "text", "id": "trade_url", "label": "Trade button link", "default": "/pages/trade-accounts" }
+  ],
+  "blocks": [
+    { "type": "menu", "name": "Menu column", "settings": [
+      { "type": "text", "id": "heading", "label": "Heading" },
+      { "type": "link_list", "id": "menu", "label": "Menu", "default": "footer" } ] }
+  ]
+}
+{% endschema %}
