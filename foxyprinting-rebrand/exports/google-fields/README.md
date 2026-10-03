@@ -22,4 +22,4 @@ Of all products, 58,310 need at least one change. The other 62 have no category 
 2. Open those 3 products. Check that the title, price, variants, images and description are **unchanged**, and that the Google fields show the new values.
 3. If that looks right, import `01` to `04` the same way, one at a time.
 
-The files only hold Handle, the current Title (unchanged) and the 7 Google fields.
+The files only hold Handle and the 7 Google fields. There's no Title column, so titles fixed since the export (e.g. the signed prints) can't be overwritten.

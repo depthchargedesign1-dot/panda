@@ -63,9 +63,9 @@ if __name__ == "__main__":
             nogpc.append([p["handle"], p["title"], p.get("productType")])
         if diff:
             changed.update(diff)
-            rows.append([p["handle"], p["title"]] + [t[k] for k, _ in COLS])
+            rows.append([p["handle"]] + [t[k] for k, _ in COLS])
     os.makedirs(out, exist_ok=True)
-    head = ["Handle", "Title"] + [f"{n} (product.metafields.mm-google-shopping.{k})" for k, n in COLS]
+    head = ["Handle"] + [f"{n} (product.metafields.mm-google-shopping.{k})" for k, n in COLS]
     def write(name, part):
         with open(f"{out}/{name}", "w", newline="", encoding="utf-8") as f:
             w = csv.writer(f); w.writerow(head); w.writerows(part)
