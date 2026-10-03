@@ -132,6 +132,7 @@ Never call a printed reproduction "signed", "autographed", "hand-signed", "authe
 - Never edit the live theme directly. Make theme fixes on an unpublished copy: `themeDuplicate` the live theme, `themeFilesUpsert` to the copy, and re-read the files to confirm they saved. Then ask the owner to preview and publish the copy. The current working copy is "Foxy Pop 2026 – menu fix" (`gid://shopify/OnlineStoreTheme/189341303165`). Keep the repo's `foxyprinting-rebrand/theme/` in step with whatever is live.
 - Artwork sizes: `foxyprinting-rebrand/plan/artwork-specs.md`.
 - The owner prefers that routine commands for this project are run without asking.
+- **Tags and metafields** (owner's standing rule, 3 Oct 2026): when a product's tags or metafields (Google Shopping, `foxy.*`, SEO) are wrong, fix them straight away with `tagsAdd`/`tagsRemove`, `metafieldsSet` or `productUpdate`. There's no need to ask first. For thousands of products, where a CSV import is the only practical route, prepare the import files.
 
 ## Before launch: Google Merchant Center & Google Ads review (owner's request, 2 Oct 2026)
 When the owner says the new site is nearly ready (before publishing Foxy Pop or setting the new products Active), work through `foxyprinting-rebrand/plan/launch-checklist.md` with them. It covers what needs checking or updating in Google Merchant Center and Google Ads. Remind the owner of this when launch comes up.
