@@ -134,7 +134,7 @@ Never call a printed reproduction "signed", "autographed", "hand-signed", "authe
   - the "You might also like" row that always fills.
 
   The previous Foxy Pop (`189320528253`) and "NEW WAREHOUSE 2020" are in the library; don't change them.
-- Never edit the live theme directly. Make theme fixes on an unpublished copy: `themeDuplicate` the live theme, `themeFilesUpsert` to the copy, and re-read the files to confirm they saved. Then ask the owner to preview and publish the copy. There's no working copy at the moment, so duplicate the live theme when the next fix is needed. Keep the repo's `foxyprinting-rebrand/theme/` in step with whatever is live.
+- Never edit the live theme directly. Make theme fixes on an unpublished copy: `themeDuplicate` the live theme, `themeFilesUpsert` to the copy, and re-read the files to confirm they saved. Then ask the owner to preview and publish the copy. The current working copy is "Foxy Pop 2026 – related fix" (`gid://shopify/OnlineStoreTheme/189396713853`, made 4 Oct 2026). Keep the repo's `foxyprinting-rebrand/theme/` in step with whatever is live.
 - Artwork sizes: `foxyprinting-rebrand/plan/artwork-specs.md`.
 - The owner prefers that routine commands for this project are run without asking.
 - **Tags and metafields** (owner's standing rule, 3 Oct 2026): when a product's tags or metafields (Google Shopping, `foxy.*`, SEO) are wrong, fix them straight away with `tagsAdd`/`tagsRemove`, `metafieldsSet` or `productUpdate`. There's no need to ask first. For thousands of products, where a CSV import is the only practical route, prepare the import files.

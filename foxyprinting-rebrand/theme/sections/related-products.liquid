@@ -4,7 +4,7 @@
   2. Then asks Shopify's product recommendations (related products, learned from tags, collections and
      what customers buy together) and swaps those in when there are any.
   The row is always filled: if the product's own collections run short, it tops up from the top-up collection
-  (default Best sellers), then the whole catalogue. Never placeholder cards.
+  (default Best sellers), then the whole catalogue. Products without a photo are skipped, so there are never blank cards.
 {%- endcomment -%}
 {%- liquid
   assign limit = section.settings.limit
@@ -19,8 +19,12 @@
 {%- if recommendations.performed -%}
   {%- comment -%} Fetched by the script below with section_id + product_id. {%- endcomment -%}
   <div data-related-results>
-    {%- for rec in recommendations.products limit: limit -%}
+    {%- assign recs_shown = 0 -%}
+    {%- for rec in recommendations.products -%}
+      {%- if rec.featured_media == blank or rec.available == false -%}{%- continue -%}{%- endif -%}
       <li>{% render 'product-card', product: rec %}</li>
+      {%- assign recs_shown = recs_shown | plus: 1 -%}
+      {%- if recs_shown >= limit -%}{%- break -%}{%- endif -%}
     {%- endfor -%}
   </div>
 {%- elsif product -%}
@@ -42,7 +46,7 @@
       {%- if skip_list contains c.handle or c.products_count < 2 -%}{%- continue -%}{%- endif -%}
       {%- for p in c.products limit: 24 -%}
         {%- assign key = p.id | prepend: ',' | append: ',' -%}
-        {%- if seen contains key or p.available == false -%}{%- continue -%}{%- endif -%}
+        {%- if seen contains key or p.available == false or p.featured_media == blank -%}{%- continue -%}{%- endif -%}
         {%- assign seen = seen | append: key -%}
         {%- if source == nil -%}{%- assign source = c -%}{%- endif -%}
         <li>{% render 'product-card', product: p %}</li>
@@ -56,7 +60,7 @@
         {%- if pool == 1 -%}{%- assign extra = fallback.products -%}{%- else -%}{%- assign extra = collections.all.products -%}{%- endif -%}
         {%- for p in extra limit: 24 -%}
           {%- assign key = p.id | prepend: ',' | append: ',' -%}
-          {%- if seen contains key or p.available == false -%}{%- continue -%}{%- endif -%}
+          {%- if seen contains key or p.available == false or p.featured_media == blank -%}{%- continue -%}{%- endif -%}
           {%- assign seen = seen | append: key -%}
           <li>{% render 'product-card', product: p %}</li>
           {%- assign shown = shown | plus: 1 -%}
@@ -66,7 +70,7 @@
       {%- endfor -%}
     {%- endif -%}
   {%- endcapture -%}
-  <div class="section{{ tint }}" data-related-section data-shown="{{ shown }}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ limit }}&intent=related"{% if shown == 0 %} hidden{% endif %}>
+  <div class="section{{ tint }}" data-related-section data-shown="{{ shown }}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ limit | plus: 4 }}&intent=related"{% if shown == 0 %} hidden{% endif %}>
     <div class="page-width">
       <div class="section-heading">
         <div>
