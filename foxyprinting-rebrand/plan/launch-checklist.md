@@ -5,7 +5,7 @@ The owner asked (2 Oct 2026) that before the new Foxy Printing site goes live we
 ## Google Merchant Center (via the Shopify Google & YouTube channel)
 - [ ] **Feed sync:** new products (153 drafts + 70 photo gifts + football range) only sync once they're Active and published to the Google & YouTube channel. Check they appear and pass review.
 - [ ] **Diagnostics:** check for disapprovals and warnings (missing GTIN, image issues, price mismatch, landing page errors). The products are set as `custom_product = true`, so no GTIN should be needed.
-- [ ] **Age group and gender:** confirm the CSV import (`exports/google-age-gender/`) worked: gender is unisex and age group is kids or adult on all products.
+- [ ] **Google fields:** confirm the CSV import (`exports/google-fields/`, 3 Oct 2026) worked. Gender should be unisex, age group kids or adult, and the Google category, colour, condition, custom product and MPN (the new unique SKUs) set on all products.
 - [ ] **Google product categories:** spot-check that the `mm-google-shopping.google_product_category` values came through.
 - [ ] **Trademarks and policy:** look for disapprovals on products with third-party names (football clubs, celebrities, consoles, PerfectDraft, signed prints). Check the disclaimers show, and that the "Printed Signature / Reproduction Print" titles have been imported.
 - [ ] **Shipping and returns:** make sure the delivery settings and return policy match the site (e.g. "Free UK delivery over £30" in the announcement bar).
@@ -23,4 +23,4 @@ The owner asked (2 Oct 2026) that before the new Foxy Printing site goes live we
 ## Site checks to do at the same time
 - [ ] Publish the new collections, and hide the ones in `collection-tidy.md`.
 - [ ] Mega menu links all resolve (`foxy-mega-menu`).
-- [ ] Preview on mobile: https://foxyprinting.co.uk/?preview_theme_id=189320528253
+- [ ] Preview on mobile: the live theme is now "Foxy Pop 2026 – menu fix" (published 4 Oct 2026). Check it on mobile
