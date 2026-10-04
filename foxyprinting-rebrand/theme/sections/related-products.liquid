@@ -3,7 +3,8 @@
   1. Renders straight away with other products from the product's own collection (skipping catch-all collections).
   2. Then asks Shopify's product recommendations (related products, learned from tags, collections and
      what customers buy together) and swaps those in when there are any.
-  Nothing is shown if there are no matching products, so customers never see placeholder cards.
+  The row is always filled: if the product's own collections run short, it tops up from the top-up collection
+  (default Best sellers), then the whole catalogue. Never placeholder cards.
 {%- endcomment -%}
 {%- liquid
   assign limit = section.settings.limit
@@ -24,35 +25,54 @@
   </div>
 {%- elsif product -%}
   {%- liquid
-    assign source = nil
-    for c in product.collections
-      if skip_list contains c.handle
-        continue
-      endif
-      if c.products_count > 1
-        assign source = c
-        break
-      endif
-    endfor
+    comment
+      Always fill the row: other products from each of this product's own collections first (most specific
+      first, skipping catch-all collections), then the fallback collection, then the whole catalogue.
+    endcomment
     assign shown = 0
+    assign seen = product.id | prepend: ',' | append: ','
+    assign source = nil
+    assign fallback = section.settings.fallback_collection
+    if fallback == blank
+      assign fallback = collections['best-selling-products']
+    endif
   -%}
   {%- capture cards -%}
-    {%- if source -%}
-      {%- for p in source.products -%}
-        {%- if p.id == product.id or p.available == false -%}{%- continue -%}{%- endif -%}
+    {%- for c in product.collections -%}
+      {%- if skip_list contains c.handle or c.products_count < 2 -%}{%- continue -%}{%- endif -%}
+      {%- for p in c.products limit: 24 -%}
+        {%- assign key = p.id | prepend: ',' | append: ',' -%}
+        {%- if seen contains key or p.available == false -%}{%- continue -%}{%- endif -%}
+        {%- assign seen = seen | append: key -%}
+        {%- if source == nil -%}{%- assign source = c -%}{%- endif -%}
         <li>{% render 'product-card', product: p %}</li>
         {%- assign shown = shown | plus: 1 -%}
         {%- if shown >= limit -%}{%- break -%}{%- endif -%}
       {%- endfor -%}
+      {%- if shown >= limit -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if shown < limit -%}
+      {%- for pool in (1..2) -%}
+        {%- if pool == 1 -%}{%- assign extra = fallback.products -%}{%- else -%}{%- assign extra = collections.all.products -%}{%- endif -%}
+        {%- for p in extra limit: 24 -%}
+          {%- assign key = p.id | prepend: ',' | append: ',' -%}
+          {%- if seen contains key or p.available == false -%}{%- continue -%}{%- endif -%}
+          {%- assign seen = seen | append: key -%}
+          <li>{% render 'product-card', product: p %}</li>
+          {%- assign shown = shown | plus: 1 -%}
+          {%- if shown >= limit -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+        {%- if shown >= limit -%}{%- break -%}{%- endif -%}
+      {%- endfor -%}
     {%- endif -%}
   {%- endcapture -%}
-  <div class="section{{ tint }}" data-related-section data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ limit }}&intent=related"{% if shown == 0 %} hidden{% endif %}>
+  <div class="section{{ tint }}" data-related-section data-shown="{{ shown }}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ limit }}&intent=related"{% if shown == 0 %} hidden{% endif %}>
     <div class="page-width">
       <div class="section-heading">
         <div>
           <h2><span class="squiggle">{{ section.settings.heading }}</span></h2>
         </div>
-        {%- if shown > 0 -%}<a class="section-heading__link" href="{{ source.url }}" data-related-link>{{ 'general.view_all' | t }} →</a>{%- endif -%}
+        {%- if source -%}<a class="section-heading__link" href="{{ source.url }}" data-related-link>{{ 'general.view_all' | t }} →</a>{%- endif -%}
       </div>
       <ul class="product-grid" data-related-grid>{{ cards }}</ul>
     </div>
@@ -67,7 +87,9 @@
           if (!html) return;
           var doc = new DOMParser().parseFromString(html, 'text/html');
           var results = doc.querySelector('[data-related-results]');
-          if (!results || !results.querySelector('li')) return;
+          if (!results) return;
+          var recs = results.querySelectorAll('li').length;
+          if (!recs || recs < Math.min(+section.dataset.shown || 0, {{ limit }})) return;
           section.querySelector('[data-related-grid]').innerHTML = results.innerHTML;
           section.hidden = false;
           var link = section.querySelector('[data-related-link]');
@@ -84,7 +106,8 @@
   "settings": [
     { "type": "text", "id": "heading", "label": "Heading", "default": "You might also like" },
     { "type": "range", "id": "limit", "label": "Products", "min": 2, "max": 8, "step": 2, "default": 4 },
-    { "type": "checkbox", "id": "tinted", "label": "Tinted background", "default": true }
+    { "type": "checkbox", "id": "tinted", "label": "Tinted background", "default": true },
+    { "type": "collection", "id": "fallback_collection", "label": "Top-up collection", "info": "Used to fill the row when the product's own collections don't have enough. Defaults to Best sellers." }
   ],
   "presets": [{ "name": "Related products" }]
 }
