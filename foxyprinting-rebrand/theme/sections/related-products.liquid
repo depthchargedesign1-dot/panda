@@ -36,24 +36,25 @@
     endfor
     assign shown = 0
   -%}
-  <div class="section{{ tint }}" data-related-section data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ limit }}&intent=related"{% if source == nil %} hidden{% endif %}>
+  {%- capture cards -%}
+    {%- if source -%}
+      {%- for p in source.products -%}
+        {%- if p.id == product.id or p.available == false -%}{%- continue -%}{%- endif -%}
+        <li>{% render 'product-card', product: p %}</li>
+        {%- assign shown = shown | plus: 1 -%}
+        {%- if shown >= limit -%}{%- break -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endcapture -%}
+  <div class="section{{ tint }}" data-related-section data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ limit }}&intent=related"{% if shown == 0 %} hidden{% endif %}>
     <div class="page-width">
       <div class="section-heading">
         <div>
           <h2><span class="squiggle">{{ section.settings.heading }}</span></h2>
         </div>
-        {%- if source -%}<a class="section-heading__link" href="{{ source.url }}" data-related-link>{{ 'general.view_all' | t }} →</a>{%- endif -%}
+        {%- if shown > 0 -%}<a class="section-heading__link" href="{{ source.url }}" data-related-link>{{ 'general.view_all' | t }} →</a>{%- endif -%}
       </div>
-      <ul class="product-grid" data-related-grid>
-        {%- if source -%}
-          {%- for p in source.products -%}
-            {%- if p.id == product.id or p.available == false -%}{%- continue -%}{%- endif -%}
-            <li>{% render 'product-card', product: p %}</li>
-            {%- assign shown = shown | plus: 1 -%}
-            {%- if shown >= limit -%}{%- break -%}{%- endif -%}
-          {%- endfor -%}
-        {%- endif -%}
-      </ul>
+      <ul class="product-grid" data-related-grid>{{ cards }}</ul>
     </div>
   </div>
   <script>
