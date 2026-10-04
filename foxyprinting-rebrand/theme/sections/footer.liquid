@@ -4,6 +4,18 @@
     <div class="footer-col footer-brand">
       <span class="header-logo__text" style="color:#fff">Foxy<span>Printing</span></span>
       <p>{{ section.settings.about }}</p>
+      {%- if section.settings.show_contact -%}
+        {%- liquid
+          assign phone = section.settings.phone | default: shop.phone
+          assign email = section.settings.email | default: shop.email
+          assign tel = phone | remove: ' ' | remove: '-'
+        -%}
+        <ul class="footer-contact">
+          {%- if phone != blank -%}<li><span aria-hidden="true">📞</span> <a href="tel:{{ tel }}">{{ phone }}</a></li>{%- endif -%}
+          {%- if email != blank -%}<li><span aria-hidden="true">✉️</span> <a href="mailto:{{ email }}">{{ email }}</a></li>{%- endif -%}
+          {%- if section.settings.address != blank -%}<li><span aria-hidden="true">📍</span> <span>{{ section.settings.address | newline_to_br }}</span></li>{%- endif -%}
+        </ul>
+      {%- endif -%}
       {%- if section.settings.reviews_url != blank -%}
         <a class="footer-reviews" href="{{ section.settings.reviews_url }}">
           <span class="footer-reviews__stars" aria-hidden="true">{%- for i in (1..5) -%}{% render 'icon', name: 'star' %}{%- endfor -%}</span>
@@ -42,7 +54,7 @@
     {%- endfor -%}
   </div>
   <div class="page-width footer-bottom">
-    <span>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. {{ section.settings.legal }}</span>
+    <span>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. {{ section.settings.legal }}{% if section.settings.company_line != blank %} {{ section.settings.company_line }}{% endif %}</span>
     {%- if section.settings.show_payment_icons -%}
       <ul class="payment-icons">
         {%- for type in shop.enabled_payment_types -%}
@@ -53,6 +65,12 @@
   </div>
 </footer>
 
+{% stylesheet %}
+  .footer-contact { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 8px; font-size: .93rem; }
+  .footer-contact li { display: flex; gap: 8px; align-items: flex-start; opacity: .9; }
+  .footer-contact a { opacity: 1; font-weight: 700; }
+{% endstylesheet %}
+
 {% schema %}
 {
   "name": "Footer",
@@ -61,6 +79,12 @@
     { "type": "textarea", "id": "about", "label": "About text", "default": "Personalised gifts, cards, clothing and print — designed by you, printed by us in the UK." },
     { "type": "text", "id": "legal", "label": "Legal line", "default": "All rights reserved." },
     { "type": "checkbox", "id": "show_payment_icons", "label": "Show payment icons", "default": true },
+    { "type": "header", "content": "Contact details" },
+    { "type": "checkbox", "id": "show_contact", "label": "Show contact details", "default": true },
+    { "type": "text", "id": "phone", "label": "Phone", "default": "01439 771468", "info": "Leave blank to use the store phone number." },
+    { "type": "text", "id": "email", "label": "Email", "default": "sales@foxyprinting.co.uk", "info": "Leave blank to use the store email." },
+    { "type": "textarea", "id": "address", "label": "Address", "default": "Unit 1, Balmforth Business Park\nSawmill Lane, Helmsley\nYork YO62 5DQ" },
+    { "type": "text", "id": "company_line", "label": "Company line", "default": "Foxy Printing is a trading name of DepthChargeDesign & Print Ltd." },
     { "type": "header", "content": "Reviews, socials and trade" },
     { "type": "text", "id": "reviews_text", "label": "Reviews link text", "default": "415 reviews – read what customers say" },
     { "type": "text", "id": "reviews_url", "label": "Reviews link", "default": "/pages/reviews" },
