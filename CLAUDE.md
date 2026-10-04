@@ -128,8 +128,13 @@ The store uses the Shopify Google & YouTube channel namespace `mm-google-shoppin
 Never call a printed reproduction "signed", "autographed", "hand-signed", "authentic" or "memorabilia". Use **"Printed Signature"** and **"Reproduction Print"** in the title (see `foxyprinting-rebrand/tools/signed_titles.py`), and add the signed-print disclaimer: *"This is a printed reproduction. The signature is printed as part of the design – it is not hand-signed and is not an original autograph…"*
 
 ## Other house rules
-- **Foxy Pop is now the live theme** (`gid://shopify/OnlineStoreTheme/189320528253`, published by the owner on 2 Oct 2026). The old theme, "NEW WAREHOUSE 2020", is in the library; don't change it.
-- Never edit the live theme directly. Make theme fixes on an unpublished copy: `themeDuplicate` the live theme, `themeFilesUpsert` to the copy, and re-read the files to confirm they saved. Then ask the owner to preview and publish the copy. The current working copy is "Foxy Pop 2026 – menu fix" (`gid://shopify/OnlineStoreTheme/189341303165`). Keep the repo's `foxyprinting-rebrand/theme/` in step with whatever is live.
+- **"Foxy Pop 2026 – menu fix" is now the live theme** (`gid://shopify/OnlineStoreTheme/189341303165`, published by the owner on 4 Oct 2026). It includes:
+  - the mobile collection fix;
+  - the live preview switched off;
+  - the "You might also like" row that always fills.
+
+  The previous Foxy Pop (`189320528253`) and "NEW WAREHOUSE 2020" are in the library; don't change them.
+- Never edit the live theme directly. Make theme fixes on an unpublished copy: `themeDuplicate` the live theme, `themeFilesUpsert` to the copy, and re-read the files to confirm they saved. Then ask the owner to preview and publish the copy. There's no working copy at the moment, so duplicate the live theme when the next fix is needed. Keep the repo's `foxyprinting-rebrand/theme/` in step with whatever is live.
 - Artwork sizes: `foxyprinting-rebrand/plan/artwork-specs.md`.
 - The owner prefers that routine commands for this project are run without asking.
 - **Tags and metafields** (owner's standing rule, 3 Oct 2026): when a product's tags or metafields (Google Shopping, `foxy.*`, SEO) are wrong, fix them straight away with `tagsAdd`/`tagsRemove`, `metafieldsSet` or `productUpdate`. There's no need to ask first. For thousands of products, where a CSV import is the only practical route, prepare the import files.
