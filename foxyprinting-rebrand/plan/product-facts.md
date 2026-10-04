@@ -274,7 +274,7 @@ Owner confirmed they can make: sublimation metal pub and bar signs, rubber-backe
 
 ## Posters & prints: standard sizes and frames (from the live poster listings, 2 Oct 2026)
 - **Print only:** A4 £4.99, A3 £8.99, A2 £12.99, A1 £19.99, A0 £24.99.
-- **Framed:** A4 + Black, Silver, Gold or White frame £14.99; A3 + Black, Silver, Gold or White frame £19.99.
+- **Framed (owner, 4 Oct 2026):** A4 + Black, Silver, Gold or White frame £19.99; A3 + Black, Silver, Gold or White frame £24.99. (Was £14.99 / £19.99.)
 - **Paper stock, finish, frame material and glazing:** **ASK**.
 - **Celebrity and athlete posters:** "unofficial", with the celebrity disclaimer (sports disclaimer for athletes and clubs). Never "signed" or "autographed" unless it's a Printed Signature reproduction (see signed-prints rule).
 - **Google category:** `Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork`. **age_group:** `adult`.
