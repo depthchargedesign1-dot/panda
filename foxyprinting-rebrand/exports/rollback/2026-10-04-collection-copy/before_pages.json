@@ -1,0 +1,254 @@
+[
+ {
+  "id": "gid://shopify/Page/248694152",
+  "handle": "contact-us",
+  "title": "Contact Foxy Printing",
+  "body": "<h2>Contact Foxy Printing</h2><p>Need help with an order, personalisation request or product question? Contact our UK print team and include your order number where applicable.</p><h3>Email</h3><p><a href=\"mailto:sales@foxyprinting.co.uk\">sales@foxyprinting.co.uk</a></p><h3>Telephone</h3><p><a href=\"tel:+441439771468\">01439 771468</a></p><h3>Before contacting us</h3><ul>\n<li>For an existing order, include the order number and email address used at checkout.</li>\n<li>For personalised artwork, state the product, required wording and deadline.</li>\n<li>For damaged or incorrect items, attach clear photographs of the product and packaging.</li>\n</ul><p>Personalisation details should not be sent through social-media comments because they can be missed. Email is the safest route for order-specific information.</p>",
+  "bodySummary": "Contact Foxy PrintingNeed help with an order, personalisation request or product question? Contact our UK print team and include your order number ...",
+  "templateSuffix": "contact",
+  "isPublished": true,
+  "publishedAt": "2017-02-10T15:26:00Z",
+  "updatedAt": "2026-08-20T11:34:41Z",
+  "t": {
+   "id": "gid://shopify/Metafield/200917404909949",
+   "value": "Contact Foxy Printing | Order & Product Help",
+   "type": "single_line_text_field"
+  },
+  "d": {
+   "id": "gid://shopify/Metafield/200917404942717",
+   "value": "Contact Foxy Printing about orders, personalised artwork, delivery or product questions. Call 01439 771468 or email sales@foxyprinting.co.uk.",
+   "type": "single_line_text_field"
+  }
+ },
+ {
+  "id": "gid://shopify/Page/248694280",
+  "handle": "delivery-times-charges",
+  "title": "Delivery Times & Charges",
+  "body": "<h2>Production and delivery information</h2><p>Most Foxy Printing products are made or personalised to order. Production time depends on the product, quantity, personalisation and seasonal demand.</p><h3>Dispatch estimates</h3><p>Check the product page and checkout for the delivery services available for your order. Orders containing several product types may be dispatched together when every item is ready.</p><h3>Personalised orders</h3><p>Production cannot begin until all required names, ages, photographs or wording have been supplied clearly. Missing information may delay dispatch.</p><h3>Weekends and bank holidays</h3><p>Orders placed late on Friday, during a weekend or on a bank holiday may not enter production until the next working day.</p><h3>Delivery upgrades</h3><p>Where upgraded delivery is available, it changes the carrier service after dispatch; it does not necessarily shorten the time required to manufacture a personalised item.</p><h3>Need an order update?</h3><p>Email <a href=\"mailto:sales@foxyprinting.co.uk\">sales@foxyprinting.co.uk</a> or call <a href=\"tel:+441439771468\">01439 771468</a>. Include your order number.</p>",
+  "bodySummary": "Production and delivery informationMost Foxy Printing products are made or personalised to order. Production time depends on the product, quantity,...",
+  "templateSuffix": "",
+  "isPublished": true,
+  "publishedAt": "2017-02-10T15:26:00Z",
+  "updatedAt": "2026-08-20T11:34:41Z",
+  "t": {
+   "id": "gid://shopify/Metafield/200917405598077",
+   "value": "Delivery Times & Charges | Foxy Printing UK",
+   "type": "single_line_text_field"
+  },
+  "d": {
+   "id": "gid://shopify/Metafield/200917405630845",
+   "value": "Read Foxy Printing production, dispatch and delivery information for personalised gifts, including weekends, artwork requirements and delivery upgrades.",
+   "type": "single_line_text_field"
+  }
+ },
+ {
+  "id": "gid://shopify/Page/249063496",
+  "handle": "about-us",
+  "title": "About Foxy Printing",
+  "body": "<h2>Personalised printing from a UK production team</h2><p>Foxy Printing creates personalised gifts, party products, mugs, cards, posters, face masks, stickers and printed merchandise for customers throughout the UK.</p><p>The store is operated by an experienced commercial print team producing custom products for birthdays, celebrations, supporters, businesses and events. Many items are designed, printed and finished in-house, allowing us to offer a large catalogue alongside made-to-order personalisation.</p><h3>What we produce</h3><ul>\n<li>Personalised mugs, cards and gifts</li>\n<li>Party face masks and custom photo products</li>\n<li>Posters, artwork and supporter gifts</li>\n<li>Printed clothing, stickers and event merchandise</li>\n</ul><h3>Our approach</h3><p>We focus on clear personalisation, practical pricing and secure packaging. Because personalised products depend on the information supplied, customers should check names, ages, dates and spellings carefully before submitting an order.</p><p>Questions about an order or custom request can be sent to <a href=\"mailto:sales@foxyprinting.co.uk\">sales@foxyprinting.co.uk</a>.</p>",
+  "bodySummary": "Personalised printing from a UK production teamFoxy Printing creates personalised gifts, party products, mugs, cards, posters, face masks, stickers...",
+  "templateSuffix": "",
+  "isPublished": true,
+  "publishedAt": "2017-02-21T10:55:00Z",
+  "updatedAt": "2026-08-20T11:34:41Z",
+  "t": {
+   "id": "gid://shopify/Metafield/200917405270397",
+   "value": "About Foxy Printing | Personalised Printing UK",
+   "type": "single_line_text_field"
+  },
+  "d": {
+   "id": "gid://shopify/Metafield/200917405303165",
+   "value": "Learn about Foxy Printing, our UK production team and our range of personalised mugs, cards, gifts, party masks, posters and printed merchandise.",
+   "type": "single_line_text_field"
+  }
+ },
+ {
+  "id": "gid://shopify/Page/249063688",
+  "handle": "faqs",
+  "title": "Frequently Asked Questions",
+  "body": "<h2>Frequently Asked Questions</h2><h3>How do I supply personalisation?</h3><p>Enter the requested name, age, wording or other details using the option shown on the product page. If no box is available, follow the instructions in the listing or email us immediately after ordering.</p><h3>Should I check spelling?</h3><p>Yes. Personalised items are normally produced using the information supplied with the order. Check all names, dates, ages and messages before submitting payment.</p><h3>Can I upload a photograph?</h3><p>For photo products, use a clear, high-resolution, front-facing image. Avoid screenshots, heavily cropped faces, strong shadows and blurred images.</p><h3>How quickly will my order be dispatched?</h3><p>Production times vary by product and season. Any estimated dispatch information shown on the product page or at checkout should be treated as the guide for that order.</p><h3>Can I change an order after placing it?</h3><p>Contact us immediately. If production has already started, changes to a personalised item may not be possible.</p><h3>What if my item arrives damaged or incorrect?</h3><p>Email <a href=\"mailto:sales@foxyprinting.co.uk\">sales@foxyprinting.co.uk</a> with your order number and clear photographs of the product and packaging so the issue can be reviewed.</p><h3>Can personalised products be returned?</h3><p>Change-of-mind cancellation rights normally do not apply to goods made to a customer’s specification or clearly personalised. This does not affect your rights if an item is faulty, damaged or not as described. See our Returns and Refund Policy for details.</p>",
+  "bodySummary": "Frequently Asked QuestionsHow do I supply personalisation?Enter the requested name, age, wording or other details using the option shown on the pro...",
+  "templateSuffix": "faq",
+  "isPublished": true,
+  "publishedAt": "2017-02-21T11:16:00Z",
+  "updatedAt": "2026-08-20T11:34:41Z",
+  "t": {
+   "id": "gid://shopify/Metafield/200917405401469",
+   "value": "Foxy Printing FAQs | Orders, Delivery & Personalisation",
+   "type": "single_line_text_field"
+  },
+  "d": {
+   "id": "gid://shopify/Metafield/200917405434237",
+   "value": "Answers about Foxy Printing orders, personalised artwork, photo uploads, production times, damaged items, changes, returns and delivery.",
+   "type": "single_line_text_field"
+  }
+ },
+ {
+  "id": "gid://shopify/Page/249137352",
+  "handle": "staff",
+  "title": "Staff",
+  "body": "",
+  "bodySummary": "",
+  "templateSuffix": "about",
+  "isPublished": false,
+  "publishedAt": null,
+  "updatedAt": "2026-08-20T11:36:26Z",
+  "t": null,
+  "d": null
+ },
+ {
+  "id": "gid://shopify/Page/251036872",
+  "handle": "celebrity-facemasks",
+  "title": "Celebrity Facemasks",
+  "body": "",
+  "bodySummary": "",
+  "templateSuffix": "about",
+  "isPublished": false,
+  "publishedAt": null,
+  "updatedAt": "2026-08-20T11:36:26Z",
+  "t": null,
+  "d": null
+ },
+ {
+  "id": "gid://shopify/Page/251393608",
+  "handle": "personalised-cards-page",
+  "title": "Personalised Cards Page",
+  "body": "<p style=\"text-align: left;\"><img src=\"//cdn.shopify.com/s/files/1/1774/9115/files/pokemon-cards.jpg?v=1492630167\" alt=\"\"> <img src=\"//cdn.shopify.com/s/files/1/1774/9115/files/movie-cards.jpg?v=1492630162\" alt=\"\"> <img src=\"//cdn.shopify.com/s/files/1/1774/9115/files/gaming-cards.jpg?v=1492630149\" alt=\"\"></p>\r\n<p style=\"text-align: left;\"><img alt=\"\" src=\"//cdn.shopify.com/s/files/1/1774/9115/files/PERSONALISED-ADULT-BOX-840.jpg?v=1492623709\"></p>\r\n<p style=\"text-align: left;\"><img src=\"//cdn.shopify.com/s/files/1/1774/9115/files/kids-cards.jpg?v=1492630153\" alt=\"\"> <img src=\"//cdn.shopify.com/s/files/1/1774/9115/files/funny-cards.jpg?v=1492630341\" alt=\"\"> <img src=\"//cdn.shopify.com/s/files/1/1774/9115/files/kids-cards-2_large.jpg?v=1492630156\" alt=\"\"></p>",
+  "bodySummary": "",
+  "templateSuffix": "",
+  "isPublished": true,
+  "publishedAt": "2017-04-19T17:01:00Z",
+  "updatedAt": "2017-04-19T19:32:32Z",
+  "t": null,
+  "d": null
+ },
+ {
+  "id": "gid://shopify/Page/251899656",
+  "handle": "upload",
+  "title": "Upload",
+  "body": "<div id=\"regFormContainer\" class=\"bar-colors-borders\">\r\n<form method=\"post\" enctype=\"multipart/form-data\" onsubmit=\"return validateUploadFile();\" action=\"uploadImages.php\">\r\n<p><input type=\"hidden\" name=\"MAX_FILE_SIZE\" value=\"100000\"></p>\r\n<div class=\"uploadFileprompt\">\r\n<div class=\"span_left\">File 1 to upload - Max. 100kb</div>\r\n<div class=\"span_right\"><input type=\"file\" name=\"txtUploadFile[]\"></div>\r\n</div>\r\n<div class=\"uploadFileprompt\">\r\n<div class=\"span_left\">File 2 to upload - Max. 100kb</div>\r\n<div class=\"span_right\"><input type=\"file\" name=\"txtUploadFile[]\"></div>\r\n</div>\r\n</form>\r\n</div>",
+  "bodySummary": "File 1 to upload - Max. 100kb File 2 to upload - Max. 100kb",
+  "templateSuffix": "",
+  "isPublished": false,
+  "publishedAt": null,
+  "updatedAt": "2026-08-20T11:36:26Z",
+  "t": null,
+  "d": null
+ },
+ {
+  "id": "gid://shopify/Page/253786312",
+  "handle": "facemasks",
+  "title": "Facemasks",
+  "body": "<a href=\"https://www.foxyprinting.co.uk/collections/film-movie-celebrities\"><img src=\"//cdn.shopify.com/s/files/1/1774/9115/files/tv_celebs_large.jpg?v=1497352826\" alt=\"\"><img src=\"//cdn.shopify.com/s/files/1/1774/9115/files/movies_large.jpg?v=1497354490\" alt=\"\"></a><img src=\"//cdn.shopify.com/s/files/1/1774/9115/files/Sports_Celebs_1_large.jpg?v=1497354314\" alt=\"\"><a href=\"https://www.foxyprinting.co.uk/collections/sport-celebrities\"><img src=\"//cdn.shopify.com/s/files/1/1774/9115/files/politicians_and_royals_728e5b71-7d88-4fe4-838a-0dafa2667cd0_large.jpg?v=1497354211\" alt=\"\"></a>",
+  "bodySummary": "",
+  "templateSuffix": "",
+  "isPublished": true,
+  "publishedAt": "2017-06-13T11:20:00Z",
+  "updatedAt": "2017-06-13T11:48:15Z",
+  "t": null,
+  "d": null
+ },
+ {
+  "id": "gid://shopify/Page/253974216",
+  "handle": "foxy-product-uploading-in-bulk",
+  "title": "Foxy Product Uploading In Bulk",
+  "body": "<div style=\"text-align: center;\">[powr-form-builder id=2c2b0504_1497608872] </div>",
+  "bodySummary": "[powr-form-builder id=2c2b0504_1497608872]",
+  "templateSuffix": "",
+  "isPublished": false,
+  "publishedAt": null,
+  "updatedAt": "2026-08-20T11:36:26Z",
+  "t": null,
+  "d": {
+   "id": "gid://shopify/Metafield/33427854216",
+   "value": "We'll upload all your products, images and content to WooCommerce so you can sell on Wordpress. We offer a quick bulk product uploading service for many platforms. Get in touch and receive your quote!",
+   "type": "string"
+  }
+ },
+ {
+  "id": "gid://shopify/Page/253975304",
+  "handle": "web-design",
+  "title": "Web Design",
+  "body": "<div style=\"text-align: center;\">[powr-form-builder id=5015f895_1497610657]</div>",
+  "bodySummary": "[powr-form-builder id=5015f895_1497610657]",
+  "templateSuffix": "",
+  "isPublished": false,
+  "publishedAt": null,
+  "updatedAt": "2026-08-20T11:36:27Z",
+  "t": null,
+  "d": null
+ },
+ {
+  "id": "gid://shopify/Page/255355720",
+  "handle": "no-products",
+  "title": "No Products",
+  "body": "<h1>Sorry, there is currently no products in this category. Please come back soon! </h1>",
+  "bodySummary": "Sorry, there is currently no products in this category. Please come back soon!",
+  "templateSuffix": "",
+  "isPublished": false,
+  "publishedAt": null,
+  "updatedAt": "2026-08-20T11:36:27Z",
+  "t": null,
+  "d": null
+ },
+ {
+  "id": "gid://shopify/Page/47802024011",
+  "handle": "returns-refund-policy",
+  "title": "Returns, Refunds & Cancellations",
+  "body": "<h2>Returns, refunds and cancellations</h2><p>We want orders to arrive correctly and in good condition. This policy explains how to report a problem, cancel an eligible order or request a return.</p><h3>Faulty, damaged or incorrect items</h3><p>If an item arrives faulty, damaged, incorrect or not as described, contact <a href=\"mailto:sales@foxyprinting.co.uk\">sales@foxyprinting.co.uk</a> with your order number and clear photographs of the product and packaging. Your statutory rights are not affected by this policy.</p><h3>Personalised and custom-made products</h3><p>Change-of-mind cancellation rights normally do not apply to goods made to your specification or clearly personalised. This includes products printed with a supplied name, age, photograph, message, logo or other custom detail. This exception does not remove your rights where goods are faulty, damaged, incorrect or not as described.</p><h3>Non-personalised products</h3><p>For eligible non-personalised goods bought online, tell us within 14 days of receiving the item if you wish to cancel. You then have a further 14 days to return it. Unless the item is faulty or we agree otherwise, you are responsible for the direct cost of returning a change-of-mind item.</p><p>Goods may be inspected as they would be in a shop, but we may make a lawful deduction where handling has reduced their value.</p><h3>Refund timing</h3><p>Eligible refunds will be processed within 14 days of receiving the returned goods or receiving evidence that they were sent back, whichever applies first. Refunds are made to the original payment method. For an eligible cancellation, the basic outbound delivery charge is refunded; any additional cost chosen for an enhanced delivery service is not normally refundable.</p><h3>Before returning anything</h3><p>Contact us first so the return can be identified and the correct instructions supplied. Do not send an item without including the order details.</p><h3>Contact</h3><p>Email <a href=\"mailto:sales@foxyprinting.co.uk\">sales@foxyprinting.co.uk</a> or call <a href=\"tel:+441439771468\">01439 771468</a>.</p>",
+  "bodySummary": "Returns, refunds and cancellationsWe want orders to arrive correctly and in good condition. This policy explains how to report a problem, cancel an...",
+  "templateSuffix": "",
+  "isPublished": true,
+  "publishedAt": "2019-12-03T18:35:35Z",
+  "updatedAt": "2026-08-20T11:34:41Z",
+  "t": {
+   "id": "gid://shopify/Metafield/200917405761917",
+   "value": "Returns, Refunds & Cancellations | Foxy Printing",
+   "type": "single_line_text_field"
+  },
+  "d": {
+   "id": "gid://shopify/Metafield/200917405794685",
+   "value": "Read Foxy Printing’s returns, refunds and cancellation policy for personalised and non-personalised products, including damaged or incorrect orders.",
+   "type": "single_line_text_field"
+  }
+ },
+ {
+  "id": "gid://shopify/Page/699668758909",
+  "handle": "trade-accounts",
+  "title": "Trade Accounts & Designer Programme",
+  "body": "<p>Are you a printer, a crafter, a small business or a designer? Foxy Printing has been printing personalised gifts in our North Yorkshire workshop for years, and we'd love to work with you. There are two ways to join us.</p>\n<h2>Trade accounts for printers, crafters and businesses</h2>\n<p>Open a trade account to buy printing and print-ready supplies at trade prices for your own business. It's ideal if you:</p>\n<ul>\n<li>run a print, craft or gift business and need DTF or UV DTF transfers, stickers and labels printed for you;</li>\n<li>want your own designs printed on mugs, glassware, clothing, cushions and more, unbranded and ready to sell;</li>\n<li>order business printing regularly, such as business cards, flyers, labels and signs.</li>\n</ul>\n<p>Once your account is approved, we'll set up trade pricing on your customer account and talk you through artwork set-up and turnaround times.</p>\n<h2 id=\"designers\">Designer programme: sell your designs on Foxy Printing</h2>\n<p>If you create original artwork, slogans or illustrations, we can turn them into products on foxyprinting.co.uk. We print, pack and post every order, handle the customer service, and pay you a commission on every sale of your designs.</p>\n<ul>\n<li>Send us a few examples of your work using the form below.</li>\n<li>We'll pick the designs and products that suit them, and agree the commission with you before anything goes live.</li>\n<li>Your designs are credited to you on the product page and in your own designer collection.</li>\n<li>You get a sales report and commission payment every month.</li>\n</ul>\n<p>Please send only artwork that you created and own. We can't accept designs that use someone else's characters, logos, brand names or photos.</p>\n<h2>Apply</h2>\n<p>Fill in the form below and we'll be in touch within a few working days. If you'd rather talk first, call us on 01439 771468.</p>",
+  "bodySummary": "Are you a printer, a crafter, a small business or a designer? Foxy Printing has been printing personalised gifts in our North Yorkshire workshop fo...",
+  "templateSuffix": "trade",
+  "isPublished": true,
+  "publishedAt": "2026-10-02T13:01:04Z",
+  "updatedAt": "2026-10-02T13:01:04Z",
+  "t": null,
+  "d": null
+ },
+ {
+  "id": "gid://shopify/Page/699668791677",
+  "handle": "reviews",
+  "title": "Customer Reviews",
+  "body": "<p>We've printed thousands of personalised gifts, cards and prints, and we read every review. Here's what our customers say about Foxy Printing.</p>",
+  "bodySummary": "We've printed thousands of personalised gifts, cards and prints, and we read every review. Here's what our customers say about Foxy Printing.",
+  "templateSuffix": "reviews",
+  "isPublished": true,
+  "publishedAt": "2026-10-02T13:01:05Z",
+  "updatedAt": "2026-10-02T13:01:05Z",
+  "t": null,
+  "d": null
+ },
+ {
+  "id": "gid://shopify/Page/699669021053",
+  "handle": "size-guide-adult-t-shirt",
+  "title": "Adult T-Shirt Size Guide",
+  "body": "<p>Our adult personalised T-shirts are printed on the AWDis 150 T, a relaxed-fit unisex tee in 150gsm cotton. Use the measurements below to choose your size. If you're between sizes, go up a size for a looser fit.</p>\n<table class=\"size-guide\">\n<thead><tr>\n<th>Size</th>\n<th>Chest (pit to pit)</th>\n<th>Body length</th>\n<th>Sleeve length</th>\n</tr></thead>\n<tbody>\n<tr>\n<td><strong>S</strong></td>\n<td>48 cm / 18.9\"</td>\n<td>71 cm / 28.0\"</td>\n<td>22 cm / 8.7\"</td>\n</tr>\n<tr>\n<td><strong>M</strong></td>\n<td>52 cm / 20.5\"</td>\n<td>73 cm / 28.7\"</td>\n<td>23 cm / 9.1\"</td>\n</tr>\n<tr>\n<td><strong>L</strong></td>\n<td>56 cm / 22.0\"</td>\n<td>75 cm / 29.5\"</td>\n<td>24 cm / 9.4\"</td>\n</tr>\n<tr>\n<td><strong>XL</strong></td>\n<td>60 cm / 23.6\"</td>\n<td>77 cm / 30.3\"</td>\n<td>25 cm / 9.8\"</td>\n</tr>\n<tr>\n<td><strong>2XL</strong></td>\n<td>65 cm / 25.6\"</td>\n<td>79 cm / 31.1\"</td>\n<td>26 cm / 10.2\"</td>\n</tr>\n<tr>\n<td><strong>3XL</strong></td>\n<td>70 cm / 27.6\"</td>\n<td>82 cm / 32.3\"</td>\n<td>27 cm / 10.6\"</td>\n</tr>\n<tr>\n<td><strong>4XL</strong></td>\n<td>75 cm / 29.5\"</td>\n<td>85 cm / 33.5\"</td>\n<td>27 cm / 10.6\"</td>\n</tr>\n<tr>\n<td><strong>5XL</strong></td>\n<td>80 cm / 31.5\"</td>\n<td>88 cm / 34.6\"</td>\n<td>27 cm / 10.6\"</td>\n</tr>\n</tbody>\n</table>\n<h3>How to measure</h3>\n<ul>\n<li>\n<strong>Chest:</strong> lay a T-shirt that fits you well flat and measure straight across from armpit to armpit.</li>\n<li>\n<strong>Body length:</strong> measure from the highest point of the shoulder, next to the collar, down to the hem.</li>\n<li>\n<strong>Sleeve length:</strong> measure from the shoulder seam to the end of the sleeve.</li>\n</ul>\n<p>All measurements are approximate, give or take 2 cm. Unsure? Call us on 01439 771468 and we'll help you pick.</p>",
+  "bodySummary": "Our adult personalised T-shirts are printed on the AWDis 150 T, a relaxed-fit unisex tee in 150gsm cotton. Use the measurements below to choose you...",
+  "templateSuffix": null,
+  "isPublished": true,
+  "publishedAt": "2026-10-02T13:15:00Z",
+  "updatedAt": "2026-10-02T13:15:00Z",
+  "t": null,
+  "d": null
+ }
+]
