@@ -44,6 +44,7 @@ CONSOLES = [
     ("lynx", r"lynx", r"lynx", "Atari Lynx", "Atari Lynx", "Atari"),
     ("a7800", r"7800", r"7800", "Atari 7800", "Atari 7800", "Atari"),
     ("a5200", r"5200", r"5200", "Atari 5200", "Atari 5200", "Atari"),
+    ("axe", r"atari\s*xe", r"atari xe", "Atari XE", "Atari XE", "Atari"),
     ("a2600", r"2600", r"2600", "Atari 2600", "Atari 2600", "Atari"),
     ("intellivision", r"intellivis", r"intellivis", "Intellivision", "Intellivision", None),
     ("neogeo", r"neo\s*geo", r"neo\s*geo", "Neo Geo", "Neo Geo", "SNK"),
@@ -55,7 +56,15 @@ DISCLAIMER_MAKER = {"Nintendo": "Nintendo", "Sega": "Sega", "Sony": "Sony", "Ata
 
 
 def detect_console(title, ptype):
+    # the console named just before "Inspired"/"GAME INSPIRED" wins; otherwise the first one in the title
+    cut = CUT.search(title) if title else None
+    head = title[: cut.start()] if cut else title
     hits = []
+    for i, (key, tre, pre, short, long_, maker) in enumerate(CONSOLES):
+        for m in re.finditer(tre, head, re.I):
+            hits.append((-m.start(), i, (key, short, long_, maker)))
+    if hits:
+        return min(hits)[2]
     for i, (key, tre, pre, short, long_, maker) in enumerate(CONSOLES):
         m = re.search(tre, title, re.I)
         if m:
@@ -68,18 +77,20 @@ def detect_console(title, ptype):
     return None
 
 
+
 # ---------- game name ----------
 CUT = re.compile(
     r"\s+-\s+|\s*\bGAME\s+INSPIRED\b|\s*\bGame\s+Style\s+Inspired\b|\s*\bGame\s+Inspired\b|\s*\bInspired\b|"
     r"\s*\bRetro\s+Gam(?:e|ing)\b|\s*\bGaming\s+Poster\b|\s*\bA4\s+A3\b|\s*\bA2\s+A3\b|\s*\bPoster\s+Art\b|\s*\bRetro\s+Poster\b", re.I)
 CONSOLE_WORDS = (r"Super\s+Nintendo|Nintendo\s+NES|Nintendo|S?NES|Sega\s+Mega\s*drive|Sega\s+Master\s+System|Master\s*System|Mega\s*drive|"
                  r"Sega\s+Saturn|Saturn|Sega\s+Dreamcast|Dreamcast|Sega|Mega\s*CD|PS[1-4]|Playstation\s*\d?|Game\s*cube|Game\s*boy|"
-                 r"Atari\s*\d{4}|Atari|Jaguar\s*CD|Jaguar|Lynx|Neo\s*Geo|Intellivis(?:i)?on|Amiga\s*CD\s*32|CD32|32X|Odd?ess?y|Coleco")
+                 r"Atari\s*\d{4}|Atari\s*XE|Atari|Jaguar\s*CD|Jaguar|Lynx|Neo\s*Geo|Intellivis(?:i)?on|Amiga\s*CD\s*32|CD32|32X|Od+[ey]ss?[ey]y(?:\s*2)?|Coleco|Atari\s*XE")
 TRAIL = re.compile(r"(?:[\s_]+(?:" + CONSOLE_WORDS + r"))+\s*$", re.I)
-LEAD = re.compile(r"^(?:(?:Intellivis(?:i)?on|Sega\s+Saturn|SNES)\s+)+", re.I)
-REGION = re.compile(r"(?:[\s_]+(?:pal|eu|euro|gb|none|ca|au|aus|us|usa|jp|jap|jpn|de|fr|ger|germ|ntsc|uk|pc|e|u|j|0))+\s*$", re.I)
+TRAIL_NO_ODY = re.compile(r"(?:[\s_]+(?:" + CONSOLE_WORDS.replace("|Od+[ey]ss?[ey]y(?:\\s*2)?", "") + r"))+\s*$", re.I)
+LEAD = re.compile(r"^(?:(?:Intellivis(?:i)?on|Sega\s+Saturn|Sega\s+32x|Odyssey\s*2|SNES)\s+)+", re.I)
+REGION = re.compile(r"(?:[\s_]+(?:pal|eu|euro|gb|none|ca|br|au|aus|us|usa|jp|jap|jpn|de|fr|ger|germ|ntsc|uk|pc|e|u|j|0))+\s*$", re.I)
 ACRONYMS = {"wwf", "wwe", "wcw", "nba", "nfl", "nhl", "fifa", "pga", "usa", "uk", "ufc", "tmnt", "gp", "f1", "f-1", "rbi", "nhra",
-            "ii", "iii", "iv", "vi", "vii", "viii", "ix", "xi", "3d", "2d", "dx", "ex", "gt", "rc", "wc", "mlb", "tv", "ufo", "et", "x-men",
+            "ii", "iii", "iv", "vi", "vii", "vi", "xe", "viii", "ix", "xi", "3d", "2d", "dx", "ex", "gt", "rc", "wc", "mlb", "tv", "ufo", "et", "x-men",
             "ncaa", "ea", "snk", "ok", "kof", "pba", "lsd", "dbz", "3ds", "hd", "bmx", "atv", "cd", "sos", "vmu", "rpg", "stg", "nba", "ii"}
 SMALL = {"of", "the", "and", "in", "on", "a", "an", "to", "for", "at", "vs", "or", "with", "from", "by"}
 fallback_log = []
@@ -104,31 +115,37 @@ def fix_word(w, first):
     return w
 
 
-def parse_game(title):
+def parse_game(title, odyssey=True, lead=True):
+    trail = TRAIL if odyssey else TRAIL_NO_ODY
     t = title.replace("_", " ").replace("’", "'")
     m = CUT.search(t)
     name = t[: m.start()] if m else t
     name = re.sub(r"\s+", " ", name).strip(" -–|,")
     name = re.sub(r"\(\d+\)", "", name).strip()
     for _ in range(3):
-        name = TRAIL.sub("", name).strip(" -–|,")
+        name = trail.sub("", name).strip(" -–|,")
         name = REGION.sub("", name).strip(" -–|,")
-    name = LEAD.sub("", name).strip(" -–|,")
+    if lead:
+        name = LEAD.sub("", name).strip(" -–|,")
     name = re.sub(r"\bpal\b|\(\d+\)", "", name, flags=re.I)
     name = re.sub(r"(\d)-in-(\d)", r"\1 in \2", name, flags=re.I)
     name = re.sub(r"(?<=[a-z])cd$", " CD", name)
     name = re.sub(r",\s*the$", "", name, flags=re.I)
     name = re.sub(r"'S\b", "'s", name)
+    name = re.sub(r"\b(?:official|licensed|authentic|genuine|approved|endorsed)\b", "", name, flags=re.I)
+    name = re.sub(r"\s+", " ", name).strip()
     name = re.sub(r"\bXmen\b", "X-Men", name, flags=re.I)
     name = re.sub(r"\bL And\b", "Land", name)
     name = re.sub(r"(?<=[a-z])(\d)", r" \1", name)            # Sonic3 -> Sonic 3
     name = re.sub(r"\s+-\s*|\s*-\s+", " ", name)               # stray hyphens
     name = re.sub(r"\s+", " ", name).strip(" -–|,")
     words = name.split(" ")
+    if len(words) == 1 and re.fullmatch(r"[A-Z]{2,4}", name):
+        return name
     name = " ".join(fix_word(w, i == 0) for i, w in enumerate(words) if w)
     name = re.sub(r"\bIi\b", "II", name)
     bad = (not name or len(name) < 2 or (len(name) <= 2 and not re.search(r"\d", name)) or re.search(r"request|any game|poster", name, re.I)
-           or not re.search(r"[A-Za-z]", name))
+           or not re.search(r"[A-Za-z]|^\d{3,4}$", name))
     return (None if bad else name)
 
 
@@ -182,6 +199,18 @@ META = [
     "Brighten up a game room with this fan-made {g} retro gaming poster. Printed to order, sent flat in a hard-backed envelope. A fun gift for any gamer.",
     "Fan-made {g} poster for retro gamers and collectors. Printed to order in our North Yorkshire workshop and posted flat in a hard-backed envelope.",
 ]
+META_MV = [
+    "Fan-made {g} retro gaming poster, printed to order in our North Yorkshire workshop. Choose a print from A4 to A0, or a framed A4 or A3 poster.",
+    "Relive the classic {g} with this fan-made retro gaming poster. Printed to order in North Yorkshire in sizes A4 to A0, with framed options too.",
+    "A {g} retro gaming poster for game rooms, man caves and collectors. Printed to order from A4 to A0, or framed in A4 or A3. A great gamer gift.",
+    "Add {g} to your gaming wall with this fan-made retro poster. Printed to order in sizes A4 to A0, or ready framed in A4 or A3.",
+]
+META_MV_SHORT = [
+    "Fan-made {g} retro gaming poster, printed to order from A4 to A0.",
+    "{g} retro gaming poster, printed to order from A4 to A0.",
+    "{g} fan-made poster, A4 to A0.",
+]
+META_MV_PAD = [" Framed A4 and A3 options too.", " A great gift for any gamer.", " Ideal for game rooms.", " Printed in North Yorkshire."]
 META_SHORT = [  # for long game names
     "Fan-made {g} retro gaming poster, printed to order and posted flat.",
     "Fan-made {g} retro gaming poster for game rooms and collectors.",
@@ -228,21 +257,23 @@ def seo_title(g):
     return " ".join(words).rstrip(":,&-") + " Poster | Foxy Printing"
 
 
-def meta_desc(g, key):
-    order = sorted(range(len(META)), key=lambda i: h(key + str(i)))
+def meta_desc(g, key, mv=False):
+    pool, short, pad = (META_MV, META_MV_SHORT, META_MV_PAD) if mv else (META, META_SHORT, META_PAD)
+    order = sorted(range(len(pool)), key=lambda i: h(key + str(i)))
     for i in order:
-        s = META[i].format(g=g)
+        s = pool[i].format(g=g)
         if 140 <= len(s) <= 155:
             return s
-    # build from a shorter stem and pad with sentences until in range
-    for stem in META + META_SHORT:
+    import itertools
+    for stem in pool + short:
         base = stem.format(g=g)
         if len(base) > 155:
             continue
-        for pads in _pad_combos():
-            s = base + "".join(pads)
-            if 140 <= len(s) <= 155:
-                return s
+        for r in range(0, 4):
+            for pads in itertools.permutations(pad, r):
+                s = base + "".join(pads)
+                if 140 <= len(s) <= 155:
+                    return s
     return None
 
 
@@ -253,26 +284,34 @@ def _pad_combos():
             yield c
 
 
-def body(g, gk, cs, cl, maker, sizes, key):
+def body(g, gk, cs, cl, maker, size_items, key, framed=False):
     art = "an" if re.match(r"[AEIOU]|NES|SNES|N64", cs) else "a"
     rep = dict(g=esc(g), cs=esc(cs), cl=esc(cl), acs=f"{art} {esc(cs)}")
-    opener = pick(OPENERS, key, "o").format(**rep)
+    opener = pick(OPENERS if not framed else OPENERS[1:4], key, "o").format(**rep)
     design = pick(DESIGN, key, "d").format(**rep)
     n = 4
     order = sorted(range(len(BULLETS)), key=lambda i: h(key + "b" + str(i)))[:n]
-    if len(g.split()) > 5:  # long names: use the shortest bullets to stay under 220 words
+    if len(g.split()) > (2 if framed else 5):  # long names: use the shortest bullets to stay under 220 words
         order = sorted(range(len(BULLETS)), key=lambda i: len(BULLETS[i]))[:4]
     bullets = "".join(f"<li>{BULLETS[i].format(**rep)}</li>" for i in sorted(order))
     closer = pick(CLOSERS, key, "c").format(**rep)
-    size_txt = join_or(sizes) + " (A4 is 210 x 297 mm)"
+    delivery = "Printed to order and posted in a hard-backed envelope to keep it flat. Postage options and costs are shown at checkout."
+    if framed:
+        design = design.replace("post it flat in a board-backed envelope", "post print-only orders flat in a board-backed envelope") \
+                       .replace("posted flat in a board-backed envelope", "print-only orders are posted flat in a board-backed envelope")
+        bullets = bullets.replace("Sent flat with board backing, so it arrives crease-free", "Print-only orders are sent flat, so they arrive crease-free")
+        delivery = ("Printed to order. Prints are posted flat in a hard-backed envelope. "
+                    "Postage options and costs are shown at checkout.")
+    if len(g.split()) >= 7:  # very long names: don't repeat the full name a third time
+        design = re.sub(r"^(?:Every|Each) .*? retro gaming poster is", "This poster is", design)
+    sizes_html = "".join(f"<li>{x}</li>" for x in size_items)
     return (
         f"<p>{opener}</p>"
         f"<h2>{esc(g) if g == cs else esc(g) + ' ' + esc(cs)} Retro Gaming Poster</h2>"
         f"<p>{design}</p>"
         f"<h3>Why you'll love it</h3><ul>{bullets}</ul>"
-        f"<h3>Size &amp; details</h3><ul><li>Sizes: {size_txt}</li>"
-        f"<li>Print only, no frame</li></ul>"
-        f"<h3>Delivery</h3><p>Printed to order and posted in a hard-backed envelope to keep it flat. Postage options and costs are shown at checkout.</p>"
+        f"<h3>Size &amp; details</h3><ul>{sizes_html}</ul>"
+        f"<h3>Delivery</h3><p>{delivery}</p>"
         f"<p>{closer}</p>"
         f"<h3>Please note</h3><p class=\"disclaimer\">{disclaimer(maker, cs)}</p>"
     )
@@ -283,13 +322,42 @@ def words(htm):
 
 
 # ---------- run ----------
-rows, odd, fallbacks = [], [], []
+VARIANT_RE = re.compile(r"^(A[0-4]) Print(?: Only| \+ (\w+) Frame)$")
+
+
+def mv_size_items(vs):
+    prints, frames = [], collections.OrderedDict()
+    for v in vs:
+        m = VARIANT_RE.match(v["title"])
+        if not m:
+            return None
+        size, colour = m.group(1), m.group(2)
+        if colour:
+            frames.setdefault(size, []).append(colour.lower())
+        elif size not in prints:
+            prints.append(size)
+    prints.sort(key=lambda x: -int(x[1]))
+    items = [f"Print only: {join_or(prints)} (A4 is 210 x 297 mm)"] if prints else []
+    if frames:
+        order = ["black", "white", "silver", "gold"]
+        cols = {k: sorted(set(c), key=lambda x: order.index(x) if x in order else 9) for k, c in frames.items()}
+        fsizes = sorted(cols, key=lambda x: -int(x[1]))
+        if len({tuple(c) for c in cols.values()}) == 1:
+            items.append(f"Framed: {join_or(fsizes)} in a {join_or(cols[fsizes[0]])} frame")
+        else:
+            for k in fsizes:
+                items.append(f"Framed {k}: {join_or(cols[k])} frame")
+    return items, prints, cols if frames else {}
+
+
+rows, mvrows, odd, fallbacks = [], [], [], []
 single_299 = 0
 for pid, p in P.items():
     vs = V[pid]
     v0 = vs[0] if vs else None
     is_single = len(vs) == 1 and v0["title"] == "Default Title"
     reason = None
+    mv = None
     ptl = (p["productType"] + " " + p["title"]).lower()
     gaming = not re.search(r"signed|autograph", ptl) and (detect_console("", p["productType"]) or re.search(r"retro gam|game (?:style )?inspired", p["title"], re.I))
     if is_single and v0["price"] == "2.99":
@@ -297,7 +365,9 @@ for pid, p in P.items():
     if not gaming:
         reason = "not a retro gaming poster (" + p["productType"] + ")"
     elif not is_single:
-        reason = f"{len(vs)} variant(s), not a single Default Title (prices {', '.join(sorted(set(v['price'] for v in vs)))})"
+        mv = mv_size_items(vs) if len(vs) > 1 else None
+        if mv is None:
+            reason = f"{len(vs)} variant(s), not a single Default Title (prices {', '.join(sorted(set(v['price'] for v in vs)))})"
     elif v0["price"] != "2.99":
         reason = f"single variant at {v0['price']}"
     elif re.search(r"request", p["title"], re.I):
@@ -310,32 +380,38 @@ for pid, p in P.items():
     cs, cl, maker = (con[1], con[2], con[3]) if con else ("retro console", "retro console", None)
     if not con:
         fallbacks.append((p["handle"], p["title"], "console"))
-    g = parse_game(p["title"])
+    g = parse_game(p["title"], odyssey=bool(con and con[0] == "odyssey"),
+                   lead=bool(con and con[0] in ("intellivision", "saturn", "32x", "odyssey", "snes")))
     key = p["handle"]
-    sizes = sizes_for(p["title"])
+    if mv:
+        size_items = mv[0]
+    else:
+        size_items = [f"Sizes: {join_or(sizes_for(p['title']))} (A4 is 210 x 297 mm)", "Print only, no frame"]
     if g is None:
         fallbacks.append((p["handle"], p["title"], "game name"))
-        gtxt = cs if con else "Classic Game"
-        b = body(gtxt, gtxt, cs, cl, maker, sizes, key)
-        st = seo_title(gtxt)
-        md = meta_desc(gtxt, key)
-    else:
-        b = body(g, g, cs, cl, maker, sizes, key)
-        st = seo_title(g)
-        md = meta_desc(g, key)
+    gname = g if g else (cs if con else "Classic Game")
+    b = body(gname, gname, cs, cl, maker, size_items, key, framed=bool(mv and mv[2]))
+    st = seo_title(gname)
+    md = meta_desc(gname, key, mv=bool(mv and mv[2]))
     if md is None:
         fallbacks.append((p["handle"], p["title"], "meta length"))
-        md = (f"Fan-made {g or 'classic'} retro gaming poster, printed to order and posted flat."[:150]).rsplit(" ", 1)[0] + "."
+        md = (f"Fan-made {gname} retro gaming poster, printed to order and posted flat."[:150]).rsplit(" ", 1)[0] + "."
     tags = list(p["tags"])
     if "third-party-name" not in tags:
         tags.append("third-party-name")
-    rows.append({
+    row = {
         "Handle": p["handle"], "Title": p["title"], "Body (HTML)": b, "Tags": ", ".join(tags),
-        "SEO Title": st, "SEO Description": md, "Option1 Name": "Title", "Option1 Value": "Default Title",
-        "Variant SKU": v0["sku"], "Variant Price": "4.99",
-        "_game": g or "", "_console": cs, "_ptype": p["productType"], "_old_price": v0["price"], "_status": p["status"],
+        "SEO Title": st, "SEO Description": md,
+        "_game": g or "", "_console": cs, "_ptype": p["productType"], "_status": p["status"],
         "_has_options_tag": "Poster Options" in p["tags"], "_maker": maker or "",
-    })
+    }
+    if mv:
+        row.update({"_variants": len(vs), "_prices": " | ".join(f"{v['title']}={v['price']}" for v in vs), "_mv": True})
+        mvrows.append(row)
+    else:
+        row.update({"Option1 Name": "Title", "Option1 Value": "Default Title", "Variant SKU": v0["sku"], "Variant Price": "4.99",
+                    "_old_price": v0["price"], "_mv": False})
+        rows.append(row)
 
 COLS = ["Handle", "Title", "Body (HTML)", "Tags", "SEO Title", "SEO Description", "Option1 Name", "Option1 Value", "Variant SKU", "Variant Price"]
 rows.sort(key=lambda r: r["Handle"])
@@ -360,6 +436,30 @@ for i in range(0, len(rows), CHUNK):
     part = rows[i:i + CHUNK]
     write(os.path.join(OUT, f"{i // CHUNK + 1:02d}-retro-posters-{i + 1}-{i + len(part)}.csv"), part)
 
+MV_COLS = ["Handle", "Body (HTML)", "Tags", "SEO Title", "SEO Description"]
+mvrows.sort(key=lambda r: r["Handle"])
+
+
+def write_mv(path, rs):
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=MV_COLS, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(rs)
+
+
+test = [r for r in mvrows if r["Handle"] in ("crash-bandicoot-ps1-retro-gaming-poster-a4-a3-a2-or-a1", "sega-saturn-legend-of-oasis")]
+test += [r for r in mvrows if r["_console"] == "NES" and r["_game"].startswith("Double Dragon")][:1]
+write_mv(os.path.join(OUT, "00-TEST-3-multivariant.csv"), test)
+MV_CHUNK = 1500
+for i in range(0, len(mvrows), MV_CHUNK):
+    part = mvrows[i:i + MV_CHUNK]
+    write_mv(os.path.join(OUT, f"02-retro-posters-multivariant-{i // MV_CHUNK + 1}-{i + 1}-{i + len(part)}.csv"), part)
+with open(os.path.join(OUT, "parsed_names_multivariant.csv"), "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f); w.writerow(["handle", "current title", "parsed game", "console", "status", "has Poster Options tag", "SEO title", "variants (title=price)"])
+    for r in mvrows:
+        w.writerow([r["Handle"], r["Title"], r["_game"], r["_console"], r["_status"], r["_has_options_tag"], r["SEO Title"], r["_prices"]])
+json.dump(mvrows, open(os.path.join(OUT, "_mvrows.json"), "w"))
+print("multivariant rows", len(mvrows))
 with open(os.path.join(OUT, "odd_ones.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=["handle", "title", "productType", "status", "variants", "prices", "reason"])
     w.writeheader(); w.writerows(sorted(odd, key=lambda r: (r["reason"], r["handle"])))
