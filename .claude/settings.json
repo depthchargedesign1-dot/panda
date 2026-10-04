@@ -36,6 +36,9 @@
       "mcp__Higgsfield",
       "mcp__Shopify",
       "mcp__Dropbox"
+    ],
+    "deny": [
+      "mcp__Dropbox__delete"
     ]
   }
 }

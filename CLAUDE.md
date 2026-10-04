@@ -143,3 +143,4 @@ Never call a printed reproduction "signed", "autographed", "hand-signed", "authe
 
 ## Before launch: Google Merchant Center & Google Ads review (owner's request, 2 Oct 2026)
 When the owner says the new site is nearly ready (before publishing Foxy Pop or setting the new products Active), work through `foxyprinting-rebrand/plan/launch-checklist.md` with them. It covers what needs checking or updating in Google Merchant Center and Google Ads. Remind the owner of this when launch comes up.
+- **Dropbox: never delete** (owner's rule, 4 Oct 2026). Never delete, trash or overwrite anything in Dropbox (`mcp__Dropbox__delete` or any other route) without the owner's explicit permission for that specific file or folder, given at the time. This is also blocked in `.claude/settings.json`.
