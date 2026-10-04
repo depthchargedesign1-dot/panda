@@ -34,7 +34,8 @@
       "mcp__Higgsfield__balance",
       "mcp__Higgsfield__get_preferences",
       "mcp__Higgsfield",
-      "mcp__Shopify"
+      "mcp__Shopify",
+      "mcp__Dropbox"
     ]
   }
 }
