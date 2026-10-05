@@ -105,3 +105,7 @@ doc/build/html/index.html
 doc/tmp.sv
 doc/source/styled.xlsx
 doc/source/templates/
+
+# BigCommerce API token downloads: never commit
+*api-credentials*.txt
+bigcommerce-tools/*.txt
