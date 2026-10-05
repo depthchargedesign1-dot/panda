@@ -2,12 +2,14 @@
 // Run with the artwork open: File > Scripts > Other Script... (or put it in Illustrator's Presets/Scripts folder).
 //
 // What it does, ready for the Intec ColorCut Pro plug-in:
-//   1. Puts every RED line (cut) and BLUE line (crease) on a layer called "Cut lines", on top.
+//   1. Puts every RED line (cut) and BLUE line (crease) on a layer called "CUT", on top
+//      (an old "Cut lines" layer is renamed CUT).
 //   2. Puts everything else on a layer called "Artwork".
 //   3. Asks for the customer's name and swaps it into the sample name (e.g. "Ava") in the live text.
 //   4. Tells you to click ColorCut Pro > ADD PageMARKs & BarCode, then run "Foxy - 2 Save print PDF".
 // Line colours follow Intec's ColorCut Pro guide: Red (RGB 255,0,0 / CMYK 2,98,95,0) = Cut,
-// Blue (RGB 0,0,255 / CMYK 91,80,1,0) = Crease. Close matches count too.
+// Blue (RGB 0,0,255 / CMYK 91,80,1,0) = Crease. Magenta (RGB 255,0,255 / CMYK 0,100,0,0, used on
+// face mask files from mask_cutline.py) also counts as Cut. Close matches count too.
 #target illustrator
 
 (function () {
@@ -33,6 +35,7 @@
         if (!rgb) return null;
         var r = rgb[0], g = rgb[1], b = rgb[2];
         if (r > 180 && g < 90 && b < 90) return 'cut';
+        if (r > 180 && g < 90 && b > 180) return 'cut';   // magenta (face mask cut files)
         if (b > 150 && r < 90 && g < 110) return 'crease';
         return null;
     }
@@ -43,7 +46,11 @@
     // Unlock everything so items can be moved.
     for (var i = 0; i < doc.layers.length; i++) { doc.layers[i].locked = false; doc.layers[i].visible = true; }
 
-    var cutLayer = getLayer('Cut lines');
+    // Owner's rule (5 Oct 2026): cut lines live on their own layer called CUT.
+    var cutLayer = null;
+    try { cutLayer = doc.layers.getByName('CUT'); } catch (e) {}
+    if (!cutLayer) { try { cutLayer = doc.layers.getByName('Cut lines'); cutLayer.name = 'CUT'; } catch (e) {} }
+    if (!cutLayer) cutLayer = getLayer('CUT');
     var artLayer = null;
     for (var j = 0; j < doc.layers.length; j++) {
         if (doc.layers[j] !== cutLayer && doc.layers[j].name.indexOf('ColorCut') === -1) { artLayer = doc.layers[j]; break; }
@@ -86,7 +93,7 @@
     }
 
     alert('Ready for ColorCut Pro.\n\n' +
-          'Cut lines (red): ' + cuts + '\nCrease lines (blue): ' + creases + '\nName changed in ' + swapped + ' place(s).\n\n' +
+          'CUT layer - cut lines (red/magenta): ' + cuts + '\nCrease lines (blue): ' + creases + '\nName changed in ' + swapped + ' place(s).\n\n' +
           'Next:\n1. ColorCut Pro > ADD PageMARKs & BarCode (Landscape for SRA3 boxes).\n' +
           '2. Run "Foxy - 2 Save print PDF" to save the file to print.\n' +
           '3. At the cutter: scan the barcode, Red = Cut, Blue = Crease.');

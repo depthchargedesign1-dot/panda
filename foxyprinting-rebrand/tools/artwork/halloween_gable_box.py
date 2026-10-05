@@ -1,7 +1,7 @@
 """Halloween treat gable box (100 x 60 x 100 mm) on SRA3 landscape, for the Intec ColorCut flatbed.
 
 Writes, per colourway (black, orange):
-  - <name>.svg : editable vector artwork with two top-level groups, "Artwork" (prints) and "Cut lines"
+  - <name>.svg : editable vector artwork with two top-level groups, "Artwork" (prints) and "CUT"
                  (does not print). Text stays live so the name can be changed.
   - <name>.pdf : the same as a vector PDF, written as plain ASCII so it can be saved into Dropbox as a text file.
 Cut lines use the ColorCut Pro line colours from Intec's FB550 user guide (section 4.1):
@@ -198,7 +198,7 @@ def svg(colourway):
                        f'Arial Black, Arial, sans-serif" font-weight="bold" font-size="{size}" '
                        f'text-anchor="middle" fill="{c["text_rgb"]}">{t}</text>')
     out.append('</g>')
-    out.append('<g id="Cut lines" fill="none" stroke-width="0.25">')
+    out.append('<g id="CUT" fill="none" stroke-width="0.25">')
     out.append(f'<polygon points="{poly(outline())}" stroke="#FF0000"/>')
     for cx, cy, w, h in handle_holes():
         out.append(f'<rect x="{OX + cx - w / 2:.2f}" y="{SHEET_H - (OY + cy + h / 2):.2f}" width="{w}" height="{h}" '
