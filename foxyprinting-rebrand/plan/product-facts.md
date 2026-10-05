@@ -450,3 +450,8 @@ Source: the face mask sheet above, plus the live "N X Personalised Custom Photo 
 - **Prices (owner approved, 2 Oct 2026):** the ladder in `plan/personalised-masks-plan.md`.
 - **ASK:**
   - the maximum number of different faces in one pack.
+
+## Halloween treat boxes (owner, 5 Oct 2026)
+- **Style:** gable box with a carry handle (front and back handle panels with a cut handle hole), black or orange designs with ghosts, pumpkins and stars, name on the front.
+- **Finished size:** 100 × 60 × 100 mm (width × depth × body height, not counting the handle).
+- **Production:** printed on SRA3 (320 × 450 mm), one box per sheet, cut and scored on the flatbed cutter. Cut line = spot colour `CutContour`, score line = spot colour `Crease`, each on its own layer.
