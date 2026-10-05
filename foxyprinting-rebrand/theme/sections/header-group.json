@@ -105,11 +105,24 @@
             "promo_image": "shopify://shop_images/foxy-promo-football.png",
             "promo_link": "shopify://collections/personalised-football-merchandise"
           }
+        },
+        "d7": {
+          "type": "department",
+          "settings": {
+            "menu_item": "Celebrity Masks",
+            "colour": "pink",
+            "promo_eyebrow": "Party favourite",
+            "promo_heading": "Celebrity face masks for parties, stag & hen dos",
+            "promo_button": "Shop masks",
+            "promo_image": "shopify://shop_images/foxy-mega-celebrity-masks.png",
+            "promo_link": "shopify://collections/all-facemasks"
+          }
         }
       },
       "block_order": [
         "d1",
         "d2",
+        "d7",
         "d5",
         "d6",
         "d3",

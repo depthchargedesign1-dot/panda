@@ -128,15 +128,13 @@ The store uses the Shopify Google & YouTube channel namespace `mm-google-shoppin
 Never call a printed reproduction "signed", "autographed", "hand-signed", "authentic" or "memorabilia". Use **"Printed Signature"** and **"Reproduction Print"** in the title (see `foxyprinting-rebrand/tools/signed_titles.py`), and add the signed-print disclaimer: *"This is a printed reproduction. The signature is printed as part of the design – it is not hand-signed and is not an original autograph…"*
 
 ## Other house rules
-- **"Foxy Pop 2026 – related fix" is now the live theme** (`gid://shopify/OnlineStoreTheme/189396713853`, published by the owner on 4 Oct 2026). It includes:
-  - the mobile collection fix;
-  - the live preview switched off;
-  - the "You might also like" row, which always fills and skips products without a photo;
-  - the footer contact details (phone, email, address, company line);
-  - the social links (Facebook, Instagram, TikTok, X, all @foxyprinting).
+- **"Foxy Pop 2026 – page banners" is now the live theme** (`gid://shopify/OnlineStoreTheme/189397139837`, published by the owner on 5 Oct 2026). On top of "related fix" it adds:
+  - page header banners from the page metafield `foxy.header_image`;
+  - the Celebrity Masks homepage hero, the 12-tile "Shop celebrity masks by category" grid and the Celebrity Masks mega menu promo;
+  - quick-pay buttons on the cart page and on product pages without personalisation.
 
-  Earlier themes ("Foxy Pop 2026 – menu fix" `189341303165`, Foxy Pop `189320528253` and "NEW WAREHOUSE 2020") are in the library; don't change them.
-- Never edit the live theme directly. Make theme fixes on an unpublished copy: `themeDuplicate` the live theme, `themeFilesUpsert` to the copy, and re-read the files to confirm they saved. Then ask the owner to preview and publish the copy. The current working copy is "Foxy Pop 2026 – page banners" (`gid://shopify/OnlineStoreTheme/189397139837`, made 4 Oct 2026; adds page header banners from the page metafield `foxy.header_image`). Keep the repo's `foxyprinting-rebrand/theme/` in step with whatever is live.
+  Earlier themes ("Foxy Pop 2026 – related fix" `189396713853`, "Foxy Pop 2026 – menu fix" `189341303165`, Foxy Pop `189320528253` and "NEW WAREHOUSE 2020") are in the library; don't change them.
+- Never edit the live theme directly. Make theme fixes on an unpublished copy: `themeDuplicate` the live theme, `themeFilesUpsert` to the copy, and re-read the files to confirm they saved. Then ask the owner to preview and publish the copy. The current working copy is "Foxy Pop 2026 – live preview" (`gid://shopify/OnlineStoreTheme/189408444797`, made 5 Oct 2026): per-product live preview (`foxy.live_preview` = true), a clean preview photo (`foxy.preview_base`) and text drawn in `foxy.preview_zone` (one zone or a list with a `role` each). Keep the repo's `foxyprinting-rebrand/theme/` in step with whatever is live; pending working-copy files are in `foxyprinting-rebrand/theme-working-copy/`.
 - Artwork sizes: `foxyprinting-rebrand/plan/artwork-specs.md`.
 - The owner prefers that routine commands for this project are run without asking.
 - **Tags and metafields** (owner's standing rule, 3 Oct 2026): when a product's tags or metafields (Google Shopping, `foxy.*`, SEO) are wrong, fix them straight away with `tagsAdd`/`tagsRemove`, `metafieldsSet` or `productUpdate`. There's no need to ask first. For thousands of products, where a CSV import is the only practical route, prepare the import files.

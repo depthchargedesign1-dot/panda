@@ -422,11 +422,15 @@
     drawZone(ix, iy, iw, ih);
   }
 
+  // foxy.preview_zone: one zone {x,y,w,h,...} for the main text, or a list of zones, each with a "role"
+  // ("primary" name, "number" age, "secondary" message) so a card can show its name and age in their own spots.
   function drawZone(x, y, w, h) {
-    const z = config.zone;
-    const t = get('primary') || get('secondary');
-    if (z.font) state.font = z.font;
-    drawFitted(t, x + (z.x + z.w / 2) * w, y + (z.y + z.h / 2) * h, z.w * w, z.h * h, { colour: z.color || state.colour, stroke: z.stroke });
+    const zones = Array.isArray(config.zone) ? config.zone : [config.zone];
+    zones.forEach((z) => {
+      const t = z.role ? get(z.role) : (get('primary') || get('secondary'));
+      if (z.font) state.font = z.font;
+      drawFitted(t, x + (z.x + z.w / 2) * w, y + (z.y + z.h / 2) * h, z.w * w, z.h * h, { colour: z.color || state.colour, stroke: z.stroke });
+    });
   }
 
   function cylinderWrap(src, dx, dy, dw, dh) {

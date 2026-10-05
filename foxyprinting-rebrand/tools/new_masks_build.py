@@ -5,6 +5,7 @@ Inputs (all read-only):
   <work>/upload_done{0..3}.jsonl    Shopify Files uploads (latest line per key wins); upload_done_fix.jsonl too
   <work>/all_products.jsonl         bulk export of every product: id, handle, title, status, productType, tags
   <work>/all_skus.jsonl             bulk export of every variant: sku, product.handle
+  <work>/recent_files.jsonl         bulk export of Files since 2 Oct (id, fileStatus, image.url): live READY status and exact URL
   exports/face-masks/dropbox-masks-master-list.csv   per-person blurb (intro paragraph)
 
 Copy comes from tools/mask_copy.py (build) fed with the person's name, category, sport, show and blurb, so the
@@ -66,6 +67,7 @@ GENERIC = {"Acid Smiley", "Scary Clown", "Halloween Scary Face", "Pumpkin Man", 
            "Frankenstein's monster"}
 MINORS = {"Princess Charlotte", "Prince Louis"}  # real children: owner to decide
 # Checked by hand: the store product is someone else (Adriano Celentano, Danilo Fischetti) or a couple pack, not this person.
+REAL_PEOPLE_AS_CHARACTERS = {"Chloë Grace Moretz", "Jennifer Tilly", "Fred Gwynne"}  # actors listed under "characters"
 NOT_DUPLICATE = {"Adriano", "Danilo", "Gisele Bündchen"}
 
 # Character template: show -> (what it's inspired by, rights holder(s)). Brand mascots use the brand template.
@@ -100,7 +102,12 @@ KIDS_SHOWS = {"Up", "Despicable Me", "Mickey Mouse", "Toy Story", "Peppa Pig", "
               "Monsters, Inc.", "The Muppets", "Fifi and the Flowertots", "Diary of a Wimpy Kid", "Peter Pan", "Rugrats", "Dora the Explorer",
               "Fireman Sam", "Postman Pat", "Shrek", "Strawberry Shortcake", "Hello Kitty", "Sesame Street", "The BFG",
               "Worzel Gummidge", "Thunderbirds", "Charlie and the Chocolate Factory", "Pinky and the Brain"}
-NATIONS = {"England", "Scotland", "Wales", "Ireland", "Lionesses"}
+EXTRA_CLUBS = (r"Borussia Dortmund|Dortmund|Bayer Leverkusen|Schalke|AC Milan|Inter Milan|Inter|Napoli|Roma|Lazio|Ajax|PSV|Porto|Benfica|"
+               r"Sporting|Atl[eé]tico Madrid|Valencia|Sevilla|Villarreal|Marseille|Lyon|Monaco|Galatasaray|Fenerbah[cç]e|Santos|Flamengo|"
+               r"Boca Juniors|River Plate|LA Galaxy|Inter Miami|Aston Villa|Middlesbrough|Watford|Norwich|Stoke|Blackburn|Bolton|Derby|"
+               r"Coventry|Hull|QPR|Portsmouth|Hibernian|Hearts|Aberdeen|Dundee|Northern Ireland|Brazil|Argentina|Spain|France|Germany|"
+               r"Italy|Portugal|Netherlands|Belgium|Croatia")
+NATIONS = {"Brazil", "Argentina", "Spain", "France", "Germany", "Italy", "Portugal", "Netherlands", "Belgium", "Croatia", "Northern Ireland","England", "Scotland", "Wales", "Ireland", "Lionesses"}
 
 # Two extra copy profiles for characters (monkey-patched onto mask_copy's category table).
 MC.CATS.append(("kidschar", r"$^", "much-loved character", "kids and families",
@@ -147,20 +154,22 @@ def disclaimer(it, name, blurb):
         b, owner = BRANDS[name]
         return (f"This is an unofficial product made by Foxy Printing. It is not made, endorsed or approved by {b} or {owner}. "
                 f"{b} is a trademark of its owner and is used only to describe the design theme.")
-    is_person = cat != "characters" or (it["character"] and it["character"] != name)
+    is_person = cat != "characters" or name in REAL_PEOPLE_AS_CHARACTERS
     if not is_person:
         who = show if show and show != name else name
         holder = RIGHTS.get(show) or "its creators or rights holders"
         inspired = name if not show or show == name else f"{name} from {show}"
         return (f"This is an unofficial design inspired by {inspired}. It is not official merchandise and is not endorsed by, sponsored by, "
-                f"or connected with {who} or {holder}, or any of their licensees. All names, characters and trademarks belong to their respective owners.")
+                f"or connected with {who}, {holder}, or any of their licensees. All names, characters and trademarks belong to their respective owners.")
     text = (f"This is an unofficial novelty product made for fun and fancy dress. {name} has not endorsed, sponsored or approved this product, "
             f"and Foxy Printing has no connection with them" + (f" or with {show}, its producers or broadcasters" if show else "") +
             (". The names are used only to describe the design." if show else ". The name is used only to describe the design."))
     if cat in ("football", "sport"):
         clubs = []
-        for m in re.finditer(r"\b" + MC.CLUBS + r"\b", blurb):
+        for m in re.finditer(r"\b(?:" + MC.CLUBS + "|" + EXTRA_CLUBS + r")\b", blurb):
             c = m.group(0)
+            if c in NATIONS and cat != "football":  # "a golfer from Spain" isn't a team reference
+                continue
             c = f"the {c} national team" if c in NATIONS and c != "Lionesses" else ("the England Lionesses" if c == "Lionesses" else c)
             if c not in clubs:
                 clubs.append(c)
@@ -169,6 +178,40 @@ def disclaimer(it, name, blurb):
             text += (f" It is not endorsed by, sponsored by, or affiliated with {lst}, or any club, league or player. Club and team names are "
                      f"used only to describe who it's for. All trademarks belong to their respective owners.")
     return text
+
+
+def SPORT_CAT_KEY(ident):  # same category resolution as mask_copy.build(ident=...)
+    if ident.get("category") == "sport":
+        return MC.SPORT_CAT.get(ident.get("sport") or "", "sport")
+    return MC.IDENT_CAT.get(ident.get("category"), "celeb")
+
+
+FILLERS = [" Posted in a board-backed envelope.", " Ideal for groups.", " Quick UK delivery.", " Fun for all.", " Order today.", " UK made."]
+
+
+def make_meta(name, handle):
+    """Meta description of 140-155 characters made of whole sentences only (mask_copy's own filler can cut mid-phrase)."""
+    k = MC.IDENT_CAT.get("_last")  # set per product before calling
+    occ = k[4]
+    o1 = MC.pick(occ, handle, "o1")
+    bases = [f"{name} card face mask for {o1}. Printed on 350gsm silk card cut to shape with eye holes and elastic. Order yours today.",
+             f"Fancy dress made easy: a {name} face mask on thick card with eye holes and elastic. Perfect for {o1} and photo booths.",
+             f"Get the party started with a {name} face mask. Full-colour print on 350gsm card, cut to shape with elastic. Great for {o1}.",
+             f"A {name} face mask printed on 350gsm silk card, cut to shape with eye holes and elastic. Great for {o1}.",
+             f"{name} face mask on thick 350gsm card with eye holes and elastic."]
+    start = int(hashlib.md5((handle + "meta").encode()).hexdigest(), 16) % 3
+    for base in bases[start:3] + bases[:start] + bases[3:]:
+        if len(base) > 155:
+            continue
+        m = base
+        for f in FILLERS:
+            if len(m) >= 140:
+                break
+            if len(m + f) <= 155:
+                m += f
+        if 140 <= len(m) <= 155:
+            return m
+    return None
 
 
 def main(work, out):
@@ -180,6 +223,16 @@ def main(work, out):
     for n in range(4):
         done.update(latest(f"{work}/upload_done{n}.jsonl"))
     done.update(latest(f"{work}/upload_done_fix.jsonl"))
+    live_path = f"{work}/recent_files.jsonl"  # bulk export of Files (id, fileStatus, image.url): live status wins
+    if os.path.exists(live_path):
+        live = {}
+        for l in open(live_path, encoding="utf-8"):
+            o = json.loads(l)
+            live[o["id"]] = o
+        for r in done.values():
+            o = live.get(r.get("shopify_file_id"))
+            r["status"] = o["fileStatus"] if o else "MISSING"
+            r["url"] = ((o or {}).get("image") or {}).get("url") or ""
     master = {r["key"]: r for r in csv.DictReader(open(MASTER, encoding="utf-8"))}
 
     prods = [json.loads(l) for l in open(f"{work}/all_products.jsonl", encoding="utf-8")]
@@ -231,9 +284,9 @@ def main(work, out):
 
     products, used_handles, used_skus = [], set(), set()
     for it, r, m in rows:
-        name = it["name"].strip()
+        name = re.sub(r"\s+Mask$", "", it["name"].strip())  # "Saw Pig Mask" -> "Saw Pig"
         cat = it["category"]
-        is_char = cat == "characters" and not (it["character"] and it["character"] != name)
+        is_char = cat == "characters" and name not in REAL_PEOPLE_AS_CHARACTERS
         handle = slug(name) + "-face-mask"
         if handle in store_handles or handle in used_handles:
             handle = slug(name) + "-celebrity-card-face-mask"
@@ -251,6 +304,8 @@ def main(work, out):
         title = (f"{name} Face Mask – Celebrity Card Face Mask" if not is_char else f"{name} Face Mask – Card Character Face Mask")
         p = {"handle": handle, "title": title, "productType": "Celebrity Facemask", "tags": []}
         b = MC.build(p, ident)
+        kk = SPORT_CAT_KEY(ident)
+        MC.IDENT_CAT["_last"] = next((c for c in MC.CATS if c[0] == kk), MC.DEFAULT)
         pk = f"{name} face mask"
         body = b["body"]
         first = re.split(r"(?<=[.!?])\s", m["blurb"])[0]
@@ -260,6 +315,7 @@ def main(work, out):
                             f"Add a {pk} to your fancy dress plans and get the camera ready."], handle, "lead")
             body = body.replace("<p>" + html.escape(m["blurb"], quote=False), "<p>" + html.escape(lead + " " + m["blurb"], quote=False), 1)
         disc = disclaimer(it, name, m["blurb"])
+        disc = re.sub(r"(?<!\.)\.\.(?!\.)", ".", disc)  # "Monsters, Inc.." -> "Monsters, Inc." (keeps "...")
         body = re.sub(r'<p class="disclaimer">.*?</p>$', f'<p class="disclaimer">{html.escape(disc, quote=False)}</p>', body, flags=re.S)
         if len(re.sub(r"<[^>]+>", " ", body).split()) > 350:  # long club disclaimers: drop the 5th bullet (4 remain)
             body = re.sub(r"(<h3>Why you'll love it</h3>\n<ul>\n(?:<li>.*?</li>\n){4})<li>.*?</li>\n", r"\1", body, count=1)
@@ -275,7 +331,9 @@ def main(work, out):
         age = age_group("Celebrity Facemask", f"{title} {it['show'] if is_char else ''}", tags)
         if is_char and (it["show"] in KIDS_SHOWS or name in KIDS_SHOWS):
             age = "kids"
-        products.append(dict(key=it["key"], name=name, handle=handle, title=title, body=body, seo_title=b["seo_title"], meta=b["meta"],
+        if not is_char:  # real people are always adult (age_group's character regex misfires on e.g. "Elsa Pataky")
+            age = "adult"
+        products.append(dict(key=it["key"], name=name, handle=handle, title=title, body=body, seo_title=b["seo_title"], meta=make_meta(name, handle),
                              tags=sorted(set(tags), key=str.lower), sku=sku, age=age, image=r["url"], is_char=is_char,
                              alt=f"{name} face mask – printed cardboard {'character' if is_char else 'celebrity'} face mask, front view",
                              category=cat, show=it["show"]))
@@ -288,7 +346,8 @@ def main(work, out):
         w = len(re.sub(r"<[^>]+>", " ", p["body"]).split())
         if not 180 <= w <= 350: problems.append((p["handle"], f"words {w}"))
         if len(p["seo_title"]) > 60: problems.append((p["handle"], "seo title > 60"))
-        if not 140 <= len(p["meta"]) <= 155: problems.append((p["handle"], f"meta {len(p['meta'])}"))
+        if not p["meta"] or not 140 <= len(p["meta"]) <= 155 or not p["meta"].endswith("."):
+            problems.append((p["handle"], f"meta {p['meta']!r}"))
         if p["body"].count("<h2>") != 1: problems.append((p["handle"], "h2 count"))
         if not p["body"].rstrip().endswith("</p>") or '<p class="disclaimer">' not in p["body"].rsplit("<h3>", 1)[-1]: problems.append((p["handle"], "disclaimer not last"))
         if "[" in p["body"]: problems.append((p["handle"], "bracket left in copy"))
