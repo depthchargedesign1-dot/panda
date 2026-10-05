@@ -1,30 +1,30 @@
-"""Rebuild moves-log.csv and move-conflicts.csv from phase2/batchN.json + phase2/resultN.json."""
-import csv, glob, json, os, re
+"""Rebuild moves-log.csv / move-conflicts.csv from phase2/entries.json and every phase2/job*.json + result0.json.
+A file counts as moved when a successful move result carries its file id."""
+import csv, glob, json, os, collections
 D = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ents = {e["source_path"] + "|" + e["destination_path"]: e for e in json.load(open(f"{D}/phase2/entries.json"))}
-log, conf = [], []
-for bf in sorted(glob.glob(f"{D}/phase2/batch*.json"), key=lambda p: int(re.findall(r"\d+", os.path.basename(p))[0])):
-    n = re.findall(r"\d+", os.path.basename(bf))[0]
-    rf = f"{D}/phase2/result{n}.json"
-    batch = json.load(open(bf))
-    res = json.load(open(rf))["move_result"]["entries"] if os.path.exists(rf) else []
-    byi = {r["entry_index"]: r for r in res}
-    for i, b in enumerate(batch):
-        e = ents[b["source_path"] + "|" + b["destination_path"]]
-        r = byi.get(i)
-        if r is None:
-            st, det = "not run", ""
-        elif r["entry_status"] == "success":
-            st, det = "moved", r["object"].get("path_display", "")
+ents = json.load(open(f"{D}/phase2/entries.json"))
+moved = {}
+fails = []
+for f in sorted(glob.glob(f"{D}/phase2/job*.json")) + [f"{D}/phase2/result0.json"]:
+    for r in json.load(open(f))["move_result"]["entries"]:
+        if r["entry_status"] == "success":
+            o = r["object"]
+            if o.get("file_id"):
+                moved[o["file_id"]] = o.get("path_display", "")
         else:
-            st, det = "failed", json.dumps({k: v for k, v in r.items() if k not in ("entry_index",)})[:300]
-        row = dict(batch=n, source=e["src_display"], destination=e["dest_display"], action=e["action"], status=st, result=det)
-        log.append(row)
-        if st == "failed":
-            conf.append(row)
-f = ["batch", "source", "destination", "action", "status", "result"]
-for name, rows in (("moves-log.csv", log), ("move-conflicts.csv", conf)):
-    with open(f"{D}/{name}", "w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=f); w.writeheader(); w.writerows(rows)
-import collections
-print(collections.Counter(r["status"] for r in log))
+            fails.append((os.path.basename(f), r))
+# result0 (test batch) had no ids recorded; its three sources are known
+for sid, p in [("id:nVgixzQZKNAAAAAAAABX6g", "!!MASK PACK MOCKUP IMAGES/Tenacious D Mask Pack.jpg"),
+               ("id:Ac8E0IpXMi8AAAAAAAAT-A", "2026 SPORTS STARS/Olympic Athletes/Yohan Blake (larger).JPG"),
+               ("id:nVgixzQZKNAAAAAAAABcfA", "2026 BOLLYWOOD ACTORS/Anushka Sharma-Bollywood.jpg")]:
+    moved.setdefault(sid, "/2019 TIDY - CELEBRITY FACEMASKS FINAL 7200 IMAGES/" + p)
+log = []
+for e in ents:
+    p = moved.get(e["source_path"])
+    log.append(dict(source=e["src_display"], destination=e["dest_display"], action=e["action"],
+                    status="moved" if p else "pending", result=p or "", file_id=e["source_path"]))
+f = ["source", "destination", "action", "status", "result", "file_id"]
+with open(f"{D}/moves-log.csv", "w", newline="", encoding="utf-8") as fh:
+    w = csv.DictWriter(fh, fieldnames=f); w.writeheader(); w.writerows(log)
+json.dump([{"job": a, **b} for a, b in fails], open(f"{D}/phase2/failures.json", "w"), indent=1)
+print(collections.Counter(r["status"] for r in log), "failures:", len(fails), "ids moved not in entries:", len(set(moved) - {e['source_path'] for e in ents}))
