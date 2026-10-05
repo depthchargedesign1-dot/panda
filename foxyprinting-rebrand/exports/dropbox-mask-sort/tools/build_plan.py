@@ -176,7 +176,14 @@ def main():
                 rows.append(row); continue
             row["person"] = c["person"]
             if c["cat"] == "unsure":
-                row.update(category="unsure", action="unsure", reason=c.get("show") or "name too vague to identify")
+                if c["person"] in SENSITIVE or key in SENSITIVE or c["how"] == "master-list" and c["known"] and any(
+                        w in c["known"].lower() for w in ("criminal", "murderer", "gangster", "terror", "offender", "māori")):
+                    why = "SENSITIVE (%s): owner to decide whether this mask is still wanted; see ../face-masks/removed-sensitive-masks.csv" % (c["known"] or c["person"])
+                elif c["how"] == "manual":
+                    why = c.get("show") or "not identified"
+                else:
+                    why = "name too vague to identify (bare first name or unidentified: '%s'); may be a customer's personalised mask, open the image to check" % (c["known"] or c["person"])
+                row.update(category="unsure", action="unsure", reason=why)
                 rows.append(row); continue
             if c["cat"] == "leave":
                 row.update(category="not a mask", action="leave", reason=c.get("show") or "not a face mask image")
