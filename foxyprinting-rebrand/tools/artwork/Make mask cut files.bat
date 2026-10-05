@@ -1,7 +1,7 @@
 @echo off
 rem Foxy Printing - face mask cut files (Windows).
 rem Drag one or more face images (JPG/PNG) onto this file.
-rem It makes "<name> - SRA4 cut.pdf/.svg" (layers Artwork + CUT) and "<name> - check.png"
+rem It makes "<image name>.pdf/.svg" (layers Artwork + CUT) and "<name> - check.png"
 rem in a "mask-cut-files" folder next to the first image.
 rem Needs Python 3 from python.org (tick "Add python.exe to PATH" when installing).
 rem mask_cutline.py must be in the same folder as this .bat file.

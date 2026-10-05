@@ -38,7 +38,7 @@ From Intec's ColorCut Pro FB550 user guide (sections 4–7):
 ## 3b. Face masks (cut line from just an image)
 - `python3 foxyprinting-rebrand/tools/artwork/mask_cutline.py face.jpg [more.jpg ...] --out DIR` (needs `pip install numpy "opencv-python-headless<5" reportlab`).
 - Fits the face image inside 210 x 297 mm (A4, never stretched), centred on **SRA4 (225 x 320 mm)**; traces the face and draws a **magenta 0.1 mm cut line 2 mm inside** the edge, plus almond **eye holes** (26 x 11 mm, `--eye-w/--eye-h`) found by face/eye detection and centred on the iris.
-- Writes `<name> - SRA4 cut.pdf`, `.svg` (layers `Artwork` / `CUT`) and `<name> - check.png`. **Look at every check.png** – eye detection falls back to typical positions if it can't see the eyes (sunglasses, side-on faces).
+- Writes `<image name>.pdf`, `.svg` (layers `Artwork` / `CUT`) and `<name> - check.png`. **Look at every check.png** – eye detection falls back to typical positions if it can't see the eyes (sunglasses, side-on faces).
 - Magenta (CMYK 0,100,0,0) is the owner's mask cut colour (5 Oct 2026); map Magenta = Cut in ColorCut Pro. "Foxy - 1 Prepare cut file" treats magenta as cut.
 
 ## 4. Check it

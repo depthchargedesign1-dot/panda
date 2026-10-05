@@ -6,7 +6,7 @@ For each face image (cut-out face on a white background, like the celebrity mask
      The image keeps its proportions (it is fitted inside the A4 area, never stretched).
   2. Traces the face outline and draws a MAGENTA cut line about 2 mm inside it.
   3. Finds the eyes and draws a magenta cut line for each eye hole, so the wearer can see out.
-  4. Writes "<name> - SRA4 cut.pdf" and "<name> - SRA4 cut.svg" (cut lines on their own layer "CUT"),
+  4. Writes "<name>.pdf" and "<name>.svg" (same name as the image) (cut lines on their own layer "CUT"),
      plus "<name> - check.png", a preview to check the eye holes before cutting.
 
 Cut line: magenta RGB 255,0,255 / CMYK 0,100,0,0, 0.1 mm stroke, no fill (owner's spec, 5 Oct 2026).
@@ -159,7 +159,7 @@ def process(path, out_dir, inset_mm, stroke_mm, eye_w_mm, eye_h_mm):
     os.makedirs(out_dir, exist_ok=True)
 
     # PDF
-    pdf_path = os.path.join(out_dir, f'{base} - SRA4 cut.pdf')
+    pdf_path = os.path.join(out_dir, f'{base}.pdf')
     c = canvas.Canvas(pdf_path, pagesize=(SHEET_W * mm, SHEET_H * mm))
     c.setTitle(f'{base} - face mask SRA4 with cut line')
     c._code.append('/OC /Artwork BDC')  # PDF layer "Artwork"
@@ -202,7 +202,7 @@ def process(path, out_dir, inset_mm, stroke_mm, eye_w_mm, eye_h_mm):
     for d in d_list:
         svg.append(f'<path d="{d}" fill="none" stroke="{MAGENTA_HEX}" stroke-width="{stroke_mm}"/>')
     svg += ['</g>', '</svg>']
-    svg_path = os.path.join(out_dir, f'{base} - SRA4 cut.svg')
+    svg_path = os.path.join(out_dir, f'{base}.svg')
     with open(svg_path, 'w') as fh:
         fh.write('\n'.join(svg))
 
