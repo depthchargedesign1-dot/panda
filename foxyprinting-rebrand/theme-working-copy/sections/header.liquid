@@ -1,0 +1,255 @@
+{%- comment -%}
+  Header with multi-department mega menu.
+
+  The mega menu is driven by a Shopify navigation menu (Content → Menus) with up to 3 levels:
+    Level 1  → department in the bar (e.g. "Personalised Gifts")
+    Level 2  → column heading inside the panel (e.g. "Drinkware")
+    Level 3  → links in that column (e.g. "Glass Can Cups")
+  Level-2 links without children are grouped into a "Popular" column.
+  Add a "Department style" block (matched by the level-1 title) to give a department its own colour and promo tile.
+{%- endcomment -%}
+{%- liquid
+  assign menu = section.settings.menu
+  assign accents = 'orange,pink,purple,teal,yellow' | split: ','
+-%}
+
+<header class="site-header" data-header>
+  {%- if section.settings.show_utility -%}
+    <div class="utility-bar">
+      <div class="page-width utility-bar__inner">
+        <div class="utility-bar__trust">
+          <span class="utility-bar__stars" aria-hidden="true">★★★★★</span>
+          <span>{{ section.settings.trust_text }}</span>
+        </div>
+        {%- if section.settings.utility_menu != blank -%}
+          <ul class="utility-bar__links">
+            {%- for link in section.settings.utility_menu.links -%}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="page-width header-main">
+    <button type="button" class="header-icon menu-toggle" data-drawer-open aria-controls="MenuDrawer" aria-expanded="false">
+      {% render 'icon', name: 'menu' %}
+      <span class="visually-hidden">{{ 'general.menu' | t }}</span>
+    </button>
+
+    <a href="{{ routes.root_url }}" class="header-logo">
+      {%- if section.settings.logo != blank -%}
+        {{ section.settings.logo | image_url: width: 400 | image_tag: alt: shop.name, width: section.settings.logo_width, loading: 'eager' }}
+      {%- else -%}
+        <span>
+          <span class="header-logo__text">Foxy<span>Printing</span></span>
+          <span class="header-logo__tag">{{ section.settings.tagline }}</span>
+        </span>
+      {%- endif -%}
+    </a>
+
+    <form action="{{ routes.search_url }}" method="get" role="search" class="header-search">
+      <label for="HeaderSearch" class="visually-hidden">{{ 'general.search' | t }}</label>
+      <input id="HeaderSearch" type="search" name="q" value="{{ search.terms | remove: '&quot;' | remove: '"' | escape }}" placeholder="{{ section.settings.search_placeholder }}" autocomplete="off">
+      <input type="hidden" name="options[prefix]" value="last">
+      <button type="submit" aria-label="{{ 'general.search' | t }}">{% render 'icon', name: 'search' %}</button>
+    </form>
+
+    <div class="header-icons">
+      {%- if section.settings.help_link != blank -%}
+        <a class="header-icon" href="{{ section.settings.help_link }}">{% render 'icon', name: 'help' %}<span class="header-icon__label">{{ 'general.help' | t }}</span></a>
+      {%- endif -%}
+      {%- if shop.customer_accounts_enabled -%}
+        <a class="header-icon" href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">
+          {% render 'icon', name: 'account' %}<span class="header-icon__label">{% if customer %}{{ customer.first_name | default: 'Account' }}{% else %}{{ 'general.sign_in' | t }}{% endif %}</span>
+        </a>
+      {%- endif -%}
+      <a class="header-icon" href="{{ routes.cart_url }}">
+        {% render 'icon', name: 'cart' %}<span class="header-icon__label">{{ 'general.basket' | t }}</span>
+        <span class="cart-count" data-cart-count {% if cart.item_count == 0 %}hidden{% endif %}>{{ cart.item_count }}</span>
+      </a>
+    </div>
+  </div>
+
+  {%- if menu != blank -%}
+    <nav class="mega-nav" aria-label="{{ 'general.main_navigation' | t }}">
+      <div class="page-width">
+        <ul class="mega-nav__list" data-mega-nav>
+          {%- for link in menu.links -%}
+            {%- liquid
+              assign style_block = nil
+              for block in section.blocks
+                assign wanted = block.settings.menu_item | strip | downcase
+                assign have = link.title | strip | downcase
+                if wanted == have
+                  assign style_block = block
+                  break
+                endif
+              endfor
+              assign accent_index = forloop.index0 | modulo: 5
+              assign accent = accents[accent_index]
+              if style_block and style_block.settings.colour != 'auto'
+                assign accent = style_block.settings.colour
+              endif
+              assign panel_id = 'MegaPanel-' | append: forloop.index
+            -%}
+            <li class="mega-nav__item accent-{{ accent }}" data-mega-item>
+              {%- if link.links.size > 0 -%}
+                <button type="button" class="mega-nav__link{% if style_block.settings.highlight %} mega-nav__link--highlight{% endif %}" aria-expanded="false" aria-controls="{{ panel_id }}" data-mega-trigger>
+                  <span class="mega-nav__dot" aria-hidden="true"></span>{{ link.title }}{% render 'icon', name: 'chevron' %}
+                </button>
+                <div class="mega-panel" id="{{ panel_id }}" data-mega-panel>
+                  <div class="page-width mega-panel__inner{% if style_block == nil or style_block.settings.promo_heading == blank %} mega-panel__inner--no-promo{% endif %}">
+                    <div class="mega-panel__cols">
+                      {%- liquid
+                        assign simple_count = 0
+                        for child in link.links
+                          if child.links.size == 0
+                            assign simple_count = simple_count | plus: 1
+                          endif
+                        endfor
+                      -%}
+                      {%- if simple_count > 0 -%}
+                        <div class="mega-col">
+                          <span class="mega-col__title">{{ 'general.popular' | t }}</span>
+                          <ul>
+                            {%- for child in link.links -%}
+                              {%- if child.links.size == 0 -%}
+                                <li><a class="mega-col__link" href="{{ child.url }}">{{ child.title }}</a></li>
+                              {%- endif -%}
+                            {%- endfor -%}
+                          </ul>
+                        </div>
+                      {%- endif -%}
+                      {%- for child in link.links -%}
+                        {%- if child.links.size > 0 -%}
+                          <div class="mega-col{% if child.links.size > 12 %} mega-col--long{% endif %}">
+                            <a class="mega-col__title" href="{{ child.url }}">{{ child.title }}</a>
+                            <ul>
+                              {%- for grandchild in child.links -%}
+                                <li><a class="mega-col__link" href="{{ grandchild.url }}">{{ grandchild.title }}</a></li>
+                              {%- endfor -%}
+                            </ul>
+                          </div>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </div>
+
+                    {%- if style_block and style_block.settings.promo_heading != blank -%}
+                      <a class="mega-promo" href="{{ style_block.settings.promo_link | default: link.url }}" {{ style_block.shopify_attributes }}>
+                        {%- if style_block.settings.promo_image -%}
+                          {{ style_block.settings.promo_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: '' }}
+                        {%- endif -%}
+                        {%- if style_block.settings.promo_eyebrow != blank -%}<span class="mega-promo__eyebrow">{{ style_block.settings.promo_eyebrow }}</span>{%- endif -%}
+                        <span class="mega-promo__title">{{ style_block.settings.promo_heading }}</span>
+                        <span class="btn btn--white btn--small">{{ style_block.settings.promo_button | default: 'Shop now' }}</span>
+                      </a>
+                    {%- endif -%}
+
+                    <div class="mega-panel__footer">
+                      <a class="btn btn--small" style="--btn-bg: var(--accent)" href="{{ link.url }}">{{ 'general.shop_all' | t: title: link.title }}</a>
+                    </div>
+                  </div>
+                </div>
+              {%- else -%}
+                <a class="mega-nav__link{% if style_block.settings.highlight %} mega-nav__link--highlight{% endif %}" href="{{ link.url }}">
+                  <span class="mega-nav__dot" aria-hidden="true"></span>{{ link.title }}
+                </a>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </nav>
+  {%- endif -%}
+</header>
+
+<div class="drawer" id="MenuDrawer" data-drawer aria-hidden="true">
+  <div class="drawer__overlay" data-drawer-close></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="{{ 'general.menu' | t }}">
+    <div class="drawer__head">
+      <span>{{ 'general.menu' | t }}</span>
+      <button type="button" class="drawer__close" data-drawer-close aria-label="{{ 'general.close' | t }}">{% render 'icon', name: 'close' %}</button>
+    </div>
+    {%- if menu != blank -%}
+      <ul class="drawer-menu">
+        {%- for link in menu.links -%}
+          {%- assign accent_index = forloop.index0 | modulo: 5 -%}
+          <li class="accent-{{ accents[accent_index] }}">
+            {%- if link.links.size > 0 -%}
+              <details>
+                <summary class="drawer-menu__row">{{ link.title }}{% render 'icon', name: 'chevron' %}</summary>
+                <ul class="drawer-menu">
+                  <li><a class="drawer-menu__row" href="{{ link.url }}">{{ 'general.shop_all' | t: title: link.title }}</a></li>
+                  {%- for child in link.links -%}
+                    <li>
+                      {%- if child.links.size > 0 -%}
+                        <details>
+                          <summary class="drawer-menu__row">{{ child.title }}{% render 'icon', name: 'chevron' %}</summary>
+                          <ul class="drawer-menu">
+                            {%- for grandchild in child.links -%}
+                              <li><a class="drawer-menu__row" href="{{ grandchild.url }}">{{ grandchild.title }}</a></li>
+                            {%- endfor -%}
+                          </ul>
+                        </details>
+                      {%- else -%}
+                        <a class="drawer-menu__row" href="{{ child.url }}">{{ child.title }}</a>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </details>
+            {%- else -%}
+              <a class="drawer-menu__row" href="{{ link.url }}">{{ link.title }}</a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Header & mega menu",
+  "class": "section-header",
+  "max_blocks": 30,
+  "settings": [
+    { "type": "image_picker", "id": "logo", "label": "Logo" },
+    { "type": "range", "id": "logo_width", "label": "Logo width", "min": 80, "max": 300, "step": 10, "unit": "px", "default": 180 },
+    { "type": "text", "id": "tagline", "label": "Tagline (shown when no logo image)", "default": "We print on anything" },
+    { "type": "link_list", "id": "menu", "label": "Mega menu", "default": "main-menu", "info": "Use a 3-level menu. Level 1 = departments, level 2 = column headings, level 3 = links." },
+    { "type": "text", "id": "search_placeholder", "label": "Search placeholder", "default": "Search 16,000+ personalised gifts, cards & prints…" },
+    { "type": "url", "id": "help_link", "label": "Help link" },
+    { "type": "header", "content": "Utility bar" },
+    { "type": "checkbox", "id": "show_utility", "label": "Show utility bar", "default": true },
+    { "type": "text", "id": "trust_text", "label": "Trust message", "default": "Loved by 100,000+ UK customers" },
+    { "type": "link_list", "id": "utility_menu", "label": "Utility links" }
+  ],
+  "blocks": [
+    {
+      "type": "department",
+      "name": "Department style",
+      "settings": [
+        { "type": "text", "id": "menu_item", "label": "Menu item title", "info": "Must match the level-1 menu link title, e.g. Personalised Gifts" },
+        { "type": "select", "id": "colour", "label": "Accent colour", "default": "auto", "options": [
+          { "value": "auto", "label": "Automatic" },
+          { "value": "orange", "label": "Orange" },
+          { "value": "pink", "label": "Pink" },
+          { "value": "purple", "label": "Purple" },
+          { "value": "teal", "label": "Teal" },
+          { "value": "yellow", "label": "Yellow" }
+        ] },
+        { "type": "checkbox", "id": "highlight", "label": "Highlight title (e.g. Christmas)", "default": false },
+        { "type": "header", "content": "Promo tile" },
+        { "type": "image_picker", "id": "promo_image", "label": "Image" },
+        { "type": "text", "id": "promo_eyebrow", "label": "Eyebrow", "default": "New in" },
+        { "type": "text", "id": "promo_heading", "label": "Heading" },
+        { "type": "text", "id": "promo_button", "label": "Button label", "default": "Shop now" },
+        { "type": "url", "id": "promo_link", "label": "Link" }
+      ]
+    }
+  ]
+}
+{% endschema %}

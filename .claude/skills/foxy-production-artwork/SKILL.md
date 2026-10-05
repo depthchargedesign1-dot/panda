@@ -32,6 +32,7 @@ From Intec's ColorCut Pro FB550 user guide (sections 4–7):
   - Yellow 4,2,98,0 → Score (half-depth blade); Green 76,0,100,0 → Perforate — only if needed.
 - Stroke 0.25 mm, no fill. Closed paths for outlines and holes.
 - **PageMARKs (registration marks, 10 × 4 mm, 100% K) and the job barcode/QR are added by the owner** in Illustrator with the ColorCut Pro plug-in ("ADD PageMARKs & BarCode"), which stores the job in their Job Library. We can't generate that barcode (it's tied to their cutter PC). Keep the artwork clear of a **12 mm margin on the left and 10 mm on the other edges** of the sheet for the marks and barcode.
+- The owner's Illustrator scripts automate the layer setup and print-PDF saving: `/AI DESIGNS 2026/00 Foxy Illustrator Scripts - ColorCut/` (source in `foxyprinting-rebrand/tools/artwork/illustrator/`). "Foxy - 1 Prepare cut file" moves red/blue lines to a "Cut lines" layer and swaps the sample name (keep the sample name "Ava" in new artwork, or update the script); "Foxy - 2 Save print PDF" saves the .ai and a "- PRINT.pdf" without cut lines. Only the plug-in's ADD PageMARKs & BarCode click is manual.
 - Always include a `README - how to print and cut.txt` with the steps (layer the cut lines, add PageMARKs & BarCode, hide the cut layer, print, scan barcode, map Red = Cut / Blue = Crease, test-cut the first sheet).
 
 ## 4. Check it
