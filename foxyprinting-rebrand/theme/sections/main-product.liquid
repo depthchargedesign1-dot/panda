@@ -38,7 +38,10 @@
         personalised preview last. The preview takes over the stage when the customer starts personalising.
       {%- endcomment -%}
       {%- assign show_live = false -%}
-      {%- if has_fields and section.settings.live_preview -%}{%- assign show_live = true -%}{%- endif -%}
+      {%- comment -%} Live preview: on for every product via the section setting, or for one product via foxy.live_preview = true. {%- endcomment -%}
+      {%- if has_fields -%}
+        {%- if section.settings.live_preview or product.metafields.foxy.live_preview.value == true -%}{%- assign show_live = true -%}{%- endif -%}
+      {%- endif -%}
       <div class="product__stage" data-stage>
         {%- if product.featured_media -%}
           <img data-photo-view width="1200" height="1200" src="{{ product.featured_media | image_url: width: 1200 }}" alt="{{ product.featured_media.alt | escape }}" fetchpriority="high">
@@ -203,23 +206,25 @@
           </button>
         </div>
         {%- comment -%}
-          Quick-pay buttons (Shop Pay, Apple Pay, Google Pay, PayPal…). Only on products with nothing to fill in:
-          they go straight to checkout and would skip the personalisation boxes and Infinite Options add-ons.
+          "Buy it now": adds the item (with its personalisation, checked first like Add to basket) and goes
+          straight to checkout, where PayPal / Google Pay show at the top. Shopify's own branded button is not
+          used because this store pays through PayPal, whose product-page button doesn't load and left a blank gap.
         {%- endcomment -%}
-        {%- liquid
-          assign quick_pay = section.settings.show_dynamic_checkout
-          if has_fields
-            assign quick_pay = false
-          endif
-          for t in product.tags
-            assign tl = t | downcase
-            if tl contains 'options' or tl contains 'personalis' or tl contains 'io-'
-              assign quick_pay = false
-            endif
-          endfor
-        -%}
-        {%- if quick_pay and current_variant.available -%}
-          <div class="product__quick-pay" style="margin-top:12px">{{ form | payment_button }}</div>
+        {%- if section.settings.show_dynamic_checkout and current_variant.available -%}
+          <input type="hidden" name="return_to" value="" data-return-to>
+          <button type="submit" class="btn btn--outline btn--block product__buy-now" data-buy-now style="margin-top:12px;width:100%">{{ section.settings.buy_now_label | default: 'Buy it now' }}</button>
+          <script>
+            (function () {
+              var btn = document.currentScript.previousElementSibling;
+              var form = btn && btn.form;
+              if (!form) return;
+              var field = form.querySelector('[data-return-to]');
+              form.addEventListener('click', function (e) {
+                if (!e.target.closest('button[type="submit"]')) return;
+                field.value = e.target.closest('[data-buy-now]') ? '/checkout' : '';
+              });
+            })();
+          </script>
         {%- endif -%}
       {%- endform -%}
 
@@ -261,7 +266,7 @@
   </script>
 {%- endif -%}
 <script type="application/json" data-product-json>{{ product | json }}</script>
-{%- if has_fields and section.settings.live_preview == false -%}
+{%- if has_fields and show_live == false -%}
   <script>
     /* Live preview switched off: keep the field helpers (character counters, photo thumbnails, font and colour choices). */
     (function () {
@@ -292,10 +297,16 @@
     })();
   </script>
 {%- endif -%}
-{%- if has_fields and section.settings.live_preview -%}
+{%- if show_live -%}
   {%- liquid
+    comment
+      foxy.preview_base (an image file) gives the preview a clean photo to draw on, e.g. a blank stocking cuff,
+      while the gallery keeps its styled photos. Otherwise the featured image is used.
+    endcomment
     assign base_image = ''
-    if product.featured_media
+    if product.metafields.foxy.preview_base.value
+      assign base_image = product.metafields.foxy.preview_base.value | image_url: width: 1200
+    elsif product.featured_media
       assign base_image = product.featured_media | image_url: width: 1200
     endif
   -%}
@@ -331,7 +342,8 @@
     { "type": "checkbox", "id": "use_product_image", "label": "Use the product photo as the design on the mockup", "default": true, "info": "e.g. your card artwork appears on the card front with the customer's name on top." },
     { "type": "text", "id": "personaliser_heading", "label": "Personaliser heading", "default": "Make it yours" },
     { "type": "checkbox", "id": "show_rating", "label": "Show product rating", "default": true },
-    { "type": "checkbox", "id": "show_dynamic_checkout", "label": "Show quick-pay buttons (Shop Pay, Apple Pay, PayPal…)", "default": true, "info": "Hidden automatically on products with personalisation or option add-ons." },
+    { "type": "checkbox", "id": "show_dynamic_checkout", "label": "Show a \"Buy it now\" button", "default": true, "info": "Adds the item and goes straight to checkout, where PayPal and Google Pay show at the top." },
+    { "type": "text", "id": "buy_now_label", "label": "Buy it now label", "default": "Buy it now" },
     { "type": "richtext", "id": "delivery_text", "label": "Delivery note", "default": "<p><strong>Printed in the UK</strong> and dispatched in 1–2 working days. Free delivery over £30.</p>" }
   ],
   "blocks": [

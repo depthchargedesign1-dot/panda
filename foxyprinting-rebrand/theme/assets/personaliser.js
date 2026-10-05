@@ -410,11 +410,27 @@
     drawFitted(primary || secondary, x + w / 2, nameY, w - 80, 110, { stroke: '#fff' });
   }
 
+  function drawPhotoZone() {
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, W, H);
+    const s = Math.min(W / state.base.width, H / state.base.height);
+    const iw = state.base.width * s;
+    const ih = state.base.height * s;
+    const ix = (W - iw) / 2;
+    const iy = (H - ih) / 2;
+    ctx.drawImage(state.base, ix, iy, iw, ih);
+    drawZone(ix, iy, iw, ih);
+  }
+
+  // foxy.preview_zone: one zone {x,y,w,h,...} for the main text, or a list of zones, each with a "role"
+  // ("primary" name, "number" age, "secondary" message) so a card can show its name and age in their own spots.
   function drawZone(x, y, w, h) {
-    const z = config.zone;
-    const t = get('primary') || get('secondary');
-    if (z.font) state.font = z.font;
-    drawFitted(t, x + (z.x + z.w / 2) * w, y + (z.y + z.h / 2) * h, z.w * w, z.h * h, { colour: z.color || state.colour, stroke: z.stroke });
+    const zones = Array.isArray(config.zone) ? config.zone : [config.zone];
+    zones.forEach((z) => {
+      const t = z.role ? get(z.role) : (get('primary') || get('secondary'));
+      if (z.font) state.font = z.font;
+      drawFitted(t, x + (z.x + z.w / 2) * w, y + (z.y + z.h / 2) * h, z.w * w, z.h * h, { colour: z.color || state.colour, stroke: z.stroke });
+    });
   }
 
   function cylinderWrap(src, dx, dy, dw, dh) {
@@ -706,6 +722,9 @@
   }
 
   function drawPhotoProof() {
+    // With a text zone (foxy.preview_zone), draw the customer's text straight onto the product photo,
+    // e.g. the name on a stocking cuff, instead of the proof card.
+    if (config.zone && state.base) { drawPhotoZone(); return; }
     const texts = state.fields.filter((f) => f.kind !== 'image');
     const filled = texts.filter((f) => f.value.trim());
     // Show what they've typed; before they start, show the first few fields as faint placeholders.
