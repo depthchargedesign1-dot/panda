@@ -80,9 +80,9 @@ def main():
                      "words": words, "meta_len": len(seo_d)})
     json.dump(rows, open(OUT / "old_updates.json", "w"), indent=1, ensure_ascii=False)
     fields = json.dumps(json.dumps(FIELDS, ensure_ascii=False), ensure_ascii=False)
-    for i in range(0, 30, 10):
+    for i in range(0, 30, 5):
         parts = []
-        for r in rows[i:i + 10]:
+        for r in rows[i:i + 5]:
             parts.append(
                 f'u{r["n"]}: productUpdate(product:{{id:"{r["id"]}", descriptionHtml:{json.dumps(r["descriptionHtml"], ensure_ascii=False)}, '
                 f'seo:{{title:{json.dumps(r["seo"]["title"])}, description:{json.dumps(r["seo"]["description"])}}}, '
