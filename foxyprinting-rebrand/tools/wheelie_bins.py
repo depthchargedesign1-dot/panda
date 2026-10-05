@@ -106,7 +106,7 @@ TAGS = ["bin sticker", "foxy-new-2026", "foxy-src-dropbox", "house number sticke
         "machine-cut", "new home gift", "outdoor sticker", "personalised", "range-wheelie-bin",
         "wheelie bin sticker"]
 PACKS = [("Single", "4.99", "01"), ("Pair", "8.99", "02"), ("Pack of 4", "14.99", "03")]
-GOOGLE_CATEGORY = "Home & Garden > Decor > Address Signs"  # per coordinator brief 5 Oct 2026
+GOOGLE_CATEGORY = "Home & Garden > Decor > Home Decor Decals"  # per coordinator brief 5 Oct 2026
 
 NEW = {
     31: dict(
