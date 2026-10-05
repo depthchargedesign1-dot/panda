@@ -1,0 +1,16 @@
+{
+ "id": "gid://shopify/Menu/118484697163",
+ "handle": "ve-day-party-bunting",
+ "title": "VE DAY Party Bunting",
+ "items": [
+  {
+   "id": "gid://shopify/MenuItem/274840879179",
+   "title": "VE DAY BUNTING",
+   "type": "COLLECTION",
+   "url": "/collections/ve-day-bunting",
+   "resourceId": "gid://shopify/Collection/162426585163",
+   "tags": [],
+   "items": []
+  }
+ ]
+}
