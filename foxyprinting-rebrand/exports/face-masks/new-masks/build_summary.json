@@ -1,0 +1,28 @@
+{
+ "products": 1939,
+ "test": [
+  "paul-lambert-face-mask",
+  "darth-vader-face-mask",
+  "mark-sheppard-face-mask"
+ ],
+ "files": [
+  [
+   "01-new-masks.csv",
+   1000
+  ],
+  [
+   "02-new-masks.csv",
+   936
+  ]
+ ],
+ "skipped": {
+  "generic Halloween/novelty design, not a person or character: needs its own copy": 14,
+  "already on the store": 173,
+  "real child (minor): owner to decide": 2
+ },
+ "age": {
+  "kids": 33,
+  "adult": 1906
+ },
+ "characters": 67
+}
