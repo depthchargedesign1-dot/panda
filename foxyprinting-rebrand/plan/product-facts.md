@@ -296,7 +296,7 @@ Owner confirmed they can make: sublimation metal pub and bar signs, rubber-backe
 ## Golf towels, wheelie bin stickers, door hangers, Valentine's teddies (added 2 Oct 2026)
 Owner: list now, add specs later.
 - **Golf towels:** size, fabric, clip or hook, and print method: **ASK**. Google: `Sporting Goods > Outdoor Recreation > Golf > Golf Towels`.
-- **Wheelie bin stickers:** size, vinyl type, outdoor life, and number per pack: **ASK**. Google: `Home & Garden > Decor > Home Decor Decals`.
+- **Wheelie bin stickers (owner, 5 Oct 2026):** each sticker is A5 (210 × 148 mm), printed on laminated outdoor vinyl that lasts 5+ years outside. Packs: single £4.99, pair £8.99, pack of 4 £14.99 (the 36-design listing; the older Design 1–9 listings stay at £9.99 a pair). Google: `Home & Garden > Decor > Home Decor Decals`.
 - **Door hangers:** read and reuse the facts on the existing live door hanger listings (e.g. "Pack of 4"). Otherwise **ASK**. Rude designs are `adult`.
 - **Valentine's teddies:** if they're the same teddy-with-printed-t-shirt as the photo-gifts plush sheet, use that sheet. Otherwise **ASK**.
 - **Baby grows:** see the "Baby grows / baby vests" sheet (sizes and blank are still **ASK**). Football club designs need the football disclaimer and the `third-party-name` tag.
