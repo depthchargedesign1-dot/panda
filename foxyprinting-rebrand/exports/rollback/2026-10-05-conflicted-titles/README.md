@@ -29,6 +29,7 @@ Printed Signature By Blur, Selina Gomez 2, Manic Street 2), and range-wide tag/a
 ## Files
 - `before.json` – all 66 affected products (id, title, handle, status, tags, type, vendor, seo, descriptionHtml, media alt) before any change.
 - `after.json` – the 2 changed products re-read after the update.
+- `after-fix.json` (first 10), `after-final.json` (all 67 after everything), `pending-updates.json` (the 55 inputs, now applied), `desc-renumber-before.json`.
 - `duplicates.csv`, `notes.csv`.
 
 ## Rollback
@@ -48,6 +49,38 @@ pixel compare plus a visual check).
   became **Selena Gomez 3** (`before-extra.json`), and its conflicted copy becomes "Selena Gomez 3", handle `...-copy`.
 - Junk is removed from descriptionHtml. Nothing else changes (status, price, tags, media).
 
-**Status: partly applied.** 10 products are done and verified (`after-fix.json`). The other 55 are in
-`pending-updates.json`, ready to send. They are not applied because the session's permission check stopped further
-bulk store edits.
+**Status: fully applied (2026-10-05).** 10 products were done first (`after-fix.json`). The owner then approved
+the rest ("fix the conflicted dont draft them", then "keep pushing" to "Do you approve sending the remaining 55?").
+
+## Final pass, 2026-10-05
+1. **Pre-check:** all 55 in `pending-updates.json` still had the junk title, and none of the 55 new handles was in use.
+   Skipped: 0.
+2. **Sent:** the 55 prepared `productUpdate` inputs, unchanged (title, handle, descriptionHtml, redirectNewHandle: true),
+   in aliased batches of 10/10/10/10/10/5. Result: 55 done, 0 userErrors, 0 failed. Status stayed ACTIVE; nothing else
+   was sent (no tags, SEO, media, price or metafield changes; no `productSet`).
+3. **Renumbered descriptions:** the name/number in the text now matches the title. Only the two name strings in each
+   description changed (the "MUSIC Star … Autograph Print" line and the "-… Signed Merch …" line):
+   | product | id | old string(s) | new |
+   |---|---|---|---|
+   | Harry Styles 5 | 14903390175613 | Harry Styles 2 | Harry Styles 5 |
+   | Selena Gomez 3 (twin, clean handle) | 14903483400573 | SELINA GOMEZ 2 / Selina Gomez 2 | SELENA GOMEZ 3 / Selena Gomez 3 |
+   | Selena Gomez 3 (`-copy`) | 14903483433341 | SELINA GOMEZ 2 / Selina Gomez 2 | SELENA GOMEZ 3 / Selena Gomez 3 |
+   | Miley Cyrus 5 | 14903447454077 | MILEY CYRUS 1 / Miley Cyrus 1 | MILEY CYRUS 5 / Miley Cyrus 5 |
+   | Miley Cyrus 6 | 14903447585149 | MILEY CYRUS 2 / Miley Cyrus 2 | MILEY CYRUS 6 / Miley Cyrus 6 |
+   | Oasis 7 | 14903458595197 | OASIS 1 / Oasis 1 | OASIS 7 / Oasis 7 |
+   | Paul Weller 5 | 14903464362365 | PAUL WELLER 2 / Paul Weller 2 | PAUL WELLER 5 / Paul Weller 5 |
+   | Slash 5 | 14903486775677 | SLASH 1 / Slash 1 | SLASH 5 / Slash 5 |
+   The `-copy` Selena Gomez 3 is an identical copy, not a renumber, but its title is now "Selena Gomez 3" too, so its
+   text was fixed the same way. Previous descriptions: `desc-renumber-before.json`. 8 done, 0 errors.
+4. **Verified:** all 67 products re-read (`after-final.json`, includes descriptionHtml). A script compared them with
+   `before.json` and the inputs sent: all ACTIVE, tags and SEO unchanged, titles/handles/descriptions exactly as sent, no
+   "conflicted", "Fujistsu", "2019-04-08" or "Stlyes" left. All 55 old `…-fujistsu-pcs-conflicted-copy-2019-04-08-…`
+   URLs have a UrlRedirect to the new handle (ids 1753967034749 to 1753970475389).
+
+Still for the owner: the 58 identical `-copy` products are live duplicates of their twins (same photo, same text).
+They stay ACTIVE as the owner asked; consider Draft/Archive plus a redirect later if Google Merchant Center flags them.
+
+## Rollback (final pass)
+- Descriptions of the 8 in step 3: `productUpdate` with descriptionHtml from `desc-renumber-before.json`.
+- The 55: `productUpdate` with title, handle and descriptionHtml from `before.json` (redirectNewHandle: false), then
+  delete the 55 UrlRedirects whose path is the old handle (they would otherwise block the old handle).
