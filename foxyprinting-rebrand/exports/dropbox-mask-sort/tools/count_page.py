@@ -2,7 +2,7 @@
 import json, glob, os, sys
 label = sys.argv[1]
 d = "/home/user/panda/foxyprinting-rebrand/exports/dropbox-mask-sort/missed-raw"; os.makedirs(d, exist_ok=True)
-f = max(glob.glob("/root/.claude/projects/-home-user-panda/b27c821e-842d-5652-8996-b16be4651f6f/tool-results/mcp-Dropbox-list_folder-*.txt"), key=os.path.getmtime)
+f = sys.argv[2] if len(sys.argv) > 2 else max(glob.glob("/root/.claude/projects/-home-user-panda/b27c821e-842d-5652-8996-b16be4651f6f/tool-results/mcp-Dropbox-list_folder-*.txt"), key=os.path.getmtime)
 data = json.load(open(f))
 with open(f"{d}/{label}.jsonl", "a") as out:
     for e in data["entries"]:
