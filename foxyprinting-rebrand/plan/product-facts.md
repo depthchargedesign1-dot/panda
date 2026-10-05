@@ -68,6 +68,13 @@
 - **Google category:** Home & Garden > Decor > Seasonal & Holiday Decorations > Holiday Stockings (stockings) / Home & Garden > Decor > Seasonal & Holiday Decorations (sacks)
 - **age_group:** `kids`
 
+### Personalised reindeer stocking (owner, 5 Oct 2026)
+- **Design:** cream hessian-weave stocking with a tan hessian cuff, red tartan ribbon trim under the cuff, red hanging loop, felt appliqué leaping reindeer with a red nose and tartan scarf, printed swirl antlers.
+- **Size:** 45 × 25 cm.
+- **Personalisation:** name, dye-sublimated onto the hessian cuff in-house.
+- **Care:** wipe clean only (do not machine wash).
+- **Price:** £14.99.
+
 ## Glass can cups & tumblers (new: UV DTF)
 - **Sizes / capacity:** **ASK** (e.g. 16oz glass can with bamboo lid and straw; 20/30/40oz steel tumbler).
 - **Print:** UV DTF permanent print, kept 10 mm below the rim. Hand wash recommended (**ASK** whether they're dishwasher-safe).
