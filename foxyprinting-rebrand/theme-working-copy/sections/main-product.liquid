@@ -38,7 +38,10 @@
         personalised preview last. The preview takes over the stage when the customer starts personalising.
       {%- endcomment -%}
       {%- assign show_live = false -%}
-      {%- if has_fields and section.settings.live_preview -%}{%- assign show_live = true -%}{%- endif -%}
+      {%- comment -%} Live preview: on for every product via the section setting, or for one product via foxy.live_preview = true. {%- endcomment -%}
+      {%- if has_fields -%}
+        {%- if section.settings.live_preview or product.metafields.foxy.live_preview.value == true -%}{%- assign show_live = true -%}{%- endif -%}
+      {%- endif -%}
       <div class="product__stage" data-stage>
         {%- if product.featured_media -%}
           <img data-photo-view width="1200" height="1200" src="{{ product.featured_media | image_url: width: 1200 }}" alt="{{ product.featured_media.alt | escape }}" fetchpriority="high">
@@ -261,7 +264,7 @@
   </script>
 {%- endif -%}
 <script type="application/json" data-product-json>{{ product | json }}</script>
-{%- if has_fields and section.settings.live_preview == false -%}
+{%- if has_fields and show_live == false -%}
   <script>
     /* Live preview switched off: keep the field helpers (character counters, photo thumbnails, font and colour choices). */
     (function () {
@@ -292,10 +295,16 @@
     })();
   </script>
 {%- endif -%}
-{%- if has_fields and section.settings.live_preview -%}
+{%- if show_live -%}
   {%- liquid
+    comment
+      foxy.preview_base (an image file) gives the preview a clean photo to draw on, e.g. a blank stocking cuff,
+      while the gallery keeps its styled photos. Otherwise the featured image is used.
+    endcomment
     assign base_image = ''
-    if product.featured_media
+    if product.metafields.foxy.preview_base.value
+      assign base_image = product.metafields.foxy.preview_base.value | image_url: width: 1200
+    elsif product.featured_media
       assign base_image = product.featured_media | image_url: width: 1200
     endif
   -%}
