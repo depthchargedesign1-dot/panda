@@ -31,7 +31,10 @@ MASK_CHARACTERS = re.compile(KIDS_CHARACTERS.pattern.replace("barbie|", "").repl
 BABY_TYPES = re.compile(r"baby vest|baby grows|baby clothing", re.I)
 # Drinkware, bar items and retro-gaming collectables are bought by and for adults.
 ADULT_TYPES = re.compile(r"mug|coaster|bar mat|glass|flask|tumbler|poster|print|magnet|keyring|case|cover|signed|autograph|alcohol", re.I)
-ADULT_TITLE = re.compile(r"replacement .*(case|cover)|game case|signed|autograph|\\bmug\\b|coaster", re.I)
+ADULT_TITLE = re.compile(r"replacement .*(case|cover)|game case|signed|autograph|\bmug\b|coaster|"
+                         # 5 Oct 2026 spot-check: adult products that matched "girl/boy/kid/baby/school" words
+                         r"\bhen\b|gaming t-shirt|car sticker|pet portrait|pregnancy|our song|medal insert|"
+                         r"adult,? kids|kids (&|and) adults? sizes|name, team or school", re.I)
 MASK_TYPES = re.compile(r"mask|tv stars|celebrity facemask|footballer masks", re.I)
 
 
@@ -39,6 +42,8 @@ def age_group(product_type, title, tags):
     pt = product_type or ""
     ti = ANY_AGE.sub(" ", title or "")
     if BABY_TYPES.search(pt):
+        return "kids"
+    if re.search(r"kids cups?", pt, re.I) or re.search(r"\bkids'? (unbreakable |plastic )?(mug|cup)", ti, re.I):
         return "kids"
     if RUDE.search(pt) or RUDE.search(ti) or re.search(r"adult|rude", pt, re.I):
         return "adult"
