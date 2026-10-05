@@ -71,7 +71,7 @@
 ### Personalised reindeer stocking (owner, 5 Oct 2026)
 - **Design:** cream hessian-weave stocking with a tan hessian cuff, red tartan ribbon trim under the cuff, red hanging loop, felt appliqué leaping reindeer with a red nose and tartan scarf, printed swirl antlers.
 - **Size:** 45 × 25 cm.
-- **Personalisation:** name, dye-sublimated onto the hessian cuff in-house.
+- **Personalisation:** name, DTF printed (heat-pressed transfer) onto the hessian cuff in-house (owner corrected from sublimation, 5 Oct 2026).
 - **Care:** wipe clean only (do not machine wash).
 - **Price:** £14.99.
 
