@@ -83,7 +83,7 @@ def load():
 def classify(name, master, byname):
     p = parse(name)
     key = p["base_key"]
-    ov = OVERRIDE.get(key)
+    ov = OVERRIDE.get(key + p["qual_key"]) or OVERRIDE.get(key)
     if ov:
         return dict(person=ov[0], cat=ov[1], sport=ov[2] if len(ov) > 2 else "", show=ov[3] if len(ov) > 3 else "",
                      how="manual", known="")
@@ -228,7 +228,9 @@ def main():
                         notes.append("this file is smaller (%d vs %d bytes)" % (size, bsize))
                 elif same_size:
                     action = "duplicate_exact"
-                    notes.append("same name + number and same size (%d bytes) as %s; leave in place, do not move" % (size, best[0]["name"]))
+                    twin = next(m for m in matches if int(m[0]["size"] or 0) == size)
+                    row["match_path"] = ROOT_DISPLAY + "/" + twin[0]["path"]; row["match_size"] = size
+                    notes.append("same name + number and same size (%d bytes) as %s; leave in place, do not move" % (size, twin[0]["path"]))
                 elif size < bsize:
                     action = "duplicate_smaller"
                     notes.append("same name + number as %s, which is larger (%d vs %d bytes); keep that one as main, flag this one" % (best[0]["name"], bsize, size))
@@ -252,11 +254,15 @@ def main():
                 taken = occupied[dest.lower()]
                 if dname.lower() in taken:
                     stem, e = os.path.splitext(dname)
-                    n = 2
-                    while ("%s (%d)%s" % (stem, n, e)).lower() in taken:
-                        n += 1
-                    dname = "%s (%d)%s" % (stem, n, e)
-                    notes.append("name already used in the destination by a different file; renamed to avoid overwriting")
+                    if action == "duplicate_larger":
+                        dname = "%s (larger)%s" % (stem, e)
+                        notes.append("the smaller file with this name stays put; this larger copy goes in beside it as '(larger)' so nothing is overwritten")
+                    else:
+                        n = 2
+                        while ("%s (%d)%s" % (stem, n, e)).lower() in taken:
+                            n += 1
+                        dname = "%s (%d)%s" % (stem, n, e)
+                        notes.append("name already used in the destination by a different file (different size); renamed to avoid overwriting")
                 taken.add(dname.lower())
                 row["destination_path"] = ROOT_DISPLAY + "/" + dest + "/" + dname
             else:
