@@ -23,7 +23,11 @@ KIDS_CHARACTERS = re.compile(r"peppa|paw patrol|bluey|spongebob|mr tumble|frozen
                              r"power rangers?|ninja turtles|tmnt|in the night garden|iggle piggle|cocomelon|gruffalo|"
                              r"moana|encanto|toy story|paddington|peter rabbit|my little pony|hello kitty|barbie|"
                              r"roblox|minecraft|fortnite|among us|cbeebies|tweenies|noddy|scooby|dora the|unicorn|dinosaur", re.I)
-MASK_CHARACTERS = re.compile(KIDS_CHARACTERS.pattern.replace("barbie|", "").replace("|unicorn|dinosaur", ""), re.I)
+# Children's TV / cartoon characters seen in the mask range (5 Oct 2026 review); actors playing a role stay adult.
+KIDS_MASK_EXTRA = (r"|muppets?|beaker|gonzo|bunsen honeydew|big bird|\bbert kids|sesame street|basil brush|zippy|"
+                   r"orville the duck|barney the dinosaur|grom+it|inspector gadget|brains from thunderbirds|barney rubble|"
+                   r"flintstones?|\bet the extra")
+MASK_CHARACTERS = re.compile(KIDS_CHARACTERS.pattern.replace("barbie|", "").replace("|unicorn|dinosaur", "") + KIDS_MASK_EXTRA, re.I)
 BABY_TYPES = re.compile(r"baby vest|baby grows|baby clothing", re.I)
 # Drinkware, bar items and retro-gaming collectables are bought by and for adults.
 ADULT_TYPES = re.compile(r"mug|coaster|bar mat|glass|flask|tumbler|poster|print|magnet|keyring|case|cover|signed|autograph|alcohol", re.I)
