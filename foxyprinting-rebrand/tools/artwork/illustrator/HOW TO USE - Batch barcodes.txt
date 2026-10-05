@@ -1,0 +1,41 @@
+FOXY - 3 BATCH BARCODES  (Adobe Illustrator + Intec ColorCut Pro plug-in)
+=========================================================================
+Adds PageMARKs, a BarCode and a NEW job number to every cut file in a folder, and saves a print PDF for each.
+The ColorCut Pro plug-in makes the job number itself: it fills in a new number that isn't used yet
+(Intec FB550 user guide, section 7.1). You only press Enter to accept it.
+
+ONE-TIME SETUP (about 2 minutes)
+1. Install the script: copy "Foxy - 3 Batch barcodes.jsx" to
+   C:\Program Files\Adobe\Adobe Illustrator <version>\Presets\en_GB\Scripts\
+   (restart Illustrator; it then appears under File > Scripts). Or use File > Scripts > Other Script... each time.
+2. Set the mark positions once in the plug-in: File > PageMARK Placement Preferences (ColorCut Pro)
+   (Portrait for SRA4 masks, Landscape for SRA3 boxes; margins 12 mm left, 10 mm others).
+3. Record the action the script uses:
+   a. Open any cut file (e.g. one of the mask .svg files).
+   b. Window > Actions. In the Actions panel menu choose "New Set..." and call it exactly:  Foxy ColorCut
+   c. Choose "New Action..." and call it exactly:  Add barcode   -> click Record.
+   d. Panel menu > "Insert Menu Item...", then click File > Add PageMARKs and BarCode (the ColorCut Pro item)
+      in Illustrator's menu (the box fills in the name) > OK.
+   e. Click the square Stop button. Close the file without saving.
+   (Names must match exactly, including the capital letters.)
+
+EACH BATCH
+1. Make the cut files (drag the face images onto "Make mask cut files.bat"). They land in "mask-cut-files".
+2. In Illustrator: File > Scripts > Foxy - 3 Batch barcodes. Pick the "mask-cut-files" folder.
+3. For each file the ColorCut Pro box pops up with a new job number: press Enter (OK). That's all.
+   (Tip: in the Actions panel, click the small dialog-box icon next to "Add barcode" to switch the dialog off.
+    If your version of the plug-in respects that, it will then accept the new number by itself - fully hands-free.)
+4. Results in "mask-cut-files\ColorCut ready\":
+   - <name>.ai             the cut job (keep it; CUT layer + ColorCut marks/barcode)
+   - <name> - PRINT.pdf    print this on SRA4 (no cut lines, with PageMARKs + barcode)
+   - ColorCut job numbers.csv   list of every file and its job number
+5. At the cutter: put the sheet in, scan the barcode (or type the job number) and cut. Magenta/Red = Cut.
+
+GOOD TO KNOW
+- One job number per DESIGN, not per order. Next time someone orders the same mask, just print the same
+  "- PRINT.pdf" again: the barcode already points to its cut file in the Job Library. No new number needed.
+- Re-running the script skips anything already in "ColorCut ready", so it never makes duplicate job numbers.
+  To redo one file, delete its .ai from "ColorCut ready" first.
+- The Job Library holds job numbers 0 - 64,000.
+- The plug-in only accepts vector lines on the selected layer. The script always selects the CUT layer first,
+  so you won't get the "kRasterArt not supported" error.
