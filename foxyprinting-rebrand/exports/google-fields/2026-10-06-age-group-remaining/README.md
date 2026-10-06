@@ -41,3 +41,6 @@ Use `02-age-group-gender-CLEAN.csv` instead of 02: terrace flags, bobble hats an
 
 ## Update 6 Oct 2026 (later): titles
 The owner took "Reproduction Print" out of print titles. `01-age-group-gender.csv` (637 products) and `02-age-group-gender-CLEAN.csv` (12,038 products) now carry the new titles. The originals are saved as `*.bak-before-title-fix`. Import `../../signed-prints/2026-10-06-title-copy/` **last**, after these files.
+
+## SAFE files (6 Oct 2026, 20:55 UTC) – import THESE, not the older ones
+`01-age-group-gender-SAFE.csv` and `02-age-group-gender-SAFE.csv` are the same age/gender data with the **Title and Status columns removed**, so the import can't undo today's live fixes (145 title typo fixes, 152 duplicate dog mugs set to draft). `02-…-SAFE` also drops the 53 Personalised Name Word Art prints, which now have 8 Size variants (the old rows had the single "Default Title" variant). All mug/This Girl age values in the files are `adult`, matching today's API fixes.
