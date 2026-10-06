@@ -7,7 +7,7 @@ DISCLAIMER = ('<h3>Please note</h3>\n<p class="disclaimer">This is an unofficial
               'It is not made, endorsed or licensed by {owner}. No game, cartridge or disc is included. '
               'All trademarks and game titles belong to their respective owners and are used only to identify compatibility.</p>')
 
-DELIVERY = ('<h3>Delivery</h3>\n<p>Your {primary} is sent from our North Yorkshire workshop in a board-backed envelope to keep them '
+DELIVERY = ('<h3>Delivery</h3>\n<p>Your {primary} is sent from our North Yorkshire workshop in a board-backed envelope to keep it '
             'flat and safe in the post. Dispatch and postage options are shown at checkout.</p>')
 
 P = [
@@ -75,7 +75,7 @@ P = [
 <li>Gives unboxed Mega Drive and Genesis carts somewhere safe to live</li>
 <li>No printing at all, so any cover or spine label will suit it</li>
 <li>Makes a shelf of mixed games look uniform</li>
-<li>Good value way to bulk out a collection display</li>
+<li>An easy way to bulk out a collection display</li>
 <li>Posted from our print workshop in North Yorkshire</li>
 </ul>
 <h3>Size &amp; details</h3>
