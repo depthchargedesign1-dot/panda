@@ -2,7 +2,7 @@ Turkey Terrace Flag - FOXY-FLAG-CFLAG10
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised Turkey Terrace Flag – Turkish Football Fan Flag – 3 Sizes
+- Shopify title: Personalised Turkey Terrace Flag – Turkish Football Fan Flag – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-CFLAG10-01 (3ft x 2ft), FOXY-FLAG-CFLAG10-02 (5ft x 3ft), FOXY-FLAG-CFLAG10-03 (8ft x 5ft)
 - Design on the product photo: Turkey flag: red with a white crescent and star
 - Google colour: Red

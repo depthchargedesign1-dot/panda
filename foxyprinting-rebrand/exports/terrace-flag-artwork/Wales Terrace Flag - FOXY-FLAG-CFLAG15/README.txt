@@ -2,7 +2,7 @@ Wales Terrace Flag - FOXY-FLAG-CFLAG15
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised Wales Terrace Flag – Welsh Dragon Football Fan Flag – 3 Sizes
+- Shopify title: Personalised Wales Terrace Flag – Welsh Dragon Football Fan Flag – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-CFLAG15-01 (3ft x 2ft), FOXY-FLAG-CFLAG15-02 (5ft x 3ft), FOXY-FLAG-CFLAG15-03 (8ft x 5ft)
 - Design on the product photo: Wales flag: green and white with the red dragon
 - Google colour: Multicolor

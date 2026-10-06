@@ -2,7 +2,7 @@ England Terrace Flag - FOXY-FLAG-CFLAG02
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised England Terrace Flag – St George Cross Football Fan Flag – 3 Sizes
+- Shopify title: Personalised England Terrace Flag – St George Cross Football Fan Flag – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-CFLAG02-01 (3ft x 2ft), FOXY-FLAG-CFLAG02-02 (5ft x 3ft), FOXY-FLAG-CFLAG02-03 (8ft x 5ft)
 - Design on the product photo: England St George cross: white with a red cross
 - Google colour: White

@@ -2,7 +2,7 @@ Ukraine Terrace Flag - FOXY-FLAG-CFLAG11
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised Ukraine Terrace Flag – Blue & Yellow Ukrainian Flag – 3 Sizes
+- Shopify title: Personalised Ukraine Terrace Flag – Blue & Yellow Ukrainian Flag – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-CFLAG11-01 (3ft x 2ft), FOXY-FLAG-CFLAG11-02 (5ft x 3ft), FOXY-FLAG-CFLAG11-03 (8ft x 5ft)
 - Design on the product photo: Ukraine flag: blue over yellow
 - Google colour: Blue/Yellow

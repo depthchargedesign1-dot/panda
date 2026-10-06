@@ -38,3 +38,6 @@ Rebuild with `tools/build_age_group_remaining.py` (reads `phase2_items.json`, `p
 
 ## Update 6 Oct 2026 (afternoon)
 Use `02-age-group-gender-CLEAN.csv` instead of 02: terrace flags, bobble hats and number plate mugs changed after the file was made (61 rows removed). 01 is unaffected.
+
+## Update 6 Oct 2026 (later): titles
+The owner took "Reproduction Print" out of print titles. `01-age-group-gender.csv` (637 products) and `02-age-group-gender-CLEAN.csv` (12,038 products) now carry the new titles. The originals are saved as `*.bak-before-title-fix`. Import `../../signed-prints/2026-10-06-title-copy/` **last**, after these files.

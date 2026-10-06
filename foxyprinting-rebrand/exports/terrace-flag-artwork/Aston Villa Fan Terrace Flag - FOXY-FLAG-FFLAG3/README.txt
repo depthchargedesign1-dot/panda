@@ -2,7 +2,7 @@ Aston Villa Fan Terrace Flag - FOXY-FLAG-FFLAG3
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised Football Terrace Flag – Claret & Blue Aston Villa Fan Design – 3 Sizes
+- Shopify title: Personalised Football Terrace Flag – Claret & Blue Aston Villa Fan Design – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-FFLAG3-01 (3ft x 2ft), FOXY-FLAG-FFLAG3-02 (5ft x 3ft), FOXY-FLAG-FFLAG3-03 (8ft x 5ft)
 - Design on the product photo: Claret and white diagonal bands on sky blue
 - Google colour: Claret/Blue

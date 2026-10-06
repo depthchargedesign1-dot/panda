@@ -2,7 +2,7 @@ Arsenal Fan Terrace Flag - FOXY-FLAG-FFLAG2
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised Football Terrace Flag – Red & White Arsenal Fan Design – 3 Sizes
+- Shopify title: Personalised Football Terrace Flag – Red & White Arsenal Fan Design – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-FFLAG2-01 (3ft x 2ft), FOXY-FLAG-FFLAG2-02 (5ft x 3ft), FOXY-FLAG-FFLAG2-03 (8ft x 5ft)
 - Design on the product photo: Red centre, white sides with navy-blue edge stripes
 - Google colour: Red/White

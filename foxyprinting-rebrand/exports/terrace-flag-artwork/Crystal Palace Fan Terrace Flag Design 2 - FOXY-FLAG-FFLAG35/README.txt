@@ -2,7 +2,7 @@ Crystal Palace Fan Terrace Flag Design 2 - FOXY-FLAG-FFLAG35
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised Football Terrace Flag – Red & Blue Crystal Palace Fan Design 2 – 3 Sizes
+- Shopify title: Personalised Football Terrace Flag – Red & Blue Crystal Palace Fan Design 2 – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-FFLAG35-01 (3ft x 2ft), FOXY-FLAG-FFLAG35-02 (5ft x 3ft), FOXY-FLAG-FFLAG35-03 (8ft x 5ft)
 - Design on the product photo: Red centre between blue side bars edged in white
 - Google colour: Red/Blue

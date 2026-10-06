@@ -2,7 +2,7 @@ India Terrace Flag - FOXY-FLAG-CFLAG03
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised India Terrace Flag – Indian Tricolour Sports Fan Flag – 3 Sizes
+- Shopify title: Personalised India Terrace Flag – Indian Tricolour Sports Fan Flag – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-CFLAG03-01 (3ft x 2ft), FOXY-FLAG-CFLAG03-02 (5ft x 3ft), FOXY-FLAG-CFLAG03-03 (8ft x 5ft)
 - Design on the product photo: India tricolour: saffron, white and green with the navy Ashoka Chakra
 - Google colour: Multicolor

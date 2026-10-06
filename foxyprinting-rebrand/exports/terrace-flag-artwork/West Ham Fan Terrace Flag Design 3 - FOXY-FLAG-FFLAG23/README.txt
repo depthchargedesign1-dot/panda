@@ -2,7 +2,7 @@ West Ham Fan Terrace Flag Design 3 - FOXY-FLAG-FFLAG23
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised Football Terrace Flag – Claret & Blue West Ham Fan Design 3 – 3 Sizes
+- Shopify title: Personalised Football Terrace Flag – Claret & Blue West Ham Fan Design 3 – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-FFLAG23-01 (3ft x 2ft), FOXY-FLAG-FFLAG23-02 (5ft x 3ft), FOXY-FLAG-FFLAG23-03 (8ft x 5ft)
 - Design on the product photo: Claret with claret and sky blue chequered ends (photo matches Design 2)
 - Google colour: Claret/Blue

@@ -66,6 +66,8 @@ def _art(m, text):
 # (pattern, replacement) – applied in order, case-insensitive. A replacement starting with "@"
 # keeps the case of the first letter of the match.
 RULES = [
+    # Hashtag blocks: drop tags that claim a signed/authentic item (#SignedMemorabilia, #AutographedPrint ...).
+    (r"[ \t]*#\w*(signed|autograph|memorabilia|limited_?edition|authentic|genuine|official|merch)\w*", ""),
     (r"A Limited Edition Signed Print by your amazing ([^.<]+?)\s*\.", r"A print of your amazing \1, with a printed signature."),
     (r"A Limited Edition Signed Print by your amazing ([^.<]+?)(?=\s*<)", r"A print of your amazing \1, with a printed signature."),
     (r"(framed or un-framed) Signed Print\s+(They are)", r"\1 print with a printed signature. \2"),
@@ -74,9 +76,13 @@ RULES = [
     (r"\b(genuine|authentic|authenticated|exclusive|real)\s+(autographs|signatures)\b", "@printed signatures"),
     (r"\b(?:personally|officially|directly)\s+signed\s+(?:and\s+authenticated\s+)?by\b", "@printed with the signature of"),
     (r"\b(?:personally\s+)?signed\s+it\b", "@has the signature printed on it"),
+    (r"\b(has|have|had)\s+been\s+(?:\w+\s+)?(?:signed|autographed)\s+by\b", r"\1 the printed signature of"),
+    (r"\bis\s+(?:\w+ly\s+)?(?:signed|autographed)\s+by\b", "carries the printed signature of"),
+    (r"\bare\s+(?:\w+ly\s+)?(?:signed|autographed)\s+by\b", "carry the printed signature of"),
     (r"\b(?:signed|autographed)\s+by\b", "@with the printed signature of"),
     (r"\b(?:signed|autographed)\s+(?:and|&amp;|&)\s+framed\b", "@framed printed signature"),
     (r"\b(?:signed\s+)?autographed\s+merch\b(?!\s*print)", "@printed signature"),
+    (r"\b(?:signed|autographed)\s+piece\b", "@print"),
     (r"\b(limited[- ]edition\s+)?(hand[- ]?)?(signed|autographed)\s+(and\s+)?(autographed\s+)?(limited[- ]edition\s+)?(prints)\b", "@prints with a printed signature"),
     (r"\b(limited[- ]edition\s+)?(hand[- ]?)?(signed|autographed)\s+(and\s+)?(autographed\s+)?(limited[- ]edition\s+)?(print)\b", "@print with a printed signature"),
     (r"\bautograph(ed)?\s+merch\s*print\b", "@print with a printed signature"),
@@ -91,8 +97,10 @@ RULES = [
     (r"\blimited[- ]edition\b", ""),
     (r"\bauthentic-looking\b", "@eye-catching"),
     (r"\b(their|your|the)\s+collectors'?\s+memorabilia\b", r"\1 wall"),
+    (r"\bmerch\s*memorabilia\b", "@wall art"),
     (r"\bmemorabilia\b", "@wall art"),
     (r"\b(printed signature)(\s+printed signature)+\b", r"\1"),
+    (r"\bwith a printed signature\s+(printed\s+)?with the (printed\s+)?signature of\b", "with the printed signature of"),
     (r"\bprinted\s+printed signature\b", "@printed signature"),
 ]
 RULES = [(re.compile(p, re.I), r) for p, r in RULES]
@@ -102,7 +110,7 @@ PROTECT = re.compile(
     r'<p class="disclaimer">.*?</p>'
     r"|\bnot\s+(an?\s+)?(original\s+)?(hand[- ]?signed|signed|autographed|original autograph)\b(\s+(and|or)\s+(is\s+)?not\s+an\s+original\s+autograph)?"
     r"|\bsigned[- ]for\b|\brecorded\s*(and|&amp;|&)?\s*signed\b|\bsign(ed)?\s+up\b"
-    r"|\b(was|were|been|being|got|he|she|they|who|and|had|has|then|later|eventually|subsequently)\s+signed\s+(for|with|by|a|an|his|her|their|on|up|as|to|from)\b"
+    r"|\b(was|were|got|he|she|they|who|had|has|then|later|eventually|subsequently)\s+signed\s+(for|with|by|a|an|his|her|their|on|up|as|to|from)\b"
     r"|\bsigned\s+(with|a\s+(new\s+)?(contract|deal|two|three|four|five|one|record)|on\s+loan|to\s+(the|a)\s+\w+\s+label)\b"
     r"|<[^>]+>",  # never edit inside tags (attributes, URLs)
     re.I | re.S)
@@ -212,9 +220,18 @@ def has_frames(product):
     return False
 
 
+def is_signature_print(product):
+    text = product["title"] + " " + re.sub(r'<p class="disclaimer">.*?</p>', "", product.get("descriptionHtml") or "", flags=re.S)
+    return bool(re.search(r"sign|autograph", text, re.I))
+
+
 def new_body(product):
     body = product.get("descriptionHtml") or ""
     notes = {}
+    # A few posters got "Reproduction Print" in the title without being signature prints at all
+    # (retro club-colour posters, team champions posters). Only their title changes.
+    if not is_signature_print(product):
+        return body, {"repro_line": "not a signature print", "disclaimer": "unchanged"}
     b = reword_body(body)
     top = plain(b)[:500].lower()
     if "reproduction" in top:
@@ -289,4 +306,31 @@ if __name__ == "__main__":
                 "old_body": p.get("descriptionHtml") or "", "body": b, "notes": n,
                 "status": p["status"], "variants": len(p["_variants"])} for p, t, b, n in result],
               open(os.path.join(out_dir, "changes.json"), "w"))
-    print(len(result), "products")
+
+    def write(name, items):
+        with open(os.path.join(out_dir, name), "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=HEAD)
+            w.writeheader()
+            for p, t, b, n in items:
+                w.writerows(rows_for(p, t, b))
+
+    # Test file: one framed 9-size print, one single-variant print, one 13-option poster.
+    by = {p["handle"]: (p, t, b, n) for p, t, b, n in result}
+    test = []
+    for want in (lambda p: len(p["_variants"]) == 8 and p["status"] == "ACTIVE",
+                 lambda p: len(p["_variants"]) == 1 and p["status"] == "ACTIVE" and "Signed Autographed Merch" in (p.get("descriptionHtml") or ""),
+                 lambda p: len(p["_variants"]) == 13 and p["status"] == "ACTIVE"):
+        test.append(next(r for r in result if want(r[0]) and r not in test))
+    write("00-TEST-3-products.csv", test)
+
+    # Split the rest into files under ~15 MB.
+    limit = 14_500_000
+    chunk, size, k = [], 0, 1
+    for r in result:
+        est = len(r[2].encode()) + 200 * len(r[0]["_variants"]) + 400
+        if chunk and size + est > limit:
+            write(f"{k:02d}-signed-prints.csv", chunk); k += 1; chunk, size = [], 0
+        chunk.append(r); size += est
+    if chunk:
+        write(f"{k:02d}-signed-prints.csv", chunk)
+    print(len(result), "products,", k, "files")

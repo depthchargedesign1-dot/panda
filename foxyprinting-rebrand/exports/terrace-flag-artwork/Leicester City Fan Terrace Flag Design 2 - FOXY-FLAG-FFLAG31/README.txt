@@ -2,7 +2,7 @@ Leicester City Fan Terrace Flag Design 2 - FOXY-FLAG-FFLAG31
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised Football Terrace Flag – Blue & White Leicester City Fan Design 2 – 3 Sizes
+- Shopify title: Personalised Football Terrace Flag – Blue & White Leicester City Fan Design 2 – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-FFLAG31-01 (3ft x 2ft), FOXY-FLAG-FFLAG31-02 (5ft x 3ft), FOXY-FLAG-FFLAG31-03 (8ft x 5ft)
 - Design on the product photo: Royal blue with blue and white chequered ends
 - Google colour: Blue/White

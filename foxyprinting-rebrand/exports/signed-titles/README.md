@@ -5,7 +5,7 @@
 - changes "Signed / Autographed / Hand-Signed" to **"Printed Signature"**, keeping only the first one;
 - removes "Limited Edition", "Official", "Authentic", "Genuine", "Collectible" and "Merchandise", and changes "Memorabilia" or "Merch" to "Wall Art";
 - removes repeated segments;
-- adds **"– Reproduction Print"**.
+- added **"– Reproduction Print"** (taken out again on 6 Oct 2026: see `../signed-prints/2026-10-06-title-copy/`).
 
 Example: `ROCKY MARCIANO Limited Edition Boxer Signed Print - Boxing` becomes `ROCKY MARCIANO Boxer Printed Signature Print – Boxing – Reproduction Print`.
 

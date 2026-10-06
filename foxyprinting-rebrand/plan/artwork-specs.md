@@ -63,7 +63,7 @@ Sizes are for the Foxy Pop theme at its default 1360px page width. Supply them a
 
 - **Bleed: 3 mm** on every edge. **ASK:** the hem/bleed allowance for sewn flags with the 25 mm binding (some makers want 10–20 mm per edge for a turned hem). Not given by the owner yet; 3 mm is a placeholder.
 - **Safe area: 25 mm** inside the trim, clear of the 25 mm binding and the eyelets. **ASK** (confirm).
-- **Eyelets:** templates mark them 12.5 mm in from the edge (middle of the binding), at each corner plus evenly spaced, no more than 500 mm apart (3x2: 8, 5x3: 14, 8x5: 22). **ASK:** real count and spacing.
+- **Eyelets:** templates mark them 12.5 mm in from the edge (middle of the binding), at each corner plus evenly spaced, no more than 500 mm apart (3x2: 8, 5x3: 10, 8x5: 16). **ASK:** real count and spacing.
 - **Resolution:** 300 dpi is impractical at 8 ft; large-format default used: 150 dpi at full size (3x2, 5x3), 100 dpi (8x5). **ASK** (confirm with the RIP/printer).
 - **Printer / roll width: ASK.** An 8x5 flag needs a roll at least 1530 mm wide (or panels); the 24 in (610 mm) sublimation printer in `large-format-plan.md` can't print even the 3x2 with bleed in one piece. Mirroring, ICC profile and fabric shrinkage: **ASK**.
 - Layers: Artwork (placeholder background), Text (live "YOUR NAME / GROUP" + second line, Bebas Neue, OFL), CUT (red RGB 255,0,0, 0.25 pt trim path), Guides (hidden, non-printing: bleed, trim, safe, eyelets). CMYK-safe colours.

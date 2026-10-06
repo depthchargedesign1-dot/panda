@@ -2,7 +2,7 @@ Liverpool Fan Terrace Flag - FOXY-FLAG-FFLAG12
 Print-ready, editable terrace flag templates, made 6 Oct 2026.
 
 PRODUCT
-- Shopify title: Personalised Football Terrace Flag – Red & Yellow Liverpool Fan Design – 3 Sizes
+- Shopify title: Personalised Football Terrace Flag – Red & Yellow Liverpool Fan Design – 3 Sizes – Fast Turnaround
 - Variant SKUs: FOXY-FLAG-FFLAG12-01 (3ft x 2ft), FOXY-FLAG-FFLAG12-02 (5ft x 3ft), FOXY-FLAG-FFLAG12-03 (8ft x 5ft)
 - Design on the product photo: Red with white diagonal bands and red and yellow chequered corners
 - Google colour: Red/Yellow

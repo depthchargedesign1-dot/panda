@@ -19,3 +19,6 @@ Don't import the old exports/face-masks/masks-01/02 CSVs: the mask copy is alrea
 Terrace flags (new handles, now ACTIVE), bobble hats (rewritten, ACTIVE) and number plate mugs changed after these files were made.
 Importing the old rows would create duplicate draft flags under the old "trerrace" handles and put the hats back to DRAFT with old titles.
 Import `01-seo-CLEAN.csv` and `02-seo-CLEAN.csv` instead; they are the same files with those rows removed.
+
+## Update 6 Oct 2026 (later): titles in 02-seo-CLEAN.csv
+The owner took "Reproduction Print" out of print titles. `02-seo-CLEAN.csv` now carries the new titles for its 3,210 affected products (the original is `02-seo-CLEAN.csv.bak-before-title-fix`). `01-seo.csv` was already being imported, so it was left alone. Import `../../signed-prints/2026-10-06-title-copy/` **last**, after these SEO files and the age-group files, to set the final titles.
