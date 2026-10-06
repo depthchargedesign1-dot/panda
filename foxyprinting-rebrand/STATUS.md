@@ -17,14 +17,14 @@ Last updated: 6 Oct 2026, evening.
 | 9 | OK to delete: 21 "trerrace" duplicate draft flags (Shopify); broken BR3W UP Wales SVG and first Farm Shop SVG (Dropbox) | tidy-up |
 | 10 | Unpublish from FB/IG, TikTok and Google: 9 club baby grows, Ed Sheeran and Billie Eilish posters, Scottie Barnes and Andy Burnham masks, older sensitive-figure masks (Shopify blocks me from unpublishing) | copyright rule |
 | 11 | Approve: 284 exact duplicates to draft; rewrite 2,708 print descriptions with false claims; Man City Treble flag with trophies (keep, redesign or remove) | Merchant Center health |
-| 12 | Mug header images: OK the rude-mugs banner? Allow Higgsfield sandbox so I can check and crop images? (theme tiles need a new theme copy; field fix went live 6 Oct) | mug collection headers + tiles |
+| 12 | Preview and publish theme "Foxy Pop 2026 – mug tiles" (`189453861245`): compact banners site-wide + "Shop by type" tiles on ALL MUGS. Preview: https://foxyprinting.co.uk/collections/all-mugs?preview_theme_id=189453861245 | shorter collection headers everywhere, mug tiles |
 | 13 | Connect Postiz as a Claude connector (see below) | posting to FB, IG and TikTok |
 
 ## Owner's import queue (one file each morning and bedtime; reminders run 07:52 and 21:52 UK)
 See `exports/IMPORT-SCHEDULE.md`. Order: SEO 02-CLEAN → age 01 → age 02-CLEAN → masks TEST then 01–04 → prints TEST then 01–04.
 
 ## Running or recently finished
-- Mug sub-collections: new collection funny-number-plate-mugs (20 mugs) live; 12 header images generated in Higgsfield, not uploaded (paused: sandbox denied). Tiles need a new theme copy.
+- Mug sub-collections (done 6 Oct): new smart collection funny-number-plate-mugs (20 mugs, Online Store + Shop). 14 mug collections have new 1800x600 headers (`foxy.header_image`, live now) and `foxy.compact_header`; ALL MUGS has `foxy.subcollections`. 23 compact auto banners `foxy-header-<group>-compact.jpg` added to Files (originals kept). Theme copy "Foxy Pop 2026 – mug tiles" `189453861245` (duplicated from live "field fix", Infinite Options embed on) waits for the owner to publish. Record: `exports/mug-subheaders/manifest.json`.
 - Rude number plate mugs: live (website and Shop only). Teaser ads in `exports/social/2026-10-06-rude-mugs/`, not posted.
 - TikTok ads (mug, masks, Wales flag): made, not posted. See `exports/social/2026-10-06-tiktok-ads.md`.
 - Amazon test (mug, hat, flag): `exports/amazon/2026-10-06-test/`; exporter `tools/amazon_export.py`.
@@ -34,5 +34,5 @@ Shopify ✅ · Dropbox ✅ (never delete) · Google Drive ✅ · Gmail ✅ (draf
 
 ## Known blocks (don't retry; ask the owner)
 - Shopify MCP blocks unpublish, bulk mutations, and probably delete.
-- Uploading our own files to Higgsfield is blocked; Shopify Files (staged upload from here) → public CDN URL → Higgsfield import works.
+- Uploading local files to Higgsfield from here is blocked, but the Higgsfield sandbox can download, edit and PUT files to a `media_upload` URL; then `fileCreate` from that Higgsfield URL. Shopify staged URLs must never go to Higgsfield.
 - cdn.shopify.com, foxyprinting.co.uk and Higgsfield CloudFront are not reachable from this machine.
