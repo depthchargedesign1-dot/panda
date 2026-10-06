@@ -14,3 +14,8 @@ Columns: Handle, SEO Title, SEO Description (same format as the 4 Oct files). Ot
 Supersedes the 4 Oct `0[1-6]-seo.csv` files for these products – don't import those.
 
 Don't import the old exports/face-masks/masks-01/02 CSVs: the mask copy is already live and newer.
+
+## Update 6 Oct 2026 (afternoon): use the -CLEAN files
+Terrace flags (new handles, now ACTIVE), bobble hats (rewritten, ACTIVE) and number plate mugs changed after these files were made.
+Importing the old rows would create duplicate draft flags under the old "trerrace" handles and put the hats back to DRAFT with old titles.
+Import `01-seo-CLEAN.csv` and `02-seo-CLEAN.csv` instead; they are the same files with those rows removed.
