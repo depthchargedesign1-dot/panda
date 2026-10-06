@@ -29,3 +29,21 @@ Features Dishwasher Safe | Microwave Safe, Country of Manufacture United Kingdom
 6. Check each listing preview: title, variation pictures and the description (it's the Shopify HTML).
 
 Titles are 80 characters or less and contain no third-party names. The plates are novelty designs, not real registrations.
+
+## Rude number plate mugs (separate file, 6 Oct 2026)
+
+File: `rude-number-plate-mugs-ebay.csv` - the 10 adult-humour plates (A33 HOI3, B3LL 3ND, 8008 I3S, CL1 NT, D1K H34D,
+N0B H34D, P3N 15, T05 53R, W4N K3R, W3T W1P3), same layout as the main file: one parent row + 5 Country variation rows
+each, £7.99, custom label = Shopify SKU (FOXY-SUB-RNPM...), main picture = the two-mug "both ends" view.
+Built with `python3 tools/artwork/rude_number_plate_mugs.py ebay exports/rude-number-plate-mugs/shopify-image-urls.json`
+(picture URLs are the Shopify CDN files without the ?v= cache-buster).
+
+**Read before uploading - eBay restricts profanity.** eBay's offensive-material policy does not allow profanity or
+obscene language in listing titles, and its filters can block or remove listings whose title or pictures show it, even
+disguised with numbers. The titles here never spell a word out (only the plate as written plus "Adult Humour"), but the plates
+themselves are the joke, so expect some of them (most likely CL1 NT, W4N K3R, D1K H34D, B3LL 3ND) to be blocked or
+pulled. Suggestions:
+- Upload this file separately from the main number plate file, so a rejected row does not hold up the clean range.
+- If eBay flags a listing, drop that design from eBay rather than re-listing it; repeated violations can hurt the account.
+- Pick an adult/novelty-appropriate category and keep "Adult Humour" in the title so buyers know what they are getting.
+The same steps as above apply (fill *Category, business policies and quantities, then Seller Hub > Reports > Uploads).

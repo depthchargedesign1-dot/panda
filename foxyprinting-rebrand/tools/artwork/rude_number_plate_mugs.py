@@ -249,7 +249,7 @@ def build():
             alt=dict(
                 main=f"Two views of the {reg_text(d)} rude number plate mug: the GB band end and the far end of the yellow plate printed round a white 11oz ceramic mug",
                 flat=f"Flat view of the full {reg_text(d)} yellow number plate artwork with a GB band, as printed round the rude number plate mug",
-                **{c[0]: f"Rude number plate mug with a {reg_text(d)} yellow plate wrapping round a white 11oz ceramic mug, {c[0]} band"
+                **{c[0]: f"Rude number plate mug with the {reg_text(d)} yellow plate wrapping round a white 11oz ceramic mug, {c[0]} band"
                    for c in COUNTRIES})))
     json.dump(products, open(os.path.join(OUT, "products.json"), "w"), indent=1, ensure_ascii=False)
     proofs = []
