@@ -319,7 +319,7 @@ def pdf_font(key, text):
     import hashlib
     chars = ''.join(sorted(set(text)))
     name = f'F_{key}_{hashlib.md5(chars.encode()).hexdigest()[:8]}'
-    if name not in pdfmetrics.getRegisteredFontNames():
+    if name not in pdfmetrics._fonts:
         src = _WORK['dir'] / FONTS[key][0]
         dst = _WORK['dir'] / f'{name}.ttf'
         opt = subset.Options()
@@ -332,7 +332,10 @@ def pdf_font(key, text):
         sub.populate(text=chars)
         sub.subset(f)
         subset.save_font(f, str(dst), opt)
-        pdfmetrics.registerFont(TTFont(name, str(dst)))
+        # registerFont() would reuse the full font already registered under the same face name
+        # (e.g. "PTSans-Regular"), so put the subset in the registry directly; the face name is kept
+        # so Illustrator still recognises the installed font.
+        pdfmetrics._fonts[name] = TTFont(name, str(dst))
     return name
 
 
