@@ -5,7 +5,8 @@ description: Make editable, print-ready production artwork for a Foxy Printing p
 
 # Foxy Printing production artwork
 
-Owner's rules (5 Oct 2026):
+Owner's rules (5–6 Oct 2026):
+- **Every new product gets print-ready artwork with bleed** (3 mm on every trimmed or cut edge, or the wrap bleed from artwork-specs.md), a 3 mm safe area, and 300 dpi images, made before the product goes live.
 - **Every product gets its own folder** in Dropbox: `/AI DESIGNS 2026/<Product title> - <SKU>/` (e.g. `/AI DESIGNS 2026/Halloween Treat Boxes - FOXY-CUT-HTBPO1-01/`). Never dump files loose in `/AI DESIGNS 2026`, and don't edit its INDEX.md.
 - Files must be **editable**: live text for anything the customer personalises (name, age, message), vectors where possible.
 - **Never delete, move or overwrite anything in Dropbox.** Only create new folders/files. If a saved file is wrong, save a "(fixed)" copy and tell the owner which one to delete.
