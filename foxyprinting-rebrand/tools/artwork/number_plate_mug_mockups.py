@@ -103,13 +103,15 @@ def main(scenes_dir, tex_dir, products_path, out):
     manifest = []
     for i, p in enumerate(json.load(open(products_path))):
         sb = p["sku_base"]
-        for code in CODES:   # one mockup per country: front-on, reg text centred, plate curving away at the sides
+        # Geometry: the wrap starts just past the handle. Text reads left to right, so with the handle on the LEFT
+        # you see the band end (wrap x ~36 mm faces the camera); with the handle on the RIGHT you see the far end (~164 mm).
+        for code in CODES:   # one mockup per country, handle left, so the country band is in view
             fn = f"{sb}-{code}-mockup.jpg"
-            composite(bases["s0"], SCENES["s0"], tex(sb, code, "wrap"), centre_mm=112).save(os.path.join(out, fn), quality=88)
+            composite(bases["s0"], SCENES["s0"], tex(sb, code, "wrap"), flip=True, centre_mm=36).save(os.path.join(out, fn), quality=88)
             manifest.append(dict(sku=sb, file=fn, kind="mockup", country=NAMES[code]))
         # wrap view: two mugs turned so you see the band end and the far end of the plate going round
-        a = composite(bases["s0"], SCENES["s0"], tex(sb, "GB", "wrap"), flip=True, centre_mm=45)
-        b = composite(bases["s0"], SCENES["s0"], tex(sb, "GB", "wrap"), centre_mm=160)
+        a = composite(bases["s0"], SCENES["s0"], tex(sb, "GB", "wrap"), flip=True, centre_mm=36)
+        b = composite(bases["s0"], SCENES["s0"], tex(sb, "GB", "wrap"), centre_mm=164)
         crop = lambda im, l, r: im.crop((int(l * N), 0, int(r * N), N))
         a, b = crop(a, 0.08, 0.80), crop(b, 0.20, 0.92)
         w = a.width + b.width
@@ -129,7 +131,7 @@ def main(scenes_dir, tex_dir, products_path, out):
         for k, sc_key in enumerate(LIFESTYLE[i]):
             code = CODES[(i + k) % 5]
             fn = f"{sb}-life-{k + 1}.jpg"
-            composite(bases[sc_key], SCENES[sc_key], tex(sb, code, "wrap"), centre_mm=(95, 112, 80)[k]).save(os.path.join(out, fn), quality=88)
+            composite(bases[sc_key], SCENES[sc_key], tex(sb, code, "wrap"), flip=(k != 1), centre_mm=(36, 164, 36)[k]).save(os.path.join(out, fn), quality=88)
             manifest.append(dict(sku=sb, file=fn, kind="lifestyle", country=NAMES[code], scene=SCENES[sc_key]["name"]))
     json.dump(manifest, open(os.path.join(out, "manifest.json"), "w"), indent=1)
     print(len(manifest), "images")
