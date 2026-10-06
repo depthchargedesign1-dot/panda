@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="66mm" height="56mm" viewBox="0 0 66 56">
+<title>Personalised bobble hat cuff badge template 60x50mm - FOXY-DTF-PBH-01 to -08</title>
+<!-- Colours are CMYK-safe; CMYK values are in each element's data-cmyk attribute. -->
+<g id="Artwork" inkscape:groupmode="layer" inkscape:label="Artwork">
+<rect x="0" y="0" width="66" height="56" fill="#ffffff" data-cmyk="0,0,0,0"/>
+<rect x="7" y="7" width="52" height="42" rx="2.5" fill="none" stroke="#00248f" stroke-width="0.6" data-cmyk="100,80,20,30"/>
+<rect x="18" y="9" width="30" height="22" rx="1" fill="none" stroke="#8c8c8c" stroke-width="0.3" stroke-dasharray="1.2,0.8" data-cmyk="0,0,0,45"/>
+<text x="33" y="19.6" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="2.469" text-anchor="middle" fill="#8c8c8c" data-cmyk="0,0,0,45">YOUR BADGE</text>
+<text x="33" y="22.9" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="2.469" text-anchor="middle" fill="#8c8c8c" data-cmyk="0,0,0,45">OR LOGO HERE</text>
+</g>
+<g id="Text" inkscape:groupmode="layer" inkscape:label="Text">
+<text id="Club_or_business_name" x="33" y="38.2" font-family="'Bebas Neue', sans-serif" font-weight="400" font-size="5.292" text-anchor="middle" fill="#00248f" data-cmyk="100,80,20,30">YOUR CLUB NAME</text>
+<text id="Text_under_design" x="33" y="42.8" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="2.822" text-anchor="middle" fill="#00248f" data-cmyk="100,80,20,30">Optional line - Est. 1985</text>
+</g>
+<g id="CUT" inkscape:groupmode="layer" inkscape:label="CUT">
+<rect x="3" y="3" width="60" height="50" fill="none" stroke="#ff0000" stroke-width="0.088"/>
+</g>
+<g id="Guides" inkscape:groupmode="layer" inkscape:label="Guides" style="display:none">
+<rect x="0.15" y="0.15" width="65.7" height="55.7" fill="none" stroke="#4dff00" stroke-width="0.2" stroke-dasharray="1,0.7" data-cmyk="70,0,100,0"/>
+<rect x="6" y="6" width="54" height="44" fill="none" stroke="#ff00ff" stroke-width="0.2" stroke-dasharray="1,0.7" data-cmyk="0,100,0,0"/>
+<text x="33" y="2.1" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="1.588" text-anchor="middle" fill="#4d4d4d" data-cmyk="0,0,0,70">BLEED 3 mm</text>
+<text x="33" y="55.2" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="1.588" text-anchor="middle" fill="#4d4d4d" data-cmyk="0,0,0,70">TRIM 60 x 50 mm  |  SAFE 3 mm</text>
+</g>
+</svg>

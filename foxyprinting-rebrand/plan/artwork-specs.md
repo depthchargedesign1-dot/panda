@@ -44,3 +44,11 @@ Sizes are for the Foxy Pop theme at its default 1360px page width. Supply them a
 
 - Mirroring: supply unmirrored masters; a "- MIRRORED.pdf" is included for drivers/RIPs that don't mirror sublimation transfers automatically.
 - Generator example: `tools/artwork/number_plate_mugs.py`.
+
+## Bobble hats: cuff badge (FOXY-DTF-PBH-01 to -08)
+
+| Item | Size | Notes |
+|---|---|---|
+| Beanie cuff badge (full colour, DTF) | **60 × 50 mm** print area (landscape) + **3 mm bleed** each edge = **66 × 56 mm** page. **ASK:** size not confirmed by the owner, and cuff depth/width of the B472 not known. | Safe area 3 mm inside trim. 300 dpi for any raster. Centred on the front of the turned-up cuff (exact position from the fold: **ASK**). CUT layer = red 0.25 pt trim path for trimming the film. Supply unmirrored; whether the DTF RIP needs a pre-mirrored file: **ASK**. Press settings: **ASK**. |
+
+- Generator: `tools/artwork/hat_badge_template.py` (change `TRIM_W` / `TRIM_H` and re-run if the owner gives a size).
