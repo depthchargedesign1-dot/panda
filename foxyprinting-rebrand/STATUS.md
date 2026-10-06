@@ -35,6 +35,7 @@ See `exports/IMPORT-SCHEDULE.md`. Order: SEO 02-CLEAN → age 01 → age 02-CLEA
 Shopify ✅ · Dropbox ✅ (never delete) · Google Drive ✅ · Gmail ✅ (drafts only, never send) · Higgsfield ✅ (TikTok needs the owner's form) · GitHub ✅ (works in Accept edits mode) · Postiz ⏳ (add custom connector `https://api.postiz.com/mcp/<API key>`) · eBay/Amazon/BigCommerce ❌ (CSV/xlsx files only).
 
 ## Known blocks (don't retry; ask the owner)
+- Network policy blocks `*.dl.dropboxusercontent.com` (Dropbox file downloads, 403) as well as cdn.shopify.com. Owner can add both under the environment's Network access > Allowed domains. `tools/request_mask_hero.py` (Request a Facemask main image) is ready and waits on this.
 - Shopify MCP blocks unpublish, bulk mutations, and probably delete.
 - Uploading local files to Higgsfield from here is blocked, but the Higgsfield sandbox can download, edit and PUT files to a `media_upload` URL; then `fileCreate` from that Higgsfield URL. Shopify staged URLs must never go to Higgsfield.
 - cdn.shopify.com, foxyprinting.co.uk and Higgsfield CloudFront are not reachable from this machine.
