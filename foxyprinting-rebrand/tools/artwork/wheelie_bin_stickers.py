@@ -309,12 +309,40 @@ def fit(t, D=None):
     return size, pdfmetrics.stringWidth(t['text'], name, size) / MM
 
 
+_WORK = {}
+
+
+def pdf_font(key, text):
+    """A font holding only the glyphs this design uses (fontTools subset, no hinting / layout tables),
+    registered for the PDF so the embedded font is a few KB. Metrics are identical to the full font."""
+    from fontTools import subset
+    import hashlib
+    chars = ''.join(sorted(set(text)))
+    name = f'F_{key}_{hashlib.md5(chars.encode()).hexdigest()[:8]}'
+    if name not in pdfmetrics.getRegisteredFontNames():
+        src = _WORK['dir'] / FONTS[key][0]
+        dst = _WORK['dir'] / f'{name}.ttf'
+        opt = subset.Options()
+        opt.layout_features = []
+        opt.hinting = False
+        opt.name_IDs = [0, 1, 2, 3, 4, 5, 6]
+        opt.notdef_outline = True
+        f = subset.load_font(str(src), opt)
+        sub = subset.Subsetter(opt)
+        sub.populate(text=chars)
+        sub.subset(f)
+        subset.save_font(f, str(dst), opt)
+        pdfmetrics.registerFont(TTFont(name, str(dst)))
+    return name
+
+
 def register_fonts(font_dir, work_dir):
     """Register each TTF with its hinting removed (hinting is screen-only; it made the embedded subsets 3x bigger)."""
     from fontTools.ttLib import TTFont as FT
     from fontTools.pens.boundsPen import BoundsPen
     work = Path(work_dir) / '_fonts_unhinted'
     work.mkdir(parents=True, exist_ok=True)
+    _WORK['dir'] = work
     for key, (ttf, *_rest) in FONTS.items():
         f = FT(str(Path(font_dir) / ttf))
         gs, upm, cmap = f.getGlyphSet(), f['head'].unitsPerEm, f.getBestCmap()
@@ -441,7 +469,7 @@ def hexrgb(h):
 def pdf(n, deco, path):
     D = DESIGNS[n]
     cv = canvas.Canvas(str(path), pagesize=(PAGE_W * MM, PAGE_H * MM), pageCompression=1,
-                       initialFontName='F_' + D['texts'][0]['font'])
+                       initialFontName=pdf_font(D['texts'][0]['font'], ''.join(u['text'] for u in D['texts'] if u['font'] == D['texts'][0]['font'])))
     cv.setTitle(f'Personalised Wheelie Bin Sticker - Design {n} - {sku(n)}')
     cv.setAuthor('Foxy Printing')
     cv.setSubject('A5 210 x 148 mm + 3 mm bleed; layers Artwork / CUT (red 0.25 mm)')
@@ -493,7 +521,8 @@ def pdf(n, deco, path):
     for t in D['texts']:
         size, _ = fit(t, D)
         cv.setFillColorRGB(*hexrgb(t['fill']))
-        cv.setFont('F_' + t['font'], size)
+        used = ''.join(u['text'] for u in D['texts'] if u['font'] == t['font'])
+        cv.setFont(pdf_font(t['font'], used), size)
         cv.drawCentredString((BLEED + t['cx']) * MM, (PAGE_H - BLEED - t['base']) * MM, t['text'])
     cv._code.append('EMC')
     cv._code.append('/OC /CUT BDC')
