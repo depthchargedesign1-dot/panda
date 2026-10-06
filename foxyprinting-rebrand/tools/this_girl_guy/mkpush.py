@@ -41,7 +41,7 @@ for p in sel:
     if not tee:
         c0=(r['colour'] if r else 'white'); c='White' if c0=='white' else 'White/'+c0.title()
         cc=cur('color')
-        if cc!=c and not (cc=='Multicolor' and c=='White'): S('color',c)
+        if (cc or '').lower()!=c.lower() and not (cc=='Multicolor' and c=='White'): S('color',c)
     if mf: it['mf']=mf; stats['products_mf']+=1
     # alt text
     alts=[]

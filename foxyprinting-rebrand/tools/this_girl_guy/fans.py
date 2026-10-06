@@ -61,7 +61,7 @@ D = {
 'Jamthund':('Jämthund','the Swedish elkhound'),'Kangal':('Kangal','the calm, powerful Turkish guardian'),
 'Karakachan':('Karakachan','the brave Bulgarian flock guardian'),'Keralian Beardog':('Karelian Bear Dog','the fearless Finnish hunter'),
 'Kerry Blue':('Kerry Blue Terrier','with that soft blue-grey coat'),'Komondor':('Komondor','with that amazing corded coat'),
-'Labrador':('Labrador','the friendliest dog in the world'),'Lapphund':('Lapphund','the fluffy reindeer herder'),
+'Labrador':('Labrador','the friendliest dog going'),'Lapphund':('Lapphund','the fluffy reindeer herder'),
 'Lundehund':('Lundehund','the extra-toed puffin dog from Norway'),'Malinois':('Malinois','the clever, hard-working Belgian Shepherd'),
 'Mucuchies':('Mucuchíes','the Venezuelan mountain dog'),'Mudi Dog':('Mudi','the clever Hungarian herder'),
 'Norwegian Elkhound':('Norwegian Elkhound','the hardy grey spitz'),'Pemeranian':('Pomeranian','the little ball of fluff'),
