@@ -59,6 +59,26 @@ What it does:
 5. Test-buy one personalised listing; the buyer's text arrives in the order customisation file
    (Orders API `BuyerCustomizedInfo`), which is what production prints (mugkit `--set Name=...`).
 
+## Connecting to Amazon directly (SP-API) - `scripts/spapi.py`
+One-time setup (Shaun):
+1. Finish the developer profile (security answers from the Dropbox "Amazon-SP-API-Security-Pack").
+   Ask for a **private developer** (own account only) with roles Product Listing, Pricing, Inventory and
+   Order Tracking, Amazon Fulfilment (add Buyer Communication later if needed).
+2. When approved: Seller Central > Apps and Services > Develop apps > Add new app client (SP-API) >
+   then "Authorise" it (self-authorisation) to get the refresh token. Note the LWA client id + secret.
+3. Put them in the cloud environment settings as environment variables, never in chat or files:
+   `SPAPI_CLIENT_ID`, `SPAPI_CLIENT_SECRET`, `SPAPI_REFRESH_TOKEN`, `SPAPI_SELLER_ID`.
+4. Network access: allow `api.amazon.com`, `sellingpartnerapi-eu.amazon.com` and the feed-document host
+   `tortuga-prod-eu.s3-eu-west-1.amazonaws.com` (or use the Higgsfield sandbox, which has internet).
+Use (always in this order):
+- `python3 scripts/spapi.py check` - proves the connection; must show amazon.co.uk `uk_ready: true`.
+- `python3 scripts/spapi.py search-types mug` and `product-type DRINKING_CUP` - confirm the product type,
+  required attributes and allowed variation themes; fix `amazon_config.json` if they differ.
+- `python3 scripts/spapi.py validate "<JSON_LISTINGS_FEED>.json"` - Amazon checks every SKU, nothing changes.
+- Only after Shaun says go: `submit "<feed>.json" --confirm` (refuses if validation is missing, has errors,
+  is over 24h old or the feed changed), then `feed-status <feedId>` for the processing report.
+Tests: `python3 tests/test_spapi.py` (mock Amazon, no network).
+
 ## Settings worth checking with Shaun (amazon_config.json)
 `price_rule` (same / plus:1.00 / markup:15 - Amazon fees are higher than Shopify), `quantity`
 (made-to-order stock), `handling_days`, `product_types` (add posters, masks, flags... only after checking
