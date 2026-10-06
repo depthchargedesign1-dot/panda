@@ -1,0 +1,25 @@
+{
+  "sku": "FOXY-SUB-PFSM-RWS-01",
+  "name": "Personalised Football Shirt Mug Red White Stripes",
+  "title": "Personalised Football Shirt Mug – Your Name & Number – Red & White Stripes – 11oz Ceramic",
+  "size": "11oz",
+  "background": "#ffffff",
+  "defaults": {"Name": "SMITH", "Number": "10", "Line1": "LEGEND"},
+  "elements": [
+    {"type": "shirt", "panel": "left", "view": "back", "pattern": "stripes",
+     "colors": ["#d71920", "#ffffff"], "sleeves": "#d71920", "trim": "#111111", "collar": "#111111", "cuffs": "#ffffff",
+     "font": "Oswald:700", "text_color": "#111111", "text_outline": {"color": "#ffffff", "width": 16},
+     "name": {"field": "Name"}, "number": {"field": "Number"}},
+    {"type": "shirt", "panel": "right", "view": "front", "neck": "v", "w_mm": 44, "dx_mm": -20, "y_mm": 8,
+     "pattern": "stripes", "colors": ["#d71920", "#ffffff"], "sleeves": "#d71920", "trim": "#111111",
+     "collar": "#111111", "cuffs": "#ffffff", "font": "Oswald:700", "text_color": "#111111",
+     "crest": {"text": "", "color": "#ffffff", "outline": "#111111"}},
+    {"type": "text", "panel": "right", "dx_mm": 21, "y_mm": 30, "text": "CLUB", "font": "Oswald:700",
+     "size_mm": 14, "max_w_mm": 40, "color": "#111111"},
+    {"type": "text", "panel": "right", "dx_mm": 21, "y_mm": 47, "field": "Line1", "upper": true,
+     "font": "Oswald:700", "size_mm": 14, "max_w_mm": 40, "color": "#d71920"},
+    {"type": "rect", "panel": "right", "dx_mm": 21, "y_mm": 51.5, "w_mm": 40, "h_mm": 1.2, "color": "#111111"},
+    {"type": "text", "panel": "right", "dx_mm": 21, "y_mm": 58, "text": "EST. FOR LIFE", "font": "Oswald:500",
+     "size_mm": 4.2, "max_w_mm": 40, "color": "#111111", "spacing_mm": 0.6}
+  ]
+}

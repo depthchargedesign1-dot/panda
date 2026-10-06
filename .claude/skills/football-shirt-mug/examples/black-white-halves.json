@@ -1,0 +1,107 @@
+{
+ "sku": "FOXY-SUB-PFSM-BWHV-01",
+ "name": "Personalised Football Shirt Mug Black & White Halves",
+ "title": "Personalised Football Shirt Mug \u2013 Your Name & Number \u2013 Black & White Halves \u2013 11oz Ceramic",
+ "size": "11oz",
+ "background": "#ffffff",
+ "defaults": {
+  "Name": "SMITH",
+  "Number": "10",
+  "Line1": "LEGEND"
+ },
+ "elements": [
+  {
+   "type": "shirt",
+   "panel": "left",
+   "view": "back",
+   "pattern": "halves",
+   "colors": [
+    "#111111",
+    "#ffffff"
+   ],
+   "trim": "#111111",
+   "collar": "#111111",
+   "cuffs": "#111111",
+   "font": "Oswald:700",
+   "text_color": "#e3b70d",
+   "text_outline": {
+    "color": "#111111",
+    "width": 16
+   },
+   "name": {
+    "field": "Name"
+   },
+   "number": {
+    "field": "Number"
+   }
+  },
+  {
+   "type": "shirt",
+   "panel": "right",
+   "view": "front",
+   "neck": "v",
+   "w_mm": 44,
+   "dx_mm": -20,
+   "y_mm": 8,
+   "pattern": "halves",
+   "colors": [
+    "#111111",
+    "#ffffff"
+   ],
+   "trim": "#111111",
+   "collar": "#111111",
+   "cuffs": "#111111",
+   "font": "Oswald:700",
+   "text_color": "#e3b70d",
+   "crest": {
+    "text": "",
+    "color": "#ffffff",
+    "outline": "#111111"
+   }
+  },
+  {
+   "type": "text",
+   "panel": "right",
+   "dx_mm": 21,
+   "y_mm": 30,
+   "text": "CLUB",
+   "font": "Oswald:700",
+   "size_mm": 14,
+   "max_w_mm": 40,
+   "color": "#111111"
+  },
+  {
+   "type": "text",
+   "panel": "right",
+   "dx_mm": 21,
+   "y_mm": 47,
+   "field": "Line1",
+   "upper": true,
+   "font": "Oswald:700",
+   "size_mm": 14,
+   "max_w_mm": 40,
+   "color": "#111111"
+  },
+  {
+   "type": "rect",
+   "panel": "right",
+   "dx_mm": 21,
+   "y_mm": 51.5,
+   "w_mm": 40,
+   "h_mm": 1.2,
+   "color": "#111111"
+  },
+  {
+   "type": "text",
+   "panel": "right",
+   "dx_mm": 21,
+   "y_mm": 58,
+   "text": "EST. FOR LIFE",
+   "font": "Oswald:500",
+   "size_mm": 4.2,
+   "max_w_mm": 40,
+   "color": "#111111",
+   "spacing_mm": 0.6
+  }
+ ]
+}
