@@ -1,0 +1,350 @@
+{
+ "_note": "Foxy Printing -> Amazon UK settings. Edit here, not in the script. Keys starting with _ are comments.",
+ "seller_id": "",
+ "marketplace_id": "A1F83G8C2ARO7P",
+ "language_tag": "en_GB",
+ "currency": "GBP",
+ "brand": "Foxy Printing",
+ "manufacturer": "DepthChargeDesign & Print Ltd",
+ "country_of_origin": "GB",
+ "include_statuses": [
+  "ACTIVE"
+ ],
+ "price_rule": "same",
+ "_price_rule_help": "same | plus:1.00 | markup:15  (percent). Amazon referral fees are higher than Shopify - set this deliberately.",
+ "quantity": 100,
+ "_quantity_help": "Made-to-order stock level sent to Amazon (Shopify inventory is ignored for print-on-demand).",
+ "handling_days": 2,
+ "handling_days_personalised": 3,
+ "product_types": [
+  {
+   "match": "(?i)\\bmugs?\\b",
+   "product_type": "DRINKING_CUP",
+   "item_type_keyword": "coffee-mugs",
+   "defaults": {
+    "material": "Ceramic",
+    "color": "White",
+    "capacity_ml": 325,
+    "included_components": "1 x printed 11oz ceramic mug",
+    "bullets": [
+     "11oz (approx. 325ml) white ceramic mug with a C-shaped handle and high-gloss finish",
+     "Sublimation printed in-house in our North Yorkshire workshop for a sharp, long-lasting print",
+     "Dishwasher and microwave safe - avoid abrasive scourers",
+     "Printed to order and posted in protective packaging",
+     "A fun gift for birthdays, Christmas, Secret Santa, the office or Father's and Mother's Day"
+    ]
+   },
+   "keywords": [
+    "coffee mug",
+    "tea cup",
+    "novelty gift",
+    "present",
+    "birthday",
+    "christmas",
+    "secret santa",
+    "office",
+    "dad",
+    "mum"
+   ]
+  },
+  {
+   "match": "(?i)t-?shirt|\\btee\\b",
+   "product_type": "SHIRT",
+   "item_type_keyword": "t-shirts",
+   "defaults": {
+    "material": "Cotton",
+    "bullets": []
+   },
+   "keywords": [
+    "t shirt",
+    "tee",
+    "top",
+    "gift"
+   ]
+  }
+ ],
+ "_product_types_help": "First regex that matches the Shopify product type, then the title, wins. Confirm each product_type in Seller Central (Add products via upload > product type search) before the first upload. Products with no match are HELD BACK.",
+ "variation_themes": {
+  "colour": {
+   "theme": "COLOR",
+   "attribute": "color"
+  },
+  "color": {
+   "theme": "COLOR",
+   "attribute": "color"
+  },
+  "colourway": {
+   "theme": "COLOR",
+   "attribute": "color"
+  },
+  "size": {
+   "theme": "SIZE",
+   "attribute": "size"
+  },
+  "style": {
+   "theme": "STYLE",
+   "attribute": "style"
+  },
+  "design": {
+   "theme": "STYLE",
+   "attribute": "style"
+  },
+  "country": {
+   "theme": "STYLE",
+   "attribute": "style"
+  },
+  "band": {
+   "theme": "STYLE",
+   "attribute": "style"
+  },
+  "_default": {
+   "theme": "STYLE",
+   "attribute": "style"
+  }
+ },
+ "_variation_help": "Shopify option name (lower case) -> Amazon variation theme + child attribute. Two options combine as e.g. SIZE/COLOR. Check the theme is allowed for the product type.",
+ "personalisation_rules": [
+  {
+   "tag": "AgeNameMessage",
+   "fields": [
+    "Name",
+    "Age",
+    "Message"
+   ]
+  },
+  {
+   "tag": "AgeNameMessage2",
+   "fields": [
+    "Name",
+    "Age",
+    "Message"
+   ]
+  },
+  {
+   "tag": "Add Any Name",
+   "fields": [
+    "Name"
+   ]
+  },
+  {
+   "tag": "Any Name",
+   "fields": [
+    "Name"
+   ]
+  },
+  {
+   "tag": "Add Any Number",
+   "fields": [
+    "Number"
+   ]
+  },
+  {
+   "tag": "Add Name On Back",
+   "fields": [
+    "Name on back"
+   ]
+  },
+  {
+   "tag": "Add Month & Year",
+   "fields": [
+    "Month & Year"
+   ]
+  },
+  {
+   "tag": "Add Song",
+   "fields": [
+    "Song title"
+   ]
+  },
+  {
+   "tag": "Address Label Info",
+   "fields": [
+    "Address"
+   ]
+  },
+  {
+   "tag_regex": "(?i)^personalised-mugs$|football shirt mug",
+   "fields": [
+    "Name",
+    "Number"
+   ]
+  },
+  {
+   "title_regex": "(?i)\\bname (and|&) number\\b",
+   "fields": [
+    "Name",
+    "Number"
+   ]
+  },
+  {
+   "title_regex": "(?i)\\bname (and|&) age\\b|birthday age",
+   "fields": [
+    "Name",
+    "Age"
+   ]
+  },
+  {
+   "title_regex": "(?i)personali[sz]ed|custom name|your name|any name|\\bNAME\\b",
+   "fields": [
+    "Name"
+   ]
+  },
+  {
+   "text_regex": "(?i)supply us with your name and age",
+   "fields": [
+    "Name",
+    "Age"
+   ]
+  },
+  {
+   "text_regex": "(?i)supply us with your name|add your name|enter the name",
+   "fields": [
+    "Name"
+   ]
+  }
+ ],
+ "personalisation_fields": {
+  "Name": {
+   "max_chars": 15,
+   "instructions": "Enter the name exactly as you want it printed (max 15 characters)."
+  },
+  "Name on back": {
+   "max_chars": 12,
+   "instructions": "Name for the back (max 12 characters)."
+  },
+  "Number": {
+   "max_chars": 2,
+   "instructions": "Enter the number (1-2 digits)."
+  },
+  "Age": {
+   "max_chars": 3,
+   "instructions": "Enter the age (numbers only)."
+  },
+  "Message": {
+   "max_chars": 40,
+   "required": false,
+   "instructions": "Optional short message (max 40 characters)."
+  },
+  "Month & Year": {
+   "max_chars": 20,
+   "instructions": "Enter the month and year, e.g. June 2026."
+  },
+  "Song title": {
+   "max_chars": 40,
+   "instructions": "Enter the song title and artist."
+  },
+  "Address": {
+   "max_chars": 120,
+   "instructions": "Enter the address lines exactly as they should print."
+  },
+  "_default": {
+   "max_chars": 20,
+   "instructions": "Enter the text exactly as you want it printed."
+  }
+ },
+ "ip_hold_terms": [
+  "Simon Cowell",
+  "Disney",
+  "Marvel",
+  "Star Wars",
+  "Harry Potter",
+  "Pokemon",
+  "Pokémon",
+  "Nintendo",
+  "Sega",
+  "Atari",
+  "PlayStation",
+  "Xbox",
+  "Barbie",
+  "Lego",
+  "Guinness",
+  "Coca-Cola",
+  "Coca Cola",
+  "Harley",
+  "Ferrari",
+  "Porsche",
+  "Premier League",
+  "FIFA",
+  "UEFA",
+  "NFL",
+  "NBA",
+  "Netflix",
+  "BBC",
+  "Peppa Pig",
+  "Paw Patrol",
+  "Minecraft",
+  "Fortnite",
+  "Arsenal",
+  "Chelsea",
+  "Liverpool FC",
+  "Man United",
+  "Manchester United",
+  "Man City",
+  "Manchester City",
+  "Tottenham",
+  "Spurs",
+  "Everton",
+  "Newcastle United",
+  "West Ham",
+  "Aston Villa",
+  "Celtic FC",
+  "Rangers FC",
+  "AC Milan",
+  "Barcelona",
+  "Real Madrid",
+  "Juventus",
+  "Aberdeen FC",
+  "ACDC",
+  "AC/DC",
+  "Adele",
+  "2Pac",
+  "50 Cent",
+  "Amy Winehouse",
+  "Little Britain",
+  "Only Fools",
+  "The Simpsons",
+  "Spongebob",
+  "Sesame Street",
+  "Power Rangers",
+  "Batman",
+  "Superman",
+  "Spider-Man",
+  "Spiderman"
+ ],
+ "ip_hold_tags_regex": "(?i)^(celebrity|actor|actors|celebrity mug|celebrity facemask|tv stars.*|music stars|sports stars|.*fan|.*fans)$",
+ "_ip_help": "Anything matching is HELD BACK (Amazon removes IP-infringing listings and can suspend the account). Allow a SKU only when you hold a licence: add it to ip_allow_skus.",
+ "ip_allow_skus": [],
+ "warn_terms": [
+  "rude",
+  "adult humour",
+  "ADULT MUGS (RUDE)",
+  "Brazil",
+  "England",
+  "Scotland",
+  "Wales",
+  "Ireland",
+  "football team"
+ ],
+ "internal_tags_regex": "(?i)^(facebook|foxy-new-\\d+|machine-sublimation|range-.*|country-.*|\\d+\\.?|[a-z]|new-arrivals|123 bundle)$",
+ "banned_title_chars": "!$?_{}^¬¦",
+ "strip_text_regex": [
+  "(?i)remember,? please supply us with[^.<\\n]*",
+  "(?i)please contact us[^.<\\n]*",
+  "(?i)many more in our store",
+  "(?i)don'?t forget to add your name",
+  "(?i)fast dispatch"
+ ],
+ "personalised_keywords": [
+  "personalised",
+  "custom",
+  "name",
+  "customised",
+  "bespoke gift"
+ ],
+ "keyword_block": [
+  "rude",
+  "sexy",
+  "xxx",
+  "facebook"
+ ]
+}

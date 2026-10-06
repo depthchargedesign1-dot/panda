@@ -26,9 +26,8 @@ a personalised sample, or a club/brand Shaun wants used).
    editable SVG (vector designs), DOWNLOAD LINK.txt -> zip in Shopify Files. Create `NEW MUGS` once if missing.
    The Dropbox connector writes text files only; never claim a PNG/PDF is in Dropbox unless it is.
 5. **Images + Shopify** -> `mug-lifestyle-shopify` skill (mockups, lifestyle photos, DRAFT product).
-6. **eBay + Amazon files** -> a separate upload file per marketplace (eBay File Exchange CSV,
-   Amazon listing data). Titles: eBay <= 80 chars, Amazon <= 200 chars with 5 bullets and <= 250 bytes of
-   keywords. Main images must be the white-background mockups.
+6. **Amazon** -> `amazon-listing-converter` skill (variations, Amazon Custom name boxes, safe upload pack).
+   **eBay** -> a separate eBay upload file (titles <= 80 chars). Main images must be the white-background mockups.
 7. **Report** (short): per product - SKU, Shopify admin link, Dropbox folder, zip link, what still
    needs Shaun (prices, eBay category/business policies), Higgsfield credits used.
 

@@ -1,0 +1,364 @@
+{
+ "data": {
+  "products": {
+   "nodes": [
+    {
+     "id": "gid://shopify/Product/8672223304",
+     "handle": "i-love-simon-cowell-mug",
+     "title": "I Love Simon Cowell Mug",
+     "status": "ACTIVE",
+     "vendor": "Foxy Printing",
+     "productType": "I Love Heart Mugs",
+     "tags": [
+      "Celebrity Mug",
+      "FACEBOOK",
+      "I Love Mug",
+      "Personalised Mug",
+      "Printed Mug"
+     ],
+     "descriptionHtml": "<p><strong>I Love Simon Cowel! Personalised Printed Mug</strong></p><p>REMEMBER please supply us with your name IF YOU WANT IT ON</p><p>Professionally printed onto a 11oz White Mug</p>",
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        "Default Title"
+       ]
+      }
+     ],
+     "media": {
+      "nodes": [
+       {
+        "image": {
+         "url": "https://cdn.shopify.com/s/files/1/1774/9115/products/ILOVESIMONCOWELL-2019WhiteMug.jpg?v=1638871723"
+        }
+       }
+      ]
+     },
+     "variants": {
+      "nodes": [
+       {
+        "sku": "FOXY-MUG-SIMON-COWELL",
+        "price": "5.99",
+        "barcode": null,
+        "selectedOptions": [
+         {
+          "name": "Title",
+          "value": "Default Title"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "gid://shopify/Product/8686414216",
+     "handle": "personalised-cartoon-cockerel-mug",
+     "title": "Personalised Cartoon Cockerel Mug",
+     "status": "ACTIVE",
+     "vendor": "Foxy Printing",
+     "productType": "Personalised Cartoon Animals Mugs",
+     "tags": [
+      "Any Name",
+      "cartoon animal",
+      "cartoon animal mug",
+      "FACEBOOK",
+      "kids mug"
+     ],
+     "descriptionHtml": "<p><strong><span style=\"color: #0000ff;\">Personalised Cartoon Cockeral Mug</span></strong></p>\n<p>Sublimation Printed onto a 11oz High Glossy Mug</p>\n<p>Excellent Quality Print</p>\n<p>Professional Printing Company</p>\n<p>Dont forget to add your name</p>\n<p>Supplied in a Polystyrene box for safe postage</p>\n<p>Please contact us with any special requirements <a href=\"mailto:sales@foxyprinting.co.uk\">sales@foxyprinting.co.uk</a></p>",
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        "Default Title"
+       ]
+      }
+     ],
+     "media": {
+      "nodes": [
+       {
+        "image": {
+         "url": "https://cdn.shopify.com/s/files/1/1774/9115/products/CartoonCockeralMug-WhiteMug.jpg?v=1638456843"
+        }
+       }
+      ]
+     },
+     "variants": {
+      "nodes": [
+       {
+        "sku": "Foxy-Mug-X09",
+        "price": "5.99",
+        "barcode": null,
+        "selectedOptions": [
+         {
+          "name": "Title",
+          "value": "Default Title"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "gid://shopify/Product/8688545096",
+     "handle": "brazil-football-team-mug-personalised-birthday-age-and-name",
+     "title": "Personalised Brazil Football Birthday Mug",
+     "status": "ACTIVE",
+     "vendor": "Foxy Printing",
+     "productType": "International Football Team",
+     "tags": [
+      "AgeNameMessage",
+      "AgeNameMessage2",
+      "FACEBOOK",
+      "football mug",
+      "Personalised Mug",
+      "Printed Mug"
+     ],
+     "descriptionHtml": "<p><strong>Brazil Football Team Mug - Personalised Birthday Age and Name</strong></p>\n<p>REMEMBER please supply us with your name and age</p>\n<p>Professionally printed onto a 11oz White Mug</p><p>Printed using the newest Sublimation technology - Dishwasher Safe</p>\n<p>Posted in a Polystyrene box for safety</p>\n<p>Many more in our Store</p>",
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        "Default Title"
+       ]
+      }
+     ],
+     "media": {
+      "nodes": [
+       {
+        "image": {
+         "url": "https://cdn.shopify.com/s/files/1/1774/9115/products/BrazilFootballTeamPersonalisedPrintedMug-2019WhiteMug.jpg?v=1638374927"
+        }
+       },
+       {
+        "image": {
+         "url": "https://cdn.shopify.com/s/files/1/1774/9115/products/Brazil_Football_Team_Personalised_Printed_Mug.jpg?v=1638374927"
+        }
+       }
+      ]
+     },
+     "variants": {
+      "nodes": [
+       {
+        "sku": "Foxy-Mug-X11",
+        "price": "5.99",
+        "barcode": "5050177994027",
+        "selectedOptions": [
+         {
+          "name": "Title",
+          "value": "Default Title"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "gid://shopify/Product/8738141832",
+     "handle": "its-a-name-thing-personalised-adult-mug",
+     "title": "Its A NAME Thing - Personalised Adult Mug",
+     "status": "ACTIVE",
+     "vendor": "Foxy Printing",
+     "productType": "Adult Mug",
+     "tags": [
+      "Adult Mugs",
+      "ADULT MUGS (RUDE)",
+      "FACEBOOK"
+     ],
+     "descriptionHtml": "<p><strong>I'm Silently Correcting Your Grammar - Personalised Adult Mug</strong></p><p>Custom Designed Mug</p><p>Professionally Printed on to an 11oz White Mug <br>Posted in a Polystyrene box for safety</p><p>Many more in our Store</p><p>FAST DISPATCH</p>",
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        "Default Title"
+       ]
+      }
+     ],
+     "media": {
+      "nodes": [
+       {
+        "image": {
+         "url": "https://cdn.shopify.com/s/files/1/1774/9115/products/ITSASHARONTHING-2019WhiteMug.jpg?v=1638805087"
+        }
+       }
+      ]
+     },
+     "variants": {
+      "nodes": [
+       {
+        "sku": "Foxy-Mug-X73",
+        "price": "5.99",
+        "barcode": "5050177994089",
+        "selectedOptions": [
+         {
+          "name": "Title",
+          "value": "Default Title"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "gid://shopify/Product/15656038105469",
+     "handle": "custom-name-number-t-shirt",
+     "title": "Custom Name & Number T-Shirt - Personalized Sports Tee - Heat Transfer Vinyl - Add Any Name & Number",
+     "status": "ACTIVE",
+     "vendor": "Foxy Printing",
+     "productType": "T-Shirt",
+     "tags": [
+      "Add Any Name",
+      "Add Any Number",
+      "Adult Size",
+      "KIDS TEE"
+     ],
+     "descriptionHtml": "<p>Create your own personalized jersey tee with any name and number!</p><ul><li><p><strong>Personalized With Any Name &amp; Number</strong> – Fully custom vinyl print. Add your player name and favorite number to create a unique jersey tee.</p></li><li><p><b>Premium Heat Transfer Vinyl</b> – High-quality, long-lasting vinyl print that stays vibrant wash after wash.</p></li></ul>",
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        "Default Title"
+       ]
+      }
+     ],
+     "media": {
+      "nodes": [
+       {
+        "image": {
+         "url": "https://cdn.shopify.com/s/files/1/1774/9115/files/WhatsApp_Image_2025-11-06_at_08.32.19.jpg?v=1762590812"
+        }
+       }
+      ]
+     },
+     "variants": {
+      "nodes": [
+       {
+        "sku": "Foxy-Personalized-Tee",
+        "price": "6.99",
+        "barcode": null,
+        "selectedOptions": [
+         {
+          "name": "Title",
+          "value": "Default Title"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "gid://shopify/Product/16063709249917",
+     "handle": "funny-number-plate-mug-sn00-zed-snoozed",
+     "title": "Funny Number Plate Mug – SN00 ZED (Snoozed) – Monday Morning Mug – 11oz Ceramic",
+     "status": "ACTIVE",
+     "vendor": "Foxy Printing",
+     "productType": "Mugs",
+     "tags": [
+      "11oz mug",
+      "car-lover-gifts",
+      "country-gb",
+      "foxy-new-2026",
+      "funny work mug",
+      "funny-mugs",
+      "machine-sublimation",
+      "monday morning mug",
+      "novelty mug",
+      "number-plate-mugs",
+      "office mug",
+      "range-number-plate-mugs"
+     ],
+     "descriptionHtml": "<p>This Monday morning mug is for every serial snoozer who hits the button three times and still makes it in. The number plate design reads SN00 ZED.</p><h3>Why you’ll love it</h3><ul>\n<li>Makes the first brew of the week a bit more bearable</li>\n<li>A cheeky gift for the colleague who is always just on time</li>\n<li>One long yellow number plate printed right round the mug, so the joke reads from every side</li>\n<li>Pick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL</li>\n<li>Sublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews</li>\n</ul>",
+     "options": [
+      {
+       "name": "Country",
+       "values": [
+        "GB",
+        "Scotland",
+        "Wales",
+        "Northern Ireland",
+        "Ireland"
+       ]
+      }
+     ],
+     "media": {
+      "nodes": [
+       {
+        "image": {
+         "url": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-6-both-ends.jpg?v=1791292733"
+        }
+       },
+       {
+        "image": {
+         "url": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-1-GB.jpg?v=1791292732"
+        }
+       },
+       {
+        "image": {
+         "url": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-2-SCO.jpg?v=1791292732"
+        }
+       }
+      ]
+     },
+     "variants": {
+      "nodes": [
+       {
+        "sku": "FOXY-SUB-FNPMSZSM-01",
+        "price": "7.99",
+        "barcode": null,
+        "selectedOptions": [
+         {
+          "name": "Country",
+          "value": "GB"
+         }
+        ]
+       },
+       {
+        "sku": "FOXY-SUB-FNPMSZSM-02",
+        "price": "7.99",
+        "barcode": null,
+        "selectedOptions": [
+         {
+          "name": "Country",
+          "value": "Scotland"
+         }
+        ]
+       },
+       {
+        "sku": "FOXY-SUB-FNPMSZSM-03",
+        "price": "7.99",
+        "barcode": null,
+        "selectedOptions": [
+         {
+          "name": "Country",
+          "value": "Wales"
+         }
+        ]
+       },
+       {
+        "sku": "FOXY-SUB-FNPMSZSM-04",
+        "price": "7.99",
+        "barcode": null,
+        "selectedOptions": [
+         {
+          "name": "Country",
+          "value": "Northern Ireland"
+         }
+        ]
+       },
+       {
+        "sku": "FOXY-SUB-FNPMSZSM-05",
+        "price": "7.99",
+        "barcode": null,
+        "selectedOptions": [
+         {
+          "name": "Country",
+          "value": "Ireland"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

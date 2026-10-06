@@ -15,3 +15,5 @@ when they run in the Higgsfield sandbox, so keep that branch (or update the URL 
 `mug-print-artwork/SKILL.md` after merging).
 
 Preview: `.claude/skills/football-shirt-mug/examples/preview.jpg`
+
+| `amazon-listing-converter` | Shopify -> Amazon UK upload pack: variations, Amazon Custom (name/number boxes), IP hold-back, filled category template, JSON_LISTINGS_FEED |

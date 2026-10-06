@@ -1,0 +1,2321 @@
+{
+ "header": {
+  "sellerId": "YOUR_SELLER_ID",
+  "version": "2.0",
+  "issueLocale": "en_GB"
+ },
+ "messages": [
+  {
+   "messageId": 1,
+   "sku": "Foxy-Mug-X09",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Personalised Cartoon Cockerel Mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "supplier_declared_has_product_identifier_exemption": [
+     {
+      "value": true,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "Personalised Cartoon Cockeral Mug\nSublimation Printed onto a 11oz High Glossy Mug\nExcellent Quality Print\nProfessional Printing Company\nSupplied in a Polystyrene box for safe postage\n\nPersonalise it: use the Customise now button to enter the name. Please check spelling - we print exactly what you type.",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "PERSONALISED: click 'Customise now' and enter the name - we print it exactly as typed",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "11oz (approx. 325ml) white ceramic mug with a C-shaped handle and high-gloss finish",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed in-house in our North Yorkshire workshop for a sharp, long-lasting print",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Dishwasher and microwave safe - avoid abrasive scourers",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Printed to order and posted in protective packaging",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "animal kids coffee tea cup novelty gift present birthday christmas secret santa office dad mum custom name customised bespoke",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "color": [
+     {
+      "value": "White",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "Foxy-Mug-X09",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 5.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 3
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/products/CartoonCockeralMug-WhiteMug.jpg?v=1638456843",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 2,
+   "sku": "Foxy-Mug-X11",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Personalised Brazil Football Birthday Mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "externally_assigned_product_identifier": [
+     {
+      "type": "ean",
+      "value": "5050177994027",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "Brazil Football Team Mug - Personalised Birthday Age and Name\nProfessionally printed onto a 11oz White Mug\nPrinted using the newest Sublimation technology - Dishwasher Safe\nPosted in a Polystyrene box for safety\n\nPersonalise it: use the Customise now button to enter the name, age and message. Please check spelling - we print exactly what you type.",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "PERSONALISED: click 'Customise now' and enter the name, age and message - we print it exactly as typed",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "11oz (approx. 325ml) white ceramic mug with a C-shaped handle and high-gloss finish",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed in-house in our North Yorkshire workshop for a sharp, long-lasting print",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Dishwasher and microwave safe - avoid abrasive scourers",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Printed to order and posted in protective packaging",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "printed coffee tea cup novelty gift present christmas secret santa office dad mum custom name customised bespoke",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "color": [
+     {
+      "value": "White",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "Foxy-Mug-X11",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 5.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 3
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/products/BrazilFootballTeamPersonalisedPrintedMug-2019WhiteMug.jpg?v=1638374927",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_1": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/products/Brazil_Football_Team_Personalised_Printed_Mug.jpg?v=1638374927",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 3,
+   "sku": "Foxy-Mug-X73",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Its A NAME Thing - Personalised Adult Mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "externally_assigned_product_identifier": [
+     {
+      "type": "ean",
+      "value": "5050177994089",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "I'm Silently Correcting Your Grammar - Personalised Adult Mug\nCustom Designed Mug\nProfessionally Printed on to an 11oz White Mug\nPosted in a Polystyrene box for safety\n\nPersonalise it: use the Customise now button to enter the name. Please check spelling - we print exactly what you type.",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "PERSONALISED: click 'Customise now' and enter the name - we print it exactly as typed",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "11oz (approx. 325ml) white ceramic mug with a C-shaped handle and high-gloss finish",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed in-house in our North Yorkshire workshop for a sharp, long-lasting print",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Dishwasher and microwave safe - avoid abrasive scourers",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Printed to order and posted in protective packaging",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "mugs coffee tea cup novelty gift present birthday christmas secret santa office dad mum custom customised bespoke",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "color": [
+     {
+      "value": "White",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "Foxy-Mug-X73",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 5.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 3
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/products/ITSASHARONTHING-2019WhiteMug.jpg?v=1638805087",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 4,
+   "sku": "Foxy-Personalized-Tee",
+   "operationType": "UPDATE",
+   "productType": "SHIRT",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Custom Name & Number T-Shirt - Personalized Sports Tee - Heat Transfer Vinyl - Add Any Name & Number",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "t-shirts",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "supplier_declared_has_product_identifier_exemption": [
+     {
+      "value": true,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "Create your own personalized jersey tee with any name and number!\nPersonalized With Any Name & Number – Fully custom vinyl print. Add your player name and favorite number to create a unique jersey tee.\nPremium Heat Transfer Vinyl – High-quality, long-lasting vinyl print that stays vibrant wash after wash.\n\nPersonalise it: use the Customise now button to enter the name and number. Please check spelling - we print exactly what you type.",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "PERSONALISED: click 'Customise now' and enter the name and number - we print it exactly as typed",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Personalized With Any Name & Number – Fully custom vinyl print. Add your player name and favorite number to create a unique jersey tee.",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Premium Heat Transfer Vinyl – High-quality, long-lasting vinyl print that stays vibrant wash after wash.",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "adult size kids top gift personalised customised bespoke",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Cotton",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "Foxy-Personalized-Tee",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 6.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 3
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/WhatsApp_Image_2025-11-06_at_08.32.19.jpg?v=1762590812",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 5,
+   "sku": "FOXY-SUB-FNPMSZSM-PARENT",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Funny Number Plate Mug – SN00 ZED (Snoozed) – Monday Morning Mug – 11oz Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "This Monday morning mug is for every serial snoozer who hits the button three times and still makes it in. The number plate design reads SN00 ZED.\nWhy you’ll love it\nMakes the first brew of the week a bit more bearable\nA cheeky gift for the colleague who is always just on time\nOne long yellow number plate printed right round the mug, so the joke reads from every side\nPick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL\nSublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "Makes the first brew of the week a bit more bearable",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "A cheeky gift for the colleague who is always just on time",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "One long yellow number plate printed right round the mug, so the joke reads from every side",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Pick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "car lover gifts work mugs novelty office coffee tea cup gift present birthday christmas secret santa dad mum",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "color": [
+     {
+      "value": "White",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "FOXY-SUB-FNPMSZSM-PARENT",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "parentage_level": [
+     {
+      "value": "parent",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "variation_theme": [
+     {
+      "name": "STYLE"
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-6-both-ends.jpg?v=1791292733",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_1": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-1-GB.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_2": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-2-SCO.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 6,
+   "sku": "FOXY-SUB-FNPMSZSM-01",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Funny Number Plate Mug – SN00 ZED (Snoozed) – Monday Morning Mug – 11oz Ceramic - GB",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "supplier_declared_has_product_identifier_exemption": [
+     {
+      "value": true,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "This Monday morning mug is for every serial snoozer who hits the button three times and still makes it in. The number plate design reads SN00 ZED.\nWhy you’ll love it\nMakes the first brew of the week a bit more bearable\nA cheeky gift for the colleague who is always just on time\nOne long yellow number plate printed right round the mug, so the joke reads from every side\nPick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL\nSublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "Makes the first brew of the week a bit more bearable",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "A cheeky gift for the colleague who is always just on time",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "One long yellow number plate printed right round the mug, so the joke reads from every side",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Pick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "car lover gifts work mugs novelty office coffee tea cup gift present birthday christmas secret santa dad mum",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "color": [
+     {
+      "value": "White",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "FOXY-SUB-FNPMSZSM-01",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "style": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "parentage_level": [
+     {
+      "value": "child",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "variation_theme": [
+     {
+      "name": "STYLE"
+     }
+    ],
+    "child_parent_sku_relationship": [
+     {
+      "child_relationship_type": "variation",
+      "parent_sku": "FOXY-SUB-FNPMSZSM-PARENT",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 7.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 2
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-6-both-ends.jpg?v=1791292733",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_1": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-1-GB.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_2": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-2-SCO.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 7,
+   "sku": "FOXY-SUB-FNPMSZSM-02",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Funny Number Plate Mug – SN00 ZED (Snoozed) – Monday Morning Mug – 11oz Ceramic - Scotland",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "supplier_declared_has_product_identifier_exemption": [
+     {
+      "value": true,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "This Monday morning mug is for every serial snoozer who hits the button three times and still makes it in. The number plate design reads SN00 ZED.\nWhy you’ll love it\nMakes the first brew of the week a bit more bearable\nA cheeky gift for the colleague who is always just on time\nOne long yellow number plate printed right round the mug, so the joke reads from every side\nPick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL\nSublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "Makes the first brew of the week a bit more bearable",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "A cheeky gift for the colleague who is always just on time",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "One long yellow number plate printed right round the mug, so the joke reads from every side",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Pick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "car lover gifts work mugs novelty office coffee tea cup gift present birthday christmas secret santa dad mum",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "color": [
+     {
+      "value": "White",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "FOXY-SUB-FNPMSZSM-02",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "style": [
+     {
+      "value": "Scotland",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "parentage_level": [
+     {
+      "value": "child",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "variation_theme": [
+     {
+      "name": "STYLE"
+     }
+    ],
+    "child_parent_sku_relationship": [
+     {
+      "child_relationship_type": "variation",
+      "parent_sku": "FOXY-SUB-FNPMSZSM-PARENT",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 7.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 2
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-6-both-ends.jpg?v=1791292733",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_1": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-1-GB.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_2": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-2-SCO.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 8,
+   "sku": "FOXY-SUB-FNPMSZSM-03",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Funny Number Plate Mug – SN00 ZED (Snoozed) – Monday Morning Mug – 11oz Ceramic - Wales",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "supplier_declared_has_product_identifier_exemption": [
+     {
+      "value": true,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "This Monday morning mug is for every serial snoozer who hits the button three times and still makes it in. The number plate design reads SN00 ZED.\nWhy you’ll love it\nMakes the first brew of the week a bit more bearable\nA cheeky gift for the colleague who is always just on time\nOne long yellow number plate printed right round the mug, so the joke reads from every side\nPick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL\nSublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "Makes the first brew of the week a bit more bearable",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "A cheeky gift for the colleague who is always just on time",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "One long yellow number plate printed right round the mug, so the joke reads from every side",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Pick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "car lover gifts work mugs novelty office coffee tea cup gift present birthday christmas secret santa dad mum",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "color": [
+     {
+      "value": "White",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "FOXY-SUB-FNPMSZSM-03",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "style": [
+     {
+      "value": "Wales",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "parentage_level": [
+     {
+      "value": "child",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "variation_theme": [
+     {
+      "name": "STYLE"
+     }
+    ],
+    "child_parent_sku_relationship": [
+     {
+      "child_relationship_type": "variation",
+      "parent_sku": "FOXY-SUB-FNPMSZSM-PARENT",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 7.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 2
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-6-both-ends.jpg?v=1791292733",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_1": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-1-GB.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_2": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-2-SCO.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 9,
+   "sku": "FOXY-SUB-FNPMSZSM-04",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Funny Number Plate Mug – SN00 ZED (Snoozed) – Monday Morning Mug – 11oz Ceramic - Northern Ireland",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "supplier_declared_has_product_identifier_exemption": [
+     {
+      "value": true,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "This Monday morning mug is for every serial snoozer who hits the button three times and still makes it in. The number plate design reads SN00 ZED.\nWhy you’ll love it\nMakes the first brew of the week a bit more bearable\nA cheeky gift for the colleague who is always just on time\nOne long yellow number plate printed right round the mug, so the joke reads from every side\nPick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL\nSublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "Makes the first brew of the week a bit more bearable",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "A cheeky gift for the colleague who is always just on time",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "One long yellow number plate printed right round the mug, so the joke reads from every side",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Pick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "car lover gifts work mugs novelty office coffee tea cup gift present birthday christmas secret santa dad mum",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "color": [
+     {
+      "value": "White",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "FOXY-SUB-FNPMSZSM-04",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "style": [
+     {
+      "value": "Northern Ireland",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "parentage_level": [
+     {
+      "value": "child",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "variation_theme": [
+     {
+      "name": "STYLE"
+     }
+    ],
+    "child_parent_sku_relationship": [
+     {
+      "child_relationship_type": "variation",
+      "parent_sku": "FOXY-SUB-FNPMSZSM-PARENT",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 7.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 2
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-6-both-ends.jpg?v=1791292733",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_1": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-1-GB.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_2": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-2-SCO.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 10,
+   "sku": "FOXY-SUB-FNPMSZSM-05",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Funny Number Plate Mug – SN00 ZED (Snoozed) – Monday Morning Mug – 11oz Ceramic - Ireland",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "supplier_declared_has_product_identifier_exemption": [
+     {
+      "value": true,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "This Monday morning mug is for every serial snoozer who hits the button three times and still makes it in. The number plate design reads SN00 ZED.\nWhy you’ll love it\nMakes the first brew of the week a bit more bearable\nA cheeky gift for the colleague who is always just on time\nOne long yellow number plate printed right round the mug, so the joke reads from every side\nPick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL\nSublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "Makes the first brew of the week a bit more bearable",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "A cheeky gift for the colleague who is always just on time",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "One long yellow number plate printed right round the mug, so the joke reads from every side",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Pick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "car lover gifts work mugs novelty office coffee tea cup gift present birthday christmas secret santa dad mum",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "color": [
+     {
+      "value": "White",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "FOXY-SUB-FNPMSZSM-05",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "style": [
+     {
+      "value": "Ireland",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "parentage_level": [
+     {
+      "value": "child",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "variation_theme": [
+     {
+      "name": "STYLE"
+     }
+    ],
+    "child_parent_sku_relationship": [
+     {
+      "child_relationship_type": "variation",
+      "parent_sku": "FOXY-SUB-FNPMSZSM-PARENT",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 7.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 2
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-6-both-ends.jpg?v=1791292733",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_1": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-1-GB.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_2": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/FOXY-SUB-FNPMSZSM-2-SCO.jpg?v=1791292732",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 11,
+   "sku": "FOXY-SUB-PFSM-PARENT",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Personalised Football Shirt Mug – Your Name & Number – 11oz Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "A proper football shirt with your name and number.\nName and number printed on the back of a drawn kit\n\nPersonalise it: use the Customise now button to enter the name and number. Please check spelling - we print exactly what you type.",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "PERSONALISED: click 'Customise now' and enter the name and number - we print it exactly as typed",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Name and number printed on the back of a drawn kit",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "11oz (approx. 325ml) white ceramic mug with a C-shaped handle and high-gloss finish",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed in-house in our North Yorkshire workshop for a sharp, long-lasting print",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Dishwasher and microwave safe - avoid abrasive scourers",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "mugs coffee tea cup novelty gift present birthday christmas secret santa office dad mum custom customised bespoke",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "FOXY-SUB-PFSM-PARENT",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "parentage_level": [
+     {
+      "value": "parent",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "variation_theme": [
+     {
+      "name": "COLOR"
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/pfsm-both.jpg",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_1": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/pfsm-bwh.jpg",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 12,
+   "sku": "FOXY-SUB-PFSM-RWS-01",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Personalised Football Shirt Mug – Your Name & Number – 11oz Ceramic - Red & White Stripes",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "supplier_declared_has_product_identifier_exemption": [
+     {
+      "value": true,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "A proper football shirt with your name and number.\nName and number printed on the back of a drawn kit\n\nPersonalise it: use the Customise now button to enter the name and number. Please check spelling - we print exactly what you type.",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "PERSONALISED: click 'Customise now' and enter the name and number - we print it exactly as typed",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Name and number printed on the back of a drawn kit",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "11oz (approx. 325ml) white ceramic mug with a C-shaped handle and high-gloss finish",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed in-house in our North Yorkshire workshop for a sharp, long-lasting print",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Dishwasher and microwave safe - avoid abrasive scourers",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "mugs coffee tea cup novelty gift present birthday christmas secret santa office dad mum custom customised bespoke",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "FOXY-SUB-PFSM-RWS-01",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "color": [
+     {
+      "value": "Red & White Stripes",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "parentage_level": [
+     {
+      "value": "child",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "variation_theme": [
+     {
+      "name": "COLOR"
+     }
+    ],
+    "child_parent_sku_relationship": [
+     {
+      "child_relationship_type": "variation",
+      "parent_sku": "FOXY-SUB-PFSM-PARENT",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 8.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 3
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/pfsm-rws.jpg",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_1": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/pfsm-both.jpg",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_2": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/pfsm-bwh.jpg",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  },
+  {
+   "messageId": 13,
+   "sku": "FOXY-SUB-PFSM-BWH-01",
+   "operationType": "UPDATE",
+   "productType": "DRINKING_CUP",
+   "requirements": "LISTING",
+   "attributes": {
+    "item_name": [
+     {
+      "value": "Personalised Football Shirt Mug – Your Name & Number – 11oz Ceramic - Blue & White Hoops",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "brand": [
+     {
+      "value": "Foxy Printing",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "manufacturer": [
+     {
+      "value": "DepthChargeDesign & Print Ltd",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "condition_type": [
+     {
+      "value": "new_new",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "item_type_keyword": [
+     {
+      "value": "coffee-mugs",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "supplier_declared_has_product_identifier_exemption": [
+     {
+      "value": true,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "product_description": [
+     {
+      "value": "A proper football shirt with your name and number.\nName and number printed on the back of a drawn kit\n\nPersonalise it: use the Customise now button to enter the name and number. Please check spelling - we print exactly what you type.",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "bullet_point": [
+     {
+      "value": "PERSONALISED: click 'Customise now' and enter the name and number - we print it exactly as typed",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Name and number printed on the back of a drawn kit",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "11oz (approx. 325ml) white ceramic mug with a C-shaped handle and high-gloss finish",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Sublimation printed in-house in our North Yorkshire workshop for a sharp, long-lasting print",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     },
+     {
+      "value": "Dishwasher and microwave safe - avoid abrasive scourers",
+      "language_tag": "en_GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "generic_keyword": [
+     {
+      "value": "mugs coffee tea cup novelty gift present birthday christmas secret santa office dad mum custom customised bespoke",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "material": [
+     {
+      "value": "Ceramic",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "capacity": [
+     {
+      "value": 325,
+      "unit": "milliliters",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "included_components": [
+     {
+      "value": "1 x printed 11oz ceramic mug",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "number_of_items": [
+     {
+      "value": 1,
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "country_of_origin": [
+     {
+      "value": "GB",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "part_number": [
+     {
+      "value": "FOXY-SUB-PFSM-BWH-01",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "color": [
+     {
+      "value": "Blue & White Hoops",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "language_tag": "en_GB"
+     }
+    ],
+    "parentage_level": [
+     {
+      "value": "child",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "variation_theme": [
+     {
+      "name": "COLOR"
+     }
+    ],
+    "child_parent_sku_relationship": [
+     {
+      "child_relationship_type": "variation",
+      "parent_sku": "FOXY-SUB-PFSM-PARENT",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "purchasable_offer": [
+     {
+      "currency": "GBP",
+      "marketplace_id": "A1F83G8C2ARO7P",
+      "our_price": [
+       {
+        "schedule": [
+         {
+          "value_with_tax": 8.99
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "fulfillment_availability": [
+     {
+      "fulfillment_channel_code": "DEFAULT",
+      "quantity": 100,
+      "lead_time_to_ship_max_days": 3
+     }
+    ],
+    "main_product_image_locator": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/pfsm-bwh.jpg",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ],
+    "other_product_image_locator_1": [
+     {
+      "media_location": "https://cdn.shopify.com/s/files/1/1774/9115/files/pfsm-both.jpg",
+      "marketplace_id": "A1F83G8C2ARO7P"
+     }
+    ]
+   }
+  }
+ ]
+}

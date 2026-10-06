@@ -1,0 +1,7 @@
+sku	customization_template	fields
+Foxy-Mug-X09	FOXY - Name	Name
+Foxy-Mug-X11	FOXY - Name + Age + Message	Name, Age, Message
+Foxy-Mug-X73	FOXY - Name	Name
+Foxy-Personalized-Tee	FOXY - Name + Number	Name, Number
+FOXY-SUB-PFSM-RWS-01	FOXY - Name + Number	Name, Number
+FOXY-SUB-PFSM-BWH-01	FOXY - Name + Number	Name, Number
