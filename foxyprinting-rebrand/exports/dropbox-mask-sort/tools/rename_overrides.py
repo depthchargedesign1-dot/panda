@@ -189,3 +189,12 @@ OVERRIDES.update({  # 6 Oct review (2): leftovers, acronyms, spellings
     "USA.jpg": "USA", "SZA 2023.jpg": "SZA", "c3po.jpg": "C3PO",
     "GHANDI.JPG": "Gandhi", "SWEEDEN.jpg": "Sweden",
 })
+WORD_FIX.update({"nkotb": "NKOTB", "lmfao": "LMFAO", "jfk": "JFK", "sza": "SZA", "bfg": "BFG", "c3po": "C3PO", "ksi": "KSI"})
+OVERRIDES.update({  # 6 Oct review (3)
+    "TOM JONES SJ2.jpg": "Tom Jones SJ 2",
+    "corgi pup cut out.jpg": "Corgi Pup",
+    "Camilla Coronation 2023-ROYALS.jpg": "Camilla",
+    "THE QUEEN CROWN Coronation 2023-royals.jpg": "The Queen Crown",
+    "RM Rap Master - BTS Korean Music Star K POP - Music Star Fancy Dress Cardboard celebrity face mask Fancy Dress Face Mask 2021.jpg": "RM (BTS)",
+    "Stone Roses 3 Not Mint.JPG": "Stone Roses 3",
+})
