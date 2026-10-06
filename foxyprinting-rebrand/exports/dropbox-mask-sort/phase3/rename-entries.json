@@ -156,12 +156,6 @@
 "new": "2026 ATHLETES/Mo Farah.jpg"
 },
 {
-"source_path": "id:Ac8E0IpXMi8AAAAAAAATQQ",
-"destination_path": "ns:1384231538//2026 ATHLETES/Muhammad Ali Bw.jpg",
-"old": "2026 ATHLETES/Muhammad Ali BW.jpg",
-"new": "2026 ATHLETES/Muhammad Ali Bw.jpg"
-},
-{
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAb0Q",
 "destination_path": "ns:1384231538//2026 ATHLETES/Phillips Idowu 2.jpg",
 "old": "2026 ATHLETES/phillips idowu2.jpg",
@@ -1465,9 +1459,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAWQA",
-"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Niko Bellic Gta.jpg",
+"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Niko Bellic GTA.jpg",
 "old": "2026 CARTOON, GAME AND FILM CHARACTERS/niko bellic GTA.jpg",
-"new": "2026 CARTOON, GAME AND FILM CHARACTERS/Niko Bellic Gta.jpg"
+"new": "2026 CARTOON, GAME AND FILM CHARACTERS/Niko Bellic GTA.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAvfA",
@@ -1507,9 +1501,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAARfQ",
-"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Pg Tips Monkey.jpg",
+"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/PG Tips Monkey.jpg",
 "old": "2026 CARTOON, GAME AND FILM CHARACTERS/pg tips monkey.jpg",
-"new": "2026 CARTOON, GAME AND FILM CHARACTERS/Pg Tips Monkey.jpg"
+"new": "2026 CARTOON, GAME AND FILM CHARACTERS/PG Tips Monkey.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABdLA",
@@ -3949,9 +3943,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAASyw",
-"destination_path": "ns:1384231538//2026 F1 DRIVER/Fiscishella F1.jpg",
+"destination_path": "ns:1384231538//2026 F1 DRIVER/Fisichella F1.jpg",
 "old": "2026 F1 DRIVER/Fiscishella F1.JPG",
-"new": "2026 F1 DRIVER/Fiscishella F1.jpg"
+"new": "2026 F1 DRIVER/Fisichella F1.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAVLQ",
@@ -7393,9 +7387,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAa4g",
-"destination_path": "ns:1384231538//2026 FOOTBALLERS/Tony Ap McCoy.jpg",
+"destination_path": "ns:1384231538//2026 FOOTBALLERS/Tony AP McCoy.jpg",
 "old": "2026 FOOTBALLERS/TONY AP MCCOY.jpg",
-"new": "2026 FOOTBALLERS/Tony Ap McCoy.jpg"
+"new": "2026 FOOTBALLERS/Tony AP McCoy.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABWlg",
@@ -8095,9 +8089,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAX1Q",
-"destination_path": "ns:1384231538//2026 MOVIE STARS/Audrey Hepburn B&w.jpg",
+"destination_path": "ns:1384231538//2026 MOVIE STARS/Audrey Hepburn B&W.jpg",
 "old": "2026 MOVIE STARS/audrey hepburn B&W.jpg",
-"new": "2026 MOVIE STARS/Audrey Hepburn B&w.jpg"
+"new": "2026 MOVIE STARS/Audrey Hepburn B&W.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAOsw",
@@ -8188,12 +8182,6 @@
 "destination_path": "ns:1384231538//2026 MOVIE STARS/Batman.jpg",
 "old": "2026 MOVIE STARS/batman.JPG",
 "new": "2026 MOVIE STARS/Batman.jpg"
-},
-{
-"source_path": "id:Ac8E0IpXMi8AAAAAAAAbxQ",
-"destination_path": "ns:1384231538//2026 MOVIE STARS/Bd Wong.jpg",
-"old": "2026 MOVIE STARS/BD Wong.jpg",
-"new": "2026 MOVIE STARS/Bd Wong.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAuqw",
@@ -24211,9 +24199,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAYBg",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Hutch Starsky Hutch.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Hutch (Starsky and Hutch).jpg",
 "old": "2026 TV SHOWS AND STARS/Hutch-Starsky & Hutch.jpg",
-"new": "2026 TV SHOWS AND STARS/Hutch Starsky Hutch.jpg"
+"new": "2026 TV SHOWS AND STARS/Hutch (Starsky and Hutch).jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAvZw",
@@ -27991,9 +27979,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAUcQ",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Starsky Starsky Hutch.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Starsky (Starsky and Hutch).jpg",
 "old": "2026 TV SHOWS AND STARS/Starsky MINT-Starsky & Hutch.jpg",
-"new": "2026 TV SHOWS AND STARS/Starsky Starsky Hutch.jpg"
+"new": "2026 TV SHOWS AND STARS/Starsky (Starsky and Hutch).jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAASQw",
@@ -28279,9 +28267,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAZyQ",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/This Morning Gino D'Acampo.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Gino D'Acampo 2.jpg",
 "old": "2026 TV SHOWS AND STARS/This Morning chef Gino D'Acampo .jpg",
-"new": "2026 TV SHOWS AND STARS/This Morning Gino D'Acampo.jpg"
+"new": "2026 TV SHOWS AND STARS/Gino D'Acampo 2.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABaaw",
@@ -28303,9 +28291,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAY2A",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Tina Obrien.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Tina O'Brien.jpg",
 "old": "2026 TV SHOWS AND STARS/TINA OBRIEN - SARAH PLATT.jpg",
-"new": "2026 TV SHOWS AND STARS/Tina Obrien.jpg"
+"new": "2026 TV SHOWS AND STARS/Tina O'Brien.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAXew",
@@ -28387,9 +28375,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAVKw",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Tom Welling Cw Upfronts 3.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Tom Welling 2.jpg",
 "old": "2026 TV SHOWS AND STARS/tom-welling-cw-upfronts-03.jpg",
-"new": "2026 TV SHOWS AND STARS/Tom Welling Cw Upfronts 3.jpg"
+"new": "2026 TV SHOWS AND STARS/Tom Welling 2.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAZ5A",
@@ -28693,9 +28681,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAwbg",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/William Beck Casualty (Dylan).jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/William Beck (Dylan).jpg",
 "old": "2026 TV SHOWS AND STARS/William Beck (Dylan) CASUALTY.jpg",
-"new": "2026 TV SHOWS AND STARS/William Beck Casualty (Dylan).jpg"
+"new": "2026 TV SHOWS AND STARS/William Beck (Dylan).jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABYrQ",
@@ -30067,9 +30055,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABVZA",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Hollyoaks/Sam Ob Obrien.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Hollyoaks/Sam OB O'Brien.jpg",
 "old": "2026 TV SHOWS AND STARS/Hollyoaks/Sam OB obrien - Darren Jeffries - Hollyoaks.jpg",
-"new": "2026 TV SHOWS AND STARS/Hollyoaks/Sam Ob Obrien.jpg"
+"new": "2026 TV SHOWS AND STARS/Hollyoaks/Sam OB O'Brien.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAA0MyQ",
@@ -30361,9 +30349,9 @@
 },
 {
 "source_path": "id:MqD4S2eoOYUAAAAAAAC6tg",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Money Heist/actors/Alvaro Morte As Professor.jpeg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Money Heist/actors/Alvaro Morte (Professor).jpeg",
 "old": "2026 TV SHOWS AND STARS/Money Heist/actors/Álvaro-Morte-as-Professor.jpeg",
-"new": "2026 TV SHOWS AND STARS/Money Heist/actors/Alvaro Morte As Professor.jpeg"
+"new": "2026 TV SHOWS AND STARS/Money Heist/actors/Alvaro Morte (Professor).jpeg"
 },
 {
 "source_path": "id:MqD4S2eoOYUAAAAAAAC6vA",
@@ -30403,9 +30391,9 @@
 },
 {
 "source_path": "id:MqD4S2eoOYUAAAAAAAC6wg",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Money Heist/actors cutout/Alvaro Morte As Professor.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Money Heist/actors cutout/Alvaro Morte (Professor).jpg",
 "old": "2026 TV SHOWS AND STARS/Money Heist/actors cutout/Álvaro-Morte-as-Professor.jpg",
-"new": "2026 TV SHOWS AND STARS/Money Heist/actors cutout/Alvaro Morte As Professor.jpg"
+"new": "2026 TV SHOWS AND STARS/Money Heist/actors cutout/Alvaro Morte (Professor).jpg"
 },
 {
 "source_path": "id:MqD4S2eoOYUAAAAAAAC6vg",
@@ -30414,16 +30402,10 @@
 "new": "2026 TV SHOWS AND STARS/Money Heist/actors cutout/Ursula Corbero.jpg"
 },
 {
-"source_path": "id:MqD4S2eoOYUAAAAAAAC6vQ",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Money Heist/characters/57d1 Ac8a.jpeg",
-"old": "2026 TV SHOWS AND STARS/Money Heist/characters/09b562de-57d1-4452-ac8a-70a5956e7827.jpeg",
-"new": "2026 TV SHOWS AND STARS/Money Heist/characters/57d1 Ac8a.jpeg"
-},
-{
 "source_path": "id:nVgixzQZKNAAAAAAAABOJg",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Money Heist/characters/Season (Money Heist) 5.webp",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Money Heist/characters/Money Heist Season 5.webp",
 "old": "2026 TV SHOWS AND STARS/Money Heist/characters/money_heist_season_5_1632565710914.webp",
-"new": "2026 TV SHOWS AND STARS/Money Heist/characters/Season (Money Heist) 5.webp"
+"new": "2026 TV SHOWS AND STARS/Money Heist/characters/Money Heist Season 5.webp"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABOJw",
@@ -30876,12 +30858,6 @@
 "new": "2026 TV SHOWS AND STARS/Squid Game/actors cutouts/Wi Ha Joon.jpg"
 },
 {
-"source_path": "id:MqD4S2eoOYUAAAAAAAC67Q",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Squid Game/characters/8cc5 4c75.webp",
-"old": "2026 TV SHOWS AND STARS/Squid Game/characters/8eda1e54-8cc5-4c75-9687-9628e87e8c26_65dd8bae.webp",
-"new": "2026 TV SHOWS AND STARS/Squid Game/characters/8cc5 4c75.webp"
-},
-{
 "source_path": "id:MqD4S2eoOYUAAAAAAAC67w",
 "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Squid Game/characters cutouts/Abdul Ali.jpg",
 "old": "2026 TV SHOWS AND STARS/Squid Game/characters cutouts/Abdul Ali .jpg",
@@ -31165,9 +31141,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABOHQ",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/The Boys Tv/Jack Quaid As Hughie Campbell.jpeg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/The Boys Tv/Jack Quaid (Hughie Campbell).jpeg",
 "old": "2026 TV SHOWS AND STARS/The Boys Tv/Jack-Quaid-as-Hughie-Campbell.jpeg",
-"new": "2026 TV SHOWS AND STARS/The Boys Tv/Jack Quaid As Hughie Campbell.jpeg"
+"new": "2026 TV SHOWS AND STARS/The Boys Tv/Jack Quaid (Hughie Campbell).jpeg"
 },
 {
 "source_path": "id:MqD4S2eoOYUAAAAAAAC6hw",
@@ -31231,9 +31207,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABbLg",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/The office- American/foxy/B.J Novak Ryan Bailey Howard.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/The office- American/foxy/BJ Novak.jpg",
 "old": "2026 TV SHOWS AND STARS/The office- American/foxy/B.J. Novak-Ryan Bailey Howard -The Office.jpg",
-"new": "2026 TV SHOWS AND STARS/The office- American/foxy/B.J Novak Ryan Bailey Howard.jpg"
+"new": "2026 TV SHOWS AND STARS/The office- American/foxy/BJ Novak.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABVwg",

@@ -23,6 +23,7 @@ FIX2 = [  # LOTR names already sent (a01 first 125 / sent p1-01); corrected in p
     {"source_path": C + "Aragorn Lotr.jpg", "destination_path": C + "Aragorn (Lord of the Rings).jpg", "id": "id:nVgixzQZKNAAAAAAAABb_g"},
     {"source_path": C + "Lotr (Gollum).jpg", "destination_path": C + "Gollum (Lord of the Rings).jpg", "id": "id:nVgixzQZKNAAAAAAAAAadg"}]
 for x in FIX: x["id"] = _s1[x["source_path"]]
+FIX2.append({"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Hutch Starsky Hutch.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Hutch (Starsky and Hutch).jpg", "id": "id:Ac8E0IpXMi8AAAAAAAAYBg"})  # sent in p1-03 before the override
 FIX = FIX + FIX2
 F = F + FIX
 P1 = [x for x in A if x["id"] not in done] + T

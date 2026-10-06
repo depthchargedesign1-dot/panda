@@ -223,3 +223,24 @@ OVERRIDES.update({  # 6 Oct review (5)
     "Max & OB Hollyoaks1.jpg": "Max and OB (Hollyoaks)",
 })
 WORD_FIX.update({"friers": "Faiers", "pheobe": "Phoebe", "walace": "Wallace"})
+OVERRIDES.update({  # 6 Oct review (6)
+    "tom-welling-cw-upfronts-03.jpg": "Tom Welling",
+    "TINA OBRIEN - SARAH PLATT.jpg": "Tina O'Brien",
+    "William Beck (Dylan) CASUALTY.jpg": "William Beck (Dylan)",
+    "Starsky MINT-Starsky & Hutch.jpg": "Starsky (Starsky and Hutch)",
+    "Hutch-Starsky & Hutch.jpg": "Hutch (Starsky and Hutch)",
+    "This Morning chef Gino D'Acampo .jpg": "Gino D'Acampo",
+})
+OVERRIDES.update({  # 6 Oct review (7)
+    "09b562de-57d1-4452-ac8a-70a5956e7827.jpeg": "SKIP",
+    "8eda1e54-8cc5-4c75-9687-9628e87e8c26_65dd8bae.webp": "SKIP",
+    "money_heist_season_5_1632565710914.webp": "Money Heist Season 5",
+    "Sam OB obrien - Darren Jeffries - Hollyoaks.jpg": "Sam OB O'Brien",
+    "Álvaro-Morte-as-Professor.jpeg": "Alvaro Morte (Professor)",
+    "Álvaro-Morte-as-Professor.jpg": "Alvaro Morte (Professor)",
+    "Jack-Quaid-as-Hughie-Campbell.jpeg": "Jack Quaid (Hughie Campbell)",
+    "B.J. Novak-Ryan Bailey Howard -The Office.jpg": "BJ Novak",
+    "Muhammad Ali BW.jpg": "Muhammad Ali BW",
+})
+WORD_FIX.update({"b&w": "B&W", "bd": "BD", "gta": "GTA", "pg": "PG", "fiscishella": "Fisichella"})
+OVERRIDES.update({"TONY AP MCCOY.jpg": "Tony AP McCoy"})
