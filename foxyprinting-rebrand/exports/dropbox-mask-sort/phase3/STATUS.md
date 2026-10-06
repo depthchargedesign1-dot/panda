@@ -11,3 +11,6 @@
   the Media_db.db id are unchanged, and two wrong destinations do not exist. Record: phase3/incident/sent-0812.json.
   From here every batch is sent only from lines read back from phase3/b250/*.txt (250 per batch), and each job result
   is checked against its batch by tools/check_job.py before the next one. phase3/batches/ (500s) is superseded.
+- 08:11-08:12 a01 entries 1-125 renamed: 125/125 success (path-based).
+- Owner asked (via coordinator) for as few move calls as possible: remaining work packed by tools/rename_batches_1000.py into
+  phase3/b1000/p1-01..06 (normal renames + case-only step 1 to TMPCASE, 5,180) and p2-01..02 (TMPCASE -> final, 1,611).
