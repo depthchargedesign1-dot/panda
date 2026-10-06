@@ -5,7 +5,7 @@ Before each reminder, Claude checks the previous file landed on the live store (
 
 | # | When (UK) | File | Status |
 |---|---|---|---|
-| 0 | running 6 Oct | seo/2026-10-06-remaining/01-seo.csv | in progress (A–L done at 14:00) |
+| 0 | 6 Oct | seo/2026-10-06-remaining/01-seo.csv | DONE (checked 15:08 UK; created 21 duplicate trerrace flag drafts) |
 | 1 | Tue 6 Oct bedtime | seo/2026-10-06-remaining/02-seo-CLEAN.csv | to do |
 | 2 | Wed 7 Oct morning | google-fields/2026-10-06-age-group-remaining/01-age-group-gender.csv | to do |
 | 3 | Wed 7 Oct bedtime | google-fields/2026-10-06-age-group-remaining/02-age-group-gender-CLEAN.csv | to do |

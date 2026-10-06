@@ -1,0 +1,422 @@
+[
+ {
+  "sku": "FOXY-SUB-RNPMAHFA",
+  "file": "FOXY-SUB-RNPMAHFA-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMAHFA",
+  "file": "FOXY-SUB-RNPMAHFA-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMAHFA",
+  "file": "FOXY-SUB-RNPMAHFA-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMAHFA",
+  "file": "FOXY-SUB-RNPMAHFA-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMAHFA",
+  "file": "FOXY-SUB-RNPMAHFA-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMAHFA",
+  "file": "FOXY-SUB-RNPMAHFA-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMAHFA",
+  "file": "FOXY-SUB-RNPMAHFA-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMB3CG",
+  "file": "FOXY-SUB-RNPMB3CG-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMB3CG",
+  "file": "FOXY-SUB-RNPMB3CG-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMB3CG",
+  "file": "FOXY-SUB-RNPMB3CG-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMB3CG",
+  "file": "FOXY-SUB-RNPMB3CG-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMB3CG",
+  "file": "FOXY-SUB-RNPMB3CG-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMB3CG",
+  "file": "FOXY-SUB-RNPMB3CG-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMB3CG",
+  "file": "FOXY-SUB-RNPMB3CG-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPM8IRB",
+  "file": "FOXY-SUB-RNPM8IRB-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPM8IRB",
+  "file": "FOXY-SUB-RNPM8IRB-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPM8IRB",
+  "file": "FOXY-SUB-RNPM8IRB-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-RNPM8IRB",
+  "file": "FOXY-SUB-RNPM8IRB-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPM8IRB",
+  "file": "FOXY-SUB-RNPM8IRB-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPM8IRB",
+  "file": "FOXY-SUB-RNPM8IRB-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPM8IRB",
+  "file": "FOXY-SUB-RNPM8IRB-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMCNVR",
+  "file": "FOXY-SUB-RNPMCNVR-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMCNVR",
+  "file": "FOXY-SUB-RNPMCNVR-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMCNVR",
+  "file": "FOXY-SUB-RNPMCNVR-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMCNVR",
+  "file": "FOXY-SUB-RNPMCNVR-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMCNVR",
+  "file": "FOXY-SUB-RNPMCNVR-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMCNVR",
+  "file": "FOXY-SUB-RNPMCNVR-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMCNVR",
+  "file": "FOXY-SUB-RNPMCNVR-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMDHRS",
+  "file": "FOXY-SUB-RNPMDHRS-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMDHRS",
+  "file": "FOXY-SUB-RNPMDHRS-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMDHRS",
+  "file": "FOXY-SUB-RNPMDHRS-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMDHRS",
+  "file": "FOXY-SUB-RNPMDHRS-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMDHRS",
+  "file": "FOXY-SUB-RNPMDHRS-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMDHRS",
+  "file": "FOXY-SUB-RNPMDHRS-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMDHRS",
+  "file": "FOXY-SUB-RNPMDHRS-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMNHRG",
+  "file": "FOXY-SUB-RNPMNHRG-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMNHRG",
+  "file": "FOXY-SUB-RNPMNHRG-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMNHRG",
+  "file": "FOXY-SUB-RNPMNHRG-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMNHRG",
+  "file": "FOXY-SUB-RNPMNHRG-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMNHRG",
+  "file": "FOXY-SUB-RNPMNHRG-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMNHRG",
+  "file": "FOXY-SUB-RNPMNHRG-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMNHRG",
+  "file": "FOXY-SUB-RNPMNHRG-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMP1RJ",
+  "file": "FOXY-SUB-RNPMP1RJ-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMP1RJ",
+  "file": "FOXY-SUB-RNPMP1RJ-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMP1RJ",
+  "file": "FOXY-SUB-RNPMP1RJ-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMP1RJ",
+  "file": "FOXY-SUB-RNPMP1RJ-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMP1RJ",
+  "file": "FOXY-SUB-RNPMP1RJ-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMP1RJ",
+  "file": "FOXY-SUB-RNPMP1RJ-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMP1RJ",
+  "file": "FOXY-SUB-RNPMP1RJ-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMT5RL",
+  "file": "FOXY-SUB-RNPMT5RL-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMT5RL",
+  "file": "FOXY-SUB-RNPMT5RL-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMT5RL",
+  "file": "FOXY-SUB-RNPMT5RL-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMT5RL",
+  "file": "FOXY-SUB-RNPMT5RL-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMT5RL",
+  "file": "FOXY-SUB-RNPMT5RL-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMT5RL",
+  "file": "FOXY-SUB-RNPMT5RL-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMT5RL",
+  "file": "FOXY-SUB-RNPMT5RL-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWKFA",
+  "file": "FOXY-SUB-RNPMWKFA-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWKFA",
+  "file": "FOXY-SUB-RNPMWKFA-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWKFA",
+  "file": "FOXY-SUB-RNPMWKFA-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWKFA",
+  "file": "FOXY-SUB-RNPMWKFA-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWKFA",
+  "file": "FOXY-SUB-RNPMWKFA-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWKFA",
+  "file": "FOXY-SUB-RNPMWKFA-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWKFA",
+  "file": "FOXY-SUB-RNPMWKFA-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWWRO",
+  "file": "FOXY-SUB-RNPMWWRO-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWWRO",
+  "file": "FOXY-SUB-RNPMWWRO-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWWRO",
+  "file": "FOXY-SUB-RNPMWWRO-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWWRO",
+  "file": "FOXY-SUB-RNPMWWRO-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWWRO",
+  "file": "FOXY-SUB-RNPMWWRO-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWWRO",
+  "file": "FOXY-SUB-RNPMWWRO-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-RNPMWWRO",
+  "file": "FOXY-SUB-RNPMWWRO-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ }
+]

@@ -53,7 +53,7 @@ D = [
          opening="This rude number plate mug is for the mate who winds everybody up and somehow still gets invited to everything. It reads A33 HOI3 on a proper yellow plate, and anyone who has ever squinted at a cheeky private reg will get it in about two seconds.",
          h2="A rude number plate mug for the group chat legend",
          para="A33 HOI3 is printed on one long yellow number plate that wraps right round the mug, with the country band of your choice on the left: GB, Scotland, Wales, Northern Ireland or Ireland. We let the plate do the talking – no rude words spelled out, just numbers standing in for letters the way the best banter plates do. It’s a novelty design, not a real registration, so there’s no DVLA paperwork involved.",
-         bullets=["A banter gift for birthdays, Secret Santa or the lad’s weekend away", "Sits on a desk looking innocent until somebody reads it properly"],
+         bullets=["A banter gift for birthdays, Secret Santa or the lads’ weekend away", "Sits on a desk looking innocent until somebody reads it properly"],
          closing="Pair this rude number plate mug with a card that’s just as cheeky for a birthday they won’t forget.",
          tags=["banter gift", "gift for mates"]),
     dict(reg=("B3LL", "3ND"), gift="Cheeky Gift for Mates", primary="cheeky mug for mates", swear=True,
