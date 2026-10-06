@@ -32,6 +32,8 @@ def write(tag, L):
         part = L[i:i + 1000]; name = f"{tag}-{i // 1000 + 1:02d}"
         json.dump(part, open(f"{D}/phase3/b1000/{name}.json", "w"), ensure_ascii=False)
         open(f"{D}/phase3/b1000/{name}.txt", "w").write("\n".join(json.dumps({"source_path": x["source_path"], "destination_path": x["destination_path"]}, ensure_ascii=False) for x in part) + "\n")
+for _f in _g.glob(f"{D}/phase3/b1000/p[12]-*.json"):  # clear stale batches left from earlier, longer runs
+    open(_f, "w").write("[]"); open(_f[:-5] + ".txt", "w").write("")
 write("p1", P1); write("p2", F)
 # NOTE: after p1-01 was sent, batches are renumbered from the remaining entries (sent ones excluded).
 print(len(P1), len(F))

@@ -22,3 +22,4 @@ p1-01 submitted 08:3x op=AUACi-3dEYi-UEr4BFQ-_8GS1XZpDYMZS1tI8c7OsAjG3_JIJZbCdot
   acronyms (NKOTB, JFK, LMFAO, SZA, C3PO), Gandhi, Sweden, number leftovers (overrides). Plan/batches regenerated:
   p1 4,174 (p1-01..05), p2 1,612 (adds pass-2 fixes for already-sent "Aragorn Lotr.jpg" and "Lotr (Gollum).jpg" in CARTOON).
 - p1-01 (new numbering) saved as phase3/sent/p1-02.json before sending.
+- 09:06 sent p1-02 (= b1000/p1-01 after review; saved sent/p1-02.json) op=AUCZyQyhAoUkIgBxIrWyTpFf9SnVM1ALpTAkTqvncOA91_z77NuakLeLiNkizOdbVkXh6N9dwgeEYiNUAuB_Azhn3bneoz8NJJoclYPsPYzEucsYMkXjvF4ARSJmvIfbZYZF-9GQypfKrRlNbe1d71BxLcU4euCIwObKbLbn3AL4s5ExeI25hUuCgxN7HvAi_xS9MqiUakvfA-6D9-2jyfMC8coxbJDQSSij4FEnDyp07A

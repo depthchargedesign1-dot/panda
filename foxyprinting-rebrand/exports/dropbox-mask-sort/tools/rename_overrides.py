@@ -198,3 +198,28 @@ OVERRIDES.update({  # 6 Oct review (3)
     "RM Rap Master - BTS Korean Music Star K POP - Music Star Fancy Dress Cardboard celebrity face mask Fancy Dress Face Mask 2021.jpg": "RM (BTS)",
     "Stone Roses 3 Not Mint.JPG": "Stone Roses 3",
 })
+OVERRIDES.update({  # 6 Oct review (4)
+    "Joachim Löw Mask JB .jpg": "Joachim Low JB",
+    "Hibernian_FC_logo.svg.png": "SKIP",
+    "victor Viktor Hovland - Golf.jpg": "Viktor Hovland",
+    "Pieters_Thomas.jpg": "Thomas Pieters",
+    "Snedeker_Brandt_10BAR2.jpg": "Brandt Snedeker",
+    "Howard_Dwight.jpg": "Dwight Howard",
+})
+OVERRIDES.update({  # 6 Oct review (5)
+    "BRITISH BAKE OFF NEW.jpg": "British Bake Off",
+    "big best sex and city.jpg": "Mr Big (Sex and the City) 2",
+    "Amanda Mealing (Connie) CASUALTY.jpg": "Amanda Mealing (Connie)",
+    "Derek - Catherine Tate 1.jpg": "Derek (Catherine Tate)",
+    "Derek - Catherine Tate 2.jpg": "Derek (Catherine Tate) 2",
+    "David- Lost boys -Keifer Sutherland (larger).jpg": "David (Lost Boys) (larger)",
+    "Jay2 The Inbetweeners.jpg": "Jay (The Inbetweeners) 2",
+    "jeremy kyle jan 2013.jpg": "Jeremy Kyle",
+    "Jon Snow-GoT.jpg": "Jon Snow",
+    "Joffery geoffery  Baratheon - GoT.jpg": "Joffrey Baratheon",
+    "Rhona)  Emmerdale.jpg": "Rhona (Emmerdale)",
+    "lutenant hubert allo allo.jpg": "Lieutenant Hubert",
+    "Paul Bazely as Troy Benidorm.jpg": "Paul Bazely (Troy)",
+    "Max & OB Hollyoaks1.jpg": "Max and OB (Hollyoaks)",
+})
+WORD_FIX.update({"friers": "Faiers", "pheobe": "Phoebe", "walace": "Wallace"})

@@ -195,7 +195,6 @@
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bill Tarmey TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bill Tarmey.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bill Ward James Barton TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bill Ward James Barton.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bill Weasley TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bill Weasley.jpg"}
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Billie Friers TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Billie Friers.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bobby Ewing (larger) TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bobby Ewing (larger).jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bouncer TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bouncer.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bradley Branning TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Bradley Branning.jpg"}
@@ -586,7 +585,6 @@
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Strictly Come Dancing/James Jordan TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Strictly Come Dancing/James Jordan.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/The Boys Tv/actors/Laz Alonso TMPCASE.jpeg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/The Boys Tv/actors/Laz Alonso.jpeg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/The Boys Tv/actors cutout/Laz Alonso TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/The Boys Tv/actors cutout/Laz Alonso.jpg"}
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/TOWIE PACK PACK E/Billie Friers TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/TOWIE PACK PACK E/Billie Friers.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/TOWIE PACK PACK E/Harry Derbridge TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/TOWIE PACK PACK E/Harry Derbridge.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/TOWIE PACK PACK E/Nanny Pat TMPCASE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/TOWIE PACK PACK E/Nanny Pat.jpg"}
 {"source_path": "ns:1384231538//2026 WAGS AND MODELS/Abby Clancy TMPCASE.jpg", "destination_path": "ns:1384231538//2026 WAGS AND MODELS/Abby Clancy.jpg"}
