@@ -455,3 +455,15 @@ Source: the face mask sheet above, plus the live "N X Personalised Custom Photo 
 - **Style:** gable box with a carry handle (front and back handle panels with a cut handle hole), black or orange designs with ghosts, pumpkins and stars, name on the front.
 - **Finished size:** 100 × 60 × 100 mm (width × depth × body height, not counting the handle).
 - **Production:** printed on SRA3 (320 × 450 mm), one box per sheet, cut and scored on the flatbed cutter. Cut line = spot colour `CutContour`, score line = spot colour `Crease`, each on its own layer.
+
+## Sticker & label production artwork: open questions (added 6 Oct 2026)
+Templates for the VG540 business stickers, the 20 x 40 mm roll labels and an SRA4 kiss-cut sheet layout are in `exports/sticker-artwork/` and Dropbox (`tools/artwork/sticker_templates.py`). These products have **no size on the listing or in a fact sheet**, so no artwork was made yet:
+- **ASK:** Personalised Sweet Jar (FOXY-UVDTF-PSJ-01): label/print size and shape on the jar, and the jar size.
+- **ASK:** Waterproof Kids Name Labels (FOXY-UVDTF-WKNL-01): label size(s) and shape, and how many per sheet.
+- **ASK:** Bike & Riding Helmet Name Decals (FOXY-UVDTF-PBRHND-01): decal size, how many decals per order.
+- **ASK:** Personalised Gift Tags (FOXY-CUT-PGTPO2-01): tag size, shape, card weight, hole/string.
+- **ASK:** Custom Die-Cut Stickers (FOXY-CUT-CDCS-01), Custom Product Labels (FOXY-CUT-PLCJC-01), Thank You for Your Order Stickers (FOXY-CUT-TYFYOS-01): sticker size(s) and material (the listings have no size option).
+- **ASK:** Kiss-Cut Sticker Sheets (FOXY-CUT-KCSS-01): finished sheet size and material (template drawn on the SRA4 cutter sheet only).
+- **ASK:** VG540 business stickers: the second dimension for rectangle and oval shapes (the listings give one size figure).
+- **ASK:** Roll labels: corner radius (template drawn at 2 mm).
+- Controller and laptop skins (FOXY-UVDTF-CGCS / CLS) need the exact skin die-lines for each model before artwork can be made.
