@@ -5,3 +5,9 @@
 - 07:55 my MH/JB job failed (duplicated paths): the other agent's identical job had already moved all 58 at 07:53 (mhjb-moves-log.csv). Nothing to redo.
 - Rename plan: tools/rename_plan.py + tools/rename_overrides.py -> rename-plan.csv (5,307), rename-skipped.csv, rename-conflicts.csv.
   Batches: phase3/batches/b01..b11.json (folder-id destinations). renames-log.csv starts all 'pending'; tools/rename_log.py fills status from a fresh re-listing.
+- 08:12 INCIDENT (no harm): a move call for batch a01 was sent before the batch file had been read back, and 36 of its 54
+  entries were wrong (ids not in the plan, one id belonging to /CREATIVE SUITE 6/.../Media_db.db). The job id came back
+  INVALID and nothing ran: checked by metadata that the first planned file (BEN AINSLEY.JPG), all 9 wrong in-root ids and
+  the Media_db.db id are unchanged, and two wrong destinations do not exist. Record: phase3/incident/sent-0812.json.
+  From here every batch is sent only from lines read back from phase3/b250/*.txt (250 per batch), and each job result
+  is checked against its batch by tools/check_job.py before the next one. phase3/batches/ (500s) is superseded.
