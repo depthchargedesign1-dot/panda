@@ -18,7 +18,7 @@ R = '/home/user/panda/foxyprinting-rebrand/exports/rollback/2026-10-05-sensitive
 EXCL = {p['id'] for f in ('after.json', 'after_hall_glitter.json') for p in json.load(open(R + f))}
 EXCL |= {P + '9438652104', P + '9614911688', P + '9438651336', P + '9530631496'}
 SEO_TITLE_KEEP = {P + '6890951671995', P + '8042789535995', P + '4328413233227'}
-MANUALSEO = {P + '7558323241211': 'Laz Alonso Face Mask | Foxy Printing', P + '7551018041595': 'Jigsaw Face Mask | Foxy Printing', P + '7455548113147': 'Eka Darville Face Mask | Foxy Printing', P + '8245753905403': 'Baby Face Mask | Foxy Printing', P + '9437813256': 'Madge Face Mask | Foxy Printing', P + '9437813512': 'Mel Face Mask | Foxy Printing', P + '15865891815805': 'Harry Lewis (W2S) Face Mask | Foxy Printing'}
+MANUALSEO = {P + '9530648776': 'Bubbles DeVere Face Mask | Foxy Printing', P + '9438679496': 'Willy Wonka Face Mask | Foxy Printing', P + '7558323241211': 'Laz Alonso Face Mask | Foxy Printing', P + '7551018041595': 'Jigsaw Face Mask | Foxy Printing', P + '7455548113147': 'Eka Darville Face Mask | Foxy Printing', P + '8245753905403': 'Baby Face Mask | Foxy Printing', P + '9437813256': 'Madge Face Mask | Foxy Printing', P + '9437813512': 'Mel Face Mask | Foxy Printing', P + '15865891815805': 'Harry Lewis (W2S) Face Mask | Foxy Printing'}
 
 def fold(s):
     return unicodedata.normalize('NFKD', s or '').encode('ascii', 'ignore').decode().lower().replace('-', ' ').replace('.', '').replace("'", '').replace('’', '').strip()
@@ -165,6 +165,7 @@ def fix_meta_tm(m):
     m = m.replace('an Oscars-style party', 'a red-carpet party').replace('An Oscars-style party', 'A red-carpet party')
     m = m.replace('a Six Nations watch party', 'a rugby watch party')
     m = m.replace(' Golden Globes 2025 Celebrity Face Masks', ' Face Mask')
+    m = m.replace('Perfect for a wedding photo booth and photo booths.', 'Perfect for a wedding photo booth and group photos.')
     return m
 
 # ---------------- SEO titles ----------------
