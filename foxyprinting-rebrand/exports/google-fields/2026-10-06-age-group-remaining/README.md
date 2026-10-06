@@ -35,3 +35,6 @@ The columns are the same as the 5 Oct files: `Handle`, `Google Shopping / Age Gr
 3. If that looks right, import `01` then `02` the same way, one at a time, with the same box ticked.
 
 Rebuild with `tools/build_age_group_remaining.py` (reads `phase2_items.json`, `phase2_before.json` and `phase2_done.log` from `../../rollback/2026-10-05-google-fixes/`, and a bulk product export for the id to handle lookup).
+
+## Update 6 Oct 2026 (afternoon)
+Use `02-age-group-gender-CLEAN.csv` instead of 02: terrace flags, bobble hats and number plate mugs changed after the file was made (61 rows removed). 01 is unaffected.
