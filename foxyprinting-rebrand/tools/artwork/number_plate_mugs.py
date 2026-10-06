@@ -7,6 +7,7 @@ Builds, for 10 original designs x 5 country bands:
 
 Run:  python3 tools/artwork/number_plate_mugs.py            (artwork + products.json)
       python3 tools/artwork/number_plate_mugs.py ebay URLS.json   (eBay upload CSV)
+      python3 tools/artwork/number_plate_mugs.py zips             (stamp 300 dpi into the PNGs + rebuild the zips only)
 
 Wrap size: 200 x 70 mm (owner spec, artwork-specs.md) + 3 mm bleed = 206 x 76 mm,
 3 mm safe area. Font: Barlow Condensed (SIL OFL 1.1, Google Fonts) - an open-licence
@@ -327,6 +328,85 @@ Wales flag artwork: flag-icons (MIT licence). The plate text is a novelty design
 """
 
 
+def png_set_dpi(path, dpi=300):
+    """Stamp a pHYs chunk (dpi in pixels/metre) into a PNG without re-encoding the pixels.
+    cairosvg renders at 300 dpi but writes no pHYs, so RIPs may read the file as 72 dpi."""
+    import struct, zlib
+    data = open(path, "rb").read()
+    assert data[:8] == b"\x89PNG\r\n\x1a\n", path
+    out, i = [data[:8]], 8
+    ppm = int(round(dpi / 0.0254))
+    body = struct.pack(">IIB", ppm, ppm, 1)
+    phys = struct.pack(">I", 9) + b"pHYs" + body + struct.pack(">I", zlib.crc32(b"pHYs" + body) & 0xFFFFFFFF)
+    while i < len(data):
+        n = struct.unpack(">I", data[i:i + 4])[0]
+        typ = data[i + 4:i + 8]
+        chunk = data[i:i + 12 + n]
+        i += 12 + n
+        if typ == b"pHYs":
+            continue                      # replace any existing one
+        out.append(chunk)
+        if typ == b"IHDR":
+            out.append(phys)              # pHYs must come before IDAT
+    open(path, "wb").write(b"".join(out))
+
+
+PRINT_NOTES = """PRINT NOTES - {title}
+SKU {sku}-01 to -05  |  Plate: {reg}
+
+PRODUCT   11oz white ceramic sublimation mug.
+SIZE      Full wrap. Print area 200 x 70 mm + 3 mm bleed on every edge = 206 x 76 mm page.
+          Safe area 3 mm inside the trim. The number plate (194 x 64 mm) fills the safe area and
+          runs right round the mug; its two rounded ends meet either side of the handle.
+METHOD    Dye sublimation. Print at 100% / actual size - do NOT "fit to page".
+MIRROR    The "- MIRRORED.pdf" files are already flipped left-right for sublimation transfer paper.
+          Use them only if your print driver / RIP does NOT mirror for you. Otherwise use the normal PDF.
+FILES     One set per country band (GB, Scotland, Wales, Northern Ireland, Ireland):
+            .svg              editable master (live text; layers Background / Number plate / Guides)
+            .pdf              print file, 206 x 76 mm
+            - MIRRORED.pdf    same, flipped for transfer paper
+            - 300dpi.png      2433 x 898 px, tagged 300 dpi (prints at 206 x 76 mm)
+COLOUR    Plate yellow #FFD100, band blue #003DA5, text #111111. Keep colours within your
+          sublimation ICC profile; check a test print against the plate yellow.
+FONTS     Barlow Condensed Bold (and SemiBold), The Barlow Project Authors - SIL Open Font License 1.1
+          (free for commercial use). Source: https://fonts.google.com/specimen/Barlow+Condensed
+          The .ttf files and OFL.txt are in the Fonts folder. Install them before editing the SVG.
+          Wales flag artwork: flag-icons (MIT licence) - licence text in the Fonts folder.
+NOTE      The plate text is a novelty design, not a real registration.
+"""
+
+
+ZIP_FONTS = ["BarlowCondensed-Bold.ttf", "BarlowCondensed-SemiBold.ttf", "OFL.txt"]  # OFL.txt = Barlow licence
+
+
+def make_zip(d, folder, zpath):
+    """Zip one design: all 5 countries' SVG / PDF / MIRRORED PDF / 300dpi PNG + README + PRINT NOTES + Fonts."""
+    sb = sku_base(d)
+    if os.path.exists(zpath):
+        os.remove(zpath)
+    with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
+        top = f"{title(d)} - {sb}-01"
+        for f in sorted(os.listdir(folder)):
+            z.write(os.path.join(folder, f), f"{top}/{f}")
+        z.writestr(f"{top}/PRINT NOTES.txt", PRINT_NOTES.format(title=title(d), sku=sb, reg=reg_text(d)))
+        for f in ZIP_FONTS:  # only the fonts this design uses (assets/fonts also holds other ranges' fonts)
+            z.write(os.path.join(ASSETS, "fonts", f), f"{top}/Fonts/{f}")
+        z.write(os.path.join(ASSETS, "flag-icons-LICENSE.txt"), f"{top}/Fonts/flag-icons (Wales flag) LICENSE.txt")
+
+
+def fix_zips():
+    """Re-stamp every 300dpi PNG with pHYs = 300 dpi (pixels untouched) and rebuild the 10 zips."""
+    for d in D:
+        sb = sku_base(d)
+        folder = os.path.join(OUT, "artwork", f"{sb} {reg_text(d)}")
+        for f in os.listdir(folder):
+            if f.endswith("- 300dpi.png"):
+                png_set_dpi(os.path.join(folder, f))
+        zpath = os.path.join(OUT, "zips", f"{sb}-number-plate-mug-full-wrap-artwork.zip")
+        make_zip(d, folder, zpath)
+        print("rebuilt", zpath)
+
+
 def build():
     global FM
     import cairosvg
@@ -349,6 +429,7 @@ def build():
             cairosvg.svg2pdf(bytestring=wrap_svg(d, country, mirrored=True).encode(),
                              write_to=os.path.join(folder, stem + " - MIRRORED.pdf"))
             cairosvg.svg2png(bytestring=svg.encode(), dpi=300, write_to=os.path.join(folder, stem + " - 300dpi.png"))
+            png_set_dpi(os.path.join(folder, stem + " - 300dpi.png"))
             files.append(stem)
             # mockup texture: the whole printed wrap (trim area, transparent outside the plate)
             tsvg = (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" '
@@ -359,13 +440,7 @@ def build():
         open(os.path.join(folder, "README - how to print.txt"), "w").write(
             README.format(title=title(d), sku=sb, reg=reg_text(d)))
         zpath = os.path.join(zip_root, f"{sb}-number-plate-mug-full-wrap-artwork.zip")
-        with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
-            top = f"{title(d)} - {sb}-01"
-            for f in sorted(os.listdir(folder)):
-                z.write(os.path.join(folder, f), f"{top}/{f}")
-            for f in sorted(os.listdir(os.path.join(ASSETS, "fonts"))):
-                z.write(os.path.join(ASSETS, "fonts", f), f"{top}/Fonts/{f}")
-            z.write(os.path.join(ASSETS, "flag-icons-LICENSE.txt"), f"{top}/Fonts/flag-icons (Wales flag) LICENSE.txt")
+        make_zip(d, folder, zpath)
         desc = description(d)
         words = len(re.sub("<[^>]+>", " ", desc).split())
         t = title(d)
@@ -410,7 +485,7 @@ EBAY_HTML = ('<div style="font-family:Arial,sans-serif;max-width:800px"><h2>{h}<
 
 
 def ebay(urls_path):
-    """urls.json: {sku_base: {"GB": url, ..., "extra": [url, ...]}} -> eBay File Exchange / Seller Hub CSV."""
+    """urls.json: {sku_base: {"main": both-ends url, "GB": url, ..., "extra": [url, ...]}} -> eBay File Exchange / Seller Hub CSV."""
     products = json.load(open(os.path.join(OUT, "products.json")))
     urls = json.load(open(urls_path))
     outdir = os.path.join(ROOT, "exports", "ebay", "number-plate-mugs")
@@ -436,7 +511,8 @@ def ebay(urls_path):
                      "C:Theme": "Novelty", "C:Features": "Dishwasher Safe|Microwave Safe",
                      "C:Care Instructions": "Dishwasher Safe", "C:Country/Region of Manufacture": "United Kingdom",
                      "RelationshipDetails": "Country=" + ";".join(c[0] for c in COUNTRIES),
-                     "PicURL": "|".join([u["GB"]] + u.get("extra", [])[:10]),
+                     # main picture = the two-mug "both ends" view (whole registration visible), then GB, SCO, CYM, NI, IRL, flat plate
+                     "PicURL": "|".join(([u["main"]] if u.get("main") else []) + [u["GB"]] + u.get("extra", [])[:10]),
                      "*Description": EBAY_HTML.format(h=html.escape(p["title"]), body=desc),
                      "*Format": "FixedPrice", "*Duration": "GTC", "*StartPrice": "", "*Quantity": "",
                      "*Location": "North Yorkshire, UK"})
@@ -455,5 +531,7 @@ def ebay(urls_path):
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "ebay":
         ebay(sys.argv[2])
+    elif len(sys.argv) > 1 and sys.argv[1] == "zips":
+        fix_zips()
     else:
         build()
