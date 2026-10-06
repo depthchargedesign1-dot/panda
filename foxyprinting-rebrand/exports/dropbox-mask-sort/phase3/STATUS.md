@@ -24,3 +24,7 @@ p1-01 submitted 08:3x op=AUACi-3dEYi-UEr4BFQ-_8GS1XZpDYMZS1tI8c7OsAjG3_JIJZbCdot
 - p1-01 (new numbering) saved as phase3/sent/p1-02.json before sending.
 - 09:06 sent p1-02 (= b1000/p1-01 after review; saved sent/p1-02.json) op=AUCZyQyhAoUkIgBxIrWyTpFf9SnVM1ALpTAkTqvncOA91_z77NuakLeLiNkizOdbVkXh6N9dwgeEYiNUAuB_Azhn3bneoz8NJJoclYPsPYzEucsYMkXjvF4ARSJmvIfbZYZF-9GQypfKrRlNbe1d71BxLcU4euCIwObKbLbn3AL4s5ExeI25hUuCgxN7HvAi_xS9MqiUakvfA-6D9-2jyfMC8coxbJDQSSij4FEnDyp07A
 - 09:21 sent p1-02 completed 1000/1000 (results/sent-p1-02.json). 09:32 sent p1-03 (1000) op=AUDrCEjWAxZKV9z3RuIHe5i1O0Qp44uaZarSoy5siExq85eZUKi_gR4pwOBS7j3zUtb0SmlIh1CbdzAIMRAz3UH2kNgBQaR3kN33Yxq-OPYynfzZa_FmAQBM9Khcpi3S533o3urafl1sA0gj28zLCJYeCDfKwE4nPOuoF3AblXX2atI5Uw5Kjy0kSXJ5gUVt9UgAJqUQ32aKp_PNXo2DMIFqFRW530lrbWROAhZfk23iwg
+
+- p1-03: completed 1000/1000 ok (check_sent).
+- p1-04 sent (1000) at ~10:00 UTC. op AUFz6PY4Jy5Ai5sVnKVJJqNGkRgWqKAZ0IuaMW7xcp5R8_H2cmxgaZq2l-O-ULHk1MsCNKXYqoifta6oYdTOXTw5hP2RGyk9fRYHJN0xNqLy5YEPNZPl5MkR8-hs9rRZ92vwgRbELPvvsJYL581Eyd_WCQTlquXYpWuoicCK_z_K2tfZfIiD0s5ZpcmocjWUP-3peEwov6eos6pN2cc-6_bp5o_bl6VM4c3f9-HzNlVPSA
+- sent/p1-05 = copy of b1000/p1-02 (not yet sent).

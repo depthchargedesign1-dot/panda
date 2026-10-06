@@ -58,7 +58,7 @@ add(code='CFLAG04', pid='8783854829819', kind='country', name='Scotland', color=
     seo_title='Personalised Scotland Saltire Flag | Foxy Printing',
     seo_desc='The white saltire on blue, printed with your clan, town or group name. A personalised Scottish flag in 3 sizes up to 8ft x 5ft, with free UK delivery.',
     kw='personalised Scotland terrace flag',
-    intro='Take the Saltire on the road with a personalised Scotland terrace flag: the white cross on blue, printed with your own words. It’s a proper sight at away trips, Six Nations weekends and Burns Night parties alike.',
+    intro='Take the Saltire on the road with a personalised Scotland terrace flag: the white cross on blue, printed with your own words. It’s a proper sight at away trips, rugby weekends and Burns Night parties alike.',
     h2='A personalised Scotland terrace flag for the Tartan faithful',
     personal='Pop in your clan name, home town or the name of your travelling crew, plus a second line if you like. You can upload a logo too. The live preview shows your wording beside the flag photo, and the message box is there for anything else.',
     close='Off to watch the game abroad? A 3ft x 2ft Scottish flag folds small enough for a rucksack.')
@@ -68,7 +68,7 @@ add(code='CFLAG06', pid='8783857418491', kind='country', name='Italy', color='Mu
     seo_title='Personalised Italy Tricolore Flag | Foxy Printing',
     seo_desc='Green, white and red with your family name or town printed on it. A personalised Italian flag for match days and parties, 3 sizes, free UK delivery.',
     kw='personalised Italy terrace flag',
-    intro='Our personalised Italy terrace flag keeps the green, white and red tricolore bold and simple, then adds the words you want on it. Perfect for watching the Azzurri with the family, for a nonna’s birthday or for an Italian-themed party.',
+    intro='Our personalised Italy terrace flag keeps the green, white and red tricolore bold and simple, then adds the words you want on it. Perfect for watching Italy with the family, for a nonna’s birthday or for an Italian-themed party.',
     h2='Personalised Italy terrace flag in classic green, white and red',
     personal='Add a family surname, the town your grandparents came from or a short slogan, and use the second line if it needs more room. Upload a logo if you have one. The live preview shows your details alongside the flag photo before you buy.',
     close='A personalised Italian flag looks just as good in a restaurant or deli as it does at the match.')
@@ -98,7 +98,7 @@ add(code='CFLAG09', pid='8783866003707', kind='country', name='Spain', color='Re
     seo_title='Personalised Spain Flag with Your Name | Foxy Printing',
     seo_desc='Red and yellow Spanish flag printed with your own words, from a family name to a town. A personalised flag in 3 sizes, eyelets all round, free UK delivery.',
     kw='personalised Spain terrace flag',
-    intro='Red, yellow, red: a personalised Spain terrace flag is about as cheerful as a flag gets, and this one carries the words you choose. Wave it for La Roja, hang it at a fiesta-themed party or bring a bit of holiday sunshine to the garden.',
+    intro='Red, yellow, red: a personalised Spain terrace flag is about as cheerful as a flag gets, and this one carries the words you choose. Wave it on match night, hang it at a fiesta-themed party or bring a bit of holiday sunshine to the garden.',
     h2='A personalised Spain terrace flag in bold red and yellow',
     personal='Write the name of your family, your peña or your favourite Spanish town, plus a second line if you want. Upload a logo if there is one. The live preview shows your details next to the flag photo before you check out.',
     close='A personalised Spanish flag makes a fun gift for anyone with a place in the sun.')
@@ -126,9 +126,9 @@ add(code='CFLAG11', pid='8783871803643', kind='country', name='Ukraine', color='
 add(code='CFLAG12', pid='8783874949371', kind='country', name='Union Jack', color='Multicolor',
     title='Personalised Union Jack Terrace Flag – Great Britain Fan Flag – 3 Sizes',
     seo_title='Personalised Union Jack Terrace Flag | Foxy Printing',
-    seo_desc='A Union Jack printed with your name, town or team. Ideal for the Olympics, street parties and away trips, in 3 sizes up to 8ft x 5ft with free UK delivery.',
+    seo_desc='A Union Jack printed with your name, town or team. Ideal for sporting summers, street parties and away trips, in 3 sizes up to 8ft x 5ft, free UK delivery.',
     kw='personalised Union Jack terrace flag',
-    intro='Nothing says Team GB quite like the red, white and blue, and our personalised Union Jack terrace flag adds your own words to it. Fly it for the Olympics, a royal celebration, a street party or a sports trip abroad.',
+    intro='Nothing says Great Britain quite like the red, white and blue, and our personalised Union Jack terrace flag adds your own words to it. Fly it for a big sporting summer, a royal celebration, a street party or a sports trip abroad.',
     h2='Personalised Union Jack terrace flag with your own wording',
     personal='Choose the words for the flag, perhaps your street, your family or your club, with an optional second line. Upload a logo if you want one on it. The live preview shows your details beside the flag photo, and the message box takes any extra notes.',
     close='Planning a street party? Pair this Great Britain flag with a second design so both ends of the road match.')
@@ -148,7 +148,7 @@ add(code='CFLAG14', pid='8783880388859', kind='country', name='USA', color='Mult
     seo_title='Personalised USA Stars & Stripes Flag | Foxy Printing',
     seo_desc='Stars and Stripes printed with the words you choose, from a family name to a team. A personalised USA flag for game nights and parties, free UK delivery.',
     kw='personalised USA terrace flag',
-    intro='Big, bright and instantly recognisable, the Stars and Stripes makes a great personalised USA terrace flag. Add your own words and it’s ready for game nights, Fourth of July parties, NFL trips to London or an American-themed birthday.',
+    intro='Big, bright and instantly recognisable, the Stars and Stripes makes a great personalised USA terrace flag. Add your own words and it’s ready for game nights, Fourth of July parties, American football trips to London or an American-themed birthday.',
     h2='A personalised USA terrace flag – Stars and Stripes with your words',
     personal='Put a name, a state, a team or a short slogan in the first box, plus a second line if needed. You can upload a logo too. The live preview shows your wording beside the flag photo, and the message box is there for anything extra.',
     close='Throwing a Fourth of July party? An 8ft x 5ft American flag makes an instant backdrop.')
@@ -241,7 +241,7 @@ CLUB_COPY = {
   'Watching with the family? The 5ft x 3ft size suits a living room wall.',
   'A blue and white striped football fan flag with your name or group printed on it. Three sizes, eyelets on all 4 edges, and free UK delivery on every flag.'),
 'FFLAG6': ('Our {k} is a blue and white fan design for Chelsea supporters, with any wording you like printed on it. Bring it to the ground, hang it in the pub or give it to the Blues fan who has everything.',
-  'Personalise your {k}',
+  'Design your {k}',
   'Add a name, a nickname, your home town or the group you go with, with an optional second line. You can upload a logo. The live preview shows your details next to the flag photo, and the message box is for anything else.',
   'For a grandparent who’s followed the club for years, add their name and the year they first went.',
   'A blue and white football fan flag printed with your words, in 3ft x 2ft, 5ft x 3ft or 8ft x 5ft. Made to order in the UK, with free UK delivery included.'),
@@ -251,7 +251,7 @@ CLUB_COPY = {
   'Going as a group? The 8ft x 5ft size makes a real statement.',
   'A red and blue football fan flag printed with your name, area or group. Three sizes, hand-stitched with a 25mm binding, and free UK delivery on every flag.'),
 'FFLAG8': ('This {k} is a royal blue and white fan design for Everton supporters, printed with your own words. It’s ideal for match days, a new season ticket or a Toffees fan’s birthday.',
-  'Your {k}, personalised',
+  'Your {k} in royal blue and white',
   'Add a name, a street, a pub or your supporters’ group, and use the second line for a year or a short message. You can upload a logo. The live preview shows your details next to the flag photo before you order.',
   'Pair it with a smaller 3ft x 2ft flag for the little one in the family.',
   'A royal blue and white football fan flag with the wording you choose printed on it. Pick from 3 sizes up to 8ft x 5ft, with free delivery in the UK.'),
@@ -261,7 +261,7 @@ CLUB_COPY = {
   'A thoughtful gift for a Cottagers fan, with their name front and centre.',
   'White and black football fan flag printed with your name or group. Single-sided print on 115gsm polyester, 3 sizes up to 8ft x 5ft, free UK delivery.'),
 'FFLAG10': ('This {k} is a blue and white fan design for Ipswich supporters, ready for the words you choose. Take it to Suffolk’s big match days or hang it proudly at home.',
-  'Personalised {k} with your text',
+  'Your {k} with your own text',
   'Add a name, a village or your supporters’ group, with a second line for a year or a slogan. You can upload a logo too. The live preview shows your wording next to the flag photo before you buy.',
   'Ordering for a supporters’ club? Ask about double-sided printing in the message box and we’ll quote.',
   'A blue and white football fan flag printed with your own words, made in the UK. Choose 3ft x 2ft, 5ft x 3ft or 8ft x 5ft, with free UK delivery included.'),
@@ -281,7 +281,7 @@ CLUB_COPY = {
   'A brilliant gift for a City fan who was there for the treble.',
   'A sky blue and white treble-themed football fan flag, printed with your name or group. Three sizes, hand-stitched in the UK, with free UK delivery.'),
 'FFLAG14': ('Our {k} is a red, black and white fan design for Man United supporters, ready for any words you want. Hang it in the stand, at home or in your local on match day.',
-  'Personalise your {k}',
+  'Create your {k}',
   'Add a name, a town, a group or a favourite chant, and use the second line if there’s more. Upload your group’s logo if you have one. The live preview shows your wording next to the flag photo.',
   'For a big group of Reds, go for 8ft x 5ft so it’s seen right across the stand.',
   'A red, black and white football fan flag printed with your words. Made to order in 3ft x 2ft, 5ft x 3ft or 8ft x 5ft, with free delivery across the UK.'),
@@ -301,7 +301,7 @@ CLUB_COPY = {
   'Perfect for a birthday: their name in big letters on a 5ft x 3ft flag.',
   'A red and white football fan flag printed with the name, town or group you choose. Pick from 3 sizes, single-sided print, with free UK delivery.'),
 'FFLAG18': ('Our {k} is a navy and white fan design for Tottenham supporters, with any wording you like printed on it. Bring it to the match, the pub or the living room for the big games.',
-  'A {k} personalised for you',
+  'A {k} in navy and white',
   'Add a name, an area of London, your fan group or a short chant, with a second line if needed. Upload a logo for your group if you have one. The live preview shows your wording next to the flag photo.',
   'Pair it with a second flag for a Spurs-mad friend.',
   'A navy and white football fan flag printed with your words. Hand-stitched 115gsm polyester in 3ft x 2ft, 5ft x 3ft or 8ft x 5ft, with free UK delivery.'),
@@ -456,9 +456,10 @@ SEO_TITLES = {
 for code, pid, club, colours, gcol, d2 in clubs:
     intro, h2, personal, close, sd = CLUB_COPY[code]
     k = f'personalised {club} football flag'
-    cap_colours = ' & '.join(w.strip().title() for w in colours.replace(', ', ' and ').split(' and '))
-    cap_colours = cap_colours.replace('Old Gold', 'Old Gold')
-    title = f'Personalised Football Terrace Flag – {cap_colours} {club} Fan Design' + (' 2' if d2 else '') + ' – 3 Sizes'
+    cols = [w.strip().title() for w in colours.replace(', ', ' and ').split(' and ')]
+    cap_colours = (', '.join(cols[:-1]) + ' & ' + cols[-1]) if len(cols) > 1 else cols[0]
+    label = club + (' Treble' if club == 'Man City' else '')
+    title = f'Personalised Football Terrace Flag – {cap_colours} {label} Fan Design' + (' 2' if d2 else '') + ' – 3 Sizes'
     add(code=code, pid=pid, kind='club', name=club, colours=colours, color=gcol, design2=d2,
         title=title, seo_title=SEO_TITLES[code], seo_desc=sd, kw=k,
         intro=intro.format(k=k), h2=h2.format(k=k)[0].upper() + h2.format(k=k)[1:],
