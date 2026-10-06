@@ -1,5 +1,7 @@
 # Foxy Printing (foxyprinting.co.uk): working rules
 
+**Start every session by reading `foxyprinting-rebrand/STATUS.md`** (open questions, running work, known blocks) and keep it updated.
+
 The Foxy Printing work lives in `foxyprinting-rebrand/`. The rest of this repository is an unrelated pandas checkout, so don't touch it.
 
 ## Creating products: ALWAYS follow these rules
