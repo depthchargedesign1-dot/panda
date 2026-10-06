@@ -1,6 +1,6 @@
 # Face mask copy fixes – import (6 Oct 2026)
 
-2,720 face masks get corrected wording (130 more were already fixed live, including all 30 sensitive-figure neutral rewrites).
+2,714 face masks get corrected wording (130 more were already fixed live, including all 30 sensitive-figure neutral rewrites).
 Fixes: junk/over-long SEO titles, misspelled or wrong names, "theme a themed birthday", trademarks in meta descriptions,
 a/an errors, cut-off meta descriptions, wrong occasions, disclaimers naming a show as a person. Full list: ../qa-report.md, ../qa-fixes.jsonl.
 
