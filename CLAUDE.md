@@ -4,7 +4,7 @@ The Foxy Printing work lives in `foxyprinting-rebrand/`. The rest of this reposi
 
 ## Creating products: ALWAYS follow these rules
 
-1. **Every new product is created as a DRAFT** (`status: DRAFT`). Never set a product to Active or publish it to a sales channel unless the owner explicitly says so for that specific product or batch. This applies to every route: `productSet`, `productCreate`, `create-product` and CSV imports.
+1. **Products the owner asks for go live straight away** (owner's rule, 6 Oct 2026: "launch all new products I request as active all the time"). Create them `status: ACTIVE` and publish them to the Online Store (`gid://shopify/Publication/95329800`) and Shop (`gid://shopify/Publication/121694519547`), but only once every other rule below is met (copy, SEO, Google fields, images, SKUs) and the product has been re-read to check it. Anything you make on your own initiative (bulk imports, suggested pairing products the owner hasn't approved, test items) stays a **DRAFT** until the owner says so.
 2. **Every new product gets a detailed, human-sounding, SEO description** written from its keywords and tags (see "Product copy" below). Never leave the description empty, and never paste the same text across products.
 3. Set the **SEO title and meta description** (`seo { title description }`) on every product.
 4. Set the **Google Shopping fields** (see below) so the product is ready for Google Ads / Merchant Center.
