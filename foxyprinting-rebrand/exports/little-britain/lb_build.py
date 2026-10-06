@@ -21,7 +21,7 @@ MASKS = {
     "lou": ("Lou Todd", "lou.jpg", (256, 571, 556, 564)),
     "andy": ("Andy Pipkin", "andy.jpg", (1064, 1579, 1766, 1579)),
     "vicky": ("Vicky Pollard", "vicky.jpg", (772, 2140, 1591, 2140)),
-    "bubbles": ("Bubbles DeVere", "bubbles.png", (92, 358, 206, 358)),
+    "bubbles": ("Bubbles DeVere", "bubbles.png", (95, 300, 205, 300)),
 }
 PRODUCTS = {
     "lou-and-andy-couple-mask-pair": dict(keys=["lou", "andy"], head="LOU & ANDY FACE MASK PAIR", bg=BG_PAIR),
@@ -66,6 +66,9 @@ def detect_eyes(rgb, fallback):
     return fallback
 
 
+EYES_USED = {}
+
+
 def cutout(key):
     name, fn, fb = MASKS[key]
     rgb, a = load_rgb(os.path.join(SRC, fn))
@@ -83,6 +86,7 @@ def cutout(key):
     a = a.point(lambda v: 255 if v > 128 else 0).filter(ImageFilter.GaussianBlur(1.2))
     im = rgb.convert("RGBA"); im.putalpha(a)
     print(key, "eyes", eyes, "fallback" if eyes == fb else "detected")
+    EYES_USED[name] = list(eyes)
     return im.crop(a.getbbox()), name
 
 
@@ -122,8 +126,9 @@ def back_of(front):
 
 
 def grid_positions(n, W, H, top, bottom):
-    if n == 2:
-        return [(W * 0.27, (top + H - bottom) / 2), (W * 0.73, (top + H - bottom) / 2)], (W * 0.46, H - top - bottom)
+    if n == 2:  # stacked, one above the other
+        ch = (H - top - bottom) / 2
+        return [(W / 2, top + ch / 2), (W / 2, top + 1.5 * ch)], (W * 0.8, ch)
     cy1, cy2 = top + (H - top - bottom) * 0.26, top + (H - top - bottom) * 0.74
     return [(W * .27, cy1), (W * .73, cy1), (W * .27, cy2), (W * .73, cy2)], (W * 0.46, (H - top - bottom) * 0.48)
 
@@ -157,8 +162,8 @@ for slug, P in PRODUCTS.items():
     subprocess.run(["curl", "-sfo", f"{OUT}/bg-{slug}.png", P["bg"]], check=True)
     life = Image.open(f"{OUT}/bg-{slug}.png").convert("RGBA").resize((2000, 2000), Image.LANCZOS)
     angles = [-9, 7] if n == 2 else [-10, 6, -4, 9]
-    lpos = [(700, 1020), (1300, 1000)] if n == 2 else [(620, 690), (1380, 700), (640, 1340), (1360, 1330)]
-    size = (780, 1050) if n == 2 else (680, 620)
+    lpos = [(620, 1010), (1380, 990)] if n == 2 else [(620, 690), (1380, 700), (640, 1340), (1360, 1330)]
+    size = (660, 880) if n == 2 else (680, 620)
     for (f, nm), (x, y), ang in zip(ms, lpos, angles):
         m = edge(fit(f, *size), t=5, shadow=140).rotate(ang, resample=Image.BICUBIC, expand=True)
         place(life, m, x, y)
@@ -173,4 +178,6 @@ for slug, P in PRODUCTS.items():
 os.makedirs(f"{OUT}/art", exist_ok=True)
 for k, (name, fn, _) in MASKS.items():
     rgb, _ = load_rgb(os.path.join(SRC, fn)); rgb.save(f"{OUT}/art/{name}.jpg", quality=97)
+import json
+json.dump(EYES_USED, open(f"{OUT}/art/eyes.json", "w"), indent=1)
 print("OK")

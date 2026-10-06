@@ -1,7 +1,7 @@
 #!/bin/bash
 # Runs in the Higgsfield sandbox. Args: BG_PAIR_URL BG_PACK_URL  (targets.json = {"file": "staged PUT url"} in CWD)
 set -e
-RAW=https://raw.githubusercontent.com/depthchargedesign1-dot/panda/claude/foxyprinting-rebrand-shopify-usf2x9/foxyprinting-rebrand
+RAW=https://raw.githubusercontent.com/depthchargedesign1-dot/panda/${REF:-claude/foxyprinting-rebrand-shopify-usf2x9}/foxyprinting-rebrand
 CF=https://d2ol7oe51mr4n9.cloudfront.net/user_3HUr7G8la20J0fiH66SaF8cNGi7
 pip install -q numpy "opencv-python-headless<5" reportlab pikepdf >/dev/null 2>&1 || true
 mkdir -p src out
@@ -13,8 +13,8 @@ curl -sfo src/andy.jpg $CF/a2654bcf-0cd9-4580-874f-81e94e3ff0df.jpg
 curl -sfo src/vicky.jpg $CF/eee552e0-dca2-4862-a26f-64f3651e479a.jpg
 curl -sfo src/bubbles.png $CF/5492ffeb-ebb7-4c30-bf28-ba3379b3d9b7.png
 python3 lb_build.py src out "$1" "$2"
-python3 mask_cutline.py out/art/*.jpg --out out/cut
-mk(){ d="$1"; shift; mkdir -p "z/$d"; for n in "$@"; do cp out/cut/"$n"* out/art/"$n.jpg" "z/$d/"; done; cp README.txt "z/$d/README - how to print and cut.txt"; (cd z && zip -qr "../out/$d.zip" "$d"); }
+python3 mask_cutline.py out/art/*.jpg --out out/cut --eyes-json out/art/eyes.json
+mk(){ d="$1"; shift; mkdir -p "z/$d"; for n in "$@"; do cp out/cut/"$n"* "z/$d/"; cp out/art/"$n.jpg" "z/$d/$n - source artwork.jpg"; done; cp README.txt "z/$d/README - how to print and cut.txt"; (cd z && zip -qr "../out/$d.zip" "$d"); }
 mk lou-and-andy-couple-mask-pair-artwork "Lou Todd" "Andy Pipkin"
 mk little-britain-characters-face-mask-pack-artwork "Vicky Pollard" "Lou Todd" "Andy Pipkin" "Bubbles DeVere"
 ls -la out out/cut

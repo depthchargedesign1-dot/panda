@@ -132,7 +132,7 @@ def add_pdf_layers(pdf_path):
         pdf.save(pdf_path)
 
 
-def process(path, out_dir, inset_mm, stroke_mm, eye_w_mm, eye_h_mm):
+def process(path, out_dir, inset_mm, stroke_mm, eye_w_mm, eye_h_mm, eye_override=None):
     img = cv2.imread(path, cv2.IMREAD_COLOR)
     if img is None:
         raise ValueError('cannot read image')
@@ -145,11 +145,16 @@ def process(path, out_dir, inset_mm, stroke_mm, eye_w_mm, eye_h_mm):
     pad = int(inset_mm / scale) + 10
     padded = cv2.copyMakeBorder(img, pad, pad, pad, pad, cv2.BORDER_CONSTANT, value=(255, 255, 255))
     outline = inset_contour(face_mask(padded), inset_mm / scale) - pad
-    eyes, _ = find_eyes(img)
     holes = []
-    for (cx, cy, ew) in eyes:
-        cx, cy = refine_eye(img, cx, cy, ew)
-        holes.append(eye_hole(cx, cy, eye_w_mm / scale, eye_h_mm / scale))
+    if eye_override:  # eye centres given by hand (lx, ly, rx, ry in image pixels): use them as they are
+        lx, ly, rx, ry = eye_override
+        for (cx, cy) in ((lx, ly), (rx, ry)):
+            holes.append(eye_hole(cx, cy, eye_w_mm / scale, eye_h_mm / scale))
+    else:
+        eyes, _ = find_eyes(img)
+        for (cx, cy, ew) in eyes:
+            cx, cy = refine_eye(img, cx, cy, ew)
+            holes.append(eye_hole(cx, cy, eye_w_mm / scale, eye_h_mm / scale))
 
     def to_mm(pts):  # image px -> sheet mm (origin top-left, y down)
         return np.stack([ox + pts[:, 0] * scale, oy + pts[:, 1] * scale], axis=1)
@@ -228,11 +233,15 @@ def main():
     ap.add_argument('--stroke', type=float, default=0.1, help='cut line width, mm')
     ap.add_argument('--eye-w', type=float, default=26.0, help='eye hole width, mm')
     ap.add_argument('--eye-h', type=float, default=11.0, help='eye hole height, mm')
+    ap.add_argument('--eyes-json', help='JSON file {"<image name without extension>": [lx, ly, rx, ry]} to set eye centres by hand')
     a = ap.parse_args()
+    import json
+    overrides = json.load(open(a.eyes_json)) if a.eyes_json else {}
     bad = 0
     for p in a.images:
         try:
-            out = process(p, a.out, a.inset, a.stroke, a.eye_w, a.eye_h)
+            out = process(p, a.out, a.inset, a.stroke, a.eye_w, a.eye_h,
+                          overrides.get(os.path.splitext(os.path.basename(p))[0]))
             print('OK  ', p, '->', ', '.join(os.path.basename(o) for o in out))
         except Exception as e:  # keep going through a batch
             bad += 1
