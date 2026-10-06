@@ -29,7 +29,7 @@ OUT = os.path.join(ROOT, "exports", "number-plate-mugs")
 
 TRIM_W, TRIM_H, BLEED, SAFE = 200.0, 85.0, 3.0, 3.0
 PAGE_W, PAGE_H = TRIM_W + 2 * BLEED, TRIM_H + 2 * BLEED
-PLATE_W, PLATE_H = 92.0, 22.0
+PLATE_W, PLATE_H = 84.0, 20.0
 PLATE_CX = (51.0, 149.0)          # trim coords: left = white front plate, right = yellow rear plate
 YELLOW, WHITE, BLUE, INK = "#FFD100", "#FFFFFF", "#003DA5", "#111111"
 PRICE = "7.99"
@@ -250,7 +250,7 @@ def plate_svg(d, country, cx_trim, bg, uid):
     cx, cy = cx_trim + BLEED, TRIM_H / 2 + BLEED
     L, T = cx - PLATE_W / 2, cy - PLATE_H / 2
     R, B = L + PLATE_W, T + PLATE_H
-    bw = 12.0
+    bw = 11.0
     s = [f'<g id="{uid}" inkscape:groupmode="layer" inkscape:label="{"Front plate (white)" if bg == WHITE else "Rear plate (yellow)"}">',
          f'<clipPath id="{uid}c"><rect x="{L:.3f}" y="{T:.3f}" width="{PLATE_W}" height="{PLATE_H}" rx="2.6"/></clipPath>',
          f'<rect x="{L:.3f}" y="{T:.3f}" width="{PLATE_W}" height="{PLATE_H}" rx="2.6" fill="{bg}" stroke="#8A8A8A" stroke-width="0.25"/>',
@@ -258,14 +258,14 @@ def plate_svg(d, country, cx_trim, bg, uid):
     bx = L + bw / 2
     if flag:
         fw = bw - 2.8
-        fs, fh = flag_svg(flag, bx - fw / 2, T + 2.6, fw, uid + "f")
+        fs, fh = flag_svg(flag, bx - fw / 2, T + 2.4, fw, uid + "f")
         s.append(fs)
-        csize = 4.0 / FM["700"]["cap"]
-        s.append(f'<text x="{bx:.3f}" y="{B - 2.9:.3f}" font-family="Barlow Condensed" font-weight="700" '
+        csize = 3.6 / FM["700"]["cap"]
+        s.append(f'<text x="{bx:.3f}" y="{B - 2.6:.3f}" font-family="Barlow Condensed" font-weight="700" '
                  f'font-size="{csize:.3f}" fill="#FFFFFF" text-anchor="middle">{code}</text>')
     else:  # Northern Ireland: lettering only, no flag (owner's rule)
-        csize = 6.5 / FM["700"]["cap"]
-        s.append(f'<text x="{bx:.3f}" y="{cy + 3.25:.3f}" font-family="Barlow Condensed" font-weight="700" '
+        csize = 6.0 / FM["700"]["cap"]
+        s.append(f'<text x="{bx:.3f}" y="{cy + 3.0:.3f}" font-family="Barlow Condensed" font-weight="700" '
                  f'font-size="{csize:.3f}" fill="#FFFFFF" text-anchor="middle">{code}</text>')
     # registration (live, editable text; two words so the gap matches a real plate)
     x0, x1 = L + bw + 2.2, R - 2.6
@@ -319,7 +319,7 @@ Files (one set per country band: GB, Scotland, Wales, Northern Ireland, Ireland)
   ... - 300dpi.png    raster print file, 2433 x 1075 px at 300 dpi
 
 Spec: 11oz white sublimation mug, wrap trim 200 x 85 mm, 3 mm bleed, 3 mm safe area
-(no artwork near the edges - the plates sit well inside it). Plates are 92 x 22 mm, centred
+(no artwork near the edges - the plates sit well inside it). Plates are 84 x 20 mm, centred
 51 mm and 149 mm from the left trim edge, so one plate sits each side of the handle.
 Please check the 200 x 85 mm wrap against your mug blanks/press before the first run.
 
@@ -333,8 +333,8 @@ def build():
     global FM
     import cairosvg
     FM = _font_metrics()
-    art_root, zip_root = os.path.join(OUT, "artwork"), os.path.join(OUT, "zips")
-    for p in (art_root, zip_root):
+    art_root, zip_root, tex_root = (os.path.join(OUT, x) for x in ("artwork", "zips", "textures"))
+    for p in (art_root, zip_root, tex_root):
         shutil.rmtree(p, ignore_errors=True)
         os.makedirs(p)
     products, problems = [], []
@@ -352,6 +352,13 @@ def build():
                              write_to=os.path.join(folder, stem + " - MIRRORED.pdf"))
             cairosvg.svg2png(bytestring=svg.encode(), dpi=300, write_to=os.path.join(folder, stem + " - 300dpi.png"))
             files.append(stem)
+            for which, cxp, bg in (("front", PLATE_CX[0], WHITE), ("rear", PLATE_CX[1], YELLOW)):
+                L, T = cxp + BLEED - PLATE_W / 2 - 1, TRIM_H / 2 + BLEED - PLATE_H / 2 - 1
+                tsvg = (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" '
+                        f'width="{PLATE_W + 2:g}mm" height="{PLATE_H + 2:g}mm" viewBox="{L:.3f} {T:.3f} {PLATE_W + 2:g} {PLATE_H + 2:g}">'
+                        + plate_svg(d, country, cxp, bg, which) + "</svg>")
+                cairosvg.svg2png(bytestring=tsvg.encode(), dpi=450,
+                                 write_to=os.path.join(tex_root, f"{sb}-{country[1]}-{which}.png"))
         open(os.path.join(folder, "README - how to print.txt"), "w").write(
             README.format(title=title(d), sku=sb, reg=reg_text(d)))
         zpath = os.path.join(zip_root, f"{sb}-number-plate-mug-artwork.zip")

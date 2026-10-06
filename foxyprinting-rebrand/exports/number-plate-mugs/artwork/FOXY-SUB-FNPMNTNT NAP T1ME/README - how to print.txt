@@ -8,7 +8,7 @@ Files (one set per country band: GB, Scotland, Wales, Northern Ireland, Ireland)
   ... - 300dpi.png    raster print file, 2433 x 1075 px at 300 dpi
 
 Spec: 11oz white sublimation mug, wrap trim 200 x 85 mm, 3 mm bleed, 3 mm safe area
-(no artwork near the edges - the plates sit well inside it). Plates are 92 x 22 mm, centred
+(no artwork near the edges - the plates sit well inside it). Plates are 84 x 20 mm, centred
 51 mm and 149 mm from the left trim edge, so one plate sits each side of the handle.
 Please check the 200 x 85 mm wrap against your mug blanks/press before the first run.
 

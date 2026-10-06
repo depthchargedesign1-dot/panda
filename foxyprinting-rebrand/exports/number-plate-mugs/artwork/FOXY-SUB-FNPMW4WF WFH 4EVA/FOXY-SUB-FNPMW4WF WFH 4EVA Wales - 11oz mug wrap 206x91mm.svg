@@ -3,10 +3,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="206mm" height="91mm" viewBox="0 0 206 91">
 <g id="Background" inkscape:groupmode="layer" inkscape:label="Background (bleed)"><rect width="206.0" height="91.0" fill="#FFFFFF"/></g>
 <g id="front" inkscape:groupmode="layer" inkscape:label="Front plate (white)">
-<clipPath id="frontc"><rect x="8.000" y="34.500" width="92.0" height="22.0" rx="2.6"/></clipPath>
-<rect x="8.000" y="34.500" width="92.0" height="22.0" rx="2.6" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="0.25"/>
-<g clip-path="url(#frontc)"><rect id="frontband" x="8.000" y="34.500" width="12.0" height="22.0" fill="#003DA5"/></g>
-<svg x="9.400" y="37.100" width="9.200" height="6.900" viewBox="0 0 640 480">
+<clipPath id="frontc"><rect x="12.000" y="35.500" width="84.0" height="20.0" rx="2.6"/></clipPath>
+<rect x="12.000" y="35.500" width="84.0" height="20.0" rx="2.6" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="0.25"/>
+<g clip-path="url(#frontc)"><rect id="frontband" x="12.000" y="35.500" width="11.0" height="20.0" fill="#003DA5"/></g>
+<svg x="13.400" y="37.900" width="8.200" height="6.150" viewBox="0 0 640 480">
   <path fill="#00ab39" d="M0 240h640v240H0z"/>
   <path fill="#fff" d="M0 0h640v240H0z"/>
   <g stroke="#000" stroke-width="1.4">
@@ -15,14 +15,14 @@
     <path stroke-linejoin="round" d="m182.3 101.3 9.3 1.7s-6.5 8.8-9.3-1.7z"/>
   </g>
 </svg>
-<text x="14.000" y="53.600" font-family="Barlow Condensed" font-weight="700" font-size="5.714" fill="#FFFFFF" text-anchor="middle">CYM</text>
-<g id="frontreg" font-family="Barlow Condensed" font-weight="700" font-size="17.210" letter-spacing="0.602" fill="#111111"><text x="25.018" y="51.524">WFH</text><text x="60.213" y="51.524">4EVA</text></g>
-<rect x="9.100" y="35.600" width="89.800" height="19.800" rx="1.7" fill="none" stroke="#111111" stroke-width="0.45"/></g>
+<text x="17.500" y="52.900" font-family="Barlow Condensed" font-weight="700" font-size="5.143" fill="#FFFFFF" text-anchor="middle">CYM</text>
+<g id="frontreg" font-family="Barlow Condensed" font-weight="700" font-size="15.646" letter-spacing="0.548" fill="#111111"><text x="27.680" y="50.976">WFH</text><text x="59.675" y="50.976">4EVA</text></g>
+<rect x="13.100" y="36.600" width="81.800" height="17.800" rx="1.7" fill="none" stroke="#111111" stroke-width="0.45"/></g>
 <g id="rear" inkscape:groupmode="layer" inkscape:label="Rear plate (yellow)">
-<clipPath id="rearc"><rect x="106.000" y="34.500" width="92.0" height="22.0" rx="2.6"/></clipPath>
-<rect x="106.000" y="34.500" width="92.0" height="22.0" rx="2.6" fill="#FFD100" stroke="#8A8A8A" stroke-width="0.25"/>
-<g clip-path="url(#rearc)"><rect id="rearband" x="106.000" y="34.500" width="12.0" height="22.0" fill="#003DA5"/></g>
-<svg x="107.400" y="37.100" width="9.200" height="6.900" viewBox="0 0 640 480">
+<clipPath id="rearc"><rect x="110.000" y="35.500" width="84.0" height="20.0" rx="2.6"/></clipPath>
+<rect x="110.000" y="35.500" width="84.0" height="20.0" rx="2.6" fill="#FFD100" stroke="#8A8A8A" stroke-width="0.25"/>
+<g clip-path="url(#rearc)"><rect id="rearband" x="110.000" y="35.500" width="11.0" height="20.0" fill="#003DA5"/></g>
+<svg x="111.400" y="37.900" width="8.200" height="6.150" viewBox="0 0 640 480">
   <path fill="#00ab39" d="M0 240h640v240H0z"/>
   <path fill="#fff" d="M0 0h640v240H0z"/>
   <g stroke="#000" stroke-width="1.4">
@@ -31,8 +31,8 @@
     <path stroke-linejoin="round" d="m182.3 101.3 9.3 1.7s-6.5 8.8-9.3-1.7z"/>
   </g>
 </svg>
-<text x="112.000" y="53.600" font-family="Barlow Condensed" font-weight="700" font-size="5.714" fill="#FFFFFF" text-anchor="middle">CYM</text>
-<g id="rearreg" font-family="Barlow Condensed" font-weight="700" font-size="17.210" letter-spacing="0.602" fill="#111111"><text x="123.018" y="51.524">WFH</text><text x="158.213" y="51.524">4EVA</text></g>
-<rect x="107.100" y="35.600" width="89.800" height="19.800" rx="1.7" fill="none" stroke="#111111" stroke-width="0.45"/></g>
+<text x="115.500" y="52.900" font-family="Barlow Condensed" font-weight="700" font-size="5.143" fill="#FFFFFF" text-anchor="middle">CYM</text>
+<g id="rearreg" font-family="Barlow Condensed" font-weight="700" font-size="15.646" letter-spacing="0.548" fill="#111111"><text x="125.680" y="50.976">WFH</text><text x="157.675" y="50.976">4EVA</text></g>
+<rect x="111.100" y="36.600" width="81.800" height="17.800" rx="1.7" fill="none" stroke="#111111" stroke-width="0.45"/></g>
 <g id="Guides" inkscape:groupmode="layer" inkscape:label="Guides (do not print)" style="display:none" fill="none" stroke-width="0.2"><rect x="3.0" y="3.0" width="200.0" height="85.0" stroke="#00AEEF" stroke-dasharray="2,1"/><rect x="6.0" y="6.0" width="194.0" height="79.0" stroke="#EC008C" stroke-dasharray="1,1"/></g>
 </svg>
