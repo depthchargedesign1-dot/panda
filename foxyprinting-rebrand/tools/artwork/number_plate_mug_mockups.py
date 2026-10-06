@@ -28,7 +28,7 @@ SCENES = {
     "s5": dict(box=(0.320, 0.652, 0.330, 0.75), sag=0.05, name="garage workbench"),
     "s6": dict(box=(0.326, 0.640, 0.336, 0.724), sag=0.05, name="car keys and driving gloves"),
     "s7": dict(box=(0.316, 0.660, 0.290, 0.736), sag=0.06, name="birthday gift"),
-    "s8": dict(box=None, sag=0.06, name="kraft gift box"),
+    "s8": dict(box=(0.330, 0.650, 0.350, 0.756), sag=0.06, name="kraft gift box"),
 }
 # 3 lifestyle scenes per design: kitchen, office, then garage/car or gift
 LIFESTYLE = [["s1", "s3", "s5"], ["s2", "s4", "s8"], ["s1", "s3", "s7"], ["s2", "s4", "s6"], ["s1", "s3", "s5"],
