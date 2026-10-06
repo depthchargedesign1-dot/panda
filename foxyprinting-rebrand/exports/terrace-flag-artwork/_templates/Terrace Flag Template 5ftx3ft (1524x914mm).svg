@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1530mm" height="920mm" viewBox="0 0 1530 920">
+<title>Personalised terrace flag template 5ft x 3ft - 1524 x 914 mm trim, 3 mm bleed</title>
+<!-- Colours are CMYK-safe; CMYK values are in each element's data-cmyk attribute. Units: mm. -->
+<g id="Artwork" inkscape:groupmode="layer" inkscape:label="Artwork">
+<rect x="0" y="0" width="1530" height="920" fill="#00248f" data-cmyk="100,80,20,30"/>
+<rect x="0" y="306.667" width="1530" height="306.667" fill="#ffffff" data-cmyk="0,0,0,0"/>
+<circle cx="765" cy="460" r="128.8" fill="none" stroke="#8c8c8c" stroke-width="2.742" stroke-dasharray="10.968,7.312" data-cmyk="0,0,0,45"/>
+<text x="765" y="455.43" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="20.108" text-anchor="middle" fill="#8c8c8c" data-cmyk="0,0,0,45">LOGO / PHOTO</text>
+<text x="765" y="487.42" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="11.059" text-anchor="middle" fill="#8c8c8c" data-cmyk="0,0,0,45">REPLACE BACKGROUND WITH THE FLAG DESIGN</text>
+</g>
+<g id="Text" inkscape:groupmode="layer" inkscape:label="Text">
+<text id="Text_on_the_flag" x="765" y="228.455" font-family="'Bebas Neue', sans-serif" font-weight="400" font-size="174.633" text-anchor="middle" fill="#ffffff" data-cmyk="0,0,0,0">YOUR NAME / GROUP</text>
+<text id="Second_line" x="765" y="794.072" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="118.3" text-anchor="middle" fill="#ffffff" data-cmyk="0,0,0,0">SECOND LINE - EST. 2026</text>
+</g>
+<g id="CUT" inkscape:groupmode="layer" inkscape:label="CUT">
+<rect x="3" y="3" width="1524" height="914" fill="none" stroke="#ff0000" stroke-width="0.088"/>
+</g>
+<g id="Guides" inkscape:groupmode="layer" inkscape:label="Guides" style="display:none">
+<rect x="0.685" y="0.685" width="1528.629" height="918.629" fill="none" stroke="#4dff00" stroke-width="1.371" stroke-dasharray="7.312,4.57" data-cmyk="70,0,100,0"/>
+<rect x="3" y="3" width="1524" height="914" fill="none" stroke="#00ffff" stroke-width="1.371" data-cmyk="100,0,0,0"/>
+<rect x="28" y="28" width="1474" height="864" fill="none" stroke="#ff00ff" stroke-width="1.371" stroke-dasharray="7.312,4.57" data-cmyk="0,100,0,0"/>
+<circle cx="15.5" cy="15.5" r="6" fill="none" stroke="#ff6600" stroke-width="1.371" data-cmyk="0,60,100,0"/>
+<circle cx="15.5" cy="460" r="6" fill="none" stroke="#ff6600" stroke-width="1.371" data-cmyk="0,60,100,0"/>
+<circle cx="15.5" cy="904.5" r="6" fill="none" stroke="#ff6600" stroke-width="1.371" data-cmyk="0,60,100,0"/>
+<circle cx="515.167" cy="15.5" r="6" fill="none" stroke="#ff6600" stroke-width="1.371" data-cmyk="0,60,100,0"/>
+<circle cx="515.167" cy="904.5" r="6" fill="none" stroke="#ff6600" stroke-width="1.371" data-cmyk="0,60,100,0"/>
+<circle cx="1014.833" cy="15.5" r="6" fill="none" stroke="#ff6600" stroke-width="1.371" data-cmyk="0,60,100,0"/>
+<circle cx="1014.833" cy="904.5" r="6" fill="none" stroke="#ff6600" stroke-width="1.371" data-cmyk="0,60,100,0"/>
+<circle cx="1514.5" cy="15.5" r="6" fill="none" stroke="#ff6600" stroke-width="1.371" data-cmyk="0,60,100,0"/>
+<circle cx="1514.5" cy="460" r="6" fill="none" stroke="#ff6600" stroke-width="1.371" data-cmyk="0,60,100,0"/>
+<circle cx="1514.5" cy="904.5" r="6" fill="none" stroke="#ff6600" stroke-width="1.371" data-cmyk="0,60,100,0"/>
+<text x="765" y="41.583" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="10.583" text-anchor="middle" fill="#4d4d4d" data-cmyk="0,0,0,70">TRIM 1524 x 914 MM - BLEED 3 MM - SAFE 25 MM - EYELETS ORANGE</text>
+</g>
+</svg>

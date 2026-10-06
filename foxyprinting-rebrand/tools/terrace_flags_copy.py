@@ -177,6 +177,8 @@ add(code='FFLAG1', pid='8783889989883', kind='england', name='England', color='R
 
 clubs = [
  # code, pid, club, colours (words), google colour, design2, league
+ # 6 Oct 2026: colours checked against the product photos; FFLAG10/13/19/29 corrected. The live store also has a
+ # one-sentence layout note on every Design 2 (pushed by productUpdate); exports/terrace-flags/listings.json holds the live copy.
  ('FFLAG2','8784025616635','Arsenal','red and white','Red/White',False),
  ('FFLAG3','8784031219963','Aston Villa','claret and blue','Claret/Blue',False),
  ('FFLAG4','8784032563451','Brentford','red and white','Red/White',False),
@@ -185,16 +187,16 @@ clubs = [
  ('FFLAG7','8784036692219','Crystal Palace','red and blue','Red/Blue',False),
  ('FFLAG8','8784038068475','Everton','royal blue and white','Blue/White',False),
  ('FFLAG9','8784040722683','Fulham','white and black','White/Black',False),
- ('FFLAG10','8784042623227','Ipswich','blue and white','Blue/White',False),
+ ('FFLAG10','8784042623227','Ipswich','red, white and blue','Red/White/Blue',False),
  ('FFLAG11','8784043966715','Leicester City','blue and white','Blue/White',False),
  ('FFLAG12','8784045441275','Liverpool','red and yellow','Red/Yellow',False),
- ('FFLAG13','8784047046907','Man City','sky blue and white','Sky Blue/White',False),
+ ('FFLAG13','8784047046907','Man City','sky blue, white and black','Sky Blue/White/Black',False),
  ('FFLAG14','8784049340667','Man United','red, black and white','Red/Black/White',False),
  ('FFLAG15','8784050946299','Newcastle','black and white','Black/White',False),
  ('FFLAG16','8784052158715','Nottingham Forest','red and white','Red/White',False),
  ('FFLAG17','8784054321403','Southampton','red and white','Red/White',False),
  ('FFLAG18','8784057991419','Tottenham','navy and white','Navy/White',False),
- ('FFLAG19','8784059695355','West Ham','claret and blue','Claret/Blue',False),
+ ('FFLAG19','8784059695355','West Ham','claret and white','Claret/White',False),
  ('FFLAG20','8784061956347','Wolves','old gold and white','Gold/White',False),
  ('FFLAG21','8784065659131','Wolves','old gold and black','Gold/Black',True),
  ('FFLAG22','8784081256699','West Ham','claret and blue','Claret/Blue',True),
@@ -204,7 +206,7 @@ clubs = [
  ('FFLAG26','8784098361595','Nottingham Forest','red and white','Red/White',True),
  ('FFLAG27','8784098885883','Newcastle','black and white','Black/White',True),
  ('FFLAG28','8784099574011','Man United','red, black and white','Red/Black/White',True),
- ('FFLAG29','8784101474555','Man City','sky blue and white','Sky Blue/White',True),
+ ('FFLAG29','8784101474555','Man City','sky blue, white and black','Sky Blue/White/Black',True),
  ('FFLAG30','8784102129915','Liverpool','red and yellow','Red/Yellow',True),
  ('FFLAG31','8784103342331','Leicester City','blue and white','Blue/White',True),
  ('FFLAG32','8784104423675','Ipswich','blue and white','Blue/White',True),
