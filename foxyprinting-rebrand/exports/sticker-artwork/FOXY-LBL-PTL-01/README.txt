@@ -3,7 +3,8 @@ Print-ready, editable label template, made 6 Oct 2026.
 
 PRODUCT FACTS (plan/product-facts.md, "Roll labels: 20 x 40 mm yellow, black print")
 - Label: 20 x 40 mm rectangle with rounded corners, bright yellow, roll of 1,000.
-- Print: BLACK ONLY. The yellow is the label stock - it is shown on the hidden Guides layer for reference and must not print.
+- Print: BLACK ONLY. The yellow is the label stock - it is shown on the hidden layer
+  "Label stock - do not print" for reference only and must never print.
 - Packs: 50, 100, 250, 500 or a full roll of 1,000. Every label in an order carries the same design.
 - Up to three short lines of text.
 - ASK (not yet confirmed by the owner): paper or polypropylene stock; permanent or removable adhesive;
@@ -32,4 +33,4 @@ LINE COLOURS
 - CUT layer = red = cut. 0.25 pt stroke, RGB 255,0,0, no fill, sitting exactly on the trim line.
 - Guides (not printed): green dashed = 3 mm bleed edge, magenta dashed = 3 mm safe area.
 
-Regenerate or make another size: python3 tools/artwork/sticker_templates.py --out <folder> --only FOXY-LBL-PTL-01 [--size 76]
+Regenerate: python3 tools/artwork/sticker_templates.py --out <folder> --only FOXY-LBL-PTL-01

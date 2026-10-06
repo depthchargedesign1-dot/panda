@@ -24,7 +24,11 @@ import math
 import os
 import re
 import subprocess
+import sys
 import zlib
+
+if os.environ.get('PYTHONHASHSEED') != '0':   # ReportLab's font subsetting depends on set order: fix it so re-runs are byte-identical
+    os.execvpe(sys.executable, [sys.executable] + sys.argv, {**os.environ, 'PYTHONHASHSEED': '0'})
 from pathlib import Path
 
 from reportlab.pdfbase import pdfmetrics
@@ -513,7 +517,7 @@ LINE COLOURS
 - CUT layer = red = cut. 0.25 pt stroke, RGB 255,0,0, no fill, sitting exactly on the trim line.
 - Guides (not printed): green dashed = 3 mm bleed edge, magenta dashed = 3 mm safe area.
 
-Regenerate or make another size: python3 tools/artwork/sticker_templates.py --out <folder> --only {sku} [--size 76]
+{regen}: python3 tools/artwork/sticker_templates.py --out <folder> --only {sku}{size_opt}
 """
 
 
@@ -551,7 +555,7 @@ HOW TO PRINT AND CUT (Roland VG2-540 / VG2-640 with VersaWorks)
 3. Delete the sticker shape you don't need (circle or square), step-and-repeat the one ordered for the quantity.
 4. Save as PDF (keep spot colours) and send to VersaWorks as a Print & Cut job. Test-cut one sticker first.
 
-{COMMON_FILES.format(name=f"{sku} - template {size:g}mm", sku=sku)}"""
+{COMMON_FILES.format(name=f"{sku} - template {size:g}mm", sku=sku, size_opt=" [--size 76]", regen="Regenerate or make another size")}"""
 
 
 def readme_roll(sku, title, lines):
@@ -561,7 +565,8 @@ Print-ready, editable label template, made {TODAY}.
 
 PRODUCT FACTS (plan/product-facts.md, "Roll labels: 20 x 40 mm yellow, black print")
 - Label: 20 x 40 mm rectangle with rounded corners, bright yellow, roll of 1,000.
-- Print: BLACK ONLY. The yellow is the label stock - it is shown on the hidden Guides layer for reference and must not print.
+- Print: BLACK ONLY. The yellow is the label stock - it is shown on the hidden layer
+  "Label stock - do not print" for reference only and must never print.
 - Packs: 50, 100, 250, 500 or a full roll of 1,000. Every label in an order carries the same design.
 - Up to three short lines of text.
 - ASK (not yet confirmed by the owner): paper or polypropylene stock; permanent or removable adhesive;
@@ -578,7 +583,7 @@ HOW TO PRINT
 - In the label printer software set the page to 40 x 20 mm (no bleed is needed for black-only text).
 - Print one label first and check the position on the roll.
 
-{COMMON_FILES.format(name=f"{sku} - template 40x20mm", sku=sku)}"""
+{COMMON_FILES.format(name=f"{sku} - template 40x20mm", sku=sku, size_opt="", regen="Regenerate")}"""
 
 
 def readme_kiss(sku, title):
@@ -605,7 +610,7 @@ HOW TO CUT (Intec ColorCut Pro)
 4. In ColorCut Pro map Red = Cut and set the blade depth for a KISS cut (through the vinyl, not the backing),
    or recolour the paths Yellow = Score (half-depth) if you prefer the house convention. Test-cut the first sheet.
 
-{COMMON_FILES.format(name=f"{sku} - SRA4 kiss-cut sheet template", sku=sku)}"""
+{COMMON_FILES.format(name=f"{sku} - SRA4 kiss-cut sheet template", sku=sku, size_opt="", regen="Regenerate")}"""
 
 
 TODAY = '6 Oct 2026'

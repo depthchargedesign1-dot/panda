@@ -31,4 +31,4 @@ LINE COLOURS
 - CUT layer = red = cut. 0.25 pt stroke, RGB 255,0,0, no fill, sitting exactly on the trim line.
 - Guides (not printed): green dashed = 3 mm bleed edge, magenta dashed = 3 mm safe area.
 
-Regenerate or make another size: python3 tools/artwork/sticker_templates.py --out <folder> --only FOXY-CUT-KCSS-01 [--size 76]
+Regenerate: python3 tools/artwork/sticker_templates.py --out <folder> --only FOXY-CUT-KCSS-01
