@@ -161,3 +161,6 @@ OVERRIDES.update({"hello_kitty001.png": "Hello Kitty", "Stewart- Lee.jpg": "Stew
 OVERRIDES.update({"Pirates - Johnny Depp.jpg": "Johnny Depp (Pirates of the Caribbean)", "harry potter young.jpg": "Harry Potter Young",
                   "Mask of Loki-Jim Carrey-The Mask.jpg": "Jim Carrey (The Mask)", "Red Shawshank Morgan Freeman SJ2.jpg": "Morgan Freeman (Shawshank Redemption) SJ 2",
                   "GUS 2breaking bad.JPG": "Gus (Breaking Bad) 2", "Gease - Sandy2.jpg": "Sandy (Grease) 2", "ADRIAN BRODYJB.jpg": "Adrien Brody JB"})
+OVERRIDES.update({"070 Shake.jpg": "070 Shake", "Little Mix - Jade Thirwall.jpg": "Jade Thirlwall",
+                  "Little Mix - Jesy Nelson Mask - Copy - Copy - Copy - Copy.jpg": "Jesy Nelson", "Jo O'Meara _S Club 7.jpg": "Jo O'Meara",
+                  "Nail - One Direction.JPG": "Niall Horan", "bdc617e4-df69-4eea-8264-778cc5c0713d.png": "SKIP"})

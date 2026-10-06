@@ -1,5 +1,3 @@
-{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Ilyich Lenin Portrait.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Ilyich Lenin.jpg"}
-{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Putin Politician.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Putin 2.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Xi JinPing Politician.png", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Xi Jinping.png"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Zara Philips.JPG", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Zara Phillips.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Carl Froch Face Mask.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Carl Froch 2.jpg"}
@@ -998,3 +996,5 @@
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sammy Winward Emmerdale.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sammy Winward.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sandi Toksvig Bake Off 2017.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sandi Toksvig 2.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Hadland - stevie from miranda.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Hadland.jpg"}
+{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Jane - Kids Mask.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Jane.jpg"}
+{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Rafferty Suits.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Rafferty.jpg"}

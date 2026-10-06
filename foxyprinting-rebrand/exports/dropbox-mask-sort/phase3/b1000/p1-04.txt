@@ -1,5 +1,3 @@
-{"source_path": "ns:1384231538//2026 MOVIE STARS/Claudia Schiffer.JPG", "destination_path": "ns:1384231538//2026 MOVIE STARS/Claudia Schiffer TMPCASE.jpg"}
-{"source_path": "ns:1384231538//2026 MOVIE STARS/clint eastwood.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Clint Eastwood TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/coco chanel.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Coco Chanel TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/colin farrell MH.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Colin Farrell MH TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/colin firth.JPG", "destination_path": "ns:1384231538//2026 MOVIE STARS/Colin Firth TMPCASE.jpg"}
@@ -998,3 +996,5 @@
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Nanny Pat.JPG", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Nanny Pat TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/natalie j robb moira barton.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Natalie J Robb Moira Barton TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/natasha kaplinsky.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Natasha Kaplinsky TMPCASE.jpg"}
+{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/nick ferrari.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Nick Ferrari TMPCASE.jpg"}
+{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Nicole Scherzinger.JPG", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Nicole Scherzinger TMPCASE.jpg"}

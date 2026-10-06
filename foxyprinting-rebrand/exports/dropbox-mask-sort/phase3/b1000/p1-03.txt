@@ -1,5 +1,3 @@
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Jane - Kids Mask.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Jane.jpg"}
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Rafferty Suits.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Rafferty.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Wayne Walking Dead.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Wayne.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/sarah-bolger.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Bolger.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Scarlett Moffatt  MH.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Scarlett Moffatt MH.jpg"}
@@ -998,3 +996,5 @@
 {"source_path": "ns:1384231538//2026 MOVIE STARS/christian bale MH.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Christian Bale MH TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/christopher walken.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Christopher Walken TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/cindy crawford.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Cindy Crawford TMPCASE.jpg"}
+{"source_path": "ns:1384231538//2026 MOVIE STARS/Claudia Schiffer.JPG", "destination_path": "ns:1384231538//2026 MOVIE STARS/Claudia Schiffer TMPCASE.jpg"}
+{"source_path": "ns:1384231538//2026 MOVIE STARS/clint eastwood.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Clint Eastwood TMPCASE.jpg"}

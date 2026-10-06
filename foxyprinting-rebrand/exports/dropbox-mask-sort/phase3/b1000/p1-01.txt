@@ -419,7 +419,6 @@
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Spider man/actors cutout/James Franco .jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Spider man/actors cutout/James Franco.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Spider man/actors cutout/Tobey Maguire .jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Spider man/actors cutout/Tobey Maguire.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/'Weird'-Al-Yankovic.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Weird Al Yankovic.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/070 Shake.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Shake.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/21 Savage - Sheyaa Bin Abraham-Joseph.jpg", "destination_path": "ns:1384231538//2026 MUSIC/21 Savage.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/AALIYAH 792.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Aaliyah.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Abba1.JPG", "destination_path": "ns:1384231538//2026 MUSIC/Abba.jpg"}
@@ -459,7 +458,6 @@
 {"source_path": "ns:1384231538//2026 MUSIC/bay city rollers4.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Bay City Rollers 5.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/bay city rollers5.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Bay City Rollers 6.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/bay city rollers6.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Bay City Rollers 7.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/bdc617e4-df69-4eea-8264-778cc5c0713d.png", "destination_path": "ns:1384231538//2026 MUSIC/Df69 4eea.png"}
 {"source_path": "ns:1384231538//2026 MUSIC/Beatles 1.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Beatles.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/bebe rexha 2020 Face.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Bebe Rexha.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Bee Gees 1.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Bee Gees.jpg"}
@@ -587,7 +585,7 @@
 {"source_path": "ns:1384231538//2026 MUSIC/Jimmy Page .jpg", "destination_path": "ns:1384231538//2026 MUSIC/Jimmy Page.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/jimmy_osmond__.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Jimmy Osmond 2.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Jisoo-Blackpink.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Jisoo (Blackpink).jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/Jo O'Meara _S Club 7.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Jo O'Meara 7.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/Jo O'Meara _S Club 7.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Jo O'Meara.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/joe mcelderry 2011.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Joe McElderry.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/john - Jedward.jpg", "destination_path": "ns:1384231538//2026 MUSIC/John (Jedward) 2.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/John Deacon- Queen.jpg", "destination_path": "ns:1384231538//2026 MUSIC/John Deacon.jpg"}
@@ -652,14 +650,14 @@
 {"source_path": "ns:1384231538//2026 MUSIC/Lil Wayne (2).jpg", "destination_path": "ns:1384231538//2026 MUSIC/Lil Wayne 2.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Lil-Peep-Rapper-face-mask-FOXY.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Lil Peep 2.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Lisa Scott Lee  Long hair.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Lisa Scott Lee Long Hair.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/Little Mix - Jade Thirwall.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Little Mix.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/Little Mix - Jesy Nelson Mask - Copy - Copy - Copy - Copy.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Little Mix 3.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/Little Mix 1.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Little Mix 4.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/Little Mix - Jade Thirwall.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Jade Thirlwall.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/Little Mix - Jesy Nelson Mask - Copy - Copy - Copy - Copy.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Jesy Nelson 3.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/Little Mix 1.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Little Mix.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Little Mix Leigh-Anne Pinnock Mask.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Leigh Anne Pinnock 2.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Little Mix Perrie Edwards Mask].jpg", "destination_path": "ns:1384231538//2026 MUSIC/Perrie Edwards 2.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/Little Mix2.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Little Mix 5.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/Little Mix3.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Little Mix 6.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/Little Mix4 - Copy.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Little Mix 7.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/Little Mix2.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Little Mix 3.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/Little Mix3.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Little Mix 4.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/Little Mix4 - Copy.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Little Mix 5.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Liz McClarnon - Atomic Kitten.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Liz McClarnon.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/lizzo 2 2020 Face.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Lizzo 2.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/lizzo 2020 Face.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Lizzo.jpg"}
@@ -722,16 +720,16 @@
 {"source_path": "ns:1384231538//2026 MUSIC/Mollie King - The Saturdays.JPG", "destination_path": "ns:1384231538//2026 MUSIC/Mollie King.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Morrissey - The Smiths young.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Morrissey (The Smiths Young).jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/NADINE COYLE - GIRLS ALOUD.JPG", "destination_path": "ns:1384231538//2026 MUSIC/Nadine Coyle.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/Nail - One Direction.JPG", "destination_path": "ns:1384231538//2026 MUSIC/Nail.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/Nail - One Direction.JPG", "destination_path": "ns:1384231538//2026 MUSIC/Niall Horan 2.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Nat king cole (2).jpg", "destination_path": "ns:1384231538//2026 MUSIC/Nat King Cole 2.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Nathan - The Wanted.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Nathan (The Wanted).jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Ne-Yo.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Ne Yo.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/NELLY RAPPER.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Nelly.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Nemo Mettler - Eurovision Winner 2024.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Nemo Mettler.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/nial horran smirk.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Niall Horan Smirk.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/Niall Horan - One Direction.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Niall Horan 2.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/Niall Horan - One Direction.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Niall Horan 3.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Niall Horan 2012 (4).png", "destination_path": "ns:1384231538//2026 MUSIC/Niall Horan.png"}
-{"source_path": "ns:1384231538//2026 MUSIC/niall horan 2020 Face.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Niall Horan 3.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/niall horan 2020 Face.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Niall Horan 4.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Nick Bains - Kaiser Chiefs.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Nick Bains.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Nick Carter Back Street Boys (2).jpg", "destination_path": "ns:1384231538//2026 MUSIC/Nick Carter 2.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Nick Jonas - Jonas Brothers Kids.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Nick Jonas.jpg"}
@@ -998,3 +996,5 @@
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/THE QUEEN CROWN Coronation 2023-royals.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/The Queen Crown Royals.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Theresa Villiers - Politician.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Theresa Villiers.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Tony Blair New.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Tony Blair.jpg"}
+{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Ilyich Lenin Portrait.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Ilyich Lenin.jpg"}
+{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Putin Politician.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Putin 2.jpg"}
