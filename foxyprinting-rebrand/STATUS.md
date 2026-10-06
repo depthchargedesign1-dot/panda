@@ -19,11 +19,13 @@ Last updated: 6 Oct 2026, evening.
 | 11 | Approve: 284 exact duplicates to draft; rewrite 2,708 print descriptions with false claims; Man City Treble flag with trophies (keep, redesign or remove) | Merchant Center health |
 | 12 | Preview and publish theme "Foxy Pop 2026 – mug tiles" (`189453861245`): compact banners site-wide + "Shop by type" tiles on ALL MUGS. Preview: https://foxyprinting.co.uk/collections/all-mugs?preview_theme_id=189453861245 | shorter collection headers everywhere, mug tiles |
 | 13 | Connect Postiz as a Claude connector (see below) | posting to FB, IG and TikTok |
+| 14 | Unpublish request-any-facemask from Google, FB/IG and TikTok (now shows celebrity masks: Sabrina Carpenter, Rosé, Luke Littler, Zara Larsson, Lisa, Graeme Swann). Archive the Jimmy Savile and Rolf Harris masks? Allow a collage main image (image tool upload blocked)? | copyright rule, reputation |
 
 ## Owner's import queue (one file each morning and bedtime; reminders run 07:52 and 21:52 UK)
 See `exports/IMPORT-SCHEDULE.md`. Order: SEO 02-CLEAN → age 01 → age 02-CLEAN → masks TEST then 01–04 → prints TEST then 01–04.
 
 ## Running or recently finished
+- Request Any Celebrity Face Mask (6 Oct): new title, copy and SEO; 6 trending celebrity mask photos attached first. Sex and City request mask ARCHIVED (owner asked).
 - Mug sub-collections (done 6 Oct): new smart collection funny-number-plate-mugs (20 mugs, Online Store + Shop). 14 mug collections have new 1800x600 headers (`foxy.header_image`, live now) and `foxy.compact_header`; ALL MUGS has `foxy.subcollections`. 23 compact auto banners `foxy-header-<group>-compact.jpg` added to Files (originals kept). Theme copy "Foxy Pop 2026 – mug tiles" `189453861245` (duplicated from live "field fix", Infinite Options embed on) waits for the owner to publish. Record: `exports/mug-subheaders/manifest.json`.
 - Rude number plate mugs: live (website and Shop only). Teaser ads in `exports/social/2026-10-06-rude-mugs/`, not posted.
 - TikTok ads (mug, masks, Wales flag): made, not posted. See `exports/social/2026-10-06-tiktok-ads.md`.
