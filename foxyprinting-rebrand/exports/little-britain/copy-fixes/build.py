@@ -55,11 +55,12 @@ OLD_WALLIAMS_DISCLAIMER_RE = re.compile(r"<h3>Please note</h3>\n<p class=\"discl
 NEW = {}
 
 # --- Vicky Pollard: disclaimer only -------------------------------------------------
-NEW["9369892744"] = {"disclaimer": character_disclaimer("Vicky Pollard")}
+NEW["9369892744"] = {"disclaimer": character_disclaimer("Vicky Pollard"),
+                     "replace": [("let the comedian face do the talking", "let the face do the talking")]}
 
 # --- Lou Todd: full rewrite ---------------------------------------------------------
 NEW["8125539352827"] = {
-    "descriptionHtml": """<p>This Lou Todd face mask is the easy way to turn up as the patient, put-upon carer from one of Britain's best-loved sketch shows. It's a guaranteed laugh at a noughties comedy night, a stag or hen do or a fancy dress birthday, and everyone will know who you are the moment you walk in.</p>
+    "descriptionHtml": """<p>This Lou Todd face mask is the easy way to turn up as the patient, put-upon carer from one of Britain's best-loved sketch shows. It's a guaranteed laugh at a noughties comedy night, a stag or hen do or a fancy dress birthday.</p>
 <h2>Lou Todd Face Mask for Fancy Dress</h2>
 <p>We print Lou's face in full colour on thick 350gsm silk card, cut it to shape and pre-cut the eye holes, so it's ready to wear in seconds. Elastic and sticky tabs are included. Going as a pair? Team this card face mask with our Andy Pipkin mask and you've got the full Lou and Andy costume. Need a face we don't stock, like the groom or the birthday girl? Send us a clear photo and we'll make a custom mask.</p>
 <h3>Why you'll love it</h3>
@@ -81,7 +82,7 @@ NEW["8125539352827"] = {
 
 # --- Andy Pipkin: full rewrite (was "film star", "Pipkins") ---------------------------
 NEW["9530634184"] = {
-    "descriptionHtml": """<p>This Andy Pipkin face mask brings one of British comedy's most famous characters to your party: the man who always wants it, then doesn't. It's perfect for a noughties comedy night, a stag or hen do, or a fancy dress birthday where everyone has their favourite catchphrase ready.</p>
+    "descriptionHtml": """<p>This Andy Pipkin face mask brings one of British comedy's most famous characters to your party: the man who always wants it, then doesn't. It's perfect for a noughties comedy night, a stag or hen do, or a fancy dress birthday.</p>
 <h2>Andy Pipkin Face Mask for Fancy Dress</h2>
 <p>We print Andy's face in full colour on thick 350gsm silk card, cut it to shape and pre-cut the eye holes. Elastic and sticky tabs are included, so it's ready to wear in seconds. Pair it with our Lou Todd mask for a ready-made Lou and Andy costume. Want a mask of someone who isn't in our range, like the groom or a mate? Send us a clear photo and we'll make a custom mask.</p>
 <h3>Why you'll love it</h3>
@@ -189,6 +190,9 @@ def main():
         if spec.get("replace_opening"):
             assert OLD_WALLIAMS_OPENING in html, pid
             html = html.replace(OLD_WALLIAMS_OPENING, WALLIAMS_OPENING)
+        for old, new in spec.get("replace", []):
+            assert old in html, pid
+            html = html.replace(old, new)
         if "disclaimer" in spec:
             assert OLD_WALLIAMS_DISCLAIMER_RE.search(html), pid
             html = OLD_WALLIAMS_DISCLAIMER_RE.sub(lambda _: spec["disclaimer"], html)
