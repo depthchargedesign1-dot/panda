@@ -30,3 +30,6 @@ p1-01 submitted 08:3x op=AUACi-3dEYi-UEr4BFQ-_8GS1XZpDYMZS1tI8c7OsAjG3_JIJZbCdot
 - sent/p1-05 = copy of b1000/p1-02 (not yet sent).
 - p1-05 sent (1000, all TMPCASE step 1) at ~10:20 UTC, queued behind p1-04. op AUELo7IFuvA7quFjNzTbDbNS2EpCQ8eVdHm9YcnAHAehstjqP32Pb-hXxUfRhEWqoh4dnUV6JgBlU6m7b4Bh-Yfq9Tm_mY1focW4MQFsLXJivhe0Zg3Js5WA8OAGHB8SQuE4fT3SHVpxQfhd39HoN9apyAuEohwkCF_a-8yt-vOUu4ThycywWZBpIq3M0TGH3Nmhc7vMjzlY8saAtD-4S5RrU6Vc9bpcv6boWlHFGErh1Q
 - p1-04: completed 1000/1000 ok (check_sent).
+- p1-05: completed 1000/1000 ok (check_sent).
+- p1-05 entry 1 (crocodile dundee paul hogan.jpg) failed: too_many_write_operations (overlapped with p1-04). Jobs CAN overlap -> send remaining calls strictly sequentially.
+- sent/q1 = b1000/q1 with Crocodile step-2 replaced by its step-1; sent/q2 = b1000/q2 + Crocodile step-2 (778).
