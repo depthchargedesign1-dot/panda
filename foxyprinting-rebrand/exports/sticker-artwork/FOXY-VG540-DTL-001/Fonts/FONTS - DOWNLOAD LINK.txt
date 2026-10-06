@@ -1,0 +1,14 @@
+FONTS USED IN THIS TEMPLATE (all free, SIL Open Font License 1.1 - see OFL.txt)
+
+- Fredoka
+  Files: Fredoka-SemiBold.ttf 600
+  Download (free): https://fonts.google.com/specimen/Fredoka
+  Copyright 2016 The Fredoka Project Authors (https://github.com/hafontia/Fredoka-One)
+
+- Poppins
+  Files: Poppins-Bold.ttf 700
+  Download (free): https://fonts.google.com/specimen/Poppins
+  Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
+
+Install the fonts before opening the SVG/PDF in Illustrator, otherwise the live text is substituted.
+A copy of every font file is also kept in the website repo: foxyprinting-rebrand/tools/artwork/assets/fonts/

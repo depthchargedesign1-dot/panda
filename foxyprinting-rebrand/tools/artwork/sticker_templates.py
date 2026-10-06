@@ -45,7 +45,6 @@ CUT_W_PT = 0.25        # cut line stroke, points (brief: 0.25 pt red RGB 255,0,0
 # font key -> (file, css family, css weight, Google Fonts page)
 FONTS = {
     'poppins-bold': ('Poppins-Bold.ttf', 'Poppins', 700, 'https://fonts.google.com/specimen/Poppins'),
-    'poppins-bold': ('Poppins-Medium.ttf', 'Poppins', 500, 'https://fonts.google.com/specimen/Poppins'),
     'pacifico': ('Pacifico-Regular.ttf', 'Pacifico', 400, 'https://fonts.google.com/specimen/Pacifico'),
     'fredoka': ('Fredoka-SemiBold.ttf', 'Fredoka', 600, 'https://fonts.google.com/specimen/Fredoka'),
     'bebas': ('BebasNeue-Regular.ttf', 'Bebas Neue', 400, 'https://fonts.google.com/specimen/Bebas+Neue'),
@@ -132,10 +131,13 @@ KISS = ('FOXY-CUT-KCSS-01', 'Custom Kiss-Cut Sticker Sheets')
 
 
 # ---------------------------------------------------------------- drawing model (mm, origin top-left)
+LAYER_LABEL = {'Stock': 'Label stock - do not print'}
+
+
 class Doc:
     def __init__(self, w, h):
         self.w, self.h = w, h
-        self.layers = {n: [] for n in ('Artwork', 'Text', 'CUT', 'Guides')}
+        self.layers = {n: [] for n in ('Stock', 'Artwork', 'Text', 'CUT', 'Guides')}
         self.fonts = set()
 
     def add(self, layer, op):
@@ -181,8 +183,11 @@ def write_svg(doc, path, title):
            'width="%smm" height="%smm" viewBox="0 0 %s %s">' % (fmt(doc.w), fmt(doc.h), fmt(doc.w), fmt(doc.h)),
            '<title>%s</title>' % esc(title)]
     for name, ops in doc.layers.items():
-        style = ' style="display:none"' if name == 'Guides' else ''
-        out.append('<g id="%s" inkscape:groupmode="layer" inkscape:label="%s"%s>' % (name, name, style))
+        if name == 'Stock' and not ops:
+            continue
+        style = ' style="display:none"' if name in ('Guides', 'Stock') else ''
+        label = LAYER_LABEL.get(name, name)
+        out.append('<g id="%s" inkscape:groupmode="layer" inkscape:label="%s"%s>' % (name, label, style))
         for op in ops:
             if op[0] == 'rect':
                 _, x, y, w, h, r, fill, stroke, sw, dash, rgbs = op
@@ -206,7 +211,9 @@ def write_pdf(doc, path, title, guides_on):
     c = canvas.Canvas(str(path), pagesize=(doc.w * mm, doc.h * mm), pageCompression=1)
     c.setTitle(title)
     c.setAuthor('Foxy Printing')
-    for name, ops in doc.layers.items():
+    used = [n for n, ops in doc.layers.items() if ops or n != 'Stock']
+    for name in used:
+        ops = doc.layers[name]
         c._code.append('/OC /%s BDC' % name)
         for op in ops:
             c.saveState()
@@ -242,7 +249,7 @@ def write_pdf(doc, path, title, guides_on):
         c._code.append('EMC')
     c.showPage()
     c.save()
-    finish_pdf(path, guides_on)
+    finish_pdf(path, guides_on, used)
 
 
 def dehint(font_bytes):
@@ -260,20 +267,20 @@ def dehint(font_bytes):
     return buf.getvalue()
 
 
-def finish_pdf(path, guides_on):
+def finish_pdf(path, guides_on, names):
     """Add the OCG layers, re-encode every stream as ASCII85+Flate and make the whole file 7-bit ASCII."""
     import pikepdf
-    names = ('Artwork', 'Text', 'CUT', 'Guides')
     with pikepdf.open(path, allow_overwriting_input=True) as pdf:
         ocg = {}
         for n in names:
-            d = pikepdf.Dictionary(Type=pikepdf.Name.OCG, Name=n)
-            if n == 'Guides':
+            d = pikepdf.Dictionary(Type=pikepdf.Name.OCG, Name=LAYER_LABEL.get(n, n))
+            if n in ('Guides', 'Stock'):
                 d.Usage = pikepdf.Dictionary(Print=pikepdf.Dictionary(PrintState=pikepdf.Name.OFF))
             ocg[n] = pdf.make_indirect(d)
         order = pikepdf.Array([ocg[n] for n in names])
-        on = pikepdf.Array([ocg[n] for n in names if guides_on or n != 'Guides'])
-        off = pikepdf.Array([] if guides_on else [ocg['Guides']])
+        hidden = [n for n in names if n in ('Guides', 'Stock')]
+        on = pikepdf.Array([ocg[n] for n in names if guides_on or n not in hidden])
+        off = pikepdf.Array([] if guides_on else [ocg[n] for n in hidden])
         pdf.Root.OCProperties = pikepdf.Dictionary(
             OCGs=order,
             D=pikepdf.Dictionary(Name='Layers', Order=order, ON=on, OFF=off,
@@ -369,7 +376,9 @@ def draw_stack(doc, cx, placed, text_col, accent):
             w = b[4] * 2
             h = b[2]
             doc.add('Artwork', rect(cx - w / 2, yt, w, h, r=1.0, fill=(0, 0, 0, 0), stroke=accent, sw=0.35, dash=(1.2, 0.8)))
-            doc.add('Text', text(cx, yt + h / 2 + 1.0, 'YOUR LOGO HERE', 'poppins-bold', round(min(h * 0.28, w * 0.13) / PT, 2), accent))
+            lab = 'YOUR LOGO HERE'
+            fs = min(h * 0.28 / PT, 0.8 * w / (text_width(lab, 'poppins-bold', 1.0)))
+            doc.add('Text', text(cx, yt + h / 2 + fs * PT * 0.35, lab, 'poppins-bold', round(fs, 2), (0, 0, 0, 55)))
 
 
 def guide_label(doc, x, y, s):
@@ -424,7 +433,7 @@ def roll_doc(lines):
     x, y = margin + BLEED, margin + BLEED
     black = (0, 0, 0, 100)
     # The roll is pre-printed yellow stock: nothing but black prints, so the yellow is shown on the Guides layer only.
-    doc.add('Guides', rect(margin, margin, tw, th, fill=(0, 10, 95, 0)))
+    doc.add('Stock', rect(margin, margin, tw, th, fill=(0, 10, 95, 0)))
     items = [('text',) + ln for ln in lines]
     hw = lambda yy: (ROLL_W / 2 - SAFE) if y + SAFE <= yy <= y + ROLL_H - SAFE else None
     draw_stack(doc, x + ROLL_W / 2, stack_layout(items, hw, y + SAFE, y + ROLL_H - SAFE, gap_ratio=0.12), black, black)

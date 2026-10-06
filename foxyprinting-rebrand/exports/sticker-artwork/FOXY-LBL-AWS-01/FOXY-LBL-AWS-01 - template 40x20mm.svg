@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="56mm" height="38mm" viewBox="0 0 56 38">
+<title>Allergen Warning Stickers - FOXY-LBL-AWS-01</title>
+<g id="Stock" inkscape:groupmode="layer" inkscape:label="Label stock - do not print" style="display:none">
+<rect x="5" y="5" width="46" height="26" fill="#ffe60d"/>
+</g>
+<g id="Artwork" inkscape:groupmode="layer" inkscape:label="Artwork">
+</g>
+<g id="Text" inkscape:groupmode="layer" inkscape:label="Text">
+<text x="28" y="15.38" font-family="'Poppins', sans-serif" font-weight="700" font-size="4.04" text-anchor="middle" fill="#000000">CONTAINS NUTS</text>
+<text x="28" y="19.65" font-family="'Poppins', sans-serif" font-weight="700" font-size="2.83" text-anchor="middle" fill="#000000">MAY CONTAIN SESAME</text>
+<text x="28" y="23.16" font-family="'Poppins', sans-serif" font-weight="700" font-size="2.42" text-anchor="middle" fill="#000000">YOUR BUSINESS NAME</text>
+</g>
+<g id="CUT" inkscape:groupmode="layer" inkscape:label="CUT">
+<rect x="8" y="8" width="40" height="20" rx="2" fill="none" stroke="#ff0000" stroke-width="0.09"/>
+</g>
+<g id="Guides" inkscape:groupmode="layer" inkscape:label="Guides" style="display:none">
+<rect x="5" y="5" width="46" height="26" fill="none" stroke="#4dff00" stroke-width="0.2" stroke-dasharray="1,1"/>
+<rect x="11" y="11" width="34" height="14" fill="none" stroke="#ff00ff" stroke-width="0.2" stroke-dasharray="1,1"/>
+<text x="28" y="35.5" font-family="'Poppins', sans-serif" font-weight="700" font-size="2.12" text-anchor="middle" fill="#4d4d4d">40 x 20 mm label (+3 mm bleed)</text>
+</g>
+</svg>
