@@ -17,3 +17,4 @@
 p1-01 submitted 08:3x op=AUACi-3dEYi-UEr4BFQ-_8GS1XZpDYMZS1tI8c7OsAjG3_JIJZbCdot2ChixgQ8G2EfQtc0QWQM4h-L2DQgUSubUJKzLy0wNksgiXptOQf0WyiXMG38DoAaDpoFVWw8RigzSqkJSX-Vo3xiXQDwvvfQ4lCtvRJb05YdxTrarUxIf9ZaCkt1hDNjstmB663jXZzenOYhPLtwtF8jYu-vrMh3bi_Jye-HYnuGT2oi8CzagpA
 - Known imperfect names in p1-01 to correct in pass 2 (rename again): MOVIE STARS/"Gus Bad.jpg" -> "Gus (Breaking Bad) 2.jpg";
   "Gease (Sandy2).jpg" -> "Sandy (Grease) 2.jpg"; "Adrian Brody JB.jpg" -> "Adrien Brody JB.jpg".
+- 08:55 sent p1-01 (op AUACi-3d...) completed: 1000/1000 success, result phase3/results/sent-p1-01.json
