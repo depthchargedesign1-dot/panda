@@ -39,4 +39,13 @@ Caption:
 
 ## Status
 
-STATUS_PLACEHOLDER
+- Credits: 80.74 before, 35.74 after (3 x 15-credit Kling clips = 45 credits). The video analyses used to check the clips did not cost credits.
+- Checking the clips: the cloud session can't download the videos, so each one was checked with Higgsfield's scene-by-scene video analysis instead of by eye.
+  - Mask: OK. Six women at a hen party; five hold square printed photos of the (fictional) bride's face, she laughs. The props read as square photo cards rather than shaped cut-out masks.
+  - Mug: OK. The mug stays still while the camera pushes in slowly, steam rises and a warm light flare comes in. The mug doesn't rotate, so the plate print should stay as photographed. The analysis didn't read the plate text, so the owner should check BR3W UP looks right before posting.
+  - Flag: generated, but its analysis was cut off when the session's permission check stopped further Higgsfield calls. **Not reviewed yet.**
+- Publishing:
+  - Mask ad: TikTok publish form prepared (DIRECT_POST, session `8614d88a-9494-45cf-9f4d-30a1f56e3b9a`, expires 2026-10-06 15:53 UTC). Nothing is posted until the owner completes the form: privacy, comments/duet/stitch, commercial disclosure ("Your brand"), AI-generated label, optional music, then Post.
+  - Mug and flag ads: **not prepared.** The session's permission check refused the second `tiktok_prepare_publish` call. The owner needs to approve it, or prepare them in Higgsfield directly.
+- Publish status: none yet (no publish_id until the owner submits a form).
+
