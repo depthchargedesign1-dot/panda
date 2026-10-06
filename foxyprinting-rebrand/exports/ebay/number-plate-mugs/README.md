@@ -1,5 +1,9 @@
 # eBay upload: funny number plate mugs
 
+> **ON HOLD (6 Oct 2026): do not upload yet.** The design changed to one full-wrap plate (200 x 70 mm). The picture URLs in this CSV
+> still show the old two-plate mockups, and the 6 other designs have no Shopify images yet. Once the new full-wrap images are on
+> Shopify, update `exports/number-plate-mugs/shopify-image-urls.json` and re-run the command below to rebuild the CSV for all 10.
+
 File: `ebay-number-plate-mugs-upload.csv` (eBay File Exchange / Seller Hub "Reports > Uploads" format, eBay UK, GBP).
 
 Contains the 4 mugs that are live on Shopify with images (BR3W UP, B15 CU1T, 2 SUG4RS, D3C4F N0).
