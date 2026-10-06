@@ -45,13 +45,22 @@ def new_title(title):
 # ---------------------------------------------------------------- body wording
 
 def _cap(m, text):
-    """Keep the case style of the matched word on the replacement."""
+    """Keep the case style of the matched words on the replacement."""
     w = m.group(0)
     if w.isupper() and len(w) > 3:
         return text.upper()
-    if w[:1].isupper():
-        return text[:1].upper() + text[1:]
-    return text
+    if not w[:1].isupper():
+        return text
+    words = re.findall(r"[A-Za-z]+", w)
+    after = m.string[m.end():m.end() + 3]
+    if (len(words) > 1 and all(x[0].isupper() for x in words)) or re.match(r"\s+[A-Z]", after):
+        return " ".join(x if x in ("a", "of", "with", "the") else x[:1].upper() + x[1:] for x in text.split(" "))
+    return text[:1].upper() + text[1:]
+
+
+def _art(m, text):
+    """'an authentic autograph' -> 'a printed signature'; 'his authentic autograph' -> 'his printed signature'."""
+    return _cap(m, ("a " + text) if m.group(1) else text)
 
 
 # (pattern, replacement) – applied in order, case-insensitive. A replacement starting with "@"
@@ -61,8 +70,13 @@ RULES = [
     (r"A Limited Edition Signed Print by your amazing ([^.<]+?)(?=\s*<)", r"A print of your amazing \1, with a printed signature."),
     (r"(framed or un-framed) Signed Print\s+(They are)", r"\1 print with a printed signature. \2"),
     (r"Printed Signed (Poster|Print)s?\b", r"Printed Signature \1"),
-    (r"\b(an?\s+)?(genuine|authentic|exclusive|real)\s+autograph\b", "@a printed signature"),
-    (r"\b(genuine|authentic|exclusive|real)\s+autographs\b", "@printed signatures"),
+    (r"\b(an?\s+)?(?:genuine|authentic|authenticated|exclusive|real)\s+(?:autograph|signature)\b", "&printed signature"),
+    (r"\b(genuine|authentic|authenticated|exclusive|real)\s+(autographs|signatures)\b", "@printed signatures"),
+    (r"\b(?:personally|officially|directly)\s+signed\s+(?:and\s+authenticated\s+)?by\b", "@printed with the signature of"),
+    (r"\b(?:personally\s+)?signed\s+it\b", "@has the signature printed on it"),
+    (r"\b(?:signed|autographed)\s+by\b", "@with the printed signature of"),
+    (r"\b(?:signed|autographed)\s+(?:and|&amp;|&)\s+framed\b", "@framed printed signature"),
+    (r"\b(?:signed\s+)?autographed\s+merch\b(?!\s*print)", "@printed signature"),
     (r"\b(limited[- ]edition\s+)?(hand[- ]?)?(signed|autographed)\s+(and\s+)?(autographed\s+)?(limited[- ]edition\s+)?(prints)\b", "@prints with a printed signature"),
     (r"\b(limited[- ]edition\s+)?(hand[- ]?)?(signed|autographed)\s+(and\s+)?(autographed\s+)?(limited[- ]edition\s+)?(print)\b", "@print with a printed signature"),
     (r"\bautograph(ed)?\s+merch\s*print\b", "@print with a printed signature"),
@@ -88,6 +102,8 @@ PROTECT = re.compile(
     r'<p class="disclaimer">.*?</p>'
     r"|\bnot\s+(an?\s+)?(original\s+)?(hand[- ]?signed|signed|autographed|original autograph)\b(\s+(and|or)\s+(is\s+)?not\s+an\s+original\s+autograph)?"
     r"|\bsigned[- ]for\b|\brecorded\s*(and|&amp;|&)?\s*signed\b|\bsign(ed)?\s+up\b"
+    r"|\b(was|were|been|being|got|he|she|they|who|and|had|has|then|later|eventually|subsequently)\s+signed\s+(for|with|by|a|an|his|her|their|on|up|as|to|from)\b"
+    r"|\bsigned\s+(with|a\s+(new\s+)?(contract|deal|two|three|four|five|one|record)|on\s+loan|to\s+(the|a)\s+\w+\s+label)\b"
     r"|<[^>]+>",  # never edit inside tags (attributes, URLs)
     re.I | re.S)
 
@@ -107,7 +123,9 @@ def _reword_plain(s):
     if not s:
         return s
     for rx, rep in RULES:
-        if rep.startswith("@"):
+        if rep.startswith("&"):
+            s = rx.sub(lambda m, r=rep[1:]: _art(m, r), s)
+        elif rep.startswith("@"):
             s = rx.sub(lambda m, r=rep[1:]: _cap(m, r), s)
         else:
             s = rx.sub(rep, s)
