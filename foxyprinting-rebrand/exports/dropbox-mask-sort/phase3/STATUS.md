@@ -33,3 +33,6 @@ p1-01 submitted 08:3x op=AUACi-3dEYi-UEr4BFQ-_8GS1XZpDYMZS1tI8c7OsAjG3_JIJZbCdot
 - p1-05: completed 1000/1000 ok (check_sent).
 - p1-05 entry 1 (crocodile dundee paul hogan.jpg) failed: too_many_write_operations (overlapped with p1-04). Jobs CAN overlap -> send remaining calls strictly sequentially.
 - sent/q1 = b1000/q1 with Crocodile step-2 replaced by its step-1; sent/q2 = b1000/q2 + Crocodile step-2 (778).
+- q1 sent (1000) ~10:40 UTC. op AUFBqG9GwOmG_VLG0i0l6xiNhYAOl05xLp1MtxngR7_8e2c3egjTAuHb2qLZ1h3E7QJWnj76npXQYqg4OD_dUahf-AonkXPr39s6t9N6SrTRs0Necr9zaLh5cGeRM9-M_H65Qz00Lc0nvHsUKZE0r5hkGQGVCEpc64GMVuAjQiQ3tfZQfgRBC0Pjn1CKIMLjqGHraWRapXzYaSC9KG9Nv2hO9bUSsH37QdaB1ZtHkVpiEQ
+- q1: completed 1000/1000 ok.
+- q2 sent (778) ~12:58 UTC. op AUHbXTupuzYVNUaaULwvP9-WSNM_PZjWvUtjz5wSqh0LzOWZMaNpDDtSrlhgE70xt5htuCD2sTHcN0S6Veo0JW9-SETMPk61UqRv4dMrx6ZJbqs3Jij7RVqiuwyN28jPOl3CW8xUES8bBgHDo8LcHI0rGwxTr1b12JBeDedd9hC1-HXOfTXPayOz2MP56YRJHuWcI1UDy5YMka_IZyptFOmO95LTbv6pEfMbhMTdhzoeww
