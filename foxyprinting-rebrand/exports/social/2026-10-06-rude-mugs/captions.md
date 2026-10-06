@@ -58,7 +58,12 @@ artwork), so the AI label isn't needed.
 
 ## Posting
 
-- **TikTok:** see the status in the session report (Higgsfield publish form); otherwise upload `rude-mugs-ad-9x16.mp4` in the TikTok app.
+- **TikTok:** Higgsfield publish form prepared, nothing posted yet. Account foxyprinting, DIRECT_POST,
+  session `7b092432-68cd-4ab4-93b8-19fa1e745b85`, **expires 2026-10-06 17:39 UTC**. The owner finishes it in the
+  form: privacy, comments/duet/stitch, commercial content "Your brand", AI label off, optional music, then Post.
+  Source: Shopify file `gid://shopify/GenericFile/69872158212477`
+  (https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-rude-mugs-ad-9x16.mp4?v=1791301127), Higgsfield media
+  `7eae5add-3434-4cae-8ba6-97545b89639a`. If the form expires, upload `rude-mugs-ad-9x16.mp4` in the TikTok app.
 - **Facebook & Instagram:** post through Meta Business Suite (no connector here). Use the 9:16 video
   for Reels/Stories and the 1:1 video or the 3-image carousel for the feed. If you boost it as an ad, choose
   18+ targeting.
