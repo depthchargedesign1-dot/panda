@@ -1,0 +1,44 @@
+[
+ {
+  "sku": "FOXY-SUB-PNPMANOT",
+  "file": "FOXY-SUB-PNPMANOT-1-GB.jpg",
+  "kind": "mockup",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-PNPMANOT",
+  "file": "FOXY-SUB-PNPMANOT-2-SCO.jpg",
+  "kind": "mockup",
+  "country": "Scotland"
+ },
+ {
+  "sku": "FOXY-SUB-PNPMANOT",
+  "file": "FOXY-SUB-PNPMANOT-3-CYM.jpg",
+  "kind": "mockup",
+  "country": "Wales"
+ },
+ {
+  "sku": "FOXY-SUB-PNPMANOT",
+  "file": "FOXY-SUB-PNPMANOT-4-NI.jpg",
+  "kind": "mockup",
+  "country": "Northern Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-PNPMANOT",
+  "file": "FOXY-SUB-PNPMANOT-5-IRL.jpg",
+  "kind": "mockup",
+  "country": "Ireland"
+ },
+ {
+  "sku": "FOXY-SUB-PNPMANOT",
+  "file": "FOXY-SUB-PNPMANOT-6-both-ends.jpg",
+  "kind": "both-ends",
+  "country": "GB"
+ },
+ {
+  "sku": "FOXY-SUB-PNPMANOT",
+  "file": "FOXY-SUB-PNPMANOT-7-flat-plate.jpg",
+  "kind": "flat",
+  "country": "GB"
+ }
+]

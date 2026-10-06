@@ -1,0 +1,68 @@
+[
+ {
+  "title": "Personalised Number Plate Mug – Any Name or Text – Custom Reg Gift – 11oz Ceramic",
+  "handle": "personalised-number-plate-mug-any-name",
+  "sku_base": "FOXY-SUB-PNPMANOT",
+  "price": "8.99",
+  "skus": {
+   "GB": "FOXY-SUB-PNPMANOT-01",
+   "Scotland": "FOXY-SUB-PNPMANOT-02",
+   "Wales": "FOXY-SUB-PNPMANOT-03",
+   "Northern Ireland": "FOXY-SUB-PNPMANOT-04",
+   "Ireland": "FOXY-SUB-PNPMANOT-05"
+  },
+  "productType": "Mugs",
+  "vendor": "Foxy Printing",
+  "templateSuffix": "personalised",
+  "tags": [
+   "11oz mug",
+   "car-lover-gifts",
+   "country-gb",
+   "country-ireland",
+   "country-northern-ireland",
+   "country-scotland",
+   "country-wales",
+   "custom number plate mug",
+   "foxy-new-2026",
+   "funny-mugs",
+   "gift for dad",
+   "io-number-plate-mugs",
+   "machine-sublimation",
+   "name mug",
+   "novelty mug",
+   "number-plate-mugs",
+   "personalised",
+   "personalised number plate mug",
+   "personalised-mugs",
+   "range-number-plate-mugs"
+  ],
+  "seo": {
+   "title": "Personalised Number Plate Mug – Any Name | Foxy Printing",
+   "description": "Put any name or text on a UK-style number plate mug. Choose a GB, Scotland, Wales, NI or Ireland band – a personalised gift for car lovers and dads."
+  },
+  "descriptionHtml": "<p>Our personalised number plate mug puts any name, nickname or in-joke on a proper UK-style yellow plate, so it finally gets the registration it deserves. It’s a brilliant personalised gift for car lovers, new drivers, dads, grandads and anyone who has ever wanted their own private plate.</p><h2>A personalised number plate mug with their name on</h2><p>Type the text you want on the plate – a name like DAV3, a nickname, initials or a short phrase. Up to 8 letters and digits looks just like a real plate; we print it exactly as you type it, in capitals. You can also add an optional dealer line along the bottom of the plate, such as “Dad’s Garage” or “Est. 1965”. The live preview shows your text on the plate as you type. Then choose the band: GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL.</p><h3>Why you’ll love it</h3><ul><li>Any name or text on one long yellow plate that wraps right round the mug, so it reads from every side</li><li>Optional dealer line for a cheeky extra – a family garage name, a year or a nickname</li><li>A custom number plate gift that costs a fraction of a real private plate</li><li>Matches our funny number plate mug range, so you can make a set for the whole family</li><li>Sublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews</li></ul><h3>Size &amp; details</h3><ul><li>White ceramic mug, 11oz (approx. 325ml)</li><li>C-shaped handle and a high-gloss finish</li><li>Sublimation printed in-house in North Yorkshire</li><li>Dishwasher and microwave safe – avoid abrasive scourers</li><li>Novelty plate design – not a real or road-legal registration</li></ul><h3>Delivery</h3><p>Every mug is printed to order in our North Yorkshire workshop and sent out in protective packaging for UK delivery.</p><p>Pair your personalised number plate mug with one of our funny number plate mugs, like D4D T4X1, for a matching car lover gift.</p>",
+  "words": 335,
+  "personalise_fields": [
+   "Your plate text (max 8 characters)",
+   "Dealer line on the plate (optional, e.g. Dad’s Garage)"
+  ],
+  "checks": {
+   "title<=150": true,
+   "seo<=60": true,
+   "meta 140-155": true,
+   "words 180-350": true,
+   "primary in 1st sentence/h2/x3": true
+  },
+  "zip": "exports/any-name-number-plate-mug/FOXY-SUB-PNPMANOT-personalised-number-plate-mug-artwork.zip",
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Number Plate Mug – Any Name or Text – Custom Reg Gift – 11oz Ceramic - FOXY-SUB-PNPMANOT-01",
+  "google": {
+   "custom_product": "true",
+   "condition": "new",
+   "google_product_category": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Mugs",
+   "gender": "unisex",
+   "age_group": "adult",
+   "color": "White",
+   "mpn": "FOXY-SUB-PNPMANOT-01"
+  }
+ }
+]
