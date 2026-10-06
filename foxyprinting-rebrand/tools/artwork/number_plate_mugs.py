@@ -8,7 +8,7 @@ Builds, for 10 original designs x 5 country bands:
 Run:  python3 tools/artwork/number_plate_mugs.py            (artwork + products.json)
       python3 tools/artwork/number_plate_mugs.py ebay URLS.json   (eBay upload CSV)
 
-Wrap size: 200 x 85 mm (standard 11oz sublimation print area) + 3 mm bleed = 206 x 91 mm,
+Wrap size: 200 x 70 mm (owner spec, artwork-specs.md) + 3 mm bleed = 206 x 76 mm,
 3 mm safe area. Font: Barlow Condensed (SIL OFL 1.1, Google Fonts) - an open-licence
 condensed font in the spirit of UK plates; the commercial Charles Wright font is NOT used.
 Wales flag: flag-icons (MIT). Other flags are drawn here. The NI band is lettering only.
@@ -27,10 +27,10 @@ ROOT = os.path.dirname(os.path.dirname(HERE))           # foxyprinting-rebrand/
 ASSETS = os.path.join(HERE, "assets")
 OUT = os.path.join(ROOT, "exports", "number-plate-mugs")
 
-TRIM_W, TRIM_H, BLEED, SAFE = 200.0, 85.0, 3.0, 3.0
+TRIM_W, TRIM_H, BLEED, SAFE = 200.0, 70.0, 3.0, 3.0
 PAGE_W, PAGE_H = TRIM_W + 2 * BLEED, TRIM_H + 2 * BLEED
-PLATE_W, PLATE_H = 84.0, 20.0
-PLATE_CX = (51.0, 149.0)          # trim coords: left = white front plate, right = yellow rear plate
+PLATE_W, PLATE_H = TRIM_W - 2 * SAFE, TRIM_H - 2 * SAFE   # ONE full-wrap plate filling the safe area (194 x 64 mm)
+PLATE_CX = (TRIM_W / 2,)          # trim coords: centre of the wrap
 YELLOW, WHITE, BLUE, INK = "#FFD100", "#FFFFFF", "#003DA5", "#111111"
 PRICE = "7.99"
 
@@ -54,7 +54,7 @@ FACTS = dict(  # MUGS fact sheet only (plan/product-facts.md)
 )
 
 COMMON_BULLETS = [
-    "Two plates on one mug: a white front plate on one side and a yellow rear plate on the other, so the joke faces out whichever hand they drink with",
+    "One long yellow number plate printed right round the mug, so the joke reads from every side",
     "Pick the band that suits them – GB with the Union flag, Scotland with the saltire and SCO, Wales with the dragon and CYM, Northern Ireland with NI lettering, or Ireland with the tricolour and IRL",
     "Sublimation printed onto an 11oz white ceramic mug, dishwasher and microwave safe for everyday brews",
 ]
@@ -65,7 +65,7 @@ D = [
          meta="A funny tea mug styled like a UK number plate that reads BR3W UP. Choose a GB, Scotland, Wales, NI or Ireland band – a cheerful gift for tea lovers.",
          opening="This funny tea mug is for the person who meets every crisis with “I’ll put the kettle on”. Styled like a proper British number plate, it reads BR3W UP – the call to arms in every Yorkshire kitchen when a cuppa is overdue.",
          h2="A funny tea mug with a number plate twist",
-         para="BR3W UP is printed on both sides of the mug, as a white front plate and a yellow rear plate, just like a car. Choose the band on the left of the plate to suit the tea drinker in your life: GB, Scotland, Wales, Northern Ireland or Ireland. It’s a novelty number plate mug rather than a real registration, so nobody will be clamping the kitchen.",
+         para="BR3W UP is printed on one long yellow number plate that wraps right round the mug. Choose the band on the left of the plate to suit the tea drinker in your life: GB, Scotland, Wales, Northern Ireland or Ireland. It’s a novelty number plate mug rather than a real registration, so nobody will be clamping the kitchen.",
          bullets=["Gives the household tea maker a mug that finally gives them the credit", "A tea lover gift for birthdays, Secret Santa or a new-job welcome"],
          closing="Pair it with a box of their favourite tea bags for an easy tea lover gift.",
          tags=["tea mug", "tea lover gift"]),
@@ -74,7 +74,7 @@ D = [
          meta="A biscuit lover mug made like a UK number plate reading B15 CU1T. Choose a GB, Scotland, Wales, NI or Ireland band – a fun gift for any tea break.",
          opening="This biscuit lover mug is for the person in every office who knows exactly where the good biscuits are hidden. It gives them a number plate of their own, B15 CU1T, so everyone knows what goes with their brew.",
          h2="Biscuit lover mug with a cheeky registration",
-         para="We print the B15 CU1T plate twice – once as a white front plate and once as a yellow rear plate – so the joke is on show whichever way the mug is put down. Pick a GB, Scotland, Wales, Northern Ireland or Ireland band to match where they’re from. It’s a novelty number plate mug and not a real registration, although it does make dunking feel like serious business.",
+         para="We print B15 CU1T on a yellow number plate that runs all the way round the mug, so the joke is on show whichever way it’s put down. Pick a GB, Scotland, Wales, Northern Ireland or Ireland band to match where they’re from. It’s a novelty number plate mug and not a real registration, although it does make dunking feel like serious business.",
          bullets=["A fun desk mug that gets people talking at tea break", "An easy add-on gift with a packet of their favourite biscuits"],
          closing="Tuck a packet of chocolate digestives in with it and you’ve got a ready-made tea break gift.",
          tags=["biscuit mug", "tea lover gift"]),
@@ -83,7 +83,7 @@ D = [
          meta="Never forget their order again: a two sugars mug styled like a UK number plate reading 2 SUG4RS, with a GB, Scotland, Wales, NI or Ireland band.",
          opening="This two sugars mug settles the tea round for good, with a UK number plate design that reads 2 SUG4RS. No more shouting “how many sugars?” across the office.",
          h2="The two sugars mug that remembers their order",
-         para="Whoever’s on the tea round only needs one glance: 2 SUG4RS sits on a white front plate on one side and a yellow rear plate on the other. You choose the country band – GB, Scotland, Wales, Northern Ireland or Ireland. The plate is a novelty design, not a real registration, so it’s a number plate mug that never needs taxing.",
+         para="Whoever’s on the tea round only needs one glance: 2 SUG4RS runs round the mug on one big yellow number plate. You choose the country band – GB, Scotland, Wales, Northern Ireland or Ireland. The plate is a novelty design, not a real registration, so it’s a number plate mug that never needs taxing.",
          bullets=["Ends the daily tea round guessing game once and for all", "Great for builders, tradespeople and anyone who likes their tea sweet"],
          closing="A builder’s tea gift for the van, the site cabin or the staffroom.",
          tags=["builders tea mug", "tea lover gift"]),
@@ -92,7 +92,7 @@ D = [
          meta="A funny coffee mug for anyone who won’t touch decaf. The UK number plate style design reads D3C4F N0, with a GB, Scotland, Wales, NI or Ireland band.",
          opening="For the friend who treats decaf as a personal insult, this funny coffee mug says it before they’ve had their first sip. The number plate reads D3C4F N0 – short, sharp and as strong as their morning espresso.",
          h2="A funny coffee mug for proper coffee drinkers",
-         para="The D3C4F N0 plate appears twice, a white front plate on one side and a yellow rear plate on the other, with the country band of your choice: GB, Scotland, Wales, Northern Ireland or Ireland. It’s a novelty number plate mug – the registration isn’t real, but their feelings about decaf definitely are.",
+         para="The D3C4F N0 plate wraps all the way round the mug in classic yellow, with the country band of your choice: GB, Scotland, Wales, Northern Ireland or Ireland. It’s a novelty number plate mug – the registration isn’t real, but their feelings about decaf definitely are.",
          bullets=["Lets the coffee lover in your life make their feelings clear", "Holds 11oz, plenty for that first strong coffee of the day"],
          closing="Pair it with a bag of freshly ground beans for a coffee lover gift they’ll use every morning.",
          tags=["coffee mug", "coffee lover gift"]),
@@ -101,7 +101,7 @@ D = [
          meta="A funny boss mug made like a UK number plate reading BO55 MUG. Pick a GB, Scotland, Wales, NI or Ireland band – a great gift for the boss or a promotion.",
          opening="Whether they run the office, the house or the five-a-side team, this boss mug lets them claim the title in style. The plate reads BO55 MUG and even follows the real two letters, two numbers, three letters layout.",
          h2="A boss mug with a proper plate layout",
-         para="BO55 MUG is printed as a white front plate on one side of the mug and a yellow rear plate on the other, with a GB, Scotland, Wales, Northern Ireland or Ireland band – your choice. It’s a novelty number plate mug and not a real registration, so the only thing it gives them is bragging rights.",
+         para="BO55 MUG is printed on a yellow number plate that goes right round the mug, with a GB, Scotland, Wales, Northern Ireland or Ireland band – your choice. It’s a novelty number plate mug and not a real registration, so the only thing it gives them is bragging rights.",
          bullets=["A funny gift for a manager’s birthday, a promotion or a leaving do", "Looks the part on a desk next to the car keys"],
          closing="A great Secret Santa gift for the boss – or a cheeky one for whoever really runs your house.",
          tags=["boss gift", "office mug"]),
@@ -110,7 +110,7 @@ D = [
          meta="A work from home mug styled like a UK number plate reading WFH 4EVA. Choose a GB, Scotland, Wales, NI or Ireland band – a fun home office gift.",
          opening="This work from home mug is for the home-office hero whose daily commute runs from the kettle to the laptop. The number plate says it proudly: WFH 4EVA.",
          h2="The work from home mug for remote workers",
-         para="We print WFH 4EVA as a white front plate on one side and a yellow rear plate on the other, so it reads right on camera whichever hand they hold it in. Choose a GB, Scotland, Wales, Northern Ireland or Ireland band. It’s a novelty number plate mug, not a real registration – the only thing parked is them, at the kitchen table.",
+         para="We print WFH 4EVA on a yellow number plate that wraps round the whole mug, so some of it is always on camera. Choose a GB, Scotland, Wales, Northern Ireland or Ireland band. It’s a novelty number plate mug, not a real registration – the only thing parked is them, at the kitchen table.",
          bullets=["Brightens up video calls when it’s sat in the background", "A fun gift for a colleague going hybrid or fully remote"],
          closing="Add a coaster and a desk plant and you’ve got a complete home office gift.",
          tags=["office mug", "home office gift"]),
@@ -119,7 +119,7 @@ D = [
          meta="A funny retirement mug made like a UK number plate that reads NAP T1ME. Choose a GB, Scotland, Wales, NI or Ireland band – a fun gift for the leaving do.",
          opening="This funny retirement mug is for anyone retired, semi-retired or just very good at sofa time. It puts their new priorities on a UK number plate: NAP T1ME.",
          h2="A funny retirement mug for well-earned rest",
-         para="NAP T1ME is printed on both sides – a white front plate and a yellow rear plate – with the band of your choice: GB, Scotland, Wales, Northern Ireland or Ireland. It’s a novelty number plate mug rather than a real registration, though the afternoon snooze it describes is very real indeed.",
+         para="NAP T1ME is printed on one long yellow number plate that wraps round the mug, with the band of your choice: GB, Scotland, Wales, Northern Ireland or Ireland. It’s a novelty number plate mug rather than a real registration, though the afternoon snooze it describes is very real indeed.",
          bullets=["A light-hearted retirement gift that gets a laugh at the leaving do", "Also suits new parents, students and anyone who loves a Sunday snooze"],
          closing="Pop it in a gift bag with a good book and some biscuits for a cosy retirement gift.",
          tags=["retirement gift", "gift for grandad"]),
@@ -128,7 +128,7 @@ D = [
          meta="A dad taxi mug for the dad who does all the lifts, styled like a UK number plate reading D4D T4X1 with a GB, Scotland, Wales, NI or Ireland band.",
          opening="Football at nine, a party at two, a lift home at midnight – if Dad’s car is the family bus, this dad taxi mug is the one. The number plate reads D4D T4X1, so there’s no doubt who’s driving.",
          h2="The dad taxi mug for the family chauffeur",
-         para="D4D T4X1 goes on as a white front plate on one side and a yellow rear plate on the other, and you choose the band: GB, Scotland, Wales, Northern Ireland or Ireland. It’s a novelty number plate mug, not a real registration – sadly it doesn’t come with fares.",
+         para="D4D T4X1 goes right round the mug on a big yellow number plate, and you choose the band: GB, Scotland, Wales, Northern Ireland or Ireland. It’s a novelty number plate mug, not a real registration – sadly it doesn’t come with fares.",
          bullets=["A funny Father’s Day or birthday gift for dads who do all the driving", "A car lover gift with a proper plate layout and country band"],
          closing="Matching keyrings make a lovely add-on for the dad taxi driver.",
          tags=["gift for dad", "fathers day gift"]),
@@ -137,7 +137,7 @@ D = [
          meta="A funny mechanic mug made like a UK number plate that reads F1X3D 1T. Choose a GB, Scotland, Wales, NI or Ireland band – a fun gift for the garage or shed.",
          opening="For the mechanic, the DIY dad or the friend who swears they can fix anything with cable ties, this funny mechanic mug says it with confidence: F1X3D 1T.",
          h2="A funny mechanic mug for the garage",
-         para="The F1X3D 1T plate is printed twice, as a white front plate and a yellow rear plate, with a GB, Scotland, Wales, Northern Ireland or Ireland band – pick the one that suits them. It’s a novelty number plate mug and not a real registration, so there’s no MOT needed.",
+         para="The F1X3D 1T plate wraps all the way round the mug in classic yellow, with a GB, Scotland, Wales, Northern Ireland or Ireland band – pick the one that suits them. It’s a novelty number plate mug and not a real registration, so there’s no MOT needed.",
          bullets=["Made for the garage, the workshop or the shed", "A car lover gift for enthusiasts, DIYers and anyone handy with a spanner"],
          closing="Give it with a pair of work gloves for a DIY gift that gets a laugh.",
          tags=["mechanic gift", "diy gift"]),
@@ -146,7 +146,7 @@ D = [
          meta="A funny Monday morning mug for serial snoozers, made like a UK number plate that reads SN00 ZED. Choose a GB, Scotland, Wales, NI or Ireland band.",
          opening="This Monday morning mug is for every serial snoozer who hits the button three times and still makes it in. The number plate design reads SN00 ZED.",
          h2="A Monday morning mug for serial snoozers",
-         para="SN00 ZED appears as a white front plate on one side and a yellow rear plate on the other, with a GB, Scotland, Wales, Northern Ireland or Ireland band of your choice. It’s a novelty number plate mug and not a real registration – the alarm clock is the only thing that’s been clamped.",
+         para="SN00 ZED runs round the whole mug on a yellow number plate, with a GB, Scotland, Wales, Northern Ireland or Ireland band of your choice. It’s a novelty number plate mug and not a real registration – the alarm clock is the only thing that’s been clamped.",
          bullets=["Makes the first brew of the week a bit more bearable", "A cheeky gift for the colleague who is always just on time"],
          closing="A fun office mug for the serial snoozer – pair it with a big jar of instant coffee.",
          tags=["office mug", "funny work mug"]),
@@ -250,26 +250,26 @@ def plate_svg(d, country, cx_trim, bg, uid):
     cx, cy = cx_trim + BLEED, TRIM_H / 2 + BLEED
     L, T = cx - PLATE_W / 2, cy - PLATE_H / 2
     R, B = L + PLATE_W, T + PLATE_H
-    bw = 11.0
-    s = [f'<g id="{uid}" inkscape:groupmode="layer" inkscape:label="{"Front plate (white)" if bg == WHITE else "Rear plate (yellow)"}">',
-         f'<clipPath id="{uid}c"><rect x="{L:.3f}" y="{T:.3f}" width="{PLATE_W}" height="{PLATE_H}" rx="2.6"/></clipPath>',
-         f'<rect x="{L:.3f}" y="{T:.3f}" width="{PLATE_W}" height="{PLATE_H}" rx="2.6" fill="{bg}" stroke="#8A8A8A" stroke-width="0.25"/>',
+    bw = 30.0
+    s = [f'<g id="{uid}" inkscape:groupmode="layer" inkscape:label="Number plate (full wrap)">',
+         f'<clipPath id="{uid}c"><rect x="{L:.3f}" y="{T:.3f}" width="{PLATE_W}" height="{PLATE_H}" rx="7"/></clipPath>',
+         f'<rect x="{L:.3f}" y="{T:.3f}" width="{PLATE_W}" height="{PLATE_H}" rx="7" fill="{bg}" stroke="#8A8A8A" stroke-width="0.25"/>',
          f'<g clip-path="url(#{uid}c)"><rect id="{uid}band" x="{L:.3f}" y="{T:.3f}" width="{bw}" height="{PLATE_H}" fill="{BLUE}"/></g>']
     bx = L + bw / 2
     if flag:
-        fw = bw - 2.8
-        fs, fh = flag_svg(flag, bx - fw / 2, T + 2.4, fw, uid + "f")
+        fw = bw - 7.0
+        fs, fh = flag_svg(flag, bx - fw / 2, T + 7.0, fw, uid + "f")
         s.append(fs)
-        csize = 3.6 / FM["700"]["cap"]
-        s.append(f'<text x="{bx:.3f}" y="{B - 2.6:.3f}" font-family="Barlow Condensed" font-weight="700" '
+        csize = 10.0 / FM["700"]["cap"]
+        s.append(f'<text x="{bx:.3f}" y="{B - 7.0:.3f}" font-family="Barlow Condensed" font-weight="700" '
                  f'font-size="{csize:.3f}" fill="#FFFFFF" text-anchor="middle">{code}</text>')
     else:  # Northern Ireland: lettering only, no flag (owner's rule)
-        csize = 6.0 / FM["700"]["cap"]
-        s.append(f'<text x="{bx:.3f}" y="{cy + 3.0:.3f}" font-family="Barlow Condensed" font-weight="700" '
+        csize = 16.0 / FM["700"]["cap"]
+        s.append(f'<text x="{bx:.3f}" y="{cy + 8.0:.3f}" font-family="Barlow Condensed" font-weight="700" '
                  f'font-size="{csize:.3f}" fill="#FFFFFF" text-anchor="middle">{code}</text>')
     # registration (live, editable text; two words so the gap matches a real plate)
-    x0, x1 = L + bw + 2.2, R - 2.6
-    cap = PLATE_H * 0.60
+    x0, x1 = L + bw + 4.0, R - 5.0
+    cap = PLATE_H * 0.72
     for _ in range(40):
         size = cap / FM["700"]["cap"]
         g1, g2 = d["reg"]
@@ -284,16 +284,15 @@ def plate_svg(d, country, cx_trim, bg, uid):
              f'letter-spacing="{LS * size:.3f}" fill="{INK}">'
              f'<text x="{sx:.3f}" y="{base:.3f}">{g1}</text>'
              f'<text x="{sx + text_w(g1, size) + gap:.3f}" y="{base:.3f}">{g2}</text></g>')
-    s.append(f'<rect x="{L + 1.1:.3f}" y="{T + 1.1:.3f}" width="{PLATE_W - 2.2:.3f}" height="{PLATE_H - 2.2:.3f}" '
-             f'rx="1.7" fill="none" stroke="{INK}" stroke-width="0.45"/></g>')
+    s.append(f'<rect x="{L + 2.2:.3f}" y="{T + 2.2:.3f}" width="{PLATE_W - 4.4:.3f}" height="{PLATE_H - 4.4:.3f}" '
+             f'rx="5.2" fill="none" stroke="{INK}" stroke-width="1.0"/></g>')
     return "\n".join(s)
 
 
 def wrap_svg(d, country, mirrored=False, guides=False):
     body = [f'<g id="Background" inkscape:groupmode="layer" inkscape:label="Background (bleed)">'
             f'<rect width="{PAGE_W}" height="{PAGE_H}" fill="#FFFFFF"/></g>',
-            plate_svg(d, country, PLATE_CX[0], WHITE, "front"),
-            plate_svg(d, country, PLATE_CX[1], YELLOW, "rear")]
+            plate_svg(d, country, PLATE_CX[0], YELLOW, "plate")]
     g = (f'<g id="Guides" inkscape:groupmode="layer" inkscape:label="Guides (do not print)" '
          f'style="display:{"inline" if guides else "none"}" fill="none" stroke-width="0.2">'
          f'<rect x="{BLEED}" y="{BLEED}" width="{TRIM_W}" height="{TRIM_H}" stroke="#00AEEF" stroke-dasharray="2,1"/>'
@@ -313,15 +312,14 @@ README = """Foxy Printing - {title}
 SKU base {sku}  |  Plate: {reg}
 
 Files (one set per country band: GB, Scotland, Wales, Northern Ireland, Ireland)
-  ... .svg            editable master (live text, layers: Background / Front plate / Rear plate / Guides)
-  ... .pdf            print file, 206 x 91 mm (200 x 85 mm wrap + 3 mm bleed each edge)
+  ... .svg            editable master (live text, layers: Background / Number plate (full wrap) / Guides)
+  ... .pdf            print file, 206 x 76 mm (200 x 70 mm wrap + 3 mm bleed each edge)
   ... - MIRRORED.pdf  same, flipped left-right - only if your print driver/RIP does NOT mirror for you
-  ... - 300dpi.png    raster print file, 2433 x 1075 px at 300 dpi
+  ... - 300dpi.png    raster print file, 2433 x 898 px at 300 dpi
 
-Spec: 11oz white sublimation mug, wrap trim 200 x 85 mm, 3 mm bleed, 3 mm safe area
-(no artwork near the edges - the plates sit well inside it). Plates are 84 x 20 mm, centred
-51 mm and 149 mm from the left trim edge, so one plate sits each side of the handle.
-Please check the 200 x 85 mm wrap against your mug blanks/press before the first run.
+Spec: 11oz white sublimation mug, FULL WRAP: print area 200 x 70 mm + 3 mm bleed = 206 x 76 mm,
+3 mm safe area. One number plate (194 x 64 mm, yellow) fills the safe area and runs all the way
+round the mug: country band at the left end, rounded corners at both ends (they meet by the handle).
 
 Font: Barlow Condensed Bold (SIL Open Font License 1.1) - in the Fonts folder.
 Install it before editing the SVG so the live text renders correctly.
@@ -344,7 +342,7 @@ def build():
         os.makedirs(folder)
         files = []
         for country in COUNTRIES:
-            stem = f"{sb} {reg_text(d)} {country[3]} - 11oz mug wrap 206x91mm"
+            stem = f"{sb} {reg_text(d)} {country[3]} - 11oz full wrap 206x76mm"
             svg = wrap_svg(d, country)
             open(os.path.join(folder, stem + ".svg"), "w").write(svg)
             cairosvg.svg2pdf(bytestring=svg.encode(), write_to=os.path.join(folder, stem + ".pdf"))
@@ -352,16 +350,15 @@ def build():
                              write_to=os.path.join(folder, stem + " - MIRRORED.pdf"))
             cairosvg.svg2png(bytestring=svg.encode(), dpi=300, write_to=os.path.join(folder, stem + " - 300dpi.png"))
             files.append(stem)
-            for which, cxp, bg in (("front", PLATE_CX[0], WHITE), ("rear", PLATE_CX[1], YELLOW)):
-                L, T = cxp + BLEED - PLATE_W / 2 - 1, TRIM_H / 2 + BLEED - PLATE_H / 2 - 1
-                tsvg = (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" '
-                        f'width="{PLATE_W + 2:g}mm" height="{PLATE_H + 2:g}mm" viewBox="{L:.3f} {T:.3f} {PLATE_W + 2:g} {PLATE_H + 2:g}">'
-                        + plate_svg(d, country, cxp, bg, which) + "</svg>")
-                cairosvg.svg2png(bytestring=tsvg.encode(), dpi=450,
-                                 write_to=os.path.join(tex_root, f"{sb}-{country[1]}-{which}.png"))
+            # mockup texture: the whole printed wrap (trim area, transparent outside the plate)
+            tsvg = (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" '
+                    f'width="{TRIM_W:g}mm" height="{TRIM_H:g}mm" viewBox="{BLEED:g} {BLEED:g} {TRIM_W:g} {TRIM_H:g}">'
+                    + plate_svg(d, country, PLATE_CX[0], YELLOW, "plate") + "</svg>")
+            cairosvg.svg2png(bytestring=tsvg.encode(), dpi=300,
+                             write_to=os.path.join(tex_root, f"{sb}-{country[1]}-wrap.png"))
         open(os.path.join(folder, "README - how to print.txt"), "w").write(
             README.format(title=title(d), sku=sb, reg=reg_text(d)))
-        zpath = os.path.join(zip_root, f"{sb}-number-plate-mug-artwork.zip")
+        zpath = os.path.join(zip_root, f"{sb}-number-plate-mug-full-wrap-artwork.zip")
         with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
             top = f"{title(d)} - {sb}-01"
             for f in sorted(os.listdir(folder)):
