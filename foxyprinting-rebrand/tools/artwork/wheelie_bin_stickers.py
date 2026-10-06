@@ -49,27 +49,27 @@ NUMBER, STREET_UC, STREET_MC = '74', 'MAKE BELIEVE CLOSE', 'Make Believe Close'
 
 # font key -> (ttf file, SVG font-family list, svg weight, svg style)
 FONTS = {
-    'ptsans': ('PT_Sans-Web-Regular.ttf', "'PTSans-Regular', 'PT Sans'", 400, 'normal'),
-    'marcellus': ('Marcellus-Regular.ttf', "'Marcellus-Regular', 'Marcellus'", 400, 'normal'),
-    'arvo': ('Arvo-Regular.ttf', "'Arvo', 'Arvo'", 400, 'normal'),
-    'archivo': ('ArchivoBlack-Regular.ttf', "'ArchivoBlack-Regular', 'Archivo Black'", 400, 'normal'),
-    'gilda': ('GildaDisplay-Regular.ttf', "'GildaDisplay-Regular', 'Gilda Display'", 400, 'normal'),
-    'courgette': ('Courgette-Regular.ttf', "'Courgette-Regular', 'Courgette'", 400, 'normal'),
-    'oldstd': ('OldStandard-Regular.ttf', "'OldStandardTT-Regular', 'Old Standard TT'", 400, 'normal'),
-    'delius': ('Delius-Regular.ttf', "'Delius-Regular', 'Delius'", 400, 'normal'),
-    'ribeye': ('Ribeye-Regular.ttf', "'Ribeye-Regular', 'Ribeye'", 400, 'normal'),
-    'goudy': ('SortsMillGoudy-Regular.ttf', "'SortsMillGoudy-Regular', 'Sorts Mill Goudy'", 400, 'normal'),
-    'patrick': ('PatrickHand-Regular.ttf', "'PatrickHand-Regular', 'Patrick Hand'", 400, 'normal'),
-    'alegreyasc': ('AlegreyaSC-Bold.ttf', "'AlegreyaSC-Bold', 'Alegreya SC'", 700, 'normal'),
-    'bowlby': ('BowlbyOne-Regular.ttf', "'BowlbyOne-Regular', 'Bowlby One'", 400, 'normal'),
-    'anton': ('Anton-Regular.ttf', "'Anton-Regular', 'Anton'", 400, 'normal'),
-    'crimson': ('CrimsonText-Regular.ttf', "'CrimsonText-Regular', 'Crimson Text'", 400, 'normal'),
-    'crimsonit': ('CrimsonText-Italic.ttf', "'CrimsonText-Italic', 'Crimson Text'", 400, 'italic'),
-    'shortstack': ('ShortStack-Regular.ttf', "'ShortStack-Regular', 'Short Stack'", 400, 'normal'),
-    'lobster': ('Lobster-Regular.ttf', "'Lobster-Regular', 'Lobster'", 400, 'normal'),
-    'federo': ('Federo-Regular.ttf', "'Federo-Regular', 'Federo'", 400, 'normal'),
-    'kalam': ('Kalam-Bold.ttf', "'Kalam-Bold', 'Kalam'", 700, 'normal'),
-    'della': ('DellaRespira-Regular.ttf', "'DellaRespira-Regular', 'Della Respira'", 400, 'normal'),
+    'ptsans': ('PT_Sans-Web-Regular.ttf', "'PT Sans', 'PTSans-Regular'", 400, 'normal'),
+    'marcellus': ('Marcellus-Regular.ttf', "'Marcellus', 'Marcellus-Regular'", 400, 'normal'),
+    'arvo': ('Arvo-Regular.ttf', "'Arvo'", 400, 'normal'),
+    'archivo': ('ArchivoBlack-Regular.ttf', "'Archivo Black', 'ArchivoBlack-Regular'", 400, 'normal'),
+    'gilda': ('GildaDisplay-Regular.ttf', "'Gilda Display', 'GildaDisplay-Regular'", 400, 'normal'),
+    'courgette': ('Courgette-Regular.ttf', "'Courgette', 'Courgette-Regular'", 400, 'normal'),
+    'oldstd': ('OldStandard-Regular.ttf', "'Old Standard TT', 'OldStandardTT-Regular'", 400, 'normal'),
+    'delius': ('Delius-Regular.ttf', "'Delius', 'Delius-Regular'", 400, 'normal'),
+    'ribeye': ('Ribeye-Regular.ttf', "'Ribeye', 'Ribeye-Regular'", 400, 'normal'),
+    'goudy': ('SortsMillGoudy-Regular.ttf', "'Sorts Mill Goudy', 'SortsMillGoudy-Regular'", 400, 'normal'),
+    'patrick': ('PatrickHand-Regular.ttf', "'Patrick Hand', 'PatrickHand-Regular'", 400, 'normal'),
+    'alegreyasc': ('AlegreyaSC-Bold.ttf', "'Alegreya SC', 'AlegreyaSC-Bold'", 700, 'normal'),
+    'bowlby': ('BowlbyOne-Regular.ttf', "'Bowlby One', 'BowlbyOne-Regular'", 400, 'normal'),
+    'anton': ('Anton-Regular.ttf', "'Anton', 'Anton-Regular'", 400, 'normal'),
+    'crimson': ('CrimsonText-Regular.ttf', "'Crimson Text', 'CrimsonText-Regular'", 400, 'normal'),
+    'crimsonit': ('CrimsonText-Italic.ttf', "'Crimson Text', 'CrimsonText-Italic'", 400, 'italic'),
+    'shortstack': ('ShortStack-Regular.ttf', "'Short Stack', 'ShortStack-Regular'", 400, 'normal'),
+    'lobster': ('Lobster-Regular.ttf', "'Lobster', 'Lobster-Regular'", 400, 'normal'),
+    'federo': ('Federo-Regular.ttf', "'Federo', 'Federo-Regular'", 400, 'normal'),
+    'kalam': ('Kalam-Bold.ttf', "'Kalam', 'Kalam-Bold'", 700, 'normal'),
+    'della': ('DellaRespira-Regular.ttf', "'Della Respira', 'DellaRespira-Regular'", 400, 'normal'),
 }
 # owner's original font -> look-alike (for the README / fonts list)
 ORIGINAL_FONT = {
@@ -144,18 +144,18 @@ DESIGNS = {
                                                           T('Street', 'courgette', 30.0, 104.0, 113.5, 148)]),
     8: dict(bg='#ffffff', square=True, deco=True, texts=[T('Number', 'oldstd', 310.4, 101.9, 104.0, 168),
                                                           T('Street', 'oldstd', 36.8, 100.8, 116.5, 137)]),
-    9: dict(deco=True, texts=[T('Number', 'oldstd', 250.3, 104.5, 116.7, 150),
+    9: dict(deco=True, texts=[T('Number', 'oldstd', 228.0, 104.5, 116.7, 150),
                               T('Street', 'oldstd', 41.7, 101.0, 132.0, 165)]),
     10: dict(deco=True, texts=[T('Number', 'oldstd', 281.4, 104.5, 101.1, 160),
                                T('Street', 'oldstd', 56.6, 105.1, 117.4, 150)]),
     11: dict(deco=True, texts=[T('Number', 'delius', 245.0, 103.4, 97.0, 120),
                                T('Street', 'delius', 30.0, 103.4, 117.0, 112)]),
-    12: dict(deco=True, texts=[T('Number', 'ribeye', 400.2, 104.3, 103.4, 176),
-                               T('Street', 'ribeye', 53.9, 105.0, 131.6, 175)]),
-    13: dict(deco=True, texts=[T('Number', 'goudy', 385.4, 105.0, 107.5, 180),
+    12: dict(deco=True, texts=[T('Number', 'ribeye', 330.0, 104.3, 103.4, 150),
+                               T('Street', 'ribeye', 53.9, 105.0, 131.6, 140)]),
+    13: dict(deco=True, texts=[T('Number', 'crimson', 385.4, 105.0, 112.0, 180),
                                T('Street', 'goudy', 71.5, 103.6, 132.3, 170)]),
-    25: dict(deco=True, texts=[T('Number', 'ribeye', 406.6, 104.3, 109.6, 176),
-                               T('Street', 'ribeye', 58.3, 104.3, 133.2, 178)]),
+    25: dict(deco=True, texts=[T('Number', 'ribeye', 330.0, 104.3, 109.6, 150),
+                               T('Street', 'ribeye', 58.3, 104.3, 133.2, 140)]),
     31: dict(bg='#ffffff', square=True, deco=True, texts=[T('Number', 'crimson', 318.2, 103.1, 92.2, 110),
                                                           T('Street', 'della', 131.0, 105.0, 136.0, 118, STREET_MC)]),
     32: dict(bg='#ffffff', square=True, deco=True, texts=[T('Number', 'crimson', 318.2, 105.0, 109.3, 120),
@@ -236,13 +236,27 @@ def deco_items(src, n):
         return c and '#%02x%02x%02x' % tuple(round(x * 255) for x in c[:3])
 
     out = []
-    for g in page.get_drawings():
+    for g in page.get_drawings(extended=True):
+        if g['type'] in ('clip', 'group'):   # clipping masks / groups: kept, so hidden parts stay hidden
+            d = ''.join(seg for seg in _items_to_d(g.get('items') or [], f)) if g['type'] == 'clip' else ''
+            out.append(dict(type=g['type'], level=g.get('level', 0), d=d, evenodd=bool(g.get('even_odd'))))
+            continue
         r = g['rect']
         whole = r.width >= pw * 0.95 and r.height >= ph * 0.95
         if whole and (col(g.get('fill')) in ('#ffffff', GREY, None)) and col(g.get('color')) in ('#ffffff', None):
             continue
-        d, last = [], None
-        for it in g['items']:
+        d = _items_to_d(g['items'], f)
+        if g.get('closePath'):
+            d.append('Z')
+        out.append(dict(type=g['type'], level=g.get('level', 0), fill=col(g.get('fill')), stroke=col(g.get('color')),
+                        width=(g.get('width') or 0) * s, evenodd=bool(g.get('even_odd')), d=''.join(d)))
+    return out
+
+
+def _items_to_d(items, f):
+    d, last = [], None
+    if True:
+        for it in items:
             op = it[0]
             if op == 'l':
                 a, b = it[1], it[2]
@@ -264,11 +278,7 @@ def deco_items(src, n):
                 q = it[1]
                 d.append(f'M{f(q.ul.x)} {f(q.ul.y)}L{f(q.ur.x)} {f(q.ur.y)}L{f(q.lr.x)} {f(q.lr.y)}L{f(q.ll.x)} {f(q.ll.y)}Z')
                 last = None
-        if g.get('closePath'):
-            d.append('Z')
-        out.append(dict(type=g['type'], fill=col(g.get('fill')), stroke=col(g.get('color')),
-                        width=(g.get('width') or 0) * s, evenodd=bool(g.get('even_odd')), d=''.join(d)))
-    return out
+    return d
 
 
 # ------------------------------------------------------------------------------------------- text fitting
@@ -348,12 +358,27 @@ def svg(n, deco):
         o.append(f'<path d="{body}"/></g>')
     if deco:
         o.append('<g id="Ornaments">')
+        stack, nclip = [], 0
         for it in deco:
+            while stack and stack[-1] >= it.get('level', 0):
+                stack.pop()
+                o.append('</g>')
+            if it['type'] == 'clip':
+                nclip += 1
+                rule = ' clip-rule="evenodd"' if it['evenodd'] else ''
+                o.append(f'<clipPath id="clip{nclip}"><path d="{it["d"]}"{rule}/></clipPath><g clip-path="url(#clip{nclip})">')
+                stack.append(it['level'])
+                continue
+            if it['type'] == 'group':
+                o.append('<g>')
+                stack.append(it['level'])
+                continue
             fill = it['fill'] if it['type'] in ('f', 'fs') and it['fill'] else 'none'
             st = (f' stroke="{it["stroke"]}" stroke-width="{it["width"]:.3f}"'
                   if it['type'] in ('s', 'fs') and it['stroke'] else '')
             rule = ' fill-rule="evenodd"' if it['evenodd'] else ''
             o.append(f'<path d="{it["d"]}" fill="{fill}"{st}{rule}/>')
+        o.extend('</g>' for _ in stack)
         o.append('</g>')
     o.append('<g id="Personalisation">')
     for t in D['texts']:
@@ -442,7 +467,18 @@ def pdf(n, deco, path):
         cv.saveState()
         clip = cv.beginPath(); clip.rect(0, 0, PAGE_W * MM, PAGE_H * MM)
         cv.clipPath(clip, stroke=0, fill=0)
+        stack = []
         for it in deco:
+            while stack and stack[-1] >= it.get('level', 0):
+                stack.pop()
+                cv.restoreState()
+            if it['type'] in ('clip', 'group'):
+                cv.saveState()
+                stack.append(it['level'])
+                if it['type'] == 'clip' and it['d']:
+                    cv.clipPath(draw_svg_path(cv, it['d'], BLEED, BLEED), stroke=0, fill=0,
+                                fillMode=1 if it['evenodd'] else 0)
+                continue
             do_fill = it['type'] in ('f', 'fs') and it['fill']
             do_stroke = it['type'] in ('s', 'fs') and it['stroke']
             if do_fill:
@@ -451,6 +487,8 @@ def pdf(n, deco, path):
                 cv.setStrokeColorRGB(*hexrgb(it['stroke'])); cv.setLineWidth(it['width'] * MM)
             cv.drawPath(draw_svg_path(cv, it['d'], BLEED, BLEED), stroke=1 if do_stroke else 0,
                         fill=1 if do_fill else 0, fillMode=1 if it['evenodd'] else 0)
+        for _ in stack:
+            cv.restoreState()
         cv.restoreState()
     for t in D['texts']:
         size, _ = fit(t, D)
@@ -507,6 +545,138 @@ def check_png(pdf_path, png_path):
     pymupdf.open(pdf_path)[0].get_pixmap(dpi=60).save(png_path)
 
 
+# ------------------------------------------------------------------------------------------- folder text files
+FONTS_ZIP = 'https://cdn.shopify.com/s/files/1/1774/9115/files/Wheelie-Bin-Sticker-fonts-OFL.zip?v=1791280736'
+GENERATOR_ZIP = 'https://cdn.shopify.com/s/files/1/1774/9115/files/Wheelie-Bin-Sticker-artwork-generator.zip?v=1791280736'
+DROPBOX_ROOT = '/AI DESIGNS 2026'
+
+
+def folder_name(n):
+    return f'Personalised Wheelie Bin Sticker – Design {n} - {sku(n)}'
+
+
+def fonts_txt():
+    users = {}
+    for n, D in sorted(DESIGNS.items()):
+        for t in D['texts']:
+            users.setdefault(t['font'], set()).add(n)
+    L = ['FONTS - Personalised Wheelie Bin Stickers (Designs 1-36)', '=' * 56, '',
+         'All fonts are free, open-licence Google Fonts (SIL Open Font Licence 1.1, see OFL.txt).',
+         'They stand in for the system fonts in the original artwork, which we cannot share.',
+         'Install them (double-click each .ttf > Install) BEFORE opening the .svg / .pdf in Illustrator,',
+         'so the house number and street name stay live, editable text.', '',
+         'Download all 21 fonts + licences in one zip (Shopify Files):', FONTS_ZIP, '',
+         'Font (file)  |  Google Fonts page  |  replaces  |  used in designs', '-' * 56]
+    for key, (ttf, fam, *_r) in FONTS.items():
+        name = fam.split(',')[0].strip(" '")
+        url = 'https://fonts.google.com/specimen/' + name.replace(' ', '+')
+        L.append(f'{name} ({ttf})  |  {url}  |  {ORIGINAL_FONT[key]}  |  '
+                 + ', '.join(str(n) for n in sorted(users.get(key, []))))
+    return '\n'.join(L) + '\n'
+
+
+def ofl_txt(font_dir):
+    L = ['Licences for the fonts in this folder', '', 'Each font below is licensed under the SIL Open Font',
+         'License, Version 1.1 (full text after the copyright notices).', '']
+    body = None
+    for key, (ttf, fam, *_r) in FONTS.items():
+        name = fam.split(',')[0].strip(" '")
+        folder = name.lower().replace(' ', '')
+        src = Path(font_dir) / f'OFL-{folder}.txt'
+        txt = src.read_text(encoding='utf-8-sig')
+        head, _sep, _rest = txt.partition('This Font Software is licensed')
+        L += [f'{name}:', head.strip(), '']
+        if body is None and 'SIL OPEN FONT LICENSE Version 1.1' in txt:
+            body = txt[txt.index('-' * 59 if '-' * 59 in txt else 'SIL OPEN FONT LICENSE'):]
+    L += ['This Font Software is licensed under the SIL Open Font License, Version 1.1.',
+          'This license is copied below, and is also available with a FAQ at: https://openfontlicense.org', '',
+          body.strip()]
+    return '\n'.join(L) + '\n'
+
+
+README = """README - how to print and cut (Personalised Wheelie Bin Sticker)
+=================================================================
+
+WHAT IS IN THIS FOLDER
+- "WHEELIE BIN - N.pdf" / ".ai": your original design files (copied from
+  "!! BEN JOE OWEN NEW PRODUCTS XMAS 2026 !!!/WHEELIE BIN STICKERS - Copy/ARTWORK").
+  Design 2's original shows a customer proof "39 Carnaughton Place"; the shop sample is
+  "74 Make Believe Close".
+- "Wheelie Bin Sticker Design N - FOXY-CUT-PWBSDN-01 - A5 print file.svg / .pdf": the new,
+  editable print file (Designs 1-5, 14-24 and 26-30). Designs 6-13, 25 and 31-36: see
+  "PRINT FILE - HOW TO BUILD (ornate designs).txt".
+- Fonts/: the open-licence fonts list (FONTS - DOWNLOAD LINK.txt) and their licences (OFL.txt).
+
+SIZE
+- Sticker (trim): A5 landscape, 210 x 148 mm. Page: 216 x 154 mm (3 mm bleed all round).
+- Safe area: keep text 3 mm inside the trim. Background colour runs to the bleed edge.
+- Material: laminated outdoor vinyl (lasts 5+ years outside).
+- Corners: rounded 3 mm where the original sticker has rounded corners, square otherwise
+  (6, 7, 8, 31-36). The CUT line shows which.
+
+LAYERS
+- Artwork: background, frames/ornaments, and the LIVE text objects "Number" and "Street"
+  (sample "74" and "MAKE BELIEVE CLOSE"). Design 19 has the street on two lines.
+- CUT: one red line (RGB 255,0,0 / CMYK 2,98,95,0), 0.25 mm, no fill, closed path on the trim.
+  It never prints. In ColorCut Pro map Red = Cut.
+
+EDITING AN ORDER
+1. Install the fonts (Fonts/FONTS - DOWNLOAD LINK.txt) first.
+2. Open the .svg (or .pdf) in Illustrator. Top-level groups "Artwork" and "CUT" are the layers.
+3. Type the customer's house number and street name into the Number / Street text.
+   Long street names: reduce the font size (or horizontal scale to no less than 85%)
+   so the text stays inside the frame and the 3 mm safe area.
+4. Save as .ai in the order folder.
+
+PRINTING AND CUTTING (Intec ColorCut)
+1. Run "Foxy - 1 Prepare cut file" from /AI DESIGNS 2026/00 Foxy Illustrator Scripts - ColorCut/
+   (it puts the red line on the CUT layer). It swaps the sample name "Ava"; for these stickers
+   change the Number / Street text by hand (step 3 above).
+2. Place the sticker on your print sheet. One A5 sticker with bleed fits an A4 landscape sheet
+   with the 12 mm (left) / 10 mm (other edges) clear margins the PageMARKs need.
+3. Add PageMARKs & BarCode with the ColorCut Pro plug-in (File > Add PageMARKs and BarCode),
+   or for a whole folder use "Foxy - 3 Batch barcodes". One job number per design.
+4. "Foxy - 2 Save print PDF" saves the .ai and a "- PRINT.pdf" without the cut line.
+5. Print on outdoor vinyl, then laminate (outdoor laminate) BEFORE cutting.
+6. On the ColorCut: scan the barcode, check Red = Cut, and test-cut the first sheet.
+
+Made by the generator foxyprinting-rebrand/tools/artwork/wheelie_bin_stickers.py
+(Foxy Printing repo, branch claude/foxyprinting-rebrand-shopify-usf2x9).
+"""
+
+ORNATE_NOTE = """PRINT FILE - HOW TO BUILD (ornate designs 6-13, 25, 31-36)
+==========================================================
+
+The new print files for this design are rebuilt from the ornaments in your original PDF,
+so they are 100% vector (the original scrolls, wreaths and vines) with the house number and
+street name as live text. They were made and checked on 6 Oct 2026, but could not be saved
+here automatically. To make them on any PC with Python 3:
+
+1. Get the generator foxyprinting-rebrand/tools/artwork/wheelie_bin_stickers.py from the
+   repo (branch claude/foxyprinting-rebrand-shopify-usf2x9). Use the repo version: the
+   earlier copy in Shopify Files (Wheelie-Bin-Sticker-artwork-generator.zip) does not handle
+   the clipping masks in Designs 31 and 32.
+   Fonts: """ + FONTS_ZIP + """ (unzip into a folder "fonts").
+2. Put the original "WHEELIE BIN - N.pdf" files in a folder "src".
+3. pip install reportlab pikepdf pymupdf fonttools
+4. python wheelie_bin_stickers.py --fonts fonts --src src --out out --designs 6-13,25,31-36
+5. "out" then holds, per design, "<name>.svg", "<name>.pdf" (layers Artwork + CUT) and a
+   "- check.png" preview. Save them into this folder.
+
+Until then, the original "WHEELIE BIN - N.ai" in this folder is the editable artwork:
+it is A4 (297 x 210 mm), so scale it to 70.71% for the A5 sticker and add 3 mm bleed
+and the red CUT line (see README).
+"""
+
+
+def write_texts(out, font_dir):
+    out = Path(out)
+    (out / 'README - how to print and cut.txt').write_text(README)
+    (out / 'FONTS - DOWNLOAD LINK.txt').write_text(fonts_txt())
+    (out / 'OFL.txt').write_text(ofl_txt(font_dir))
+    (out / 'PRINT FILE - HOW TO BUILD (ornate designs).txt').write_text(ORNATE_NOTE)
+
+
 def parse_designs(spec):
     out = []
     for part in spec.split(','):
@@ -522,10 +692,13 @@ def main():
     ap.add_argument('--src')
     ap.add_argument('--designs', default='1-36')
     ap.add_argument('--no-png', action='store_true')
+    ap.add_argument('--texts', action='store_true', help='also write README / FONTS / OFL text files')
     a = ap.parse_args()
     register_fonts(a.fonts, a.out)
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
+    if a.texts:
+        write_texts(out, a.fonts)
     for n in parse_designs(a.designs):
         D = DESIGNS[n]
         if D.get('deco') and not a.src:
