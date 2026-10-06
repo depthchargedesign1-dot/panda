@@ -138,6 +138,8 @@ Never call a printed reproduction "signed", "autographed", "hand-signed", "authe
 - Artwork sizes: `foxyprinting-rebrand/plan/artwork-specs.md`.
 - **Production artwork** (print files, Intec ColorCut cut/crease files, editable PDFs): follow the `foxy-production-artwork` skill. Owner's rule (5 Oct 2026): each product's editable artwork goes in its own folder in Dropbox, `/AI DESIGNS 2026/<Product title> - <SKU>/`.
 - The owner prefers that routine commands for this project are run without asking.
+- **Always suggest pairings** (owner's rule, 6 Oct 2026): whenever a new product or product idea comes up, suggest other products that pair with it (e.g. a mask pack, a matching mug or card, party props, a bundle) and offer to make them.
+- **Racial caricature products** (yellowface, blackface and similar, e.g. Little Britain's Ting Tong): don't make them. Offer the other characters or the actors as themselves instead.
 - **Push changes straight to the store** (owner's standing rule, 5 Oct 2026): whenever it's a benefit, apply changes directly through the API (`productUpdate`, `metafieldsSet`, `productVariantsBulkUpdate`, in aliased batches) instead of handing the owner a CSV. Keep CSV import files only for sets too large to push sensibly (tens of thousands of rows or many MB of text), and say why.
 - **Tags and metafields** (owner's standing rule, 3 Oct 2026): when a product's tags or metafields (Google Shopping, `foxy.*`, SEO) are wrong, fix them straight away with `tagsAdd`/`tagsRemove`, `metafieldsSet` or `productUpdate`. There's no need to ask first. For thousands of products, where a CSV import is the only practical route, prepare the import files.
 
