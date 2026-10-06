@@ -125,7 +125,8 @@ The store uses the Shopify Google & YouTube channel namespace `mm-google-shoppin
 | `mpn` | single_line_text_field | the variant SKU |
 
 ## Reproduction "signed" prints
-Never call a printed reproduction "signed", "autographed", "hand-signed", "authentic" or "memorabilia". Use **"Printed Signature"** and **"Reproduction Print"** in the title (see `foxyprinting-rebrand/tools/signed_titles.py`), and add the signed-print disclaimer: *"This is a printed reproduction. The signature is printed as part of the design – it is not hand-signed and is not an original autograph…"*
+Never call a printed reproduction "signed", "autographed", "hand-signed", "authentic", "limited edition" or "memorabilia". Use **"Printed Signature"** in the title (see `foxyprinting-rebrand/tools/signed_titles.py`). Owner's decision (6 Oct 2026): **"Reproduction Print" goes in the description, not the title** (the owner was worried it hurts sales), stated clearly near the top, and the signed-print disclaimer goes at the end: *"This is a printed reproduction. The signature is printed as part of the design – it is not hand-signed and is not an original autograph…"*
+- **Frames** (owner, 6 Oct 2026): where a print is sold framed, highlight that these are **Premium Display frames: thick, chunky and very professional, not cheap thin frames**. Frame material and depth are still **ASK**; don't invent measurements.
 
 ## Other house rules
 - **"Foxy Pop 2026 – live preview" is now the live theme** (`gid://shopify/OnlineStoreTheme/189408444797`, published by the owner on 5 Oct 2026). It includes everything from "page banners" (page header banners, the Celebrity Masks homepage hero and 12-tile grid, the Celebrity Masks mega menu promo, cart quick-pay buttons) plus:

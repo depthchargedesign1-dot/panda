@@ -6,12 +6,12 @@
 <rect x="0" y="0" width="2444" height="1530" fill="#00248f" data-cmyk="100,80,20,30"/>
 <rect x="0" y="510" width="2444" height="510" fill="#ffffff" data-cmyk="0,0,0,0"/>
 <circle cx="1222" cy="765" r="214.2" fill="none" stroke="#8c8c8c" stroke-width="4.572" stroke-dasharray="18.288,12.192" data-cmyk="0,0,0,45"/>
-<text x="1222" y="757.38" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="33.528" text-anchor="middle" fill="#8c8c8c" data-cmyk="0,0,0,45">LOGO / PHOTO</text>
-<text x="1222" y="810.72" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="18.44" text-anchor="middle" fill="#8c8c8c" data-cmyk="0,0,0,45">REPLACE BACKGROUND WITH THE FLAG DESIGN</text>
+<text x="1222" y="757.38" font-family="'Bebas Neue', sans-serif" font-weight="400" font-size="33.528" text-anchor="middle" fill="#8c8c8c" data-cmyk="0,0,0,45">LOGO / PHOTO</text>
+<text x="1222" y="810.72" font-family="'Bebas Neue', sans-serif" font-weight="400" font-size="18.44" text-anchor="middle" fill="#8c8c8c" data-cmyk="0,0,0,45">REPLACE BACKGROUND WITH THE FLAG DESIGN</text>
 </g>
 <g id="Text" inkscape:groupmode="layer" inkscape:label="Text">
 <text id="Text_on_the_flag" x="1222" y="374.245" font-family="'Bebas Neue', sans-serif" font-weight="400" font-size="300.7" text-anchor="middle" fill="#ffffff" data-cmyk="0,0,0,0">YOUR NAME / GROUP</text>
-<text id="Second_line" x="1222" y="1332.295" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="203.7" text-anchor="middle" fill="#ffffff" data-cmyk="0,0,0,0">SECOND LINE - EST. 2026</text>
+<text id="Second_line" x="1222" y="1332.295" font-family="'Bebas Neue', sans-serif" font-weight="400" font-size="203.7" text-anchor="middle" fill="#ffffff" data-cmyk="0,0,0,0">SECOND LINE - EST. 2026</text>
 </g>
 <g id="CUT" inkscape:groupmode="layer" inkscape:label="CUT">
 <rect x="3" y="3" width="2438" height="1524" fill="none" stroke="#ff0000" stroke-width="0.088"/>
@@ -36,6 +36,6 @@
 <circle cx="2428.5" cy="515.167" r="6" fill="none" stroke="#ff6600" stroke-width="2.286" data-cmyk="0,60,100,0"/>
 <circle cx="2428.5" cy="1014.833" r="6" fill="none" stroke="#ff6600" stroke-width="2.286" data-cmyk="0,60,100,0"/>
 <circle cx="2428.5" cy="1514.5" r="6" fill="none" stroke="#ff6600" stroke-width="2.286" data-cmyk="0,60,100,0"/>
-<text x="1222" y="41.583" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="10.583" text-anchor="middle" fill="#4d4d4d" data-cmyk="0,0,0,70">TRIM 2438 x 1524 MM - BLEED 3 MM - SAFE 25 MM - EYELETS ORANGE</text>
+<text x="1222" y="41.583" font-family="'Bebas Neue', sans-serif" font-weight="400" font-size="10.583" text-anchor="middle" fill="#4d4d4d" data-cmyk="0,0,0,70">TRIM 2438 x 1524 MM - BLEED 3 MM - SAFE 25 MM - EYELETS ORANGE</text>
 </g>
 </svg>

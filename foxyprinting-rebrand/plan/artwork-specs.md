@@ -66,6 +66,6 @@ Sizes are for the Foxy Pop theme at its default 1360px page width. Supply them a
 - **Eyelets:** templates mark them 12.5 mm in from the edge (middle of the binding), at each corner plus evenly spaced, no more than 500 mm apart (3x2: 8, 5x3: 14, 8x5: 22). **ASK:** real count and spacing.
 - **Resolution:** 300 dpi is impractical at 8 ft; large-format default used: 150 dpi at full size (3x2, 5x3), 100 dpi (8x5). **ASK** (confirm with the RIP/printer).
 - **Printer / roll width: ASK.** An 8x5 flag needs a roll at least 1530 mm wide (or panels); the 24 in (610 mm) sublimation printer in `large-format-plan.md` can't print even the 3x2 with bleed in one piece. Mirroring, ICC profile and fabric shrinkage: **ASK**.
-- Layers: Artwork (placeholder background), Text (live "YOUR NAME / GROUP" + second line, Bebas Neue / Barlow Condensed, OFL), CUT (red RGB 255,0,0, 0.25 pt trim path), Guides (hidden, non-printing: bleed, trim, safe, eyelets). CMYK-safe colours.
+- Layers: Artwork (placeholder background), Text (live "YOUR NAME / GROUP" + second line, Bebas Neue, OFL), CUT (red RGB 255,0,0, 0.25 pt trim path), Guides (hidden, non-printing: bleed, trim, safe, eyelets). CMYK-safe colours.
 - Never add a real club crest, league logo or trophy artwork without a licence.
 - Generator: `tools/artwork/terrace_flag_template.py` (change `BLEED`, `SAFE`, `EYELET_*` and re-run once the owner answers).

@@ -27,8 +27,8 @@ THE TEMPLATES (one shared set, the same in every flag folder)
 LAYERS
 - Artwork: placeholder background in navy/white/navy bands with a dashed "LOGO / PHOTO" panel. Replace it with
   the flag design above (Black and white vertical stripes with two white text bands). Keep the design running into the bleed.
-- Text: live, editable text - "YOUR NAME / GROUP" (Bebas Neue) and "SECOND LINE - EST. 2026" (Barlow Condensed
-  SemiBold). Type the customer's wording; keep it inside the magenta safe line.
+- Text: live, editable text - "YOUR NAME / GROUP" and "SECOND LINE - EST. 2026", both in Bebas Neue (OFL).
+  Swap in another open-licence font if you like. Type the customer's wording; keep it inside the magenta safe line.
 - CUT: red trim path, 0.25 pt stroke, RGB 255,0,0, no fill, exactly on the trim line. Never prints.
 - Guides (hidden, non-printing): green dashed = bleed edge, cyan = trim, magenta dashed = 25 mm safe area,
   orange circles = eyelets.

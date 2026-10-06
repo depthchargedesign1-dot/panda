@@ -63,15 +63,15 @@ EYELET_D = 12.0      # marker diameter
 EYELET_MAX_GAP = 500.0  # ASK: max spacing between eyelets
 CUT_W_PT = 0.25
 
-FONTS = {
+FONTS = {   # one open-licence font, so the ASCII PDFs stay small enough to save to Dropbox as text
     'bebas': ('BebasNeue-Regular.ttf', 'Bebas Neue', 400, 'https://fonts.google.com/specimen/Bebas+Neue',
               'https://github.com/google/fonts/raw/main/ofl/bebasneue/BebasNeue-Regular.ttf'),
-    'barlow-sb': ('BarlowCondensed-SemiBold.ttf', 'Barlow Condensed', 600, 'https://fonts.google.com/specimen/Barlow+Condensed',
-                  'https://github.com/google/fonts/raw/main/ofl/barlowcondensed/BarlowCondensed-SemiBold.ttf'),
+}
+SHOPIFY_FONT_URLS = {  # copies in Shopify Files (fileCreate from the Google Fonts GitHub .ttf, 6 Oct 2026)
+    'Bebas Neue': 'https://cdn.shopify.com/s/files/1/1774/9115/files/BebasNeue-Regular.ttf?v=1791283074',
 }
 FONT_COPYRIGHT = {
     'Bebas Neue': 'Copyright 2019 The Bebas Neue Project Authors (https://github.com/dharmatype/Bebas-Neue)',
-    'Barlow Condensed': 'Copyright 2017 The Barlow Project Authors (https://github.com/jpt/barlow)',
 }
 for key, (fn, *_r) in FONTS.items():
     pdfmetrics.registerFont(TTFont(key, str(FONT_DIR / fn)))
@@ -226,8 +226,8 @@ def flag_doc(tw, th):
     r = band * 0.42
     d.add('Artwork', circle(cx, H / 2, r, stroke=PLACEHOLDER, sw=th * 0.003, dash=(th * 0.012, th * 0.008)))
     lab = th * 0.022 / PT
-    d.add('Artwork', text(cx, H / 2 - th * 0.005, 'LOGO / PHOTO', 'barlow-sb', lab, PLACEHOLDER))
-    d.add('Artwork', text(cx, H / 2 + th * 0.03, 'REPLACE BACKGROUND WITH THE FLAG DESIGN', 'barlow-sb', lab * 0.55, PLACEHOLDER))
+    d.add('Artwork', text(cx, H / 2 - th * 0.005, 'LOGO / PHOTO', 'bebas', lab, PLACEHOLDER))
+    d.add('Artwork', text(cx, H / 2 + th * 0.03, 'REPLACE BACKGROUND WITH THE FLAG DESIGN', 'bebas', lab * 0.55, PLACEHOLDER))
 
     # Text: live, editable lines, centred in the top and bottom bands, inside the safe area
     l1 = 'YOUR NAME / GROUP'
@@ -235,8 +235,8 @@ def flag_doc(tw, th):
     d.add('Text', text(cx, BLEED + SAFE + (band - BLEED - SAFE) / 2 + l1_pt * PT * 0.35, l1, 'bebas', l1_pt, WHITE,
                        id_='Text_on_the_flag'))
     l2 = 'SECOND LINE - EST. 2026'
-    l2_pt = fit_size(l2, 'barlow-sb', sw_ * 0.8, (band - SAFE) * 0.42 / PT)
-    d.add('Text', text(cx, 2 * band + (band - SAFE - BLEED) / 2 + l2_pt * PT * 0.35, l2, 'barlow-sb', l2_pt, WHITE,
+    l2_pt = fit_size(l2, 'bebas', sw_ * 0.8, (band - SAFE) * 0.42 / PT)
+    d.add('Text', text(cx, 2 * band + (band - SAFE - BLEED) / 2 + l2_pt * PT * 0.35, l2, 'bebas', l2_pt, WHITE,
                        id_='Second_line'))
 
     # CUT: red 0.25 pt path on the trim line
@@ -252,7 +252,7 @@ def flag_doc(tw, th):
         d.add('Guides', circle(BLEED + ex, BLEED + ey, EYELET_D / 2, stroke=GUIDE_EYELET, sw=max(g, 0.8)))
     gl = th * 0.012 / PT
     d.add('Guides', text(cx, s0y + min(gl, 30) * PT + 3, 'TRIM %g x %g MM - BLEED %g MM - SAFE %g MM - EYELETS ORANGE'
-                         % (tw, th, BLEED, SAFE), 'barlow-sb', min(gl, 30), GUIDE_TEXT))
+                         % (tw, th, BLEED, SAFE), 'bebas', min(gl, 30), GUIDE_TEXT))
     return d
 
 
@@ -410,6 +410,7 @@ def fonts_txt():
         out += ['- %s (%s, weight %d)' % (fam, fn, weight),
                 '  Google Fonts page: %s' % page,
                 '  Direct .ttf download: %s' % raw,
+                '  Shopify Files copy: %s' % SHOPIFY_FONT_URLS.get(fam, '(not uploaded)'),
                 '  %s' % FONT_COPYRIGHT[fam], '']
     out += ['Install the fonts before opening the SVG/PDF in Illustrator, otherwise the live text is substituted.',
             'A copy of each font file is also kept in the website repo: foxyprinting-rebrand/tools/artwork/assets/fonts/']
@@ -419,7 +420,7 @@ def fonts_txt():
 def ofl_txt():
     body = (FONT_DIR / 'OFL.txt').read_text(encoding='utf-8')
     body = body[body.index('This Font Software is licensed'):]
-    head = '\n'.join(FONT_COPYRIGHT[f] for f in ('Bebas Neue', 'Barlow Condensed'))
+    head = '\n'.join(FONT_COPYRIGHT.values())
     return head + '\n\n' + body
 
 
@@ -461,8 +462,8 @@ THE TEMPLATES (one shared set, the same in every flag folder)
 LAYERS
 - Artwork: placeholder background in navy/white/navy bands with a dashed "LOGO / PHOTO" panel. Replace it with
   the flag design above ({design}). Keep the design running into the bleed.
-- Text: live, editable text - "YOUR NAME / GROUP" (Bebas Neue) and "SECOND LINE - EST. 2026" (Barlow Condensed
-  SemiBold). Type the customer's wording; keep it inside the magenta safe line.
+- Text: live, editable text - "YOUR NAME / GROUP" and "SECOND LINE - EST. 2026", both in Bebas Neue (OFL).
+  Swap in another open-licence font if you like. Type the customer's wording; keep it inside the magenta safe line.
 - CUT: red trim path, 0.25 pt stroke, RGB 255,0,0, no fill, exactly on the trim line. Never prints.
 - Guides (hidden, non-printing): green dashed = bleed edge, cyan = trim, magenta dashed = 25 mm safe area,
   orange circles = eyelets.
