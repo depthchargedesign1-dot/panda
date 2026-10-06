@@ -1,4 +1,7 @@
-"""Honest titles for reproduction 'signed' prints: the signature is printed, not hand-signed."""
+"""Honest titles for reproduction 'signed' prints: the signature is printed, not hand-signed.
+
+Titles say "Printed Signature"; "Reproduction Print" is said in the description, not the title (owner, 6 Oct 2026).
+"""
 import re
 
 def fix_title(title, product_type=""):
@@ -33,7 +36,7 @@ def fix_title(title, product_type=""):
         key = seg.strip().lower()
         if key and key not in seen and not any(key in s2 for s2 in seen):
             parts.append(seg.strip()); seen.add(key)
+    # Owner, 6 Oct 2026: "Reproduction Print" no longer goes in titles (it hurt sales); the description says it instead.
+    parts = [s for s in parts if not re.fullmatch(r"(a\s+)?reproduction\s+print", s, flags=re.I)]
     t = " – ".join(parts)
-    if "reproduction" not in t.lower():
-        t += " – Reproduction Print"
     return t
