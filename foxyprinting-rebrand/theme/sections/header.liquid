@@ -51,7 +51,7 @@
 
     <form action="{{ routes.search_url }}" method="get" role="search" class="header-search">
       <label for="HeaderSearch" class="visually-hidden">{{ 'general.search' | t }}</label>
-      <input id="HeaderSearch" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ section.settings.search_placeholder }}" autocomplete="off">
+      <input id="HeaderSearch" type="search" name="q" value="{{ search.terms | remove: '&quot;' | remove: '"' | escape }}" placeholder="{{ section.settings.search_placeholder }}" autocomplete="off">
       <input type="hidden" name="options[prefix]" value="last">
       <button type="submit" aria-label="{{ 'general.search' | t }}">{% render 'icon', name: 'search' %}</button>
     </form>

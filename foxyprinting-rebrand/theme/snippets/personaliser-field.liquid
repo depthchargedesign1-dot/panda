@@ -5,7 +5,11 @@
 {%- liquid
   assign field_id = 'Personalise-' | append: index
   assign prop = 'properties[' | append: label | append: ']'
-  assign ph = placeholder
+  comment
+    The translated placeholder already HTML-escapes the label (Child's → Child&#39;s), so it must not be escaped
+    again; a placeholder typed in the theme editor is escaped here instead.
+  endcomment
+  assign ph = placeholder | escape
   if ph == blank
     assign ph = 'products.personaliser.placeholder' | t: label: label
   endif
@@ -21,9 +25,9 @@
       </label>
     {%- when 'textarea' -%}
       <label for="{{ field_id }}">{{ label }} <span class="field__count" data-count>0/{{ max }}</span></label>
-      <textarea id="{{ field_id }}" name="{{ prop }}" maxlength="{{ max }}" placeholder="{{ ph | escape }}" data-field data-field-kind="textarea" data-field-label="{{ label | escape }}" {% if required %}data-required{% endif %}></textarea>
+      <textarea id="{{ field_id }}" name="{{ prop }}" maxlength="{{ max }}" placeholder="{{ ph }}" data-field data-field-kind="textarea" data-field-label="{{ label | escape }}" {% if required %}data-required{% endif %}></textarea>
     {%- else -%}
       <label for="{{ field_id }}">{{ label }} <span class="field__count" data-count>0/{{ max }}</span></label>
-      <input type="text" id="{{ field_id }}" name="{{ prop }}" maxlength="{{ max }}" placeholder="{{ ph | escape }}" autocomplete="off" data-field data-field-kind="text" data-field-label="{{ label | escape }}" {% if required %}data-required{% endif %}>
+      <input type="text" id="{{ field_id }}" name="{{ prop }}" maxlength="{{ max }}" placeholder="{{ ph }}" autocomplete="off" data-field data-field-kind="text" data-field-label="{{ label | escape }}" {% if required %}data-required{% endif %}>
   {%- endcase -%}
 </div>

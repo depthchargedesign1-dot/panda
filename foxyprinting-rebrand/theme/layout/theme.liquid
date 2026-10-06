@@ -28,6 +28,8 @@
 
     {{ content_for_header }}
 
+    {% render 'microdata-schema' %}
+
     {%- liquid
       assign heading_font = settings.type_heading_font
       assign body_font = settings.type_body_font
@@ -87,6 +89,18 @@
         },
         moneyFormat: {{ shop.money_format | json }}
       };
+    </script>
+    <script>
+      /* Store search: Shopify matches parts of words and typos ("bin" also finds Robin, Fabinho, Philbin…), so a
+         short search returned 1,000 loose results. Search for the exact words first; the results page falls back
+         to the loose search when nothing matches exactly. The in-collection search box is left alone. */
+      document.addEventListener('submit', function (e) {
+        var form = e.target;
+        if (!form.matches || !form.matches('form[role="search"]') || form.hasAttribute('data-col-search-form')) return;
+        var q = form.querySelector('input[name="q"]');
+        if (!q || !q.value.trim() || q.value.indexOf('"') !== -1) return;
+        q.value = q.value.trim().split(/\s+/).map(function (w) { return '"' + w + '"'; }).join(' ');
+      });
     </script>
   </body>
 </html>
