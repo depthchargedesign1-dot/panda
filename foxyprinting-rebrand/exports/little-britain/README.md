@@ -54,3 +54,11 @@ So no `Fonts/` subfolder is needed in the Dropbox folders. The listing photos (`
 - Pair + Characters Pack: Ready to Wear = cut to shape, eye holes cut, elastic and sticky tabs supplied (not fitted); DIY = print only with elastic and tabs supplied. Pack meta "elastic fitted" fixed; pack bullet "less than the price of one shop-bought mask" removed (unbacked).
 - `MOVIES`/`mask-film-stars` removed and `mask-comedians` + `TV STARS` ensured on Pack 1, Pack 2, Lou Todd, Walliams 2 and 4.
 - Main-image alt text on both 3-packs, Andy, Bubbles and all four Walliams masks.
+
+### Main images (6 Oct 2026, `lb_main_image.py`)
+Owner's rule: a product with 2+ masks has, as its first image, the masks side by side on a clean background with no text.
+Run in the Higgsfield sandbox: `python3 lb_main_image.py SRC_DIR OUT_DIR` (sources via Dropbox download links, paths in the script docstring; same cut-out as `lb_build.py`).
+2048x2048, light grey (#F6F6F4), soft shadow, all masks the same height. Old text-labelled `-mask-01` first images deleted; all other images kept.
+- Pair: Shopify MediaImage 69866572972413, https://cdn.shopify.com/s/files/1/1774/9115/files/4d34c067-30bc-4fcd-8f54-be9ea1ba27f2.jpg (md5 a32daece9e398334dc2e2559ea61f592)
+- Pack (2x2): Shopify MediaImage 69866573005181, https://cdn.shopify.com/s/files/1/1774/9115/files/9efe89a0-e0a8-4e67-bb3e-61c968cf8c90.jpg (md5 da4b59c2d8433a81488150a8cd4334b2)
+Dropbox: `MAIN IMAGE - DOWNLOAD LINK.txt` in each product's `/AI DESIGNS 2026/<title> - <SKU>/` folder.
