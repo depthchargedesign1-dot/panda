@@ -34,3 +34,10 @@ Source resolution at A4: Vicky and Andy 300 dpi; Lou ~100 dpi; Bubbles ~48 dpi (
 ## Fonts
 The production artwork (print/cut PDFs and SVGs, both masks in the pair and all four in the pack) uses **no fonts**: only the face image and vector cut lines.
 So no `Fonts/` subfolder is needed in the Dropbox folders. The listing photos (`-mask-01`, `-02-back`, `-03-front-back`) have labels in Montserrat Bold/Regular (SIL OFL 1.1, Google Fonts), but they are flattened JPEGs, not editable artwork.
+
+## Copy fixes (6 Oct 2026, `copy-fixes/`)
+`before.json` (live state), `build.py` (new copy + checks), `after.json`, `mutation.graphql` + `mutation-variables.json` (one aliased productUpdate/tagsAdd push), `verify.json` (re-read).
+- Character masks (Vicky, Lou, Andy, Bubbles): combined disclaimer (Little Britain, BBC, Matt Lucas, David Walliams). Lou fully rewritten in house format; Andy and Bubbles rewritten (no "film star"/"Oscars"; "Pipkin").
+- David Walliams: 9530623624 + 4328415592523 now say he played Lou; 8225435910395 rewritten from old copy; 9530620744 SEO no longer has "Little Britain"; disclaimers say "him".
+- `third-party-name` added to 9530623624, 4328415592523, 8225435910395, 8249158926587 (Matt Lucas).
+- 3-packs (8125549805819, 8195091595515) untouched.
