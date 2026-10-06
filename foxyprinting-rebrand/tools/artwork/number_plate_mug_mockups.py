@@ -16,7 +16,7 @@ from PIL import Image
 
 N = 2048
 MUG_R_MM = 41.0            # 11oz mug, ~82 mm diameter
-TEX_W_MM, TEX_H_MM = 86.0, 22.0   # plate 84 x 20 mm + 1 mm margin (textures)
+TEX_W_MM, TEX_H_MM = 200.0, 70.0  # full wrap print area (textures/<sku>-<code>-wrap.png)
 
 # body box as fractions of the image: left, right, top, bottom; sag = rim-ellipse curvature
 SCENES = {
@@ -58,7 +58,7 @@ def sample(tex, xs, ys):
     return out
 
 
-def composite(base, scene, tex, flip=False):
+def composite(base, scene, tex, flip=False, centre_mm=100.0):
     img = base.transpose(Image.FLIP_LEFT_RIGHT) if flip else base
     arr = np.asarray(img).astype(np.float32) / 255
     lum = arr @ np.array([0.299, 0.587, 0.114], np.float32)
@@ -69,7 +69,7 @@ def composite(base, scene, tex, flip=False):
     xl, xr = refine(lum, int(l * N), yA, yB), refine(lum, int(r * N), yA, yB)
     cx, R = (xl + xr) / 2, (xr - xl) / 2
     pxmm = R / MUG_R_MM
-    yc = (t + b) / 2 * N + 0.03 * (b - t) * N        # print zone sits a touch below the rim
+    yc = (t + b) / 2 * N + 0.02 * (b - t) * N        # print zone centred on the body
     e = scene["sag"] * R
     hh = int(TEX_H_MM / 2 * pxmm + e + 4)
     X0, X1 = int(xl) + 1, int(xr)
@@ -80,7 +80,7 @@ def composite(base, scene, tex, flip=False):
     arc = th * MUG_R_MM
     ymm = (ys - yc - e * np.cos(th)) / pxmm
     th_, tw_ = tex.shape[:2]
-    tx = (arc + TEX_W_MM / 2) / TEX_W_MM * tw_
+    tx = (arc + centre_mm) / TEX_W_MM * tw_   # centre_mm = point of the wrap facing the camera
     ty = (ymm + TEX_H_MM / 2) / TEX_H_MM * th_
     s = sample(tex, tx, ty)
     rgb, a = s[..., :3], s[..., 3:4]
@@ -103,30 +103,33 @@ def main(scenes_dir, tex_dir, products_path, out):
     manifest = []
     for i, p in enumerate(json.load(open(products_path))):
         sb = p["sku_base"]
-        for code in CODES:
+        for code in CODES:   # one mockup per country: front-on, reg text centred, plate curving away at the sides
             fn = f"{sb}-{code}-mockup.jpg"
-            composite(bases["s0"], SCENES["s0"], tex(sb, code, "rear")).save(os.path.join(out, fn), quality=88)
+            composite(bases["s0"], SCENES["s0"], tex(sb, code, "wrap"), centre_mm=112).save(os.path.join(out, fn), quality=88)
             manifest.append(dict(sku=sb, file=fn, kind="mockup", country=NAMES[code]))
-        # both sides: front (white) plate on a handle-left mug + rear (yellow) plate on a handle-right mug
-        a = composite(bases["s0"], SCENES["s0"], tex(sb, "GB", "front"), flip=True)
-        b = composite(bases["s0"], SCENES["s0"], tex(sb, "GB", "rear"))
+        # wrap view: two mugs turned so you see the band end and the far end of the plate going round
+        a = composite(bases["s0"], SCENES["s0"], tex(sb, "GB", "wrap"), flip=True, centre_mm=45)
+        b = composite(bases["s0"], SCENES["s0"], tex(sb, "GB", "wrap"), centre_mm=160)
         crop = lambda im, l, r: im.crop((int(l * N), 0, int(r * N), N))
         a, b = crop(a, 0.08, 0.80), crop(b, 0.20, 0.92)
         w = a.width + b.width
-        canvas = Image.new("RGB", (w, w), (255, 255, 255))
-        sc = Image.new("RGB", (w, N), (255, 255, 255))
-        sc.paste(a, (0, 0)); sc.paste(b, (a.width, 0))
-        canvas.paste(sc, (0, (w - N) // 2))
-        canvas = canvas.resize((N, N), Image.LANCZOS)
-        fn = f"{sb}-both-sides.jpg"
-        canvas.save(os.path.join(out, fn), quality=88)
-        manifest.append(dict(sku=sb, file=fn, kind="both", country="GB"))
+        sc = Image.new("RGB", (w, N), (255, 255, 255)); sc.paste(a, (0, 0)); sc.paste(b, (a.width, 0))
+        canvas = Image.new("RGB", (w, w), (255, 255, 255)); canvas.paste(sc, (0, (w - N) // 2))
+        fn = f"{sb}-wrap-views.jpg"
+        canvas.resize((N, N), Image.LANCZOS).save(os.path.join(out, fn), quality=88)
+        manifest.append(dict(sku=sb, file=fn, kind="wrap-views", country="GB"))
+        # flat full wrap
+        flat = Image.new("RGB", (N, N), (255, 255, 255))
+        t = Image.open(os.path.join(tex_dir, f"{sb}-GB-wrap.png")).convert("RGBA")
+        t = t.resize((N - 160, int(t.height * (N - 160) / t.width)), Image.LANCZOS)
+        flat.paste(t, (80, (N - t.height) // 2), t)
+        fn = f"{sb}-flat-wrap.jpg"
+        flat.save(os.path.join(out, fn), quality=90)
+        manifest.append(dict(sku=sb, file=fn, kind="flat", country="GB"))
         for k, sc_key in enumerate(LIFESTYLE[i]):
-            if not SCENES[sc_key]["box"]:
-                continue
             code = CODES[(i + k) % 5]
             fn = f"{sb}-life-{k + 1}.jpg"
-            composite(bases[sc_key], SCENES[sc_key], tex(sb, code, "rear")).save(os.path.join(out, fn), quality=88)
+            composite(bases[sc_key], SCENES[sc_key], tex(sb, code, "wrap"), centre_mm=(95, 112, 80)[k]).save(os.path.join(out, fn), quality=88)
             manifest.append(dict(sku=sb, file=fn, kind="lifestyle", country=NAMES[code], scene=SCENES[sc_key]["name"]))
     json.dump(manifest, open(os.path.join(out, "manifest.json"), "w"), indent=1)
     print(len(manifest), "images")
