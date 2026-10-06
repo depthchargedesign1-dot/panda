@@ -40,7 +40,7 @@ Sizes are for the Foxy Pop theme at its default 1360px page width. Supply them a
 
 | Item | Size | Notes |
 |---|---|---|
-| 11oz white mug wrap | **200 × 85 mm** trim + **3 mm bleed** each edge = **206 × 91 mm** page | Safe area 3 mm inside trim. 300 dpi for any raster. Standard 11oz sublimation template, used for the number plate mugs (Oct 2026). **ASK** the owner to confirm against their mug blanks/press. |
+| 11oz white mug wrap | **200 × 70 mm** print area (owner, 6 Oct 2026) + **3 mm bleed** each edge = **206 × 76 mm** page | Safe area 3 mm inside trim. 300 dpi for any raster. Full-wrap designs (e.g. the number plate mugs) run the whole 200 mm width around the mug. |
 
 - Mirroring: supply unmirrored masters; a "- MIRRORED.pdf" is included for drivers/RIPs that don't mirror sublimation transfers automatically.
 - Generator example: `tools/artwork/number_plate_mugs.py`.
