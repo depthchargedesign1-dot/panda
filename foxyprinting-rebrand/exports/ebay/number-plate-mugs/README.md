@@ -1,16 +1,16 @@
 # eBay upload: funny number plate mugs
 
-> **ON HOLD (6 Oct 2026): do not upload yet.** The design changed to one full-wrap plate (200 x 70 mm). The picture URLs in this CSV
-> still show the old two-plate mockups, and the 6 other designs have no Shopify images yet. Once the new full-wrap images are on
-> Shopify, update `exports/number-plate-mugs/shopify-image-urls.json` and re-run the command below to rebuild the CSV for all 10.
+> **Ready to upload (updated 6 Oct 2026).** All 10 designs now use the single full-wrap plate design (200 x 70 mm), and the
+> picture URLs point at the new Shopify images (rendered locally with `tools/artwork/number_plate_mug_local_mockups.py`).
 
 File: `ebay-number-plate-mugs-upload.csv` (eBay File Exchange / Seller Hub "Reports > Uploads" format, eBay UK, GBP).
 
-Contains the 4 mugs that are live on Shopify with images (BR3W UP, B15 CU1T, 2 SUG4RS, D3C4F N0).
+Contains all 10 mugs (BR3W UP, B15 CU1T, 2 SUG4RS, D3C4F N0, BO55 MUG, WFH 4EVA, NAP T1ME, D4D T4X1, F1X3D 1T, SN00 ZED), all live on Shopify.
 Each listing is one parent row plus 5 variation rows (Country = GB, Scotland, Wales, Northern Ireland, Ireland), £7.99 each,
 custom label = Shopify SKU, pictures = Shopify CDN URLs (the country picture is attached to each variation).
-The other 6 designs are left out until their Shopify images exist; re-run
-`python3 tools/artwork/number_plate_mugs.py ebay exports/number-plate-mugs/shopify-image-urls.json` after adding their URLs.
+Parent pictures, in order: GB mockup, Scotland, Wales, Northern Ireland, Ireland, the two-mug "both ends" view, and the flat plate artwork.
+The URLs come from the Shopify API and are stored in `exports/number-plate-mugs/shopify-image-urls.json`. If the images change, update that file and
+re-run `python3 tools/artwork/number_plate_mugs.py ebay exports/number-plate-mugs/shopify-image-urls.json`.
 
 Item specifics: Brand Foxy Printing, Type Mug, Material Ceramic, Capacity 11oz, Colour White, Theme Novelty,
 Features Dishwasher Safe | Microwave Safe, Country of Manufacture United Kingdom. Condition: New (1000).
