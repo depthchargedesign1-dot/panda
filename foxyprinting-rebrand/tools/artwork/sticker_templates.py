@@ -259,7 +259,7 @@ def write_pdf(doc, path, title, guides_on):
 def dehint(font_bytes):
     import io
     from fontTools.ttLib import TTFont as FTFont
-    f = FTFont(io.BytesIO(font_bytes))
+    f = FTFont(io.BytesIO(font_bytes), recalcTimestamp=False)
     for tag in ('fpgm', 'prep', 'cvt ', 'gasp', 'hdmx', 'LTSH', 'VDMX'):
         if tag in f:
             del f[tag]
