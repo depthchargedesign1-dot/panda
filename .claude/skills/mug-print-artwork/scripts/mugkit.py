@@ -629,6 +629,7 @@ def cmd_build(spec_path, outdir, sets, do_mockups=False, do_zip=False):
     spec = json.load(open(spec_path))
     values = dict(spec.get("defaults", {}))
     values.update(sets)
+    outdir = os.path.abspath(outdir)
     os.makedirs(outdir, exist_ok=True)
     svg, L, fonts, used = build_svg(spec, os.path.dirname(os.path.abspath(spec_path)), values)
     fonts.add("Montserrat:600")
