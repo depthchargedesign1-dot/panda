@@ -64,10 +64,10 @@ def main(out, faces):
     tw = d.textlength(head, font=font)
     d.text(((W - tw) / 2, 180), head, font=font, fill=(255, 255, 255), anchor="lm")
     # faces 3 x 2
-    cells = [(W * (i % 3 * 2 + 1) / 6, 360 + 400 + (i // 3) * 760) for i in range(6)]
+    cells = [(W * (i % 3 * 2 + 1) / 6, 360 + 385 + (i // 3) * 715) for i in range(6)]
     angles = [-5, 3, -3, 4, -4, 5]
     for (cx, cy), path, a in zip(cells, faces, angles):
-        place(canvas, cutout(path), cx, cy, 600, 700, a)
+        place(canvas, cutout(path), cx, cy, 590, 650, a)
     # footer band
     d.rectangle([0, H - 170, W, H], fill=INK)
     sub = "ANY CELEBRITY  •  ANY FACE  •  JUST TELL US WHO"

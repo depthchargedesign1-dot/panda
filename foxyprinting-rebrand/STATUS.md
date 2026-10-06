@@ -25,7 +25,7 @@ Last updated: 6 Oct 2026, evening.
 See `exports/IMPORT-SCHEDULE.md`. Order: SEO 02-CLEAN → age 01 → age 02-CLEAN → masks TEST then 01–04 → prints TEST then 01–04.
 
 ## Running or recently finished
-- Request Any Celebrity Face Mask (6 Oct): new title, copy and SEO; 6 trending celebrity mask photos attached first. Sex and City request mask ARCHIVED (owner asked).
+- Request Any Celebrity Face Mask (6 Oct): new title, copy and SEO; new main image "REQUEST A FACEMASK" with 6 faces (tools/request_mask_hero.py, exports/face-masks/2026-10-06-request-mask/). Sex and City request mask ARCHIVED (owner asked).
 - Mug sub-collections (done 6 Oct): new smart collection funny-number-plate-mugs (20 mugs, Online Store + Shop). 14 mug collections have new 1800x600 headers (`foxy.header_image`, live now) and `foxy.compact_header`; ALL MUGS has `foxy.subcollections`. 23 compact auto banners `foxy-header-<group>-compact.jpg` added to Files (originals kept). Theme copy "Foxy Pop 2026 – mug tiles" `189453861245` (duplicated from live "field fix", Infinite Options embed on) waits for the owner to publish. Record: `exports/mug-subheaders/manifest.json`.
 - Rude number plate mugs: live (website and Shop only). Teaser ads in `exports/social/2026-10-06-rude-mugs/`, not posted.
 - TikTok ads (mug, masks, Wales flag): made, not posted. See `exports/social/2026-10-06-tiktok-ads.md`.
@@ -35,7 +35,6 @@ See `exports/IMPORT-SCHEDULE.md`. Order: SEO 02-CLEAN → age 01 → age 02-CLEA
 Shopify ✅ · Dropbox ✅ (never delete) · Google Drive ✅ · Gmail ✅ (drafts only, never send) · Higgsfield ✅ (TikTok needs the owner's form) · GitHub ✅ (works in Accept edits mode) · Postiz ⏳ (add custom connector `https://api.postiz.com/mcp/<API key>`) · eBay/Amazon/BigCommerce ❌ (CSV/xlsx files only).
 
 ## Known blocks (don't retry; ask the owner)
-- Network policy blocks `*.dl.dropboxusercontent.com` (Dropbox file downloads, 403) as well as cdn.shopify.com. Owner can add both under the environment's Network access > Allowed domains. `tools/request_mask_hero.py` (Request a Facemask main image) is ready and waits on this.
 - Shopify MCP blocks unpublish, bulk mutations, and probably delete.
 - Uploading local files to Higgsfield from here is blocked, but the Higgsfield sandbox can download, edit and PUT files to a `media_upload` URL; then `fileCreate` from that Higgsfield URL. Shopify staged URLs must never go to Higgsfield.
-- cdn.shopify.com, foxyprinting.co.uk and Higgsfield CloudFront are not reachable from this machine.
+- foxyprinting.co.uk and Higgsfield CloudFront are not reachable from this machine. cdn.shopify.com and *.dl.dropboxusercontent.com ARE allowed now (owner added them 6 Oct): download Dropbox art with download_link + local curl, render locally, upload with stagedUploadsCreate (PUT, Content-Type header only) + productCreateMedia.
