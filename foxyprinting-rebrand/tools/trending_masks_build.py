@@ -150,6 +150,7 @@ def body_for(p):
         body = re.sub(r'(<p class="disclaimer">.*?)(</p>)$', lambda m: m.group(1) + " " + html.escape(BAND, quote=False) + m.group(2), body, flags=re.S)
     if len(re.sub(r"<[^>]+>", " ", body).split()) > 350:  # keep within 180-350 words: drop the 5th bullet
         body = re.sub(r"(<h3>Why you'll love it</h3>\n<ul>\n(?:<li>.*?</li>\n){4})<li>.*?</li>\n", r"\1", body, count=1)
+    body = re.sub(r"(<p>|\. )A (RM|Andrew)\b", r"\1An \2", body)  # a/an
     return body, b, pk
 
 
@@ -235,7 +236,9 @@ def build(scratch):
         if p["cat"] == "music":
             tags += ["Music Fancy Dress"]
         if p.get("band"):
-            tags += ["K-Pop Face Mask"]
+            tags += ["K-Pop Face Mask", "kpop-masks"]  # kpop-masks drives the new K-pop smart collection (6 Oct)
+        if p["key"] == "Jerry Hall":
+            tags += ["traitors-masks"]  # The Celebrity Traitors 2026 cast
         if p.get("sport") == "nfl":
             tags += ["mask-nfl", "American Football"]
         tags = sorted(set(tags), key=str.lower)
