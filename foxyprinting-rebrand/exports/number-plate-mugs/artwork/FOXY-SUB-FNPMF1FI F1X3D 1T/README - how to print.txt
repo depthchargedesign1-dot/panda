@@ -12,6 +12,6 @@ Spec: 11oz white sublimation mug, wrap trim 200 x 85 mm, 3 mm bleed, 3 mm safe a
 51 mm and 149 mm from the left trim edge, so one plate sits each side of the handle.
 Please check the 200 x 85 mm wrap against your mug blanks/press before the first run.
 
-Font: Barlow Condensed SemiBold/Bold (SIL Open Font License 1.1) - in the Fonts folder.
+Font: Barlow Condensed Bold (SIL Open Font License 1.1) - in the Fonts folder.
 Install it before editing the SVG so the live text renders correctly.
 Wales flag artwork: flag-icons (MIT licence). The plate text is a novelty design, not a real registration.

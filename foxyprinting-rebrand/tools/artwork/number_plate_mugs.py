@@ -211,7 +211,7 @@ FM = None
 LS = 0.035  # letter spacing (em)
 
 
-def text_w(s, size, weight="600"):
+def text_w(s, size, weight="700"):
     return sum(FM[weight]["adv"][c] for c in s) * size + LS * size * (len(s) - 1)
 
 
@@ -271,7 +271,7 @@ def plate_svg(d, country, cx_trim, bg, uid):
     x0, x1 = L + bw + 2.2, R - 2.6
     cap = PLATE_H * 0.60
     for _ in range(40):
-        size = cap / FM["600"]["cap"]
+        size = cap / FM["700"]["cap"]
         g1, g2 = d["reg"]
         gap = 0.55 * cap
         tw = text_w(g1, size) + gap + text_w(g2, size)
@@ -280,7 +280,7 @@ def plate_svg(d, country, cx_trim, bg, uid):
         cap *= 0.97
     sx = x0 + ((x1 - x0) - tw) / 2
     base = cy + cap / 2
-    s.append(f'<g id="{uid}reg" font-family="Barlow Condensed" font-weight="600" font-size="{size:.3f}" '
+    s.append(f'<g id="{uid}reg" font-family="Barlow Condensed" font-weight="700" font-size="{size:.3f}" '
              f'letter-spacing="{LS * size:.3f}" fill="{INK}">'
              f'<text x="{sx:.3f}" y="{base:.3f}">{g1}</text>'
              f'<text x="{sx + text_w(g1, size) + gap:.3f}" y="{base:.3f}">{g2}</text></g>')
@@ -323,7 +323,7 @@ Spec: 11oz white sublimation mug, wrap trim 200 x 85 mm, 3 mm bleed, 3 mm safe a
 51 mm and 149 mm from the left trim edge, so one plate sits each side of the handle.
 Please check the 200 x 85 mm wrap against your mug blanks/press before the first run.
 
-Font: Barlow Condensed SemiBold/Bold (SIL Open Font License 1.1) - in the Fonts folder.
+Font: Barlow Condensed Bold (SIL Open Font License 1.1) - in the Fonts folder.
 Install it before editing the SVG so the live text renders correctly.
 Wales flag artwork: flag-icons (MIT licence). The plate text is a novelty design, not a real registration.
 """

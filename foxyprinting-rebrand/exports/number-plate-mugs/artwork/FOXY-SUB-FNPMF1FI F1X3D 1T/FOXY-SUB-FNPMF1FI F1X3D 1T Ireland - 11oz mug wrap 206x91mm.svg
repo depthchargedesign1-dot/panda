@@ -8,7 +8,7 @@
 <g clip-path="url(#frontc)"><rect id="frontband" x="8.000" y="34.500" width="12.0" height="22.0" fill="#003DA5"/></g>
 <svg x="9.400" y="37.100" width="9.200" height="4.600" viewBox="0 0 3 1.5"><rect width="1" height="1.5" fill="#169B62"/><rect x="1" width="1" height="1.5" fill="#FFFFFF"/><rect x="2" width="1" height="1.5" fill="#FF883E"/></svg>
 <text x="14.000" y="53.600" font-family="Barlow Condensed" font-weight="700" font-size="5.714" fill="#FFFFFF" text-anchor="middle">IRL</text>
-<g id="frontreg" font-family="Barlow Condensed" font-weight="600" font-size="18.857" letter-spacing="0.660" fill="#111111"><text x="28.375" y="52.100">F1X3D</text><text x="76.875" y="52.100">1T</text></g>
+<g id="frontreg" font-family="Barlow Condensed" font-weight="700" font-size="18.857" letter-spacing="0.660" fill="#111111"><text x="27.705" y="52.100">F1X3D</text><text x="77.054" y="52.100">1T</text></g>
 <rect x="9.100" y="35.600" width="89.800" height="19.800" rx="1.7" fill="none" stroke="#111111" stroke-width="0.45"/></g>
 <g id="rear" inkscape:groupmode="layer" inkscape:label="Rear plate (yellow)">
 <clipPath id="rearc"><rect x="106.000" y="34.500" width="92.0" height="22.0" rx="2.6"/></clipPath>
@@ -16,7 +16,7 @@
 <g clip-path="url(#rearc)"><rect id="rearband" x="106.000" y="34.500" width="12.0" height="22.0" fill="#003DA5"/></g>
 <svg x="107.400" y="37.100" width="9.200" height="4.600" viewBox="0 0 3 1.5"><rect width="1" height="1.5" fill="#169B62"/><rect x="1" width="1" height="1.5" fill="#FFFFFF"/><rect x="2" width="1" height="1.5" fill="#FF883E"/></svg>
 <text x="112.000" y="53.600" font-family="Barlow Condensed" font-weight="700" font-size="5.714" fill="#FFFFFF" text-anchor="middle">IRL</text>
-<g id="rearreg" font-family="Barlow Condensed" font-weight="600" font-size="18.857" letter-spacing="0.660" fill="#111111"><text x="126.375" y="52.100">F1X3D</text><text x="174.875" y="52.100">1T</text></g>
+<g id="rearreg" font-family="Barlow Condensed" font-weight="700" font-size="18.857" letter-spacing="0.660" fill="#111111"><text x="125.705" y="52.100">F1X3D</text><text x="175.054" y="52.100">1T</text></g>
 <rect x="107.100" y="35.600" width="89.800" height="19.800" rx="1.7" fill="none" stroke="#111111" stroke-width="0.45"/></g>
 <g id="Guides" inkscape:groupmode="layer" inkscape:label="Guides (do not print)" style="display:none" fill="none" stroke-width="0.2"><rect x="3.0" y="3.0" width="200.0" height="85.0" stroke="#00AEEF" stroke-dasharray="2,1"/><rect x="6.0" y="6.0" width="194.0" height="79.0" stroke="#EC008C" stroke-dasharray="1,1"/></g>
 </svg>

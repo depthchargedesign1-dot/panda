@@ -16,7 +16,7 @@
   </g>
 </svg>
 <text x="14.000" y="53.600" font-family="Barlow Condensed" font-weight="700" font-size="5.714" fill="#FFFFFF" text-anchor="middle">CYM</text>
-<g id="frontreg" font-family="Barlow Condensed" font-weight="600" font-size="18.857" letter-spacing="0.660" fill="#111111"><text x="24.792" y="52.100">2</text><text x="40.066" y="52.100">SUG4RS</text></g>
+<g id="frontreg" font-family="Barlow Condensed" font-weight="700" font-size="18.291" letter-spacing="0.640" fill="#111111"><text x="25.165" y="51.902">2</text><text x="40.219" y="51.902">SUG4RS</text></g>
 <rect x="9.100" y="35.600" width="89.800" height="19.800" rx="1.7" fill="none" stroke="#111111" stroke-width="0.45"/></g>
 <g id="rear" inkscape:groupmode="layer" inkscape:label="Rear plate (yellow)">
 <clipPath id="rearc"><rect x="106.000" y="34.500" width="92.0" height="22.0" rx="2.6"/></clipPath>
@@ -32,7 +32,7 @@
   </g>
 </svg>
 <text x="112.000" y="53.600" font-family="Barlow Condensed" font-weight="700" font-size="5.714" fill="#FFFFFF" text-anchor="middle">CYM</text>
-<g id="rearreg" font-family="Barlow Condensed" font-weight="600" font-size="18.857" letter-spacing="0.660" fill="#111111"><text x="122.792" y="52.100">2</text><text x="138.066" y="52.100">SUG4RS</text></g>
+<g id="rearreg" font-family="Barlow Condensed" font-weight="700" font-size="18.291" letter-spacing="0.640" fill="#111111"><text x="123.165" y="51.902">2</text><text x="138.219" y="51.902">SUG4RS</text></g>
 <rect x="107.100" y="35.600" width="89.800" height="19.800" rx="1.7" fill="none" stroke="#111111" stroke-width="0.45"/></g>
 <g id="Guides" inkscape:groupmode="layer" inkscape:label="Guides (do not print)" style="display:none" fill="none" stroke-width="0.2"><rect x="3.0" y="3.0" width="200.0" height="85.0" stroke="#00AEEF" stroke-dasharray="2,1"/><rect x="6.0" y="6.0" width="194.0" height="79.0" stroke="#EC008C" stroke-dasharray="1,1"/></g>
 </svg>

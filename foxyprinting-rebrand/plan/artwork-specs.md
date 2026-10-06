@@ -35,3 +35,12 @@ Sizes are for the Foxy Pop theme at its default 1360px page width. Supply them a
 ## AI-generated artwork (Higgsfield)
 - For the hero, generate at **3:2** (or 16:9 and accept a small crop).
 - For collection headers, generate at **21:9** and then crop to 3.75:1, which removes about 20% top and bottom. Alternatively, ask for "very wide panoramic, subject vertically centred" so nothing important is near the top or bottom edge.
+
+## Mugs: 11oz sublimation wrap (print files)
+
+| Item | Size | Notes |
+|---|---|---|
+| 11oz white mug wrap | **200 × 85 mm** trim + **3 mm bleed** each edge = **206 × 91 mm** page | Safe area 3 mm inside trim. 300 dpi for any raster. Standard 11oz sublimation template, used for the number plate mugs (Oct 2026). **ASK** the owner to confirm against their mug blanks/press. |
+
+- Mirroring: supply unmirrored masters; a "- MIRRORED.pdf" is included for drivers/RIPs that don't mirror sublimation transfers automatically.
+- Generator example: `tools/artwork/number_plate_mugs.py`.
