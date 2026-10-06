@@ -25,6 +25,7 @@ Last updated: 6 Oct 2026, evening.
 See `exports/IMPORT-SCHEDULE.md`. Order: SEO 02-CLEAN → age 01 → age 02-CLEAN → masks TEST then 01–04 → prints TEST then 01–04.
 
 ## Running or recently finished
+- Personalised Name Word Art (6 Oct): all 53 products (Pink/Blue Letter A–Z) now have Size options A4/A3/A2/A1 print only and A4/A3 Black or Silver framed (£4.99–£29.99, A. J. Green structure), new SKUs, mpn, sizes + Premium Display frames line in the description. The wider Word Art Prints collection (219 products: number, pet, hobby and "Pop Figures" word art) was NOT changed; ask the owner if they want the same. Record: `exports/word-art/2026-10-06-sizes/`.
 - New mask collections (6 Oct): YouTuber & Influencer (77), K-Pop (56), The Traitors (27). Smart collections on tags `youtuber-masks` / `kpop-masks` / `traitors-masks`, added to the Celebrity Face Masks menu. New BTS/Traitors/creator masks need the matching tag. Record: `exports/face-masks/2026-10-06-new-collections/`.
 - Trending 100 mask research (6 Oct): `exports/face-masks/2026-10-06-trending-100/`. 241 celebrities checked, 128 already sold, top 100 unsold ranked (18 have mask artwork in Dropbox). Nothing created yet; waiting for the owner to pick which to make.
 - Request Any Celebrity Face Mask (6 Oct): new title, copy and SEO; new main image "REQUEST A FACEMASK" with 6 faces (tools/request_mask_hero.py, exports/face-masks/2026-10-06-request-mask/). Sex and City request mask ARCHIVED (owner asked).
