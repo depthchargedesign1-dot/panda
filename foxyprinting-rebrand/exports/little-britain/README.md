@@ -49,3 +49,8 @@ So no `Fonts/` subfolder is needed in the Dropbox folders. The listing photos (`
 - Lou Todd: alt text on its 5 own images (fileUpdate; shared assembly/party images already had alt).
 - Lou and Andy pair: meta now "elastic supplied".
 - Matt Lucas: disclaimer says "him" and covers Little Britain, the BBC and The Great British Bake Off and its producers.
+
+### Last bits (6 Oct 2026; `build3.py`, `before3.json`, `after3.json`, `verify3.json`)
+- Pair + Characters Pack: Ready to Wear = cut to shape, eye holes cut, elastic and sticky tabs supplied (not fitted); DIY = print only with elastic and tabs supplied. Pack meta "elastic fitted" fixed; pack bullet "less than the price of one shop-bought mask" removed (unbacked).
+- `MOVIES`/`mask-film-stars` removed and `mask-comedians` + `TV STARS` ensured on Pack 1, Pack 2, Lou Todd, Walliams 2 and 4.
+- Main-image alt text on both 3-packs, Andy, Bubbles and all four Walliams masks.
