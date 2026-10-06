@@ -425,13 +425,15 @@ def ebay(urls_path):
             "ShippingProfileName", "ReturnProfileName", "PaymentProfileName"]
     rows = []
     for p in products:
+        if p["sku_base"] not in urls:  # no product images yet - leave out of the eBay file
+            continue
         u = urls[p["sku_base"]]
         short = f"Funny Number Plate Mug {p['reg']} {p['meaning']} Gift 11oz Ceramic UK Seller"
         if len(short) > 80:
             short = f"Funny Number Plate Mug {p['reg']} {p['meaning']} Gift 11oz Ceramic"
         assert len(short) <= 80, short
         desc = re.sub(r"\s+", " ", p["descriptionHtml"]).replace('"', "'")
-        rows.append({head[0]: "Add", "CustomLabel": p["sku_base"], "*Category": "177006",  # Home > Kitchen > Cups & Mugs (UK) - check in Seller Hub
+        rows.append({head[0]: "Add", "CustomLabel": p["sku_base"], "*Category": "",  # pick eBay UK "Cups & Mugs" in Seller Hub (category IDs change; not guessed)
                      "*Title": short, "*ConditionID": "1000", "*C:Brand": "Foxy Printing", "C:Type": "Mug",
                      "C:Material": "Ceramic", "C:Capacity": "11oz", "C:Colour": "White",
                      "C:Theme": "Novelty", "C:Features": "Dishwasher Safe|Microwave Safe",
