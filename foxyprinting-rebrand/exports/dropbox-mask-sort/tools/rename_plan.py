@@ -16,17 +16,17 @@ Inputs: phase3/list/all-p*.json (recursive listing). Outputs: rename-plan.csv, r
 phase3/rename-entries.json."""
 import csv, glob, json, os, re, sys, unicodedata, collections
 sys.path.insert(0, os.path.dirname(__file__))
-from rename_overrides import OVERRIDES, WORD_FIX
+from rename_overrides import OVERRIDES, WORD_FIX, PHRASE_FIX, JUNK_NAMES
 D = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMG = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".jpf"}
 
 # show / qualifier phrases that may sit inside a name without a dash. key regex -> display ("" = always drop)
 SHOWS = [
-    (r"coronation street", "Coronation Street"), (r"corrie", "Coronation Street"), (r"east ?enders", "EastEnders"),
-    (r"emmerdale", "Emmerdale"), (r"hollyoaks", "Hollyoaks"), (r"real house ?wives", "Real Housewives"),
+    (r"coronation street", "Coronation Street"), (r"corrie", "Coronation Street"), (r"east ?enders".replace(" ?", ""), "EastEnders"), (r"east enders", "EastEnders"),
+    (r"emmerdale", "Emmerdale"), (r"hollyoaks", "Hollyoaks"), (r"real house wives", "Real Housewives"), (r"real housewives", "Real Housewives"),
     (r"gangs of london", "Gangs of London"), (r"love island", "Love Island"), (r"towie", "TOWIE"),
-    (r"strictly come dancing", "Strictly Come Dancing"), (r"stric?kt?ly", "Strictly"), (r"strictlys", "Strictly"),
-    (r"x ?factor judges pack from", ""), (r"x ?factor", "X Factor"), (r"the chase", "The Chase"),
+    (r"strictly come dancing", "Strictly Come Dancing"), (r"stri(?:c|ck|k)t?lys?", "Strictly"),
+    (r"x factor judges pack from", ""), (r"x factor", "X Factor"), (r"xfactor", "X Factor"), (r"the chase", "The Chase"),
     (r"car chasers", "Car Chasers"), (r"i'?m a celeb(?:rity)?(?: get me (?:o?ut) of here)?", "I'm a Celebrity"),
     (r"get me ut of here", ""), (r"stranger things", "Stranger Things"), (r"the office", "The Office"),
     (r"mrs brown", "Mrs Brown's Boys"), (r"benidorm", "Benidorm"), (r"geordie shore", "Geordie Shore"),
@@ -40,8 +40,46 @@ SHOWS = [
     (r"darts", ""), (r"dancer", ""), (r"bollywood", ""), (r"music star", ""), (r"politician", ""),
     (r"footballer", ""), (r"golfer", ""), (r"lionesses", ""), (r"england", ""), (r"brazil", ""),
     (r"belgium", ""), (r"tennis", ""), (r"boxer", ""), (r"snooker", ""), (r"cricket(?:er)?", ""),
-    (r"f1", ""), (r"formula 1", ""), (r"wwe", ""), (r"rapper", ""), (r"singer", ""), (r"actor", ""), (r"actress", ""),
+    (r"f1", ""), (r"formula 1", ""), (r"wwe", ""), (r"rapper", ""), (r"singer", ""), (r"actor", ""), (r"actress", ""), (r"comedian", ""), (r"football", ""), (r"argentina", ""),
+    (r"wales", ""), (r"scotland", ""), (r"ireland", ""), (r"france", ""), (r"spain", ""), (r"germany", ""), (r"italy", ""),
+    (r"portugal", ""), (r"chile", ""), (r"costa rica", ""), (r"lioness", ""), (r"chef", ""), (r"presenter", ""),
 ]
+SHOWS += [(k, v) for k, v in [
+    (r"back ?street boys", "Backstreet Boys"), (r"little britain", "Little Britain"), (r"umbrella academy", "The Umbrella Academy"),
+    (r"sex and (?:the )?city", "Sex and the City"), (r"home (?:and|n) away", "Home and Away"), (r"made in chelsea", "Made in Chelsea"),
+    (r"better call saul", "Better Call Saul"), (r"breaking bad", "Breaking Bad"), (r"grey'?s anatomy", "Grey's Anatomy"),
+    (r"big little lies", "Big Little Lies"), (r"dragons den", "Dragons' Den"), (r"ted lasso", "Ted Lasso"),
+    (r"torvill and dean", ""), (r"the last kingdom", "The Last Kingdom"), (r"last kingdom", "The Last Kingdom"),
+    (r"keeping up appearences", "Keeping Up Appearances"), (r"peaky blinders", "Peaky Blinders"),
+    (r"game of thrones", "Game of Thrones"), (r"mean girls", "Mean Girls"), (r"the defenders", "The Defenders"),
+    (r"the farm", "Clarkson's Farm"), (r"mrs brown'?s boys", "Mrs Brown's Boys"), (r"doctor who", "Doctor Who"),
+    (r"dr who", "Doctor Who"), (r"the wanted", "The Wanted"), (r"take that", "Take That"), (r"s club", "S Club 7"),
+    (r"mcbusted", "McBusted"), (r"bts", "BTS"), (r"blackpink", "Blackpink"), (r"ateez", "Ateez"),
+    (r"(?:the )?big bang theory", "The Big Bang Theory"), (r"carry on", "Carry On"), (r"legend from gladiators", ""),
+    (r"gladiators", "Gladiators"), (r"gadget show", ""), (r"diy sos", "DIY SOS"), (r"dirty dancing", "Dirty Dancing"),
+    (r"fast furious", "Fast & Furious"), (r"pirates of the(?: caribbean)?", "Pirates of the Caribbean"), (r"die hard", "Die Hard"),
+    (r"pulp fiction", "Pulp Fiction"), (r"titanic", ""), (r"guardians of the galaxy.*", ""), (r"star wars", "Star Wars"),
+    (r"fawlty towers", "Fawlty Towers"), (r"allo allo", "'Allo 'Allo!"), (r"(?:the )?hangover", "The Hangover"),
+    (r"american pie", "American Pie"), (r"wet wet wet", ""), (r"status quo", ""), (r"red hot chili peppers", ""),
+    (r"shameless", "Shameless"), (r"supernatural", "Supernatural"), (r"top gun maverick", ""), (r"the godfather", ""),
+    (r"home alone", "Home Alone"), (r"dumb n dumber", ""), (r"inbetweeners?", "The Inbetweeners"), (r"scrubs", "Scrubs"),
+    (r"sherlock", "Sherlock"), (r"mindhunter", ""), (r"suits", ""), (r"ofah", "Only Fools and Horses"),
+    (r"golden girls", "The Golden Girls"), (r"queer eye", "Queer Eye"), (r"spice girls?", ""), (r"girls aloud", ""),
+    (r"1 direction|one direction", ""), (r"westlife", ""), (r"coronation royals", ""), (r"tiger king", ""),
+    (r"fnaf", "FNAF"), (r"teletubbies", "Teletubbies"), (r"sesame street", "Sesame Street"), (r"brotherhood of man", ""),
+    (r"wallace and grommit", "Wallace and Gromit"), (r"flintstones", "The Flintstones"), (r"turtles", "Ninja Turtles"),
+    (r"newcastle", ""), (r"barcelona", ""), (r"arsenal", ""), (r"liverpool", ""), (r"man utd(?: manager)?", ""),
+    (r"manchester city", ""), (r"coventry", ""), (r"halifax panthers", ""), (r"chelsea", ""), (r"leeds goalkeeper", ""),
+    (r"world cup", ""), (r"tv movie star", ""), (r"tv stars?", ""), (r"movies? stars?", ""), (r"(?:british|russian|candian|canadian) star", ""),
+    (r"sensation", ""), (r"signing", ""), (r"champion", ""), (r"manager", ""), (r"director", ""), (r"fighter", ""),
+    (r"swimmer", ""), (r"music", ""), (r"movies?", ""), (r"promo", ""), (r"pr photos", ""), (r"photos", ""),
+    (r"download", ""), (r"web", ""), (r"portable", ""), (r"fixed", ""), (r"to add", ""), (r"mp", ""),
+    (r"fc", ""), (r"logo", ""), (r"profile", ""), (r"scotish", ""), (r"wallabies", ""), (r"rwc", ""), (r"net worth", ""),
+    (r"transparent bg", ""), (r"uhq", ""), (r"sq", ""), (r"amazoon", ""), (r"doctiored", ""), (r"formula", ""),
+    (r"aston martin raci\w*", ""), (r"rubber", ""), (r"rolling stone cover", ""), (r"mr porter interview", ""),
+    (r"selects his post 6 nations lions xv", ""), (r"at the austrian grand prix", ""), (r"tas suzuki", ""),
+    (r"coronation", "Coronation Street"), (r"in the office", ""),
+]]
 SHOW_RE = [(re.compile(r"(?<![a-z0-9'])" + k.replace(" ", r"[\s_\-]+") + r"(?![a-z0-9])", re.I), v) for k, v in SHOWS]
 JUNK = {"copy", "celebrity", "celebrities", "celeb", "mask", "masks", "facemask", "facemasks", "face", "breakout",
         "new", "final", "mint", "cpdvd", "onbuy", "ver", "amazon", "ebay", "large", "cut", "cutout", "cutouts", "jpg",
@@ -64,11 +102,15 @@ def case_word(w, first):
     if w.upper() in KEEP_UPPER and (w.isupper() or len(w) <= 2) and w.lower() not in PARTICLES: return w.upper()
     if re.fullmatch(r"(?:[A-Za-z]\.)+[A-Za-z]?\.?", w): return w.upper()          # initials like J.K.
     if w.islower() and w in PARTICLES and not first: return w
+    if re.fullmatch(r"(?:ii|iii|iv|vi|vii|viii|ix|xv|xi)", w, re.I) and not first: return w.upper()
     if w.isupper() or w.islower():
         w = w[0].upper() + w[1:].lower()
         w = re.sub(r"^Mc([a-z])", lambda m: "Mc" + m.group(1).upper(), w)
         w = re.sub(r"^(O|D)'([a-z])", lambda m: m.group(1) + "'" + m.group(2).upper(), w)
         return w
+    w = re.sub(r"^Mc([a-z])", lambda m: "Mc" + m.group(1).upper(), w)
+    if re.fullmatch(r"(?:ii|iii|iv|vi|vii|viii|ix|xv|xi)", w, re.I) and not first: return w.upper()
+    if len(w) > 1 and w[0].islower() and w[1:].isupper(): return w[0].upper() + w[1:].lower()
     if w[0].islower(): return w[0].upper() + w[1:]                                  # jessica -> handled; iPhone-ish
     return w
 
@@ -90,7 +132,7 @@ def clean(name, folder):
     stem, ext = os.path.splitext(name)
     if ext.lower() not in IMG: return None, "not an image", {}
     if name.startswith("."): return None, "hidden/resource-fork file", {}
-    s = nfc(stem)
+    s = fold(nfc(stem))
     if re.search(r"\b(?:pack\d*|packs|mock-?ups?|header|banner|poster|cast|characters?|squad|crew)\b", s.replace("_", " "), re.I) and not OVERRIDES.get(name):
         return None, "pack/mockup/group image (not a single face)", {}
     larger = bool(re.search(r"\(larger\)", s, re.I)); s = re.sub(r"\s*\(larger\)", " ", s, flags=re.I)
@@ -98,6 +140,7 @@ def clean(name, folder):
     s = re.sub(r"\bSKU-?[A-Z]*\d+\b", " ", s, flags=re.I)
     s = re.sub(r"\.[A-Za-z0-9]{20,}", " ", s)                              # base64 tails
     s = s.replace("[", " ").replace("]", " ")
+    if s.count("(") > s.count(")"): s = s.replace("(", " ")
     marks = [m.upper() for m in re.findall(r"(?<![A-Za-z])(MH|JB)(?![A-Za-z])", s, re.I)]
     s = re.sub(r"(?<![A-Za-z])(MH|JB)(?![A-Za-z])", " ", s, flags=re.I)
     # bracketed non-numeric text, e.g. "Myra McQueen (Nicole Barber-Lane)" or "(Wales)": keep as qualifier
@@ -113,14 +156,26 @@ def clean(name, folder):
         nonlocal show
         for rx, disp in SHOW_RE:
             if rx.search(text):
+                t2 = rx.sub(" ", text)
+                if not disp and len([w for w in re.findall(r"[A-Za-z]{2,}", t2) if w.lower() not in JUNK]) < 2 and text is not qual:
+                    continue
                 if disp and not show: show = disp
-                text = rx.sub(" ", text)
+                text = t2
         return text
     before = s
     s = take_show(s)
     removed_show = s != before
     q = take_show(qual) if qual else ""
+    s = re.sub(r"(?<=[a-z]{2})\.(?=[A-Za-z]{2})", " ", s)                       # Mariah.carey
+    s = re.sub(r"\b(?!Mac)([A-Z][a-z]{2,})([A-Z][a-z]{2,})\b", r"\1 \2", s)      # JimmyFallon -> Jimmy Fallon
+    s = re.sub(r"(?i)\b([a-z]{3,})(mask|face|jb|mh)\b", lambda m: m.group(1) + " " + m.group(2), s)
     toks = re.findall(r"[^\s_\-]+", s)
+    # " Aka ...", " As ...", " In ..." describe a role: drop when a full name comes before
+    for kw in ("aka", "as", "in"):
+        low = [t.lower() for t in toks]
+        if kw in low[2:]:
+            i = low.index(kw, 2)
+            if kw == "aka" or toks[i][0].isupper(): toks = toks[:i]
     def scrub(ts, keep_version=True):
         out = []
         for t in ts:
@@ -131,6 +186,8 @@ def clean(name, folder):
             if re.fullmatch(r"[0-9a-f]{12,}", t2, re.I): continue                   # hashes
             if re.fullmatch(r"(?:e|R|tmp|IMG|DSC|P)\d+|[A-Za-z]{0,2}\d{4,}[A-Za-z0-9]*", t2): continue
             if t2.lower() in JUNK: continue
+            if len(t2) >= 5 and re.search(r"\d", t2) and re.search(r"[A-Za-z]", t2) and not re.fullmatch(r"[A-Za-z]+\d{1,2}", t2): continue
+            if re.search(r"[@]|\d\.\d", t2) or re.fullmatch(r"\d+x\d+", t2): continue
             if re.fullmatch(r"(?:19|20)\d\d'?s", t2): continue
             out.append(t2 if t2 != t else t2)
         return out
@@ -139,7 +196,11 @@ def clean(name, folder):
     if removed_show and len(toks) >= 3 and toks[-1].isupper() and len(toks[-1]) > 2 and not all(t.isupper() for t in toks):
         while len(toks) > 2 and toks[-1].isupper() and len(toks[-1]) > 2: toks.pop()
     # trailing "DE" agency code
-    while toks and toks[-1] in ("DE", "SJ1", "BM", "bm"): toks.pop()
+    # trailing maker tags (owner via coordinator, 6 Oct): DE, SJ, MO (and BM) mark separate images like MH/JB: keep them
+    tail = []
+    while len(toks) > 1 and (toks[-1] in ("DE", "SJ", "SJ1", "MO", "BM", "bm") or (toks[-1] == "Mo" and len(toks) > 2)):
+        tail.insert(0, toks.pop().upper())
+    marks = marks + tail
     version = ""
     if toks and re.fullmatch(r"\d{1,2}", toks[-1]) and len(toks) > 1:
         version = str(int(toks[-1])); toks = toks[:-1]
@@ -154,6 +215,11 @@ def clean(name, folder):
     letters = sum(len(re.sub(r"[^A-Za-zÀ-ɏ]", "", t)) for t in toks)
     if letters < 3: return None, "no usable name left (numeric/stock-photo/hash file name)", {}
     name_t = proper(toks)
+    if all(t.lower() in JUNK_NAMES for t in name_t) or not any(len(t) > 1 for t in name_t):
+        return None, "no usable name left (numeric/stock-photo/hash file name)", {}
+    pf = PHRASE_FIX.get(" ".join(name_t).lower())
+    if pf == "SKIPNAME": return None, "no usable name left (numeric/stock-photo/hash file name)", {}
+    if pf: name_t = pf.split()
     qtoks = proper(scrub(re.findall(r"[^\s_\-]+", q))) if q else []
     qdisp = " ".join(qtoks)
     shown = ""
@@ -173,6 +239,10 @@ def clean(name, folder):
 def main():
     ents = []
     for f in sorted(glob.glob(f"{D}/phase3/list/all-p*.json")): ents += json.load(open(f))["entries"]
+    moved = {m["source_path"]: m for m in json.load(open(f"{D}/phase2/mhjb-entries.json"))}   # done 07:53, after listing
+    for e in ents:
+        m = moved.get(e.get("file_id"))
+        if m: e["path"] = "ns:1384231538//" + m["dest_display"].split("IMAGES/", 1)[1]
     files = [e for e in ents if e["object_type"] == "file"]
     def rel(e): return e["path"].split("//", 1)[1]
     def in_scope(r): return r.startswith("2026 ") and not r.lower().startswith("2026 ! duplicates to check") and "/" in r
@@ -212,7 +282,7 @@ def main():
                                           reason="same name and same size already in folder: left unrenamed"))
                     continue
                 stem, ext = os.path.splitext(new)
-                m = re.match(r"^(.*?)(?: (\d+))?((?: (?:MH|JB))*)( \(larger\))?$", stem)
+                m = re.match(r"^(.*?)(?: (\d+))?((?: (?:MH|JB|DE|SJ|MO|BM))*)( \(larger\))?$", stem)
                 base, v, mk, lg = m.group(1), int(m.group(2) or 1), m.group(3) or "", m.group(4) or ""
                 same_size_hit = None
                 while True:
