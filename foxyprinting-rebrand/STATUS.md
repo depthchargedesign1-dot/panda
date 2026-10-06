@@ -25,6 +25,7 @@ Last updated: 6 Oct 2026, evening.
 See `exports/IMPORT-SCHEDULE.md`. Order: SEO 02-CLEAN → age 01 → age 02-CLEAN → masks TEST then 01–04 → prints TEST then 01–04.
 
 ## Running or recently finished
+- Trending 100 mask research (6 Oct): `exports/face-masks/2026-10-06-trending-100/`. 241 celebrities checked, 128 already sold, top 100 unsold ranked (18 have mask artwork in Dropbox). Nothing created yet; waiting for the owner to pick which to make.
 - Request Any Celebrity Face Mask (6 Oct): new title, copy and SEO; new main image "REQUEST A FACEMASK" with 6 faces (tools/request_mask_hero.py, exports/face-masks/2026-10-06-request-mask/). Sex and City request mask ARCHIVED (owner asked).
 - Mug sub-collections (done 6 Oct): new smart collection funny-number-plate-mugs (20 mugs, Online Store + Shop). 14 mug collections have new 1800x600 headers (`foxy.header_image`, live now) and `foxy.compact_header`; ALL MUGS has `foxy.subcollections`. 23 compact auto banners `foxy-header-<group>-compact.jpg` added to Files (originals kept). Theme copy "Foxy Pop 2026 – mug tiles" `189453861245` (duplicated from live "field fix", Infinite Options embed on) waits for the owner to publish. Record: `exports/mug-subheaders/manifest.json`.
 - Rude number plate mugs: live (website and Shop only). Teaser ads in `exports/social/2026-10-06-rude-mugs/`, not posted.
