@@ -1,0 +1,13 @@
+# QA progress (6 Oct)
+- [start] reading notes/scripts
+- bulk op 11732538130813 started (all products: title handle status tags desc seo)
+- export downloaded to qa/dl1/live.jsonl (06 Oct); expected in qa/expected2.json
+- A: repaired Gary Glitter Young seo (seotitles had restored party meta)
+- A: repaired Ekadarville 7455548113147 'Grab a'->'Grab an' (pre-edit). Re-read both OK.
+- A DONE: 6133 checked, 6126 exact; 4 titles = deliberate hand fixes (Uri Geller, Laz Alonso, Tyrrell Hatton, Wendy Williams); Phil Foden seo title = hand fix (excluded); 2 repaired.
+- B: engine.py built (qa/), proposed.json = dry run, not pushed
+- B dry run reviewed (6 Oct): SEO titles, names, a/an fixed in engine. Decision files: qa/dec_*.py, leak_map.json. Next: push via ≤5-product batches, log qa-fixes.jsonl, track qa/pushed.json
+- batches built qa/batches/NNNN.jsonl (5 products each); pushed log qa/pushed.txt; fixes log masks/qa-fixes.jsonl written (planned values)
+- bulkOperationRunMutation BLOCKED by MCP policy -> use direct productUpdate (≤5/mutation)
+- sensitive 30 pushed (batches 0000-0005)
+- tagsAdd third-party-name on 30 sensitive: done
