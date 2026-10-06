@@ -41,3 +41,11 @@ So no `Fonts/` subfolder is needed in the Dropbox folders. The listing photos (`
 - David Walliams: 9530623624 + 4328415592523 now say he played Lou; 8225435910395 rewritten from old copy; 9530620744 SEO no longer has "Little Britain"; disclaimers say "him".
 - `third-party-name` added to 9530623624, 4328415592523, 8225435910395, 8249158926587 (Matt Lucas).
 - 3-packs (8125549805819, 8195091595515) untouched.
+
+### Follow-ups (6 Oct 2026, owner decisions; `build2.py`, `before2.json`, `after2.json`, `mutation2.graphql`, `verify2.json`)
+- 3-packs kept (owner renamed them 3-Pack 1 / 3-Pack 2): house copy (different text each), combined disclaimer, SEO, `third-party-name`.
+- Walliams titles: 9530623624 = "David Walliams 2…", 4328415592523 = "…3…", 9530620744 = "…4…" (8225435910395 keeps the plain title).
+- Andy + Bubbles: removed `mask-film-stars`, `MOVIES`; added `mask-comedians`, `TV STARS`.
+- Lou Todd: alt text on its 5 own images (fileUpdate; shared assembly/party images already had alt).
+- Lou and Andy pair: meta now "elastic supplied".
+- Matt Lucas: disclaimer says "him" and covers Little Britain, the BBC and The Great British Bake Off and its producers.

@@ -28,19 +28,19 @@ PACK_SPECS = """<h3>Size &amp; details</h3>
 <h3>Delivery</h3>
 <p>Printed in our UK workshop and posted to you. Dispatch and postage options are shown at checkout.</p>"""
 
-PACK1 = """<p>This Little Britain face mask 3-pack is made for three mates who want to turn up as a gang: Lou, Andy and Vicky in one order. It's a sure-fire laugh at a stag do, a hen night or a fancy dress birthday, and nobody has to argue over who gets which face.</p>
+PACK1 = """<p>This Little Britain face mask 3-pack is made for three mates who want to turn up as a gang: Lou, Andy and Vicky in one order. It's a sure-fire laugh at a stag do, a hen night or a fancy dress birthday.</p>
 <h2>Little Britain Face Mask 3-Pack for Groups</h2>
-<p>You get three card face masks: Lou Todd, Andy Pipkin and Vicky Pollard. We print each one in full colour on thick 350gsm silk card, cut it to the shape of the face and pre-cut the eye holes. Elastic and sticky tabs come with every mask, so you're ready to go in a couple of minutes. Want to add someone from your own group? Send us a clear photo and we'll make a custom mask to go with the set.</p>
+<p>You get three card face masks: Lou Todd, Andy Pipkin and Vicky Pollard. We print each one in full colour on thick 350gsm silk card, cut it to the shape of the face and pre-cut the eye holes. Elastic and sticky tabs come with every mask. Want to add someone from your own group? Send us a clear photo and we'll make a custom mask to go with the set.</p>
 <h3>Why you'll love it</h3>
 <ul>
 <li>Three costumes sorted in one go, with no wigs or face paint</li>
-<li>Better value than buying the three comedy character masks one by one</li>
+<li>Three comedy character masks in one order and one envelope</li>
 <li>Thick 350gsm card that keeps its shape on a long night out</li>
 <li>Semi-waterproof finish, so a spilt pint won't finish it off</li>
 <li>Instantly recognisable in stag and hen do group photos</li>
 </ul>
 """ + PACK_SPECS + """
-<p>Got a bigger group? Add our Bubbles DeVere mask or the Lou and Andy pair to the 3-pack and the whole table is covered.</p>
+<p>Got a bigger group? Add our Bubbles DeVere mask to the 3-pack.</p>
 """ + LB_DISCLAIMER
 
 PACK2 = """<p>Throwing a noughties night? This Little Britain face mask 3-pack gives you three of the show's best-known faces in one envelope, ready for a comedy-themed birthday, a quiz night or a photo booth that needs a bit of mischief.</p>
@@ -78,7 +78,7 @@ UPDATES = {
     "9530620744": {"title": "David Walliams 4 Face Mask – Fancy Dress Cardboard Costume Mask"},
     "16063694635389": {"seo": {
         "title": "Comedy Double Act Couple Face Masks | Foxy Printing",
-        "description": "Turn up as a famous comedy double act with this pair of Lou and Andy card face masks. Pre-cut eye holes, elastic supplied, posted flat in a sturdy envelope."}},
+        "description": "Turn up as a famous comedy double act with a pair of Lou and Andy card face masks. Pre-cut eye holes, elastic supplied, posted flat in a sturdy envelope."}},
     "8249158926587": {"matt": True},
 }
 TAGS_ADD = {
@@ -89,9 +89,9 @@ TAGS_REMOVE = {"9530634184": ["mask-film-stars", "MOVIES"], "9530648776": ["mask
 LOU_ALTS = {
     "gid://shopify/MediaImage/32937038086395": "Lou Todd face mask, a printed card fancy dress mask cut to shape with eye holes",
     "gid://shopify/MediaImage/33842656477435": "Card face mask print and size information for the Lou Todd face mask",
-    "gid://shopify/MediaImage/33842656510203": "How to fit the elastic to the Lou Todd face mask",
+    "gid://shopify/MediaImage/33842656510203": "Assembly instructions for the Lou Todd face mask",
     "gid://shopify/MediaImage/33842656542971": "Size and card details for the Lou Todd face mask",
-    "gid://shopify/MediaImage/33842656608507": "Custom photo mask option shown alongside the Lou Todd face mask",
+    "gid://shopify/MediaImage/33842656608507": "Card face mask information for the Lou Todd face mask",
 }
 
 
