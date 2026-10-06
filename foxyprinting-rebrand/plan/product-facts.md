@@ -106,7 +106,7 @@ Owner answers 2 Oct 2026, plus supplier facts from longforte.com (search snippet
 - **Boot bag:** 100% polyester sublimation drawstring sports bag. Size: **ASK**. Source: https://www.longforte.com/products/blank-sublimation-100-polyester-sports-drawstring-bag-with-pu
 - **Satin scarf:** premium sports scarf with tassels, 16.5cm x 142cm, polyester, shiny glossy satin surface, printable on both sides. Source: https://www.longforte.com/products/sublimation-premium-sports-fashion-scarf-with-tassels
 - **Knitted bobble hat:** fully custom knitted design (jacquard knit in your team colours with the name knitted in). Owner confirmed 2 Oct 2026. Minimum order, lead time, yarn and size: **ASK**.
-- **Stadium / terrace flags:** 3 sizes: 3ft x 2ft, 5ft x 3ft, 8ft x 5ft (owner, 2 Oct 2026). 8ft x 5ft (about 244 x 152cm) is the largest size allowed into Wembley without special permission (supplier info, check before quoting). Fabric, finish (eyelets/sleeve) and print side: **ASK**.
+- **Stadium / terrace flags:** 3 sizes: 3ft x 2ft, 5ft x 3ft, 8ft x 5ft (owner, 2 Oct 2026). 8ft x 5ft (about 244 x 152cm) is the largest size allowed into Wembley without special permission (supplier info, check before quoting). Fabric, finish and print side (owner's existing listing, confirmed for launch 6 Oct 2026): 115gsm knitted polyester; digitally printed in the UK and hand-stitched; strong 25mm edge binding; eyelets on all 4 edges; single-sided print (double-sided on request: customer gets in touch for a quote); fire label on every flag, certificate available on request; indoor and outdoor use; fully customisable with any wording the customer wants; FREE UK delivery. Prices (owner, 6 Oct 2026): 3ft x 2ft £19.99, 5ft x 3ft £34.99, 8ft x 5ft £59.99. Dispatch time and wash care: not given, don't state them.
 - **Corner flags:** set of 4, offered two ways: flags with poles, or flags only to fit existing poles (owner, 2 Oct 2026). Flag size, pole height and pole fitting: **ASK**.
 - **Car flag:** 100% polyester, 43cm plastic stand, window clip and fastener. Source: https://www.longforte.com/products/sublimation-car-flag
 - **Pennants:** 18cm x 26cm, premium polyester, bamboo stick and cord; blanks come in packs of 10 (white, green, blue, red). Source: https://www.longforte.com/products/flags-banners-pack-of-10-x-pennant-18cm-x-26cm-white
@@ -114,6 +114,26 @@ Owner answers 2 Oct 2026, plus supplier facts from longforte.com (search snippet
 - **Rules:** these are for the customer's OWN team (grassroots, Sunday league, school). Never show a real club crest or name in images or titles. If a listing names a pro club, follow the football disclaimer in CLAUDE.md.
 - **Google category:** footballs `Sporting Goods > Athletics > Soccer > Soccer Balls`; shin pads `Sporting Goods > Athletics > Soccer > Soccer Protective Gear > Soccer Shin Guards`; socks `Apparel & Accessories > Clothing > Activewear`; scarves `Apparel & Accessories > Clothing Accessories > Scarves & Shawls > Scarves`; bobble hats `Apparel & Accessories > Clothing Accessories > Hats`; flags `Home & Garden > Decor > Flags & Windsocks`; corner flags `Sporting Goods > Athletics > Soccer > Soccer Corner Flags`. Check every path in Google's taxonomy before use.
 - **age_group:** shin pads and junior footballs `kids`; everything else `adult` unless the title is for a child.
+
+---
+
+## Personalised bobble hats (Ralawise blank) (added 6 Oct 2026)
+Owner, 6 Oct 2026: these are Ralawise blanks; we'll buy lots of them and resell them with club logos, business logos or as workwear. **Never name Ralawise or Beechfield to customers.**
+- **Blank:** Beechfield **B472 Stadium Beanie** (Ralawise; also listed as BB472 / BC472). Identified from the old listing's spec, which matches the B472 feature list word for word (TearAway label, cuffed design for optimal decoration, contrasting pom pom and striped cuff, double layer knit, classic colour combinations), and from the colourways (Black/Classic Red/White, Black/Gold, Classic Red/White, French Navy/Red/White, Kelly Green/White, Bright Royal/White, French Navy/White, Black/White).
+  Sources (search results, 6 Oct 2026; the pages themselves were blocked from here): https://shop.ralawise.com/en-GB/beechfield/stadium-beanie/ · https://beechfieldbrands.com/products/b472-stadium-beanie · https://www.superlogo.co.uk/stadium-beanie-b472-sl · https://www.amazon.co.uk/Beechfield-B472-Stadium-Beanie/dp/B0BFXS8LXX (Black/Gold). Check the colour list in the Ralawise trade account before buying stock.
+- **Material:** 100% soft-touch acrylic. **Weight:** 85g (stockist listings).
+- **Build:** double-layer knit; cuffed (turn-up) design; striped cuff; contrasting pom pom; TearAway label (so the hat carries no maker's label once rebranded); BSCI and REACH certified (old listing).
+- **Size:** one size (adult). Measurements (height, width, cuff depth): **ASK**.
+- **Care:** machine wash warm, do not iron, do not dry clean (old listing / supplier care).
+- **Colours on the store (8):** Black/Classic Red/White, Black/Gold, Black/White, Royal/White (supplier: Bright Royal/White), Classic Red/White, French Navy/Red/White, Navy/White (supplier: French Navy/White), Kelly Green/White.
+- **Personalisation:** the customer's own badge or logo, printed in full colour on the front of the cuff (existing title: "Printed Full Colour Badge"). Optional club/business name and a line of text under the design. Customers must have the right to use the badge or logo (own club, school or business). Never offer professional club crests or "any badge for any team".
+- **Print method:** describe only as "printed in full colour". Internal SKU machine code is DTF (as for the B10 cap, FOXY-DTF-PC-NN); exact transfer method on knit: **ASK**.
+- **What if no logo is supplied:** the badge/logo upload is the first personalisation field, so the theme makes it required. The old listing said a hat with no badge sent "will arrive as sample image": **ASK** whether that still stands (not used in copy).
+- **Price:** £8.50 each (existing). Bulk/team pricing: **ASK** (copy only says bulk and team orders are welcome, ring 01439 771468).
+- **Delivery:** posted by Royal Mail; we work Monday to Friday (old listing). Dispatch time: **ASK** (don't promise one). Postage options and costs are shown at checkout.
+- **SKUs:** FOXY-DTF-PBH-01 to FOXY-DTF-PBH-08 (order as listed above).
+- **Google:** `Apparel & Accessories > Clothing Accessories > Hats`; gender `unisex`; age_group `adult`; custom_product `true`.
+- **Pairing ideas:** personalised football scarf, personalised cap (B10), team flags, staff T-shirts/hoodies with the same logo.
 
 ---
 
