@@ -11,3 +11,5 @@
 - bulkOperationRunMutation BLOCKED by MCP policy -> use direct productUpdate (≤5/mutation)
 - sensitive 30 pushed (batches 0000-0005)
 - tagsAdd third-party-name on 30 sensitive: done
+- switched to q/NNNN.json + pushed_ids.txt (nx.sh NNNN marks + shows next). batches/0000-0006 pushed earlier
+- added fixes: Wendy Williams/Uri Geller/Tyrrell Hatton/Laz Alonso copy+SEO, Jigsaw, Eka Darville SEO

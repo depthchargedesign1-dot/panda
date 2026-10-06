@@ -66,7 +66,7 @@ C={
 '8195453976827':("Golden Freddy from Five Nights at Freddy's","Five Nights at Freddy's",'Scott Cawthon or Blumhouse'),
 '8045968654587':('E.T. the Extra-Terrestrial','E.T. the Extra-Terrestrial','Universal Pictures'),
 '9438546568':('Lt Commander Data from Star Trek','Star Trek','Paramount'),
-'9438679496':('Willy Wonka','Willy Wonka & the Chocolate Factory','Warner Bros. or The Roald Dahl Story Company'),
+'9438679496':('Willy Wonka','Willy Wonka &amp; the Chocolate Factory','Warner Bros. or The Roald Dahl Story Company'),
 '9438680520':('Bride of Chucky','Bride of Chucky','Universal Pictures'),
 '9614926600':('Jason Voorhees from the Friday the 13th films','Friday the 13th','Horror Inc.'),
 '4328395931723':('Jason Voorhees from the Friday the 13th films','Friday the 13th','Horror Inc.'),
@@ -80,7 +80,8 @@ C={
 '9614907336':('Adrian from the Rocky films','Rocky','MGM'),
 '4328387674187':('Captain America','Captain America','Marvel or Disney'),
 '9614911496':('Barney Rubble from The Flintstones','The Flintstones','Hanna-Barbera or Warner Bros.'),
-'8282761494779':('Barney the Dinosaur','Barney & Friends','Mattel'),
+'8282761494779':('Barney the Dinosaur','Barney &amp; Friends','Mattel'),
+'9530647240':('Bob the Builder','Bob the Builder','Mattel'),
 '7551007916283':('Palermo (Martín Berrote) from Money Heist','Money Heist','Netflix'),
 }
 BRAND={'9520750344':'PG Tips'}

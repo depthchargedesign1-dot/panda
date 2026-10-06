@@ -294,3 +294,7 @@ N={
 '9520533448':[],  # custom (cricketer)
 }
 N={P+k:v for k,v in N.items()}
+N[P+'15054867005821']=[(W('Wendy Willlams'),'Wendy Williams')]
+N[P+'9614871496']=[(W('Uri Gellar'),'Uri Geller')]
+N[P+'8195211493627']=[(W('Tryrell Hatton'),'Tyrrell Hatton')]
+N[P+'9437813512']=[(W('MEL From Benidorm'),'Mel From Benidorm')]

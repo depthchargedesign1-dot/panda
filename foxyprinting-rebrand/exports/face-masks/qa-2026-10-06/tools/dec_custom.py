@@ -54,6 +54,9 @@ X={
 '9614935560':dict(ops=[(W('LOTR Gollum'),'Gollum')]),
 }
 X={P+k:v for k,v in X.items()}
+for _k,_n,_s in [('7558220677371','Cliff Robertson','the Spider-Man films'),('7558225789179','Rosemary Harris','the Spider-Man films'),('7558226837755','Tobey Maguire','the Spider-Man films'),('7558227820795','Willem Dafoe','the Spider-Man films'),('7558229328123','James Franco','the Spider-Man films'),('7558244466939','Mark Cox','Still Game')]:
+    X.setdefault(P+_k,{'ops':[]})['disc']=SHOW_DISC(_n,_s)
+
 B={  # custom first paragraphs for character->actor products
 '8214499754235':"<p>Alan Rickman was the much-loved English actor behind Severus Snape in the Harry Potter films and Hans Gruber in Die Hard. Pair this mask with a black cloak for a wizarding party, a film night or a Halloween costume.</p>",
 '8214508339451':"<p>Angelina Jolie starred as the adventurous archaeologist Lara Croft in the Tomb Raider films. Perfect for a gaming party, an adventure-themed birthday or a fancy dress night with combat boots and khaki shorts.</p>",
@@ -73,3 +76,5 @@ B={  # custom first paragraphs for character->actor products
 }
 B={P+k:v for k,v in B.items()}
 SKIPBLURB={P+k for k in '9614939400 9614911368 8214512894203 8223167152379 8225400193275 8225401372923 8225438204155 8236602425595 8236606980347 8246818537723 8247348691195 8249149292795 8249150472443 8249154470139 8249155420411 8249156567291 8249156960507 8249158893819 8249159876859 8249160433915 8249952010491 9437965576 9437966792 9438431240 9530640968 9530641928 9530660296 9530660360 9614864072 9614917128 9614918088 8249154011387 9369910152 8245753905403 8282982088955 8282982547707 8045968949499 8214473474299 8214475866363 7455556403451 8250059489531'.split()}
+X[P+'8195159064827']={'ops':[(r'<h2>Butt-Head Celebrity Face Mask</h2>','<h2>Beavis Celebrity Face Mask</h2>'),(r'turn up as Butt-Head\.','turn up as Beavis.')],
+  'blurb':"<p>Huh huh, cool! This Beavis face mask shows the hyperactive cartoon slacker from Beavis and Butt-Head. Pair it with a Butt-Head mask for a nineties double act, a grunge night or a stag do that refuses to grow up.</p>"}

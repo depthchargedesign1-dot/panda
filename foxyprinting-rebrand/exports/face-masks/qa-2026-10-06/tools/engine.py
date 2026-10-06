@@ -18,7 +18,7 @@ R = '/home/user/panda/foxyprinting-rebrand/exports/rollback/2026-10-05-sensitive
 EXCL = {p['id'] for f in ('after.json', 'after_hall_glitter.json') for p in json.load(open(R + f))}
 EXCL |= {P + '9438652104', P + '9614911688', P + '9438651336', P + '9530631496'}
 SEO_TITLE_KEEP = {P + '6890951671995', P + '8042789535995', P + '4328413233227'}
-MANUALSEO = {P + '8245753905403': 'Baby Face Mask | Foxy Printing', P + '9437813256': 'Madge Face Mask | Foxy Printing', P + '9437813512': 'Mel Face Mask | Foxy Printing', P + '15865891815805': 'Harry Lewis (W2S) Face Mask | Foxy Printing'}
+MANUALSEO = {P + '7558323241211': 'Laz Alonso Face Mask | Foxy Printing', P + '7551018041595': 'Jigsaw Face Mask | Foxy Printing', P + '7455548113147': 'Eka Darville Face Mask | Foxy Printing', P + '8245753905403': 'Baby Face Mask | Foxy Printing', P + '9437813256': 'Madge Face Mask | Foxy Printing', P + '9437813512': 'Mel Face Mask | Foxy Printing', P + '15865891815805': 'Harry Lewis (W2S) Face Mask | Foxy Printing'}
 
 def fold(s):
     return unicodedata.normalize('NFKD', s or '').encode('ascii', 'ignore').decode().lower().replace('-', ' ').replace('.', '').replace("'", '').replace('’', '').strip()
@@ -169,7 +169,7 @@ def fix_meta_tm(m):
 
 # ---------------- SEO titles ----------------
 DESC_OK = {'Young', 'Old', 'Cap', 'Beard', 'Cartoon', 'Laughing', 'Smiling', 'Sad', 'Hat', 'Glasses', 'Sunglasses', 'Colour', 'Short Hair', 'Long Hair', 'Blonde', 'Red Hair', 'New Hair'}
-NAMEFIX = {'Jada Pinkett': 'Jada Pinkett Smith', 'Jamie Lee': 'Jamie Lee Curtis', 'Emmett J': 'Emmett J. Scanlan', 'The Muppets Beaker': 'Beaker', 'Rhee Steven Yeun': 'Steven Yeun', 'Tony Pulis-Welsh': 'Tony Pulis', 'Mini-Me': 'Mini-Me'}
+NAMEFIX = {'Wendy Willlams': 'Wendy Williams', 'Uri Gellar': 'Uri Geller', 'Tryrell Hatton': 'Tyrrell Hatton', 'laz Alonso': 'Laz Alonso', 'Jada Pinkett': 'Jada Pinkett Smith', 'Jamie Lee': 'Jamie Lee Curtis', 'Emmett J': 'Emmett J. Scanlan', 'The Muppets Beaker': 'Beaker', 'Rhee Steven Yeun': 'Steven Yeun', 'Tony Pulis-Welsh': 'Tony Pulis', 'Mini-Me': 'Mini-Me'}
 BADN = re.compile(r"^(Batman The|Madge From|MEL From|Prince William Baby|Jimmy Hill Portrait|Norris McWhirter Left|Tom Oliver Lou|Sara Gilbert Darlene|Jason Biggs Jim|"
                   r"Tara Reid Vicky|Jason Voorhees Hockey|Michael Jackson Bad|Terry Butcher Blood|Travis Pastrana Portrait|Joe Tracini Dennis|Artem Strictly|Miley Cyrus Missy|"
                   r"Bricktop Alan Ford|Catherine Tate Girl|Eastenders Girl|Charlotte|Gaz|Holly|Jay|Harry|Coach|Baby|Police|Madge|Annie The|Adrian Rocky|Half .*|.* The)$")
