@@ -430,25 +430,34 @@ def file_name(label, tw, th):
 
 def readme(code, short, design, listing):
     sku = 'FOXY-FLAG-%s' % code
+    return f"""{short} - {sku}
+Print-ready, editable terrace flag templates, made {TODAY}.
+
+- Shopify title: {listing.get('title', '')}
+- Variant SKUs: {sku}-01 (3ft x 2ft), {sku}-02 (5ft x 3ft), {sku}-03 (8ft x 5ft)
+- Design and colours (from the main product photo): {design}
+- Google colour: {listing.get('color', '')}
+
+Files: the 3 shared size templates (SVG + layered PDF), Fonts/ and "PRINT NOTES - terrace flag templates.txt"
+(bleed, safe area, eyelets, resolution, layers and the open questions marked ASK).
+Replace the navy/white placeholder background with the design above and type the customer's wording.
+"""
+
+
+def print_notes():
     lines = []
     for label, tw, th, dpi in SIZES:
         n = eyelet_positions(tw, th)
         lines.append(f'- {label}: trim {tw:g} x {th:g} mm, artboard with bleed {tw + 2 * BLEED:g} x {th + 2 * BLEED:g} mm, '
                      f'{len(n)} eyelets, images {dpi} dpi at full size -> "{file_name(label, tw, th)}.svg / .pdf"')
-    return f"""{short} - {sku}
-Print-ready, editable terrace flag templates, made {TODAY}.
-
-PRODUCT
-- Shopify title: {listing.get('title', '')}
-- Variant SKUs: {sku}-01 (3ft x 2ft), {sku}-02 (5ft x 3ft), {sku}-03 (8ft x 5ft)
-- Design on the product photo: {design}
-- Google colour: {listing.get('color', '')}
-- Customer fields: "Text on the flag (name, group or town)", "Second line (optional)", "Logo upload (optional)",
-  "Message for us (anything else)".
+    return f"""PRINT NOTES - TERRACE FLAG TEMPLATES (shared by all 53 terrace flag products, FOXY-FLAG-<CODE>)
+Made {TODAY}. Each product folder also has a README.txt naming its design and colours.
 
 PRODUCT FACTS (plan/product-facts.md, "Stadium / terrace flags")
 - 115gsm knitted polyester, digitally printed in the UK and hand-stitched, strong 25mm edge binding, eyelets on
   all 4 edges, single-sided print (double-sided on request), fire label on every flag.
+- Customer fields: "Text on the flag (name, group or town)", "Second line (optional)", "Logo upload (optional)",
+  "Message for us (anything else)".
 
 THE TEMPLATES (one shared set, the same in every flag folder)
 {chr(10).join(lines)}
@@ -461,7 +470,7 @@ THE TEMPLATES (one shared set, the same in every flag folder)
 
 LAYERS
 - Artwork: placeholder background in navy/white/navy bands with a dashed "LOGO / PHOTO" panel. Replace it with
-  the flag design above ({design}). Keep the design running into the bleed.
+  the flag design named in the folder's README.txt. Keep the design running into the bleed.
 - Text: live, editable text - "YOUR NAME / GROUP" and "SECOND LINE - EST. 2026", both in Bebas Neue (OFL).
   Swap in another open-licence font if you like. Type the customer's wording; keep it inside the magenta safe line.
 - CUT: red trim path, 0.25 pt stroke, RGB 255,0,0, no fill, exactly on the trim line. Never prints.
@@ -512,6 +521,7 @@ def main():
         print(tdir / name, (tdir / f'{name}.pdf').stat().st_size, 'bytes')
     (tdir / 'Fonts' / 'FONTS - DOWNLOAD LINK.txt').write_text(fonts_txt(), encoding='utf-8')
     (tdir / 'Fonts' / 'OFL.txt').write_text(ofl_txt(), encoding='utf-8')
+    (tdir / 'PRINT NOTES - terrace flag templates.txt').write_text(print_notes(), encoding='utf-8')
     listings = {p['code']: p for p in json.loads((REPO / 'exports' / 'terrace-flags' / 'listings.json').read_text())}
     for code, (short, design) in PRODUCTS.items():
         d = out / f'{short} - FOXY-FLAG-{code}'
