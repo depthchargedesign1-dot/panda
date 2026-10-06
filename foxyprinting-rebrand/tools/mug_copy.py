@@ -170,7 +170,8 @@ def classify(p):
         return c
     m = re.match(r"Worlds Best (.+?)(?: Mug)? - (Novelty Funny Mug|Funny Rude Ceramic Mug Gift)", t)
     if m:
-        c.update(fam="occ_rude" if "Rude" in t else "occ", subject=nice(m.group(1)))
+        s = re.sub(r"(?i)(\s+printed)?(\s+mugs?)*\s*$", "", m.group(1)).strip()
+        c.update(fam="occ_rude" if "Rude" in t else "occ", subject=nice(s) if s else None)
         return c
     m = re.match(r"Awesome (.+?) (Printed )?Office Mug", t)
     if m:
@@ -225,7 +226,8 @@ def classify(p):
         return c
     m = re.match(r"This Is My Birthday Mug - My Birthday Is On ?(.*?)(?: - |$)", t)
     if m:
-        c.update(fam="bday_date", subject=m.group(1).strip() or None)
+        d = m.group(1).strip()
+        c.update(fam="bday_date", subject=None if (not d or d.startswith("-") or re.search(r"(?i)novelty|printed|mug", d)) else d)
         return c
     m = re.match(r"Manufactured In (\d{4})", t)
     if m:
@@ -234,6 +236,7 @@ def classify(p):
     if ty == "Personalised Cartoon Animals Mugs":
         s = re.sub(r"^Personalised (Cartoon )?(Funny )?", "", t)
         s = re.sub(r"\s*Mug.*$", "", s)
+        s = re.sub(r"^(Cartoon |Funny )+", "", s)
         for a, b in CARTOON_FIX.items():
             s = s.replace(a, b)
         s = re.sub(r"([a-z])(\d)$", r"\1 \2", s.strip())
@@ -598,7 +601,7 @@ def kw_and_parts(c, p, rng):
         cl = pick(rng, [f"Order a {kw} for everyone in the family.", f"A {kw} pairs nicely with a personalised card."])
     elif f == "celeb_future":
         if c["kind"] == "loves":
-            kw = f"this guy loves {s} mug"
+            kw = f"{s} celebrity crush mug"
             mid = f"The design says “This Guy Loves {esc(s)}”, printed on an 11oz ceramic mug."
         else:
             title = "Mr" if c["kind"] == "mr" else "Mrs"
@@ -637,10 +640,10 @@ def kw_and_parts(c, p, rng):
         cl = pick(rng, [f"Our {esc(kw)} makes gift buying easy.", f"An {esc(kw)} is a little thing that gets used every day."])
     elif f == "bday_date":
         d = s or "your chosen date"
-        kw = f"{d} birthday mug" if s else "this is my birthday mug"
+        kw = f"{d} birthday mug" if s else "birthday slogan mug"
         op = pick(rng, [f"This {kw} is made for anyone born on {d} who likes everyone to know about it. ",
                         f"Birthday on {d}? This {kw} makes sure nobody forgets. "]) if s else \
-             f"This {kw} is for anyone who wants their birthday remembered. "
+             f"Our {kw} is for anyone who wants their birthday remembered. "
         op += "It's a funny little gift that gets used long after the cake's gone."
         mid = f"The design says “This is my birthday mug”" + (f" with the date {d}" if s else "") + ", printed on an 11oz ceramic mug."
         fb = ["A personal-feeling gift for their birthday", "Fun for colleagues to spot in the office kitchen"]
@@ -717,7 +720,7 @@ def kw_and_parts(c, p, rng):
         op = pick(rng, [f"This {esc(kw)} says exactly how they feel before the first coffee. ",
                         f"Let a face do the talking with this {esc(kw)}. "])
         op += "It's a fun gift for teens, students and anyone who texts in emojis."
-        mid = f"The design shows a cartoon {esc(s.lower())} face, printed on an 11oz ceramic mug."
+        mid = f"The design shows a cartoon {esc(s.lower())}{'' if s.lower().endswith('face') else ' face'}, printed on an 11oz ceramic mug."
         fb = ["Fun, colourful emoji design", "A cheap and cheerful gift for friends"]
         cl = pick(rng, [f"Grab an {esc(kw)} for the friend who replies in emojis.", f"An {esc(kw)} is ideal for stocking fillers."])
     elif f == "gaming":
@@ -1019,6 +1022,8 @@ def main():
                 skip = "new 2026 listing written to the house rules; left alone"
             elif SKIP_OFFENSIVE.search(p["title"]):
                 skip = "slur or mocks a condition: owner to decide whether to keep the product"
+            elif re.match(r"(?i)Worlds Best Mugs?( Mug)? - ", p["title"]):
+                skip = "title doesn't say who the World's Best mug is for: owner to check the design"
         c = classify(p) if r and not skip else None
         if c:
             body, kw = finish(p, c)

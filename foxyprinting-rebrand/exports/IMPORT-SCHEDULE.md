@@ -13,6 +13,8 @@ Before each reminder, Claude checks the previous file landed on the live store (
 | 5 | Thu 8 Oct bedtime | face-masks/2026-10-06-single-mask-prices/import/02-single-masks.csv | to do |
 | 6 | Fri 9 Oct morning | face-masks/.../03-single-masks.csv | to do |
 | 7 | Fri 9 Oct bedtime | face-masks/.../04-single-masks.csv | to do |
+| 7a | after #7 (next free slot) | mug-descriptions/2026-10-06/00-TEST-6-mugs.csv (check the 6 mugs: 3 normal, 3 rude), then 01-mug-descriptions.csv (6,081 mugs) | to do |
+| 7b | next slot | mug-descriptions/2026-10-06/02-rude-mug-descriptions.csv (194 rude mugs) | to do |
 | 8 | Sat 10 Oct morning | signed-prints/2026-10-06-title-copy/00-TEST-3-products.csv (check), then 01-signed-prints.csv | to do |
 | 9 | Sat 10 Oct bedtime | signed-prints/.../02-signed-prints.csv | to do |
 | 10 | Sun 11 Oct morning | signed-prints/.../03-signed-prints.csv | to do |
