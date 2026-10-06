@@ -96,6 +96,22 @@
 ## Magnets, keyrings, coasters, towels, game cases
 - Facts **ASK**. Pull them from the current live listings first, then confirm with the owner.
 
+### Blank replacement game cases (empty, no artwork, no game) (added 6 Oct 2026)
+Drafted 6 Oct 2026 as DRAFT products, one per format the existing case range sells most (SNES, NES, Mega Drive/Genesis, Master System, Game Boy/Game Boy Color, PS1). No supplier for case blanks is in `longforte-plan.md`.
+- **From the live case listings (6 Oct 2026, to confirm):** sold as "Case", "Cover" or "Both"; case-only price is usually **£3.99**; "Supplied in a board backed envelope for sending"; covers printed on 130gsm gloss art. The listings name the case as "UGC - Ultimate Game Case" (cartridge formats) and "Original Black DVD case" (PS1), but they are inconsistent (Game Boy listings say "Ultimate Nintendo NES Game Case"), so the exact case per format is **ASK**.
+- **Desk research only (not confirmed, not used in copy):** UGC-style universal cartridge cases are widely listed at about 134.5 x 185 x 24.5mm and sold as fitting SNES, N64, Mega Drive/Genesis and 32X cartridges (stoneagegamer.com, retailer listings). Source: web search 6 Oct 2026.
+- **ASK:**
+  - which case blank is used for each format (UGC style, NES-style, DVD-style or jewel case for PS1), and the supplier;
+  - dimensions of each case;
+  - material (polypropylene? clear outer sleeve for a cover? cartridge holder/insert inside?);
+  - colour (clear/black) per format;
+  - pack sizes (single only, or packs of 5/10?) and pack prices;
+  - does the PS1 case hold one disc or two, and does it have a manual clip;
+  - does the Game Boy case also fit Game Boy Color and Game Boy Advance cartridges;
+  - dispatch time and postage for blank cases.
+- **Copy rules:** no publisher box art, no console logos; console names only to describe compatibility ("fits SNES cartridges"). Video-game disclaimer with "No game, cartridge or disc is included." Tag `third-party-name`.
+- **Google category:** Electronics > Video Game Console Accessories (same as the personalised video game case). **age_group:** `adult`. **custom_product:** `true` (no GTIN). **color:** ASK (left unset on the drafts until the case colour is confirmed).
+
 ---
 
 ## Football team kit & fan gifts (added 2 Oct 2026)
