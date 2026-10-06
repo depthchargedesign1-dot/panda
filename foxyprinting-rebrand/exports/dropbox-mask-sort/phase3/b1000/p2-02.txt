@@ -1,9 +1,3 @@
-{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Nasr Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Nasr Cap JB.jpg"}
-{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Jenson Button Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Jenson Button Cap JB.jpg"}
-{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Kimi Raikkonen Mubadala Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Kimi Raikkonen Mubadala Cap JB.jpg"}
-{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Max Verstappen Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Max Verstappen Cap JB.jpg"}
-{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Nico Hulkenberg Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Nico Hulkenberg Cap JB.jpg"}
-{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Sergio Perez Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Sergio Perez Cap JB.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Golf/Angel Cabrera 3 TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Golf/Angel Cabrera 3.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Golf/Ashun Wu TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Golf/Ashun Wu.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Golf/Bernd Wiesberger TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Golf/Bernd Wiesberger.jpg"}
@@ -614,3 +608,5 @@
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Gus Bad.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Gus (Breaking Bad) 2.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Gease (Sandy2).jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Sandy (Grease) 2.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Adrian Brody JB.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Adrien Brody JB.jpg"}
+{"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Aragorn Lotr.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Aragorn (Lord of the Rings).jpg"}
+{"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Lotr (Gollum).jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Gollum (Lord of the Rings).jpg"}

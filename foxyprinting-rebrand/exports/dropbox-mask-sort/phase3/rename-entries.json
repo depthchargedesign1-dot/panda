@@ -871,9 +871,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABb_g",
-"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Aragorn Lotr.jpg",
+"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Aragorn (Lord of the Rings).jpg",
 "old": "2026 CARTOON, GAME AND FILM CHARACTERS/Aragorn-LOTR.jpg",
-"new": "2026 CARTOON, GAME AND FILM CHARACTERS/Aragorn Lotr.jpg"
+"new": "2026 CARTOON, GAME AND FILM CHARACTERS/Aragorn (Lord of the Rings).jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABE1A",
@@ -904,12 +904,6 @@
 "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Bert (Kids).jpg",
 "old": "2026 CARTOON, GAME AND FILM CHARACTERS/Bert - Kids Face Mask.jpg",
 "new": "2026 CARTOON, GAME AND FILM CHARACTERS/Bert (Kids).jpg"
-},
-{
-"source_path": "id:nVgixzQZKNAAAAAAAAAOiw",
-"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Bfg.jpg",
-"old": "2026 CARTOON, GAME AND FILM CHARACTERS/BFG.jpg",
-"new": "2026 CARTOON, GAME AND FILM CHARACTERS/Bfg.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAaag",
@@ -961,9 +955,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAabg",
-"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/C3po.jpg",
+"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/C3PO.jpg",
 "old": "2026 CARTOON, GAME AND FILM CHARACTERS/c3po.jpg",
-"new": "2026 CARTOON, GAME AND FILM CHARACTERS/C3po.jpg"
+"new": "2026 CARTOON, GAME AND FILM CHARACTERS/C3PO.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAabw",
@@ -1393,15 +1387,15 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAadg",
-"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Lotr (Gollum).jpg",
+"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Gollum (Lord of the Rings).jpg",
 "old": "2026 CARTOON, GAME AND FILM CHARACTERS/LOTR - Gollum.jpg",
-"new": "2026 CARTOON, GAME AND FILM CHARACTERS/Lotr (Gollum).jpg"
+"new": "2026 CARTOON, GAME AND FILM CHARACTERS/Gollum (Lord of the Rings).jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABS4w",
-"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Lotr Gollum.jpg",
+"destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Gollum (Lord of the Rings) 2.jpg",
 "old": "2026 CARTOON, GAME AND FILM CHARACTERS/LOTR Gollum.jpg",
-"new": "2026 CARTOON, GAME AND FILM CHARACTERS/Lotr Gollum.jpg"
+"new": "2026 CARTOON, GAME AND FILM CHARACTERS/Gollum (Lord of the Rings) 2.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAATzQ",
@@ -7255,9 +7249,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAARVw",
-"destination_path": "ns:1384231538//2026 FOOTBALLERS/Sweeden.jpg",
+"destination_path": "ns:1384231538//2026 FOOTBALLERS/Sweden.jpg",
 "old": "2026 FOOTBALLERS/SWEEDEN.jpg",
-"new": "2026 FOOTBALLERS/Sweeden.jpg"
+"new": "2026 FOOTBALLERS/Sweden.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAARVQ",
@@ -7426,12 +7420,6 @@
 "destination_path": "ns:1384231538//2026 FOOTBALLERS/Unai Emery.jpg",
 "old": "2026 FOOTBALLERS/unai emery.jpg",
 "new": "2026 FOOTBALLERS/Unai Emery.jpg"
-},
-{
-"source_path": "id:Ac8E0IpXMi8AAAAAAAARRQ",
-"destination_path": "ns:1384231538//2026 FOOTBALLERS/Usa.jpg",
-"old": "2026 FOOTBALLERS/USA.jpg",
-"new": "2026 FOOTBALLERS/Usa.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAR5g",
@@ -9793,9 +9781,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAP1A",
-"destination_path": "ns:1384231538//2026 MOVIE STARS/Harold Ramis H.jpg",
+"destination_path": "ns:1384231538//2026 MOVIE STARS/Harold Ramis.jpg",
 "old": "2026 MOVIE STARS/harold_ramis_h_2016.jpg",
-"new": "2026 MOVIE STARS/Harold Ramis H.jpg"
+"new": "2026 MOVIE STARS/Harold Ramis.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAXnQ",
@@ -10105,9 +10093,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAW3Q",
-"destination_path": "ns:1384231538//2026 MOVIE STARS/James Franco 58.jpg",
+"destination_path": "ns:1384231538//2026 MOVIE STARS/James Franco.jpg",
 "old": "2026 MOVIE STARS/James-Franco-58.jpg",
-"new": "2026 MOVIE STARS/James Franco 58.jpg"
+"new": "2026 MOVIE STARS/James Franco.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAPMw",
@@ -11047,33 +11035,33 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAV0g",
-"destination_path": "ns:1384231538//2026 MOVIE STARS/Lotr (Frodo).jpg",
+"destination_path": "ns:1384231538//2026 MOVIE STARS/Frodo (Lord of the Rings).jpg",
 "old": "2026 MOVIE STARS/LOTR - Frodo.jpg",
-"new": "2026 MOVIE STARS/Lotr (Frodo).jpg"
+"new": "2026 MOVIE STARS/Frodo (Lord of the Rings).jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAS7A",
-"destination_path": "ns:1384231538//2026 MOVIE STARS/Lotr (Galadrial).jpg",
+"destination_path": "ns:1384231538//2026 MOVIE STARS/Galadriel (Lord of the Rings).jpg",
 "old": "2026 MOVIE STARS/LOTR - Galadrial.jpg",
-"new": "2026 MOVIE STARS/Lotr (Galadrial).jpg"
+"new": "2026 MOVIE STARS/Galadriel (Lord of the Rings).jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAbiA",
-"destination_path": "ns:1384231538//2026 MOVIE STARS/Lotr (Gandalf).jpg",
+"destination_path": "ns:1384231538//2026 MOVIE STARS/Gandalf (Lord of the Rings).jpg",
 "old": "2026 MOVIE STARS/LOTR - Gandalf.jpg",
-"new": "2026 MOVIE STARS/Lotr (Gandalf).jpg"
+"new": "2026 MOVIE STARS/Gandalf (Lord of the Rings).jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAa8g",
-"destination_path": "ns:1384231538//2026 MOVIE STARS/Lotr (Gimli).jpg",
+"destination_path": "ns:1384231538//2026 MOVIE STARS/Gimli (Lord of the Rings).jpg",
 "old": "2026 MOVIE STARS/LOTR - GIMLI.jpg",
-"new": "2026 MOVIE STARS/Lotr (Gimli).jpg"
+"new": "2026 MOVIE STARS/Gimli (Lord of the Rings).jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAXBQ",
-"destination_path": "ns:1384231538//2026 MOVIE STARS/Lotr (Gollum).jpg",
+"destination_path": "ns:1384231538//2026 MOVIE STARS/Gollum (Lord of the Rings).jpg",
 "old": "2026 MOVIE STARS/LOTR - Gollum.jpg",
-"new": "2026 MOVIE STARS/Lotr (Gollum).jpg"
+"new": "2026 MOVIE STARS/Gollum (Lord of the Rings).jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAUPA",
@@ -12202,12 +12190,6 @@
 "destination_path": "ns:1384231538//2026 MOVIE STARS/Sarah Rafferty MH.jpg",
 "old": "2026 MOVIE STARS/sarah rafferty MH.jpg",
 "new": "2026 MOVIE STARS/Sarah Rafferty MH.jpg"
-},
-{
-"source_path": "id:Ac8E0IpXMi8AAAAAAAATkA",
-"destination_path": "ns:1384231538//2026 MOVIE STARS/Scar.jpg",
-"old": "2026 MOVIE STARS/Scarface.jpg",
-"new": "2026 MOVIE STARS/Scar.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAASYw",
@@ -14071,9 +14053,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAWIw",
-"destination_path": "ns:1384231538//2026 MUSIC/Boygeorge Portable.jpg",
+"destination_path": "ns:1384231538//2026 MUSIC/Boy George 2.jpg",
 "old": "2026 MUSIC/boygeorge_portable.jpg",
-"new": "2026 MUSIC/Boygeorge Portable.jpg"
+"new": "2026 MUSIC/Boy George 2.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABXkw",
@@ -14263,9 +14245,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAO3Q",
-"destination_path": "ns:1384231538//2026 MUSIC/Charlie (Mk1).jpg",
+"destination_path": "ns:1384231538//2026 MUSIC/Charlie (MK1).jpg",
 "old": "2026 MUSIC/Charlie - mk1.jpg",
-"new": "2026 MUSIC/Charlie (Mk1).jpg"
+"new": "2026 MUSIC/Charlie (MK1).jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAPgw",
@@ -15769,9 +15751,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAX1A",
-"destination_path": "ns:1384231538//2026 MUSIC/Lmfao.jpg",
+"destination_path": "ns:1384231538//2026 MUSIC/LMFAO.jpg",
 "old": "2026 MUSIC/lmfao.jpg",
-"new": "2026 MUSIC/Lmfao.jpg"
+"new": "2026 MUSIC/LMFAO.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAbfQ",
@@ -16393,9 +16375,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAT2w",
-"destination_path": "ns:1384231538//2026 MUSIC/Nkotb.jpg",
+"destination_path": "ns:1384231538//2026 MUSIC/NKOTB.jpg",
 "old": "2026 MUSIC/NKOTB1.JPG",
-"new": "2026 MUSIC/Nkotb.jpg"
+"new": "2026 MUSIC/NKOTB.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAUYg",
@@ -17299,9 +17281,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABTDA",
-"destination_path": "ns:1384231538//2026 MUSIC/Sza.jpg",
+"destination_path": "ns:1384231538//2026 MUSIC/SZA.jpg",
 "old": "2026 MUSIC/SZA 2023.jpg",
-"new": "2026 MUSIC/Sza.jpg"
+"new": "2026 MUSIC/SZA.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABU0A",
@@ -17755,9 +17737,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAVtaw",
-"destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Donald+Trump M JB.jpg",
+"destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Donald Trump JB.jpg",
 "old": "2026 ROYALS AND POLITICIANS/Donald+Trump m JB.jpg",
-"new": "2026 ROYALS AND POLITICIANS/Donald+Trump M JB.jpg"
+"new": "2026 ROYALS AND POLITICIANS/Donald Trump JB.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAuVQ",
@@ -17821,9 +17803,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAUig",
-"destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ghandi.jpg",
+"destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Gandhi 2.jpg",
 "old": "2026 ROYALS AND POLITICIANS/GHANDI.JPG",
-"new": "2026 ROYALS AND POLITICIANS/Ghandi.jpg"
+"new": "2026 ROYALS AND POLITICIANS/Gandhi 2.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAABbUA",
@@ -17905,9 +17887,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAYvw",
-"destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jfk.jpg",
+"destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/JFK.jpg",
 "old": "2026 ROYALS AND POLITICIANS/JFK.JPG",
-"new": "2026 ROYALS AND POLITICIANS/Jfk.jpg"
+"new": "2026 ROYALS AND POLITICIANS/JFK.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAThw",
@@ -20929,9 +20911,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAZJQ",
-"destination_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Rob Kearney 60.jpg",
+"destination_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Rob Kearney.jpg",
 "old": "2026 SPORTS STARS/Rugby/rob-kearney-60-752x501.jpg",
-"new": "2026 SPORTS STARS/Rugby/Rob Kearney 60.jpg"
+"new": "2026 SPORTS STARS/Rugby/Rob Kearney.jpg"
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAZHQ",
@@ -25297,9 +25279,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAScA",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Kelvin Fletcher 10 28.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Kelvin Fletcher.jpg",
 "old": "2026 TV SHOWS AND STARS/kelvin_fletcher_2003_10_28.jpg",
-"new": "2026 TV SHOWS AND STARS/Kelvin Fletcher 10 28.jpg"
+"new": "2026 TV SHOWS AND STARS/Kelvin Fletcher.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAadg",
@@ -28483,9 +28465,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAASEg",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/S Georgia Kousoulou.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Georgia Kousoulou.jpg",
 "old": "2026 TV SHOWS AND STARS/TOWIE's Georgia Kousoulou.jpg",
-"new": "2026 TV SHOWS AND STARS/S Georgia Kousoulou.jpg"
+"new": "2026 TV SHOWS AND STARS/Georgia Kousoulou.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAA0L3g",
@@ -30289,9 +30271,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAA0MrQ",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/LOVE ISLAND/Mike (Love Island) 93.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/LOVE ISLAND/Mike (Love Island).jpg",
 "old": "2026 TV SHOWS AND STARS/LOVE ISLAND/Mike love island sr3 93 jpg 1497517560 2020 Face.jpg",
-"new": "2026 TV SHOWS AND STARS/LOVE ISLAND/Mike (Love Island) 93.jpg"
+"new": "2026 TV SHOWS AND STARS/LOVE ISLAND/Mike (Love Island).jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAA0MtA",
@@ -31507,9 +31489,9 @@
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAA0NCw",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/TOWIE/Michael.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/TOWIE/Michael Hassini 2.jpg",
 "old": "2026 TV SHOWS AND STARS/TOWIE/Michael Hassini.2 2020 Face.jpg",
-"new": "2026 TV SHOWS AND STARS/TOWIE/Michael.jpg"
+"new": "2026 TV SHOWS AND STARS/TOWIE/Michael Hassini 2.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAA0NDA",
@@ -31651,9 +31633,9 @@
 },
 {
 "source_path": "id:nVgixzQZKNAAAAAAAAAa3A",
-"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/TOWIE PACK PACK E/S Georgia Kousoulou.jpg",
+"destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/TOWIE PACK PACK E/Georgia Kousoulou.jpg",
 "old": "2026 TV SHOWS AND STARS/TOWIE PACK PACK E/TOWIE's Georgia Kousoulou.jpg",
-"new": "2026 TV SHOWS AND STARS/TOWIE PACK PACK E/S Georgia Kousoulou.jpg"
+"new": "2026 TV SHOWS AND STARS/TOWIE PACK PACK E/Georgia Kousoulou.jpg"
 },
 {
 "source_path": "id:Ac8E0IpXMi8AAAAAAAAbhQ",

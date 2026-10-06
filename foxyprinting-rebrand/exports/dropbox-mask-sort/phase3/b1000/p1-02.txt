@@ -1,3 +1,6 @@
+{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Tony Blair New.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Tony Blair.jpg"}
+{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Ilyich Lenin Portrait.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Ilyich Lenin.jpg"}
+{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Putin Politician.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Vladimir Putin 2.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Xi JinPing Politician.png", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Xi Jinping.png"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Zara Philips.JPG", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Zara Phillips.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Carl Froch Face Mask.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Carl Froch 2.jpg"}
@@ -211,7 +214,7 @@
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Matt Dawson - Rugby.JPG", "destination_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Matt Dawson.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Owen Farrell copy.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Owen Farrell.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Rugby/richie-mccaw-2104193580.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Richie McCaw.jpg"}
-{"source_path": "ns:1384231538//2026 SPORTS STARS/Rugby/rob-kearney-60-752x501.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Rob Kearney 60.jpg"}
+{"source_path": "ns:1384231538//2026 SPORTS STARS/Rugby/rob-kearney-60-752x501.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Rob Kearney.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Rugby/RORY BEST BRITISH LIONS RUGBY.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Rory Best British Lions.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Rugby/ryan jones rugby.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Ryan Jones.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Rugby/SeanOBrien-e1492601179880.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Rugby/Sean O'Brien.jpg"}
@@ -718,7 +721,7 @@
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Keith Lemon MINT.JPG", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Keith Lemon.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/kelly mccreary grey's anatomy.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Kelly McCreary.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/KELLYHOPPEN ADDRESS LONDON E1358240851515.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Kelly Hoppen.jpg"}
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/kelvin_fletcher_2003_10_28.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Kelvin Fletcher 10 28.jpg"}
+{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/kelvin_fletcher_2003_10_28.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Kelvin Fletcher.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/kendall jenner (2).jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Kendall Jenner 2.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/KENDALL JENNER (3).jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Kendall Jenner 3.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/KENDALL JENNER copy.png", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Kendall Jenner.png"}
@@ -995,6 +998,3 @@
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/samira mighty - love island 2018.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Samira Mighty.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sammy Winward Emmerdale.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sammy Winward.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sandi Toksvig Bake Off 2017.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sandi Toksvig 2.jpg"}
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Hadland - stevie from miranda.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Hadland.jpg"}
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Jane - Kids Mask.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Jane.jpg"}
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Rafferty Suits.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Sarah Rafferty.jpg"}

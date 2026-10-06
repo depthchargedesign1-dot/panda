@@ -1,6 +1,3 @@
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/nina dobrev.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Nina Dobrev TMPCASE.jpg"}
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/noel fielding.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Noel Fielding TMPCASE.jpg"}
-{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/NORRIS COLE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Norris Cole TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Norris Mcwhirter Left.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Norris McWhirter Left TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/olivia holt (larger).jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Olivia Holt (larger) TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Omar Sy lupin.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Omar Sy Lupin TMPCASE.jpg"}

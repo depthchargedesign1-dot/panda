@@ -52,12 +52,11 @@
 {"source_path": "ns:1384231538//2026 BOXERS/Jermain Taylor TMPCASE.jpg", "destination_path": "ns:1384231538//2026 BOXERS/Jermain Taylor.jpg"}
 {"source_path": "ns:1384231538//2026 BOXERS/Mike Kessler (Battered and Bruised) TMPCASE.jpg", "destination_path": "ns:1384231538//2026 BOXERS/Mike Kessler (Battered and Bruised).jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Baby Groot TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Baby Groot.jpg"}
-{"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Bfg TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Bfg.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Bith TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Bith.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Bob the Builder TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Bob the Builder.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Brain TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Brain.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Bulbasaur TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Bulbasaur.jpg"}
-{"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/C3po TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/C3po.jpg"}
+{"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/C3PO TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/C3PO.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Charmander TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Charmander.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Comparethemarket TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Comparethemarket.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Dave Minion TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Dave Minion.jpg"}
@@ -73,7 +72,6 @@
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Jubilee TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Jubilee.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Leprechaun TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Leprechaun.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Lion Halloween TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Lion Halloween.jpg"}
-{"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Lotr Gollum TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Lotr Gollum.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Luigi TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Luigi.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Man City Moonchester Mascot TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Man City Moonchester Mascot.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Mike (Sing) TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Mike (Sing).jpg"}
@@ -322,7 +320,6 @@
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Steven Gerrard Cartoon TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Steven Gerrard Cartoon.jpg"}
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Sven Goran Errikson Cartoon TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Sven Goran Errikson Cartoon.jpg"}
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Sven TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Sven.jpg"}
-{"source_path": "ns:1384231538//2026 FOOTBALLERS/Sweeden TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Sweeden.jpg"}
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Switzerland TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Switzerland.jpg"}
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Teddy Sheringham TMPCASE.png", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Teddy Sheringham.png"}
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Terry Connor TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Terry Connor.jpg"}
@@ -332,7 +329,6 @@
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Tomas Rosicky TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Tomas Rosicky.jpg"}
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Tony Ap McCoy TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Tony Ap McCoy.jpg"}
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Unai Emery TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Unai Emery.jpg"}
-{"source_path": "ns:1384231538//2026 FOOTBALLERS/Usa TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Usa.jpg"}
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Van Der Sar TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Van Der Sar.jpg"}
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Vinnie Jones TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Vinnie Jones.jpg"}
 {"source_path": "ns:1384231538//2026 FOOTBALLERS/Virgil van Dijk TMPCASE.jpg", "destination_path": "ns:1384231538//2026 FOOTBALLERS/Virgil van Dijk.jpg"}
@@ -836,7 +832,7 @@
 {"source_path": "ns:1384231538//2026 MUSIC/Liam Payne TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Liam Payne.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Lil Wayne TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Lil Wayne.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/LL Cool J JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MUSIC/LL Cool J JB.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/Lmfao TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Lmfao.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/LMFAO TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MUSIC/LMFAO.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Louis Tomlinson JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Louis Tomlinson JB.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Ludacris JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Ludacris JB.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/Luke Hemmings JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Luke Hemmings JB.jpg"}
@@ -913,16 +909,14 @@
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/David Cameron JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/David Cameron JB.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Diana TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Diana.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Donald Trump Mouth Open TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Donald Trump Mouth Open.jpg"}
-{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Donald+Trump M JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Donald+Trump M JB.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ed Balls TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ed Balls.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Francois Hollande JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Francois Hollande JB.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/George Osborne TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/George Osborne.jpg"}
-{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ghandi TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ghandi.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Greta Thunberg TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Greta Thunberg.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jack Brooksbank TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jack Brooksbank.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jackie Kennedy TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jackie Kennedy.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jeremy Paxman TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jeremy Paxman.jpg"}
-{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jfk TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jfk.jpg"}
+{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/JFK TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/JFK.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Julia Gillard TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Julia Gillard.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ken Livingstone TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ken Livingstone.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Kim Jong Un TMPCASE.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Kim Jong Un.jpg"}
@@ -998,3 +992,9 @@
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Danill Kvyat Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Danill Kvyat Cap JB.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Esteban Gutierrez JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Esteban Gutierrez JB.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Massa Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Massa Cap JB.jpg"}
+{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Nasr Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Nasr Cap JB.jpg"}
+{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Jenson Button Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Jenson Button Cap JB.jpg"}
+{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Kimi Raikkonen Mubadala Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Kimi Raikkonen Mubadala Cap JB.jpg"}
+{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Max Verstappen Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Max Verstappen Cap JB.jpg"}
+{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Nico Hulkenberg Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Nico Hulkenberg Cap JB.jpg"}
+{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Sergio Perez Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Sergio Perez Cap JB.jpg"}

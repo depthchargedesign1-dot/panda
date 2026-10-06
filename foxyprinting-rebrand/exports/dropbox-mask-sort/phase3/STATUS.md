@@ -18,3 +18,7 @@ p1-01 submitted 08:3x op=AUACi-3dEYi-UEr4BFQ-_8GS1XZpDYMZS1tI8c7OsAjG3_JIJZbCdot
 - Known imperfect names in p1-01 to correct in pass 2 (rename again): MOVIE STARS/"Gus Bad.jpg" -> "Gus (Breaking Bad) 2.jpg";
   "Gease (Sandy2).jpg" -> "Sandy (Grease) 2.jpg"; "Adrian Brody JB.jpg" -> "Adrien Brody JB.jpg".
 - 08:55 sent p1-01 (op AUACi-3d...) completed: 1000/1000 success, result phase3/results/sent-p1-01.json
+- 08:58 review before next batch: fixed Scarface->Scar, LOTR abbreviations, Boy George, MK1, TOWIE's, Hassini, Donald+Trump,
+  acronyms (NKOTB, JFK, LMFAO, SZA, C3PO), Gandhi, Sweden, number leftovers (overrides). Plan/batches regenerated:
+  p1 4,174 (p1-01..05), p2 1,612 (adds pass-2 fixes for already-sent "Aragorn Lotr.jpg" and "Lotr (Gollum).jpg" in CARTOON).
+- p1-01 (new numbering) saved as phase3/sent/p1-02.json before sending.

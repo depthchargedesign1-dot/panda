@@ -164,3 +164,28 @@ OVERRIDES.update({"Pirates - Johnny Depp.jpg": "Johnny Depp (Pirates of the Cari
 OVERRIDES.update({"070 Shake.jpg": "070 Shake", "Little Mix - Jade Thirwall.jpg": "Jade Thirlwall",
                   "Little Mix - Jesy Nelson Mask - Copy - Copy - Copy - Copy.jpg": "Jesy Nelson", "Jo O'Meara _S Club 7.jpg": "Jo O'Meara",
                   "Nail - One Direction.JPG": "Niall Horan", "bdc617e4-df69-4eea-8264-778cc5c0713d.png": "SKIP"})
+OVERRIDES.update({  # 6 Oct review before p1-02: "face" stripped inside Scarface, LOTR abbreviations, glued names
+    "Scarface.jpg": "Scarface",
+    "LOTR - Frodo.jpg": "Frodo (Lord of the Rings)",
+    "LOTR - Galadrial.jpg": "Galadriel (Lord of the Rings)",
+    "LOTR - Gandalf.jpg": "Gandalf (Lord of the Rings)",
+    "LOTR - GIMLI.jpg": "Gimli (Lord of the Rings)",
+    "LOTR - Gollum.jpg": "Gollum (Lord of the Rings)",
+    "LOTR Gollum.jpg": "Gollum (Lord of the Rings)",
+    "Aragorn-LOTR.jpg": "Aragorn (Lord of the Rings)",
+    "boygeorge_portable.jpg": "Boy George",
+    "Charlie - mk1.jpg": "Charlie (MK1)",
+})
+OVERRIDES.update({  # 6 Oct review (2): leftovers, acronyms, spellings
+    "TOWIE's Georgia Kousoulou.jpg": "Georgia Kousoulou",
+    "Michael Hassini.2 2020 Face.jpg": "Michael Hassini 2",
+    "Donald+Trump m JB.jpg": "Donald Trump JB",
+    "kelvin_fletcher_2003_10_28.jpg": "Kelvin Fletcher",
+    "rob-kearney-60-752x501.jpg": "Rob Kearney",
+    "Mike love island sr3 93 jpg 1497517560 2020 Face.jpg": "Mike (Love Island)",
+    "harold_ramis_h_2016.jpg": "Harold Ramis",
+    "James-Franco-58.jpg": "James Franco",
+    "NKOTB1.JPG": "NKOTB", "JFK.JPG": "JFK", "lmfao.jpg": "LMFAO", "BFG.jpg": "BFG",
+    "USA.jpg": "USA", "SZA 2023.jpg": "SZA", "c3po.jpg": "C3PO",
+    "GHANDI.JPG": "Gandhi", "SWEEDEN.jpg": "Sweden",
+})

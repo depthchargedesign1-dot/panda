@@ -1,4 +1,3 @@
-{"source_path": "ns:1384231538//2026 MOVIE STARS/coco chanel.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Coco Chanel TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/colin farrell MH.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Colin Farrell MH TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/colin firth.JPG", "destination_path": "ns:1384231538//2026 MOVIE STARS/Colin Firth TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Connie Fisher.JPG", "destination_path": "ns:1384231538//2026 MOVIE STARS/Connie Fisher TMPCASE.jpg"}
@@ -400,7 +399,7 @@
 {"source_path": "ns:1384231538//2026 MUSIC/liam payne.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Liam Payne TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/lil wayne.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Lil Wayne TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/LL COOL J JB.jpg", "destination_path": "ns:1384231538//2026 MUSIC/LL Cool J JB TMPCASE.jpg"}
-{"source_path": "ns:1384231538//2026 MUSIC/lmfao.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Lmfao TMPCASE.jpg"}
+{"source_path": "ns:1384231538//2026 MUSIC/lmfao.jpg", "destination_path": "ns:1384231538//2026 MUSIC/LMFAO TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/LOUIS TOMLINSON JB.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Louis Tomlinson JB TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/LUDACRIS JB.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Ludacris JB TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 MUSIC/LUKE HEMMINGS JB.jpg", "destination_path": "ns:1384231538//2026 MUSIC/Luke Hemmings JB TMPCASE.jpg"}
@@ -477,16 +476,14 @@
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/DAVID CAMERON JB.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/David Cameron JB TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/diana.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Diana TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Donald Trump Mouth open.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Donald Trump Mouth Open TMPCASE.jpg"}
-{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Donald+Trump m JB.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Donald+Trump M JB TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/ed balls.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ed Balls TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/francois hollande JB.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Francois Hollande JB TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/George osborne.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/George Osborne TMPCASE.jpg"}
-{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/GHANDI.JPG", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ghandi TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Greta thunberg.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Greta Thunberg TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/jack brooksbank.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jack Brooksbank TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/JACKIE KENNEDY.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jackie Kennedy TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/jeremy paxman.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jeremy Paxman TMPCASE.jpg"}
-{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/JFK.JPG", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Jfk TMPCASE.jpg"}
+{"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/JFK.JPG", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/JFK TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/julia gillard.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Julia Gillard TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ken Livingstone.JPG", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Ken Livingstone TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/KIM JONG UN.jpg", "destination_path": "ns:1384231538//2026 ROYALS AND POLITICIANS/Kim Jong Un TMPCASE.jpg"}
@@ -998,3 +995,6 @@
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/natasha kaplinsky.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Natasha Kaplinsky TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/nick ferrari.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Nick Ferrari TMPCASE.jpg"}
 {"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/Nicole Scherzinger.JPG", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Nicole Scherzinger TMPCASE.jpg"}
+{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/nina dobrev.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Nina Dobrev TMPCASE.jpg"}
+{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/noel fielding.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Noel Fielding TMPCASE.jpg"}
+{"source_path": "ns:1384231538//2026 TV SHOWS AND STARS/NORRIS COLE.jpg", "destination_path": "ns:1384231538//2026 TV SHOWS AND STARS/Norris Cole TMPCASE.jpg"}
