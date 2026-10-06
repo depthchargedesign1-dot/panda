@@ -12,3 +12,5 @@ Pushing them one by one would use the owner's Claude usage allowance many times 
 
 Columns: Handle, SEO Title, SEO Description (same format as the 4 Oct files). Other product fields are left unchanged.
 Supersedes the 4 Oct `0[1-6]-seo.csv` files for these products – don't import those.
+
+Don't import the old exports/face-masks/masks-01/02 CSVs: the mask copy is already live and newer.
