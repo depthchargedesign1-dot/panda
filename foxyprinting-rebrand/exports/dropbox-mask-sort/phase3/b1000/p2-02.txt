@@ -1,3 +1,5 @@
+{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Nasr Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Nasr Cap JB.jpg"}
+{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Jenson Button Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Jenson Button Cap JB.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Kimi Raikkonen Mubadala Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Kimi Raikkonen Mubadala Cap JB.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Max Verstappen Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Max Verstappen Cap JB.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Nico Hulkenberg Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Nico Hulkenberg Cap JB.jpg"}
@@ -609,3 +611,6 @@
 {"source_path": "ns:1384231538//2026 WAGS AND MODELS/Nick Bateman TMPCASE.jpg", "destination_path": "ns:1384231538//2026 WAGS AND MODELS/Nick Bateman.jpg"}
 {"source_path": "ns:1384231538//2026 WAGS AND MODELS/Olivia Culpo TMPCASE.jpg", "destination_path": "ns:1384231538//2026 WAGS AND MODELS/Olivia Culpo.jpg"}
 {"source_path": "ns:1384231538//2026 WAGS AND MODELS/Penny Lancaster TMPCASE.jpg", "destination_path": "ns:1384231538//2026 WAGS AND MODELS/Penny Lancaster.jpg"}
+{"source_path": "ns:1384231538//2026 MOVIE STARS/Gus Bad.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Gus (Breaking Bad) 2.jpg"}
+{"source_path": "ns:1384231538//2026 MOVIE STARS/Gease (Sandy2).jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Sandy (Grease) 2.jpg"}
+{"source_path": "ns:1384231538//2026 MOVIE STARS/Adrian Brody JB.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Adrien Brody JB.jpg"}

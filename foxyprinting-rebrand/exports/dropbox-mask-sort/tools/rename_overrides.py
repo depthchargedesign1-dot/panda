@@ -156,3 +156,8 @@ PHRASE_FIX.update({k.lower(): v for k, v in {
     "Headland Championship": "SKIPNAME",
 }.items()})
 OVERRIDES.update({"Pirates - Kiera.jpg": "Keira Knightley (Pirates of the Caribbean)"})
+OVERRIDES.update({"hello_kitty001.png": "Hello Kitty", "Stewart- Lee.jpg": "Stewart Lee", "The swedish chef.jpg": "The Swedish Chef",
+                  "Cricket Masks.jpg": "SKIP", "clarke2_1568138a.jpg": "Michael Clarke 2"})
+OVERRIDES.update({"Pirates - Johnny Depp.jpg": "Johnny Depp (Pirates of the Caribbean)", "harry potter young.jpg": "Harry Potter Young",
+                  "Mask of Loki-Jim Carrey-The Mask.jpg": "Jim Carrey (The Mask)", "Red Shawshank Morgan Freeman SJ2.jpg": "Morgan Freeman (Shawshank Redemption) SJ 2",
+                  "GUS 2breaking bad.JPG": "Gus (Breaking Bad) 2", "Gease - Sandy2.jpg": "Sandy (Grease) 2", "ADRIAN BRODYJB.jpg": "Adrien Brody JB"})

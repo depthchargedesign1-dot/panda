@@ -96,6 +96,7 @@
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Sponge Bob Square Pants SJ1 TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Sponge Bob Square Pants SJ1.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Spongebob Squarepants 22 TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Spongebob Squarepants 22.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Squirtle TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Squirtle.jpg"}
+{"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/The Swedish Chef TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/The Swedish Chef.jpg"}
 {"source_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Tin Tin TMPCASE.jpg", "destination_path": "ns:1384231538//2026 CARTOON, GAME AND FILM CHARACTERS/Tin Tin.jpg"}
 {"source_path": "ns:1384231538//2026 COMEDIANS/Al Murray TMPCASE.jpg", "destination_path": "ns:1384231538//2026 COMEDIANS/Al Murray.jpg"}
 {"source_path": "ns:1384231538//2026 COMEDIANS/Alan Carr TMPCASE.jpg", "destination_path": "ns:1384231538//2026 COMEDIANS/Alan Carr.jpg"}
@@ -504,6 +505,7 @@
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Half George Clooney TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Half George Clooney.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Harry Enfield Teenager TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Harry Enfield Teenager.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Harry Lennix MH TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Harry Lennix MH.jpg"}
+{"source_path": "ns:1384231538//2026 MOVIE STARS/Harry Potter Young TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Harry Potter Young.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Hayley Atwell MH TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Hayley Atwell MH.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Hayley Atwell TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Hayley Atwell.jpg"}
 {"source_path": "ns:1384231538//2026 MOVIE STARS/Helen Mirren TMPCASE.jpg", "destination_path": "ns:1384231538//2026 MOVIE STARS/Helen Mirren.jpg"}
@@ -996,5 +998,3 @@
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Danill Kvyat Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Danill Kvyat Cap JB.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Esteban Gutierrez JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Esteban Gutierrez JB.jpg"}
 {"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Massa Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Massa Cap JB.jpg"}
-{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Nasr Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Felipe Nasr Cap JB.jpg"}
-{"source_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Jenson Button Cap JB TMPCASE.jpg", "destination_path": "ns:1384231538//2026 SPORTS STARS/Formula 1/Jenson Button Cap JB.jpg"}

@@ -14,3 +14,6 @@
 - 08:11-08:12 a01 entries 1-125 renamed: 125/125 success (path-based).
 - Owner asked (via coordinator) for as few move calls as possible: remaining work packed by tools/rename_batches_1000.py into
   phase3/b1000/p1-01..06 (normal renames + case-only step 1 to TMPCASE, 5,180) and p2-01..02 (TMPCASE -> final, 1,611).
+p1-01 submitted 08:3x op=AUACi-3dEYi-UEr4BFQ-_8GS1XZpDYMZS1tI8c7OsAjG3_JIJZbCdot2ChixgQ8G2EfQtc0QWQM4h-L2DQgUSubUJKzLy0wNksgiXptOQf0WyiXMG38DoAaDpoFVWw8RigzSqkJSX-Vo3xiXQDwvvfQ4lCtvRJb05YdxTrarUxIf9ZaCkt1hDNjstmB663jXZzenOYhPLtwtF8jYu-vrMh3bi_Jye-HYnuGT2oi8CzagpA
+- Known imperfect names in p1-01 to correct in pass 2 (rename again): MOVIE STARS/"Gus Bad.jpg" -> "Gus (Breaking Bad) 2.jpg";
+  "Gease (Sandy2).jpg" -> "Sandy (Grease) 2.jpg"; "Adrian Brody JB.jpg" -> "Adrien Brody JB.jpg".

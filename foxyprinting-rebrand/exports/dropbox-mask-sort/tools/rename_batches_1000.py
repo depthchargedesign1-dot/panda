@@ -5,11 +5,21 @@ Excludes the 2 test renames and a01 lines 1-125 (sent 08:2x). Path-based (mistyp
 import json, os
 D = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 B = f"{D}/phase3/b250"
-sent = json.load(open(f"{B}/a01.json"))[:125]
+sent = json.load(open(f"{D}/phase3/sent/a01-250.json"))[:125]
 done = {x["id"] for x in sent}
+import glob as _g
+for f in _g.glob(f"{D}/phase3/sent/p1-*.json"): done |= {x["id"] for x in json.load(open(f))}
 A, T, F = [], [], []
 for n in range(1, 16): A += json.load(open(f"{B}/a{n:02d}.json"))
 for n in range(1, 8): T += json.load(open(f"{B}/t{n:02d}.json")); F += json.load(open(f"{B}/f{n:02d}.json"))
+M = "ns:1384231538//2026 MOVIE STARS/"
+FIX = [  # names sent in the first 1000 that were wrong; corrected in pass 2 (ids from phase3/sent/p1-01.json)
+    {"source_path": M + "Gus Bad.jpg", "destination_path": M + "Gus (Breaking Bad) 2.jpg"},
+    {"source_path": M + "Gease (Sandy2).jpg", "destination_path": M + "Sandy (Grease) 2.jpg"},
+    {"source_path": M + "Adrian Brody JB.jpg", "destination_path": M + "Adrien Brody JB.jpg"}]
+_s1 = {x["destination_path"]: x["id"] for x in json.load(open(f"{D}/phase3/sent/p1-01.json"))}
+for x in FIX: x["id"] = _s1[x["source_path"]]
+F = F + FIX
 P1 = [x for x in A if x["id"] not in done] + T
 os.makedirs(f"{D}/phase3/b1000", exist_ok=True)
 def write(tag, L):
@@ -18,4 +28,5 @@ def write(tag, L):
         json.dump(part, open(f"{D}/phase3/b1000/{name}.json", "w"), ensure_ascii=False)
         open(f"{D}/phase3/b1000/{name}.txt", "w").write("\n".join(json.dumps({"source_path": x["source_path"], "destination_path": x["destination_path"]}, ensure_ascii=False) for x in part) + "\n")
 write("p1", P1); write("p2", F)
+# NOTE: after p1-01 was sent, batches are renumbered from the remaining entries (sent ones excluded).
 print(len(P1), len(F))
