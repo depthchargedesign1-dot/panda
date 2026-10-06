@@ -5,6 +5,7 @@ items=json.load(open(f'{S}/phase2_items.json')); B=175
 log=f'{S}/phase2_done.log'
 if len(sys.argv)>1:
     open(log,'a').write(sys.argv[1]+'\n')
+import shutil; shutil.copy(log,'/home/user/panda/foxyprinting-rebrand/exports/rollback/2026-10-05-google-fixes/phase2_done.log')
 done={int(x) for x in open(log).read().split()}
 n=(len(items)+B-1)//B
 pend=[i for i in range(n) if i not in done]
