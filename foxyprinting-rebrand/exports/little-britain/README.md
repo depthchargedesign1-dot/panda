@@ -30,3 +30,7 @@ Source resolution at A4: Vicky and Andy 300 dpi; Lou ~100 dpi; Bubbles ~48 dpi (
 
 ## Run
 `run_sandbox.sh BG_PAIR_URL BG_PACK_URL` in the Higgsfield sandbox with `targets.json` (Shopify staged PUT URLs).
+
+## Fonts
+The production artwork (print/cut PDFs and SVGs, both masks in the pair and all four in the pack) uses **no fonts**: only the face image and vector cut lines.
+So no `Fonts/` subfolder is needed in the Dropbox folders. The listing photos (`-mask-01`, `-02-back`, `-03-front-back`) have labels in Montserrat Bold/Regular (SIL OFL 1.1, Google Fonts), but they are flattened JPEGs, not editable artwork.

@@ -18,3 +18,6 @@ Notes:
    "2019 tidy - celebrity facemasks png jpegs only missing some/WOMEN PNG NO BACKGROUND").
  - Bubbles DeVere source is only 400 x 566 px: it will print soft at A4. Swap in a higher-res file if one turns up.
  - Unofficial, fan-made novelty masks. Not endorsed by the BBC, Little Britain, Matt Lucas or David Walliams.
+
+Fonts: NONE. The print/cut files contain only the face image and vector cut lines - no text, so no fonts are needed.
+(The shop listing photos use Montserrat, OFL, but those are flattened JPEGs, not production artwork.)
