@@ -147,3 +147,10 @@ Put them in Dropbox, e.g. `/PRODUCT PHOTOS 2026/BLANKS/<product>/`. From each ph
 | personalised-dog-parka-jacket | packshot + MAX example 69881389515133 + 2 colour packshots | 69872782115197, 69872782147965 |
 | personalised-dog-football-t-shirt | packshot + OLLIE 10 example 69881389547901 + 4 colour packshots | 69872799515005, 69872799547773 |
 | personalised-dog-varsity-jacket | black/navy/pink packshots + BUSTER 7 example 69881121800573 | 69872785850749, 69872785883517 |
+
+## 8 Oct, ~22:00 UTC: owner complaint and action
+Owner: "again you have used rubbish cartoon style vector images of a product for the pint glass … do not ever use this style of main image or mockup again" and "youve merged a pint glass with bar mat and its not right" (example: personalised-beer-oclock-pint-glass).
+- **Detached (not deleted)** the 18 "-pair" images (drawn product pasted onto the bar-mat scene) from all 18 bar pairing products, via fileUpdate referencesToRemove. The files remain in Shopify Files. Media ids: 69884538749309, 69884542976381, 69884545532285, 69884546482557, 69884548350333, 69884549529981, 69884550250877, 69884550775165, 69884551135613, 69884554084733, 69884557721981, 69884559589757, 69884561654141, 69884562112893, 69884562997629, 69884563390845, 69884564210045, 69884565193085.
+- The other drawn images (main + design close-up) are still on the products until real photos exist; the owner has been asked whether to hide (draft) the products meanwhile.
+- Stock photo sites (pexels, unsplash, pixabay, wikimedia, openverse) are blocked by this environment's network policy (403 at the proxy); the owner can allow them under the environment's Network access settings.
+- CLAUDE.md rule 7 strengthened: never leave a drawn image live even as a stand-in; never paste one product onto another product's scene.
