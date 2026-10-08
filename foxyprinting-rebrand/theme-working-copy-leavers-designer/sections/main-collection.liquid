@@ -1,0 +1,237 @@
+{%- liquid
+  assign accents = 'orange,pink,purple,teal,yellow' | split: ','
+  assign accent_i = collection.id | modulo: 5
+  assign accent = accents[accent_i]
+  assign sort_by = collection.sort_by | default: collection.default_sort_by
+-%}
+{%- liquid
+  assign header_image = collection.metafields.foxy.header_image.value
+  assign banner_group = ''
+  if header_image == blank and section.settings.auto_banners
+    capture banner_group
+      render 'collection-banner-group', collection: collection
+    endcapture
+    assign banner_group = banner_group | strip
+  endif
+
+  comment
+    Compact 1800x600 versions of the automatic banners live in Files as foxy-header-<group>-compact.jpg.
+    If one is missing, fall back to the original foxy-header-<group>.png.
+  endcomment
+  assign banner_compact = blank
+  if banner_group != blank
+    assign compact_name = 'foxy-header-' | append: banner_group | append: '-compact.jpg'
+    assign banner_compact = images[compact_name]
+  endif
+
+  assign is_compact = false
+  if section.settings.compact_banners or collection.metafields.foxy.compact_header.value == true
+    assign is_compact = true
+  endif
+  if header_image and header_image.aspect_ratio > 2.5
+    assign is_compact = true
+  endif
+-%}
+<div class="collection-hero accent-{{ accent }}{% if header_image or banner_group != blank %} collection-hero--banner{% if is_compact %} collection-hero--compact{% endif %}{% endif %}">
+  {%- if header_image -%}
+    <div class="collection-hero__banner">
+      {{ header_image | image_url: width: 1800 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '750,1100,1500,1800', sizes: '100vw', alt: '' }}
+    </div>
+  {%- elsif banner_compact != blank -%}
+    <div class="collection-hero__banner">
+      {{ banner_compact | image_url: width: 1800 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '750,1100,1500,1800', sizes: '100vw', alt: '' }}
+    </div>
+  {%- elsif banner_group != blank -%}
+    {%- assign banner_file = 'foxy-header-' | append: banner_group | append: '.png' -%}
+    <div class="collection-hero__banner">
+      <img src="{{ banner_file | file_img_url: '1800x' }}"
+        srcset="{{ banner_file | file_img_url: '750x' }} 750w, {{ banner_file | file_img_url: '1100x' }} 1100w, {{ banner_file | file_img_url: '1500x' }} 1500w, {{ banner_file | file_img_url: '1800x' }} 1800w"
+        sizes="100vw" width="1800" height="771" alt="" loading="eager" fetchpriority="high">
+    </div>
+  {%- endif -%}
+  <div class="page-width collection-hero__inner">
+    <div class="collection-hero__text">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{{ routes.root_url }}">{{ 'general.home' | t }}</a> / <span aria-current="page">{{ collection.title }}</span></nav>
+      <h1>{{ collection.title }}</h1>
+      {%- if collection.description != blank -%}<div class="collection-hero__desc rte">{{ collection.description }}</div>{%- endif -%}
+    </div>
+    {%- if collection.image and header_image == blank -%}
+      <div class="collection-hero__image">{{ collection.image | image_url: width: 400 | image_tag: alt: collection.title }}</div>
+    {%- endif -%}
+  </div>
+</div>
+
+{%- paginate collection.products by section.settings.per_page -%}
+<div class="page-width collection-layout accent-{{ accent }}">
+  <aside class="facets" data-facets aria-label="{{ 'collections.filters' | t }}">
+    <form data-facets-form>
+      {%- if collection.sort_by -%}<input type="hidden" name="sort_by" value="{{ collection.sort_by }}">{%- endif -%}
+      {%- for filter in collection.filters -%}
+        <details class="facet" {% if forloop.index <= 3 or filter.active_values.size > 0 %}open{% endif %}>
+          <summary>{{ filter.label }} <span aria-hidden="true">▾</span></summary>
+          {%- case filter.type -%}
+            {%- when 'price_range' -%}
+              <div class="facet__price">
+                <input type="number" name="{{ filter.min_value.param_name }}" placeholder="£ min" value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}" aria-label="Min price">
+                <input type="number" name="{{ filter.max_value.param_name }}" placeholder="£ max" value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}" aria-label="Max price">
+              </div>
+            {%- else -%}
+              <ul>
+                {%- for value in filter.values -%}
+                  <li><label><input type="checkbox" name="{{ value.param_name }}" value="{{ value.value }}" {% if value.active %}checked{% endif %} {% if value.count == 0 and value.active == false %}disabled{% endif %}> {{ value.label }} <span class="facet__count">({{ value.count }})</span></label></li>
+                {%- endfor -%}
+              </ul>
+          {%- endcase -%}
+        </details>
+      {%- endfor -%}
+      <noscript><button class="btn btn--small" type="submit">{{ 'collections.apply' | t }}</button></noscript>
+    </form>
+  </aside>
+
+  <div>
+    {%- if section.settings.show_search -%}
+      {% render 'collection-search', collection: collection, current_tags: current_tags, exclude: section.settings.search_exclude_tags, limit: section.settings.search_chip_limit %}
+    {%- endif -%}
+    {%- if section.settings.show_subcollections and section.settings.subcollection_menu != blank -%}
+      {%- for link in section.settings.subcollection_menu.links -%}
+        {%- if link.url == collection.url and link.links.size > 0 -%}
+          <div class="subcollections">
+            {%- for child in link.links -%}<a href="{{ child.url }}">{{ child.title }}</a>{%- endfor -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+
+    {%- assign subcollections = collection.metafields.foxy.subcollections.value -%}
+    {%- if section.settings.show_subcollection_tiles and subcollections != blank and paginate.current_page == 1 -%}
+      <nav class="subcollection-tiles" aria-label="{{ section.settings.subcollection_tiles_heading | escape }}">
+        <h2 class="subcollection-tiles__heading">{{ section.settings.subcollection_tiles_heading }}</h2>
+        <ul class="subcollection-tiles__list" role="list">
+          {%- for sub in subcollections -%}
+            {%- liquid
+              assign tile_image = sub.metafields.foxy.header_image.value
+              if tile_image == blank
+                assign tile_image = sub.image
+              endif
+            -%}
+            <li class="subcollection-tiles__item">
+              <a class="subcollection-tile" href="{{ sub.url }}">
+                <span class="subcollection-tile__media">
+                  {%- if tile_image -%}
+                    {{ tile_image | image_url: width: 600, height: 400, crop: 'right' | image_tag: loading: 'lazy', widths: '300,450,600', sizes: '(min-width: 990px) 200px, 42vw', alt: '' }}
+                  {%- else -%}
+                    <span class="subcollection-tile__emoji" aria-hidden="true">☕</span>
+                  {%- endif -%}
+                </span>
+                <span class="subcollection-tile__title">{{ sub.title }}</span>
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    {%- endif -%}
+
+    <div class="toolbar">
+      <div style="display:flex;gap:10px;align-items:center">
+        <button type="button" class="btn btn--outline btn--small facets-toggle" data-facets-toggle aria-expanded="false">⚙︎ {{ 'collections.filters' | t }}</button>
+        <span>{{ 'collections.product_count' | t: count: collection.products_count }}</span>
+      </div>
+      <label>
+        <span class="visually-hidden">{{ 'collections.sort_by' | t }}</span>
+        <select data-sort>
+          {%- for option in collection.sort_options -%}
+            <option value="{{ option.value }}" {% if option.value == sort_by %}selected{% endif %}>{{ option.name }}</option>
+          {%- endfor -%}
+        </select>
+      </label>
+    </div>
+
+    {%- liquid
+      assign active = false
+      for filter in collection.filters
+        if filter.active_values.size > 0 or filter.min_value.value or filter.max_value.value
+          assign active = true
+        endif
+      endfor
+    -%}
+    {%- if active -%}
+      <div class="active-filters">
+        {%- for filter in collection.filters -%}
+          {%- for value in filter.active_values -%}<a href="{{ value.url_to_remove }}">{{ value.label }} ✕</a>{%- endfor -%}
+        {%- endfor -%}
+        <a href="{{ collection.url }}?sort_by={{ sort_by }}">{{ 'collections.clear_all' | t }}</a>
+      </div>
+    {%- endif -%}
+
+    {%- if collection.products.size > 0 -%}
+      <ul class="product-grid product-grid--3">
+        {%- for product in collection.products -%}
+          <li>{% render 'product-card', product: product %}</li>
+        {%- endfor -%}
+      </ul>
+    {%- else -%}
+      <div class="empty-state"><div class="empty-state__icon">🦊</div><h2>{{ 'collections.empty' | t }}</h2><a class="btn" href="{{ collection.url }}">{{ 'collections.clear_all' | t }}</a></div>
+    {%- endif -%}
+
+    {%- if paginate.pages > 1 -%}
+      <nav aria-label="{{ 'general.pagination' | t }}">
+        <ul class="pagination">
+          {%- if paginate.previous -%}<li><a href="{{ paginate.previous.url }}" aria-label="{{ 'general.previous' | t }}">←</a></li>{%- endif -%}
+          {%- for part in paginate.parts -%}
+            {%- if part.is_link -%}<li><a href="{{ part.url }}">{{ part.title }}</a></li>
+            {%- elsif part.title == paginate.current_page -%}<li><span class="is-current" aria-current="page">{{ part.title }}</span></li>
+            {%- else -%}<li><span>{{ part.title }}</span></li>{%- endif -%}
+          {%- endfor -%}
+          {%- if paginate.next -%}<li><a href="{{ paginate.next.url }}" aria-label="{{ 'general.next' | t }}">→</a></li>{%- endif -%}
+        </ul>
+      </nav>
+    {%- endif -%}
+  </div>
+</div>
+{%- endpaginate -%}
+
+{% stylesheet %}
+/* ==========================================================================
+   Compact collection header banners (1800x600) and "Shop by type" tiles
+   ========================================================================== */
+.collection-hero--banner.collection-hero--compact { min-height: clamp(160px, 16vw, 300px); }
+.collection-hero--banner.collection-hero--compact .collection-hero__inner { padding-top: 22px; padding-bottom: 22px; }
+.collection-hero--banner.collection-hero--compact h1 { font-size: clamp(1.7rem, 2.8vw, 2.6rem); margin-bottom: 6px; }
+.collection-hero--banner.collection-hero--compact .collection-hero__desc { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+.subcollection-tiles { margin: 0 0 26px; }
+.subcollection-tiles__heading { font-size: 1.2rem; margin: 0 0 12px; }
+.subcollection-tiles__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
+.subcollection-tile { display: flex; flex-direction: column; height: 100%; text-decoration: none; color: var(--fx-ink); background: #fff; border: 2px solid var(--accent-soft); border-radius: var(--fx-radius); overflow: hidden; transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; }
+.subcollection-tile:hover, .subcollection-tile:focus-visible { transform: translateY(-2px); border-color: var(--accent); box-shadow: 0 6px 16px rgba(29,18,64,.10); }
+.subcollection-tile__media { display: block; aspect-ratio: 3 / 2; background: var(--fx-tint); overflow: hidden; }
+.subcollection-tile__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.subcollection-tile__emoji { display: grid; place-items: center; height: 100%; font-size: 2rem; }
+.subcollection-tile__title { display: block; padding: 8px 10px 10px; font-weight: 800; font-size: .9rem; line-height: 1.25; }
+@media (prefers-reduced-motion: reduce) { .subcollection-tile { transition: none; } .subcollection-tile:hover { transform: none; } }
+
+@media (max-width: 989px) {
+  .collection-hero--banner.collection-hero--compact { min-height: 0; }
+  .collection-hero--banner.collection-hero--compact .collection-hero__banner { aspect-ratio: 3 / 1; }
+  .subcollection-tiles__list { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 10px; margin: 0 -16px; padding: 0 16px 8px; }
+  .subcollection-tiles__item { flex: 0 0 42%; max-width: 200px; scroll-snap-align: start; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Collection page",
+  "settings": [
+    { "type": "range", "id": "per_page", "label": "Products per page", "min": 12, "max": 48, "step": 6, "default": 24 },
+    { "type": "checkbox", "id": "auto_banners", "label": "Automatic themed header banners", "info": "Uses the matching foxy-header-*-compact.jpg banner from Files (or the older foxy-header-*.png if there is no compact one). A collection's own \"Header banner\" metafield always wins.", "default": true },
+    { "type": "checkbox", "id": "compact_banners", "label": "Compact (shorter) header banners on every collection", "info": "Off: only collections with the \"Compact header banner\" metafield, or a banner wider than 2.5:1, use the short style.", "default": true },
+    { "type": "checkbox", "id": "show_subcollection_tiles", "label": "Show \"Shop by type\" tiles", "info": "Shows the collections listed in the collection's \"Sub-collection tiles\" metafield above the products.", "default": true },
+    { "type": "text", "id": "subcollection_tiles_heading", "label": "Tiles heading", "default": "Shop by type" },
+    { "type": "checkbox", "id": "show_search", "label": "Show search & sub-category chips", "default": true },
+    { "type": "textarea", "id": "search_exclude_tags", "label": "Tags to hide from chips", "info": "Comma-separated. Internal tags (foxy-, range-, dept-, machine-, wave-) are always hidden.", "default": "FACEBOOK,new-arrivals,personalised,trending,third-party-name,Birthday Card,Kids Cards,Adult Cards" },
+    { "type": "range", "id": "search_chip_limit", "label": "Chips shown before \"more\"", "min": 6, "max": 48, "step": 2, "default": 18 },
+    { "type": "checkbox", "id": "show_subcollections", "label": "Show sub-category pills", "default": true },
+    { "type": "link_list", "id": "subcollection_menu", "label": "Menu used for sub-category pills", "info": "If this collection appears in the menu with child links, they show as pills." }
+  ]
+}
+{% endschema %}

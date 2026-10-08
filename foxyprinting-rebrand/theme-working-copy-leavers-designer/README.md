@@ -13,4 +13,4 @@ New unpublished copy "Foxy Pop 2026 – swatches & posters" (189514809725), dupl
   colours; unknown colours stay text pills); text boxes with "school" allow 80 chars; message boxes with "name"
   (a whole class list) allow 3000 chars.
 - snippets/colour-hex.liquid (new).
-- Still to port: sections/main-collection.liquid from "mug tiles" (theme-working-copy/).
+- sections/main-collection.liquid from "mug tiles" (Shop by type tiles, compact banners). All files checksum-verified against the store 8 Oct 15:05 UTC.
