@@ -95,7 +95,7 @@ PACKS = [
 <li>Printed in-house in North Yorkshire</li>
 </ul>
 """,
-  "close": "<p>For a bigger gift for film lovers, pair the pack with a full-size print from our <a href=\"/collections/film-star-posters\">film star posters</a>, which come in Premium Display frames too.</p>",
+  "close": "<p>For a bigger gift for film lovers, pair the pack with a full-size print from our <a href=\"/collections/film-star-posters\">film star posters</a>; many can be ordered framed in our Premium Display frames – thick, chunky and very professional.</p>",
  },
  {
   "sku": "FOXY-PRESS-LLPSAPCP-01",
@@ -115,7 +115,7 @@ PACKS = [
 <h3>Why you’ll love it</h3>
 <ul>
 <li>Six modern film stars in one set, each card different</li>
-<li>350gsm premium card with a bold, glossy-look design</li>
+<li>350gsm premium card with a bold black and gold design</li>
 <li>A6 size slots into a small frame, a gift bag or a birthday card</li>
 <li>A thoughtful low-cost extra for film fans of any age</li>
 <li>Made in our own workshop in North Yorkshire</li>
