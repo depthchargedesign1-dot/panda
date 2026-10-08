@@ -30,3 +30,8 @@ Do NOT publish "Foxy Pop 2026 – leavers logo upload" (189515399549): supersede
   after the Celebrity Masks block. Store checksum after upsert: f06f80c43f3d262a94d8d46bf3730fbb (matches this file).
   No other header file changed: the live header.liquid already renders any 3-level menu item as a mega panel, so the
   new "Celebrity Posters" menu item works on the live theme now; the promo tile appears once this copy is published.
+
+## 8 Oct ~17:30 UTC: "Foxy Pop 2026 – poster tidy" (189518610813), duplicate of the live "swatches & posters"
+- sections/main-product.liquid (md5 1f4eebad…, this folder): option values longer than 8 characters (poster sizes "A4 Print Only",
+  "A3 Print + Silver Frame") render as an even grid of equal buttons (`option-pills--grid`, 2 columns on phones);
+  description headings h1/h2 1.3rem, h3/h4 1.05rem, inline font styles/tables in old descriptions neutralised.

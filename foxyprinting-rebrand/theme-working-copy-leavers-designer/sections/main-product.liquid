@@ -112,7 +112,19 @@
                   <button type="button" class="size-guide-link" data-size-guide-open>📏 Size guide</button>
                 {%- endif -%}
               </legend>
-              <div class="option-pills{% if is_colour %} option-pills--swatches{% endif %}">
+              {%- liquid
+                comment
+                  Long option names (e.g. poster sizes "A4 Print Only" / "A3 Print + Silver Frame") sit in an even grid of
+                  equal-width buttons instead of ragged pills (owner, 8 Oct 2026: "the size buttons are not tidy").
+                endcomment
+                assign longest = 0
+                for v in option.values
+                  if v.size > longest
+                    assign longest = v.size
+                  endif
+                endfor
+              -%}
+              <div class="option-pills{% if is_colour %} option-pills--swatches{% elsif longest > 8 %} option-pills--grid{% endif %}">
                 {%- for value in option.values -%}
                   {%- assign input_id = 'Option-' | append: section.id | append: '-' | append: option_index | append: '-' | append: forloop.index0 -%}
                   <input type="radio" id="{{ input_id }}" name="option-{{ option_index }}" value="{{ value | escape }}" data-option-index="{{ option_index }}" {% if option.selected_value == value %}checked{% endif %}>
@@ -307,6 +319,16 @@
   .option-pills--swatches input:checked + label.colour-swatch { background: linear-gradient(135deg, var(--b) 50%, var(--t) 50%); border: 2px solid var(--fx-pink, #FF2D87); box-shadow: inset 0 0 0 2px #fff, 0 0 0 3px rgba(255, 45, 135, 0.18); }
   .option-pills--swatches input:focus-visible + label.colour-swatch { outline: 2px solid var(--fx-purple, #7A2BF5); outline-offset: 2px; }
   .option-colour-name { font-weight: 600; }
+  .option-pills--grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .option-pills--grid label { display: flex; align-items: center; justify-content: center; text-align: center; min-height: 52px; padding: 8px 10px; line-height: 1.25; }
+  @media (max-width: 480px) { .option-pills--grid { grid-template-columns: 1fr 1fr; } }
+  /* Older product descriptions: keep their headings, tables and pasted inline fonts in line with the page. */
+  .product__info .accordion .rte h1, .product__info .accordion .rte h2 { font-size: 1.3rem; margin: 18px 0 8px; }
+  .product__info .accordion .rte h3, .product__info .accordion .rte h4 { font-size: 1.05rem; margin: 16px 0 6px; }
+  .product__info .accordion .rte [style] { font-size: inherit !important; font-family: inherit !important; line-height: inherit !important; }
+  .product__info .accordion .rte table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
+  .product__info .accordion .rte td, .product__info .accordion .rte th { padding: 6px 8px; border-bottom: 1px solid #EEE9F7; }
+  .product__info .accordion .rte img { max-width: 100%; height: auto; }
 </style>
 <script>
   (function () {
