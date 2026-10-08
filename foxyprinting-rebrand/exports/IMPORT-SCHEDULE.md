@@ -8,7 +8,7 @@ Before each reminder, Claude checks the previous file landed on the live store (
 | 0 | 6 Oct | seo/2026-10-06-remaining/01-seo.csv | DONE (checked 15:08 UK; created 21 duplicate trerrace flag drafts) |
 | 1 | Tue 6 Oct bedtime | seo/2026-10-06-remaining/02-seo-CLEAN.csv | DONE (finished 19:58 UTC, 6 Oct) |
 | 2 | Wed 7 Oct morning | google-fields/2026-10-06-age-group-remaining/01-age-group-gender-SAFE.csv (NOT the older 01-age-group-gender.csv) | DONE (finished ~01:50 UTC 7 Oct, checked 07:55 UK) |
-| 3 | Wed 7 Oct bedtime | google-fields/2026-10-06-age-group-remaining/02-age-group-gender-SAFE.csv (NOT 02-…-CLEAN) | uploading (started 8 Oct morning; verify at next reminder) |
+| 3 | Wed 7 Oct bedtime | google-fields/2026-10-06-age-group-remaining/02-age-group-gender-SAFE.csv (NOT 02-…-CLEAN) | DONE (finished 11:50 UTC 8 Oct) |
 | 4 | as soon as #3 finishes | import-queue-2026-10-08/1-TEST-3-masks.csv (2 KB: check the 3 masks show Ready Cut/DIY x Elastic/Stick at £2.99/£3.49/£1.50/£2.00) | to do |
 | 5 | straight after the test looks right | import-queue-2026-10-08/2-ALL-single-masks.csv (all 6,729 single masks, 4.6 MB; replaces old masks 01–04) | to do |
 | 6 | next | import-queue-2026-10-08/3-TEST-6-mugs-3-prints.csv (check 6 mugs + 3 prints) | to do |
