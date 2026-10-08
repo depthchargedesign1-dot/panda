@@ -1,0 +1,53 @@
+{%- comment -%}
+  Prints a CSS colour for a garment colour name, for the round colour swatches on the product page.
+  Unknown names print nothing, and the swatch falls back to a text pill.
+{%- endcomment -%}
+{%- liquid
+  assign n = name | downcase | strip
+  case n
+    when 'black', 'jet black', 'black smoke'
+      echo '#141414'
+    when 'white', 'arctic white'
+      echo '#F7F7F7'
+    when 'navy', 'oxford navy', 'new french navy', 'french navy'
+      echo '#1F2A44'
+    when 'grey', 'heather grey', 'heather', 'ash', 'sport grey'
+      echo '#A7A9AC'
+    when 'charcoal', 'graphite heather'
+      echo '#45474B'
+    when 'pink', 'baby pink', 'light pink'
+      echo '#F4B6C9'
+    when 'hot pink', 'fuchsia'
+      echo '#E2367F'
+    when 'red', 'fire red'
+      echo '#C8102E'
+    when 'burgundy', 'maroon'
+      echo '#6B1E2E'
+    when 'yellow', 'sun yellow'
+      echo '#F7D417'
+    when 'gold'
+      echo '#E0A526'
+    when 'orange', 'burnt orange'
+      echo '#EE6A1F'
+    when 'green', 'kelly green'
+      echo '#1E9447'
+    when 'bottle green', 'forest green'
+      echo '#1F4D36'
+    when 'khaki'
+      echo '#7B7346'
+    when 'indigo', 'denim', 'denim blue'
+      echo '#2E4A7A'
+    when 'blue', 'royal blue', 'sapphire blue', 'royal'
+      echo '#1F57B5'
+    when 'sky blue', 'light blue', 'sky'
+      echo '#8EC6EA'
+    when 'purple'
+      echo '#5B2C83'
+    when 'brown', 'chocolate'
+      echo '#5A3A29'
+    when 'natural', 'cream', 'ivory'
+      echo '#F1E9D8'
+    when 'silver'
+      echo '#C0C3C7'
+  endcase
+-%}
