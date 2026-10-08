@@ -57,8 +57,8 @@
       E.renderMockup($('[data-back]'), d, 'back');
       var P = E.PRODUCTS[d.product];
       var rows = [
-        ['Garment', P.name],
-        ['Colour', E.byId(E.GARMENTS, d.garment).name + (P.contrast ? ' / ' + E.byId(E.GARMENTS, d.contrast).name + ' hood & cuffs' : '')],
+        ['Garment', P.name + (P.code ? ' — AWDis ' + P.code : '')],
+        ['Colour', E.colourOf(d).name + ' (' + E.bodyHex(d) + (P.colourways ? ' / ' + E.trimHex(d) : '') + ')'],
         ['Back design', E.byId(E.BACK_TEMPLATES, d.back.template).name],
         ['Wording', [d.back.title, d.back.year, d.back.school].filter(Boolean).join(' · ')],
         ['Fonts', d.back.nameFont + ' (names) / ' + d.back.displayFont + ' (headings)'],
@@ -88,7 +88,7 @@
           var thumb = document.createElement('canvas');
           thumb.width = 240; thumb.height = Math.round(240 * f.height / f.width);
           var tx = thumb.getContext('2d');
-          tx.fillStyle = E.garmentHex(design.garment); tx.fillRect(0, 0, thumb.width, thumb.height);
+          tx.fillStyle = E.bodyHex(design); tx.fillRect(0, 0, thumb.width, thumb.height);
           tx.drawImage(f.canvas, 0, 0, thumb.width, thumb.height);
           box.appendChild(thumb);
           var info = document.createElement('div');

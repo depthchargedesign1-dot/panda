@@ -65,33 +65,54 @@
     { id: 'purple', name: 'Purple', hex: '#7A2BF5' }
   ];
 
-  // Garment colours (the usual leavers hoodie blank range).
+  // AWDis Just Hoods colours (approximate screen shades of the supplier swatches).
   var GARMENTS = [
-    { id: 'jet-black', name: 'Jet Black', hex: '#1C1C1F' },
-    { id: 'french-navy', name: 'French Navy', hex: '#1D2440' },
-    { id: 'charcoal', name: 'Charcoal', hex: '#3B3E44' },
-    { id: 'heather-grey', name: 'Heather Grey', hex: '#A8AAAF' },
     { id: 'arctic-white', name: 'Arctic White', hex: '#F3F3F1' },
-    { id: 'fire-red', name: 'Fire Red', hex: '#C3132C' },
-    { id: 'burgundy', name: 'Burgundy', hex: '#6B1A2C' },
+    { id: 'jet-black', name: 'Jet Black', hex: '#1C1C1F' },
+    { id: 'deep-black', name: 'Deep Black', hex: '#0E0E10' },
+    { id: 'charcoal', name: 'Charcoal', hex: '#3B3E44' },
+    { id: 'storm-grey', name: 'Storm Grey', hex: '#5D6269' },
+    { id: 'heather-grey', name: 'Heather Grey', hex: '#A8AAAF' },
+    { id: 'oxford-navy', name: 'Oxford Navy', hex: '#1F2A44' },
+    { id: 'french-navy', name: 'New French Navy', hex: '#1A2140' },
+    { id: 'ink-blue', name: 'Ink Blue', hex: '#26344F' },
     { id: 'royal-blue', name: 'Royal Blue', hex: '#2149A6' },
     { id: 'sapphire', name: 'Sapphire Blue', hex: '#1677C6' },
+    { id: 'airforce-blue', name: 'Airforce Blue', hex: '#5B7DA8' },
+    { id: 'hawaiian-blue', name: 'Hawaiian Blue', hex: '#13A0D0' },
     { id: 'sky-blue', name: 'Sky Blue', hex: '#8CC5E8' },
-    { id: 'bottle-green', name: 'Bottle Green', hex: '#1E4A34' },
-    { id: 'kelly-green', name: 'Kelly Green', hex: '#1F8A3D' },
-    { id: 'purple', name: 'Purple', hex: '#4B2A82' },
+    { id: 'fire-red', name: 'Fire Red', hex: '#C3132C' },
+    { id: 'red-hot-chilli', name: 'Red Hot Chilli', hex: '#A3172C' },
+    { id: 'burgundy', name: 'Burgundy', hex: '#6B1A2C' },
     { id: 'hot-pink', name: 'Hot Pink', hex: '#E2317D' },
+    { id: 'candyfloss-pink', name: 'Candyfloss Pink', hex: '#F49AC1' },
     { id: 'baby-pink', name: 'Baby Pink', hex: '#F4C3D5' },
+    { id: 'purple', name: 'Purple', hex: '#4B2A82' },
+    { id: 'lavender', name: 'Lavender', hex: '#BBA8DB' },
+    { id: 'kelly-green', name: 'Kelly Green', hex: '#1F8A3D' },
+    { id: 'bottle-green', name: 'Bottle Green', hex: '#1E4A34' },
+    { id: 'olive-green', name: 'Olive Green', hex: '#5A5C3A' },
+    { id: 'jade', name: 'Jade', hex: '#1B9C88' },
+    { id: 'mint', name: 'Mint', hex: '#A6DBC6' },
     { id: 'sun-yellow', name: 'Sun Yellow', hex: '#F4C20D' },
+    { id: 'gold', name: 'Gold', hex: '#E0A526' },
     { id: 'orange-crush', name: 'Orange Crush', hex: '#F06A22' },
     { id: 'desert-sand', name: 'Desert Sand', hex: '#D7C2A0' },
-    { id: 'mint', name: 'Mint', hex: '#A6DBC6' },
-    { id: 'lavender', name: 'Lavender', hex: '#BBA8DB' }
+    { id: 'nude', name: 'Nude', hex: '#D8B6A0' },
+    { id: 'caramel-latte', name: 'Caramel Latte', hex: '#A7805C' },
+    { id: 'hot-chocolate', name: 'Hot Chocolate', hex: '#4A3227' },
+    { id: 'white', name: 'White', hex: '#FAFAF8' }
   ];
+  var COLLEGE_COLOURS = GARMENTS.filter(function (g) { return g.id !== 'gold' && g.id !== 'white'; });
+
+  // Two-tone garments come in fixed body / contrast colourways (body first, as AWDis names them).
+  function ways(list) {
+    return list.map(function (pair) { return { body: pair[0], trim: pair[1] }; });
+  }
 
   /*
-   * Garments. Print areas are in millimetres; k is mockup pixels per mm (the mockup drawing is the same
-   * size for every garment, so a kids hoodie gets a bigger k).
+   * Garments. Print areas are in millimetres; k is mockup pixels per mm.
+   * colours: a list of single colours, or `colourways` of body + contrast (sleeves etc.).
    */
   var ADULT_AREAS = {
     back: { w: 350, h: 440, label: 'Back' },
@@ -101,41 +122,68 @@
     sleeve: { w: 70, h: 400, label: 'Left sleeve' }
   };
   var PRODUCTS = {
-    'hoodie': {
-      name: 'Classic Leavers Hoodie', mockup: 'hoodie', k: 0.97, areas: ADULT_AREAS,
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'], price: 24.99, upcharge: { '2XL': 2, '3XL': 2 }
+    'college-hoodie': {
+      name: 'College Hoodie 2.0', code: 'JH001', mockup: 'hoodie', k: 0.97, areas: ADULT_AREAS,
+      blurb: '280gsm, 80% ringspun cotton / 20% polyester, double-layer hood, kangaroo pocket.',
+      colours: COLLEGE_COLOURS,
+      sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL'], price: 26.99,
+      upcharge: { '2XL': 2, '3XL': 2, '4XL': 4, '5XL': 4 }
     },
-    'kids-hoodie': {
-      name: 'Primary Leavers Hoodie (Kids)', mockup: 'hoodie', k: 1.17,
-      areas: {
-        back: { w: 290, h: 360, label: 'Back' },
-        chest: { w: 80, h: 80, label: 'Front left chest' },
-        centre: { w: 240, h: 175, label: 'Front centre' },
-        personal: { w: 75, h: 34, label: 'Front right chest' },
-        sleeve: { w: 55, h: 300, label: 'Left sleeve' }
-      },
-      sizes: ['3-4 yrs', '5-6 yrs', '7-8 yrs', '9-11 yrs', '12-13 yrs'], price: 19.99
-    },
-    'zip-hoodie': {
-      name: 'Leavers Zip Hoodie', mockup: 'zip', k: 0.97,
-      areas: { back: ADULT_AREAS.back, chest: ADULT_AREAS.chest, personal: ADULT_AREAS.personal, sleeve: ADULT_AREAS.sleeve },
+    'baseball-hoodie': {
+      name: 'Baseball Hoodie', code: 'JH009', mockup: 'baseball', k: 0.97, areas: ADULT_AREAS,
+      blurb: '280gsm two-tone hoodie with contrast raglan sleeves and contrast hood lining.',
+      colourways: ways([
+        ['jet-black', 'fire-red'], ['jet-black', 'gold'], ['jet-black', 'sapphire'], ['jet-black', 'arctic-white'],
+        ['charcoal', 'jet-black'], ['charcoal', 'heather-grey'], ['heather-grey', 'jet-black'],
+        ['heather-grey', 'oxford-navy'], ['oxford-navy', 'heather-grey'], ['oxford-navy', 'burgundy'],
+        ['arctic-white', 'jet-black'], ['burgundy', 'charcoal'], ['baby-pink', 'heather-grey']
+      ]),
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL'], price: 29.99, upcharge: { '2XL': 2 }
     },
-    'varsity-hoodie': {
-      name: 'Two-Tone Varsity Leavers Hoodie', mockup: 'hoodie', k: 0.97, areas: ADULT_AREAS, contrast: true,
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL'], price: 27.99, upcharge: { '2XL': 2 }
-    },
-    'sweatshirt': {
-      name: 'Leavers Sweatshirt', mockup: 'sweat', k: 0.97, areas: ADULT_AREAS,
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'], price: 21.99, upcharge: { '2XL': 2, '3XL': 2 }
-    },
-    'tshirt': {
-      name: 'Leavers T-Shirt', mockup: 'tee', k: 0.97,
-      areas: { back: ADULT_AREAS.back, chest: ADULT_AREAS.chest, centre: ADULT_AREAS.centre, personal: ADULT_AREAS.personal },
-      sizes: ['Kids 5-6', 'Kids 7-8', 'Kids 9-11', 'Kids 12-13', 'S', 'M', 'L', 'XL', '2XL'], price: 14.99,
-      upcharge: { 'Kids 5-6': -2, 'Kids 7-8': -2, 'Kids 9-11': -2, 'Kids 12-13': -2, '2XL': 2 }
+    'varsity-jacket': {
+      name: 'Varsity Jacket', code: 'JH043', mockup: 'varsity', k: 0.97,
+      areas: {
+        back: { w: 330, h: 380, label: 'Back' },
+        chest: ADULT_AREAS.chest,
+        personal: ADULT_AREAS.personal,
+        sleeve: { w: 70, h: 380, label: 'Left sleeve' }
+      },
+      blurb: '280gsm varsity jacket with contrast sleeves, striped ribbed collar, cuffs and hem, and popper fastening.',
+      colourways: ways([
+        ['jet-black', 'white'], ['jet-black', 'fire-red'], ['jet-black', 'sun-yellow'], ['jet-black', 'hot-pink'],
+        ['jet-black', 'heather-grey'], ['jet-black', 'charcoal'], ['oxford-navy', 'white'], ['oxford-navy', 'heather-grey'],
+        ['oxford-navy', 'burgundy'], ['burgundy', 'heather-grey'], ['fire-red', 'white'], ['royal-blue', 'white'],
+        ['sapphire', 'heather-grey'], ['kelly-green', 'white'], ['purple', 'white'], ['heather-grey', 'white']
+      ]),
+      sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL'], price: 39.99, upcharge: { '2XL': 2 }
     }
   };
+  var DEFAULT_PRODUCT = 'college-hoodie';
+
+  // The colour choices for a garment: [{ id, name, body, trim }] (hex values).
+  function colourOptions(productKey) {
+    var p = PRODUCTS[productKey] || PRODUCTS[DEFAULT_PRODUCT];
+    if (p.colourways) {
+      return p.colourways.map(function (w) {
+        var b = byId(GARMENTS, w.body), t = byId(GARMENTS, w.trim);
+        return { id: w.body + '--' + w.trim, name: b.name + ' / ' + t.name, body: b.hex, trim: t.hex };
+      });
+    }
+    return p.colours.map(function (g) { return { id: g.id, name: g.name, body: g.hex, trim: g.hex }; });
+  }
+  // Black (or black-bodied) first: the default white print reads on it.
+  function defaultColour(productKey) {
+    var opts = colourOptions(productKey);
+    for (var i = 0; i < opts.length; i++) if (opts[i].id.indexOf('jet-black') === 0) return opts[i].id;
+    return opts[0].id;
+  }
+  function colourOf(d) {
+    var opts = colourOptions(d.product);
+    for (var i = 0; i < opts.length; i++) if (opts[i].id === d.garment) return opts[i];
+    return opts[0];
+  }
+  function bodyHex(d) { return colourOf(d).body; }
+  function trimHex(d) { return colourOf(d).trim; }
 
   var BACK_TEMPLATES = [
     { id: 'year-names', name: 'Names in the Year', blurb: 'Every name packed inside a giant year — the classic.', names: true },
@@ -152,6 +200,7 @@
   var FRONT_STYLES = [
     { id: 'none', name: 'Plain front', area: null },
     { id: 'chest-text', name: 'Chest badge', area: 'chest' },
+    { id: 'chest-letter', name: 'Varsity letter', area: 'chest' },
     { id: 'chest-logo', name: 'School logo', area: 'chest' },
     { id: 'centre-college', name: 'Big college front', area: 'centre' },
     { id: 'centre-stack', name: 'Big stacked front', area: 'centre' }
@@ -185,9 +234,8 @@
   function defaultDesign(productKey) {
     return {
       v: 1,
-      product: PRODUCTS[productKey] ? productKey : 'hoodie',
-      garment: 'jet-black',
-      contrast: 'arctic-white',
+      product: PRODUCTS[productKey] ? productKey : DEFAULT_PRODUCT,
+      garment: defaultColour(PRODUCTS[productKey] ? productKey : DEFAULT_PRODUCT),
       back: {
         template: 'year-names',
         title: 'LEAVERS',
@@ -792,6 +840,12 @@
         drawFit(ctx, f.line2, 'Pacifico', { x: 80, y: y0 + (hasIcon ? 380 : 480), w: REF - 160, h: 220 }, accent);
         break;
       }
+      case 'chest-letter': {
+        // Chenille-style patch: highlight colour letter with a thick main-colour outline.
+        var letter = (f.line1 || 'L').trim().slice(0, 2).toUpperCase();
+        drawFit(ctx, letter, font, { x: 30, y: 30, w: REF - 60, h: REF - 60 }, accent, { stroke: ink, strokeWidth: 34 });
+        break;
+      }
       case 'chest-logo': {
         var img = logoImage(d);
         var lbox = { x: 60, y: 30, w: REF - 120, h: f.line1 ? 700 : 940 };
@@ -846,7 +900,7 @@
 
   /* ------------------------------------------------------------------ print areas */
 
-  function product(d) { return PRODUCTS[d.product] || PRODUCTS.hoodie; }
+  function product(d) { return PRODUCTS[d.product] || PRODUCTS[DEFAULT_PRODUCT]; }
   function frontStyle(d) { return byId(FRONT_STYLES, d.front.style); }
   function personalPos(d) { return byId(PERSONAL_POSITIONS, d.personal.position); }
 
@@ -903,38 +957,61 @@
     sleeve: { view: 'front', line: [772, 300, 852, 860], t: 0.47 }
   };
 
-  function garmentPaths(type, view) {
-    var body = type === 'tee' ? G.teeBody : G.hoodieBody;
-    return { body: new Path2D(body), hooded: type === 'hoodie' || type === 'zip' };
-  }
+  var SLEEVES = {
+    raglan: [
+      'M405 152 L0 60 L0 1100 L256 1100 L256 470 Q300 300 405 152 Z',
+      'M595 152 L1000 60 L1000 1100 L744 1100 L744 470 Q700 300 595 152 Z'
+    ],
+    setIn: [
+      'M252 192 L0 150 L0 1100 L256 1100 L256 470 C282 400 282 260 252 192 Z',
+      'M748 192 L1000 150 L1000 1100 L744 1100 L744 470 C718 400 718 260 748 192 Z'
+    ]
+  };
 
   function drawGarment(ctx, d, view, layer) {
     var p = product(d), type = p.mockup;
-    var base = garmentHex(d.garment);
-    var trim = p.contrast ? garmentHex(d.contrast) : base;
-    var line = luminance(base) > 0.5 ? shade(base, -0.28) : shade(base, -0.45);
-    var paths = garmentPaths(type, view);
+    var base = bodyHex(d), trim = trimHex(d);
+    var hooded = type === 'hoodie' || type === 'baseball' || type === 'zip';
+    var body = new Path2D(type === 'tee' ? G.teeBody : G.hoodieBody);
+    var line = function (hex) { return luminance(hex) > 0.5 ? shade(hex, -0.28) : shade(hex, -0.45); };
+    var outline = line(base);
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
 
     if (layer === 'base') {
-      if (paths.hooded) {
-        ctx.fillStyle = trim;
-        ctx.fill(new Path2D(view === 'back' ? G.hoodBack : G.hoodFront));
-        ctx.strokeStyle = line; ctx.lineWidth = 3;
-        ctx.stroke(new Path2D(view === 'back' ? G.hoodBack : G.hoodFront));
+      if (hooded) {
+        var hood = new Path2D(view === 'back' ? G.hoodBack : G.hoodFront);
+        ctx.fillStyle = base; ctx.fill(hood);
+        ctx.strokeStyle = outline; ctx.lineWidth = 3; ctx.stroke(hood);
       }
       ctx.fillStyle = base;
-      ctx.fill(paths.body);
+      ctx.fill(body);
 
-      // Ribbing: hem and cuffs in the trim colour on the two-tone hoodie.
       ctx.save();
-      ctx.clip(paths.body);
-      ctx.fillStyle = trim;
+      ctx.clip(body);
+      // Contrast sleeves on the two-tone garments.
+      var sleeves = type === 'baseball' ? SLEEVES.raglan : type === 'varsity' ? SLEEVES.setIn : null;
+      if (sleeves) {
+        ctx.fillStyle = trim;
+        sleeves.forEach(function (sp) { ctx.fill(new Path2D(sp)); });
+      }
       if (type !== 'tee') {
+        // Ribbed hem and cuffs (cuffs follow the sleeve colour).
+        ctx.fillStyle = base;
         ctx.fillRect(250, 982, 500, 60);
+        ctx.fillStyle = type === 'baseball' ? trim : base;
         ctx.beginPath(); ctx.moveTo(95, 858); ctx.lineTo(210, 870); ctx.lineTo(205, 930); ctx.lineTo(90, 920); ctx.closePath(); ctx.fill();
         ctx.beginPath(); ctx.moveTo(905, 858); ctx.lineTo(790, 870); ctx.lineTo(795, 930); ctx.lineTo(910, 920); ctx.closePath(); ctx.fill();
+        if (type === 'varsity') {
+          // Varsity stripes in the sleeve colour.
+          ctx.fillStyle = trim;
+          ctx.fillRect(250, 996, 500, 7); ctx.fillRect(250, 1012, 500, 7);
+          ctx.strokeStyle = trim; ctx.lineWidth = 6;
+          ctx.beginPath();
+          ctx.moveTo(98, 880); ctx.lineTo(207, 892); ctx.moveTo(97, 896); ctx.lineTo(206, 908);
+          ctx.moveTo(902, 880); ctx.lineTo(793, 892); ctx.moveTo(903, 896); ctx.lineTo(794, 908);
+          ctx.stroke();
+        }
       }
       // Soft shading so the garment reads as fabric.
       var g = ctx.createLinearGradient(100, 0, 900, 0);
@@ -946,9 +1023,9 @@
       ctx.fillStyle = v; ctx.fillRect(0, 0, 1000, 1100);
       ctx.restore();
 
-      ctx.strokeStyle = line;
+      ctx.strokeStyle = outline;
       ctx.lineWidth = 3;
-      ctx.stroke(paths.body);
+      ctx.stroke(body);
       ctx.lineWidth = 2;
       ctx.beginPath();
       if (type === 'tee') {
@@ -958,8 +1035,13 @@
         ctx.moveTo(870, 335); ctx.lineTo(814, 455);
         ctx.moveTo(264, 1010); ctx.lineTo(736, 1010);
       } else {
-        ctx.moveTo(252, 192); ctx.bezierCurveTo(282, 260, 282, 400, 258, 470);
-        ctx.moveTo(748, 192); ctx.bezierCurveTo(718, 260, 718, 400, 742, 470);
+        if (type === 'baseball') {
+          ctx.moveTo(405, 152); ctx.quadraticCurveTo(300, 300, 258, 470);
+          ctx.moveTo(595, 152); ctx.quadraticCurveTo(700, 300, 742, 470);
+        } else {
+          ctx.moveTo(252, 192); ctx.bezierCurveTo(282, 260, 282, 400, 258, 470);
+          ctx.moveTo(748, 192); ctx.bezierCurveTo(718, 260, 718, 400, 742, 470);
+        }
         ctx.moveTo(262, 982); ctx.lineTo(738, 982);
         ctx.moveTo(100, 860); ctx.lineTo(205, 872);
         ctx.moveTo(900, 860); ctx.lineTo(795, 872);
@@ -967,49 +1049,39 @@
       ctx.stroke();
 
       if (view === 'front') {
-        if (paths.hooded) {
-          ctx.fillStyle = shade(trim, luminance(trim) > 0.5 ? -0.22 : -0.4);
-          ctx.fill(new Path2D(G.hoodOpening));
-          ctx.stroke(new Path2D(G.hoodOpening));
+        if (hooded) {
+          // Hood lining: contrast on the baseball hoodie.
+          var lining = type === 'baseball' ? trim : base;
+          ctx.fillStyle = shade(lining, luminance(lining) > 0.5 ? -0.22 : -0.4);
+          var op = new Path2D(G.hoodOpening);
+          ctx.fill(op); ctx.stroke(op);
         } else {
-          // crew neck rib
-          ctx.save();
-          ctx.fillStyle = trim;
-          ctx.beginPath(); ctx.moveTo(395, 150); ctx.quadraticCurveTo(500, 214, 605, 150);
-          ctx.lineTo(585, 142); ctx.quadraticCurveTo(500, 186, 415, 142); ctx.closePath();
-          ctx.fill(); ctx.stroke();
-          ctx.restore();
+          crewNeck(ctx, base, outline, type === 'varsity' ? trim : null, 214, 186);
         }
-        if (type === 'hoodie' || type === 'sweat') {
-          if (type === 'hoodie') {
-            ctx.save();
-            ctx.setLineDash([7, 7]);
-            ctx.stroke(new Path2D(G.pocket));
-            ctx.restore();
-            ctx.stroke(new Path2D(G.pocket));
-          }
+        if (type === 'hoodie' || type === 'baseball') {
+          ctx.save(); ctx.setLineDash([7, 7]); ctx.stroke(new Path2D(G.pocket)); ctx.restore();
+          ctx.stroke(new Path2D(G.pocket));
         }
         if (type === 'zip') {
-          ctx.beginPath();
-          ctx.moveTo(330, 760); ctx.lineTo(300, 940);
-          ctx.moveTo(670, 760); ctx.lineTo(700, 940);
-          ctx.stroke();
+          ctx.beginPath(); ctx.moveTo(330, 760); ctx.lineTo(300, 940); ctx.moveTo(670, 760); ctx.lineTo(700, 940); ctx.stroke();
+        }
+        if (type === 'varsity') {
+          // Welt pockets.
+          ctx.lineWidth = 3;
+          ctx.stroke(new Path2D('M300 700 L328 692 L362 862 L334 870 Z'));
+          ctx.stroke(new Path2D('M700 700 L672 692 L638 862 L666 870 Z'));
         }
       } else {
-        if (paths.hooded) {
+        if (hooded) {
           ctx.beginPath(); ctx.moveTo(500, 0); ctx.lineTo(500, 226); ctx.stroke();
         } else {
-          ctx.save();
-          ctx.fillStyle = trim;
-          ctx.beginPath(); ctx.moveTo(395, 150); ctx.quadraticCurveTo(500, 172, 605, 150);
-          ctx.lineTo(590, 140); ctx.quadraticCurveTo(500, 158, 410, 140); ctx.closePath();
-          ctx.fill(); ctx.stroke();
-          ctx.restore();
+          crewNeck(ctx, base, outline, type === 'varsity' ? trim : null, 172, 158);
         }
       }
     } else if (layer === 'over' && view === 'front') {
-      if (type === 'hoodie') {
-        var cord = luminance(trim) > 0.5 ? shade(trim, -0.15) : shade(trim, 0.85);
+      if (type === 'hoodie' || type === 'baseball') {
+        var cordBase = type === 'baseball' ? trim : base;
+        var cord = luminance(cordBase) > 0.5 ? shade(cordBase, -0.15) : shade(cordBase, 0.85);
         ctx.strokeStyle = cord; ctx.lineWidth = 7;
         ctx.beginPath();
         ctx.moveTo(468, 196); ctx.quadraticCurveTo(458, 300, 462, 392);
@@ -1021,11 +1093,35 @@
       if (type === 'zip') {
         ctx.strokeStyle = '#8f949b'; ctx.lineWidth = 9;
         ctx.beginPath(); ctx.moveTo(500, 180); ctx.lineTo(500, 1032); ctx.stroke();
-        ctx.strokeStyle = 'rgba(0,0,0,0.35)'; ctx.lineWidth = 2; ctx.setLineDash([3, 4]);
-        ctx.beginPath(); ctx.moveTo(500, 182); ctx.lineTo(500, 1030); ctx.stroke(); ctx.setLineDash([]);
         ctx.fillStyle = '#b8bdc4'; ctx.fillRect(492, 200, 16, 34);
       }
+      if (type === 'varsity') {
+        // Front opening and popper studs.
+        ctx.strokeStyle = outline; ctx.lineWidth = 3;
+        ctx.beginPath(); ctx.moveTo(500, 186); ctx.lineTo(500, 1032); ctx.stroke();
+        [250, 390, 530, 670, 810, 950].forEach(function (y) {
+          ctx.beginPath(); ctx.arc(500, y, 11, 0, Math.PI * 2);
+          ctx.fillStyle = '#E4E6EA'; ctx.fill();
+          ctx.strokeStyle = '#8A8F96'; ctx.lineWidth = 2; ctx.stroke();
+        });
+      }
     }
+  }
+
+  // Ribbed crew collar; `stripe` adds the varsity stripe.
+  function crewNeck(ctx, base, outline, stripe, dip, innerDip) {
+    ctx.save();
+    ctx.fillStyle = base;
+    ctx.strokeStyle = outline;
+    ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(395, 150); ctx.quadraticCurveTo(500, dip, 605, 150);
+    ctx.lineTo(585, 140); ctx.quadraticCurveTo(500, innerDip, 415, 140); ctx.closePath();
+    ctx.fill(); ctx.stroke();
+    if (stripe) {
+      ctx.strokeStyle = stripe; ctx.lineWidth = 4;
+      ctx.beginPath(); ctx.moveTo(404, 146); ctx.quadraticCurveTo(500, (dip + innerDip) / 2 + 1, 596, 146); ctx.stroke();
+    }
+    ctx.restore();
   }
 
   function renderMockup(canvas, d, view, opts) {
@@ -1040,7 +1136,7 @@
     if (view === 'detail') {
       // Close-up of the back print on the garment colour.
       var mm = p.areas.back;
-      ctx.fillStyle = garmentHex(d.garment);
+      ctx.fillStyle = bodyHex(d);
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       var h = canvas.height * 0.92, w = h * mm.w / mm.h;
       if (w > canvas.width * 0.92) { w = canvas.width * 0.92; h = w * mm.h / mm.w; }
@@ -1051,7 +1147,7 @@
 
     ctx.setTransform(S, 0, 0, S, 0, 0);
     drawGarment(ctx, d, view, 'base');
-    printAreas(d, true).forEach(function (a) {
+    if (!opts.blank) printAreas(d, true).forEach(function (a) {
       var place = PLACES[a.key];
       if (!place || place.view !== view) return;
       if (p.mockup === 'tee' && a.key === 'sleeve') return;
@@ -1177,7 +1273,7 @@
     var base = defaultDesign(d.product);
     return {
       v: 1, product: base.product,
-      garment: d.garment || base.garment, contrast: d.contrast || base.contrast,
+      garment: d.garment || base.garment,
       back: Object.assign(base.back, d.back || {}),
       front: Object.assign(base.front, d.front || {}),
       personal: Object.assign(base.personal, d.personal || {})
@@ -1185,13 +1281,14 @@
   }
 
   function priceFor(productKey, size) {
-    var p = PRODUCTS[productKey];
+    var p = PRODUCTS[productKey] || PRODUCTS[DEFAULT_PRODUCT];
     return Math.round((p.price + ((p.upcharge || {})[size] || 0)) * 100) / 100;
   }
 
   root.LeaversEngine = {
     REF: REF,
-    FONTS: FONTS, INKS: INKS, GARMENTS: GARMENTS, PRODUCTS: PRODUCTS,
+    FONTS: FONTS, INKS: INKS, GARMENTS: GARMENTS, PRODUCTS: PRODUCTS, DEFAULT_PRODUCT: DEFAULT_PRODUCT,
+    colourOptions: colourOptions, defaultColour: defaultColour, colourOf: colourOf, bodyHex: bodyHex, trimHex: trimHex,
     BACK_TEMPLATES: BACK_TEMPLATES, FRONT_STYLES: FRONT_STYLES, PERSONAL_POSITIONS: PERSONAL_POSITIONS,
     ICON_NAMES: ICON_NAMES, SAMPLE_NAMES: SAMPLE_NAMES,
     defaultDesign: defaultDesign, upgrade: upgrade,

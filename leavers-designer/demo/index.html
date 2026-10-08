@@ -31,7 +31,7 @@
   </script>
   <script src="../theme/assets/leavers-designer.js"></script>
   <script>
-    var key = new URLSearchParams(location.search).get('garment') || 'hoodie';
+    var key = new URLSearchParams(location.search).get('garment') || LeaversEngine.DEFAULT_PRODUCT;
     var P = LeaversEngine.PRODUCTS;
     document.getElementById('garments').innerHTML = Object.keys(P).map(function (k) {
       return '<a href="?garment=' + k + '"' + (k === key ? ' aria-current="page"' : '') + '>' + P[k].name + '</a>';

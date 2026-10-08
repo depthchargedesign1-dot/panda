@@ -29,7 +29,7 @@
 
   function mount(root, config) {
     config = config || {};
-    var productKey = config.product && E.PRODUCTS[config.product] ? config.product : 'hoodie';
+    var productKey = config.product && E.PRODUCTS[config.product] ? config.product : E.DEFAULT_PRODUCT;
     var P = E.PRODUCTS[productKey];
     var d = E.defaultDesign(productKey);
     if (!P.areas.sleeve && d.personal.position === 'sleeve') d.personal.position = 'chest-right';
@@ -64,13 +64,21 @@
     /* ---------------------------------------------------------------- markup */
 
     function template() {
-      var swatches = E.GARMENTS.map(function (g) {
-        return '<button type="button" class="ld-swatch" data-garment="' + g.id + '" style="--c:' + g.hex + '" title="' + esc(g.name) + '" aria-label="' + esc(g.name) + '"></button>';
+      var swatches = E.colourOptions(productKey).map(function (c) {
+        return '<button type="button" class="ld-gswatch" data-garment="' + c.id + '" title="' + esc(c.name) + '" aria-label="' + esc(c.name) + '">' +
+          '<canvas width="84" height="92" data-garment-thumb="' + c.id + '"></canvas><span>' + esc(c.name) + '</span></button>';
       }).join('');
-      var contrast = P.contrast ? '<p class="ld-label">Hood, cuffs &amp; hem colour <span data-contrast-name></span></p><div class="ld-swatches">' +
-        E.GARMENTS.map(function (g) {
-          return '<button type="button" class="ld-swatch" data-contrast="' + g.id + '" style="--c:' + g.hex + '" title="' + esc(g.name) + '" aria-label="' + esc(g.name) + '"></button>';
-        }).join('') + '</div>' : '';
+      // Other garments in the range (Shopify passes the collection's products; the demo links to itself).
+      var siblings = (!config.demo ? config.siblings || [] : Object.keys(E.PRODUCTS).map(function (k) {
+        return { key: k, title: E.PRODUCTS[k].name, url: '?garment=' + k, price: Math.round(E.PRODUCTS[k].price * 100) };
+      })).filter(function (sib) { return E.PRODUCTS[sib.key]; });
+      var garmentPicker = siblings.length > 1 ? '<p class="ld-label">Garment</p><div class="ld-garments">' + siblings.map(function (sib) {
+        var current = sib.key === productKey;
+        return '<a class="ld-garment" href="' + esc(sib.url) + '"' + (current ? ' aria-current="page"' : '') + '>' +
+          '<canvas width="120" height="132" data-product-thumb="' + esc(sib.key) + '"></canvas>' +
+          '<strong>' + esc(E.PRODUCTS[sib.key].name) + '</strong><small>' + esc(E.PRODUCTS[sib.key].code || '') +
+          (sib.price ? ' · from ' + money(sib.price, config.moneyFormat) : '') + '</small></a>';
+      }).join('') + '</div>' : '';
       var templates = E.BACK_TEMPLATES.map(function (t) {
         return '<button type="button" class="ld-template" data-template="' + t.id + '"><canvas width="150" height="190" data-thumb="' + t.id + '"></canvas><strong>' + esc(t.name) + '</strong><small>' + esc(t.blurb) + '</small></button>';
       }).join('');
@@ -106,8 +114,10 @@
         '  </div>' +
         '</div>' +
         '<div class="ld__panel">' +
-        '  <details class="ld-step" open><summary><span class="ld-step__n">1</span> ' + esc(P.name) + ' colour <em data-garment-name></em></summary>' +
-        '    <div class="ld-swatches">' + swatches + '</div>' + contrast +
+        '  <details class="ld-step" open><summary><span class="ld-step__n">1</span> Garment &amp; colour <em data-garment-name></em></summary>' +
+        garmentPicker +
+        '    <p class="ld-label">' + esc(P.name) + ' colour' + (P.colourways ? ' (body / sleeves)' : '') + ' — ' + E.colourOptions(productKey).length + ' options</p>' +
+        '    <div class="ld-gswatches">' + swatches + '</div>' +
         '  </details>' +
         '  <details class="ld-step" open><summary><span class="ld-step__n">2</span> Back design</summary>' +
         '    <div class="ld-templates">' + templates + '</div>' +
@@ -240,11 +250,10 @@
     clickGroup('data-garment', function (id) {
       d.garment = id;
       // Keep the print readable when switching between dark and light garments.
-      var bg = E.garmentHex(id);
+      var bg = E.bodyHex(d);
       if (E.contrastRatio(E.inkHex(d.back.ink), bg) < 2) d.back.ink = E.contrastRatio('#FFFFFF', bg) > E.contrastRatio('#141414', bg) ? 'white' : 'black';
       thumbsSoon();
     });
-    clickGroup('data-contrast', function (id) { d.contrast = id; });
     clickGroup('data-template', function (id) { d.back.template = id; ui.view = 'back'; });
     clickGroup('data-ink', function (id) { d.back.ink = id; thumbsSoon(); });
     clickGroup('data-accent', function (id) { d.back.accent = id; thumbsSoon(); });
@@ -378,13 +387,27 @@
       });
     }
 
+    function drawGarmentThumbs() {
+      $$('[data-garment-thumb]').forEach(function (c) {
+        E.renderMockup(c, { product: productKey, garment: c.getAttribute('data-garment-thumb') }, 'front', { blank: true });
+      });
+      $$('[data-product-thumb]').forEach(function (c) {
+        var key = c.getAttribute('data-product-thumb');
+        var td = JSON.parse(JSON.stringify(d));
+        td.product = key;
+        if (key !== productKey) td.garment = E.defaultColour(key);
+        E.renderMockup(c, td, 'back', { quality: 1 });
+      });
+    }
+
     var thumbsSoon = debounce(function () {
+      drawGarmentThumbs();
       $$('[data-thumb]').forEach(function (c) {
         var t = c.getAttribute('data-thumb');
         var td = JSON.parse(JSON.stringify(d));
         td.back.template = t;
         var ctx = c.getContext('2d');
-        ctx.fillStyle = E.garmentHex(d.garment);
+        ctx.fillStyle = E.bodyHex(d);
         ctx.fillRect(0, 0, c.width, c.height);
         var a = E.areaCanvas(td, 'back', c.width * 0.86);
         var h = a.height * (c.width * 0.86) / a.width;
@@ -413,7 +436,6 @@
     function refresh() {
       var t = E.byId(E.BACK_TEMPLATES, d.back.template);
       $$('[data-garment]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-garment') === d.garment)); });
-      $$('[data-contrast]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-contrast') === d.contrast)); });
       $$('[data-template]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-template') === d.back.template)); });
       $$('[data-ink]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-ink') === d.back.ink)); });
       $$('[data-accent]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-accent') === d.back.accent)); });
@@ -430,11 +452,10 @@
         b.setAttribute('aria-pressed', String(b.getAttribute('data-size') === ui.size));
         b.disabled = !v || !v.available;
       });
-      $('[data-garment-name]').textContent = E.byId(E.GARMENTS, d.garment).name;
-      if ($('[data-contrast-name]')) $('[data-contrast-name]').textContent = '— ' + E.byId(E.GARMENTS, d.contrast).name;
+      $('[data-garment-name]').textContent = P.name + ' · ' + E.colourOf(d).name;
       $('[data-ink-name]').textContent = '— ' + E.byId(E.INKS, d.back.ink).name;
       $('[data-accent-name]').textContent = '— ' + E.byId(E.INKS, d.back.accent).name;
-      $('[data-contrast-warning]').hidden = E.contrastRatio(E.inkHex(d.back.ink), E.garmentHex(d.garment)) >= 1.6;
+      $('[data-contrast-warning]').hidden = E.contrastRatio(E.inkHex(d.back.ink), E.bodyHex(d)) >= 1.6;
       $('[data-name-count]').textContent = '(' + E.cleanNames(d).length + ')';
       $('[data-names-field]').hidden = !t.names;
       $('[data-names-tools]').hidden = !t.names;
@@ -447,7 +468,8 @@
       });
       var fs = d.front.style;
       $('[data-front-fields]').hidden = fs === 'none';
-      $('[data-front-line2]').hidden = fs === 'chest-logo';
+      $('[data-front-line2]').hidden = fs === 'chest-logo' || fs === 'chest-letter';
+      $('[data-front-line1] span').textContent = fs === 'chest-letter' ? 'Letter(s) — 1 or 2' : 'Main text';
       $('[data-front-icon]').hidden = fs !== 'chest-text';
       $('[data-front-logo]').hidden = fs !== 'chest-logo';
       $('[data-personal-fields]').hidden = d.personal.position === 'none';
@@ -470,7 +492,7 @@
         var c = document.createElement('canvas');
         c.width = art.width; c.height = art.height;
         var cx = c.getContext('2d');
-        cx.fillStyle = E.garmentHex(d.garment); cx.fillRect(0, 0, c.width, c.height);
+        cx.fillStyle = E.bodyHex(d); cx.fillRect(0, 0, c.width, c.height);
         cx.drawImage(art, 0, 0);
         var fig = document.createElement('figure');
         fig.className = 'ld-proof__file';
@@ -497,7 +519,7 @@
       });
       ctx.fillStyle = '#1D1240';
       ctx.font = '600 34px sans-serif';
-      ctx.fillText(P.name + ' · ' + E.byId(E.GARMENTS, d.garment).name + ' · ' + E.byId(E.BACK_TEMPLATES, d.back.template).name + ' · PROOF', 40, 1200);
+      ctx.fillText(P.name + ' · ' + E.colourOf(d).name + ' · ' + E.byId(E.BACK_TEMPLATES, d.back.template).name + ' · PROOF', 40, 1200);
       out.toBlob(function (b) {
         var a = document.createElement('a');
         a.href = URL.createObjectURL(b);
@@ -514,9 +536,11 @@
       var pos = E.byId(E.PERSONAL_POSITIONS, design.personal.position);
       var front = fs.name;
       if (fs.id === 'chest-text' || /^centre/.test(fs.id)) front += ': ' + [design.front.line1, design.front.line2].filter(Boolean).join(' / ');
+      if (fs.id === 'chest-letter') front += ': ' + (design.front.line1 || 'L').trim().slice(0, 2).toUpperCase();
       if (fs.id === 'chest-logo') front += design.front.line1 ? ' + "' + design.front.line1 + '"' : '';
       var props = {
-        'Colour': E.byId(E.GARMENTS, design.garment).name + (P.contrast ? ' with ' + E.byId(E.GARMENTS, design.contrast).name + ' hood & cuffs' : ''),
+        'Garment': P.name + (P.code ? ' (' + P.code + ')' : ''),
+        'Colour': E.colourOf(design).name,
         'Back design': t.name,
         'Back wording': [design.back.title, design.back.year, design.back.school].filter(Boolean).join(' · '),
         'Names on back': t.names ? E.cleanNames(design).length + ' names' : 'None',
@@ -525,7 +549,7 @@
         'Front': front,
         'Personal name': (design.personal.text || '').trim() && pos.id !== 'none' ? design.personal.text.trim() + ' (' + pos.name.toLowerCase() + ')' : 'None',
         '_Print files': (config.studioUrl || '/pages/leavers-print-studio') + '#d=' + code,
-        '_Group design': shortHash(JSON.stringify([design.garment, design.contrast, design.back, design.front.style, design.front.line1, design.front.line2]))
+        '_Group design': shortHash(JSON.stringify([design.product, design.garment, design.back, design.front.style, design.front.line1, design.front.line2]))
       };
       return props;
     }

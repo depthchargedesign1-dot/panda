@@ -3,12 +3,12 @@
     "main": {
       "type": "leavers-designer",
       "blocks": {
-        "t1": { "type": "tab", "settings": { "heading": "How it works", "content": "<p><strong>1.</strong> Design it here and check the live preview and print files. <strong>2.</strong> Add one hoodie, or switch to Whole group and add everyone with their own size and name. <strong>3.</strong> We print exactly what you approved using durable DTF transfers on premium hoodies.</p>" } },
+        "t1": { "type": "tab", "settings": { "heading": "How it works", "content": "<p><strong>1.</strong> Design it here and check the live preview and print files. <strong>2.</strong> Add one hoodie, or switch to Whole group and add everyone with their own size and name. <strong>3.</strong> We print exactly what you approved using durable DTF transfers on genuine AWDis Just Hoods garments.</p>" } },
         "t2": { "type": "tab", "settings": { "heading": "Delivery & returns", "content": "<p>Printed in the UK and dispatched in 5–7 working days. Group orders for a whole year are dispatched together. Personalised items can't be returned unless faulty — if something's not right, we'll reprint it.</p>" } },
-        "t3": { "type": "tab", "settings": { "heading": "Sizes", "content": "<p>Adult sizes are unisex and roomy — pick your usual size. Kids sizes are by age. Not sure? Order a size up for a relaxed leavers fit.</p>" } }
+        "t3": { "type": "tab", "settings": { "heading": "Sizes", "content": "<p>AWDis Just Hoods adult sizes are unisex — pick your usual size, or a size up for a relaxed leavers fit. College Hoodie 2.0 goes up to 5XL; Baseball Hoodie and Varsity Jacket go up to 2XL.</p>" } }
       },
       "block_order": ["t1", "t2", "t3"],
-      "settings": { "garment": "hoodie", "studio_handle": "leavers-print-studio" }
+      "settings": { "garment": "college-hoodie", "studio_handle": "leavers-print-studio", "range_collection": "design-your-own-leavers-hoodies-2026" }
     },
     "reviews": {
       "type": "apps",

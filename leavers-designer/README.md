@@ -16,21 +16,20 @@ A leavers-hoodie designer for foxyprinting.co.uk. Customers pick a garment colou
 | `demo/index.html`, `demo/print-studio.html` | Run the designer and studio locally without Shopify (open in a browser) |
 | `tools/render-print-files.mjs` | Command-line / server renderer (Playwright Chromium, same engine) |
 
-## Range
+## Range (AWDis Just Hoods blanks from Ralawise)
 
-| Garment | Tag | Print areas (mm) |
-| --- | --- | --- |
-| Classic Leavers Hoodie | `ld-hoodie` | back 350×440, chest 100×100, big front 300×220, sleeve 70×400, right chest 90×40 |
-| Primary Leavers Hoodie (Kids) | `ld-kids-hoodie` | back 290×360, chest 80×80, big front 240×175, sleeve 55×300 |
-| Leavers Zip Hoodie | `ld-zip-hoodie` | back, chest, sleeve, right chest (no centre front because of the zip) |
-| Two-Tone Varsity Leavers Hoodie | `ld-varsity-hoodie` | as the classic hoodie, plus a contrast hood/cuffs/hem colour |
-| Leavers Sweatshirt | `ld-sweatshirt` | as the classic hoodie |
-| Leavers T-Shirt | `ld-tshirt` | back, chest, big front, right chest |
+| Garment | Tag | Sizes | Colours | Print areas (mm) |
+| --- | --- | --- | --- | --- |
+| College Hoodie 2.0 (JH001) | `ld-college-hoodie` | XS–5XL | 33 single colours | back 350×440, chest 100×100, big front 300×220, sleeve 70×400, right chest 90×40 |
+| Baseball Hoodie (JH009) | `ld-baseball-hoodie` | XS–2XL | 13 body/sleeve colourways (contrast raglan sleeves and hood lining) | as the College Hoodie |
+| Varsity Jacket (JH043) | `ld-varsity-jacket` | XS–2XL | 16 body/sleeve colourways (striped ribs, poppers) | back 330×380, chest 100×100, sleeve 70×380, right chest 90×40 (no centre front: popper opening) |
+
+Colour names follow AWDis; the on-screen shades are approximations of the supplier swatches. Every colour option is shown as a small picture of the garment.
 
 **Back designs (9):** Names in the Year, Heart of Names, Star of the Show, Stacked Block, Class Of, College Badge, Squad Shirt, Name Wall, Year Only.
-**Front designs:** plain, chest badge (text and icon), uploaded school logo, big college front (arched), big stacked front.
+**Front designs:** plain, chest badge (text and icon), varsity letter, uploaded school logo, big college front (arched), big stacked front.
 **Personal name:** down the sleeve, front right chest, or above the back design.
-**Fonts:** 26 Google Fonts in Bold, Varsity, Script, Fun and Classic groups. **Colours:** 20 garment colours and 16 print colours.
+**Fonts:** 26 Google Fonts in Bold, Varsity, Script, Fun and Classic groups. **Print colours:** 16.
 
 ## How an order becomes a print file
 
@@ -49,4 +48,4 @@ An uploaded logo is stored by Shopify with the first basket line, and its CDN UR
 
 ## Install on a theme
 
-Upload the files in `theme/` to the theme. Tag each product `ld-<garment>`, give it a single **Size** option, and set its template to `leavers-designer`. Create a page with the handle `leavers-print-studio` using the `leavers-print-studio` template.
+Upload the files in `theme/` to the theme. Tag each product `ld-<garment>`, give it a single **Size** option, and set its template to `leavers-designer`. The garment picker lists the products in the collection set in the section's "Range collection" setting (only active products appear). Create a page with the handle `leavers-print-studio` using the `leavers-print-studio` template.
