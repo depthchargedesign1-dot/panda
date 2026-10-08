@@ -186,11 +186,46 @@ def varsity_back(img):
     valid = fabric.copy()
     valid[:, 450:550] = False  # ignore the placket seam
     out = resurface(out, region, (320, 250, 420, 450), valid)
-    neck = np.zeros_like(region)
-    cv2.fillPoly(neck, [np.array([[438, 60], [562, 60], [526, 204], [474, 204]])], 1)
-    neck &= g
-    out = resurface(out, neck, (320, 250, 420, 450), valid, sigma=30)
-    return out
+    return back_collar(out, valid)
+
+
+def back_collar(img, valid):
+    """Replace the front V-neck with the back of a varsity collar: a straight ribbed band with two stripes."""
+    out = img.copy()
+    body_px = img[300:450, 330:420].reshape(-1, 3)
+    body_col = np.median(body_px, axis=0)
+    # 1. clear the old collar and V opening to background, then rebuild the upper back panel
+    old = np.zeros(img.shape[:2], np.uint8)
+    cv2.fillPoly(old, [np.array([[352, 40], [648, 40], [664, 150], [336, 150]])], 1)
+    out[old > 0] = 255
+    panel = np.zeros_like(old)
+    cv2.fillPoly(panel, [np.array([[318, 172], [356, 150], [644, 150], [682, 172], [690, 230], [310, 230]])], 1)
+    out[(panel > 0) & (out.mean(axis=2) > 200)] = body_col
+    below = valid.copy()
+    below[:235] = False
+    out = resurface(out, panel, (320, 250, 420, 450), below, sigma=30)
+    # 2. the collar band, standing up across the back of the neck
+    band = np.zeros_like(old)
+    top = [(x, 104 + int(4 * ((x - 500) / 125) ** 2)) for x in range(378, 623, 5)]
+    bot = [(x, 158 + int(5 * (1 - ((x - 500) / 142) ** 2))) for x in range(642, 357, -5)]
+    cv2.fillPoly(band, [np.array(top + bot)], 1)
+    yy, xx = np.mgrid[0:img.shape[0], 0:img.shape[1]]
+    rib = body_col[None, None, :] + 6 * np.sin(xx * 2 * np.pi / 7)[..., None] - 0.15 * (yy - 125)[..., None]
+    out = np.where(band[..., None] > 0, np.clip(rib, 0, 255), out).astype(np.uint8)
+    # contrast stripes near the top edge, following the curve
+    stripe = (238, 238, 238)
+    for off in (10, 25):
+        pts = np.array([(x, y + off) for x, y in top], np.int32)
+        cv2.polylines(out, [pts], False, stripe, 8, cv2.LINE_AA)
+    out[(band == 0) & (old > 0) & (panel == 0)] = 255
+    out[band == 0] = np.where((old[band == 0] > 0)[:, None], out[band == 0], out[band == 0])
+    # keep the stripes inside the band, then a seam line where the collar meets the body
+    outside = (old > 0) & (band == 0) & (panel == 0)
+    out[outside] = 255
+    edge = cv2.morphologyEx(band, cv2.MORPH_GRADIENT, np.ones((3, 3), np.uint8))
+    out[edge > 0] = (out[edge > 0] * 0.55).astype(np.uint8)
+    return cv2.GaussianBlur(out, (3, 3), 0) * (cv2.dilate(edge, np.ones((5, 5), np.uint8))[..., None] > 0) + \
+        out * (cv2.dilate(edge, np.ones((5, 5), np.uint8))[..., None] == 0)
 
 
 VARSITY_REAL = {
