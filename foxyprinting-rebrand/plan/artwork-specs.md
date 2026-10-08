@@ -83,3 +83,15 @@ Sizes are for the Foxy Pop theme at its default 1360px page width. Supply them a
 ## Other dog clothing: name (+ number) transfers (PP001/2/3/4/6/8)
 - Ralawise print areas per garment are in `plan/product-facts.md` ("Pet apparel"). 3 mm bleed, 3 mm safe, Bebas Neue live text, red CUT trim path. Puffer (PP004) is a narrow strip, name only. PP008 and all 3XL/4XL areas: **ASK**.
 - Generator: `tools/artwork/dog_clothing_templates.py`. Dropbox: `/AI DESIGNS 2026/<Personalised Dog ...> - <first SKU>/`; PDFs zipped in Shopify Files (`dog-PP00x-print-pdfs.zip`).
+
+## Bar-mat pairings: coasters, glass transfers, metal signs (8 Oct 2026)
+
+| Item | Trim | Page (3 mm bleed) | Notes |
+|---|---|---|---|
+| Square drinks coaster (cork-backed MDF, sublimation) | 90 x 90 mm (live listings) | 96 x 96 mm | 3 mm safe; pre-cut blank, no CUT layer. **ASK:** 90 or 95 mm blank. |
+| Metal sign 12 x 5in (1.15mm gloss aluminium, sublimation) | 304.8 x 127 mm | 310.8 x 133 mm | 3 mm safe; pre-cut, no CUT layer. Fixings **ASK**. |
+| Metal sign 8 x 10in | 203.2 x 254 mm | 209.2 x 260 mm | as above |
+| UV DTF pint glass transfer (20oz nonic) | 70 x 90 mm (**ASK** max print area) | 76 x 96 mm | Red 0.25 mm CUT trim path, 2.5 mm corners; kept 10 mm below the rim. |
+| UV DTF whisky tumbler transfer | 70 x 60 mm (**ASK**) | 76 x 66 mm | as above |
+
+- Generator: `tools/artwork/bar_pairings.py` (change `COASTER`, `PINT`, `TUMBLER`, `SIGN_*` and re-run `tools/bar_pairings/build.py OUT`).

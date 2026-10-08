@@ -437,7 +437,7 @@ SIGNS = [
                 ["Cheerful orange and cream design dye-sublimated onto 1.15mm gloss white aluminium",
                  "Matches our Beer O’Clock Bottles and It’s Beer O’Clock bar mats and the Beer O’Clock pint glass",
                  "Panoramic size suits a shelf edge or the top of the bar",
-                 "Glossy metal finish that wipes over easily",
+                 "Glossy finish that makes the retro orange really stand out",
                  "A fun gift for a birthday, retirement or a new garden bar"],
                 SIGN_SPECS,
                 "Grab a Beer O’Clock pint glass to go with it and the joke is complete.")),
