@@ -79,3 +79,7 @@ Sizes are for the Foxy Pop theme at its default 1360px page width. Supply them a
 
 - Live text (Bebas Neue, OFL) on a Text layer, red 0.25 pt trim path on CUT. Transfer method, mirroring and press settings: **ASK**.
 - Generator: `tools/artwork/dog_varsity_jacket_template.py`. Dropbox: `/AI DESIGNS 2026/Personalised Dog Varsity Jacket - FOXY-PP005-BLA-XS/`.
+
+## Other dog clothing: name (+ number) transfers (PP001/2/3/4/6/8)
+- Ralawise print areas per garment are in `plan/product-facts.md` ("Pet apparel"). 3 mm bleed, 3 mm safe, Bebas Neue live text, red CUT trim path. Puffer (PP004) is a narrow strip, name only. PP008 and all 3XL/4XL areas: **ASK**.
+- Generator: `tools/artwork/dog_clothing_templates.py`. Dropbox: `/AI DESIGNS 2026/<Personalised Dog ...> - <first SKU>/`; PDFs zipped in Shopify Files (`dog-PP00x-print-pdfs.zip`).
