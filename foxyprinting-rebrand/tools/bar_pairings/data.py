@@ -291,7 +291,7 @@ TUMBLERS = [
                 "sits above the name and can be changed. The live preview shows the finished layout. " + NO_PROOF,
                 ["Crisp black panel with white lettering and corner details, printed in full colour with UV DTF",
                  "Matches our Vintage Black Established bar mat runner",
-                 "Heavy-looking classic whisky tumbler for a neat dram or on the rocks",
+                 "Classic short whisky tumbler for a neat dram or one on the rocks",
                  "A smart gift for a new home bar, a milestone birthday or the best man",
                  "Personalised to order in our own workshop"],
                 TUMBLER_SPECS,

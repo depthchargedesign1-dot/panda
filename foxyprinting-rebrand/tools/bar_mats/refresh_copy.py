@@ -53,6 +53,12 @@ RUBBER = [
     "Rubber backing grips the bar top, so your {d} mat won’t creep along the counter",
     "The rubber back holds the {d} design flat on wood, granite or a laminate worktop",
 ]
+RUBBER2 = [
+    "Rubber-backed and non-slip, so the {d} sits flat and stays put while the drinks are flowing",
+    "A non-slip rubber back stops the {d} sliding about when glasses are put down in a hurry",
+    "Rubber backing grips the bar top, so your {d} won’t creep along the counter",
+    "The rubber back holds the {d} flat on wood, granite or a laminate worktop",
+]
 SUBLI = [
     "Dye-sublimation printed, so the {c} colours are part of the surface and won’t peel or crack",
     "Printed by dye-sublimation in our own workshop: the ink becomes part of the top, so it won’t peel, crack or rub off",
@@ -139,7 +145,7 @@ def describe(x):
     parts.append(f"<h2>{cap(x.get('h2') or pick(H2, k, 'h2').format(pk=pk, A=cap(art(pk))))}</h2>")
     parts.append(f"<p>{x['pers']}</p>")
     bl = [x["b1"],
-          pick(RUBBER, k, "r").format(d=d.replace("&", "and")),
+          pick(RUBBER if x.get("club") else RUBBER2, k, "r").format(d=d.replace("&", "and")),
           pick(SUBLI, k, "s").format(c=c),
           pick(DISH, k, "w"),
           pick(SIZEB, k, "z")]
@@ -170,6 +176,8 @@ def metas(lead, extras):
     out = []
     for n in (1, 2):
         for comb in itertools.permutations(extras, n):
+            if sum("today" in c for c in comb) > 1:
+                continue
             out.append((lead,) + comb)
     return out
 
@@ -195,11 +203,12 @@ EXTRA_PERS = ["Add your own wording and order today."] + EXTRA_P
 # ------------------------------------------------------------------ per-family records
 def club_record(n, name):
     full, league, colours, gcol, region, seo, hook, close = R.CLUBS[name]
+    region = region[4:] if region.startswith("the ") else region   # "a proper East Midlands match-day feel"
     fan = name.replace("St. Johnstone FC", "St Johnstone").replace("St. Mirren", "St Mirren").replace("Man United", "Manchester United").replace("Man City", "Manchester City").replace("Leeds", "Leeds United").replace("Leicester", "Leicester City").replace("Wolves", "Wolves").replace("Brighton and Hove Albion", "Brighton & Hove Albion")
     pk = f"personalised football bar mat for {fan} fans"
     sec = pick(["football bar runner", "man cave gift", "home bar gift"], n["id"], "sec")
     return dict(
-        pk=pk, d=f"{colours}", cw=colours, colour=gcol,
+        pk=pk, d=f"{colours}", cw=colours, colour=gcol, club=True,
         opening=f"Our {pk} gives a home bar, garage or garden bar a proper {region} match-day feel.",
         look=f"It’s printed in {colours} with WELCOME TO at the top and your own wording in large capitals across the middle.",
         hook=hook,
@@ -244,11 +253,11 @@ def m_record(n, num):
                 f"personalisation box on this page, or ring us on {PHONE} before you order and we’ll talk it through.")
     cw = gcol.lower().replace("multicolor", "bright").replace("light blue", "sky blue")
     return dict(
-        pk=pk, d=dname.lower(), cw=cw, colour=gcol, look=look, hook=hook, pers=pers,
+        pk=pk, d=f"{dname} design", cw=cw, colour=gcol, look=look, hook=hook, pers=pers,
         b1=pick(["The {n} artwork is laid out to fill the whole mat, with no plain borders",
                  "Every part of the {n} design is printed edge to edge in full colour",
                  "The {n} layout works on both sizes, so the small mat and the long runner match",
-                 "Our {n} design is one of the most popular in the range for home pubs"], n["id"], "b1").format(n=dname),
+                 "The {n} layout keeps the main wording in the centre, where it’s easy to read across the bar"], n["id"], "b1").format(n=dname),
         detail="Personalised with your wording" if example else "Printed as shown (wording changes on request)",
         close=close, disc=disc, seo=seo,
         meta=metas(f"Make your home bar your own local with {art(pk)} {pk}.", (EXTRA_PERS if example else EXTRA_P))
@@ -262,7 +271,7 @@ def ve_record(n, num):
     style, gcol, look, emblem = R.VE[num]
     pk = "VE Day 80th anniversary bar mat"
     return dict(
-        pk=pk, d=style, cw=style.split(" Union")[0].replace("lettering", "").strip(), colour=gcol,
+        pk=pk, d=f"{style} design", cw=style.split(" Union")[0].replace("lettering", "").strip(), colour=gcol,
         opening=f"This {pk} marks 80 years since Victory in Europe, in a {style} design.",
         look=look, hook="It makes a proud keepsake for a family with wartime stories, a Legion club bar or a pub that hosted the street party.",
         h2=f"A {pk} to remember 8 May",
@@ -324,7 +333,7 @@ def new_record(n, p):
     lead = (f"{cap(art(pk))} {pk} for home bars, garden bars and man caves." if not pers_flag
             else f"{cap(art(pk))} {pk}, printed with your own wording.")
     return dict(
-        pk=pk, d=design.lower(), cw=cw, colour=p["colour"], look=look, hook=hook, pers=pers, b1=b1,
+        pk=pk, d=f"{design} design", cw=cw, colour=p["colour"], look=look, hook=hook, pers=pers, b1=b1,
         detail="Personalised with your details" if pers_flag else "Printed as shown",
         close=close, disc=disc, seo=seo_kw,
         meta=metas(lead, EXTRA_PERS if pers_flag else EXTRA_P) + metas(f"Our {pk} is rubber-backed, dishwasher safe and dye-sublimation printed.", EXTRA_PERS if pers_flag else EXTRA_P),
