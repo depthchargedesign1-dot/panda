@@ -22,3 +22,11 @@ the round swatches, Colour line, 80-char school box, always-visible names box, 4
 (b465c692…), leavers-photos.js (1fa94e2e…). Verified against the store. Its source of truth for those files is now that
 branch (leavers-designer/theme/assets/); the copies in this folder's assets/ are the older pre-merge versions.
 Do NOT publish "Foxy Pop 2026 – leavers logo upload" (189515399549): superseded by 189514809725.
+
+## 8 Oct: Celebrity Posters mega-menu promo (celebrity-posters session)
+- sections/header-group.json in 189514809725: new "Department style" block `d8` for the menu item "Celebrity Posters"
+  (accent purple, eyebrow "New department", heading "Music, film & sport star posters with printed signatures",
+  button "Shop posters", image `shopify://shop_images/TaylorSwift.jpg`, link /collections/celebrity-posters), placed
+  after the Celebrity Masks block. Store checksum after upsert: f06f80c43f3d262a94d8d46bf3730fbb (matches this file).
+  No other header file changed: the live header.liquid already renders any 3-level menu item as a mega panel, so the
+  new "Celebrity Posters" menu item works on the live theme now; the promo tile appears once this copy is published.
