@@ -57,12 +57,11 @@
 .ld-garment small { font-size: 0.74rem; opacity: 0.7; }
 .ld-garment[aria-current="page"] { border-color: var(--ld-pink); box-shadow: 0 0 0 3px rgba(255, 45, 135, 0.18); }
 
-.ld-gswatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); gap: 6px; max-height: 360px; overflow: auto; padding: 2px; }
-.ld-gswatch { border: 2px solid transparent; border-radius: 10px; background: #F6F2EE; padding: 3px 3px 4px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 2px; font: inherit; color: inherit; }
-.ld-gswatch canvas, .ld-gswatch img { width: 100%; height: auto; display: block; aspect-ratio: 1; object-fit: contain; background: #fff; border-radius: 6px; }
-.ld-gswatch span { font-size: 0.66rem; line-height: 1.15; text-align: center; opacity: 0.8; }
-.ld-gswatch:hover { border-color: var(--ld-line); }
-.ld-gswatch[aria-pressed="true"] { border-color: var(--ld-pink); background: #fff; box-shadow: 0 0 0 3px rgba(255, 45, 135, 0.18); }
+.ld-gswatches { display: flex; flex-wrap: wrap; gap: 8px; padding: 4px 2px; }
+.ld-gswatch { width: 30px; height: 30px; border-radius: 50%; padding: 0; cursor: pointer; border: 1px solid rgba(29, 18, 64, 0.25); background: linear-gradient(135deg, var(--b) 50%, var(--t) 50%); box-shadow: inset 0 0 0 2px #fff; transition: transform 0.1s; }
+.ld-gswatch:hover { transform: scale(1.12); }
+.ld-gswatch[aria-pressed="true"] { border: 2px solid var(--ld-pink); box-shadow: inset 0 0 0 2px #fff, 0 0 0 3px rgba(255, 45, 135, 0.18); }
+.ld-colour-name { margin: 6px 0 0; font-size: 0.9rem; }
 
 .ld-templates { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
 .ld-template { border: 2px solid var(--ld-line); border-radius: 12px; background: #fff; padding: 6px; cursor: pointer; text-align: left; font: inherit; color: inherit; display: flex; flex-direction: column; gap: 4px; }

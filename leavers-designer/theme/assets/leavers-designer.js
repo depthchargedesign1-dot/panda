@@ -64,11 +64,9 @@
     /* ---------------------------------------------------------------- markup */
 
     function template() {
+      // Small round colour swatches, like Ralawise: two-tone garments show body / sleeve colour split diagonally.
       var swatches = E.colourOptions(productKey).map(function (c) {
-        var pic = c.front ? '<img src="' + esc(c.front + '?width=180') + '" alt="" loading="lazy" width="90" height="90">' :
-          '<canvas width="84" height="92" data-garment-thumb="' + c.id + '"></canvas>';
-        return '<button type="button" class="ld-gswatch" data-garment="' + c.id + '" title="' + esc(c.name) + '" aria-label="' + esc(c.name) + '">' +
-          pic + '<span>' + esc(c.name) + '</span></button>';
+        return '<button type="button" class="ld-gswatch" data-garment="' + c.id + '" style="--b:' + c.body + ';--t:' + c.trim + '" title="' + esc(c.name) + '" aria-label="' + esc(c.name) + '"></button>';
       }).join('');
       // Other garments in the range (Shopify passes the collection's products; the demo links to itself).
       var siblings = (!config.demo ? config.siblings || [] : Object.keys(E.PRODUCTS).map(function (k) {
@@ -120,6 +118,7 @@
         garmentPicker +
         '    <p class="ld-label">' + esc(P.name) + ' colour' + (P.colourways ? ' (body / sleeves)' : '') + ' — ' + E.colourOptions(productKey).length + ' options</p>' +
         '    <div class="ld-gswatches">' + swatches + '</div>' +
+        '    <p class="ld-colour-name">Colour: <strong data-colour-name></strong></p>' +
         '  </details>' +
         '  <details class="ld-step" open><summary><span class="ld-step__n">2</span> Back design</summary>' +
         '    <div class="ld-templates">' + templates + '</div>' +
@@ -128,14 +127,14 @@
         '    <div class="ld-grid3">' +
         '      <label class="ld-field"><span>Heading</span><input type="text" maxlength="24" data-bind="back.title"></label>' +
         '      <label class="ld-field"><span>Year</span><input type="text" maxlength="6" data-bind="back.year" placeholder="27 or 2027"></label>' +
-        '      <label class="ld-field"><span>School / group name</span><input type="text" maxlength="40" data-bind="back.school"></label>' +
         '    </div>' +
+        '    <label class="ld-field"><span>School name (in full)</span><input type="text" maxlength="80" data-bind="back.school" placeholder="e.g. Oakfield Primary School"></label>' +
         '    <div class="ld-field" data-names-field><span>Names for the back — one box per pupil <b data-name-count></b></span>' +
         '      <div class="ld-names" data-name-list></div>' +
         '      <div class="ld-row ld-row--wrap"><button type="button" class="ld-chip" data-name-add>+ Add a name</button>' +
-        '        <button type="button" class="ld-chip" data-names-paste-toggle>Paste a whole list</button></div>' +
-        '      <div data-names-paste hidden><textarea rows="8" data-names spellcheck="false" placeholder="Olivia Smith&#10;Jack Taylor&#10;…"></textarea>' +
-        '        <p class="ld-note">Paste or type one name per line — the boxes above update as you go.</p></div>' +
+        '        <button type="button" class="ld-chip" data-names-paste-toggle hidden>Paste a whole list</button></div>' +
+        '      <label class="ld-field" data-names-paste><span>All pupils’ names in full — type or paste one name per line</span><textarea rows="10" data-names spellcheck="false" placeholder="Olivia Smith&#10;Jack Taylor&#10;Amelia-Rose Johnson&#10;…"></textarea>' +
+        '        <p class="ld-note">The name boxes above update as you go. Please check every spelling: we print exactly what you type.</p></label>' +
         '    </div>' +
         '    <div class="ld-row ld-row--wrap" data-names-tools>' +
         '      <button type="button" class="ld-chip" data-names-action="sort">Sort A–Z</button>' +
@@ -252,11 +251,11 @@
     function renderNameList(focusIndex) {
       nameList.innerHTML = d.back.names.map(function (n, i) {
         return '<div class="ld-name"><span class="ld-name__n">' + (i + 1) + '</span>' +
-          '<input type="text" maxlength="32" value="' + esc(n) + '" data-name-i="' + i + '" aria-label="Name ' + (i + 1) + '" spellcheck="false">' +
+          '<input type="text" maxlength="40" value="' + esc(n) + '" data-name-i="' + i + '" aria-label="Name ' + (i + 1) + '" spellcheck="false">' +
           '<button type="button" data-name-del="' + i + '" aria-label="Remove ' + esc(n || 'name') + '">✕</button></div>';
       }).join('') +
         '<div class="ld-name ld-name--new"><span class="ld-name__n">' + (d.back.names.length + 1) + '</span>' +
-        '<input type="text" maxlength="32" data-name-new placeholder="Type a name and press Enter" aria-label="Add a name" spellcheck="false"></div>';
+        '<input type="text" maxlength="40" data-name-new placeholder="Type a name and press Enter" aria-label="Add a name" spellcheck="false"></div>';
       if (focusIndex != null) {
         var el = focusIndex >= d.back.names.length ? nameList.querySelector('[data-name-new]') : nameList.querySelector('[data-name-i="' + focusIndex + '"]');
         if (el) el.focus();
@@ -565,6 +564,7 @@
         b.disabled = !v || !v.available;
       });
       $('[data-garment-name]').textContent = P.name + ' · ' + E.colourOf(d).name;
+      $('[data-colour-name]').textContent = E.colourOf(d).name;
       $('[data-ink-name]').textContent = '— ' + E.byId(E.INKS, d.back.ink).name;
       $('[data-accent-name]').textContent = '— ' + E.byId(E.INKS, d.back.accent).name;
       $('[data-contrast-warning]').hidden = E.contrastRatio(E.inkHex(d.back.ink), E.bodyHex(d)) >= 1.6;
