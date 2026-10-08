@@ -62,15 +62,13 @@ def render(photo, wrap, side="right"):
     ty = np.clip((v / WRAP_H * th).astype(int), 0, th - 1)
     tex = T[ty, tx]
     L = P.mean(axis=2)
-    # photo shading: normalise by the bright body level, keep it gentle
-    shade = np.clip(L / 0.965, 0, 1.03)[..., None]
-    # foreshortening darkens the edges slightly more on a printed (non-white) surface
-    edge = (0.86 + 0.14 * curve)[..., None]
-    out = tex * shade * edge
-    # gloss: put the photo's bright highlights back over the print
+    # multiply the print into the photo: white ink areas stay exactly the photo, colours pick up its shading
+    out = tex * np.clip(P / 0.985, 0, 1)
+    # gloss: put the photo's bright highlights back over the coloured ink only
     blur = np.asarray(Image.fromarray((L * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(25))) / 255.0
     hl = np.clip((L - blur) * 6 + (L - 0.975) * 14, 0, 0.55)[..., None]
-    out = out * (1 - hl) + hl
+    ink = (1 - tex.mean(axis=2, keepdims=True))
+    out = out * (1 - hl * ink) + hl * ink
     # soft mask edges (anti-alias, ~1.5 px)
     mk = Image.fromarray((m * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1.2))
     a = (np.asarray(mk).astype(np.float32) / 255.0)[..., None]
