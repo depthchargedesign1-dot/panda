@@ -35,3 +35,12 @@ Do NOT publish "Foxy Pop 2026 – leavers logo upload" (189515399549): supersede
 - sections/main-product.liquid (md5 1f4eebad…, this folder): option values longer than 8 characters (poster sizes "A4 Print Only",
   "A3 Print + Silver Frame") render as an even grid of equal buttons (`option-pills--grid`, 2 columns on phones);
   description headings h1/h2 1.3rem, h3/h4 1.05rem, inline font styles/tables in old descriptions neutralised.
+
+## 8 Oct ~17:10 UTC: "Foxy Pop 2026 – plate squeeze" (189519069565), duplicate of the live "poster tidy"
+"poster tidy" (189518610813) was already PUBLISHED (MAIN) when the number plate mug work ran, so it was duplicated.
+- assets/personaliser.js (md5 1b76c0414cd831e0f9396f179a16a4d2, this folder; base = live 8214edfb…): opt-in preview_zone keys
+  `fit:"squeeze"` (same capital height, centred, squeezed horizontally only when too long), `fitFont` (Google Font loaded only
+  for those zones), `field`, `optional`, `transform` ("upper"/"plate"), `placeholder`, `weight`, `letterSpacing`, `whenFilled`,
+  `also` (extra zones) and `bases` (blank base image per variant option instead of the variant photo). Other products unchanged.
+  Used by the personalised number plate mug; record: exports/number-plate-mug/2026-10-08/README.md.
+- Put further theme changes in this copy (it is live + this one file). Owner to preview and publish.
