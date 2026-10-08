@@ -373,7 +373,7 @@ def describe(i, p):
         "<ul>" + "".join(f"<li>{x}</li>" for x in b) + "</ul>",
         "<h3>Size &amp; details</h3>",
         "<ul>"
-        f"<li>Design: {d}, filled with your name and 20–30 words</li>"
+        f"<li>Design: {('a ' + d + ' number ' + kw_s) if cat == NUM else d}, filled with your name and 20–30 words</li>"
         "<li>Print only: A4 (210 x 297 mm), A3 (297 x 420 mm), A2 (420 x 594 mm) or A1 (594 x 841 mm)</li>"
         "<li>Paper: A4 on 350gsm card, A3 on 170gsm gloss, A2 and A1 on 210gsm gloss</li>"
         "<li>Framed: A4 (with a stand) or A3 (with a hanging clip) in a black or silver Premium Display frame</li>"
@@ -422,7 +422,7 @@ def check(h, kw):
 
 PROPER = {"Statue", "Liberty", "New", "York", "Shih", "Tzu", "Labrador", "Jack", "Russell", "Lhasa", "Apso",
           "German", "Shepherd", "French", "Dalmatian", "Border", "Collie", "Chihuahua", "Cavalier", "Eiffel",
-          "Paris", "Fleur-de-Lis"}
+          "Paris", "Tower"}
 
 
 def seo(p, i):
@@ -483,12 +483,14 @@ def plan(before, out):
         if len(v) != 1 or v[0]["title"] != "Default Title" or n["options"][0]["name"] != "Title":
             skip = "already has options"
         kw = keyword(p)
-        h = describe(i, p)
+        h = an18(describe(i, p))
         assert h not in seen, n["title"]
         seen.add(h)
         probs = check(h, kw)
         assert not probs, (n["title"], probs, words(h))
         st, sd = seo(p, i)
+        sd = an18(sd)
+        assert 140 <= len(sd) <= 155, (n["title"], len(sd))
         kinds = {}
         for m in n["media"]["nodes"]:
             kinds.setdefault(media_kind(m["image"]["url"]), []).append(m["id"])
@@ -574,13 +576,19 @@ def phase_a(out, ids, name):
         # gender unisex, condition new, age_group adult (= tools/age_group.py) and the Posters category were
         # already set on all 166 when read on 8 Oct 2026, so they are not re-sent (keeps the documents small)
         assert e["age_group"] == "adult"
-    vars_["pf"] = json.dumps(["Name (shown largest)", MSG], ensure_ascii=False)
-    decl.append("$pf: String!")
+    if any("value:$pf}" in m for m in mf):  # only declare $pf when used (unused variables are rejected)
+        vars_["pf"] = json.dumps(["Name (shown largest)", MSG], ensure_ascii=False)
+        decl.append("$pf: String!")
     lines.append(f'm: metafieldsSet(metafields:[{", ".join(mf)}]) {{ userErrors {{ field message code }} }}')
     doc = f"mutation({', '.join(decl)}) {{\n" + "\n".join(lines) + "\n}\n"
     open(os.path.join(out, f"{name}.graphql"), "w").write(doc)
     json.dump(vars_, open(os.path.join(out, f"{name}.vars.json"), "w"), ensure_ascii=False)
     print(name, len(ids), "products,", len(doc), "bytes doc,", len(json.dumps(vars_)), "bytes vars")
+
+
+def an18(t):
+    """'a 18th' -> 'an 18th' (and the same for 8th/80th, which start with a vowel sound)."""
+    return re.sub(r"\b([Aa]) (8|18|80|8\d)(th)\b", lambda m: ("An" if m.group(1) == "A" else "an") + " " + m.group(2) + m.group(3), t)
 
 
 def phase_b(out, after, ids, name):
