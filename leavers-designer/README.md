@@ -20,8 +20,8 @@ A leavers-hoodie designer for foxyprinting.co.uk. Customers pick a garment colou
 
 | Garment | Tag | Print areas (mm) |
 | --- | --- | --- |
-| Classic Leavers Hoodie | `ld-hoodie` | back 300×380, chest 100×100, big front 280×200, sleeve 70×400, right chest 90×40 |
-| Primary Leavers Hoodie (Kids) | `ld-kids-hoodie` | back 250×310, chest 80×80, big front 220×160, sleeve 55×300 |
+| Classic Leavers Hoodie | `ld-hoodie` | back 350×440, chest 100×100, big front 300×220, sleeve 70×400, right chest 90×40 |
+| Primary Leavers Hoodie (Kids) | `ld-kids-hoodie` | back 290×360, chest 80×80, big front 240×175, sleeve 55×300 |
 | Leavers Zip Hoodie | `ld-zip-hoodie` | back, chest, sleeve, right chest (no centre front because of the zip) |
 | Two-Tone Varsity Leavers Hoodie | `ld-varsity-hoodie` | as the classic hoodie, plus a contrast hood/cuffs/hem colour |
 | Leavers Sweatshirt | `ld-sweatshirt` | as the classic hoodie |

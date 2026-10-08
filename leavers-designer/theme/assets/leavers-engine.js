@@ -94,43 +94,43 @@
    * size for every garment, so a kids hoodie gets a bigger k).
    */
   var ADULT_AREAS = {
-    back: { w: 300, h: 380, label: 'Back' },
+    back: { w: 350, h: 440, label: 'Back' },
     chest: { w: 100, h: 100, label: 'Front left chest' },
-    centre: { w: 280, h: 200, label: 'Front centre' },
+    centre: { w: 300, h: 220, label: 'Front centre' },
     personal: { w: 90, h: 40, label: 'Front right chest' },
     sleeve: { w: 70, h: 400, label: 'Left sleeve' }
   };
   var PRODUCTS = {
     'hoodie': {
-      name: 'Classic Leavers Hoodie', mockup: 'hoodie', k: 0.85, areas: ADULT_AREAS,
+      name: 'Classic Leavers Hoodie', mockup: 'hoodie', k: 0.97, areas: ADULT_AREAS,
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'], price: 24.99, upcharge: { '2XL': 2, '3XL': 2 }
     },
     'kids-hoodie': {
-      name: 'Primary Leavers Hoodie (Kids)', mockup: 'hoodie', k: 1.06,
+      name: 'Primary Leavers Hoodie (Kids)', mockup: 'hoodie', k: 1.17,
       areas: {
-        back: { w: 250, h: 310, label: 'Back' },
+        back: { w: 290, h: 360, label: 'Back' },
         chest: { w: 80, h: 80, label: 'Front left chest' },
-        centre: { w: 220, h: 160, label: 'Front centre' },
+        centre: { w: 240, h: 175, label: 'Front centre' },
         personal: { w: 75, h: 34, label: 'Front right chest' },
         sleeve: { w: 55, h: 300, label: 'Left sleeve' }
       },
       sizes: ['3-4 yrs', '5-6 yrs', '7-8 yrs', '9-11 yrs', '12-13 yrs'], price: 19.99
     },
     'zip-hoodie': {
-      name: 'Leavers Zip Hoodie', mockup: 'zip', k: 0.85,
+      name: 'Leavers Zip Hoodie', mockup: 'zip', k: 0.97,
       areas: { back: ADULT_AREAS.back, chest: ADULT_AREAS.chest, personal: ADULT_AREAS.personal, sleeve: ADULT_AREAS.sleeve },
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL'], price: 29.99, upcharge: { '2XL': 2 }
     },
     'varsity-hoodie': {
-      name: 'Two-Tone Varsity Leavers Hoodie', mockup: 'hoodie', k: 0.85, areas: ADULT_AREAS, contrast: true,
+      name: 'Two-Tone Varsity Leavers Hoodie', mockup: 'hoodie', k: 0.97, areas: ADULT_AREAS, contrast: true,
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL'], price: 27.99, upcharge: { '2XL': 2 }
     },
     'sweatshirt': {
-      name: 'Leavers Sweatshirt', mockup: 'sweat', k: 0.85, areas: ADULT_AREAS,
+      name: 'Leavers Sweatshirt', mockup: 'sweat', k: 0.97, areas: ADULT_AREAS,
       sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'], price: 21.99, upcharge: { '2XL': 2, '3XL': 2 }
     },
     'tshirt': {
-      name: 'Leavers T-Shirt', mockup: 'tee', k: 0.85,
+      name: 'Leavers T-Shirt', mockup: 'tee', k: 0.97,
       areas: { back: ADULT_AREAS.back, chest: ADULT_AREAS.chest, centre: ADULT_AREAS.centre, personal: ADULT_AREAS.personal },
       sizes: ['Kids 5-6', 'Kids 7-8', 'Kids 9-11', 'Kids 12-13', 'S', 'M', 'L', 'XL', '2XL'], price: 14.99,
       upcharge: { 'Kids 5-6': -2, 'Kids 7-8': -2, 'Kids 9-11': -2, 'Kids 12-13': -2, '2XL': 2 }
@@ -896,9 +896,9 @@
   };
   // Where each print area sits on the mockup: centre x, top y, and rotation for the sleeve.
   var PLACES = {
-    back: { view: 'back', cx: 500, top: 250 },
+    back: { view: 'back', cx: 500, top: 232 },
     chest: { view: 'front', cx: 622, top: 285 },
-    centre: { view: 'front', cx: 500, top: 282 },
+    centre: { view: 'front', cx: 500, top: 268 },
     personal: { view: 'front', cx: 378, top: 300 },
     sleeve: { view: 'front', line: [772, 300, 852, 860], t: 0.47 }
   };
