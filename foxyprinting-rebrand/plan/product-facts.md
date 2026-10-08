@@ -295,6 +295,7 @@ All families below: printed in-house by dye-sublimation in our North Yorkshire w
 Owner answers, 2 Oct 2026.
 - **Selling point:** full-colour UV DTF prints (logos, photos, names, any colours), not plain engraving like most shops.
 - **Blanks stocked:** nonic pint glass 20oz; stout tulip pint glass; champagne flute; gin balloon glass; whisky (rocks) tumbler. Capacities other than the 20oz pint: **ASK**.
+- **Print areas (owner, 8 Oct 2026):** pint glass **90 x 130 mm** (w x h); whisky tumbler **50 x 50 mm**. Whisky tumbler capacity: **ASK**.
 - **Print:** UV DTF, permanent full-colour print on the outside of the glass, kept 10mm below the rim.
 - **Care (owner's wording):** hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle.
 - **Uses:** milestone birthdays (18th, 21st, 30th, 40th, 50th, 60th) on flutes; dads, home bars and pubs on pints; business, pub and brewery logos; weddings and hen dos.
@@ -304,7 +305,8 @@ Owner answers, 2 Oct 2026.
 
 ## Home bar, garden bar & man cave (added 2 Oct 2026)
 Owner confirmed they can make: sublimation metal pub and bar signs, rubber-backed bar runners and mats, a hanging double-sided garden pub sign, and acrylic, wood or UV-printed bar plaques and "licence" signs.
-- **Metal signs:** printed on the 1.15mm gloss white aluminium sheets (see "Metal photo panels" sheet for sizes). Outdoor durability and fixings: **ASK**.
+- **Metal signs:** printed on the 1.15mm gloss white aluminium sheets (see "Metal photo panels" sheet for sizes). Owner, 8 Oct 2026, asked about fixings/outdoors: "Metal signs fine" (meaning not yet confirmed: holes/fixings and outdoor use still **ASK** — don't promise either).
+- **Bar coasters (owner, 8 Oct 2026):** sublimation-printed coaster, **90 x 90 mm**, **dishwasher safe** ("Yes safe"). Print area 90 x 90 mm + 3 mm bleed.
 - **Bar runners and mats (owner confirmed 8 Oct 2026):** sizes **Small 440mm x 250mm** and **Large 880mm x 250mm** (250mm deep, NOT 330mm; the owner's 330mm instruction earlier on 8 Oct was a mistake). Rubber-backed, dye-sublimation printed, **dishwasher safe**. Option values read exactly "Small 440mm x 250mm" / "Large 880mm x 250mm". Rubber thickness still **ASK**.
 - **Hanging garden pub sign:** double-sided. Material, size and bracket: **ASK** (owner to confirm).
 - **Plaques and licence signs:** material options acrylic, wood or UV print. Sizes: **ASK**.
