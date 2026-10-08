@@ -56,7 +56,10 @@ The Shopify MCP blocks `themePublish` and any write to the MAIN theme. Never try
 
 1. Commit and push to the working branch, and note the commit SHA.
 2. Find the MAIN theme with `themes { nodes { id name role } }`.
-3. Run `themeDuplicate` on the MAIN theme, named e.g. "Foxy Pop 2026 – <change>".
+3. Several Claude sessions share the store's themes (house rule in CLAUDE.md on branch `claude/foxyprinting-rebrand-shopify-usf2x9`).
+   - First check whether an unpublished copy duplicated from the current live theme already exists, and use it if so.
+   - Only if none exists, run `themeDuplicate` on the MAIN theme (named e.g. "Foxy Pop 2026 – <change>") and tell the other sessions its id.
+   - This session owns only `assets/leavers-*`, `sections/leavers-*` and `templates/*leavers*`. Never overwrite other sessions' files.
 4. Run `themeFilesUpsert` on the copy, with each file as `{type: URL, value: https://raw.githubusercontent.com/depthchargedesign1-dot/panda/<SHA>/leavers-designer/theme/<path>}`.
 5. Verify the upload: the copy's `files(filenames: [...]) { checksumMd5 }` must equal the local `md5sum`.
 6. Give the user a preview link, `https://foxyprinting.co.uk/products/design-your-own-leavers-college-hoodie?preview_theme_id=<id>`. Ask them to publish the copy in Online Store → Themes.
