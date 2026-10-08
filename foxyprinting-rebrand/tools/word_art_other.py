@@ -357,7 +357,7 @@ def describe(i, p):
     src = POP_SETS[pop_set(s)][1] if cat == POP else ""
     f = lambda t: t.format(s=s, kw=kw, d=d, src=src, o=o)
     shape = {NUM: f"number {kw_s}", POP: "figure", TRV: "design", FAM: "design", LOVE: "shape", STY: "shape"}.get(cat, kw_s if cat not in (D, C) else ("dog" if cat == D else "cat"))
-    if cat in (HOB, KID, AN, PET):
+    if cat in (HOB, KID, AN, PET, D, C):
         shape = "design"
     who = WHO.get(cat, "name")
     rest = [x for x in BULLETS if "Premium Display" not in x]
@@ -564,9 +564,10 @@ def phase_a(out, ids, name):
         mf += [f'{{ownerId:{P}, namespace:"foxy", key:"personalise_fields", type:"list.single_line_text_field", value:{fv}}}',
                f'{{ownerId:{P}, namespace:"foxy", key:"mockup", type:"single_line_text_field", value:"photo"}}',
                g("custom_product", "boolean", "true"), g("mpn", "single_line_text_field", e["base_sku"] + "-A4"),
-               g("color", "single_line_text_field", e["color"]), g("age_group", "single_line_text_field", e["age_group"]),
-               g("gender", "single_line_text_field", "unisex"), g("condition", "single_line_text_field", "new"),
-               g("google_product_category", "single_line_text_field", "Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork")]
+               g("color", "single_line_text_field", e["color"])]
+        # gender unisex, condition new, age_group adult (= tools/age_group.py) and the Posters category were
+        # already set on all 166 when read on 8 Oct 2026, so they are not re-sent (keeps the documents small)
+        assert e["age_group"] == "adult"
     vars_["pf"] = json.dumps(["Name (shown largest)", MSG], ensure_ascii=False)
     decl.append("$pf: String!")
     lines.append(f'm: metafieldsSet(metafields:[{", ".join(mf)}]) {{ userErrors {{ field message code }} }}')

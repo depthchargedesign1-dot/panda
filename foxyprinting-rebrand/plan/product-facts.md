@@ -327,6 +327,15 @@ Owner confirmed they can make: sublimation metal pub and bar signs, rubber-backe
 - **Celebrity and athlete posters:** "unofficial", with the celebrity disclaimer (sports disclaimer for athletes and clubs). Never "signed" or "autographed" unless it's a Printed Signature reproduction (see signed-prints rule).
 - **Google category:** `Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork`. **age_group:** `adult`.
 
+## Personalised name word art prints (Pink / Blue Letter A–Z) (added 8 Oct 2026, from the owner's original listing copy)
+- **Design:** one big letter (A–Z) in pink or blue, filled with the customer's words. The first word (their name) shows once, prominently; the other 20–30 words repeat randomly in different sizes, fonts and shades.
+- **Customer input:** name + a list of 20–30 single words or short phrases (max 3 words each), separated by commas. No shapes, icons, emoji or accented letters. We print exactly what they type. Store boxes: `foxy.personalise_fields` = "Name (shown largest)", "Your words message (20–30 words, separated by commas)"; template `personalised`, mockup `photo`.
+- **Sizes:** print only A4 (210 x 297 mm), A3 (297 x 420 mm), A2 (420 x 594 mm), A1 (594 x 841 mm); framed A4 or A3 in black or silver Premium Display frames (thick, chunky, very professional, not cheap thin frames). A3 frames have a clip on the back to hang; A4 frames have a stand.
+- **Paper:** A4 350gsm card; A3 170gsm gloss; A2 and A1 210gsm gloss.
+- **Delivery:** posted the next working day (same day if ordered before 12pm), Royal Mail.
+- **Not sold any more:** greeting card version and white (or gold) frames. Don't mention them.
+- **ASK:** frame material/depth and glazing (see posters sheet).
+
 ## Pet portraits: "your pet as a historical character" (added 2 Oct 2026)
 - **Designs:** 15 characters, 2 versions each (owner's artwork in Dropbox `/!! BEN JOE OWEN NEW PRODUCTS XMAS 2026 !!!/PET PORTRAITS - Copy`): Admiral, Churchill, Cleopatra, Custer, Henry VIII, Kitchener, Lincoln, Mona Lisa, Mozart, Napoleon, Pearl Earring, Roman Emperor, Shakespeare, Victoria, Washington.
 - **How it works (owner, 2 Oct 2026):** the customer uploads a photo of their cat or dog. Our team puts their pet into the character and emails a proof before printing. An AI live preview with a watermark is planned next.
