@@ -163,24 +163,33 @@
 
   function zoneList() {
     if (!config.zone) return [];
-    return (Array.isArray(config.zone) ? config.zone : [config.zone]).filter(Boolean);
+    // "also": extra zones nested in a zone (e.g. a plate's dealer line), so older theme versions ignore them.
+    const out = [];
+    (Array.isArray(config.zone) ? config.zone : [config.zone]).filter(Boolean).forEach((z) => {
+      out.push(z);
+      if (Array.isArray(z.also)) z.also.filter(Boolean).forEach((a) => out.push(a));
+    });
+    return out;
   }
 
   // Zones can name a font the theme doesn't load (e.g. "Barlow Condensed" for number plates). Load it from
   // Google Fonts (open licence) only for those zones, once, then redraw. Other products are unaffected.
   const requestedFonts = {};
   function ensureZoneFont(z) {
-    if (!z.font) return;
+    const family = (z.fit === 'squeeze' && z.fitFont) || z.font;
+    if (!family) return;
     const weight = String(z.weight || 700);
-    const key = z.font + ':' + weight;
+    const key = family + ':' + weight;
     if (requestedFonts[key]) return;
     requestedFonts[key] = true;
-    const spec = weight + ' 48px "' + z.font + '"';
-    const ready = document.fonts && document.fonts.check && document.fonts.check(spec);
+    const spec = weight + ' 48px "' + family + '"';
+    // (document.fonts.check() returns true for a font that isn't declared at all, so look for a declared face.)
+    let ready = false;
+    try { document.fonts.forEach((f) => { if (f.family.replace(/["']/g, '') === family) ready = true; }); } catch (e) { ready = false; }
     if (!ready && z.fit === 'squeeze') {
       const link = document.createElement('link');
       link.rel = 'stylesheet';
-      link.href = z.fontCss || ('https://fonts.googleapis.com/css2?family=' + encodeURIComponent(z.font).replace(/%20/g, '+') +
+      link.href = z.fontCss || ('https://fonts.googleapis.com/css2?family=' + encodeURIComponent(family).replace(/%20/g, '+') +
         ':wght@' + weight + '&display=swap');
       link.onload = () => { if (document.fonts) document.fonts.load(spec).then(draw, draw); };
       document.head.appendChild(link);
@@ -464,6 +473,8 @@
   //   "optional": true    draw nothing while that box is empty (no faint placeholder)
   //   "fit": "squeeze"    keep the full zone height and squeeze the text narrower when it's long (number plates)
   //   "transform": "upper" | "plate"  capitals; "plate" also keeps only A-Z, 0-9 and single spaces
+  //   "fitFont": font for the squeezed text (loaded from Google Fonts if the theme doesn't have it; "font" stays the
+  //   fallback for older theme versions), "also": [extra zones], "bases": {"<option value>": "<blank image url>"},
   //   "placeholder", "weight", "letterSpacing" (em), "whenFilled": {"field": "...", "x","y","w","h"} (moves the zone
   //   when another box has text, e.g. the plate text moves up when there is a dealer line)
   function fieldText(z) {
@@ -487,7 +498,7 @@
     let text = t.empty ? (z.placeholder || t.placeholder) : t.text;
     text = transformText(text, z.transform);
     if (!text) return;
-    const family = z.font || state.font;
+    const family = z.fitFont || z.font || state.font;
     const weight = z.weight || 700;
     const font = (size) => weight + ' ' + size.toFixed(2) + 'px "' + family + '", "Bebas Neue", system-ui, sans-serif';
     ctx.save();
