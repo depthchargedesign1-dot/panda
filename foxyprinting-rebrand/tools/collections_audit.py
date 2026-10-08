@@ -22,12 +22,12 @@ OUTDATED = {  # (a) seasonal-past / dated
     "social-distancing-stickers-printing",
 }
 REDIRECT = {
-    "social-distancing-stickers-printing": "/collections/custom-business-stickers (once live) or /collections/all-personalised-stickers",
-    "printed-clothing-new-2023": "/collections/new-school-leavers or the main clothing collection",
+    "social-distancing-stickers-printing": "/collections/new-stickers-labels",
+    "printed-clothing-new-2023": "/collections/new-custom-clothing",
 }
 DUPLICATE = {  # (e) legacy duplicates of a live collection
-    "this-guy-is": "/collections/this-guy (live This Guy mugs)",
-    "this-is-my-birthday-mugs": "/collections/this-is-my-birthday-mug (live one)",
+    "this-guy-is": "/collections/this-girl-this-guy-mugs (334 live)",
+    "this-is-my-birthday-mugs": "/collections/this-is-my-birthday-mug (449 live)",
 }
 DRAFT_NOTE = {  # (b)
     "atari-posters": "293 Atari posters set to DRAFT on 7 Oct 2026 (not by this audit). Retro game box art / console logos are off-limits online (owner rule 6 Oct), so keep them draft and hide this collection from the Online Store. Do NOT reactivate.",
@@ -45,8 +45,19 @@ RULE_FIXED = {  # (c) fixed 8 Oct 2026 (old rule kept in `rule` column)
     "i-love-celebrity-mugs": "FIXED: rule now also TITLE CONTAINS 'I Love Celebrity' (about 495 mugs).",
     "the-voice": "FIXED: tag THE VOICE added to 12 coach/presenter masks (will.i.am, Tom Jones, Danny Jones, Anne-Marie, Emma Willis, Rita Ora, Boy George, Holly Willoughby).",
 }
-GENUINE = {  # (d) new product made 8 Oct (filled in by the build step)
-    "trust-me-im-a-mugs", "i-like-mugs", "i-used-to-drive-mugs", "ive-got-mugs", "cheeky-mugs", "art-poster",
+GENUINE = {  # (d) new product made 8 Oct 2026, ACTIVE on all 5 channels
+    "trust-me-im-a-mugs": "personalised-trust-me-im-a-mug",
+    "i-like-mugs": "personalised-i-like-and-maybe-3-people-mug",
+    "i-used-to-drive-mugs": "personalised-i-used-to-drive-retirement-mug",
+    "ive-got-mugs": "personalised-ive-got-this-mug",
+    "cheeky-mugs": "personalised-cheeky-little-brew-mug",
+    "art-poster": "personalised-mid-century-abstract-family-name-print",
+}
+AFTER = {  # visible products re-counted after the 8 Oct fixes / new products
+    "unicorn-santa-sacks": 10, "ru-pauls-drag-race": 4, "stag-hen-ideas": 575, "personalised-flask": 1,
+    "i-love-celebrity-mugs": 118, "the-voice": 12, "plaques-occasion-gifts": 5,
+    "trust-me-im-a-mugs": 1, "i-like-mugs": 1, "i-used-to-drive-mugs": 1, "ive-got-mugs": 1, "cheeky-mugs": 1,
+    "art-poster": 1, "personalised-mug": 6, "personalised-poster": 2,
 }
 QUEUE = {
     "a6-movie-and-film-poster-card-packs": "Needs film-poster artwork for a 6-card A6 pack (studio/poster art is a trademark risk). Queue: owner to say which films/actors (celebrity faces are fine, no logos).",
@@ -65,21 +76,23 @@ for n in nodes:
         if h in RULE_FIXED: cls, rec = "c-rule-fixed", RULE_FIXED[h]
         if not os_: cls, rec = "hidden", "Not on the Online Store: no Google impact."
         if h in ("ve-day-bunting", "wales-2021-football-face-masks"): cls, rec = "a-outdated", "Dated (VE Day 80 / Euro 2021). Hide from the Online Store; draft the products."
-        if h == "personalised-poster": rec += " (Owner: rule could include the word-art prints instead.)"
+        if h == "personalised-poster": rec = "Now 2 (new family name print added 8 Oct)."
+        if h == "personalised-mug": rec = "Now 6 (the 5 new personalised mugs carry its tag, 8 Oct)."
     elif h in RULE_FIXED: cls, rec = "c-rule-fixed", RULE_FIXED[h]
     elif not os_: cls, rec = "hidden", "Not on the Online Store, so Google can't see it. Leave hidden (or tidy up later)."
     elif h.startswith("ve-day") or h in OUTDATED:
         cls = "a-outdated"
         rec = ("Past event (VE Day 80th, May 2025 / Coronation, May 2023 / Covid era). Products already DRAFT: keep them draft. "
                "Hide this collection from the Online Store (Products > Collections > tick > Exclude from sales channels > Online Store) "
-               "and add a 301 redirect to " + REDIRECT.get(h, "/collections/royal-commemorative or the homepage") + ".")
+               "and add a 301 redirect to " + REDIRECT.get(h, "/collections/politicians-and-royals" if "king-charles" in h else "/ (homepage)") + ".")
     elif h in DUPLICATE: cls, rec = "e-duplicate", "Duplicate of a live collection. Hide it and 301 redirect to " + DUPLICATE[h] + "."
     elif h in DRAFT_NOTE: cls, rec = "b-draft-or-archived", DRAFT_NOTE[h]
-    elif h in GENUINE: cls, rec = "d-genuine", "New product made 8 Oct (see README)."
+    elif h in GENUINE: cls, rec = "d-genuine", f"FILLED 8 Oct: new product https://foxyprinting.co.uk/products/{GENUINE[h]} (ACTIVE, all 5 channels)."
     elif h in QUEUE: cls, rec = "d-queue", QUEUE[h]
     else: cls, rec = "?", "check"
     rows.append(dict(title=n["title"], handle=h, url=f"https://foxyprinting.co.uk/collections/{h}",
                      type="smart" if n["rule"] else "manual", rule=rule, on_online_store=os_, total=t, visible=v,
+                     visible_after_8oct_fixes=AFTER.get(h, v),
                      **{"class": cls}, recommendation=rec))
 
 rows.sort(key=lambda r: (r["visible"], r["class"], r["title"]))

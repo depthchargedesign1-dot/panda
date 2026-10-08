@@ -122,12 +122,12 @@ PROFILES = [
     ("Ihasa Apso", "Lhasa Apso", "Lhasa Apso", D, "a long-haired Lhasa Apso in soft greys", "Lhasa Apso", "Grey"),
     ("Husky", "husky", "husky", D, "a husky face in grey and black", "Husky", "Grey"),
     ("House", "house", "new home", FAM, "a little house with a red roof in bright colours", "New Home House", "Multicolor"),
-    ("Horse Racer", "racehorse and jockey", "horse racing", HOB, "a racehorse and jockey at full gallop in black and grey", "Horse Racing", "Black"),
+    ("Horse Racer", "horse racing fan", "horse racing", HOB, "a racehorse and jockey at full gallop in black and grey", "Horse Racing", "Black"),
     ("Heart 2 (2)", "heart", "heart", LOVE, "a ring of little pink hearts with the name in the middle", "Ring of Hearts", "Pink"),
     ("Heart 1 Word", "heart", "heart", LOVE, "a bold red heart", "Red Heart", "Red"),
     ("Heart 1 Family B", "family heart", "family heart", FAM, "a pink and purple heart with the word Family in large letters", "Family Heart", "Pink"),
     ("Heart 1 B", "heart", "heart", LOVE, "a pink and purple heart with the name in large letters", "Pink Heart", "Pink"),
-    ("Guitar", "guitar", "guitar", HOB, "an acoustic guitar in pastel shades", "Acoustic Guitar", "Multicolor"),
+    ("Guitar", "guitarist", "guitar", HOB, "an acoustic guitar in pastel shades", "Acoustic Guitar", "Multicolor"),
     ("Golfer Girl Word", "lady golfer", "golf", HOB, "a lady golfer mid-swing in black and grey, with the name in pink", "Lady Golfer", "Black"),
     ("Golfer Girl 2", "lady golfer", "golf", HOB, "a lady golfer mid-swing in bright pink", "Pink Lady Golfer", "Pink"),
     ("Golf 1", "golfer", "golf", HOB, "a golfer lining up a putt, in navy blue", "Golfer", "Blue"),
@@ -172,11 +172,11 @@ PROFILES = [
     ("Cat 2 B", "cat", "cat", C, "a cartoon cat curled up, in grey with a pink nose", "Cartoon Cat", "Grey"),
     ("Cat 1 Word", "cat", "cat", C, "a blue-eyed tabby cat", "Tabby Cat Blue Eyes", "Brown"),
     ("Cat 1 B", "cat", "cat", C, "a black cat silhouette with the name in big letters above", "Black Cat", "Black"),
-    ("Car 5", "car", "car", HOB, "a hatchback car in red", "Red Car", "Red"),
-    ("Car 4", "car", "car", HOB, "a convertible car in grey", "Convertible Car", "Grey"),
-    ("Car 3", "car", "car", HOB, "a rounded classic car in pale blue", "Classic Car", "Blue"),
-    ("Car 2", "car", "car", HOB, "a classic small car in green", "Green Classic Car", "Green"),
-    ("Car 1", "car", "car", HOB, "a small car in sunny yellow", "Yellow Car", "Yellow"),
+    ("Car 5", "car lover", "car", HOB, "a hatchback car in red", "Red Car", "Red"),
+    ("Car 4", "car lover", "car", HOB, "a convertible car in grey", "Convertible Car", "Grey"),
+    ("Car 3", "car lover", "car", HOB, "a rounded classic car in pale blue", "Classic Car", "Blue"),
+    ("Car 2", "car lover", "car", HOB, "a classic small car in green", "Green Classic Car", "Green"),
+    ("Car 1", "car lover", "car", HOB, "a small car in sunny yellow", "Yellow Car", "Yellow"),
     ("Butterfly 2", "butterfly", "butterfly", AN, "a butterfly in black and grey", "Butterfly", "Black"),
     ("Butterfly 1 Word", "butterfly", "butterfly", AN, "a butterfly in blue and teal", "Blue Butterfly", "Blue"),
     ("Butterfly 1 B", "butterfly", "butterfly", AN, "a butterfly in pink", "Pink Butterfly", "Pink"),
@@ -420,6 +420,11 @@ def check(h, kw):
     return probs
 
 
+PROPER = {"Statue", "Liberty", "New", "York", "Shih", "Tzu", "Labrador", "Jack", "Russell", "Lhasa", "Apso",
+          "German", "Shepherd", "French", "Dalmatian", "Border", "Collie", "Chihuahua", "Cavalier", "Eiffel",
+          "Paris", "Fleur-de-Lis"}
+
+
 def seo(p, i):
     title = f"Personalised {p[5]} Word Art Print | Foxy Printing"
     if len(title) > 60:
@@ -431,7 +436,7 @@ def seo(p, i):
     elif cat == NUM:
         subj = f"{ordinal(p[2])} birthday"
     else:
-        subj = p[5].lower()
+        subj = " ".join(w if w in PROPER else w.lower() for w in p[5].split())
     who = {D: "their dog's name", C: "their cat's name", PET: "your pet's name", FAM: "your family name"}.get(cat, "a name")
     opts = [
         f"A personalised {subj} word art print made from {who} and 20–30 words you choose. A4 to A1, or framed in black or silver. Posted next working day.",
@@ -556,10 +561,11 @@ def phase_a(out, ids, name):
         add = ["io-word-art"] + (["third-party-name"] if e["third_party"] else [])
         lines.append(f'ta{n}: tagsAdd(id:{P}, tags:{q(add)}) {{ userErrors {{ message }} }}')
         lines.append(f'tr{n}: tagsRemove(id:{P}, tags:["Poster Options"]) {{ userErrors {{ message }} }}')
-        fv = "$pf" if e["fields"][0] == "Name (shown largest)" else f"$pf{n}"
-        if fv != "$pf":
-            vars_[f"pf{n}"] = json.dumps(e["fields"], ensure_ascii=False)
-            decl.append(f"$pf{n}: String!")
+        fv = "$pf" + {"Name (shown largest)": "", "Dog’s name (shown largest)": "d", "Cat’s name (shown largest)": "c",
+                      "Pet’s name (shown largest)": "p", "Family name (shown largest)": "f"}[e["fields"][0]]
+        if fv != "$pf" and fv[1:] not in vars_:
+            vars_[fv[1:]] = json.dumps(e["fields"], ensure_ascii=False)
+            decl.append(f"{fv}: String!")
         g = lambda k, t, val: f'{{ownerId:{P}, namespace:"mm-google-shopping", key:"{k}", type:"{t}", value:{q(val)}}}'
         mf += [f'{{ownerId:{P}, namespace:"foxy", key:"personalise_fields", type:"list.single_line_text_field", value:{fv}}}',
                f'{{ownerId:{P}, namespace:"foxy", key:"mockup", type:"single_line_text_field", value:"photo"}}',
