@@ -76,3 +76,13 @@ The risk is the poster size/frame picker: if Infinite Options (or another app) f
    Posters"); the new sub-collections already catch them through their `cp-` tags, so nothing moves.
 
 About 19,000 tag edits in total – done through the API in batches (no CSV needed), roughly an hour of runs.
+
+## 8 Oct 2026 (evening): Retro Gaming fix applied, size picker untouched
+- Owner: the poster size set "might be Poster Options". Checked: only 1,834 products carry "Poster Options"; the ~9,800 Default-Title
+  posters do NOT, so their sizes come via the collection "All Posters – For size options" (all-posters-for-size-options), which
+  includes them through the tag "Other Console Posters". That tag is used as a generic "needs poster sizes" tag (celebrity, club,
+  pet portrait, horror film, personalised posters) — so it must NOT be removed.
+- Fix: tagged the 213 real game posters (Jaguar CD, Intellivision, Atari, NES "inspired theme" etc.) with `retro-console-poster`
+  (ids in retro-console-poster-ids.json) and changed ALL RETRO GAMING (all-retro-gaming) rule "Other Console Posters" →
+  "retro-console-poster". Other rules unchanged. all-posters-for-size-options untouched (13,786).
+- Result: celebrity/club/other posters drop out of Retro Gaming; count recalculating (13,786 → expected ~4,100).
