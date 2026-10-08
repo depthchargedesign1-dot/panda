@@ -80,7 +80,7 @@ P.append(dict(
     title="Personalised Club Colours Coaster – Your Club Badge & Team Name – Matches Our Club Bar Mats",
     handle="personalised-club-colours-coaster",
     productType="Coasters",
-    tags=BASE_TAGS + ["Drinks Coaster", "Bar Coasters", "Football Coasters", "club coaster", "team colours", "clubhouse",
+    tags=BASE_TAGS + ["drinks-coaster-2026", "bar-coaster-2026", "football-coaster-2026", "club coaster", "team colours", "clubhouse",
                       "football club gift", "machine-sublimation", "io-football"],
     fields=["Club or team name", "Club badge upload", "Welcome line (optional)", "Est. year (optional)"],
     mockup="photo", cat=COASTER_CAT, color="Multicolor",
