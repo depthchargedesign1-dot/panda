@@ -19,6 +19,14 @@
   endif
   assign fonts = settings.personaliser_fonts | split: ','
   assign colours = settings.personaliser_colours | split: ','
+  comment
+    foxy.fixed_style (boolean): the product's design fixes the font and text colour (e.g. number plate mugs),
+    so the font and text-colour choices are hidden.
+  endcomment
+  assign fixed_style = false
+  if product.metafields.foxy.fixed_style.value == true
+    assign fixed_style = true
+  endif
   assign accent_class = 'accent-pink'
   assign size_guide = product.metafields.foxy.size_guide.value
 -%}
@@ -104,17 +112,57 @@
           {%- for option in product.options_with_values -%}
             {%- assign option_index = forloop.index0 -%}
             <fieldset class="option-group" style="margin-bottom:16px">
-              <legend>{{ option.name }}
-                {%- assign option_lc = option.name | downcase -%}
+              {%- assign option_lc = option.name | downcase -%}
+              {%- assign is_colour = false -%}
+              {%- if option_lc contains 'colour' or option_lc contains 'color' -%}{%- assign is_colour = true -%}{%- endif -%}
+              <legend>{{ option.name }}{%- if is_colour -%}: <span class="option-colour-name" data-colour-name>{{ option.selected_value }}</span>{%- endif -%}
                 {%- if size_guide != blank and option_lc contains 'size' -%}
                   <button type="button" class="size-guide-link" data-size-guide-open>📏 Size guide</button>
                 {%- endif -%}
               </legend>
-              <div class="option-pills">
+              {%- liquid
+                comment
+                  Long option names (e.g. poster sizes "A4 Print Only" / "A3 Print + Silver Frame") sit in an even grid of
+                  equal-width buttons instead of ragged pills (owner, 8 Oct 2026: "the size buttons are not tidy").
+                endcomment
+                assign longest = 0
+                for v in option.values
+                  if v.size > longest
+                    assign longest = v.size
+                  endif
+                endfor
+              -%}
+              <div class="option-pills{% if is_colour %} option-pills--swatches{% elsif longest > 8 %} option-pills--grid{% endif %}">
                 {%- for value in option.values -%}
                   {%- assign input_id = 'Option-' | append: section.id | append: '-' | append: option_index | append: '-' | append: forloop.index0 -%}
                   <input type="radio" id="{{ input_id }}" name="option-{{ option_index }}" value="{{ value | escape }}" data-option-index="{{ option_index }}" {% if option.selected_value == value %}checked{% endif %}>
-                  <label for="{{ input_id }}">{{ value }}</label>
+                  {%- liquid
+                    comment
+                      Colour options show small round swatches, like Ralawise (owner, 8 Oct 2026). Two-colour names
+                      such as "Black/White" are split diagonally. A colour we have no swatch for stays a text pill.
+                    endcomment
+                    assign hex1 = ''
+                    assign hex2 = ''
+                    if is_colour
+                      assign parts = value | split: '/'
+                      capture hex1
+                        render 'colour-hex', name: parts[0]
+                      endcapture
+                      assign hex2 = hex1
+                      if parts.size > 1
+                        capture hex2
+                          render 'colour-hex', name: parts[1]
+                        endcapture
+                      endif
+                      assign hex1 = hex1 | strip
+                      assign hex2 = hex2 | strip | default: hex1
+                    endif
+                  -%}
+                  {%- if hex1 != blank -%}
+                    <label for="{{ input_id }}" class="colour-swatch" title="{{ value | escape }}" style="--b:{{ hex1 }};--t:{{ hex2 }}"><span class="visually-hidden">{{ value }}</span></label>
+                  {%- else -%}
+                    <label for="{{ input_id }}">{{ value }}</label>
+                  {%- endif -%}
                 {%- endfor -%}
               </div>
             </fieldset>
@@ -150,6 +198,14 @@
                   endif
                   if kind == 'textarea'
                     assign max = 160
+                    comment
+                      A box for a whole list of names (e.g. every pupil on a leavers hoodie) needs room for a full class.
+                    endcomment
+                    if l contains 'name'
+                      assign max = 3000
+                    endif
+                  elsif l contains 'school'
+                    assign max = 80
                   elsif words contains 'age'
                     assign max = 3
                   elsif words contains 'number' and is_phone == false
@@ -168,6 +224,7 @@
               {%- endfor -%}
             {%- endif -%}
 
+            {%- unless fixed_style -%}
             <div class="field">
               <span class="field__label">{{ 'products.personaliser.font' | t }}</span>
               <div class="font-choices" data-font-choices>
@@ -188,6 +245,7 @@
               </div>
               <input type="hidden" name="properties[Text colour]" value="{{ colours.first | strip }}" data-colour-input>
             </div>
+            {%- endunless -%}
 
             {%- if settings.personaliser_require_confirm -%}
               <label class="confirm"><input type="checkbox" data-confirm required> <span>{{ 'products.personaliser.confirm' | t }}</span></label>
@@ -265,6 +323,31 @@
     })();
   </script>
 {%- endif -%}
+<style>
+  .option-pills--swatches { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .option-pills--swatches label.colour-swatch { width: 30px; height: 30px; min-width: 0; padding: 0; border-radius: 50%; border: 1px solid rgba(29, 18, 64, 0.25); background: linear-gradient(135deg, var(--b) 50%, var(--t) 50%); box-shadow: inset 0 0 0 2px #fff; cursor: pointer; }
+  .option-pills--swatches input:checked + label.colour-swatch { background: linear-gradient(135deg, var(--b) 50%, var(--t) 50%); border: 2px solid var(--fx-pink, #FF2D87); box-shadow: inset 0 0 0 2px #fff, 0 0 0 3px rgba(255, 45, 135, 0.18); }
+  .option-pills--swatches input:focus-visible + label.colour-swatch { outline: 2px solid var(--fx-purple, #7A2BF5); outline-offset: 2px; }
+  .option-colour-name { font-weight: 600; }
+  .option-pills--grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .option-pills--grid label { display: flex; align-items: center; justify-content: center; text-align: center; min-height: 52px; padding: 8px 10px; line-height: 1.25; }
+  @media (max-width: 480px) { .option-pills--grid { grid-template-columns: 1fr 1fr; } }
+  /* Older product descriptions: keep their headings, tables and pasted inline fonts in line with the page. */
+  .product__info .accordion .rte h1, .product__info .accordion .rte h2 { font-size: 1.3rem; margin: 18px 0 8px; }
+  .product__info .accordion .rte h3, .product__info .accordion .rte h4 { font-size: 1.05rem; margin: 16px 0 6px; }
+  .product__info .accordion .rte [style] { font-size: inherit !important; font-family: inherit !important; line-height: inherit !important; }
+  .product__info .accordion .rte table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
+  .product__info .accordion .rte td, .product__info .accordion .rte th { padding: 6px 8px; border-bottom: 1px solid #EEE9F7; }
+  .product__info .accordion .rte img { max-width: 100%; height: auto; }
+</style>
+<script>
+  (function () {
+    document.querySelectorAll('.option-pills--swatches').forEach(function (group) {
+      var name = group.closest('fieldset') && group.closest('fieldset').querySelector('[data-colour-name]');
+      group.addEventListener('change', function (e) { if (name && e.target.value) name.textContent = e.target.value; });
+    });
+  })();
+</script>
 <script type="application/json" data-product-json>{{ product | json }}</script>
 {%- if has_fields and show_live == false -%}
   <script>

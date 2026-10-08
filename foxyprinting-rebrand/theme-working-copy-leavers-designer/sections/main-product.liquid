@@ -19,6 +19,14 @@
   endif
   assign fonts = settings.personaliser_fonts | split: ','
   assign colours = settings.personaliser_colours | split: ','
+  comment
+    foxy.fixed_style (boolean): the product's design fixes the font and text colour (e.g. number plate mugs),
+    so the font and text-colour choices are hidden.
+  endcomment
+  assign fixed_style = false
+  if product.metafields.foxy.fixed_style.value == true
+    assign fixed_style = true
+  endif
   assign accent_class = 'accent-pink'
   assign size_guide = product.metafields.foxy.size_guide.value
 -%}
@@ -216,6 +224,7 @@
               {%- endfor -%}
             {%- endif -%}
 
+            {%- unless fixed_style -%}
             <div class="field">
               <span class="field__label">{{ 'products.personaliser.font' | t }}</span>
               <div class="font-choices" data-font-choices>
@@ -236,6 +245,7 @@
               </div>
               <input type="hidden" name="properties[Text colour]" value="{{ colours.first | strip }}" data-colour-input>
             </div>
+            {%- endunless -%}
 
             {%- if settings.personaliser_require_confirm -%}
               <label class="confirm"><input type="checkbox" data-confirm required> <span>{{ 'products.personaliser.confirm' | t }}</span></label>

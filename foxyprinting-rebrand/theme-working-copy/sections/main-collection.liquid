@@ -32,7 +32,7 @@
     assign is_compact = true
   endif
 -%}
-<div class="collection-hero accent-{{ accent }}{% if header_image or banner_group != blank %} collection-hero--banner{% if is_compact %} collection-hero--compact{% endif %}{% endif %}">
+<div class="collection-hero accent-{{ accent }}{% if header_image or banner_group != blank %} collection-hero--banner{% if is_compact %} collection-hero--compact{% endif %}{% if header_image %} collection-hero--tall{% endif %}{% endif %}">
   {%- if header_image -%}
     <div class="collection-hero__banner">
       {{ header_image | image_url: width: 1800 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '750,1100,1500,1800', sizes: '100vw', alt: '' }}
@@ -198,6 +198,11 @@
 .collection-hero--banner.collection-hero--compact .collection-hero__inner { padding-top: 22px; padding-bottom: 22px; }
 .collection-hero--banner.collection-hero--compact h1 { font-size: clamp(1.7rem, 2.8vw, 2.6rem); margin-bottom: 6px; }
 .collection-hero--banner.collection-hero--compact .collection-hero__desc { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+/* Collections with their own banner (e.g. the poster category banners, 1800x600) show more of the image */
+@media (min-width: 990px) {
+  .collection-hero--banner.collection-hero--compact.collection-hero--tall { min-height: clamp(260px, 26vw, 470px); }
+  .collection-hero--banner.collection-hero--compact.collection-hero--tall .collection-hero__inner { padding-top: 36px; padding-bottom: 36px; }
+}
 
 .subcollection-tiles { margin: 0 0 26px; }
 .subcollection-tiles__heading { font-size: 1.2rem; margin: 0 0 12px; }
