@@ -69,7 +69,7 @@ def description(p, i):
     elif p["personalised"]:
         opening = (f"Give their home bar a name with this {pk}. {p['look']}")
         h2 = f"Your {pk}, made to order"
-        how = (f"Fill in the {fields_sentence(p['fields'])} and we print it into the design for you, on both the small mat and the long runner. "
+        how = (f"Fill in the {fields_sentence(p['fields'])} and we print it into the design for you, on whichever size you choose. "
                f"{p.get('how', 'The rest of the artwork stays exactly as shown in the photos.')} Watch it update in the live preview as you type. {NO_PROOF}")
         spec = [p.get("b1") or f"A {p['design'].lower()} design you won’t find in the supermarket",
                 "Your wording is printed into the artwork, not stuck on, so it won’t peel off"]

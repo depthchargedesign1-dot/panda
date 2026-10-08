@@ -105,7 +105,7 @@ X3 = [
     (21, "Blush Script", "Mauve", "PBM21", "personalised script name bar runner",
      "A soft mauve runner with a gold handwritten name framed by fine swirls, and WELCOME either side.",
      ["Name or bar name"],
-     "Their name is written in flowing gold script in the centre frame; the small mat carries the name on its own.",
+     "Their name is written in flowing gold script in the centre frame; on the small mat the name sits on its own in the frame.",
      "Soft mauve and gold suit a gin corner or a living-room drinks trolley as much as a pub-style bar",
      "Wrap it up with a bottle of their favourite gin for a birthday or housewarming."),
     (22, "Emerald Flourish", "Green", "PBM22", "personalised green and gold bar runner",
