@@ -10,7 +10,7 @@ Run (from foxyprinting-rebrand/):
       -> listing artwork with the sample text, textures for mockups, blank plate for the live
          preview, zip, product.json  (exports/any-name-number-plate-mug/)
   python3 tools/artwork/any_name_number_plate_mug.py order --text "DAV3 5" --country Wales \
-          [--dealer "Dad's Garage"] --out "ORDER 1234"
+          [--dealer "Dad's Garage"] --out "ORDER 1234" [--fit squeeze|shrink]
       -> print files for one order (SVG, PDF, MIRRORED PDF, 300 dpi PNG)
 
 Wrap: 200 x 70 mm + 3 mm bleed = 206 x 76 mm, 3 mm safe area (plan/artwork-specs.md).
@@ -37,6 +37,7 @@ TITLE = "Personalised Number Plate Mug – Any Name or Text – Custom Reg Gift 
 SKU = "FOXY-SUB-PNPMANOT"
 FIELDS = ["Your plate text (max 8 characters)", "Dealer line on the plate (optional, e.g. Dad’s Garage)"]
 _cmaps = {}
+FIT = "squeeze"  # "squeeze" = full letter height, compress width when too long (website preview does the same); "shrink" = old
 
 
 def tw(s, size, weight="700"):
@@ -60,6 +61,20 @@ def clean_plate(text):
     """UK plate style: capitals, digits and single spaces only."""
     t = re.sub(r"[^A-Z0-9 ]", "", (text or "").upper())
     return re.sub(r"\s+", " ", t).strip()
+
+
+def live_text(t, tid, field, x, y, size, weight, max_w, ls):
+    """Live (editable) centred text. FIT "squeeze" (default, matches the website live preview): the letters
+    always keep the full height; text wider than max_w is compressed horizontally only (horizontal scale
+    transform - Illustrator shows it as Horizontal Scale < 100%, still editable text)."""
+    sx = min(1.0, max_w / tw(t, size, weight)) if FIT == "squeeze" else 1.0
+    attrs = (f'id="{tid}" data-field="{field}" font-family="Barlow Condensed" font-weight="{weight}" '
+             f'font-size="{size:.3f}"' + (f' letter-spacing="{ls:.3f}"' if ls else "") +
+             f' fill="{npm.INK}" text-anchor="middle" xml:space="preserve"')
+    if sx < 0.9995:
+        return (f'<text {attrs} transform="translate({x:.3f} {y:.3f}) scale({sx:.4f} 1)" x="0" y="0">'
+                f'{html.escape(t)}</text>')
+    return f'<text {attrs} x="{x:.3f}" y="{y:.3f}">{html.escape(t)}</text>'
 
 
 def plate_svg(text, dealer, country, uid="plate"):
@@ -92,22 +107,20 @@ def plate_svg(text, dealer, country, uid="plate"):
     if text:
         cap = H * (0.64 if has_dealer else 0.72)
         size = cap / cap_ratio()
-        while tw(text, size) > (x1 - x0) * 0.94 and size > 1:
-            size *= 0.97
-        cap = size * cap_ratio()
+        if FIT == "shrink":  # old behaviour: shrink the whole text (height too) until it fits
+            while tw(text, size) > (x1 - x0) * 0.94 and size > 1:
+                size *= 0.97
+            cap = size * cap_ratio()
         centre_y = cy - (3.2 if has_dealer else 0)
-        s.append(f'<text id="Plate text" data-field="Your plate text" x="{mid:.3f}" y="{centre_y + cap / 2:.3f}" '
-                 f'font-family="Barlow Condensed" font-weight="700" font-size="{size:.3f}" '
-                 f'letter-spacing="{npm.LS * size:.3f}" fill="{npm.INK}" text-anchor="middle" '
-                 f'xml:space="preserve">{html.escape(text)}</text>')
+        s.append(live_text(text, "Plate text", "Your plate text", mid, centre_y + cap / 2, size, "700",
+                           (x1 - x0) * 0.94, npm.LS * size))
     if has_dealer:
         d = dealer.strip()
         dsize = 3.4 / cap_ratio("600")
-        while tw(d, dsize, "600") > (x1 - x0) * 0.8 and dsize > 1:
-            dsize *= 0.96
-        s.append(f'<text id="Dealer line" data-field="Dealer line" x="{mid:.3f}" y="{B - 4.6:.3f}" '
-                 f'font-family="Barlow Condensed" font-weight="600" font-size="{dsize:.3f}" fill="{npm.INK}" '
-                 f'text-anchor="middle">{html.escape(d)}</text>')
+        if FIT == "shrink":
+            while tw(d, dsize, "600") > (x1 - x0) * 0.8 and dsize > 1:
+                dsize *= 0.96
+        s.append(live_text(d, "Dealer line", "Dealer line", mid, B - 4.6, dsize, "600", (x1 - x0) * 0.8, 0))
     s.append(f'<rect x="{L + 2.2:.3f}" y="{T + 2.2:.3f}" width="{W - 4.4:.3f}" height="{H - 4.4:.3f}" '
              f'rx="5.2" fill="none" stroke="{npm.INK}" stroke-width="1.0"/></g>')
     return "\n".join(s)
@@ -160,7 +173,9 @@ SKU {sku}-01 to -05 (GB, Scotland, Wales, Northern Ireland, Ireland)  |  PERSONA
 PERSONALISING AN ORDER
   Fast:    python3 tools/artwork/any_name_number_plate_mug.py order --text "DAV3 5" --country Wales --dealer "Dad's Garage" --out "ORDER 1234"
   By hand: open the country's .svg (or .pdf) in Illustrator, edit the text object "Plate text" (and "Dealer line",
-           or delete it if the customer left it blank). Text is centred; shrink it if it runs past the plate border.
+           or delete it if the customer left it blank). Text is centred and always FULL HEIGHT: if it runs
+           past the plate border, squeeze it - Character panel > Horizontal Scale below 100% (never shrink the height).
+           The generator does this for you (same as the website preview).
   The order's line item shows: "Your plate text (max 8 characters)" and "Dealer line on the plate (optional...)".
 
 FILES (one set per country band; sample text {sample})
@@ -287,6 +302,10 @@ if __name__ == "__main__":
         ap.add_argument("--country", default="GB")
         ap.add_argument("--dealer", default="")
         ap.add_argument("--out", default="order")
-        order(ap.parse_args())
+        ap.add_argument("--fit", choices=["squeeze", "shrink"], default="squeeze",
+                        help="squeeze = full height, compress width (default, matches the website); shrink = old")
+        args = ap.parse_args()
+        FIT = args.fit
+        order(args)
     else:
         build()

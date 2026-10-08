@@ -4,7 +4,9 @@ SKU FOXY-SUB-PNPMANOT-01 to -05 (GB, Scotland, Wales, Northern Ireland, Ireland)
 PERSONALISING AN ORDER
   Fast:    python3 tools/artwork/any_name_number_plate_mug.py order --text "DAV3 5" --country Wales --dealer "Dad's Garage" --out "ORDER 1234"
   By hand: open the country's .svg (or .pdf) in Illustrator, edit the text object "Plate text" (and "Dealer line",
-           or delete it if the customer left it blank). Text is centred; shrink it if it runs past the plate border.
+           or delete it if the customer left it blank). Text is centred and always FULL HEIGHT: if it runs
+           past the plate border, squeeze it - Character panel > Horizontal Scale below 100% (never shrink the height).
+           The generator does this for you (same as the website preview).
   The order's line item shows: "Your plate text (max 8 characters)" and "Dealer line on the plate (optional...)".
 
 FILES (one set per country band; sample text Y0UR N4ME)
