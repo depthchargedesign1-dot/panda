@@ -46,14 +46,15 @@ All print PDFs (pure ASCII, fonts embedded, OCG layers Artwork [+ CUT]) and SVGs
 - Coaster: 90 x 90 mm trim + 3 mm bleed (96 x 96 page), 3 mm safe, no cut layer (pre-cut blank).
 - Metal signs: 304.8 x 127 mm and 203.2 x 254 mm trim + 3 mm bleed, no cut layer (pre-cut blanks).
 - UV DTF glass transfers: pint 70 x 90 mm, tumbler 70 x 60 mm (placeholders, ASK) + 3 mm bleed, red 0.25 mm CUT trim path (rounded 2.5 mm).
+- **v2 (8 Oct 2026, owner's real print areas):** pint 90 x 130 mm (w x h), tumbler 50 x 50 mm, background now runs into the 3 mm bleed. New zip https://cdn.shopify.com/s/files/1/1774/9115/files/bar-pairings-artwork-v2.zip (md5 77666e227a42a5122a57d637f6167bc9; same coaster/sign files, v2 glass files, old placeholder glass files left out). Dropbox: new "v2 90x130mm" / "v2 50x50mm" SVG + "READ ME - v2 sizes.txt" in each glass folder (old files kept). See `../2026-10-08-v2/README.md`.
 - All vector, CMYK-safe colours, sample name "Ava" for the Illustrator script; club designs have a dashed "YOUR BADGE HERE" placeholder.
 
 ## ASK the owner
-1. **Glass print area:** maximum UV DTF print size on the 20oz nonic pint and the whisky tumbler (artwork uses 70 x 90 mm and 70 x 60 mm placeholders), and the tumbler's capacity.
-2. **Coaster blank:** is the sublimation coaster 90 x 90 mm (live listings) or 95 x 95 mm (another product today used 95 mm)? Care/heat/dishwasher facts for coasters are still unknown, so the copy promises none.
+1. ~~Glass print area~~ answered 8 Oct: pint 90 x 130 mm, tumbler 50 x 50 mm (v2 done). Still ASK: the tumbler's capacity.
+2. ~~Coaster blank~~ answered 8 Oct: 90 x 90 mm, dishwasher safe (club coaster copy updated).
 3. **Metal signs:** wall fixings / pre-drilled holes and outdoor use (copy says "not confirmed yet").
 4. **Prices:** themed and club pint glasses use the £11.99 Personalised Pint Glass price (the full-colour photo/stout pints are £14.99) – keep or raise?
-5. **Old matching coasters (20):** OK to rewrite their copy/titles ("Personalized" → "Personalised") and move them to theme personalisation fields (would need their `Custom Name` IO tags removed first)? Unpublish the Jack Daniel's "My Cave My Rules 2" coaster from Google/FB/TikTok (I can't unpublish)?
+5. ~~Old matching coasters~~ done 8 Oct (v2, see `../2026-10-08-v2/README.md`); the unpublish question below still stands. Original question: OK to rewrite their copy/titles ("Personalized" → "Personalised") and move them to theme personalisation fields (would need their `Custom Name` IO tags removed first)? Unpublish the Jack Daniel's "My Cave My Rules 2" coaster from Google/FB/TikTok (I can't unpublish)?
 6. Should the gin bar, cocktail and neon mats get matching gin balloon glasses / cocktail glasses next?
 
 ## Pairing ideas (not made, owner to approve)
