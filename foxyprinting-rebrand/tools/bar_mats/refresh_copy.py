@@ -32,7 +32,7 @@ THE_LED = ("my ", "it’s", "life ", "enjoy ", "well ", "take ", "five ", "satur
 
 
 def art(pk):
-    if pk.startswith(THE_LED):
+    if pk.lower().startswith(THE_LED):
         return "the"
     return "an" if pk[0] in "aeiou8" else "a"
 
@@ -101,7 +101,14 @@ ASK = [
     "Any questions about the {pk}, just call us on {ph}.",
 ]
 PK_FIX = {"personalised established bar mat black": "personalised black established bar mat",
-          "personalised union jack bar mat": "personalised Union Jack bar mat"}
+          "personalised union jack bar mat": "personalised Union Jack bar mat",
+          # slogan designs read better with the slogan capitalised
+          "my cave my rules bar mat": "My Cave My Rules bar mat",
+          "my cave my rules whiskey bar mat": "My Cave My Rules whiskey bar mat",
+          "life is brewtiful bar mat": "Life is Brewtiful bar mat",
+          "it’s beer o’clock bar runner": "It’s Beer O’Clock bar runner",
+          "beer o’clock bar mat": "Beer O’Clock bar mat",
+          "enjoy my man cave bar mat": "Enjoy My Man Cave bar mat"}
 SECONDARY = ["home bar gift", "man cave gift", "bar runner", "pub bar mat", "garden bar accessories", "personalised bar mat"]
 
 
@@ -229,8 +236,9 @@ def club_record(n, name):
 
 def m_record(n, num):
     pk, seo, look, hook, close, gcol, example = R.M[num]
+    pk = PK_FIX.get(pk, pk)
     if not n["media"]["nodes"] and num == 49:   # image-less duplicate of M49
-        pk, seo = "pink satur-yay bar runner", "Pink Satur-Yay Cocktail Bar Runner"
+        pk, seo = "pink Satur-Yay bar runner", "Pink Satur-Yay Cocktail Bar Runner"
     props = bool(n["media"]["nodes"]) and num not in R.M_PROP_BOTTLES_EXCEPT
     game = R.M_GAME.get(num)
     if game:
@@ -243,11 +251,11 @@ def m_record(n, num):
     dname = {"PS Controler": "Game Controller"}.get(dname, dname)   # no console names outside the disclaimer
     if example and not example.startswith("a "):
         pers = (f"The name in the photo (‘{example}’) is only an example. Type your own bar or pub name in the personalisation box on this page "
-                f"and we print it in the same style" + (", with your year on the EST. line" if "EST" in look else "") +
+                f"and we print it in the same style" + (", with your year on the EST. line" if "EST." in look else "") +
                 f". Want any of the other wording changed? Ring us on {PHONE} before you order and we’ll talk it through.")
     elif example:
         pers = (f"The pub name in the photo is only an example. Type your own bar or pub name in the personalisation box on this page and we print it "
-                f"in the same retro style. Please check the spelling before you order, as we print exactly what you type.")
+                f"in the same style. Please check the spelling before you order, as we print exactly what you type.")
     else:
         pers = (f"This design is printed as shown, so you can simply choose your size. Fancy a name added or the wording tweaked? Use the "
                 f"personalisation box on this page, or ring us on {PHONE} before you order and we’ll talk it through.")
@@ -300,7 +308,7 @@ def new_record(n, p):
         how = p.get("how") or "Your wording is set in the same style as the design shown."
         if g == "GB":
             how = ("Upload your club badge and it’s printed in the circles at both ends of the mat. Type the club or team name for the big middle line, "
-                   "and if you like, change the ‘Welcome to’ line and add the year the club was formed. Leave the optional boxes blank and we keep the design as shown. "
+                   "and if you like, change the ‘Welcome to’ line and add the year the club was formed. "
                    "Please only upload badges your club has the right to use.")
         intro = "" if g == "GB" else f"Fill in the personalisation boxes on this page ({flist}). "
         pers = (f"{intro}{how} As you type, the live preview shows your details beside the design, "
@@ -308,7 +316,8 @@ def new_record(n, p):
     else:
         pers = (f"This one is printed exactly as shown, so there’s nothing to fill in – just pick your size. Want your own name or wording added? "
                 f"Give us a ring on {PHONE} and we’ll talk you through it.")
-    hook = p.get("hook") or {
+    ex = R.NEW_EXTRA.get(p["key"])
+    hook = p.get("hook") or (ex[0] if ex else None) or {
         "BR": "It’s a gift that makes a home bar feel finished, and it’s printed with their own name.",
         "AN": ("A nice finishing touch for a home bar, a summer house bar or a pub-style kitchen."
                if pers_flag else "No fuss, nothing to fill in – a quick, fun gift for anyone with a home bar."),
@@ -319,7 +328,9 @@ def new_record(n, p):
         "AN": f"The {design} artwork runs edge to edge, with no plain borders",
     }[g]
     b1 = b1.rstrip(".")
-    close = p.get("close") or {
+    if g == "GB":   # look and colour note are the same sentence for the club mats, so give the bullet its own point
+        b1 = f"Your badge prints at both ends of the {cw} mat, so it reads from either side of the bar"
+    close = p.get("close") or (ex[1] if ex else None) or {
         "BR": f"Pair it with a set of personalised pint glasses and the bar is ready for guests.",
         "AN": f"Add a personalised bar sign and the whole corner matches.",
     }[g]
@@ -331,7 +342,8 @@ def new_record(n, p):
     seo_kw = seo_kw.replace(" | Foxy Printing", "") or " ".join(cap(w) if w not in ("and", "with", "in") else w for w in pk.split())
     seo_kw = seo_kw.replace("O’clock", "O’Clock")
     lead = (f"{cap(art(pk))} {pk} for home bars, garden bars and man caves." if not pers_flag
-            else f"{cap(art(pk))} {pk}, printed with your own wording.")
+            else f"{cap(art(pk))} {pk} with your club badge and team name." if g == "GB"
+            else f"{cap(art(pk))} {pk}, made with your own name or bar name.")
     return dict(
         pk=pk, d=f"{design} design", cw=cw, colour=p["colour"], look=look, hook=hook, pers=pers, b1=b1,
         detail="Personalised with your details" if pers_flag else "Printed as shown",
