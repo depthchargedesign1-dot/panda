@@ -35,6 +35,7 @@ The previews use real AWDis studio photos from Dropbox (`/New Jobs 2026/3025 awd
 
 **Back designs (9):** Names in the Year, Heart of Names, Star of the Show, Stacked Block, Class Of, College Badge, Squad Shirt, Name Wall, Year Only.
 **Front designs:** plain, chest badge (text and icon), varsity letter, uploaded school logo, big college front (arched), big stacked front.
+**School logo:** customers upload it in the front step (it becomes the chest print) and/or tick "Add our school logo to the back" in the wording step (it goes in the College Badge crest, or above any other back design).
 **Personal name:** down the sleeve, front right chest, or above the back design.
 **Fonts:** 26 Google Fonts in Bold, Varsity, Script, Fun and Classic groups. **Print colours:** 16.
 
