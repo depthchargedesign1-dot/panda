@@ -65,6 +65,17 @@ Photos and product media need no theme write:
 - Upload photos with `fileCreate`, using a new filename (e.g. `-v2`) so the CDN cache can't serve the old image.
 - Swap product media with `fileUpdate`.
 
+## Automatic print files (Dropbox)
+
+`leavers-designer/tools/order-sync.mjs`, run by `.github/workflows/leavers-print-files.yml` every 15 minutes:
+
+- It takes Shopify orders from the last 5 days that have no `leavers-files-saved` tag.
+- For any line with `_Print files`, it saves PNGs, a proof JPG, order details and the logo to `/Leavers Hoodie and Jackets ORDERS/<order number>/`. That folder already exists in Shopify owner Shaun's personal Dropbox.
+- It then tags the order.
+- It fails, without tagging, if the logo can't load. Never print a design without its logo.
+
+Test without real services: write a `--import` preload that mocks `fetch` for `/admin/api/` and `dropboxapi.com`, as in the session's `scratchpad/sync/mock.mjs`. Use `--dry-run` to skip uploads and tagging, and `--order 1234` to redo one order.
+
 ## Where the artwork goes after an order
 
 Nothing is saved as a file automatically. The design itself travels with the order:

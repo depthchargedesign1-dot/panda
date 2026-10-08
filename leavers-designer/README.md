@@ -54,6 +54,27 @@ node tools/render-print-files.mjs --order order.json --out print-files   # Shopi
 
 An uploaded logo is stored by Shopify with the first basket line, and its CDN URL is written into every design code.
 
+## Automatic print files in Dropbox
+
+`tools/order-sync.mjs` runs every 15 minutes from `.github/workflows/leavers-print-files.yml`. For each new order containing leavers lines, it saves files to `Dropbox/Leavers Hoodie and Jackets ORDERS/<order number>/`:
+
+- the 300 dpi transparent PNGs for every print area of every line
+- a proof JPG of the front and back on the real garment
+- `<order>_order-details.txt`, with the customer, every option and every name to check
+- the customer's original school logo
+
+The order is then tagged `leavers-files-saved` in Shopify. An order that fails (for example, the logo can't be downloaded) is not tagged, and is retried on the next run. To redo one order, go to GitHub → Actions → Leavers print files → Run workflow and enter the order number.
+
+Secrets (GitHub repo → Settings → Secrets and variables → Actions):
+
+| Secret | Where it comes from |
+| --- | --- |
+| `SHOPIFY_ADMIN_TOKEN` | A Shopify custom app with the `read_orders` and `write_orders` scopes (`shpat_…`). Alternatively, use `SHOPIFY_CLIENT_ID` and `SHOPIFY_CLIENT_SECRET` from a Dev Dashboard app installed on the store |
+| `DROPBOX_APP_KEY`, `DROPBOX_APP_SECRET` | A Dropbox app (Scoped access, Full Dropbox, permission `files.content.write`) |
+| `DROPBOX_REFRESH_TOKEN` | Open `https://www.dropbox.com/oauth2/authorize?client_id=<APP_KEY>&response_type=code&token_access_type=offline`, then run `curl https://api.dropbox.com/oauth2/token -d code=<CODE> -d grant_type=authorization_code -u <APP_KEY>:<APP_SECRET>` |
+
+Scheduled workflows only run from the repository's default branch.
+
 ## Install on a theme
 
 Upload the files in `theme/` to the theme. Tag each product `ld-<garment>`, give it a single **Size** option, and set its template to `leavers-designer`. The garment picker lists the products in the collection set in the section's "Range collection" setting (only active products appear). Create a page with the handle `leavers-print-studio` using the `leavers-print-studio` template.
