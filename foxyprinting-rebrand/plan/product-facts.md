@@ -327,6 +327,16 @@ Owner confirmed they can make: sublimation metal pub and bar signs, rubber-backe
 - **Celebrity and athlete posters:** "unofficial", with the celebrity disclaimer (sports disclaimer for athletes and clubs). Never "signed" or "autographed" unless it's a Printed Signature reproduction (see signed-prints rule).
 - **Google category:** `Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork`. **age_group:** `adult`.
 
+## A6 poster card packs: Printed Signature star cards (added 8 Oct 2026, from the owner's live A6 pack listings)
+- **What it is:** a pack of **6 A6 cards**, each a mini version of one of our Printed Signature star posters (photo collage, name plate and a printed signature). Football club packs are the original range (40 live, £4.99); music and film star packs added 8 Oct 2026.
+- **Size:** A6, 148 x 105 mm (landscape artwork). **Card:** printed on **350gsm premium card stock** (from the live listings).
+- **Price:** **£4.99** per pack of 6, one variant (no size or frame options). SKU `FOXY-PRESS-<initials>-01`.
+- **Signatures:** printed reproductions, never hand-signed; signed-print disclaimer + celebrity disclaimer at the end of every description. Never "signed", "autographed", "limited edition", "memorabilia", "collectible" or "official".
+- **Uses:** pin-board and bedroom wall displays, scrapbooks, party bags, stocking fillers, a cheap add-on to a full-size poster.
+- **Delivery:** postage options and costs are shown at checkout. Dispatch time, envelope/backing board and finish (gloss/silk/matt): **ASK**.
+- **Google category:** `Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork`. **age_group:** `adult`. gender `unisex`, condition `new`, colour `Multicolor`.
+- **Channels:** packs whose card photos show brand/sports logos (e.g. sponsor kit, magazine covers, award-show backdrops) stay on Online Store + Shop only.
+
 ## Personalised name word art prints (Pink / Blue Letter A–Z) (added 8 Oct 2026, from the owner's original listing copy)
 - **Design:** one big letter (A–Z) in pink or blue, filled with the customer's words. The first word (their name) shows once, prominently; the other 20–30 words repeat randomly in different sizes, fonts and shades.
 - **Customer input:** name + a list of 20–30 single words or short phrases (max 3 words each), separated by commas. No shapes, icons, emoji or accented letters. We print exactly what they type. Store boxes: `foxy.personalise_fields` = "Name (shown largest)", "Your words message (20–30 words, separated by commas)"; template `personalised`, mockup `photo`.

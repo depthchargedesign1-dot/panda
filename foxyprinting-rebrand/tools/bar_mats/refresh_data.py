@@ -295,7 +295,7 @@ CLUBS = {
                 "Crisp white with navy ends gives it the clean look Spurs fans know.",
                 "A great present for a Lilywhite with a home bar to show off."),
     "Watford": ("Watford Football Club", "the Premier League", "yellow, black and red", "Yellow", "Hertfordshire",
-                "Personalised Yellow & Black Hertfordshire Football Bar Mat",
+                "Personalised Hertfordshire Football Bar Mat",
                 "Bright yellow with black stripes brings the Vicarage Road colours to the bar.",
                 "Wrap it up for the Hornets fan who never misses a home game."),
     "West Ham": ("West Ham United Football Club", "the Premier League", "claret and sky blue", "Burgundy", "East London",

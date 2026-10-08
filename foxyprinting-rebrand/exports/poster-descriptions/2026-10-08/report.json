@@ -1,0 +1,57 @@
+{
+ "files": {
+  "4-mugs-and-prints-part1.csv": {
+   "rows": 18011,
+   "handles": 7709,
+   "bytes": 14465367,
+   "posters": 1435
+  },
+  "5-mugs-and-prints-part2.csv": {
+   "rows": 21942,
+   "handles": 5193,
+   "bytes": 13889566,
+   "posters": 5133
+  },
+  "6-mugs-and-prints-part3.csv": {
+   "rows": 3069,
+   "handles": 3069,
+   "bytes": 6732424,
+   "posters": 3069
+  },
+  "7-mugs-and-prints-part4.csv": {
+   "rows": 3788,
+   "handles": 3737,
+   "bytes": 8518384,
+   "posters": 3736
+  }
+ },
+ "posters": 13373,
+ "problems": [],
+ "missing_live": [],
+ "titles_changed": 0,
+ "status_changed": 1,
+ "cats": {
+  "nfl": 2001,
+  "cricket": 544,
+  "golf": 470,
+  "football": 3697,
+  "music": 1512,
+  "sportother": 475,
+  "mma": 688,
+  "screen": 1337,
+  "rugby": 496,
+  "boxing": 324,
+  "f1": 238,
+  "tennis": 147,
+  "basketball": 458,
+  "snooker": 7,
+  "darts": 285,
+  "celebrity": 213,
+  "bollywood": 118,
+  "baseball": 129,
+  "business": 68,
+  "icehockey": 126,
+  "pack": 40
+ },
+ "poster_handles_by_file": null
+}
