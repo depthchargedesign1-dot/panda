@@ -29,7 +29,7 @@ a personalised sample, or a club/brand Shaun wants used).
 6. **Amazon** -> `amazon-listing-converter` skill (variations, Amazon Custom name boxes, safe upload pack).
    **eBay** -> a separate eBay upload file (titles <= 80 chars). Main images must be the white-background mockups.
 7. **Report** (short): per product - SKU, Shopify admin link, Dropbox folder, zip link, what still
-   needs Shaun (prices, eBay category/business policies), Higgsfield credits used.
+   needs Shaun (prices, eBay category/business policies), Higgsfield credits used (if Higgsfield was unavailable, say whether ChatGPT was used as the fallback - see mug-lifestyle-shopify).
 
 ## Design standards (what "not outdated" means)
 - One clear idea per mug; the joke or the name must read from 1 metre. Big confident type, 2-3 colours.

@@ -19,6 +19,11 @@ same sandbox command that built them (see mug-print-artwork), `media_confirm`, u
 
 ## 2. Lifestyle photos (Higgsfield)
 - Note `mcp__Higgsfield__balance` before and after.
+- **Fallback - ChatGPT (Shaun's rule):** if Higgsfield is out of credits, disconnected or failing, use ChatGPT /
+  OpenAI image generation instead (same prompt, mockup as the reference image, same print check). That needs an
+  OpenAI connector or `OPENAI_API_KEY` in the environment settings with `api.openai.com` allowed in the network
+  settings. If neither is set up, tell Shaun, upload the exact mockups, and mark the lifestyle shot as still to do.
+  Never ship a lifestyle photo whose print doesn't match the artwork.
 - `generate_image_batch`, model `gpt_image_2_5`, 1:1, high quality, `use_unlim:false`, reference media =
   the matching mockup (role per `models_explore`). Prompt pattern:
   "Photorealistic product photo of the exact white 11oz ceramic mug from the reference, same printed design,
