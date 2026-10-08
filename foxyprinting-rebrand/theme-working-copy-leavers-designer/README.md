@@ -14,3 +14,11 @@ New unpublished copy "Foxy Pop 2026 – swatches & posters" (189514809725), dupl
   (a whole class list) allow 3000 chars.
 - snippets/colour-hex.liquid (new).
 - sections/main-collection.liquid from "mug tiles" (Shop by type tiles, compact banners). All files checksum-verified against the store 8 Oct 15:05 UTC.
+
+## 8 Oct 15:42 UTC: leavers session merged into the shared copy 189514809725
+The "Leavers hoodies designer tool" session (branch claude/zealous-wozniak-qzr6bg) three-way merged our swatch/name-box
+changes and upserted only its own files: assets/leavers-engine.js (efc6d66e…), leavers-designer.js (a24d74ba…, still has
+the round swatches, Colour line, 80-char school box, always-visible names box, 40-char names), leavers-designer.css
+(b465c692…), leavers-photos.js (1fa94e2e…). Verified against the store. Its source of truth for those files is now that
+branch (leavers-designer/theme/assets/); the copies in this folder's assets/ are the older pre-merge versions.
+Do NOT publish "Foxy Pop 2026 – leavers logo upload" (189515399549): superseded by 189514809725.
