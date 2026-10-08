@@ -1,6 +1,6 @@
 """Bar mat designs found in Dropbox on 8 Oct 2026 that were not yet in the store.
 Facts only from plan/product-facts.md "Home bar, garden bar & man cave" + the live bar-mat listings:
-dye-sublimation printed, rubber-backed, sizes (owner 8 Oct 2026) Small 440mm x 330mm / Large 880mm x 330mm.
+dye-sublimation printed, rubber-backed, sizes (owner 8 Oct 2026) Small 440mm x 250mm / Large 880mm x 250mm (corrected from 330mm by the owner, 8 Oct 2026).
 Thickness, care and dispatch time are ASK, so the copy promises none of them.
 """
 

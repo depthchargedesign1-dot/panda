@@ -1,5 +1,7 @@
 """Rename bar-mat size option values and fix the size lines in descriptions (owner, 8 Oct 2026):
 "change Small to Small 440 x 330 and the large to Large 880mm x 330mm".
+Corrected by the owner the same day: "Fix the bar mat height it is 250mm not 330mm" -> sizes are now
+Small 440mm x 250mm / Large 880mm x 250mm (applied by refresh_copy.py, record exports/bar-mats/2026-10-08-copy-refresh/).
 Input: exports/bar-mats/2026-10-08/before-existing-bar-mats.json (all product_type 'Bar Mat').
 Writes batched GraphQL mutations (productOptionUpdate + productUpdate aliases) to OUT dir.
 The 51 personalised designs used "Medium" for the 440mm mat (same 440 size), so Medium is renamed to Small too.
@@ -9,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "exports/bar-mats/2026-10-08/before-existing-bar-mats.json"
 OUT = Path(sys.argv[1])
-SMALL, LARGE = "Small 440mm x 330mm", "Large 880mm x 330mm"
+SMALL, LARGE = "Small 440mm x 250mm", "Large 880mm x 250mm"
 q = json.dumps
 
 def new_value(name):
@@ -21,8 +23,8 @@ def new_value(name):
     raise ValueError(name)
 
 def new_desc(html):
-    html = re.sub(r"(Small|Medium)=\s*440mm x 250mm", "Small = 440mm x 330mm", html)
-    html = re.sub(r"Large=\s*880mm x 250mm", "Large = 880mm x 330mm", html)
+    html = re.sub(r"(Small|Medium)=\s*440mm x 250mm", "Small = 440mm x 250mm", html)
+    html = re.sub(r"Large=\s*880mm x 250mm", "Large = 880mm x 250mm", html)
     return html
 
 prods = json.load(open(SRC))
