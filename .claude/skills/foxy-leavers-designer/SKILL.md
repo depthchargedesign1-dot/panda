@@ -70,7 +70,7 @@ Photos and product media need no theme write:
 
 ## Automatic print files (Dropbox)
 
-`leavers-designer/tools/order-sync.mjs`, run by `.github/workflows/leavers-print-files.yml` every 15 minutes:
+`leavers-designer/tools/order-sync.mjs`, run by `.github/workflows/leavers-print-files.yml` every morning at 7am UK time:
 
 - It takes Shopify orders from the last 5 days that have no `leavers-files-saved` tag.
 - For any line with `_Print files`, it saves PNGs, a proof JPG, order details and the logo to `/Leavers Hoodie and Jackets ORDERS/<order number>/`. That folder already exists in Shopify owner Shaun's personal Dropbox.
