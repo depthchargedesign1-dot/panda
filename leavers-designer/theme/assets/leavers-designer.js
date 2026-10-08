@@ -155,7 +155,6 @@
         '    </div>' +
         '    </div>' +
         '    <div class="ld-row ld-row--wrap">' +
-        '      <label class="ld-check" data-repeat-opt><input type="checkbox" data-bind="back.repeat"> Repeat names to fill the shape</label>' +
         '      <label class="ld-check"><input type="checkbox" data-bind="back.twoTone"> Two-tone names</label>' +
         '      <label class="ld-check"><input type="checkbox" data-bind="back.outline"> Outline</label>' +
         '    </div>' +
@@ -572,7 +571,6 @@
       $('[data-name-count]').textContent = '(' + E.cleanNames(d).length + ')';
       $('[data-names-field]').hidden = !t.names;
       $('[data-names-tools]').hidden = !t.names;
-      $('[data-repeat-opt]').hidden = SHAPE_TEMPLATES.indexOf(d.back.template) < 0;
 
       $$('[data-bind]').forEach(function (el) {
         if (el === document.activeElement) return;

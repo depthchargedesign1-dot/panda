@@ -565,30 +565,50 @@
     return out;
   }
 
+  // Names fill the shape with no gaps: each row is packed, then stretched edge to edge when drawn.
+  var FILL = { lead: 1.16, squeeze: 0.8, maxStretch: 1.7, minK: 0.3 };
+  // Top and bottom of the filled part of the mask, so rows can be fitted to the shape exactly.
+  function maskBounds(mask) {
+    var top = -1, bottom = -1;
+    for (var r = 0; r < mask.h; r++) {
+      for (var c = 0, base = r * mask.w * 4; c < mask.w; c++) {
+        if (mask.data[base + c * 4 + 3] > 127) { if (top < 0) top = r; bottom = r; break; }
+      }
+    }
+    if (top < 0) return { y: mask.box.y, h: mask.box.h };
+    return { y: mask.box.y + top / mask.scale, h: (bottom - top + 1) / mask.scale };
+  }
   function packShape(names, font, mask, box, size, repeat) {
     var n = names.length;
-    var lineH = size * capHeight(font) * 1.28;
-    var gap = size * 0.3;
+    var bounds = mask.bounds || (mask.bounds = maskBounds(mask));
+    // Whole rows from the top of the shape to the bottom: no strip left empty.
+    var nRows = Math.max(1, Math.round(bounds.h / (size * capHeight(font) * FILL.lead)));
+    var lineH = bounds.h / nRows;
+    var gap = size * 0.28;
     var widths = names.map(function (s) { return measure(font, s).w * size / 100; });
     var rows = [], i = 0;
-    for (var y = box.y; y + lineH <= box.y + box.h + 0.001; y += lineH) {
+    for (var row = 0; row < nRows; row++) {
+      var y = bounds.y + row * lineH;
       if (!repeat && i >= n) break;
-      var spans = intersectSpans(spansAt(mask, y + lineH * 0.22), spansAt(mask, y + lineH * 0.78));
+      var spans = intersectSpans(spansAt(mask, y + lineH * 0.2), spansAt(mask, y + lineH * 0.8));
       for (var s = 0; s < spans.length; s++) {
-        var x0 = spans[s][0], x1 = spans[s][1];
-        if (x1 - x0 < size * 1.2) continue;
+        if (!repeat && i >= n) break;
+        var x0 = spans[s][0], x1 = spans[s][1], span = x1 - x0;
+        if (span < size * 0.5) continue;
         var items = [], used = 0, guard = 0;
         while (guard++ < 500) {
           if (!repeat && i >= n) break;
           var w = widths[i % n];
           var need = items.length ? used + gap + w : w;
-          if (need > x1 - x0) break;
+          // Names may be squeezed a little to fit one more in, so rows end flush.
+          if (need * FILL.squeeze > span) break;
           items.push({ idx: i % n, k: 1 }); used = need; i++;
         }
-        // Narrow strokes: shrink one name to fit rather than leave the stroke empty.
-        if (!items.length && (repeat || i < n)) {
-          var k = (x1 - x0) / widths[i % n];
-          if (k >= 0.45) { items.push({ idx: i % n, k: k }); used = x1 - x0; i++; }
+        // Narrow strokes: a smaller, condensed name rather than an empty stroke.
+        if (!items.length) {
+          var wn = widths[i % n];
+          var k = Math.min(1, span / (wn * 0.6));
+          if (k >= FILL.minK) { items.push({ idx: i % n, k: k }); used = wn * k; i++; }
         }
         if (items.length) rows.push({ y: y, x0: x0, x1: x1, items: items, used: used });
       }
@@ -596,7 +616,7 @@
     return { rows: rows, all: i >= n, size: size, lineH: lineH, gap: gap, widths: widths };
   }
 
-  function layoutShape(key, names, font, shape, box, repeat) {
+  function layoutShape(key, names, font, shape, box) {
     return remember(layoutCache, key, function () {
       var mask = shapeMask(shape, box);
       if (!names.length) return { rows: [], size: 0 };
@@ -614,29 +634,36 @@
         var narrow = widths[Math.floor(widths.length * 0.3)];
         lo = Math.min(lo, narrow * 1.5 / nameW[Math.floor(nameW.length / 2)] * 100);
       }
-      return packShape(names, font, mask, box, Math.max(lo, 2), repeat);
+      // Every name appears at least once; the rest of the shape is filled by repeating them.
+      return packShape(names, font, mask, box, Math.max(lo, 2), true);
     });
   }
 
-  function drawShapeNames(ctx, lay, names, font, colours, repeat) {
+  function drawShapeNames(ctx, lay, names, font, colours) {
     if (!lay.rows.length) return;
-    var size = lay.size, cap = capHeight(font) * size;
-    ctx.font = fontSpec(font, size);
+    var size = lay.size, cap = capHeight(font);
     ctx.textAlign = 'left';
     ctx.textBaseline = 'alphabetic';
     var count = 0;
     lay.rows.forEach(function (r) {
-      var free = r.x1 - r.x0 - r.used;
-      var full = repeat || free < size * 3;
-      var gap = lay.gap + (full && r.items.length > 1 ? free / (r.items.length - 1) : 0);
-      var x = full && r.items.length > 1 ? r.x0 : r.x0 + free / 2;
-      var y = r.y + lay.lineH / 2 + cap / 2;
+      var span = r.x1 - r.x0, n = r.items.length;
+      var natural = r.items.reduce(function (a, it) { return a + lay.widths[it.idx] * it.k; }, 0);
+      var gaps = lay.gap * (n - 1);
+      // Stretch (or squeeze) the names so the row runs the full width of the stroke.
+      var sx = Math.max(0.35, Math.min(FILL.maxStretch, (span - gaps) / natural));
+      var extra = span - gaps - natural * sx;
+      var gap = lay.gap + (n > 1 && extra > 0 ? extra / (n - 1) : 0);
+      var x = r.x0 + (n === 1 && extra > 0 ? extra / 2 : 0);
       r.items.forEach(function (it) {
+        var sz = size * it.k;
+        ctx.font = fontSpec(font, sz);
         ctx.fillStyle = colours[count++ % colours.length];
-        if (it.k !== 1) ctx.font = fontSpec(font, size * it.k);
-        ctx.fillText(names[it.idx], x, it.k !== 1 ? r.y + lay.lineH / 2 + cap * it.k / 2 : y);
-        if (it.k !== 1) ctx.font = fontSpec(font, size);
-        x += lay.widths[it.idx] * it.k + gap;
+        ctx.save();
+        ctx.translate(x, r.y + lay.lineH / 2 + cap * sz / 2);
+        ctx.scale(sx, 1);
+        ctx.fillText(names[it.idx], 0, 0);
+        ctx.restore();
+        x += lay.widths[it.idx] * it.k * sx + gap;
       });
     });
   }
@@ -786,8 +813,8 @@
         var sbox = { x: 0, y: Y(0.16), w: REF, h: box.h * 0.73 };
         var spath = b.template === 'heart' ? heartPath(sbox) : starPath(sbox);
         var shape = function (x) { x.fill(spath); };
-        var lay = layoutShape(keyBase, names, b.nameFont, shape, sbox, b.repeat);
-        clipped(ctx, function (x) { drawShapeNames(x, lay, names, b.nameFont, colours, b.repeat); }, shape);
+        var lay = layoutShape(keyBase, names, b.nameFont, shape, sbox);
+        clipped(ctx, function (x) { drawShapeNames(x, lay, names, b.nameFont, colours); }, shape);
         if (b.outline) { ctx.save(); ctx.strokeStyle = accent; ctx.lineWidth = 7; ctx.lineJoin = 'round'; ctx.stroke(spath); ctx.restore(); }
         drawFit(ctx, b.school, disp, { x: 60, y: Y(0.92), w: REF - 120, h: box.h * 0.07 }, accent);
         break;
@@ -848,8 +875,8 @@
         drawFit(ctx, b.title, disp, { x: 0, y: Y(0), w: REF, h: box.h * 0.14 }, accent);
         var ybox = { x: 0, y: Y(0.16), w: REF, h: box.h * 0.74 };
         var yshape = yearShape(d, ybox);
-        var ylay = layoutShape(keyBase, names, b.nameFont, yshape, ybox, b.repeat);
-        clipped(ctx, function (x) { drawShapeNames(x, ylay, names, b.nameFont, colours, b.repeat); }, yshape);
+        var ylay = layoutShape(keyBase, names, b.nameFont, yshape, ybox);
+        clipped(ctx, function (x) { drawShapeNames(x, ylay, names, b.nameFont, colours); }, yshape);
         if (b.outline) {
           drawFit(ctx, b.year, disp, ybox, null, { stroke: accent, strokeWidth: 3, noShrink: true });
         }

@@ -78,6 +78,14 @@ Nothing is saved as a file automatically. The design itself travels with the ord
 
 ## Gotchas
 
+- **Rule: names always fill the whole shape (number, heart, star) with no gaps.**
+  - `layoutShape` sizes the names so that each one appears at least once, then repeats names to fill the rest.
+  - `packShape` fits whole rows from the top of the shape to the bottom.
+  - `drawShapeNames` stretches each row edge to edge.
+  - Thin strokes get a smaller, condensed name.
+  - Never reintroduce empty rows, centred short rows or a "no repeat" mode.
+- The default year is 27 (front line `2027`).
+
 - `.ld [hidden]` uses `display: none !important`. Keep it, or hidden fields reappear.
 - Re-render on the `leavers:photo` event and on fonts `loadingdone`, or the first paint shows missing photos or fonts.
 - The default colour should be dark (`defaultColour`), because the default ink is white.
