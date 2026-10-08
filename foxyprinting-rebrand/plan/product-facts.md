@@ -305,7 +305,7 @@ Owner answers, 2 Oct 2026.
 ## Home bar, garden bar & man cave (added 2 Oct 2026)
 Owner confirmed they can make: sublimation metal pub and bar signs, rubber-backed bar runners and mats, a hanging double-sided garden pub sign, and acrylic, wood or UV-printed bar plaques and "licence" signs.
 - **Metal signs:** printed on the 1.15mm gloss white aluminium sheets (see "Metal photo panels" sheet for sizes). Outdoor durability and fixings: **ASK**.
-- **Bar runners and mats:** use only facts stated on the existing live bar-mat listings; otherwise **ASK** (size, rubber thickness).
+- **Bar runners and mats (owner confirmed 8 Oct 2026):** sizes **Small 440mm x 250mm** and **Large 880mm x 250mm** (250mm deep, NOT 330mm; the owner's 330mm instruction earlier on 8 Oct was a mistake). Rubber-backed, dye-sublimation printed, **dishwasher safe**. Option values read exactly "Small 440mm x 250mm" / "Large 880mm x 250mm". Rubber thickness still **ASK**.
 - **Hanging garden pub sign:** double-sided. Material, size and bracket: **ASK** (owner to confirm).
 - **Plaques and licence signs:** material options acrylic, wood or UV print. Sizes: **ASK**.
 - **Google category:** signs and plaques `Home & Garden > Decor > Decorative Plaques`; bar runners `Home & Garden > Kitchen & Dining > Barware`, child as fits (check tax.yml).
