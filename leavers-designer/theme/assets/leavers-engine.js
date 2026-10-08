@@ -297,7 +297,8 @@
         accent: 'hot-pink',
         twoTone: false,
         repeat: true,
-        outline: true
+        outline: true,
+        logo: false
       },
       front: { style: 'chest-text', line1: 'LEAVERS', line2: '2026', icon: 'star', font: 'Graduate', logoUrl: '' },
       personal: { position: 'sleeve', text: '', font: 'Pacifico' }
@@ -768,6 +769,12 @@
       drawFit(ctx, personal, d.personal.font, { x: 60, y: 10, w: REF - 120, h: H * 0.1 }, accent);
       top = H * 0.13;
     }
+    var backLogo = b.logo ? logoImage(d) : null;
+    if (b.logo && b.template !== 'badge') {
+      var lb = { x: REF * 0.3, y: top, w: REF * 0.4, h: H * 0.15 };
+      drawLogoIn(ctx, d, backLogo, lb, accent);
+      top += H * 0.17;
+    }
     var box = { x: 0, y: top, w: REF, h: H - top };
     var Y = function (f) { return box.y + box.h * f; };
     var keyBase = [b.template, names.join('|'), b.nameFont, disp, b.year, b.repeat, Math.round(box.y), Math.round(box.h)].join('#');
@@ -812,7 +819,8 @@
         drawArcText(ctx, b.title, disp, bSize, cx, cy, mid + capHeight(disp) * bSize / 2, false, ink);
         drawIcon(ctx, 'star', { x: cx - mid - band * 0.22, y: cy - band * 0.22, w: band * 0.44, h: band * 0.44 }, accent);
         drawIcon(ctx, 'star', { x: cx + mid - band * 0.22, y: cy - band * 0.22, w: band * 0.44, h: band * 0.44 }, accent);
-        drawFit(ctx, b.year, disp, { x: cx - R * 0.5, y: cy - R * 0.4, w: R, h: R * 0.8 }, accent);
+        if (b.logo) drawLogoIn(ctx, d, backLogo, { x: cx - R * 0.47, y: cy - R * 0.47, w: R * 0.94, h: R * 0.94 }, accent);
+        else drawFit(ctx, b.year, disp, { x: cx - R * 0.5, y: cy - R * 0.4, w: R, h: R * 0.8 }, accent);
         drawColumns(ctx, names, b.nameFont, { x: 0, y: cy + R + box.h * 0.04, w: REF, h: box.h - (cy + R - box.y) - box.h * 0.05 }, colours, { maxSize: 70 });
         break;
       }
@@ -867,13 +875,33 @@
     }
     return img && img.complete && img.naturalWidth ? img : null;
   }
+  // The school logo can go on the front chest, on the back, or both.
+  function usesLogo(d) {
+    return d.front.style === 'chest-logo' || !!(d.back && d.back.logo);
+  }
   function loadLogo(d) {
     var src = d._logoSrc || d.front.logoUrl;
-    if (!src || d.front.style !== 'chest-logo' || typeof Image === 'undefined') return Promise.resolve();
+    if (!src || !usesLogo(d) || typeof Image === 'undefined') return Promise.resolve();
     logoImage(d);
     var img = logoCache.get(src);
     if (img.complete) return Promise.resolve();
     return new Promise(function (res) { img.onload = img.onerror = function () { res(); }; });
+  }
+
+  // Fit the logo inside box; before one is uploaded, the preview shows a dashed "YOUR LOGO" placeholder (never printed).
+  function drawLogoIn(ctx, d, img, box, colour) {
+    if (img) {
+      var s = Math.min(box.w / img.naturalWidth, box.h / img.naturalHeight);
+      var w = img.naturalWidth * s, h = img.naturalHeight * s;
+      ctx.drawImage(img, box.x + (box.w - w) / 2, box.y + (box.h - h) / 2, w, h);
+    } else if (!d._print) {
+      var pad = Math.min(box.w, box.h) * 0.06;
+      ctx.save();
+      ctx.strokeStyle = colour; ctx.setLineDash([30, 20]); ctx.lineWidth = 10;
+      ctx.strokeRect(box.x + pad, box.y + pad, box.w - pad * 2, box.h - pad * 2);
+      ctx.restore();
+      drawFit(ctx, 'YOUR LOGO', 'Oswald', { x: box.x + box.w * 0.2, y: box.y + box.h * 0.38, w: box.w * 0.6, h: box.h * 0.24 }, colour);
+    }
   }
 
   function renderFront(ctx, d, H) {
@@ -895,19 +923,7 @@
         break;
       }
       case 'chest-logo': {
-        var img = logoImage(d);
-        var lbox = { x: 60, y: 30, w: REF - 120, h: f.line1 ? 700 : 940 };
-        if (img) {
-          var s = Math.min(lbox.w / img.naturalWidth, lbox.h / img.naturalHeight);
-          var w = img.naturalWidth * s, h = img.naturalHeight * s;
-          ctx.drawImage(img, lbox.x + (lbox.w - w) / 2, lbox.y + (lbox.h - h) / 2, w, h);
-        } else if (!d._print) {
-          ctx.save();
-          ctx.strokeStyle = accent; ctx.setLineDash([30, 20]); ctx.lineWidth = 10;
-          ctx.strokeRect(lbox.x + 40, lbox.y + 40, lbox.w - 80, lbox.h - 80);
-          ctx.restore();
-          drawFit(ctx, 'YOUR LOGO', 'Oswald', { x: 200, y: lbox.y + lbox.h / 2 - 70, w: 600, h: 140 }, accent);
-        }
+        drawLogoIn(ctx, d, logoImage(d), { x: 60, y: 30, w: REF - 120, h: f.line1 ? 700 : 940 }, accent);
         if (f.line1) drawFit(ctx, f.line1, font, { x: 20, y: 760, w: REF - 40, h: 220 }, ink);
         break;
       }
@@ -1413,7 +1429,7 @@
     BACK_TEMPLATES: BACK_TEMPLATES, FRONT_STYLES: FRONT_STYLES, PERSONAL_POSITIONS: PERSONAL_POSITIONS,
     ICON_NAMES: ICON_NAMES, SAMPLE_NAMES: SAMPLE_NAMES,
     defaultDesign: defaultDesign, upgrade: upgrade,
-    fontsCssUrl: fontsCssUrl, fontSpec: fontSpec, loadFonts: loadFonts, fontsMissing: fontsMissing, loadLogo: loadLogo,
+    fontsCssUrl: fontsCssUrl, fontSpec: fontSpec, loadFonts: loadFonts, fontsMissing: fontsMissing, loadLogo: loadLogo, usesLogo: usesLogo,
     cleanNames: cleanNames, formatName: formatName,
     inkHex: inkHex, garmentHex: garmentHex, contrastRatio: contrastRatio, byId: byId,
     printAreas: printAreas, renderArea: renderArea, areaCanvas: areaCanvas, renderMockup: renderMockup,

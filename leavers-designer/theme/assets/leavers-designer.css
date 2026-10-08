@@ -158,3 +158,17 @@
 .ld-name button { border: 0; background: transparent; cursor: pointer; opacity: 0.45; font-size: 0.85rem; padding: 4px 6px; }
 .ld-name button:hover { opacity: 1; }
 .ld-name--new { border-style: dashed; }
+
+/* School logo uploader (front step and back step) */
+.ld-logo { display: flex; gap: 14px; align-items: center; margin: 12px 0; padding: 12px; border: 2px dashed var(--ld-line, #d6d6dc); border-radius: 12px; background: var(--ld-tint); }
+.ld-logo__thumb { flex: 0 0 72px; height: 72px; display: grid; place-items: center; border-radius: 10px; background: #fff; border: 1px solid var(--ld-line, #d6d6dc); font: 800 0.8rem/1 sans-serif; letter-spacing: 0.08em; color: #9a9aa5; overflow: hidden; }
+.ld-logo__thumb.is-set { background: repeating-conic-gradient(#eee 0 25%, #fff 0 50%) 0 0 / 14px 14px; }
+.ld-logo__thumb img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.ld-logo__body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.ld-logo__body small { color: #666; overflow-wrap: anywhere; }
+.ld-logo__body .ld-row { margin-top: 4px; }
+.ld-logo__pick { position: relative; cursor: pointer; }
+.ld-logo__pick input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; }
+.ld-logo__pick:focus-within { outline: 3px solid #4c7dff; outline-offset: 2px; }
+.ld-logo-opt { margin-top: 10px; }
+.ld-logo-opt small { color: #666; font-weight: 400; }

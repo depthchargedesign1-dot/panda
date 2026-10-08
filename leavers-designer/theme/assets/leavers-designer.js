@@ -145,6 +145,15 @@
         '      <button type="button" class="ld-chip" data-names-action="clear">Clear</button>' +
         '      <select class="ld-select" data-bind="back.nameCase" aria-label="Name style"><option value="upper">UPPERCASE</option><option value="title">Title Case</option><option value="asis">As typed</option></select>' +
         '    </div>' +
+        '    <label class="ld-check ld-logo-opt"><input type="checkbox" data-bind="back.logo"> Add our school logo to the back <small data-logo-where></small></label>' +
+        '    <div data-back-logo hidden>' +
+        '    <div class="ld-logo" data-logo-box>' +
+        '      <div class="ld-logo__thumb" data-logo-thumb aria-hidden="true">LOGO</div>' +
+        '      <div class="ld-logo__body"><strong>School logo for the back</strong><small data-logo-name>PNG with a clear background works best (JPG, SVG or WebP also fine, up to 20 MB).</small>' +
+        '        <div class="ld-row ld-row--wrap"><label class="ld-btn ld-btn--ghost ld-logo__pick">Upload logo<input type="file" accept="image/png,image/jpeg,image/svg+xml,image/webp" data-logo="back"></label>' +
+        '        <button type="button" class="ld-chip" data-logo-remove hidden>Remove</button></div></div>' +
+        '    </div>' +
+        '    </div>' +
         '    <div class="ld-row ld-row--wrap">' +
         '      <label class="ld-check" data-repeat-opt><input type="checkbox" data-bind="back.repeat"> Repeat names to fill the shape</label>' +
         '      <label class="ld-check"><input type="checkbox" data-bind="back.twoTone"> Two-tone names</label>' +
@@ -162,7 +171,13 @@
         '    <p class="ld-label">Highlight colour <span data-accent-name></span></p><div class="ld-swatches">' + inks('data-accent') + '</div>' +
         '    <p class="ld-note" data-contrast-warning hidden>⚠️ That print colour is hard to see on this garment — try a lighter or darker one.</p>' +
         '  </details>' +
-        '  <details class="ld-step"><summary><span class="ld-step__n">5</span> Front design</summary>' +
+        '  <details class="ld-step"><summary><span class="ld-step__n">5</span> Front design &amp; school logo</summary>' +
+        '    <div class="ld-logo" data-logo-box>' +
+        '      <div class="ld-logo__thumb" data-logo-thumb aria-hidden="true">LOGO</div>' +
+        '      <div class="ld-logo__body"><strong>Got a school logo? Upload it here</strong><small data-logo-name>PNG with a clear background works best (JPG, SVG or WebP also fine, up to 20 MB).</small>' +
+        '        <div class="ld-row ld-row--wrap"><label class="ld-btn ld-btn--ghost ld-logo__pick">Upload logo<input type="file" accept="image/png,image/jpeg,image/svg+xml,image/webp" data-logo="front"></label>' +
+        '        <button type="button" class="ld-chip" data-logo-remove hidden>Remove</button></div></div>' +
+        '    </div>' +
         '    <div class="ld-row ld-row--wrap">' + fronts + '</div>' +
         '    <div class="ld-grid3" data-front-fields>' +
         '      <label class="ld-field" data-front-line1><span>Main text</span><input type="text" maxlength="30" data-bind="front.line1"></label>' +
@@ -170,8 +185,6 @@
         '      <label class="ld-field" data-front-icon><span>Icon</span><select class="ld-select" data-bind="front.icon">' + icons + '</select></label>' +
         '      <label class="ld-field" data-front-font><span>Font</span><select class="ld-select" data-bind="front.font">' + fontOptions + '</select></label>' +
         '    </div>' +
-        '    <label class="ld-field ld-upload" data-front-logo><span>Upload your school logo (PNG with a clear background works best)</span>' +
-        '      <input type="file" accept="image/png,image/jpeg,image/svg+xml,image/webp" data-logo></label>' +
         '  </details>' +
         '  <details class="ld-step"><summary><span class="ld-step__n">6</span> Personal name or nickname</summary>' +
         '    <div class="ld-row ld-row--wrap">' + positions + '</div>' +
@@ -356,11 +369,32 @@
       });
     });
 
-    $('[data-logo]').addEventListener('change', function (e) {
-      var file = e.target.files && e.target.files[0];
-      ui.logoFile = file || null;
-      d._logoSrc = file ? URL.createObjectURL(file) : '';
-      E.loadLogo(d).then(refresh);
+    // One logo for the whole design; it can be uploaded from the front step or the back step.
+    $$('[data-logo]').forEach(function (input) {
+      input.addEventListener('change', function () {
+        var file = input.files && input.files[0];
+        input.value = '';
+        if (!file) return;
+        if (!/^image\//.test(file.type)) { msg('That file isn\'t an image — please upload a PNG or JPG of your logo.', true); return; }
+        if (file.size > 20 * 1048576) { msg('That logo is over 20 MB — please use a smaller file.', true); return; }
+        msg('');
+        if (d._logoSrc) URL.revokeObjectURL(d._logoSrc);
+        ui.logoFile = file;
+        d._logoSrc = URL.createObjectURL(file);
+        d.front.logoUrl = '';
+        // Uploading from a step puts the logo there straight away.
+        if (input.getAttribute('data-logo') === 'back') d.back.logo = true;
+        else if (!E.usesLogo(d) || d.front.style === 'none' || d.front.style === 'chest-text') d.front.style = 'chest-logo';
+        E.loadLogo(d).then(refresh);
+        refresh();
+      });
+    });
+    $$('[data-logo-remove]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (d._logoSrc) URL.revokeObjectURL(d._logoSrc);
+        ui.logoFile = null; d._logoSrc = ''; d.front.logoUrl = '';
+        refresh();
+      });
     });
 
     /* ---------------------------------------------------------------- fonts grid */
@@ -550,7 +584,19 @@
       $('[data-front-line2]').hidden = fs === 'chest-logo' || fs === 'chest-letter';
       $('[data-front-line1] span').textContent = fs === 'chest-letter' ? 'Letter(s) — 1 or 2' : 'Main text';
       $('[data-front-icon]').hidden = fs !== 'chest-text';
-      $('[data-front-logo]').hidden = fs !== 'chest-logo';
+      var logoSrc = d._logoSrc || d.front.logoUrl;
+      $$('[data-logo-thumb]').forEach(function (t) {
+        t.innerHTML = logoSrc ? '<img src="' + esc(logoSrc) + '" alt="">' : 'LOGO';
+        t.classList.toggle('is-set', !!logoSrc);
+      });
+      $$('[data-logo-name]').forEach(function (n) {
+        n.textContent = logoSrc ? (ui.logoFile ? ui.logoFile.name : 'Your uploaded logo') + ' — ' +
+          ([fs === 'chest-logo' ? 'on the front' : '', d.back.logo ? 'on the back' : ''].filter(Boolean).join(' and ') || 'not used yet: pick "School logo" below or tick the back option in step 3')
+          : 'PNG with a clear background works best (JPG, SVG or WebP also fine, up to 20 MB).';
+      });
+      $$('[data-logo-remove]').forEach(function (b) { b.hidden = !logoSrc; });
+      $('[data-back-logo]').hidden = !d.back.logo;
+      $('[data-logo-where]').textContent = d.back.template === 'badge' ? '(in the middle of the crest)' : '(above the design)';
       $('[data-personal-fields]').hidden = d.personal.position === 'none';
       $('[data-personal-single]').hidden = ui.mode === 'group';
       $('[data-personal-group-note]').hidden = ui.mode !== 'group' || d.personal.position === 'none';
@@ -620,12 +666,13 @@
       var props = {
         'Garment': P.name + (P.code ? ' (' + P.code + ')' : ''),
         'Colour': E.colourOf(design).name,
-        'Back design': t.name,
+        'Back design': t.name + (design.back.logo ? ' + school logo' : ''),
         'Back wording': [design.back.title, design.back.year, design.back.school].filter(Boolean).join(' · '),
         'Names on back': t.names ? E.cleanNames(design).length + ' names' : 'None',
         'Fonts': design.back.nameFont + ' / ' + design.back.displayFont,
         'Print colours': E.byId(E.INKS, design.back.ink).name + ' + ' + E.byId(E.INKS, design.back.accent).name,
         'Front': front,
+        'School logo': E.usesLogo(design) ? (design.front.logoUrl || 'Uploaded') : 'None',
         'Personal name': (design.personal.text || '').trim() && pos.id !== 'none' ? design.personal.text.trim() + ' (' + pos.name.toLowerCase() + ')' : 'None',
         '_Print files': (config.studioUrl || '/pages/leavers-print-studio') + '#d=' + code,
         '_Group design': shortHash(JSON.stringify([design.product, design.garment, design.back, design.front.style, design.front.line1, design.front.line2]))
@@ -636,7 +683,7 @@
     function validate(items) {
       var t = E.byId(E.BACK_TEMPLATES, d.back.template);
       if (t.names && !E.cleanNames(d).length) return 'Add at least one name for the back, or choose the "Year Only" design.';
-      if (d.front.style === 'chest-logo' && !ui.logoFile && !d.front.logoUrl) return 'Please upload your school logo, or pick a different front design.';
+      if (E.usesLogo(d) && !ui.logoFile && !d.front.logoUrl) return 'Please upload your school logo (step ' + (d.front.style === 'chest-logo' ? '5' : '3') + '), or turn the logo off.';
       for (var i = 0; i < items.length; i++) {
         var v = variantFor(items[i].size);
         if (!v || !v.available) return 'Size ' + items[i].size + ' isn\'t available — please choose another.';
@@ -685,7 +732,7 @@
 
       var logoStep = Promise.resolve();
       // A new logo goes up with the first hoodie (Shopify stores the file); every line then points at that copy.
-      if (d.front.style === 'chest-logo' && ui.logoFile && !config.demo) {
+      if (E.usesLogo(d) && ui.logoFile && !d.front.logoUrl && !config.demo) {
         logoStep = buildLines([items[0]]).then(function (lines) {
           var fd = new FormData();
           fd.append('id', lines[0].id);
