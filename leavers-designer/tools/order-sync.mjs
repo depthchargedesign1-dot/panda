@@ -88,7 +88,6 @@ const ORDERS = `query($q: String!, $after: String) {
     pageInfo { hasNextPage endCursor }
     nodes {
       id name tags createdAt cancelledAt displayFinancialStatus
-      customer { displayName }
       email
       lineItems(first: 100) { nodes { name quantity variantTitle customAttributes { key value } } }
     }
@@ -217,7 +216,8 @@ async function renderLine(page, code, prefix) {
 function orderDetails(order, results) {
   const L = [];
   L.push(`ORDER ${order.name}   ${new Date(order.createdAt).toLocaleString('en-GB', { timeZone: 'Europe/London' })}`);
-  L.push(`Customer: ${order.customer ? order.customer.displayName : ''} ${order.email ? '<' + order.email + '>' : ''}`);
+  // Customer name needs the read_customers scope; the email plus the order in Shopify admin is enough.
+  L.push(`Customer email: ${order.email || '(none)'}`);
   L.push(`Payment: ${order.displayFinancialStatus}`);
   L.push('');
   results.forEach((r, i) => {
