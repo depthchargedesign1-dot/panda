@@ -1,0 +1,91 @@
+{%- comment -%}
+  Leavers hoodie designer (Foxy Leavers Designer).
+  The garment comes from a product tag "ld-<garment>" (ld-hoodie, ld-kids-hoodie, ld-zip-hoodie, ld-varsity-hoodie,
+  ld-sweatshirt, ld-tshirt), else the section setting. Variants must use a single "Size" option.
+  Each basket line carries a hidden "_Print files" link that opens the Print Studio page with that exact design.
+{%- endcomment -%}
+{%- liquid
+  assign ld_key = section.settings.garment
+  for tag in product.tags
+    if tag contains 'ld-'
+      assign ld_key = tag | remove_first: 'ld-'
+    endif
+  endfor
+  assign studio_url = shop.url | append: '/pages/' | append: section.settings.studio_handle
+-%}
+{{ 'leavers-designer.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width ld-page" style="padding-top:18px;padding-bottom:40px">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="{{ routes.root_url }}">{{ 'general.home' | t }}</a> /
+    {% if collection %}<a href="{{ collection.url }}">{{ collection.title }}</a> / {% endif %}
+    <span aria-current="page">{{ product.title }}</span>
+  </nav>
+
+  <div class="ld-intro" style="display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between;margin:14px 0 18px">
+    <h1 class="product__title" style="margin:0">{{ product.title }}</h1>
+    <div class="product__price" style="margin:0">
+      {%- if product.price_varies -%}From {% endif -%}{{ product.price_min | money }}
+      <span class="product__tax" style="font-size:.85rem;opacity:.7"> · names, front &amp; personalisation included</span>
+    </div>
+  </div>
+  {%- if section.settings.intro != blank -%}<div class="rte" style="margin:-6px 0 18px;max-width:880px">{{ section.settings.intro }}</div>{%- endif -%}
+
+  <div data-leavers-designer>
+    <script type="application/json">
+      {
+        "product": {{ ld_key | json }},
+        "variants": [{%- for v in product.variants -%}{"id": {{ v.id }}, "option1": {{ v.option1 | json }}, "title": {{ v.title | json }}, "price": {{ v.price }}, "available": {{ v.available }}}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}],
+        "moneyFormat": {{ shop.money_format | strip_html | json }},
+        "studioUrl": {{ studio_url | json }},
+        "cartAddUrl": {{ routes.cart_add_url | append: '.js' | json }},
+        "cartChangeUrl": {{ routes.cart_change_url | append: '.js' | json }},
+        "cartUrl": {{ routes.cart_url | json }}
+      }
+    </script>
+    <noscript><p>The leavers designer needs JavaScript turned on.</p></noscript>
+  </div>
+
+  <div class="accordion" style="margin-top:28px;max-width:880px">
+    <details open><summary>{{ 'products.product.description' | t }}</summary><div class="rte">{{ product.description }}</div></details>
+    {%- for block in section.blocks -%}
+      <details {{ block.shopify_attributes }}><summary>{{ block.settings.heading }}</summary><div class="rte">{{ block.settings.content }}</div></details>
+    {%- endfor -%}
+  </div>
+</div>
+
+<script src="{{ 'leavers-engine.js' | asset_url }}"></script>
+<script>
+  (function () {
+    var l = document.createElement('link');
+    l.rel = 'stylesheet';
+    l.href = window.LeaversEngine.fontsCssUrl();
+    document.head.appendChild(l);
+  })();
+</script>
+<script src="{{ 'leavers-designer.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Leavers designer",
+  "settings": [
+    { "type": "select", "id": "garment", "label": "Garment (if the product has no ld- tag)", "default": "hoodie", "options": [
+      { "value": "hoodie", "label": "Classic hoodie" },
+      { "value": "kids-hoodie", "label": "Kids / primary hoodie" },
+      { "value": "zip-hoodie", "label": "Zip hoodie" },
+      { "value": "varsity-hoodie", "label": "Two-tone varsity hoodie" },
+      { "value": "sweatshirt", "label": "Sweatshirt" },
+      { "value": "tshirt", "label": "T-shirt" }
+    ] },
+    { "type": "text", "id": "studio_handle", "label": "Print Studio page handle", "default": "leavers-print-studio" },
+    { "type": "richtext", "id": "intro", "label": "Intro text", "default": "<p>Pick a colour, choose a back design, add your year group's names and see the finished hoodie update live. Ordering for the whole year? Switch to <strong>Whole group</strong> in step 7.</p>" }
+  ],
+  "blocks": [
+    { "type": "tab", "name": "Info tab", "settings": [
+      { "type": "text", "id": "heading", "label": "Heading", "default": "Delivery & returns" },
+      { "type": "richtext", "id": "content", "label": "Content" }
+    ] }
+  ],
+  "presets": [{ "name": "Leavers designer" }]
+}
+{% endschema %}

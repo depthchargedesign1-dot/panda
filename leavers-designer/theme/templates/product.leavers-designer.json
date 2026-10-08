@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "main": {
+      "type": "leavers-designer",
+      "blocks": {
+        "t1": { "type": "tab", "settings": { "heading": "How it works", "content": "<p><strong>1.</strong> Design it here and check the live preview and print files. <strong>2.</strong> Add one hoodie, or switch to Whole group and add everyone with their own size and name. <strong>3.</strong> We print exactly what you approved using durable DTF transfers on premium hoodies.</p>" } },
+        "t2": { "type": "tab", "settings": { "heading": "Delivery & returns", "content": "<p>Printed in the UK and dispatched in 5–7 working days. Group orders for a whole year are dispatched together. Personalised items can't be returned unless faulty — if something's not right, we'll reprint it.</p>" } },
+        "t3": { "type": "tab", "settings": { "heading": "Sizes", "content": "<p>Adult sizes are unisex and roomy — pick your usual size. Kids sizes are by age. Not sure? Order a size up for a relaxed leavers fit.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3"],
+      "settings": { "garment": "hoodie", "studio_handle": "leavers-print-studio" }
+    },
+    "reviews": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_reviews": { "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8", "settings": {} }
+      },
+      "block_order": ["judgeme_reviews"],
+      "settings": { "heading": "", "tinted": false }
+    },
+    "related": {
+      "type": "related-products",
+      "settings": { "heading": "More leavers wear", "limit": 4, "tinted": true }
+    }
+  },
+  "order": ["main", "reviews", "related"]
+}

@@ -1,0 +1,52 @@
+# Foxy Leavers Designer
+
+A leavers-hoodie designer for foxyprinting.co.uk. Customers pick a garment colour and a back design, add their year group's names, choose fonts and print colours, add a front design and a personal name, check a live preview and the actual print files, then order for themselves or for a whole group. Every order line carries a link that regenerates the exact 300 dpi print files.
+
+## What's in here
+
+| Path | What it does |
+| --- | --- |
+| `theme/assets/leavers-engine.js` | Rendering engine shared by everything: layouts, fonts, garment mockups, 300 dpi PNG export, design codes |
+| `theme/assets/leavers-designer.js` / `.css` | The product-page designer app |
+| `theme/assets/leavers-print-studio.js` | Staff Print Studio: link from the order → print-ready PNGs |
+| `theme/sections/leavers-designer.liquid` | Shopify product section (reads variants, posts to `/cart/add.js`) |
+| `theme/sections/leavers-print-studio.liquid` | Shopify page section for the Print Studio |
+| `theme/templates/product.leavers-designer.json` | Product template, set as the template on every leavers product |
+| `theme/templates/page.leavers-print-studio.json` | Page template for `/pages/leavers-print-studio` |
+| `demo/index.html`, `demo/print-studio.html` | Run the designer and studio locally without Shopify (open in a browser) |
+| `tools/render-print-files.mjs` | Command-line / server renderer (Playwright Chromium, same engine) |
+
+## Range
+
+| Garment | Tag | Print areas (mm) |
+| --- | --- | --- |
+| Classic Leavers Hoodie | `ld-hoodie` | back 300×380, chest 100×100, big front 280×200, sleeve 70×400, right chest 90×40 |
+| Primary Leavers Hoodie (Kids) | `ld-kids-hoodie` | back 250×310, chest 80×80, big front 220×160, sleeve 55×300 |
+| Leavers Zip Hoodie | `ld-zip-hoodie` | back, chest, sleeve, right chest (no centre front because of the zip) |
+| Two-Tone Varsity Leavers Hoodie | `ld-varsity-hoodie` | as the classic hoodie, plus a contrast hood/cuffs/hem colour |
+| Leavers Sweatshirt | `ld-sweatshirt` | as the classic hoodie |
+| Leavers T-Shirt | `ld-tshirt` | back, chest, big front, right chest |
+
+**Back designs (9):** Names in the Year, Heart of Names, Star of the Show, Stacked Block, Class Of, College Badge, Squad Shirt, Name Wall, Year Only.
+**Front designs:** plain, chest badge (text and icon), uploaded school logo, big college front (arched), big stacked front.
+**Personal name:** down the sleeve, front right chest, or above the back design.
+**Fonts:** 26 Google Fonts in Bold, Varsity, Script, Fun and Classic groups. **Colours:** 20 garment colours and 16 print colours.
+
+## How an order becomes a print file
+
+1. The designer adds one basket line per hoodie, with readable properties (colour, back design, names count, fonts, colours, front, personal name). It also adds two hidden properties:
+   - `_Print files`: `https://foxyprinting.co.uk/pages/leavers-print-studio#d=<code>`. The code is the full design, compressed. It sits in the URL fragment, so it is never sent to a server.
+   - `_Group design`: a short reference that is the same for every hoodie sharing one back design, so a group order can be batched.
+2. In Shopify admin, open the order and click the `_Print files` link. The Print Studio shows the mockups, every name for a spelling check, and a **Generate print files** button. It produces transparent PNGs at 300 dpi, with the dpi written into the file so RIP and DTF software opens them at the correct physical size.
+3. Or render the files without opening anything:
+
+```bash
+node tools/render-print-files.mjs "<_Print files link>" --out print-files --prefix order1042
+node tools/render-print-files.mjs --order order.json --out print-files   # Shopify order JSON / webhook payload
+```
+
+An uploaded logo is stored by Shopify with the first basket line, and its CDN URL is written into every design code.
+
+## Install on a theme
+
+Upload the files in `theme/` to the theme. Tag each product `ld-<garment>`, give it a single **Size** option, and set its template to `leavers-designer`. Create a page with the handle `leavers-print-studio` using the `leavers-print-studio` template.

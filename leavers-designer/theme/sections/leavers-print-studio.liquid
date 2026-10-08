@@ -1,0 +1,19 @@
+{%- comment -%}
+  Staff tool: renders the 300 dpi print files for a leavers order from its "_Print files" link.
+  It only draws what is in the link, so it is safe on a public page; the page is hidden from search.
+{%- endcomment -%}
+{{ 'leavers-designer.css' | asset_url | stylesheet_tag }}
+<div data-leavers-studio></div>
+<script src="{{ 'leavers-engine.js' | asset_url }}"></script>
+<script>
+  (function () {
+    var l = document.createElement('link');
+    l.rel = 'stylesheet';
+    l.href = window.LeaversEngine.fontsCssUrl();
+    document.head.appendChild(l);
+  })();
+</script>
+<script src="{{ 'leavers-print-studio.js' | asset_url }}" defer></script>
+{% schema %}
+{ "name": "Leavers print studio", "settings": [] }
+{% endschema %}
