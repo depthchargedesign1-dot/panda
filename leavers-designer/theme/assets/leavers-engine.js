@@ -114,20 +114,42 @@
    * Garments. Print areas are in millimetres; k is mockup pixels per mm.
    * colours: a list of single colours, or `colourways` of body + contrast (sleeves etc.).
    */
+  // Print areas in millimetres. The adult back is the full 40 x 50 cm press.
   var ADULT_AREAS = {
-    back: { w: 350, h: 440, label: 'Back' },
+    back: { w: 400, h: 500, label: 'Back' },
     chest: { w: 100, h: 100, label: 'Front left chest' },
     centre: { w: 300, h: 220, label: 'Front centre' },
     personal: { w: 90, h: 40, label: 'Front right chest' },
     sleeve: { w: 70, h: 400, label: 'Left sleeve' }
   };
+  var KIDS_AREAS = {
+    back: { w: 300, h: 375, label: 'Back' },
+    chest: { w: 80, h: 80, label: 'Front left chest' },
+    centre: { w: 230, h: 170, label: 'Front centre' },
+    personal: { w: 75, h: 34, label: 'Front right chest' },
+    sleeve: { w: 55, h: 300, label: 'Left sleeve' }
+  };
+  var KIDS_SIZES = ['3-4 yrs', '5-6 yrs', '7-8 yrs', '9-11 yrs', '12-13 yrs'];
+
+  /*
+   * photo: where each print area sits on the real garment photos (1000 x 1000, drawn at y + 50 in the
+   * 1000 x 1100 preview), and k = photo pixels per millimetre of print.
+   */
   var PRODUCTS = {
     'college-hoodie': {
-      name: 'College Hoodie 2.0', code: 'JH001', mockup: 'hoodie', k: 0.97, areas: ADULT_AREAS,
+      name: 'College Hoodie 2.0', code: 'JH001', mockup: 'hoodie', k: 0.97, areas: ADULT_AREAS, kidsAreas: KIDS_AREAS,
       blurb: '280gsm, 80% ringspun cotton / 20% polyester, double-layer hood, kangaroo pocket.',
       colours: COLLEGE_COLOURS,
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL'], price: 26.99,
-      upcharge: { '2XL': 2, '3XL': 2, '4XL': 4, '5XL': 4 }
+      sizes: KIDS_SIZES.concat(['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL']), price: 18.99,
+      upcharge: { '3-4 yrs': -3, '5-6 yrs': -3, '7-8 yrs': -3, '9-11 yrs': -3, '12-13 yrs': -3, '2XL': 2, '3XL': 2, '4XL': 4, '5XL': 4 },
+      photo: {
+        k: 0.95,
+        back: { view: 'back', cx: 500, top: 308 },
+        chest: { view: 'front', cx: 622, top: 252 },
+        centre: { view: 'front', cx: 500, top: 236 },
+        personal: { view: 'front', cx: 380, top: 262 },
+        sleeve: { view: 'front', line: [772, 330, 800, 860], t: 0.5 }
+      }
     },
     'baseball-hoodie': {
       name: 'Baseball Hoodie', code: 'JH009', mockup: 'baseball', k: 0.97, areas: ADULT_AREAS,
@@ -138,12 +160,20 @@
         ['heather-grey', 'oxford-navy'], ['oxford-navy', 'heather-grey'], ['oxford-navy', 'burgundy'],
         ['arctic-white', 'jet-black'], ['burgundy', 'charcoal'], ['baby-pink', 'heather-grey']
       ]),
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL'], price: 29.99, upcharge: { '2XL': 2 }
+      sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL'], price: 21.99, upcharge: { '2XL': 2 },
+      photo: {
+        k: 0.92,
+        back: { view: 'back', cx: 500, top: 250 },
+        chest: { view: 'front', cx: 600, top: 262 },
+        centre: { view: 'front', cx: 500, top: 250 },
+        personal: { view: 'front', cx: 395, top: 272 },
+        sleeve: { view: 'front', line: [745, 330, 775, 880], t: 0.5 }
+      }
     },
     'varsity-jacket': {
       name: 'Varsity Jacket', code: 'JH043', mockup: 'varsity', k: 0.97,
       areas: {
-        back: { w: 330, h: 380, label: 'Back' },
+        back: { w: 400, h: 480, label: 'Back' },
         chest: ADULT_AREAS.chest,
         personal: ADULT_AREAS.personal,
         sleeve: { w: 70, h: 380, label: 'Left sleeve' }
@@ -155,14 +185,29 @@
         ['oxford-navy', 'burgundy'], ['burgundy', 'heather-grey'], ['fire-red', 'white'], ['royal-blue', 'white'],
         ['sapphire', 'heather-grey'], ['kelly-green', 'white'], ['purple', 'white'], ['heather-grey', 'white']
       ]),
-      sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL'], price: 39.99, upcharge: { '2XL': 2 }
+      sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL'], price: 29.99, upcharge: { '2XL': 2 },
+      photo: {
+        k: 0.88,
+        back: { view: 'back', cx: 495, top: 232 },
+        chest: { view: 'front', cx: 592, top: 262 },
+        personal: { view: 'front', cx: 405, top: 275 },
+        sleeve: { view: 'front', line: [760, 300, 830, 800], t: 0.5 }
+      }
     }
   };
   var DEFAULT_PRODUCT = 'college-hoodie';
 
   // The colour choices for a garment: [{ id, name, body, trim }] (hex values).
+  function photoSet() { return root.LEAVERS_PHOTOS || null; }
+
   function colourOptions(productKey) {
-    var p = PRODUCTS[productKey] || PRODUCTS[DEFAULT_PRODUCT];
+    var key = PRODUCTS[productKey] ? productKey : DEFAULT_PRODUCT;
+    var p = PRODUCTS[key], ph = photoSet();
+    if (ph && ph.products[key]) {
+      return ph.products[key].map(function (c) {
+        return { id: c.id, name: c.name, body: c.hex, trim: c.trim || c.hex, front: ph.base + c.front, back: ph.base + c.back };
+      });
+    }
     if (p.colourways) {
       return p.colourways.map(function (w) {
         var b = byId(GARMENTS, w.body), t = byId(GARMENTS, w.trim);
@@ -171,10 +216,13 @@
     }
     return p.colours.map(function (g) { return { id: g.id, name: g.name, body: g.hex, trim: g.hex }; });
   }
-  // Black (or black-bodied) first: the default white print reads on it.
+  // A black (or black-bodied) garment first: the default white print reads on it.
   function defaultColour(productKey) {
     var opts = colourOptions(productKey);
-    for (var i = 0; i < opts.length; i++) if (opts[i].id.indexOf('jet-black') === 0) return opts[i].id;
+    var prefs = ['jet-black', 'black-smoke'];
+    for (var j = 0; j < prefs.length; j++) {
+      for (var i = 0; i < opts.length; i++) if (opts[i].id.indexOf(prefs[j]) === 0) return opts[i].id;
+    }
     return opts[0].id;
   }
   function colourOf(d) {
@@ -901,23 +949,26 @@
   /* ------------------------------------------------------------------ print areas */
 
   function product(d) { return PRODUCTS[d.product] || PRODUCTS[DEFAULT_PRODUCT]; }
+  function isKids(size) { return KIDS_SIZES.indexOf(size) >= 0; }
+  // Print areas for this design: kids sizes print smaller.
+  function areasOf(d) { var p = product(d); return isKids(d.size) && p.kidsAreas ? p.kidsAreas : p.areas; }
   function frontStyle(d) { return byId(FRONT_STYLES, d.front.style); }
   function personalPos(d) { return byId(PERSONAL_POSITIONS, d.personal.position); }
 
   // The areas this design prints on, in print order.
   function printAreas(d, forPreview) {
-    var p = product(d), out = [];
-    function add(key) { if (p.areas[key]) out.push({ key: key, mm: p.areas[key], label: p.areas[key].label }); }
+    var areas = areasOf(d), out = [];
+    function add(key) { if (areas[key]) out.push({ key: key, mm: areas[key], label: areas[key].label }); }
     add('back');
     var fs = frontStyle(d);
-    if (fs.area) add(p.areas[fs.area] ? fs.area : 'chest');
+    if (fs.area) add(areas[fs.area] ? fs.area : 'chest');
     var pp = personalPos(d);
     if (pp.area && (forPreview || (d.personal.text || '').trim())) add(pp.area);
     return out;
   }
 
   function renderArea(canvas, d, key) {
-    var p = product(d), mm = p.areas[key];
+    var mm = areasOf(d)[key];
     var ctx = canvas.getContext('2d');
     var H = REF * mm.h / mm.w, s = canvas.width / REF;
     ctx.setTransform(1, 0, 0, 1, 0, 0);
@@ -930,7 +981,7 @@
   }
 
   function areaCanvas(d, key, widthPx) {
-    var mm = product(d).areas[key];
+    var mm = areasOf(d)[key];
     var w = Math.max(1, Math.round(widthPx)), h = Math.max(1, Math.round(widthPx * mm.h / mm.w));
     var c = makeCanvas(w, h);
     renderArea(c, d, key);
@@ -1124,25 +1175,106 @@
     ctx.restore();
   }
 
+  // Garment photos: loaded once, then every redraw is instant. Listen for "leavers:photo" to redraw.
+  var photoCache = new Map();
+  function photoImage(url) {
+    if (!url || typeof Image === 'undefined') return null;
+    var img = photoCache.get(url);
+    if (!img) {
+      img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.decoding = 'async';
+      img.onload = function () {
+        if (typeof window !== 'undefined' && window.dispatchEvent) window.dispatchEvent(new CustomEvent('leavers:photo', { detail: url }));
+      };
+      img.src = url;
+      photoCache.set(url, img);
+    }
+    return img.complete && img.naturalWidth ? img : null;
+  }
+  function photoUrl(d, view) {
+    var c = colourOf(d);
+    return view === 'back' ? c.back : c.front;
+  }
+  function hasPhotos(d) { return !!(colourOf(d).front && product(d).photo); }
+  function loadPhotos(d) {
+    if (!hasPhotos(d)) return Promise.resolve();
+    return Promise.all(['front', 'back'].map(function (v) {
+      var url = photoUrl(d, v), img = photoImage(url) || photoCache.get(url);
+      if (!img || (img.complete && img.naturalWidth)) return null;
+      return new Promise(function (res) { img.addEventListener('load', res); img.addEventListener('error', res); });
+    }));
+  }
+
+  function drawPrint(ctx, d, a, place, k, S, quality) {
+    var w = a.mm.w * k, h = a.mm.h * k;
+    var c = areaCanvas(d, a.key, w * S * (quality || 1.5));
+    ctx.save();
+    ctx.globalAlpha = 0.97;
+    if (place.line) {
+      var L = place.line, dx = L[2] - L[0], dy = L[3] - L[1];
+      ctx.translate(L[0] + dx * place.t, L[1] + dy * place.t);
+      ctx.rotate(-Math.atan2(dx, dy));
+      ctx.drawImage(c, -w / 2, -h / 2, w, h);
+    } else {
+      ctx.drawImage(c, place.cx - w / 2, place.top, w, h);
+    }
+    ctx.restore();
+  }
+
   function renderMockup(canvas, d, view, opts) {
     opts = opts || {};
     var ctx = canvas.getContext('2d');
     var S = canvas.width / 1000;
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    if (opts.background) { ctx.fillStyle = opts.background; ctx.fillRect(0, 0, canvas.width, canvas.height); }
     var p = product(d);
+    var photos = hasPhotos(d) && !opts.drawn;
 
+    if (photos) {
+      // Real garment photo, with the print placed where it is pressed on the garment.
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      var pv = view === 'detail' ? 'back' : view;
+      var img = photoImage(photoUrl(d, pv));
+      ctx.setTransform(S, 0, 0, S, 0, 0);
+      if (view === 'detail') {
+        // Zoom in on the back print.
+        var bp = p.photo.back, bmm = areasOf(d).back, bw = bmm.w * p.photo.k, bh = bmm.h * p.photo.k;
+        var z = 1000 / (bh * 1.18);
+        var cx = bp.cx, cy = 50 + bp.top + bh / 2;
+        ctx.translate(500, 550);
+        ctx.scale(z, z);
+        ctx.translate(-cx, -cy);
+      }
+      if (img) ctx.drawImage(img, 0, 50, 1000, 1000);
+      else {
+        ctx.fillStyle = '#F2F2F2';
+        ctx.fillRect(0, 50, 1000, 1000);
+      }
+      if (!opts.blank) {
+        ctx.translate(0, 50);
+        printAreas(d, true).forEach(function (a) {
+          var place = p.photo[a.key];
+          if (!place || place.view !== pv) return;
+          drawPrint(ctx, d, a, place, p.photo.k, S * (view === 'detail' ? 2.5 : 1), opts.quality);
+        });
+      }
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      return !!img;
+    }
+
+    if (opts.background) { ctx.fillStyle = opts.background; ctx.fillRect(0, 0, canvas.width, canvas.height); }
     if (view === 'detail') {
       // Close-up of the back print on the garment colour.
-      var mm = p.areas.back;
+      var mm = areasOf(d).back;
       ctx.fillStyle = bodyHex(d);
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       var h = canvas.height * 0.92, w = h * mm.w / mm.h;
       if (w > canvas.width * 0.92) { w = canvas.width * 0.92; h = w * mm.h / mm.w; }
       var c = areaCanvas(d, 'back', w);
       ctx.drawImage(c, (canvas.width - w) / 2, (canvas.height - h) / 2, w, h);
-      return;
+      return true;
     }
 
     ctx.setTransform(S, 0, 0, S, 0, 0);
@@ -1151,22 +1283,11 @@
       var place = PLACES[a.key];
       if (!place || place.view !== view) return;
       if (p.mockup === 'tee' && a.key === 'sleeve') return;
-      var w = a.mm.w * p.k, h = a.mm.h * p.k;
-      var c = areaCanvas(d, a.key, w * S * (opts.quality || 1.5));
-      ctx.save();
-      ctx.globalAlpha = 0.97;
-      if (place.line) {
-        var L = place.line, dx = L[2] - L[0], dy = L[3] - L[1];
-        ctx.translate(L[0] + dx * place.t, L[1] + dy * place.t);
-        ctx.rotate(-Math.atan2(dx, dy));
-        ctx.drawImage(c, -w / 2, -h / 2, w, h);
-      } else {
-        ctx.drawImage(c, place.cx - w / 2, place.top, w, h);
-      }
-      ctx.restore();
+      drawPrint(ctx, d, a, place, p.k, S, opts.quality);
     });
     drawGarment(ctx, d, view, 'over');
     ctx.setTransform(1, 0, 0, 1, 0, 0);
+    return true;
   }
 
   /* ------------------------------------------------------------------ print files */
@@ -1225,7 +1346,7 @@
         var w = Math.round(a.mm.w / 25.4 * dpi), h = Math.round(a.mm.h / 25.4 * dpi);
         var c = makeCanvas(w, h);
         renderArea(c, pd, a.key);
-        var name = [opts.prefix || 'leavers', d.product, a.key, slug(d.personal.text)].filter(Boolean).join('_') + '_' + dpi + 'dpi.png';
+        var name = [opts.prefix || 'leavers', d.product, slug(d.size), a.key, slug(d.personal.text)].filter(Boolean).join('_') + '_' + dpi + 'dpi.png';
         return canvasToPng(c, dpi).then(function (blob) {
           return { key: a.key, label: a.label, mm: a.mm, width: w, height: h, filename: name, blob: blob, canvas: c };
         });
@@ -1273,7 +1394,7 @@
     var base = defaultDesign(d.product);
     return {
       v: 1, product: base.product,
-      garment: d.garment || base.garment,
+      garment: d.garment || base.garment, size: d.size || '',
       back: Object.assign(base.back, d.back || {}),
       front: Object.assign(base.front, d.front || {}),
       personal: Object.assign(base.personal, d.personal || {})
@@ -1288,7 +1409,7 @@
   root.LeaversEngine = {
     REF: REF,
     FONTS: FONTS, INKS: INKS, GARMENTS: GARMENTS, PRODUCTS: PRODUCTS, DEFAULT_PRODUCT: DEFAULT_PRODUCT,
-    colourOptions: colourOptions, defaultColour: defaultColour, colourOf: colourOf, bodyHex: bodyHex, trimHex: trimHex,
+    colourOptions: colourOptions, defaultColour: defaultColour, colourOf: colourOf, hasPhotos: hasPhotos, loadPhotos: loadPhotos, isKids: isKids, KIDS_SIZES: KIDS_SIZES, bodyHex: bodyHex, trimHex: trimHex,
     BACK_TEMPLATES: BACK_TEMPLATES, FRONT_STYLES: FRONT_STYLES, PERSONAL_POSITIONS: PERSONAL_POSITIONS,
     ICON_NAMES: ICON_NAMES, SAMPLE_NAMES: SAMPLE_NAMES,
     defaultDesign: defaultDesign, upgrade: upgrade,

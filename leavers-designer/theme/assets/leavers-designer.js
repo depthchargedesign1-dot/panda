@@ -65,8 +65,10 @@
 
     function template() {
       var swatches = E.colourOptions(productKey).map(function (c) {
+        var pic = c.front ? '<img src="' + esc(c.front + '?width=180') + '" alt="" loading="lazy" width="90" height="90">' :
+          '<canvas width="84" height="92" data-garment-thumb="' + c.id + '"></canvas>';
         return '<button type="button" class="ld-gswatch" data-garment="' + c.id + '" title="' + esc(c.name) + '" aria-label="' + esc(c.name) + '">' +
-          '<canvas width="84" height="92" data-garment-thumb="' + c.id + '"></canvas><span>' + esc(c.name) + '</span></button>';
+          pic + '<span>' + esc(c.name) + '</span></button>';
       }).join('');
       // Other garments in the range (Shopify passes the collection's products; the demo links to itself).
       var siblings = (!config.demo ? config.siblings || [] : Object.keys(E.PRODUCTS).map(function (k) {
@@ -128,8 +130,13 @@
         '      <label class="ld-field"><span>Year</span><input type="text" maxlength="6" data-bind="back.year" placeholder="26 or 2026"></label>' +
         '      <label class="ld-field"><span>School / group name</span><input type="text" maxlength="40" data-bind="back.school"></label>' +
         '    </div>' +
-        '    <label class="ld-field" data-names-field><span>Names on the back — one per line <b data-name-count></b></span>' +
-        '      <textarea rows="8" data-names spellcheck="false" placeholder="Olivia Smith&#10;Jack Taylor&#10;…"></textarea></label>' +
+        '    <div class="ld-field" data-names-field><span>Names for the back — one box per pupil <b data-name-count></b></span>' +
+        '      <div class="ld-names" data-name-list></div>' +
+        '      <div class="ld-row ld-row--wrap"><button type="button" class="ld-chip" data-name-add>+ Add a name</button>' +
+        '        <button type="button" class="ld-chip" data-names-paste-toggle>Paste a whole list</button></div>' +
+        '      <div data-names-paste hidden><textarea rows="8" data-names spellcheck="false" placeholder="Olivia Smith&#10;Jack Taylor&#10;…"></textarea>' +
+        '        <p class="ld-note">Paste or type one name per line — the boxes above update as you go.</p></div>' +
+        '    </div>' +
         '    <div class="ld-row ld-row--wrap" data-names-tools>' +
         '      <button type="button" class="ld-chip" data-names-action="sort">Sort A–Z</button>' +
         '      <button type="button" class="ld-chip" data-names-action="dedupe">Remove duplicates</button>' +
@@ -223,10 +230,81 @@
     });
 
     var namesBox = $('[data-names]');
+    var nameList = $('[data-name-list]');
     namesBox.value = d.back.names.join('\n');
+
+    function namesChanged() {
+      refresh(); thumbsSoon();
+    }
+    // One text box per pupil, plus an empty box at the end for the next name.
+    function renderNameList(focusIndex) {
+      nameList.innerHTML = d.back.names.map(function (n, i) {
+        return '<div class="ld-name"><span class="ld-name__n">' + (i + 1) + '</span>' +
+          '<input type="text" maxlength="32" value="' + esc(n) + '" data-name-i="' + i + '" aria-label="Name ' + (i + 1) + '" spellcheck="false">' +
+          '<button type="button" data-name-del="' + i + '" aria-label="Remove ' + esc(n || 'name') + '">✕</button></div>';
+      }).join('') +
+        '<div class="ld-name ld-name--new"><span class="ld-name__n">' + (d.back.names.length + 1) + '</span>' +
+        '<input type="text" maxlength="32" data-name-new placeholder="Type a name and press Enter" aria-label="Add a name" spellcheck="false"></div>';
+      if (focusIndex != null) {
+        var el = focusIndex >= d.back.names.length ? nameList.querySelector('[data-name-new]') : nameList.querySelector('[data-name-i="' + focusIndex + '"]');
+        if (el) el.focus();
+      }
+    }
+    function addNewName(input) {
+      var v = input.value.trim();
+      if (!v) return false;
+      input.value = '';
+      d.back.names.push(v);
+      namesBox.value = d.back.names.join('\n');
+      renderNameList(d.back.names.length);
+      namesChanged();
+      return true;
+    }
+    nameList.addEventListener('input', function (e) {
+      var i = e.target.getAttribute('data-name-i');
+      if (i == null) return;
+      d.back.names[+i] = e.target.value;
+      namesBox.value = d.back.names.join('\n');
+      $('[data-name-count]').textContent = '(' + E.cleanNames(d).length + ')';
+      namesChanged();
+    });
+    nameList.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter') return;
+      e.preventDefault();
+      if (e.target.hasAttribute('data-name-new')) { addNewName(e.target); return; }
+      var i = +e.target.getAttribute('data-name-i');
+      var next = nameList.querySelector('[data-name-i="' + (i + 1) + '"]') || nameList.querySelector('[data-name-new]');
+      if (next) next.focus();
+    });
+    nameList.addEventListener('focusout', function (e) {
+      if (e.target.hasAttribute('data-name-new')) { if (addNewName(e.target)) return; }
+      if (e.target.hasAttribute('data-name-i') && !e.target.value.trim()) {
+        d.back.names.splice(+e.target.getAttribute('data-name-i'), 1);
+        namesBox.value = d.back.names.join('\n');
+        setTimeout(function () { renderNameList(); namesChanged(); });
+      }
+    });
+    nameList.addEventListener('click', function (e) {
+      var del = e.target.getAttribute('data-name-del');
+      if (del == null) return;
+      d.back.names.splice(+del, 1);
+      namesBox.value = d.back.names.join('\n');
+      renderNameList();
+      namesChanged();
+    });
+    $('[data-name-add]').addEventListener('click', function () {
+      var input = nameList.querySelector('[data-name-new]');
+      if (input) { input.focus(); input.scrollIntoView({ block: 'nearest' }); }
+    });
+    $('[data-names-paste-toggle]').addEventListener('click', function () {
+      var box = $('[data-names-paste]');
+      box.hidden = !box.hidden;
+      if (!box.hidden) namesBox.focus();
+    });
     namesBox.addEventListener('input', function () {
       d.back.names = namesBox.value.split(/\n/).map(function (s) { return s.trim(); }).filter(Boolean);
-      refresh(); thumbsSoon();
+      renderNameList();
+      namesChanged();
     });
     $$('[data-names-action]').forEach(function (b) {
       b.addEventListener('click', function () {
@@ -238,6 +316,7 @@
         if (act === 'clear') list = [];
         d.back.names = list;
         namesBox.value = list.join('\n');
+        renderNameList();
         refresh(); thumbsSoon();
       });
     });
@@ -267,7 +346,7 @@
     clickGroup('data-font-target', function (t) { ui.fontTarget = t; renderFonts(); });
     clickGroup('data-font-cat', function (c) { ui.fontCat = c; renderFonts(); });
     clickGroup('data-mode', function (m) { ui.mode = m; });
-    clickGroup('data-size', function (s) { ui.size = s; });
+    clickGroup('data-size', function (s) { ui.size = s; d.size = s; });
 
     $('[data-qty-input]').addEventListener('input', function (e) { ui.qty = Math.max(1, parseInt(e.target.value, 10) || 1); refresh(); });
     $$('[data-qty]').forEach(function (b) {
@@ -388,7 +467,7 @@
     }
 
     function drawGarmentThumbs() {
-      $$('[data-garment-thumb]').forEach(function (c) {
+      $$('canvas[data-garment-thumb]').forEach(function (c) {
         E.renderMockup(c, { product: productKey, garment: c.getAttribute('data-garment-thumb') }, 'front', { blank: true });
       });
       $$('[data-product-thumb]').forEach(function (c) {
@@ -581,6 +660,7 @@
     function designFor(item) {
       var copy = JSON.parse(JSON.stringify(d));
       copy.personal.text = d.personal.position === 'none' ? '' : String(item.name || '').trim();
+      copy.size = item.size;
       return copy;
     }
 
@@ -643,8 +723,11 @@
 
     /* ---------------------------------------------------------------- start */
 
+    d.size = ui.size;
+    renderNameList();
     renderFonts();
     renderRows();
+    window.addEventListener('leavers:photo', debounce(function () { draw(); drawGarmentThumbs(); }, 60));
     refresh();
     thumbsSoon();
     E.loadFonts(d, true).then(function () { refresh(); thumbsSoon(); renderFonts(); });

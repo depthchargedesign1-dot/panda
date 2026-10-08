@@ -44,7 +44,7 @@
       $('[data-all]').hidden = true;
       return E.decode(code).then(function (d) {
         design = d;
-        return Promise.all([E.loadFonts(d), E.loadLogo(d)]).then(function () { show(d); });
+        return Promise.all([E.loadFonts(d), E.loadLogo(d), E.loadPhotos(d)]).then(function () { show(d); });
       }).catch(function (e) {
         $('[data-result]').hidden = true;
         $('[data-error]').textContent = 'That doesn\'t look like a leavers design code (' + e.message + ').';
