@@ -3,25 +3,25 @@
   "4-mugs-and-prints-part1.csv": {
    "rows": 18011,
    "handles": 7709,
-   "bytes": 14466433,
+   "bytes": 14466853,
    "posters": 1435
   },
   "5-mugs-and-prints-part2.csv": {
    "rows": 21942,
    "handles": 5193,
-   "bytes": 13888099,
+   "bytes": 13891609,
    "posters": 5133
   },
   "6-mugs-and-prints-part3.csv": {
    "rows": 3069,
    "handles": 3069,
-   "bytes": 6732350,
+   "bytes": 6734450,
    "posters": 3069
   },
   "7-mugs-and-prints-part4.csv": {
    "rows": 3788,
    "handles": 3737,
-   "bytes": 8515828,
+   "bytes": 8516938,
    "posters": 3736
   }
  },
@@ -204,6 +204,5 @@
    "Co Stompã© 2 Printed Signature Darts Star Poster Print Framed Wall Art Gift",
    "Co Stompé 2 Printed Signature Darts Star Poster Print Framed Wall Art Gift"
   ]
- ],
- "poster_handles_by_file": null
+ ]
 }

@@ -198,7 +198,7 @@ SPORT = {
                 when="fight night", range="fight poster", who="fighter"),
     "boxing": dict(topic="boxing", fan="boxing fan", body="any boxing promoter, sanctioning body or fighter",
                    when="fight night", range="boxing poster", who="boxer"),
-    "f1": dict(topic="motorsport", fan="motorsport fan", body="Formula 1, or any racing team, series or driver",
+    "f1": dict(topic="motorsport", fan="motorsport fan", body="any racing series (such as Formula 1 or MotoGP), or any racing team or driver",
                when="a Grand Prix weekend", range="motorsport poster", who="driver"),
     "sportother": dict(topic="sport", fan="sports fan", body="any sports club, team, league or governing body",
                        when="a big race or match", range="sports poster", who="star"),
@@ -722,9 +722,7 @@ def main(live_path, qdir, out_dir, files=None, dry=False):
         report["files"][fn] = {"rows": len(body_rows), "handles": len(groups), "bytes": len(data),
                                "posters": sum(1 for h in groups if h in poster_handles)}
     report["posters"] = len(poster_handles)
-    report["poster_handles_by_file"] = None
     json.dump(report, open(os.path.join(out_dir, "report.json" if len(files) > 1 else "report-" + files[0][:1] + ".json"), "w"), indent=1, ensure_ascii=False)
-    json.dump(sorted(poster_handles), open(os.path.join(out_dir, "_poster_handles.json"), "w"))
     write_samples(samples, os.path.join(out_dir, "samples.html"))
     print(json.dumps({k: v for k, v in report.items() if k != "problems"}, indent=1, ensure_ascii=False)[:4000])
     print("problems:", len(report["problems"]), report["problems"][:10])
