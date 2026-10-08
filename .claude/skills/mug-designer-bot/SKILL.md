@@ -27,7 +27,7 @@ a personalised sample, or a club/brand Shaun wants used).
    The Dropbox connector writes text files only; never claim a PNG/PDF is in Dropbox unless it is.
 5. **Images + Shopify** -> `mug-lifestyle-shopify` skill (mockups, lifestyle photos, DRAFT product).
 6. **Amazon** -> `amazon-listing-converter` skill (variations, Amazon Custom name boxes, safe upload pack).
-   **eBay** -> a separate eBay upload file (titles <= 80 chars). Main images must be the white-background mockups.
+   **eBay** -> a separate eBay upload file (titles <= 80 chars). Main images must be real photos of the printed product on white (never drawn/CAD mockups - owner's rule, see mug-lifestyle-shopify).
 7. **Report** (short): per product - SKU, Shopify admin link, Dropbox folder, zip link, what still
    needs Shaun (prices, eBay category/business policies), Higgsfield credits used (if Higgsfield was unavailable, say whether ChatGPT was used as the fallback - see mug-lifestyle-shopify).
 

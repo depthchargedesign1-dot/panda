@@ -14,7 +14,14 @@ Store: Foxy Printing - foxyprinting.co.uk (Shopify connector, GBP). Admin handle
 4. Lifestyle 2 - matches the theme (office desk, football on the telly + scarf, gift wrap and card, Christmas)
 5. Lifestyle 3 - in hand / gift box opening (optional)
 6. `mockup 3 flat wrap`
-Mockups come from mugkit (exact print, never AI). Upload them with `mcp__Higgsfield__media_upload` from the
+**Owner's rule (8 Oct 2026): "Please dont use cad images always use real images with print on".** Every product
+image must be a REAL PHOTO of the actual product (our own photos, the store's real product photos, Shaun's Dropbox
+photos/PSD mockups such as `/RANDOM IMAGES LEFT ON/MUG BLANK.jpg`, or the supplier's real packshot of the blank) with
+the artwork placed on it realistically (perspective, curve/wrap, lighting, texture). Never use flat/drawn/vector
+"CAD" mockups (mugkit's drawn mug, flat plates, plain shapes) as product images; they are for proofs only. If there
+is no real photo of the blank, ask Shaun for one instead of drawing it. Live-preview bases should be real photos too
+where possible.
+Proof mockups come from mugkit (exact print, never AI) - use them to check the print, not as listing images. Upload them with `mcp__Higgsfield__media_upload` from the
 same sandbox command that built them (see mug-print-artwork), `media_confirm`, use the cloudfront URLs.
 
 ## 2. Lifestyle photos (Higgsfield)
