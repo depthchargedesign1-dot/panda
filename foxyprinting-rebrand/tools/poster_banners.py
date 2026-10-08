@@ -98,14 +98,12 @@ PICKS = {
    'products/ALISTAIR_20__20JONNY_20BROWNLEE_20_1_20-_20POSTER_20ONLY.jpg', 'files/MAXWHITLOCK-BLACKFRAME__57229.jpg']),
  'basketball-baseball-hockey-posters': ('Basketball, Baseball & Ice Hockey Posters', ORANGE, [
    'products/KOBE_20BRYANT_20_1_20-_20POSTER_20ONLY.jpg', 'products/LARRY_20BIRD_202_20-_20POSTER_20ONLY.jpg',
-   'products/KAWHI_20LEONARD_20_1_20-_20POSTER_20ONLY.jpg', 'files/AllenIversoncopy2-WhiteFrame__38951.jpg',
-   'files/Zdeno_Chara_M1257_-_Print_Only__48073.jpg', 'files/Vladislav_Tretiak_M1253_-_Gold_Frame__56418.jpg',
-   'products/MICHAEL_20JORDAN_20__20SCOTTIE_20PIPPEN_202_20-_20POSTER_20ONLY.jpg']),
+   'products/KAWHI_20LEONARD_20_1_20-_20POSTER_20ONLY.jpg', 'products/MICHAEL_20JORDAN_20__20SCOTTIE_20PIPPEN_202_20-_20POSTER_20ONLY.jpg',
+   'products/KOBE_20BRYANT_202_20-_20POSTER_20ONLY.jpg', 'products/LARRY_20BIRD_20_1_20-_20POSTER_20ONLY.jpg']),
  'icons-legends-posters': ('Authors, Scientists & Icons Posters', PINK, [
-   'files/StephenKingM275-WhiteFrame__82023.jpg', 'files/ElonMusk-BlackFrame__61133.jpg',
-   'files/AgathaChristieM182-BlackFrame__74820.jpg', 'files/Stephen_Hawking_M452_-_Print_Only__30198.jpg',
-   'files/RichardFeynmanM449-BlackFrame__15489.jpg', 'files/MichaelFaradayM446-BlackFrame__38521.jpg',
-   'files/RosalindElsieFranklinM451-BlackFrame__01932.jpg']),
+   'files/Stephen_Hawking_M452_-_Print_Only__30198.jpg', 'files/Carolina_Herrera_-_Print_Only__81748.jpg',
+   'files/Erwin_Schrdinger_M424_-_Print_Only__52133.jpg', 'files/Salma_Hayek_-_Print_Only__72618.jpg',
+   'files/Stephen_Hawking_M453_-_Print_Only__74378.jpg', 'files/Carolina_Herrera_2_-_Print_Only__32940.jpg']),
 }
 
 def local_name(rel):
