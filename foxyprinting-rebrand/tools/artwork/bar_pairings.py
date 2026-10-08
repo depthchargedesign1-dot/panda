@@ -15,8 +15,8 @@ Sizes (plan/artwork-specs.md + plan/product-facts.md):
   * coaster: 90 x 90 mm trim (square cork-backed MDF coaster, from the live coaster listings) + 3 mm bleed
   * metal sign: 12 x 5in = 304.8 x 127 mm and 8 x 10in = 203.2 x 254 mm (1.15mm gloss white aluminium,
     the live "Personalised Metal Pub Sign" sizes) + 3 mm bleed
-  * UV DTF glass transfer: pint 70 x 90 mm, whisky tumbler 70 x 60 mm. ASK: the owner has not confirmed
-    the maximum print area for the 20oz nonic pint or the whisky tumbler; change PINT / TUMBLER and re-run.
+  * UV DTF glass transfer (owner, 8 Oct 2026): pint 90 x 130 mm (w x h), whisky tumbler 50 x 50 mm,
+    kept 10 mm below the rim. (v1 files on 8 Oct used 70 x 90 / 70 x 60 mm placeholders.)
 Sample name "Ava" is used in the print files (the owner's Illustrator script swaps it).
 
 usage: python3 tools/artwork/bar_pairings.py OUT_DIR [mockup-name]
@@ -44,8 +44,8 @@ CUT_RED = "#FF0000"
 COASTER = (90.0, 90.0)
 SIGN_WIDE = (304.8, 127.0)
 SIGN_TALL = (203.2, 254.0)
-PINT = (70.0, 90.0)       # ASK
-TUMBLER = (70.0, 60.0)    # ASK
+PINT = (90.0, 130.0)      # owner, 8 Oct 2026 (w x h print area)
+TUMBLER = (50.0, 50.0)    # owner, 8 Oct 2026
 
 # ------------------------------------------------------------------ club colourways (match the 17 club bar mats)
 # key, label, main, accent, text-on-main, stripes ("v" vertical / "h" hoops / None), google colour
@@ -315,8 +315,9 @@ def themed(theme, shape, w, h, p, sample=False):
         els.append(poly([(w / 2 - cw_, h - m * 0.05), (w / 2 + cw_, h - m * 0.05), (w / 2, h - m * 0.13)], GOLD))
         for (x, y) in ((m * 0.1, m * 0.1), (w - m * 0.1, m * 0.1), (m * 0.1, h - m * 0.1), (w - m * 0.1, h - m * 0.1)):
             els.append(circ(x, y, m * 0.018, fill=GOLD))
-        els += stack(w, h, [(welcome, BARLOW, 0.28, GOLD, 0.2, "Welcome_line"), (name, BARLOW, 1.0, GOLD, 0.22, "Bar_name"),
-                            ("EST. " + est, BARLOW, 0.3, GOLD, 0.2, "Est_year")], fill_h=0.55)
+        tq = 0.4 if shape == "tumbler" else 1.0  # tighter tracking + larger small lines on the 50 x 50 mm tumbler
+        els += stack(w, h, [(welcome, BARLOW, 0.28 / tq ** 0.35, GOLD, 0.2 * tq, "Welcome_line"), (name, BARLOW, 1.0, GOLD, 0.22 * tq, "Bar_name"),
+                            ("EST. " + est, BARLOW, 0.3 / tq ** 0.35, GOLD, 0.2 * tq, "Est_year")], fill_h=0.55)
     elif theme in ("my_rules", "my_cave_rules"):
         NV, YL, WH = "#262A78", "#F2C230", "#FFFFFF"
         els.append(base(NV))
@@ -336,9 +337,10 @@ def themed(theme, shape, w, h, p, sample=False):
             for i in range(4):
                 for x0 in (m * 0.07 + i * sw_ * 0.9, w - m * 0.07 - (i + 1) * sw_ * 0.9):
                     els.append(poly([(x0 + sw_ * 0.35, y), (x0 + sw_ * 0.7, y), (x0 + sw_ * 0.35, y + sw_), (x0, y + sw_)], GOLD))
-        els += stack(w, h, [("WELCOME", BARLOW, 0.3, CREAM, 0.3, None), (name, BARLOW, 0.5, GOLD, 0.12, "Name"),
-                            ("MAN CAVE", BARLOW, 1.0, CREAM, 0.32, None), ("EST. " + est, BARLOW, 0.3, CREAM, 0.3, "Est_year")],
-                        fill_h=0.58)
+        tq = 0.35 if shape == "tumbler" else 1.0  # tighter tracking on the small 50 x 50 mm tumbler so the small lines stay >= 6pt
+        els += stack(w, h, [("WELCOME", BARLOW, 0.3 / tq ** 0.3, CREAM, 0.3 * tq, None), (name, BARLOW, 0.5, GOLD, 0.12 * tq, "Name"),
+                            ("MAN CAVE", BARLOW, 1.0, CREAM, 0.32 * tq, None), ("EST. " + est, BARLOW, 0.3 / tq ** 0.3, CREAM, 0.3 * tq, "Est_year")],
+                        fill_h=0.58, fill_w=0.76 if shape != "tumbler" else 0.84)
     elif theme == "beer":
         OR, CR, LO = "#C8641E", "#FBF1DC", "#D9823F"
         els.append(base(OR))

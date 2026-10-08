@@ -35,8 +35,8 @@ MAT_CODE = {
     "personalised-club-bar-mat-claret-and-blue": "gb-claret-blue",
 }
 SHAPES = {"coaster": [("coaster", A.COASTER, "90x90mm", None)],
-          "pint": [("pint", A.PINT, "transfer 70x90mm", 2.5)],
-          "tumbler": [("tumbler", A.TUMBLER, "transfer 70x60mm", 2.5)],
+          "pint": [("pint", A.PINT, "v2 90x130mm transfer", 2.5)],
+          "tumbler": [("tumbler", A.TUMBLER, "v2 50x50mm transfer", 2.5)],
           "sign": [("wide", A.SIGN_WIDE, "12x5in", None), ("tall", A.SIGN_TALL, "8x10in", None)]}
 FONT_FILES = [A.BEBAS, A.PACIFICO, A.BARLOW, A.BARLOWB]
 
