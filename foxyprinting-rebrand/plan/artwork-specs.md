@@ -69,3 +69,13 @@ Sizes are for the Foxy Pop theme at its default 1360px page width. Supply them a
 - Layers: Artwork (placeholder background), Text (live "YOUR NAME / GROUP" + second line, Bebas Neue, OFL), CUT (red RGB 255,0,0, 0.25 pt trim path), Guides (hidden, non-printing: bleed, trim, safe, eyelets). CMYK-safe colours.
 - Never add a real club crest, league logo or trophy artwork without a licence.
 - Generator: `tools/artwork/terrace_flag_template.py` (change `BLEED`, `SAFE`, `EYELET_*` and re-run once the owner answers).
+
+## Dog varsity jacket: name + number transfer (FOXY-PP005-*)
+
+| Size | Print area (trim, width x length) | Notes |
+|---|---|---|
+| XS / S / M / L / XL / 2XL | 100x100 / 140x140 / 165x190 / 180x200 / 180x230 / 190x240 mm | Ralawise PP005 print areas. 3 mm bleed, 3 mm safe. Centred on the back, top towards the neck. |
+| 3XL / 4XL | 190 x 240 mm (2XL used) | **ASK**: Ralawise gives no print area. |
+
+- Live text (Bebas Neue, OFL) on a Text layer, red 0.25 pt trim path on CUT. Transfer method, mirroring and press settings: **ASK**.
+- Generator: `tools/artwork/dog_varsity_jacket_template.py`. Dropbox: `/AI DESIGNS 2026/Personalised Dog Varsity Jacket - FOXY-PP005-BLA-XS/`.

@@ -386,6 +386,24 @@ Source: the owner's photos of the printed blank (2 Oct 2026).
 - **Print:** DTF, full colour.
 - **ASK:** fabric content, closure type and size (one size?).
 
+## Pet apparel: Portman & Pooch dog clothing (Ralawise blanks) (added 8 Oct 2026)
+Store range: 7 "Personalised Dog ..." products (PP001 raglan tee, PP002 fleece hoodie, PP003 denim, PP004 puffer, PP005 varsity, PP006 parka, PP008 football tee), product type `Personalised Dog Clothing`, tags `range-pet-clothing` + `personalised-dog-clothing`, in collections Pet Bandanas & Accessories (`new-pet-clothing`) and Personalised Pet Products. Never name Portman & Pooch or Ralawise to customers.
+
+### Dog varsity jacket (PP005) - confirmed from shop.ralawise.com/portman-pooch/dogs-varsity-jacket/ (8 Oct 2026) and portmanandpooch.com/products/varsity-jacket
+- **Code:** PP005; colour entry codes PP005BLAC (Black), PP005NAVY (Navy), PP005PINK (Pink, "Mid Pink"). Full Ralawise size SKU codes: **ASK** (trade account; not shown publicly). Store SKUs: `FOXY-PP005-<BLA|NAV|PIN>-<size>`.
+- **Fabric:** 94% polyester, 6% elastane; rib 92% polyester, 8% elastane; 280gsm. Satin-finish fabric, contrast ribbed sleeves and back hem.
+- **Features:** reinforced snap-poppers under the belly (no zips); reinforced slit to wear over a harness; adjustable back leg straps; ribbed back hem. Accreditations: Amfori BSCI, ISO14001, REACH.
+- **Sizes (back length, cm):** XS 25, S 30, M 35, L 40, XL 45, 2XL 50, 3XL 55, 4XL 60. **3XL and 4XL in Black only** (Ralawise). Chest/neck measurements: **ASK** (not published).
+- **Print area (Ralawise, L x W):** XS 10x10cm, S 14x14, M 19x16.5, L 20x18, XL 23x18, 2XL 24x19. 3XL/4XL: **ASK**.
+- **Care (supplier):** max 30°C mild process; do not bleach, tumble dry, iron or dry clean.
+- **Print method and press settings:** **ASK** (internal: printed in-house; care says "do not iron", so test-press).
+- **Personalisation:** optional "Dog’s name (optional)" and optional "Number (optional)" (owner, 8 Oct 2026). A plain jacket can be ordered.
+- **Price:** £27.99 all sizes (set when the range was created on 6 Oct; same as the football tee). Ralawise trade price: **ASK** (login only).
+- **Dispatch time / postage:** **ASK** (copy says postage options are shown at checkout).
+- **Images:** Ralawise packshots (`pp005_<colour>_ft.jpg`) only; Ralawise says it is "not authorised to distribute lifestyle imagery on behalf of this brand", so don't use Portman & Pooch lifestyle photos.
+- **Google:** `Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Apparel`; gender `unisex`; age_group `adult`; custom_product `true`; color `Multicolor`.
+- **Pairing ideas:** personalised dog bandana, stainless steel pet bowl with name, pet ID tag, matching owner varsity-style hoodie or T-shirt with the dog's name.
+
 ## Personalised adult T-shirt: AWDis 150 T (AT001) (added 2 Oct 2026)
 - **Blank:** AWDis 150 T (AT001) from Ralawise (owner). Relaxed fit, unisex, 150gsm, 100% cotton PurePrint (Heather Grey is 90% cotton, 10% viscose). Ribbed crew neck, taped back neck, twin-needle stitching, side seams.
 - **Colours (25):** Arctic White, Deep Black, Heather Grey, Solid Charcoal, New French Navy, Royal Blue, Sapphire Blue, Sky Blue, Cornflower Blue, Airforce Blue, Fire Red, Burgundy, Hot Pink, Baby Pink, Purple, Dusty Lilac, Bottle Green, Kelly Green, Earthy Green, Seafoam, Sun Yellow, Orange Crush, Desert Sand, Natural Stone, Mocha Brown. Taken from supplier listings; remove any that aren't in stock.

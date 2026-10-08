@@ -1,7 +1,7 @@
 # Foxy Printing – live status board
 
 Read this first in every new session. Keep it short: update it when something starts, finishes or needs the owner.
-Last updated: 6 Oct 2026, evening.
+Last updated: 8 Oct 2026.
 
 ## Waiting on the owner (answer these and a lot unblocks)
 | # | Question | Unblocks |
@@ -20,11 +20,13 @@ Last updated: 6 Oct 2026, evening.
 | 12 | Preview and publish theme "Foxy Pop 2026 – mug tiles" (`189453861245`): compact banners site-wide + "Shop by type" tiles on ALL MUGS. Preview: https://foxyprinting.co.uk/collections/all-mugs?preview_theme_id=189453861245 | shorter collection headers everywhere, mug tiles |
 | 13 | Connect Postiz as a Claude connector (see below) | posting to FB, IG and TikTok |
 | 14 | Unpublish request-any-facemask from Google, FB/IG and TikTok (now shows celebrity masks: Sabrina Carpenter, Rosé, Luke Littler, Zara Larsson, Lisa, Graeme Swann). Archive the Jimmy Savile and Rolf Harris masks? Allow a collage main image (image tool upload blocked)? | copyright rule, reputation |
+| 15 | Preview and publish theme "Foxy Pop 2026 – optional fields" (`189502947709`): fields labelled "(optional)" are no longer required (dog varsity jacket name/number). Same 6-line change must go into "mug tiles"/"leavers designer" if one of those is published instead. Dog varsity jacket ASKs: print method + press settings, Ralawise trade price, 3XL/4XL print area, chest sizes | optional name & number on the dog varsity jacket |
 
 ## Owner's import queue (one file each morning and bedtime; reminders run 07:52 and 21:52 UK)
 See `exports/IMPORT-SCHEDULE.md`. Order: SEO 02-CLEAN → age 01 → age 02-CLEAN → masks TEST then 01–04 → mug descriptions TEST, 01, 02-rude → prints TEST then 01–04.
 
 ## Running or recently finished
+- Dog varsity jacket (8 Oct, owner asked): existing product `personalised-dog-varsity-jacket` (PP005, created 6 Oct) updated, not duplicated: optional "Dog’s name (optional)" + "Number (optional)", new title/copy/SEO, Google fields, navy/pink packshots + BUSTER 7 mockup, variant images, Navy/Pink 3XL+4XL made unavailable (Ralawise: Black only), published to all 5 channels, added to Personalised Pet Products (new rule tag `personalised-dog-clothing`). Artwork in Dropbox `/AI DESIGNS 2026/Personalised Dog Varsity Jacket - FOXY-PP005-BLA-XS/`. Record: `exports/pets/2026-10-08-dog-varsity-jacket/`. The other 6 Portman & Pooch dog products are still Online Store only and lack Google fields.
 - This Girl / This Guy mugs (6 Oct, owner approved): 152 duplicate dog mugs (`foxyprinting-dog-mugs-Nw`) set to DRAFT, their twins stay ACTIVE (log `exports/this-girl-this-guy/2026-10-06-duplicates-drafted.csv`). Title typos fixed on 145 products (title + SEO + description + alt where the typo appeared; handles unchanged; log `2026-10-06-title-typos.csv`). **Owner: the printed artwork itself still has some typos** (e.g. TIQUANDO, GRINDER, WHEATEN TERRIOR seen in the mug photos), so reprint/re-shoot those designs.
 - Mug descriptions (6 Oct): checked all 6,332 mugs (excluding This Guy/This Girl and the rude/funny number plate mugs). 6,275 empty or poor descriptions rewritten (6,081 normal + 194 rude; 40 skipped, see skipped.csv), 2,298 with a third-party disclaimer + `third-party-name` tag (tags added via API). Vendor set to Foxy Printing on 1,577 mugs and Google fields fixed via API (mpn = SKU on 6,321; category, age group, colour etc. where missing). Body text goes in by CSV import (queue #7a/#7b). Audit of missing SEO title/meta (3,691) and empty alt text (3,230): `exports/mug-descriptions/2026-10-06/audit-all-mugs.csv`. Owner to look at: SKUs with swear words (copied into Google mpn), King Charles mugs with "OFFICIAL" in SKU/title, an R. Kelly mug.
 - Personalised Name Word Art (6 Oct): all 53 products (Pink/Blue Letter A–Z) now have Size options A4/A3/A2/A1 print only and A4/A3 Black or Silver framed (£4.99–£29.99, A. J. Green structure), new SKUs, mpn, sizes + Premium Display frames line in the description. The wider Word Art Prints collection (219 products: number, pet, hobby and "Pop Figures" word art) was NOT changed; ask the owner if they want the same. Record: `exports/word-art/2026-10-06-sizes/`.

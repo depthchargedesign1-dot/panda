@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-08",
+  "owner_request": "can you add these products to our pet range, Add optional Dogs name and number options https://shop.ralawise.com/portman-pooch/dogs-varsity-jacket/ add to our pet products and activate on foxy",
+  "finding": "Duplicate check: the product already existed (created 6 Oct 2026, ACTIVE, Online Store only). Updated it instead of creating a duplicate.",
+  "product": {
+    "id": "gid://shopify/Product/16064459932029",
+    "handle": "personalised-dog-varsity-jacket",
+    "url": "https://foxyprinting.co.uk/products/personalised-dog-varsity-jacket",
+    "title_before": "Personalised Dog Varsity Jacket – Name & Text Printed – Sizes XS–4XL",
+    "title_after": "Personalised Dog Varsity Jacket – Optional Name & Number on the Back – Black, Navy or Pink – Sizes XS–4XL",
+    "status": "ACTIVE",
+    "price": "27.99 all 24 variants (unchanged)",
+    "skus": "FOXY-PP005-<BLA|NAV|PIN>-<XS|S|M|L|XL|2XL|3XL|4XL> (unchanged)",
+    "variants_made_unavailable": ["Navy / 3XL", "Navy / 4XL", "Pink / 3XL", "Pink / 4XL"],
+    "variants_note": "Ralawise: 3XL and 4XL only in Black. Set inventory tracked + DENY (shows sold out); not deleted.",
+    "personalise_fields_before": ["Dog's name", "Second line (optional – number or short slogan)", "Notes for our designer"],
+    "personalise_fields_after": ["Dog’s name (optional)", "Number (optional)"],
+    "mockup": "photo",
+    "tags_added": ["io-pets", "dept-pets", "pet", "dog", "dog varsity jacket", "dog jacket", "pet clothing"],
+    "google": {"custom_product": true, "condition": "new", "google_product_category": "Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Apparel", "gender": "unisex", "age_group": "adult", "color": "Multicolor", "mpn": "FOXY-PP005-BLA-XS"},
+    "seo": {"title": "Personalised Dog Varsity Jacket | Foxy Printing", "description": "A satin-finish varsity jacket for your dog with their name and number printed on the back if you like. Snap poppers, harness slit and sizes XS to 4XL."},
+    "description": "description.html",
+    "media_added": [
+      {"id": "gid://shopify/MediaImage/69881121800573", "what": "example mockup BUSTER / 7 on black (make_mockup.py)"},
+      {"id": "gid://shopify/MediaImage/69881101123965", "what": "Ralawise packshot navy (pp005_navy_ft.jpg)", "variant_image": "Navy"},
+      {"id": "gid://shopify/MediaImage/69881101156733", "what": "Ralawise packshot pink (pp005_pink_ft.jpg)", "variant_image": "Pink"}
+    ],
+    "collections": ["Pet Bandanas & Accessories (new-pet-clothing, via tag range-pet-clothing)", "Personalised Pet Products (personalised-pet-products: added rule TAG = personalised-dog-clothing, so all 7 dog clothing products now show there)"],
+    "publications": ["Online Store", "Shop", "Google & YouTube", "Facebook & Instagram", "TikTok"]
+  },
+  "theme": {
+    "new_unpublished_copy": "gid://shopify/OnlineStoreTheme/189502947709 (Foxy Pop 2026 – optional fields, duplicate of live 'field fix')",
+    "change": "snippets/personaliser-field.liquid: a label containing 'optional' is never required (first field was always required)",
+    "mirror": "theme-working-copy-optional-fields/",
+    "status": "waiting for owner to preview and publish; until then the live theme still makes the first field (Dog’s name) required"
+  },
+  "artwork": {
+    "dropbox": "/AI DESIGNS 2026/Personalised Dog Varsity Jacket - FOXY-PP005-BLA-XS/",
+    "files": "6 SVG (XS-2XL), README - how to print.txt, PDF - DOWNLOAD LINKS.txt, Fonts/FONTS - DOWNLOAD LINK.txt, Fonts/OFL.txt (sizes match local)",
+    "pdfs_shopify_files": "dog-varsity-jacket-name-number-<size>-<W>x<L>mm.pdf (md5 verified)",
+    "generator": "tools/artwork/dog_varsity_jacket_template.py"
+  },
+  "sources": [
+    "https://shop.ralawise.com/portman-pooch/dogs-varsity-jacket/ (read via a public fetch, 8 Oct 2026)",
+    "https://portmanandpooch.com/products/varsity-jacket"
+  ]
+}
