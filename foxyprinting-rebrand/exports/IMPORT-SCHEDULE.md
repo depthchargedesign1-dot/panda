@@ -11,7 +11,7 @@ Before each reminder, Claude checks the previous file landed on the live store (
 | 3 | Wed 7 Oct bedtime | google-fields/2026-10-06-age-group-remaining/02-age-group-gender-SAFE.csv (NOT 02-…-CLEAN) | DONE (finished 11:50 UTC 8 Oct) |
 | 4 | as soon as #3 finishes | import-queue-2026-10-08/1-TEST-3-masks.csv (2 KB: check the 3 masks show Ready Cut/DIY x Elastic/Stick at £2.99/£3.49/£1.50/£2.00) | DONE 13:12 UTC 8 Oct (all 3 checked live: options + prices correct) |
 | 5 | straight after the test looks right | import-queue-2026-10-08/2-ALL-single-masks.csv (all 6,729 single masks, 4.6 MB; replaces old masks 01–04) | RUNNING: 5,211 of 6,729 done at 16:56 UTC 8 Oct |
-| 6 | next | import-queue-2026-10-08/3-TEST-6-mugs-3-prints.csv (check 6 mugs + 3 prints) | ON HOLD: being rebuilt with new poster descriptions + titles without "Reproduction Print" (8 Oct); same for 4–7 |
+| 6 | next | import-queue-2026-10-08/3-TEST-6-mugs-3-prints.csv (check 6 mugs + 3 prints) | READY (rebuilt 8 Oct: 3 posters with new descriptions, no "Reproduction Print" in titles, garbled title fixed; 6 mug rows unchanged). Sent to owner ~17:05 UTC. Import after the masks file finishes. Files 4–7 still being rebuilt |
 | 7 | next | import-queue-2026-10-08/4-mugs-and-prints-part1.csv (13.8 MB) | to do |
 | 8 | next | import-queue-2026-10-08/5-mugs-and-prints-part2.csv (13.8 MB) | to do |
 | 9 | next | import-queue-2026-10-08/6-mugs-and-prints-part3.csv (13.8 MB) | to do |

@@ -63,9 +63,34 @@ DOS_ACCENTS = {"\u00a1": "\u00ed", "\u00a4": "\u00f1", "\u00a2": "\u00f3", "\u00
                "\u201e": "\u00e4", "\u2026": "\u00e0", "\u2021": "\u00e7", "\u0160": "\u00e8", "\u201d": "\u00f6"}
 
 
-def fix_text(s):
-    for k, v in MOJIBAKE.items():
+SPECIFIC_FIXES = [  # garbled names seen in live poster titles (8 Oct 2026)
+    ('"Cowboy"\ufffd', "\u201cCowboy\u201d"), ("Jir\u00a1 Proch zka", "Ji\u0159\u00ed Proch\u00e1zka"),
+    ("Sch\u00e3R", "Sch\u00e4r"), ("Almir\u00e3N", "Almir\u00f3n"), ("ALMIR\u00c3 N", "ALMIR\u00d3N"),
+    ("Seasons 3\u00e211", "Seasons 3\u201311"),
+]
+CP1252_MOJIBAKE = {"\u00e2\u20ac\u2122": "\u2019", "\u00e2\u20ac\u201c": "\u2013", "\u00e2\u20ac\u201d": "\u2014",
+                   "\u00e2\u20ac\u0153": "\u201c", "\u00e2\u20ac\u009d": "\u201d", "\u00e2\u20ac\u02dc": "\u2018",
+                   "\u00e2\u20ac\u00a6": "\u2026"}
+
+
+def fix_mojibake(s):
+    """Repair garbled characters (owner/coordinator 8 Oct 2026). Keeps real accents and curly quotes."""
+    for k, v in SPECIFIC_FIXES:
         s = s.replace(k, v)
+    for k, v in CP1252_MOJIBAKE.items():
+        s = s.replace(k, v)
+    for k, v in MOJIBAKE.items():
+        # "C\u00e3\u00a9Sar" -> "C\u00e9sar": the letter after a repaired accent was wrongly capitalised
+        s = re.sub(re.escape(k) + r"([A-Z])(?=[a-z])", lambda m, v=v: v + m.group(1).lower(), s)
+        s = s.replace(k, v)
+    for k, v in DOS_ACCENTS.items():
+        s = re.sub(r"(?<=[A-Za-z])" + re.escape(k) + r"(?=[A-Za-z])", v, s)
+    s = s.replace("\ufffd", "")
+    return re.sub(r"[ \t]{2,}", " ", s)
+
+
+def fix_text(s):
+    s = fix_mojibake(s)
     # old DOS code-page accents inside words (Mar\u00a1a -> Mar\u00eda, Mu\u00a4oz -> Mu\u00f1oz)
     for k, v in DOS_ACCENTS.items():
         s = re.sub(r"(?<=[A-Za-z])" + re.escape(k) + r"(?=[A-Za-z])", v, s)
@@ -199,7 +224,7 @@ CUT = re.compile(
     r"Golfer|Rugby|Darts|Boxing|Boxer|top boxer|MMA|Tennis Player|Tennis|Movie|Television|Tv Show|TV|Music|Bollywood|"
     r"Actors?|Actress|Netflix Shows?|Ice Hockey|Team Player|Famous|Black Frame|Framed|Poster|Print|Signed|"
     r"Autographed|Snooker|Formula|F1|Wrestler|Wrestling|Baseball|Athlete|Athletics|Cyclist|Jockey|Cricket|Hockey|"
-    r"Motorsport|Racing|Player|Authors?|Scientist|Comedian|Rappers?|Singers?)\b", re.I)
+    r"Motorsport|Racing|Player|Authors?|Scientist|Comedian|Rappers?|Singers?|UFC)\b", re.I)
 
 
 def subject(title):
@@ -652,6 +677,11 @@ def main(live_path, qdir, out_dir, files=None, dry=False):
             new_title = lp["title"]
             if poster or re.search(r"reproduction\s+print", new_title, re.I):
                 new_title = strip_repro(new_title)  # owner, 8 Oct 2026: no "Reproduction Print" in titles
+            if poster:
+                fixed = fix_mojibake(new_title)
+                if fixed != new_title:
+                    report.setdefault("titles_mojibake_fixed", []).append([h, new_title, fixed])
+                    new_title = fixed
             if r[H["Title"]] != new_title:
                 report["titles_changed"] += 1
             if r[H["Status"]] != lp["status"].lower():

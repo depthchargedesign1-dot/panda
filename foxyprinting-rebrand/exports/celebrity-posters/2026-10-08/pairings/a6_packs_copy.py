@@ -139,6 +139,8 @@ for p in PACKS:
     assert len(p["title"]) <= 150 and len(p["seo_title"]) <= 60 and 140 <= len(p["seo_desc"]) <= 155, (p["sku"], len(p["title"]), len(p["seo_title"]), len(p["seo_desc"]))
     for bad in ["Reproduction Print", "signed", "autographed", "official", "licensed", "memorabilia", "limited edition"]:
         assert bad not in p["title"], bad
-        assert bad.lower() not in html.lower().replace("hand-signed", ""), (p["sku"], bad)
+        if bad != "Reproduction Print":
+            assert not __import__("re").search(r"\b" + bad.lower() + r"\b", html.lower().replace("hand-signed", "")), (p["sku"], bad)
+    assert "reproduction print" in html.lower() and "Reproduction Print" not in p["seo_title"]
     print(p["sku"], words, len(p["title"]), len(p["seo_title"]), len(p["seo_desc"]))
 json.dump(out, open(__file__.replace("a6_packs_copy.py", "packs.json"), "w"), indent=1, ensure_ascii=False)

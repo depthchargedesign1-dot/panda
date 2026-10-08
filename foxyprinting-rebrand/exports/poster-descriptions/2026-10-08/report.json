@@ -3,32 +3,32 @@
   "4-mugs-and-prints-part1.csv": {
    "rows": 18011,
    "handles": 7709,
-   "bytes": 14465367,
+   "bytes": 14466433,
    "posters": 1435
   },
   "5-mugs-and-prints-part2.csv": {
    "rows": 21942,
    "handles": 5193,
-   "bytes": 13889566,
+   "bytes": 13888099,
    "posters": 5133
   },
   "6-mugs-and-prints-part3.csv": {
    "rows": 3069,
    "handles": 3069,
-   "bytes": 6732424,
+   "bytes": 6732350,
    "posters": 3069
   },
   "7-mugs-and-prints-part4.csv": {
    "rows": 3788,
    "handles": 3737,
-   "bytes": 8518384,
+   "bytes": 8515828,
    "posters": 3736
   }
  },
  "posters": 13373,
  "problems": [],
  "missing_live": [],
- "titles_changed": 0,
+ "titles_changed": 30,
  "status_changed": 1,
  "cats": {
   "nfl": 2001,
@@ -53,5 +53,157 @@
   "icehockey": 126,
   "pack": 40
  },
+ "titles_mojibake_fixed": [
+  [
+   "donald-cowboy-cerrone-2-mma-wrestling-signed-by-autographed-poster-print-1",
+   "Donald \"Cowboy\"� Cerrone 2 MMA Wrestler Printed Signature Print – MMA Wrestling",
+   "Donald “Cowboy” Cerrone 2 MMA Wrestler Printed Signature Print – MMA Wrestling"
+  ],
+  [
+   "jir-proch-zka-ufc-fiighters-framed-autographed-print",
+   "Jir¡ Proch zka UFC FIighters Framed Printed Signature Print – Fan Gift – Wall Art",
+   "Jiří Procházka UFC FIighters Framed Printed Signature Print – Fan Gift – Wall Art"
+  ],
+  [
+   "martin-d-bravka-footballer-autographed-poster-print-photo-signature-gift",
+   "Martin D£bravka Footballer Printed Signature Poster Print Gift",
+   "Martin Dúbravka Footballer Printed Signature Poster Print Gift"
+  ],
+  [
+   "martin-d-bravka-2-footballer-autographed-poster-print-photo-signature-gift",
+   "Martin D£bravka 2 Footballer Printed Signature Poster Print Gift",
+   "Martin Dúbravka 2 Footballer Printed Signature Poster Print Gift"
+  ],
+  [
+   "miguel-almiran-footballer-autographed-poster-print-photo-signature-gift",
+   "MIGUEL ALMIRÃ N Footballer Printed Signature Poster Print Gift",
+   "MIGUEL ALMIRÓN Footballer Printed Signature Poster Print Gift"
+  ],
+  [
+   "miguel-almiran-2-footballer-autographed-poster-print-photo-signature-gift",
+   "MIGUEL ALMIRÃ N 2 Footballer Printed Signature Poster Print Gift",
+   "MIGUEL ALMIRÓN 2 Footballer Printed Signature Poster Print Gift"
+  ],
+  [
+   "azahara-mu-oz-golf-autographed-poster-print-photo-signature-gift",
+   "Azahara Mu¤oz Golf Printed Signature Poster Print Gift",
+   "Azahara Muñoz Golf Printed Signature Poster Print Gift"
+  ],
+  [
+   "azahara-mu-oz-2-golf-autographed-poster-print-photo-signature-gift",
+   "Azahara Mu¤oz 2 Golf Printed Signature Poster Print Gift",
+   "Azahara Muñoz 2 Golf Printed Signature Poster Print Gift"
+  ],
+  [
+   "angel-di-mar-a-football-gift-mc1559-framed-autographed-print",
+   "Angel Di Mar¡a Football Gift MC1559 Printed Signature Star Poster Print Wall Art Gift",
+   "Angel Di María Football Gift MC1559 Printed Signature Star Poster Print Wall Art Gift"
+  ],
+  [
+   "hector-beller-n-football-gift-mc1601-framed-autographed-print",
+   "Hector Beller¡n Football Gift MC1601 Printed Signature Star Poster Print Wall Art Gift",
+   "Hector Bellerín Football Gift MC1601 Printed Signature Star Poster Print Wall Art Gift"
+  ],
+  [
+   "james-rodr-guez-football-gift-mc1608-framed-autographed-print",
+   "James Rodr¡guez Football Gift MC1608 Printed Signature Star Poster Print Wall Art Gift",
+   "James Rodríguez Football Gift MC1608 Printed Signature Star Poster Print Wall Art Gift"
+  ],
+  [
+   "lautaro-mart-nez-football-gift-mc1682-framed-autographed-print",
+   "Lautaro Mart¡nez Football Gift MC1682 Printed Signature Star Poster Print Wall Art Gift",
+   "Lautaro Martínez Football Gift MC1682 Printed Signature Star Poster Print Wall Art Gift"
+  ],
+  [
+   "cesar-azpilicueta-signed-autographed-footballers-star-print",
+   "Cã©Sar Azpilicueta Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "César Azpilicueta Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "cesar-azpilicueta-2-signed-autographed-footballers-star-print",
+   "Cã©Sar Azpilicueta 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "César Azpilicueta 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "denis-suarez-signed-autographed-footballers-star-print",
+   "Denis Suã¡Rez Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Denis Suárez Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "denis-suarez-2-signed-autographed-footballers-star-print",
+   "Denis Suã¡Rez 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Denis Suárez 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "fabian-schar-signed-autographed-footballers-star-print",
+   "Fabian SchãR Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Fabian Schär Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "fabian-schar-2-signed-autographed-footballers-star-print",
+   "Fabian SchãR 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Fabian Schär 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "georges-kevin-nkoudou-signed-autographed-footballers-star-print",
+   "Georges-Kã©Vin Nkoudou Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Georges-Kévin Nkoudou Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "georges-kevin-nkoudou-2-signed-autographed-footballers-star-print",
+   "Georges-Kã©Vin Nkoudou 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Georges-Kévin Nkoudou 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "hector-bellerin-signed-autographed-footballers-star-print",
+   "Hã©Ctor Bellerã­n Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Héctor Bellerín Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "hector-bellerin-2-signed-autographed-footballers-star-print",
+   "Hã©Ctor Bellerã­n 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Héctor Bellerín 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "martin-dubravka-signed-autographed-footballers-star-print",
+   "Martin Dãºbravka Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Martin Dúbravka Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "martin-dubravka-2-signed-autographed-footballers-star-print",
+   "Martin Dãºbravka 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Martin Dúbravka 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "miguel-almiron-signed-autographed-footballers-star-print",
+   "Miguel AlmirãN Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Miguel Almirón Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "miguel-almiron-2-signed-autographed-footballers-star-print",
+   "Miguel AlmirãN 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift",
+   "Miguel Almirón 2 Printed Signature Footballers Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "ncis-seasons-3-11-signed-autographed-movie-star-print",
+   "Ncis Seasons 3â11 Printed Signature Movie Star Poster Print Framed Wall Art Gift",
+   "Ncis Seasons 3–11 Printed Signature Movie Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "ncis-seasons-3-11-2-signed-autographed-movie-star-print",
+   "Ncis Seasons 3â11 2 Printed Signature Movie Star Poster Print Framed Wall Art Gift",
+   "Ncis Seasons 3–11 2 Printed Signature Movie Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "co-stompe-signed-autographed-darts-star-print",
+   "Co Stompã© Printed Signature Darts Star Poster Print Framed Wall Art Gift",
+   "Co Stompé Printed Signature Darts Star Poster Print Framed Wall Art Gift"
+  ],
+  [
+   "co-stompe-2-signed-autographed-darts-star-print",
+   "Co Stompã© 2 Printed Signature Darts Star Poster Print Framed Wall Art Gift",
+   "Co Stompé 2 Printed Signature Darts Star Poster Print Framed Wall Art Gift"
+  ]
+ ],
  "poster_handles_by_file": null
 }

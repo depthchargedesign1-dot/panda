@@ -22,8 +22,8 @@ CDN = 'https://cdn.shopify.com/s/files/1/1774/9115/'
 # handle -> (collection title, accent, [poster image paths under CDN]); order = hero first, then outwards
 PICKS = {
  'celebrity-posters': ('Celebrity Posters', PINK, [
-   'products/TYSON_20FURY_20-_20Poster_20Only.jpg', 'files/TaylorSwift.jpg',
-   'products/Cristiano_20Ronaldo_201_20-_20POSTER_20ONLY.jpg', 'products/KOBE_20BRYANT_202_20-_20POSTER_20ONLY.jpg',
+   'products/TYSON_20FURY_20-_20Poster_20Only.jpg', 'products/Cristiano_20Ronaldo_201_20-_20POSTER_20ONLY.jpg',
+   'products/KOBE_20BRYANT_202_20-_20POSTER_20ONLY.jpg', 'files/TaylorSwift.jpg',
    'files/Eminem_48ce7a7a-f4d4-4eb9-9aba-fcf8bb89fa8d.jpg', 'products/Keanu_20Reeves_203_20-_20POSTER_20ONLY.jpg',
    'products/LANA_20DEL_20REY_20_1_20-_20POSTER_20ONLY.jpg']),
  'football-star-posters': ('Football Star Posters', ORANGE, [
@@ -37,8 +37,9 @@ PICKS = {
    'files/CentralCee.jpg', 'files/Madonna_eee13961-82e0-4168-82e2-bee98817735e.jpg',
    'products/Robbie_Williams-Black.jpg']),
  'film-star-posters': ('Film Star Posters', PURPLE, [
-   'products/Keanu_20Reeves_203_20-_20POSTER_20ONLY.jpg', 'products/COLUMBO_PETER-Silver.jpg',
+   'products/Keanu_20Reeves_203_20-_20POSTER_20ONLY.jpg',
    'products/Dylan_20O_Brien_202_20-_20POSTER_20ONLY_3659413c-fd2a-4ba6-87a3-9177f5fb0898.jpg',
+   'products/COLUMBO_PETER-Silver.jpg',
    'products/Terminator_2-Silver.jpg', 'products/David_Tennant-Black.jpg',
    'files/THE_GREATEST_SHOWMAN___35102.jpg']),
  'tv-star-posters': ('TV Star Posters', ORANGE, [
@@ -88,8 +89,8 @@ PICKS = {
    'products/HAYLEY_20TURNER_202_20-_20POSTER_20ONLY.jpg', 'files/ZARAPHILLIPS_1_-BLACKFRAME__80811.jpg',
    'products/BARRY_20GERAGHTY_202_20-_20POSTER_20ONLY.jpg']),
  'f1-motorsport-star-posters': ('F1 & Motorsport Star Posters', ORANGE, [
-   'products/AYRTON_20SENNA_20HITCHING_20-_20POSTER_20ONLY.jpg', 'files/LandoNorrisF1DriverAutographedPrintLandscape.jpg',
-   'products/TOTO_20WOLFF_202_20-_20POSTER_20ONLY.jpg', 'files/LewisHamiltonF1DriverAutographedPrintLandscape.jpg',
+   'products/AYRTON_20SENNA_20HITCHING_20-_20POSTER_20ONLY.jpg', 'products/TOTO_20WOLFF_202_20-_20POSTER_20ONLY.jpg',
+   'files/LandoNorrisF1DriverAutographedPrintLandscape.jpg', 'files/LewisHamiltonF1DriverAutographedPrintLandscape.jpg',
    'files/GeorgeRussellF1DriverAutographedPrintLandscape.jpg', 'files/OscarPiastriF1DriverAutographedPrintLandscape.jpg']),
  'athletics-olympic-star-posters': ('Athletics & Olympic Star Posters', PURPLE, [
    'products/MARK_20CAVENDISH_20-_20POSTER_20ONLY.jpg', 'products/TOM_20DALEY_20-_20Poster_20Only.jpg',
@@ -222,7 +223,7 @@ def background(accent):
 
 # Row layout: hero in the middle, the rest alternate right / left outwards, outer ones smaller and
 # tucked slightly behind. Sizes shrink until every print shows at least ~72% of its width.
-REGION = (770, 1785)
+REGION = (750, 1785)
 RANK_SCALE = [1.0, 0.86, 0.86, 0.74, 0.74, 0.64, 0.64]
 RANK_ANGLE = [0, -2, 2, -4, 4, -6, 6]
 FRAME_CYCLE = ['black', 'gold', 'silver', 'silver', 'gold', 'black', 'black']
@@ -242,23 +243,25 @@ def build(handle, dl_dir, out_dir, count=5):
             out.append((h, h * ar * 1.06))   # approx framed width
         return out
     # left-to-right order of ranks, e.g. n=5 -> [4, 2, 0, 1, 3]
-    order = sorted(range(n), key=lambda r: (-1 if r % 2 == 0 else 1) * ((r + 1) // 2) if r else 0)
     order = [r for r in range(n - 1, 0, -1) if r % 2 == 0] + [0] + [r for r in range(1, n) if r % 2 == 1]
     k = 1.0
+    span = REGION[1] - REGION[0]
     while True:
         sz = sizes(k)
         widths = [sz[r][1] for r in order]
-        total = sum(widths); span = REGION[1] - REGION[0]
-        ov = max(0.0, (total - span) / max(1, n - 1))
-        if ov <= 0.3 * min(widths) or k < 0.6:
+        total = sum(widths)
+        # each join hides part of the print behind (the higher rank); wide prints absorb more of it
+        covered = [widths[j] if order[j] > order[j + 1] else widths[j + 1] for j in range(n - 1)]
+        f = max(0.0, (total - span) / max(1.0, sum(covered)))
+        if f <= 0.40 or k < 0.6:
             break
         k -= 0.02
-    # x positions
-    x = REGION[0] + max(0.0, (span - (total - ov * (n - 1))) / 2)
+    ovs = [f * c for c in covered]
+    x = REGION[0] + max(0.0, (span - (total - sum(ovs))) / 2)
     centres = {}
-    for r, w in zip(order, widths):
+    for j, (r, w) in enumerate(zip(order, widths)):
         centres[r] = x + w / 2
-        x += w - ov
+        x += w - (ovs[j] if j < n - 1 else 0)
     # draw outermost first so inner prints overlap the outer ones
     for r in sorted(range(n), key=lambda r: -r):
         h = sz[r][0]
