@@ -287,7 +287,7 @@
       back: {
         template: 'year-names',
         title: 'LEAVERS',
-        year: '26',
+        year: '27',
         school: 'YOUR SCHOOL NAME',
         names: SAMPLE_NAMES.slice(),
         nameCase: 'upper',
@@ -300,7 +300,7 @@
         outline: true,
         logo: false
       },
-      front: { style: 'chest-text', line1: 'LEAVERS', line2: '2026', icon: 'star', font: 'Graduate', logoUrl: '' },
+      front: { style: 'chest-text', line1: 'LEAVERS', line2: '2027', icon: 'star', font: 'Graduate', logoUrl: '' },
       personal: { position: 'sleeve', text: '', font: 'Pacifico' }
     };
   }
@@ -736,7 +736,7 @@
   /* ------------------------------------------------------------------ shapes */
 
   function yearShape(d, box) {
-    var font = d.back.displayFont, text = d.back.year || '26';
+    var font = d.back.displayFont, text = d.back.year || '27';
     return function (x) { drawFit(x, text, font, box, '#000'); };
   }
   // Heart and star are plain paths, so the same geometry fills the mask, clips the names and draws the outline.

@@ -127,7 +127,7 @@
         '  <details class="ld-step" open><summary><span class="ld-step__n">3</span> Wording &amp; names</summary>' +
         '    <div class="ld-grid3">' +
         '      <label class="ld-field"><span>Heading</span><input type="text" maxlength="24" data-bind="back.title"></label>' +
-        '      <label class="ld-field"><span>Year</span><input type="text" maxlength="6" data-bind="back.year" placeholder="26 or 2026"></label>' +
+        '      <label class="ld-field"><span>Year</span><input type="text" maxlength="6" data-bind="back.year" placeholder="27 or 2027"></label>' +
         '      <label class="ld-field"><span>School / group name</span><input type="text" maxlength="40" data-bind="back.school"></label>' +
         '    </div>' +
         '    <div class="ld-field" data-names-field><span>Names for the back — one box per pupil <b data-name-count></b></span>' +
