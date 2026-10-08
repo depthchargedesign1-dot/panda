@@ -234,7 +234,7 @@ def club(shape, w, h, p, cw, sample=False):
     glass = shape in ("pint", "tumbler")
     R = 2.5 if glass else 0
     inner = []
-    inner.append(rect(0, 0, w, h, fill=main, r=R) if glass else bg(w, h, main))
+    inner.append(bg(w, h, main))  # background runs into the 3 mm bleed on every shape (v2: glass too)
     if stripes == "v":
         n = 2
         bwid = min(w, h) * 0.035
@@ -270,7 +270,7 @@ def club(shape, w, h, p, cw, sample=False):
                               (p["est"], BARLOW, 0.3, txt, 0.12, "Est_year")], box=box, fill_h=0.8,
                         fill_w=0.62 if stripes == "v" else 0.76)
     if glass:
-        els.append(clip(0, 0, w, h, inner, r=R))
+        els.append(clip(-BLEED, -BLEED, w + 2 * BLEED, h + 2 * BLEED, inner))
     else:
         els += inner
     return els
@@ -284,7 +284,7 @@ def themed(theme, shape, w, h, p, sample=False):
     name, est, welcome = p["name"], p["est"], p.get("welcome", "WELCOME TO")
 
     def base(fill):
-        return rect(0, 0, w, h, fill=fill, r=R) if glass else bg(w, h, fill)
+        return bg(w, h, fill)  # into the bleed on every shape (v2: glass transfers too)
 
     if theme == "rustic":
         BR, GOLD, CREAM, DARK = "#4A2E1A", "#C9A24A", "#F1E6CF", "#3B2414"
@@ -355,10 +355,7 @@ def themed(theme, shape, w, h, p, sample=False):
                         fill_h=0.7, gap=0.12)
     elif theme == "union":
         WH, BK = "#FFFFFF", "#1A1A1A"
-        if glass:
-            els.append(clip(0, 0, w, h, union_flag(-1, -1, w + 2, h + 2), r=R))
-        else:
-            els += union_flag(-BLEED, -BLEED, w + 2 * BLEED, h + 2 * BLEED)
+        els += union_flag(-BLEED, -BLEED, w + 2 * BLEED, h + 2 * BLEED)
         if shape == "wide":
             pw, ph = w * 0.5, h * 0.5
         elif shape == "tall":
@@ -386,7 +383,7 @@ def themed(theme, shape, w, h, p, sample=False):
     else:
         raise KeyError(theme)
     if glass:
-        return [clip(0, 0, w, h, els, r=R)]
+        return [clip(-BLEED, -BLEED, w + 2 * BLEED, h + 2 * BLEED, els)]
     return els
 
 
