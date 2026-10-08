@@ -43,12 +43,16 @@ def esc(s):
     return s.replace("&", "&amp;") if "&amp;" not in s else s
 
 
+def an(word):
+    return "An" if word[:1].lower() in "aeiou" else "A"
+
+
 def h(s):
     return esc(s)
 
 
 def fields_sentence(fields):
-    clean = [re.sub(r"\s*\(.*?\)", "", f).lower() for f in fields]
+    clean = [re.sub(r"^your ", "", re.sub(r"\s*\(.*?\)", "", f).lower()) for f in fields]
     if len(clean) == 1:
         return clean[0]
     return ", ".join(clean[:-1]) + " and " + clean[-1]
@@ -71,7 +75,7 @@ def description(p, i):
         h2 = f"Your {pk}, made to order"
         how = (f"Fill in the {fields_sentence(p['fields'])} and we print it into the design for you, on whichever size you choose. "
                f"{p.get('how', 'The rest of the artwork stays exactly as shown in the photos.')} Watch it update in the live preview as you type. {NO_PROOF}")
-        spec = [p.get("b1") or f"A {p['design'].lower()} design you won’t find in the supermarket",
+        spec = [p.get("b1") or f"{an(p['design'])} {p['design'].lower()} design you won’t find in the supermarket",
                 "Your wording is printed into the artwork, not stuck on, so it won’t peel off"]
         close = (p.get("close") or "Pair it with a personalised pint glass or a home bar sign to finish the corner.") + f" Every {pk} is made to order, so allow for that when you’re planning a gift."
     else:
