@@ -94,7 +94,8 @@ ASK = [
     "Not sure which size to choose for your {pk}? Ring us on {ph} and we’ll help.",
     "Any questions about the {pk}, just call us on {ph}.",
 ]
-PK_FIX = {"personalised established bar mat black": "personalised black established bar mat"}
+PK_FIX = {"personalised established bar mat black": "personalised black established bar mat",
+          "personalised union jack bar mat": "personalised Union Jack bar mat"}
 SECONDARY = ["home bar gift", "man cave gift", "bar runner", "pub bar mat", "garden bar accessories", "personalised bar mat"]
 
 
@@ -230,6 +231,7 @@ def m_record(n, num):
     else:
         disc = None
     dname = re.sub(r"^.*Runner (.*?) Design M\d+$", r"\1", n["title"]).strip()
+    dname = {"PS Controler": "Game Controller"}.get(dname, dname)   # no console names outside the disclaimer
     if example and not example.startswith("a "):
         pers = (f"The name in the photo (‘{example}’) is only an example. Type your own bar or pub name in the personalisation box on this page "
                 f"and we print it in the same style" + (", with your year on the EST. line" if "EST" in look else "") +
