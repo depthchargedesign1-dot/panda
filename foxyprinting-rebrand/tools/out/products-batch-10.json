@@ -1,0 +1,670 @@
+[
+ {
+  "title": "Personalised Trick or Treat Bag",
+  "handle": "personalised-trick-or-treat-bag",
+  "descriptionHtml": "<p><strong>Personalised Trick or Treat Bag</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Totes, PE bags, aprons, caps and party sashes.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Bags, Aprons & Textiles",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-bags-aprons-textiles",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-DTF-PTOTB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Teddy Bear with T-Shirt",
+  "handle": "personalised-teddy-bear-with-t-shirt",
+  "descriptionHtml": "<p><strong>Personalised Teddy Bear with T-Shirt</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Totes, PE bags, aprons, caps and party sashes.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Bags, Aprons & Textiles",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-bags-aprons-textiles",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-DTF-PTBWTS-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Logo Polo Shirt (Workwear)",
+  "handle": "logo-polo-shirt-workwear",
+  "descriptionHtml": "<p><strong>Logo Polo Shirt (Workwear)</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Logo polos, hi-vis, kit names & numbers.</p><p>Personalise it with: logo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Workwear & Teamwear",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-workwear",
+   "dept-business-printing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "S"
+     },
+     {
+      "name": "M"
+     },
+     {
+      "name": "L"
+     },
+     {
+      "name": "XL"
+     },
+     {
+      "name": "2XL"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "S"
+     }
+    ],
+    "price": "15.99",
+    "sku": "FOXY-DTF-LPSW-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "M"
+     }
+    ],
+    "price": "15.99",
+    "sku": "FOXY-DTF-LPSW-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "L"
+     }
+    ],
+    "price": "15.99",
+    "sku": "FOXY-DTF-LPSW-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "XL"
+     }
+    ],
+    "price": "15.99",
+    "sku": "FOXY-DTF-LPSW-04",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "2XL"
+     }
+    ],
+    "price": "17.99",
+    "sku": "FOXY-DTF-LPSW-05",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Logo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Hi-Vis Vest with Logo",
+  "handle": "hi-vis-vest-with-logo",
+  "descriptionHtml": "<p><strong>Hi-Vis Vest with Logo</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Logo polos, hi-vis, kit names & numbers.</p><p>Personalise it with: logo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Workwear & Teamwear",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-workwear",
+   "dept-business-printing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-HVVWL-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Logo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Football Kit Name & Number Printing",
+  "handle": "football-kit-name-number-printing",
+  "descriptionHtml": "<p><strong>Football Kit Name & Number Printing</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Logo polos, hi-vis, kit names & numbers.</p><p>Personalise it with: name, number. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Workwear & Teamwear",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-workwear",
+   "dept-business-printing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-DTF-FKNNP-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Number\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Christmas Eve Box",
+  "handle": "personalised-christmas-eve-box",
+  "descriptionHtml": "<p><strong>Personalised Christmas Eve Box</strong> - printed and precision-cut in our UK workshop.</p><p>Personalised Christmas Eve boxes, fill-your-own advent calendars and selection box sleeves.</p><p>Personalise it with: child's name, design. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Christmas Eve Boxes & Advent Calendars",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-eve-boxes",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Medium"
+     },
+     {
+      "name": "Large"
+     },
+     {
+      "name": "XL Family"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Medium"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-CUT-PCEB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Large"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-CUT-PCEB-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "XL Family"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-CUT-PCEB-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Child's name\", \"Design\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Fill-Your-Own Personalised Advent Calendar",
+  "handle": "fill-your-own-personalised-advent-calendar",
+  "descriptionHtml": "<p><strong>Fill-Your-Own Personalised Advent Calendar</strong> - printed and precision-cut in our UK workshop.</p><p>Personalised Christmas Eve boxes, fill-your-own advent calendars and selection box sleeves.</p><p>Personalise it with: name, photo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Christmas Eve Boxes & Advent Calendars",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-eve-boxes",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "24 drawers - kids"
+     },
+     {
+      "name": "24 drawers - adult"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "24 drawers - kids"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-CUT-FYOPAC-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "24 drawers - adult"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-CUT-FYOPAC-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Photo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Selection Box Sleeve",
+  "handle": "personalised-selection-box-sleeve",
+  "descriptionHtml": "<p><strong>Personalised Selection Box Sleeve</strong> - printed and precision-cut in our UK workshop.</p><p>Personalised Christmas Eve boxes, fill-your-own advent calendars and selection box sleeves.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Christmas Eve Boxes & Advent Calendars",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-eve-boxes",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Sleeve only"
+     },
+     {
+      "name": "Pack of 5"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Sleeve only"
+     }
+    ],
+    "price": "3.99",
+    "sku": "FOXY-CUT-PSBS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Pack of 5"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-CUT-PSBS-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Reindeer Food Bag",
+  "handle": "reindeer-food-bag",
+  "descriptionHtml": "<p><strong>Reindeer Food Bag</strong> - printed and precision-cut in our UK workshop.</p><p>Personalised Christmas Eve boxes, fill-your-own advent calendars and selection box sleeves.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Christmas Eve Boxes & Advent Calendars",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-eve-boxes",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Single"
+     },
+     {
+      "name": "Pack of 10"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Single"
+     }
+    ],
+    "price": "1.99",
+    "sku": "FOXY-CUT-RFB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Pack of 10"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-CUT-RFB-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Letter from Santa",
+  "handle": "personalised-letter-from-santa",
+  "descriptionHtml": "<p><strong>Personalised Letter from Santa</strong> - printed on premium stock in our UK workshop.</p><p>Personalised Christmas Eve boxes, fill-your-own advent calendars and selection box sleeves.</p><p>Personalise it with: child's name, achievements. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Christmas Eve Boxes & Advent Calendars",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-eve-boxes",
+   "dept-boxes-packaging",
+   "machine-press",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "4.99",
+    "sku": "FOXY-PRESS-PLFS-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Child's name\", \"Achievements\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

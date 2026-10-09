@@ -1,0 +1,5 @@
+category,file,total,tier_A,tier_B,tier_C,tier_X,sold_12m_A,sold_12m_B,sold_12m_C,titles_over_80,no_main_image
+masks,1-masks.csv,7042,7,24,6946,65,0,157,3163,849,7
+posters,2-posters.csv,17267,206,170,13524,3367,0,0,147,6663,6
+mugs,3-mugs.csv,7516,3478,2095,1942,1,24,74,3,654,3
+baby-grows,4-baby-grows.csv,2192,1315,875,0,2,11,112,0,334,2

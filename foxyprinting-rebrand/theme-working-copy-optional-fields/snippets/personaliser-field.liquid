@@ -1,0 +1,39 @@
+{%- comment -%}
+  One personalisation input. Values are saved as line item properties so they show on the order.
+  Params: label, kind (text|textarea|image), max, placeholder, index, required, block
+  A label containing "optional" (e.g. "Dog’s name (optional)") is never required, even in the first slot
+  (owner, 8 Oct 2026: optional name and number on the dog varsity jacket).
+{%- endcomment -%}
+{%- liquid
+  assign field_id = 'Personalise-' | append: index
+  assign prop = 'properties[' | append: label | append: ']'
+  assign label_lc = label | downcase
+  if label_lc contains 'optional'
+    assign required = false
+  endif
+  comment
+    The translated placeholder already HTML-escapes the label (Child's → Child&#39;s), so it must not be escaped
+    again; a placeholder typed in the theme editor is escaped here instead.
+  endcomment
+  assign ph = placeholder | escape
+  if ph == blank
+    assign ph = 'products.personaliser.placeholder' | t: label: label
+  endif
+-%}
+<div class="field" {% if block %}{{ block.shopify_attributes }}{% endif %}>
+  {%- case kind -%}
+    {%- when 'image' -%}
+      <span class="field__label">{{ label }}</span>
+      <label class="upload" for="{{ field_id }}">
+        <span class="upload__thumb" data-upload-thumb>📷</span>
+        <span><strong>{{ 'products.personaliser.upload' | t }}</strong><br><small>{{ 'products.personaliser.upload_hint' | t }}</small></span>
+        <input type="file" id="{{ field_id }}" name="{{ prop }}" accept="image/jpeg,image/png,image/heic,image/webp" data-field data-field-kind="image" data-field-label="{{ label | escape }}" {% if required %}data-required{% endif %}>
+      </label>
+    {%- when 'textarea' -%}
+      <label for="{{ field_id }}">{{ label }} <span class="field__count" data-count>0/{{ max }}</span></label>
+      <textarea id="{{ field_id }}" name="{{ prop }}" maxlength="{{ max }}" placeholder="{{ ph }}" data-field data-field-kind="textarea" data-field-label="{{ label | escape }}" {% if required %}data-required{% endif %}></textarea>
+    {%- else -%}
+      <label for="{{ field_id }}">{{ label }} <span class="field__count" data-count>0/{{ max }}</span></label>
+      <input type="text" id="{{ field_id }}" name="{{ prop }}" maxlength="{{ max }}" placeholder="{{ ph }}" autocomplete="off" data-field data-field-kind="text" data-field-label="{{ label | escape }}" {% if required %}data-required{% endif %}>
+  {%- endcase -%}
+</div>

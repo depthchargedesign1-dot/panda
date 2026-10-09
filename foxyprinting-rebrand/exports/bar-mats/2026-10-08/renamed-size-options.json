@@ -1,0 +1,2026 @@
+[
+ {
+  "id": "gid://shopify/Product/7540477919483",
+  "title": "Personalized Arsenal Bar Mat - Home Bar Runner",
+  "handle": "personalized-arsenal-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-101-A",
+   "BMAT-1012"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540478804219",
+  "title": "Personalized Aston Villa Bar Mat - Home Bar Runner",
+  "handle": "personalized-aston-villa-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-1013",
+   "BMAT-1014"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540479394043",
+  "title": "Personalized Brentford Bar Mat - Home Bar Runner",
+  "handle": "personalized-brentford-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-1015",
+   "BMAT-1016"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540479820027",
+  "title": "Personalized Brighton and Hove Albion Bar Mat - Home Bar Runner",
+  "handle": "personalized-brighton-and-hove-albion-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-1017",
+   "BMAT-1018"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540480344315",
+  "title": "Personalized Burnley Bar Mat - Home Bar Runner",
+  "handle": "personalized-burnley-bar-mat-home-bar-runner-1",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-1019",
+   "BMAT-10110"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540480573691",
+  "title": "Personalized Chelsea Bar Mat - Home Bar Runner",
+  "handle": "personalized-chelsea-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10111",
+   "BMAT-10112"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540481196283",
+  "title": "Personalized Crystal Palace Bar Mat - Home Bar Runner",
+  "handle": "personalized-crystal-palace-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10113",
+   "BMAT-10114"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540481491195",
+  "title": "Personalized Everton Bar Mat - Home Bar Runner",
+  "handle": "personalized-everton-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10115",
+   "BMAT-10116"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540482015483",
+  "title": "Personalized Leeds Bar Mat - Home Bar Runner",
+  "handle": "personalized-leeds-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10117",
+   "BMAT-10118"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540482441467",
+  "title": "Personalized Leicester Bar Mat - Home Bar Runner",
+  "handle": "personalized-leicester-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10119",
+   "BMAT-10120"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540482572539",
+  "title": "Personalized Liverpool Bar Mat - Home Bar Runner",
+  "handle": "personalized-liverpool-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10121",
+   "BMAT-10122"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540483096827",
+  "title": "Personalized Man City Bar Mat - Home Bar Runner",
+  "handle": "personalized-man-city-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10123",
+   "BMAT-10124"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540483260667",
+  "title": "Personalized Man United Bar Mat - Home Bar Runner",
+  "handle": "personalized-man-united-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10125",
+   "BMAT-10126"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540483850491",
+  "title": "Personalized Newcastle United Bar Mat - Home Bar Runner",
+  "handle": "personalized-newcastle-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10127",
+   "BMAT-10128"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540484145403",
+  "title": "Personalized Norwich City Bar Mat - Home Bar Runner",
+  "handle": "personalized-norwich-city-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10129",
+   "BMAT-10130"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540484407547",
+  "title": "Personalized Southampton Bar Mat - Home Bar Runner",
+  "handle": "personalized-southampton-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10131",
+   "BMAT-10132"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540484964603",
+  "title": "Personalized Tottenham Bar Mat - Home Bar Runner",
+  "handle": "personalized-tottenham-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10133",
+   "BMAT-10134"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540487258363",
+  "title": "Personalized Watford Bar Mat - Home Bar Runner",
+  "handle": "personalized-watford-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10135",
+   "BMAT-10136"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540487553275",
+  "title": "Personalized West Ham Bar Mat - Home Bar Runner",
+  "handle": "personalized-west-ham-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10137",
+   "BMAT-10138"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7540487848187",
+  "title": "Personalized Wolves Bar Mat - Home Bar Runner",
+  "handle": "personalized-wolves-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "BMAT-10139",
+   "BMAT-10140"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561946759419",
+  "title": "Personalized Aberdeen Bar Mat - Home Bar Runner",
+  "handle": "personalized-aberdeen-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-ABERDEEN-BAR-MAT-HOME-B-SMALL",
+   "FOXY-OTHER-PERSONALIZED-ABERDEEN-BAR-MAT-HOME-B-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561947513083",
+  "title": "Personalized Celtic Bar Mat - Home Bar Runner",
+  "handle": "personalized-celtic-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-CELTIC-BAR-MAT-HOME-BAR-SMALL",
+   "FOXY-OTHER-PERSONALIZED-CELTIC-BAR-MAT-HOME-BAR-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561947873531",
+  "title": "Personalized Dundee Bar Mat - Home Bar Runner",
+  "handle": "personalized-dundee-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-DUNDEE-BAR-MAT-HOME-BAR-SMALL",
+   "FOXY-OTHER-PERSONALIZED-DUNDEE-BAR-MAT-HOME-BAR-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561948070139",
+  "title": "Personalized Dundee United Bar Mat - Home Bar Runner",
+  "handle": "personalized-dundee-united-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-DUNDEE-UNITED-BAR-MAT-H-SMALL",
+   "FOXY-OTHER-PERSONALIZED-DUNDEE-UNITED-BAR-MAT-H-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561948365051",
+  "title": "Personalized Hearts Bar Mat - Home Bar Runner",
+  "handle": "personalized-hearts-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "Small - 440mm x 250mm",
+   "Large - 880mm x 250mm"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-HEARTS-BAR-MAT-HOME-BAR-SMALL-440MM",
+   "FOXY-OTHER-PERSONALIZED-HEARTS-BAR-MAT-HOME-BAR-LARGE-880MM"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561948528891",
+  "title": "Personalized Hibernian Bar Mat - Home Bar Runner",
+  "handle": "personalized-hibernian-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-HIBERNIAN-BAR-MAT-HOME-SMALL",
+   "FOXY-OTHER-PERSONALIZED-HIBERNIAN-BAR-MAT-HOME-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561948823803",
+  "title": "Personalized Livingston Bar Mat - Home Bar Runner",
+  "handle": "personalized-livingston-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-LIVINGSTON-BAR-MAT-HOME-SMALL",
+   "FOXY-OTHER-PERSONALIZED-LIVINGSTON-BAR-MAT-HOME-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561949151483",
+  "title": "Personalized Motherwell Bar Mat - Home Bar Runner",
+  "handle": "personalized-motherwell-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-MOTHERWELL-BAR-MAT-HOME-SMALL",
+   "FOXY-OTHER-PERSONALIZED-MOTHERWELL-BAR-MAT-HOME-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561949249787",
+  "title": "Personalized Rangers Bar Mat - Home Bar Runner",
+  "handle": "personalized-rangers-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-RANGERS-BAR-MAT-HOME-BA-SMALL",
+   "FOXY-OTHER-PERSONALIZED-RANGERS-BAR-MAT-HOME-BA-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561949544699",
+  "title": "Personalized Ross County Bar Mat - Home Bar Runner",
+  "handle": "personalized-ross-county-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-ROSS-COUNTY-BAR-MAT-HOM-SMALL",
+   "FOXY-OTHER-PERSONALIZED-ROSS-COUNTY-BAR-MAT-HOM-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561950462203",
+  "title": "Personalized St. Mirren Bar Mat - Home Bar Runner",
+  "handle": "personalized-st-mirren-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-ST-MIRREN-BAR-MAT-HOME-SMALL",
+   "FOXY-OTHER-PERSONALIZED-ST-MIRREN-BAR-MAT-HOME-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7561950855419",
+  "title": "Personalized St. Johnstone FC Bar Mat - Home Bar Runner",
+  "handle": "personalized-st-johnstone-fc-bar-mat-home-bar-runner",
+  "status": "ACTIVE",
+  "values_before": [
+   "small",
+   "large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALIZED-ST-JOHNSTONE-FC-BAR-MAT-SMALL",
+   "FOXY-OTHER-PERSONALIZED-ST-JOHNSTONE-FC-BAR-MAT-LARGE"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7659105648891",
+  "title": "Custom Personalised Bar Mat Runner Cheers Beer Design M1",
+  "handle": "custom-personalised-bar-mat-runner-cheers-beer-design-m1",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-C-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-C-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7659138351355",
+  "title": "Custom Personalised Bar Mat Runner Grid Design M2",
+  "handle": "custom-personalised-bar-mat-runner-grid-beer-design-m2",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-G-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-G-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7659140546811",
+  "title": "Custom Personalised Bar Mat Runner Stately Design M3",
+  "handle": "custom-personalised-bar-mat-runner-stately-design-m3",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-S-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-S-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667130073339",
+  "title": "Custom Personalised Bar Mat Runner Cheers 2 Design M4",
+  "handle": "custom-personalised-bar-mat-runner-cheers-2-design-m4",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-C-MEDIUM-2",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-C-LARGE-2"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667131908347",
+  "title": "Custom Personalised Bar Mat Runner Arch Design M5",
+  "handle": "custom-personalised-bar-mat-runner-arch-design-m5",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-A-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-A-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667137315067",
+  "title": "Custom Personalised Bar Mat Runner Established Black Design M6",
+  "handle": "custom-personalised-bar-mat-runner-established-black-design-m6",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-E-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-E-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667139805435",
+  "title": "Custom Personalised Bar Mat Runner Established Red Design M7",
+  "handle": "custom-personalised-bar-mat-runner-established-red-design-m7",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-E-MEDIUM-2",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-E-LARGE-2"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667141673211",
+  "title": "Custom Personalised Bar Mat Runner Established Green Design M8",
+  "handle": "custom-personalised-bar-mat-runner-established-green-design-m8",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-E-MEDIUM-3",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-E-LARGE-3"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667143606523",
+  "title": "Custom Personalised Bar Mat Runner Established Blue Design M9",
+  "handle": "custom-personalised-bar-mat-runner-established-bluedesign-m9",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-E-MEDIUM-4",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-E-LARGE-4"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667145965819",
+  "title": "Custom Personalised Bar Mat Runner Shots Design M10",
+  "handle": "custom-personalised-bar-mat-runner-shots-design-m10",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-S-MEDIUM-2",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-S-LARGE-2"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667149799675",
+  "title": "Custom Personalised Bar Mat Runner Cursive Design M11",
+  "handle": "custom-personalised-bar-mat-runner-cursive-design-m11",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-C-MEDIUM-3",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-C-LARGE-3"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667152027899",
+  "title": "Custom Personalised Bar Mat Runner Diamond Design M12",
+  "handle": "custom-personalised-bar-mat-runner-diamond-design-m12",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-D-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-D-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667154223355",
+  "title": "Custom Personalised Bar Mat Runner Ring Design M13",
+  "handle": "custom-personalised-bar-mat-runner-ring-design-m13",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-R-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-R-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667155239163",
+  "title": "Custom Personalised Bar Mat Runner Hops Design M14",
+  "handle": "custom-personalised-bar-mat-runner-hops-design-m14",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-H-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-H-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667156648187",
+  "title": "Custom Personalised Bar Mat Runner Shots 2 Design M15",
+  "handle": "custom-personalised-bar-mat-runner-shots-2-design-m15",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-S-MEDIUM-3",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-S-LARGE-3"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667159531771",
+  "title": "Custom Personalised Bar Mat Runner Twin Glass Design M16",
+  "handle": "custom-personalised-bar-mat-runner-twin-glass-design-m16",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-T-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-T-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667162185979",
+  "title": "Custom Personalised Bar Mat Runner Old Fashioned Design M17",
+  "handle": "custom-personalised-bar-mat-runner-old-fashioned-design-m17",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-O-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-O-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667163595003",
+  "title": "Custom Personalised Bar Mat Runner Beer Label Design M18",
+  "handle": "custom-personalised-bar-mat-runner-beer-label-design-m18",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-B-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-B-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667165593851",
+  "title": "Custom Personalised Bar Mat Runner Tiki Design M19",
+  "handle": "custom-personalised-bar-mat-runner-tiki-design-m19",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-T-MEDIUM-2",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-T-LARGE-2"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667166937339",
+  "title": "Custom Personalised Bar Mat Runner Union Jack Design M20",
+  "handle": "custom-personalised-bar-mat-runner-union-jack-design-m20",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-U-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-U-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667168674043",
+  "title": "Custom Personalised Bar Mat Runner Fruit Selection Design M21",
+  "handle": "custom-personalised-bar-mat-runner-fruit-selection-design-m21",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-F-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-F-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667170148603",
+  "title": "Custom Personalised Bar Mat Runner Skull King Design M22",
+  "handle": "custom-personalised-bar-mat-runner-skull-king-design-m22",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-S-MEDIUM-4",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-S-LARGE-4"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667172016379",
+  "title": "Custom Personalised Bar Mat Runner Star Wave Design M23",
+  "handle": "custom-personalised-bar-mat-runner-star-wave-design-m23",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-S-MEDIUM-5",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-S-LARGE-5"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667174047995",
+  "title": "Custom Personalised Bar Mat Runner Bar Rules Design M24",
+  "handle": "custom-personalised-bar-mat-runner-bar-rules-design-m24",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-B-MEDIUM-2",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-B-LARGE-2"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7667176079611",
+  "title": "Custom Personalised Bar Mat Runner Lucky Clover Design M25",
+  "handle": "custom-personalised-bar-mat-runner-lucky-clover-design-m25",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-L-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-L-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678733943035",
+  "title": "Custom Personalised Bar Mat Runner Etched Design M26",
+  "handle": "custom-personalised-bar-mat-runner-etched-design-m26",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-E-MEDIUM-5",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-E-LARGE-5"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678741283067",
+  "title": "Custom Personalised Bar Mat Runner One Shot Design M27",
+  "handle": "custom-personalised-bar-mat-runner-one-shot-design-m27",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-O-MEDIUM-2",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-O-LARGE-2"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678748393723",
+  "title": "Custom Personalised Bar Mat Runner Neon Cocktail Design M28",
+  "handle": "custom-personalised-bar-mat-runner-neon-cocktail-design-m28",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-N-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-N-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678751408379",
+  "title": "Custom Personalised Bar Mat Runner Wine Silhouette Design M29",
+  "handle": "custom-personalised-bar-mat-runner-wine-silhouette-design-m29",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-W-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-W-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678755602683",
+  "title": "Custom Personalised Bar Mat Runner Multi Ring Design M30",
+  "handle": "custom-personalised-bar-mat-runner-multi-ring-design-m30",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-M-MEDIUM",
+   "FOXY-OTHER-CUSTOM-PERSONALISED-BAR-MAT-RUNNER-M-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678760354043",
+  "title": "Personalised Bar Mat Runner Stray Darts Design M31",
+  "handle": "personalised-bar-mat-runner-stray-darts-design-m31",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-STRAY-DA-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-STRAY-DA-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678761894139",
+  "title": "Personalised Bar Mat Runner Bullseye Design M32",
+  "handle": "personalised-bar-mat-runner-bullseye-design-m32",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-BULLSEYE-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-BULLSEYE-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678778245371",
+  "title": "Personalised Bar Mat Runner Dartboard Design M33",
+  "handle": "personalised-bar-mat-runner-dartboard-design-m33",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-DARTBOAR-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-DARTBOAR-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678879629563",
+  "title": "Personalised Bar Mat Runner Billiard Lettering Design M34",
+  "handle": "personalised-bar-mat-runner-billiard-lettering-design-m34",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-BILLIARD-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-BILLIARD-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678890311931",
+  "title": "Personalised Bar Mat Runner Billiard Rack Design M35",
+  "handle": "personalised-bar-mat-runner-billiard-rack-design-m35",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-BILLIARD-MEDIUM-2",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-BILLIARD-LARGE-2"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678896046331",
+  "title": "Personalised Bar Mat Runner Billiard Table Design M36",
+  "handle": "personalised-bar-mat-runner-billiard-table-design-m36",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-BILLIARD-MEDIUM-3",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-BILLIARD-LARGE-3"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678907318523",
+  "title": "Personalised Bar Mat Runner Dartboard 2 Design M37",
+  "handle": "personalised-bar-mat-runner-dartboard-2-design-m37",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-DARTBOAR-MEDIUM-2",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-DARTBOAR-LARGE-2"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678936711419",
+  "title": "Personalised Bar Mat Runner Slot Machine Design M38",
+  "handle": "personalised-bar-mat-runner-slot-machine-design-m38",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-SLOT-MAC-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-SLOT-MAC-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678963548411",
+  "title": "Personalised Bar Mat Runner Retro Pixel Design M39",
+  "handle": "personalised-bar-mat-runner-retro-pixel-design-m39",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-RETRO-PI-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-RETRO-PI-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678966333691",
+  "title": "Personalised Bar Mat Runner Arcade Design M40",
+  "handle": "personalised-bar-mat-runner-arcade-design-m40",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-ARCADE-D-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-ARCADE-D-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678971150587",
+  "title": "Personalised Bar Mat Runner 8-Bit Plumber Design M41",
+  "handle": "personalised-bar-mat-runner-8-bit-plumber-design-m41",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-8-BIT-PL-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-8-BIT-PL-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678974918907",
+  "title": "Personalised Bar Mat Runner Joystick Design M42",
+  "handle": "personalised-bar-mat-runner-joystick-design-m42",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-JOYSTICK-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-JOYSTICK-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7678979178747",
+  "title": "Personalised Bar Mat Runner PS Controler Design M43",
+  "handle": "personalised-bar-mat-runner-ps-controler-design-m43",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-PS-CONTR-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-PS-CONTR-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7679063621883",
+  "title": "Personalised Bar Mat Runner Green Glass Design M44",
+  "handle": "personalised-bar-mat-runner-green-glass-design-m44",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-GREEN-GL-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-GREEN-GL-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7679065620731",
+  "title": "Personalised Bar Mat Runner Tropical Beach Design M45",
+  "handle": "personalised-bar-mat-runner-tropical-beach-design-m45",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-TROPICAL-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-TROPICAL-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7679070077179",
+  "title": "Personalised Bar Mat Runner Jackpot Design M46",
+  "handle": "personalised-bar-mat-runner-jackpot-design-m46",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-JACKPOT-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-JACKPOT-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7679073583355",
+  "title": "Personalised Bar Mat Runner Shooters Design M47",
+  "handle": "personalised-bar-mat-runner-shooters-design-m47",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-SHOOTERS-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-SHOOTERS-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7679076040955",
+  "title": "Personalised Bar Mat Runner Grainy Design M48",
+  "handle": "personalised-bar-mat-runner-grainy-design-m48",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-GRAINY-D-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-GRAINY-D-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7680139559163",
+  "title": "Personalised Bar Mat Runner Satur-Yay! Design M49",
+  "handle": "personalised-bar-mat-runner-satur-yay-design-m49",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-SATUR-YA-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-SATUR-YA-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7680140050683",
+  "title": "Personalised Bar Mat Runner Satur-Yay! Design M49",
+  "handle": "personalised-bar-mat-runner-satur-yay-design-m49-1",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-SATUR-YA-MEDIUM-2",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-SATUR-YA-LARGE-2"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/7680142311675",
+  "title": "Personalised Bar Mat Runner Fruit Sketch Design M50",
+  "handle": "personalised-bar-mat-runner-fruit-sketch-design-m50",
+  "status": "ACTIVE",
+  "values_before": [
+   "Medium",
+   "Large"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-FRUIT-SK-MEDIUM",
+   "FOXY-OTHER-PERSONALISED-BAR-MAT-RUNNER-FRUIT-SK-LARGE"
+  ],
+  "prices": [
+   "12.99",
+   "16.99"
+  ],
+  "description_changed": true
+ },
+ {
+  "id": "gid://shopify/Product/15088414654845",
+  "title": "VE Day 80th Anniversary Bar Mat Runner Design 1 - Special Edition",
+  "handle": "ve-day-80th-anniversary-bar-mat-runner-design-1-special-edition",
+  "status": "DRAFT",
+  "values_before": [
+   "Small - 440mm x 250mm",
+   "Large - 880mm x 250mm"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-VE-DAY-80TH-ANNIVERSARY-BAR-MAT-RUNN-SMALL-440MM",
+   "FOXY-OTHER-VE-DAY-80TH-ANNIVERSARY-BAR-MAT-RUNN-LARGE-880MM"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": false
+ },
+ {
+  "id": "gid://shopify/Product/15088418095485",
+  "title": "VE Day 80th Anniversary Bar Mat Runner Design 2 - Special Edition",
+  "handle": "ve-day-80th-anniversary-bar-mat-runner-design-2-special-edition",
+  "status": "DRAFT",
+  "values_before": [
+   "Small - 440mm x 250mm",
+   "Large - 880mm x 250mm"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-VE-DAY-80TH-ANNIVERSARY-BAR-MAT-RUNN-SMALL-440MM-2",
+   "FOXY-OTHER-VE-DAY-80TH-ANNIVERSARY-BAR-MAT-RUNN-LARGE-880MM-2"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": false
+ },
+ {
+  "id": "gid://shopify/Product/15088418521469",
+  "title": "VE Day 80th Anniversary Bar Mat Runner Design 3 - Special Edition",
+  "handle": "ve-day-80th-anniversary-bar-mat-runner-design-3-special-edition",
+  "status": "DRAFT",
+  "values_before": [
+   "Small - 440mm x 250mm",
+   "Large - 880mm x 250mm"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-VE-DAY-80TH-ANNIVERSARY-BAR-MAT-RUNN-SMALL-440MM-3",
+   "FOXY-OTHER-VE-DAY-80TH-ANNIVERSARY-BAR-MAT-RUNN-LARGE-880MM-3"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": false
+ },
+ {
+  "id": "gid://shopify/Product/15088418718077",
+  "title": "VE Day 80th Anniversary Bar Mat Runner Design 4 - Special Edition",
+  "handle": "ve-day-80th-anniversary-bar-mat-runner-design-4-special-edition",
+  "status": "DRAFT",
+  "values_before": [
+   "Small - 440mm x 250mm",
+   "Large - 880mm x 250mm"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-VE-DAY-80TH-ANNIVERSARY-BAR-MAT-RUNN-SMALL-440MM-4",
+   "FOXY-OTHER-VE-DAY-80TH-ANNIVERSARY-BAR-MAT-RUNN-LARGE-880MM-4"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": false
+ },
+ {
+  "id": "gid://shopify/Product/15088420094333",
+  "title": "VE Day 80th Anniversary Bar Mat Runner Design 5 - Special Edition",
+  "handle": "ve-day-80th-anniversary-bar-mat-runner-design-5-special-edition",
+  "status": "DRAFT",
+  "values_before": [
+   "Small - 440mm x 250mm",
+   "Large - 880mm x 250mm"
+  ],
+  "values_after": [
+   "Small 440mm x 330mm",
+   "Large 880mm x 330mm"
+  ],
+  "skus": [
+   "FOXY-OTHER-VE-DAY-80TH-ANNIVERSARY-BAR-MAT-RUNN-SMALL-440MM-5",
+   "FOXY-OTHER-VE-DAY-80TH-ANNIVERSARY-BAR-MAT-RUNN-LARGE-880MM-5"
+  ],
+  "prices": [
+   "9.99",
+   "13.99"
+  ],
+  "description_changed": false
+ }
+]

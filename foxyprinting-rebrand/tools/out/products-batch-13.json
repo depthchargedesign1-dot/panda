@@ -1,0 +1,725 @@
+[
+ {
+  "title": "Rounded-Corner & Square Business Cards",
+  "handle": "rounded-corner-square-business-cards",
+  "descriptionHtml": "<p><strong>Rounded-Corner & Square Business Cards</strong> - printed and precision-cut in our UK workshop.</p><p>Premium business cards (spot-gloss, metal, rounded), flyers, leaflets and more.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Business Cards & Stationery",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-business-stationery",
+   "dept-business-printing",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "100"
+     },
+     {
+      "name": "250"
+     },
+     {
+      "name": "500"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "100"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-CUT-RCSBC-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "250"
+     }
+    ],
+    "price": "29.99",
+    "sku": "FOXY-CUT-RCSBC-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "500"
+     }
+    ],
+    "price": "39.99",
+    "sku": "FOXY-CUT-RCSBC-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Flyers & Leaflets",
+  "handle": "flyers-leaflets",
+  "descriptionHtml": "<p><strong>Flyers & Leaflets</strong> - printed on premium stock in our UK workshop.</p><p>Premium business cards (spot-gloss, metal, rounded), flyers, leaflets and more.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Business Cards & Stationery",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-business-stationery",
+   "dept-business-printing",
+   "machine-press",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A6 x 250"
+     },
+     {
+      "name": "A5 x 250"
+     },
+     {
+      "name": "A4 x 100"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A6 x 250"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-PRESS-FL-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A5 x 250"
+     }
+    ],
+    "price": "34.99",
+    "sku": "FOXY-PRESS-FL-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A4 x 100"
+     }
+    ],
+    "price": "34.99",
+    "sku": "FOXY-PRESS-FL-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Postcards",
+  "handle": "postcards",
+  "descriptionHtml": "<p><strong>Postcards</strong> - printed on premium stock in our UK workshop.</p><p>Premium business cards (spot-gloss, metal, rounded), flyers, leaflets and more.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Business Cards & Stationery",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-business-stationery",
+   "dept-business-printing",
+   "machine-press",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "50"
+     },
+     {
+      "name": "100"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "50"
+     }
+    ],
+    "price": "17.99",
+    "sku": "FOXY-PRESS-P-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "100"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-PRESS-P-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Gift Vouchers (Numbered)",
+  "handle": "gift-vouchers-numbered",
+  "descriptionHtml": "<p><strong>Gift Vouchers (Numbered)</strong> - printed on premium stock in our UK workshop.</p><p>Premium business cards (spot-gloss, metal, rounded), flyers, leaflets and more.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Business Cards & Stationery",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-business-stationery",
+   "dept-business-printing",
+   "machine-press",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "50"
+     },
+     {
+      "name": "100"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "50"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-PRESS-GVN-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "100"
+     }
+    ],
+    "price": "34.99",
+    "sku": "FOXY-PRESS-GVN-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Appointment & Loyalty Cards",
+  "handle": "appointment-loyalty-cards",
+  "descriptionHtml": "<p><strong>Appointment & Loyalty Cards</strong> - printed on premium stock in our UK workshop.</p><p>Premium business cards (spot-gloss, metal, rounded), flyers, leaflets and more.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Business Cards & Stationery",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-business-stationery",
+   "dept-business-printing",
+   "machine-press",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "100"
+     },
+     {
+      "name": "250"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "100"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-PRESS-ALC-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "250"
+     }
+    ],
+    "price": "29.99",
+    "sku": "FOXY-PRESS-ALC-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Table Talkers & Menus",
+  "handle": "table-talkers-menus",
+  "descriptionHtml": "<p><strong>Table Talkers & Menus</strong> - printed and precision-cut in our UK workshop.</p><p>Premium business cards (spot-gloss, metal, rounded), flyers, leaflets and more.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Business Cards & Stationery",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-business-stationery",
+   "dept-business-printing",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "10"
+     },
+     {
+      "name": "25"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "10"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-CUT-TTM-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "25"
+     }
+    ],
+    "price": "34.99",
+    "sku": "FOXY-CUT-TTM-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Custom Die-Cut Stickers",
+  "handle": "custom-die-cut-stickers",
+  "descriptionHtml": "<p><strong>Custom Die-Cut Stickers</strong> - printed and precision-cut in our UK workshop.</p><p>Die-cut stickers, kiss-cut sheets and product labels for small businesses.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Stickers & Product Labels",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-stickers-labels",
+   "dept-business-printing",
+   "machine-cut",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "50"
+     },
+     {
+      "name": "100"
+     },
+     {
+      "name": "250"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "50"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-CUT-CDCS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "100"
+     }
+    ],
+    "price": "29.99",
+    "sku": "FOXY-CUT-CDCS-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "250"
+     }
+    ],
+    "price": "49.99",
+    "sku": "FOXY-CUT-CDCS-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Kiss-Cut Sticker Sheets",
+  "handle": "kiss-cut-sticker-sheets",
+  "descriptionHtml": "<p><strong>Kiss-Cut Sticker Sheets</strong> - printed and precision-cut in our UK workshop.</p><p>Die-cut stickers, kiss-cut sheets and product labels for small businesses.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Stickers & Product Labels",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-stickers-labels",
+   "dept-business-printing",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "5 sheets"
+     },
+     {
+      "name": "20 sheets"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "5 sheets"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-CUT-KCSS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "20 sheets"
+     }
+    ],
+    "price": "29.99",
+    "sku": "FOXY-CUT-KCSS-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Product Labels (Candle, Jam, Cosmetics)",
+  "handle": "product-labels-candle-jam-cosmetics",
+  "descriptionHtml": "<p><strong>Product Labels (Candle, Jam, Cosmetics)</strong> - printed and precision-cut in our UK workshop.</p><p>Die-cut stickers, kiss-cut sheets and product labels for small businesses.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Stickers & Product Labels",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-stickers-labels",
+   "dept-business-printing",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "50"
+     },
+     {
+      "name": "100"
+     },
+     {
+      "name": "250"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "50"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-CUT-PLCJC-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "100"
+     }
+    ],
+    "price": "22.99",
+    "sku": "FOXY-CUT-PLCJC-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "250"
+     }
+    ],
+    "price": "39.99",
+    "sku": "FOXY-CUT-PLCJC-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Thank You for Your Order Stickers",
+  "handle": "thank-you-for-your-order-stickers",
+  "descriptionHtml": "<p><strong>Thank You for Your Order Stickers</strong> - printed and precision-cut in our UK workshop.</p><p>Die-cut stickers, kiss-cut sheets and product labels for small businesses.</p><p>Personalise it with: logo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Stickers & Product Labels",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-stickers-labels",
+   "dept-business-printing",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "100"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "100"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-CUT-TYFYOS-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Logo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

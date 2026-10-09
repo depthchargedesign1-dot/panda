@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-06",
+  "method": "re-read via Admin API nodes() after the push; descriptionHtml and seo match after.json; status, price and handle unchanged",
+  "products": {
+    "9369892744": {
+      "status": "ACTIVE",
+      "price": "1.99",
+      "third_party_tag": true,
+      "seo_title": "Vicky Pollard Face Mask | Foxy Printing"
+    },
+    "8125539352827": {
+      "status": "ACTIVE",
+      "price": "1.99",
+      "third_party_tag": true,
+      "seo_title": "Lou Todd Face Mask | Foxy Printing"
+    },
+    "9530634184": {
+      "status": "ACTIVE",
+      "price": "1.99",
+      "third_party_tag": true,
+      "seo_title": "Andy Pipkin Face Mask | Foxy Printing"
+    },
+    "9530648776": {
+      "status": "ACTIVE",
+      "price": "2.49",
+      "third_party_tag": true,
+      "seo_title": "Bubbles DeVere Face Mask | Foxy Printing"
+    },
+    "9530623624": {
+      "status": "ACTIVE",
+      "price": "2.49",
+      "third_party_tag": true,
+      "seo_title": "David Walliams Face Mask | Foxy Printing"
+    },
+    "4328415592523": {
+      "status": "ACTIVE",
+      "price": "2.49",
+      "third_party_tag": true,
+      "seo_title": "David Walliams Celebrity Face Mask | Foxy Printing"
+    },
+    "8225435910395": {
+      "status": "ACTIVE",
+      "price": "2.50",
+      "third_party_tag": true,
+      "seo_title": "David Walliams Comedian Face Mask | Foxy Printing"
+    },
+    "9530620744": {
+      "status": "ACTIVE",
+      "price": "2.49",
+      "third_party_tag": true,
+      "seo_title": "David Walliams Fancy Dress Face Mask | Foxy Printing"
+    },
+    "8249158926587": {
+      "status": "ACTIVE",
+      "price": "2.50",
+      "third_party_tag": true,
+      "copy": "unchanged (check only)"
+    }
+  },
+  "userErrors": "none (8 x productUpdate, 4 x tagsAdd in one aliased mutation)"
+}

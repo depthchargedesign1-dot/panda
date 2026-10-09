@@ -1,0 +1,10 @@
+FONTS USED IN THESE TEMPLATES (all free, SIL Open Font License 1.1 - see OFL.txt)
+
+- Bebas Neue (BebasNeue-Regular.ttf, weight 400)
+  Google Fonts page: https://fonts.google.com/specimen/Bebas+Neue
+  Direct .ttf download: https://github.com/google/fonts/raw/main/ofl/bebasneue/BebasNeue-Regular.ttf
+  Shopify Files copy: https://cdn.shopify.com/s/files/1/1774/9115/files/BebasNeue-Regular.ttf?v=1791283074
+  Copyright 2019 The Bebas Neue Project Authors (https://github.com/dharmatype/Bebas-Neue)
+
+Install the fonts before opening the SVG/PDF in Illustrator, otherwise the live text is substituted.
+A copy of each font file is also kept in the website repo: foxyprinting-rebrand/tools/artwork/assets/fonts/

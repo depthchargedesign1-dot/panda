@@ -1,0 +1,722 @@
+[
+ {
+  "title": "Celebrity Posters",
+  "handle": "celebrity-posters",
+  "sortOrder": "BEST_SELLING",
+  "seo": {
+   "title": "Celebrity Posters with Printed Signature | Foxy Printing",
+   "description": "Celebrity posters of music, film, TV and sport stars, each with a printed signature. Choose your size, print only or framed – a great gift for any fan."
+  },
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "Printed Signature"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "celebrity-poster"
+    }
+   ]
+  },
+  "descriptionHtml": "<p>Celebrity posters for every kind of fan – music icons, film and TV stars, football heroes and sporting legends, each with the signature printed into the design. They make a brilliant birthday, Christmas or Father’s Day gift, and they look great on a bedroom, games room or office wall.</p><h2>Celebrity posters with a printed signature</h2><p>Every poster is a printed reproduction designed and printed in-house by Foxy Printing. Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><h3>Shop by star</h3><ul><li><a href=\"/collections/music-star-posters\">Music Star Posters</a></li><li><a href=\"/collections/film-star-posters\">Film Star Posters</a></li><li><a href=\"/collections/tv-star-posters\">TV Star Posters</a></li><li><a href=\"/collections/football-star-posters\">Football Star Posters</a></li><li><a href=\"/collections/nfl-american-football-posters\">NFL & American Football Star Posters</a></li><li><a href=\"/collections/boxing-star-posters\">Boxing Star Posters</a></li><li><a href=\"/collections/ufc-mma-wrestling-posters\">UFC, MMA & Wrestling Posters</a></li><li><a href=\"/collections/darts-snooker-star-posters\">Darts & Snooker Star Posters</a></li><li><a href=\"/collections/cricket-star-posters\">Cricket Star Posters</a></li><li><a href=\"/collections/rugby-star-posters\">Rugby Star Posters</a></li><li><a href=\"/collections/golf-star-posters\">Golf Star Posters</a></li><li><a href=\"/collections/tennis-star-posters\">Tennis Star Posters</a></li><li><a href=\"/collections/horse-racing-star-posters\">Horse Racing Star Posters</a></li><li><a href=\"/collections/f1-motorsport-star-posters\">F1 & Motorsport Star Posters</a></li><li><a href=\"/collections/athletics-olympic-star-posters\">Athletics & Olympic Star Posters</a></li><li><a href=\"/collections/basketball-baseball-hockey-posters\">Basketball, Baseball & Ice Hockey Posters</a></li><li><a href=\"/collections/icons-legends-posters\">Authors, Scientists & Icons Posters</a></li><li><a href=\"/collections/signed-a6-poster-card-packs\">A6 Poster Card Packs</a></li></ul><p>Looking for something to go with it? Our <a href=\"/collections/all-facemasks\">celebrity face masks</a> make a fun party pairing.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>"
+ },
+ {
+  "title": "Music Star Posters",
+  "handle": "music-star-posters",
+  "descriptionHtml": "<p>Music star posters for every playlist – pop icons, rock legends, rappers and much-loved bands, each with the signature printed into the design. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Music Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>Perfect for a bedroom, music room or studio, and a lovely gift for a gig-goer or a fan counting down to the next tour. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Music Star Posters with Printed Signature",
+   "description": "Music star posters with a printed signature – singers, bands and rappers for your wall. A4 to large sizes, print only or framed. Great gift for music fans."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Music Posters"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Rock Music Prints"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "music printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "singers framed printed signature"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-music"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Film Star Posters",
+  "handle": "film-star-posters",
+  "descriptionHtml": "<p>Film star posters for movie lovers – Hollywood leading men and women, action heroes and Bollywood favourites, each with a printed signature as part of the artwork. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Film Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>Ideal for a home cinema, a film buff’s den or as a birthday surprise for someone who can quote every line. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Film Star Posters with Printed Signature",
+   "description": "Film star posters with a printed signature – Hollywood and Bollywood actors in a choice of sizes, print only or framed. A great gift for movie fans."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Movie Star Posters"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "movie printed signature print"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Bollywood Prints"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "actors framed printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature movie"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-film"
+    }
+   ]
+  }
+ },
+ {
+  "title": "TV Star Posters",
+  "handle": "tv-star-posters",
+  "descriptionHtml": "<p>TV star posters celebrating the faces from the shows you binge – drama, comedy, reality and box-set favourites, each finished with a printed signature. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>TV Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>A brilliant gift for a superfan, and a great way to brighten up a lounge, games room or bedroom wall. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "TV Star Posters with Printed Signature",
+   "description": "TV star posters with a printed signature – faces from your favourite shows and comedy. Choose your size, print only or framed. A fun gift for TV fans."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature television"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Television Prints"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "tv show printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "walking dead printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "shows framed printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "thrones printed signature"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed TV Show Prints"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-tv"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Football Star Posters",
+  "handle": "football-star-posters",
+  "descriptionHtml": "<p>Football star posters for every fan – current Premier League players, Lionesses, international captains and all-time legends, each with the signature printed into the design. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Football Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>A top pick for a bedroom, man cave or clubhouse, and a cracking birthday or Christmas present for the football mad. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Football Star Posters with Printed Signature",
+   "description": "Football star posters with a printed signature – Premier League, Lionesses, legends and international players. Print only or framed. Ideal fan gift."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Footballer Posters"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "football player printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "footballer printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature football"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Footballer Posters, Signed Footballer Prints"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed A6 Poster Cards"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "team player printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature style football"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature footballers star"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Footballer Prints"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-football"
+    }
+   ]
+  }
+ },
+ {
+  "title": "NFL & American Football Star Posters",
+  "handle": "nfl-american-football-posters",
+  "descriptionHtml": "<p>NFL and American football star posters for gridiron fans – quarterbacks, running backs, receivers and defensive greats, each with a printed signature. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>NFL & American Football Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>Perfect for a Super Bowl party, a games room or the NFL fan who has everything. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "NFL & American Football Posters – Printed Signature",
+   "description": "NFL and American football star posters with a printed signature – quarterbacks, receivers and legends. Choose your size, print only or framed."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed NFL Footballers"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "American Football Posters"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-american-football"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Boxing Star Posters",
+  "handle": "boxing-star-posters",
+  "descriptionHtml": "<p>Boxing star posters for fight fans – heavyweight champions, British favourites and all-time ring legends, each with the signature printed into the design. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Boxing Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>A knockout gift for a gym, garage or living room wall. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Boxing Star Posters with Printed Signature",
+   "description": "Boxing star posters with a printed signature – world champions and ring legends. Choose your size, print only or framed. A knockout gift for fight fans."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Boxing Prints"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed BOXING Prints Posters"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "boxer printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature boxing"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-boxing"
+    }
+   ]
+  }
+ },
+ {
+  "title": "UFC, MMA & Wrestling Posters",
+  "handle": "ufc-mma-wrestling-posters",
+  "descriptionHtml": "<p>UFC, MMA and wrestling posters for fight-night regulars – octagon champions and wrestling icons, each with a printed signature. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>UFC, MMA & Wrestling Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>Great for a gym, a games room or a fan who never misses a pay-per-view. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "UFC, MMA & Wrestling Posters – Printed Signature",
+   "description": "UFC, MMA and wrestling star posters with a printed signature – fighters and wrestling icons. Choose your size, print only or framed. Great fan gift."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "wrestler printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature ufc"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Wrestling Prints"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed WWE Wrestling Prints"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "fiighters framed printed signature"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-mma-wrestling"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Darts & Snooker Star Posters",
+  "handle": "darts-snooker-star-posters",
+  "descriptionHtml": "<p>Darts and snooker star posters for the games room – world champions from the oche and the baize, each with the signature printed into the design. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Darts & Snooker Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>Hang one above the dartboard or snooker table, or give it to the player who always wins the pub league. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Darts & Snooker Star Posters – Printed Signature",
+   "description": "Darts and snooker star posters with a printed signature – oche heroes and cue legends. Choose your size, print only or framed. Ideal for a games room."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Darts Posters"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "snooker player printed signature"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-darts"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Cricket Star Posters",
+  "handle": "cricket-star-posters",
+  "descriptionHtml": "<p>Cricket star posters for fans of the summer game – England heroes, Ashes favourites and world greats, each with a printed signature. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Cricket Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>A lovely gift for a cricket club member, coach or young player. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Cricket Star Posters with Printed Signature",
+   "description": "Cricket star posters with a printed signature – England heroes and world greats. Choose your size, print only or framed. A great gift for cricket fans."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "cricketer printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature cricket"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "cricketer-printed signature poster print"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-cricket"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Rugby Star Posters",
+  "handle": "rugby-star-posters",
+  "descriptionHtml": "<p>Rugby star posters for union and league fans – Six Nations heroes, World Cup winners and club legends, each with the signature printed into the design. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Rugby Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>Perfect for a clubhouse, a player’s bedroom or a Six Nations party. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Rugby Star Posters with Printed Signature",
+   "description": "Rugby star posters with a printed signature – union and league heroes. Choose your size, print only or framed. A great gift for rugby fans."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed RUGBY Prints Posters"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "rugby player printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "rugby printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature rugby"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-rugby"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Golf Star Posters",
+  "handle": "golf-star-posters",
+  "descriptionHtml": "<p>Golf star posters for players and fans – major winners, Ryder Cup heroes and legends of the game, each with a printed signature. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Golf Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>A smart gift for a golfer’s study, office or clubhouse. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Golf Star Posters with Printed Signature",
+   "description": "Golf star posters with a printed signature – major winners and Ryder Cup heroes. Choose your size, print only or framed. A great gift for golfers."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Golf Prints"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature golfer"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "golfer printed signature print"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-golf"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Tennis Star Posters",
+  "handle": "tennis-star-posters",
+  "descriptionHtml": "<p>Tennis star posters for fans of the game – Grand Slam champions and Wimbledon favourites, each with the signature printed into the design. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Tennis Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>A great gift for a club player or anyone who lives for the summer fortnight. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Tennis Star Posters with Printed Signature",
+   "description": "Tennis star posters with a printed signature – Grand Slam champions and legends. Choose your size, print only or framed. A great gift for tennis fans."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "tennis player printed signature"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Tennis Player Prints"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-tennis"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Horse Racing Star Posters",
+  "handle": "horse-racing-star-posters",
+  "descriptionHtml": "<p>Horse racing star posters for racing fans – champion jockeys and Grand National and Cheltenham heroes, each with a printed signature. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Horse Racing Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>A lovely gift for a racegoer, a stable lad or lass, or a Cheltenham regular. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Horse Racing Star Posters – Printed Signature",
+   "description": "Horse racing star posters with a printed signature – champion jockeys and racing legends. Choose your size, print only or framed. Great racing fan gift."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "racer printed signature print"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Horse Racing Prints"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-horse-racing"
+    }
+   ]
+  }
+ },
+ {
+  "title": "F1 & Motorsport Star Posters",
+  "handle": "f1-motorsport-star-posters",
+  "descriptionHtml": "<p>F1 and motorsport star posters for petrolheads – Formula 1 drivers, rally heroes and MotoGP riders, past and present, each with the signature printed into the design. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>F1 & Motorsport Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>Ideal for a garage, a sim-racing setup or a race-day gift. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "F1 & Motorsport Star Posters – Printed Signature",
+   "description": "F1 and motorsport star posters with a printed signature – drivers and riders, past and present. Choose your size, print only or framed. Great fan gift."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Motor Racer Prints"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature print formula"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "driver printed signature gift"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed FORMULA1 Prints Posters"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "motorsport printed signature print"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "racing printed signature"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-motorsport"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Athletics & Olympic Star Posters",
+  "handle": "athletics-olympic-star-posters",
+  "descriptionHtml": "<p>Athletics and Olympic star posters – sprinters, swimmers and champions from the track and the pool, each with a printed signature. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Athletics & Olympic Star Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>An inspiring print for a young athlete’s bedroom, a gym or a running club. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Athletics & Olympic Star Posters – Printed Signature",
+   "description": "Athletics and Olympic star posters with a printed signature – sprinters, swimmers and champions. Choose your size, print only or framed. Inspiring gift."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "athletics printed signature"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "printed signature athletics star"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Swimmer Prints"
+    },
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "olympians framed printed signature"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-athletics"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Basketball, Baseball & Ice Hockey Posters",
+  "handle": "basketball-baseball-hockey-posters",
+  "descriptionHtml": "<p>Basketball, baseball and ice hockey star posters for fans of American sport – hoops legends, home-run hitters and ice hockey greats, each with the signature printed into the design. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Basketball, Baseball & Ice Hockey Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>A great gift for a games room, a basketball fan’s bedroom or a trip-to-the-States souvenir. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Basketball, Baseball & Ice Hockey Posters",
+   "description": "Basketball, baseball and ice hockey star posters with a printed signature – greats of the court, diamond and rink. Print only or framed."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TITLE",
+     "relation": "CONTAINS",
+     "condition": "basketball player printed signature"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Baseball Player Prints"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Ice Hockey Prints"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-us-sports"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Authors, Scientists & Icons Posters",
+  "handle": "icons-legends-posters",
+  "descriptionHtml": "<p>Posters of the authors, scientists, business leaders, designers and dancers who changed the world, each with a printed signature. Every design is a printed reproduction made in-house by Foxy Printing.</p><h2>Authors, Scientists & Icons Posters</h2><p>Most designs come in a choice of sizes, as a print only or in one of our Premium Display frames – thick, chunky and very professional, not cheap thin frames. Open any poster to see its sizes and prices.</p><p>A thoughtful gift for a study, classroom, office or a bookworm’s reading nook. Browse all of our <a href=\"/collections/celebrity-posters\">celebrity posters</a> for more.</p><h3>Please note</h3><p class=\"disclaimer\">These are unofficial, fan-made prints designed and printed by Foxy Printing. The signature is printed as part of the design – it is not hand-signed and is not an original autograph. The people shown have not endorsed, sponsored or approved these products, and Foxy Printing has no connection with them, their clubs, teams, studios or record labels. Names are used only to describe the design. All trademarks belong to their respective owners.</p>",
+  "seo": {
+   "title": "Authors, Scientists & Icons Posters – Printed Signature",
+   "description": "Posters of famous authors, scientists, business leaders and fashion icons with a printed signature. Choose your size, print only or framed."
+  },
+  "sortOrder": "BEST_SELLING",
+  "ruleSet": {
+   "appliedDisjunctively": true,
+   "rules": [
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Authors Prints"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Famous Businessmen Prints"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Scientist Prints"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Fashion Designer Prints"
+    },
+    {
+     "column": "TYPE",
+     "relation": "EQUALS",
+     "condition": "Signed Dancers Prints"
+    },
+    {
+     "column": "TAG",
+     "relation": "EQUALS",
+     "condition": "cp-icons"
+    }
+   ]
+  }
+ }
+]

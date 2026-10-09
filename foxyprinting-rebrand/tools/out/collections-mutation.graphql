@@ -1,0 +1,36 @@
+mutation($c0: CollectionInput!, $c1: CollectionInput!, $c2: CollectionInput!, $c3: CollectionInput!, $c4: CollectionInput!, $c5: CollectionInput!, $c6: CollectionInput!, $c7: CollectionInput!, $c8: CollectionInput!, $c9: CollectionInput!, $c10: CollectionInput!, $c11: CollectionInput!, $c12: CollectionInput!, $c13: CollectionInput!, $c14: CollectionInput!, $c15: CollectionInput!, $c16: CollectionInput!, $c17: CollectionInput!, $c18: CollectionInput!, $c19: CollectionInput!, $c20: CollectionInput!, $c21: CollectionInput!, $c22: CollectionInput!, $c23: CollectionInput!, $c24: CollectionInput!, $c25: CollectionInput!, $c26: CollectionInput!, $c27: CollectionInput!, $c28: CollectionInput!, $c29: CollectionInput!, $c30: CollectionInput!, $c31: CollectionInput!, $c32: CollectionInput!, $c33: CollectionInput!) {
+  c0: collectionCreate(input: $c0) { collection { id handle } userErrors { field message } }
+  c1: collectionCreate(input: $c1) { collection { id handle } userErrors { field message } }
+  c2: collectionCreate(input: $c2) { collection { id handle } userErrors { field message } }
+  c3: collectionCreate(input: $c3) { collection { id handle } userErrors { field message } }
+  c4: collectionCreate(input: $c4) { collection { id handle } userErrors { field message } }
+  c5: collectionCreate(input: $c5) { collection { id handle } userErrors { field message } }
+  c6: collectionCreate(input: $c6) { collection { id handle } userErrors { field message } }
+  c7: collectionCreate(input: $c7) { collection { id handle } userErrors { field message } }
+  c8: collectionCreate(input: $c8) { collection { id handle } userErrors { field message } }
+  c9: collectionCreate(input: $c9) { collection { id handle } userErrors { field message } }
+  c10: collectionCreate(input: $c10) { collection { id handle } userErrors { field message } }
+  c11: collectionCreate(input: $c11) { collection { id handle } userErrors { field message } }
+  c12: collectionCreate(input: $c12) { collection { id handle } userErrors { field message } }
+  c13: collectionCreate(input: $c13) { collection { id handle } userErrors { field message } }
+  c14: collectionCreate(input: $c14) { collection { id handle } userErrors { field message } }
+  c15: collectionCreate(input: $c15) { collection { id handle } userErrors { field message } }
+  c16: collectionCreate(input: $c16) { collection { id handle } userErrors { field message } }
+  c17: collectionCreate(input: $c17) { collection { id handle } userErrors { field message } }
+  c18: collectionCreate(input: $c18) { collection { id handle } userErrors { field message } }
+  c19: collectionCreate(input: $c19) { collection { id handle } userErrors { field message } }
+  c20: collectionCreate(input: $c20) { collection { id handle } userErrors { field message } }
+  c21: collectionCreate(input: $c21) { collection { id handle } userErrors { field message } }
+  c22: collectionCreate(input: $c22) { collection { id handle } userErrors { field message } }
+  c23: collectionCreate(input: $c23) { collection { id handle } userErrors { field message } }
+  c24: collectionCreate(input: $c24) { collection { id handle } userErrors { field message } }
+  c25: collectionCreate(input: $c25) { collection { id handle } userErrors { field message } }
+  c26: collectionCreate(input: $c26) { collection { id handle } userErrors { field message } }
+  c27: collectionCreate(input: $c27) { collection { id handle } userErrors { field message } }
+  c28: collectionCreate(input: $c28) { collection { id handle } userErrors { field message } }
+  c29: collectionCreate(input: $c29) { collection { id handle } userErrors { field message } }
+  c30: collectionCreate(input: $c30) { collection { id handle } userErrors { field message } }
+  c31: collectionCreate(input: $c31) { collection { id handle } userErrors { field message } }
+  c32: collectionCreate(input: $c32) { collection { id handle } userErrors { field message } }
+  c33: collectionCreate(input: $c33) { collection { id handle } userErrors { field message } }
+}

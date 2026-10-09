@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="216.0mm" height="303.0mm" viewBox="0 0 216.0 303.0">
+<title>MCAAP</title>
+<g id="Artwork" inkscape:groupmode="layer" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<rect x="0" y="0" width="216.0" height="303.0" fill="#F3EBDD"/>
+<path d="M 29.00 153.00 A 52.00 52.00 0 0 1 133.00 153.00 Z" fill="#C4643F"/>
+<path d="M 47.00 153.00 A 34.00 34.00 0 0 1 115.00 153.00 Z" fill="#F3EBDD"/>
+<path d="M 63.00 153.00 A 18.00 18.00 0 0 1 99.00 153.00 Z" fill="#D99A1E"/>
+<circle cx="151.00" cy="81.00" r="26.00" fill="#D99A1E"/>
+<circle cx="55.00" cy="65.00" r="13.00" fill="#8FA98B"/>
+<rect x="33.00" y="91.00" width="44.00" height="4.00" fill="#C4643F"/>
+<rect x="121.00" y="107.00" width="60.00" height="46.00" fill="#8FA98B"/>
+<path d="M 121.00 153.00 A 30.00 30.00 0 0 1 181.00 153.00 Z" fill="#1F3A5F"/>
+<rect x="29.00" y="153.00" width="158.00" height="6.00" fill="#1F3A5F"/>
+<circle cx="59.00" cy="203.00" r="18.00" fill="#8FA98B"/>
+<circle cx="121.00" cy="209.00" r="12.00" fill="#C4643F"/>
+<rect x="149.00" y="189.00" width="38.00" height="38.00" fill="#D99A1E"/>
+<text x="108.00" y="265.00" font-family="Bebas Neue" font-size="26.00" text-anchor="middle" fill="#1F3A5F">THE TAYLORS</text>
+<text x="108.00" y="279.00" font-family="Bebas Neue" font-size="9.00" text-anchor="middle" fill="#C4643F">EST. 2019</text>
+</g>
+<g id="Guides" style="display:none">
+<rect x="3.0" y="3.0" width="210" height="297" fill="none" stroke="#00AEEF" stroke-width="0.2"/>
+<rect x="6.0" y="6.0" width="204.0" height="291.0" fill="none" stroke="#EC008C" stroke-width="0.2" stroke-dasharray="1 1"/>
+</g></svg>

@@ -1,0 +1,1413 @@
+{
+ "verified_at": "2026-10-05",
+ "note": "Re-read from Shopify after all fixes (67 products: 63 conflicted copies, 3 Harry Stlyes, the Selina/Selena Gomez 2->3 twin). Checked by script: every product ACTIVE; tags and SEO identical to before.json; no 'conflicted', 'Fujistsu', '2019-04-08' or 'Stlyes' left in any title, handle or description; title, handle and descriptionHtml equal the values sent (pending-updates.json, with the step-3 description fixes for the renumbered products). All 55 old handles sent today have a UrlRedirect to the new handle.",
+ "products": [
+  {
+   "id": "gid://shopify/Product/14903390175613",
+   "title": "Harry Styles 5 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "harry-styles-5-signed-autographed-music-star-print",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:18:52Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star Harry Styles 5 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Harry Styles 5 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903390404989",
+   "title": "Harry Styles 3 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "harry-styles-3-signed-autographed-music-star-print",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T17:53:07Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star Harry Styles 3 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Harry Styles 3 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903390732669",
+   "title": "Harry Styles 4 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "harry-styles-4-signed-autographed-music-star-print",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T17:53:08Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star Harry Styles 4 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Harry Styles 4 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903426941309",
+   "title": "Lady Gaga 4 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "lady-gaga-4-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:07:12Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LADY GAGA 4 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Lady Gaga 4 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903429235069",
+   "title": "Leona Lewis – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "leona-lewis-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:07:12Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LEONA LEWIS Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Leona Lewis Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903430545789",
+   "title": "Liam Gallagher – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "liam-gallagher-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:07:13Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LIAM GALLAGHER Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Liam Gallagher Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903431004541",
+   "title": "Liam Payne – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "liam-payne-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:07:13Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LIAM PAYNE Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Liam Payne Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903431856509",
+   "title": "Liam Payne 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "liam-payne-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:07:14Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LIAM PAYNE 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Liam Payne 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903432020349",
+   "title": "Lily Allen 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "lily-allen-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:07:15Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LILY ALLEN 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Lily Allen 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903432937853",
+   "title": "Lily Allen 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "lily-allen-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:07:16Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LILY ALLEN 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Lily Allen 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903434641789",
+   "title": "Lloyd Banks 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "lloyd-banks-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:07:16Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LLOYD BANKS 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Lloyd Banks 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903435395453",
+   "title": "Lorde 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "lorde-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:12:06Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LORDE 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Lorde 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903436444029",
+   "title": "Lou Reed 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "lou-reed-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:12:06Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LOU REED 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Lou Reed 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903436607869",
+   "title": "Lou Reed 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "lou-reed-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:12:07Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star LOU REED 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Lou Reed 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903438344573",
+   "title": "Manic Street 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "manic-street-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:12:08Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star MANIC STREET 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Manic Street 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903441031549",
+   "title": "Martin Offiah – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "martin-offiah-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:12:08Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star Martin Offiah Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Martin Offiah Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903442375037",
+   "title": "Matt Cardle 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "matt-cardle-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:12:09Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star MATT CARDLE 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Matt Cardle 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903442669949",
+   "title": "Matt Cardle 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "matt-cardle-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:12:10Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star MATT CARDLE 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Matt Cardle 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903443390845",
+   "title": "Mcfly 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "mcfly-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:12:10Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star MCFLY 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Mcfly 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903445062013",
+   "title": "Michael Ball 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "michael-ball-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:12:11Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star MICHAEL BALL 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Michael Ball 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903446372733",
+   "title": "Mick Jagger 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "mick-jagger-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:12:11Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star MICK JAGGER 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Mick Jagger 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903447454077",
+   "title": "Miley Cyrus 5 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "miley-cyrus-5-signed-autographed-music-star-print",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:18:53Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star MILEY CYRUS 5 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Miley Cyrus 5 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903447585149",
+   "title": "Miley Cyrus 6 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "miley-cyrus-6-signed-autographed-music-star-print",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:18:53Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star MILEY CYRUS 6 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Miley Cyrus 6 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903448895869",
+   "title": "Morrissey 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "morrissey-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:13:21Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star MORRISSEY 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Morrissey 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903450141053",
+   "title": "Nat Lofthouse – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "nat-lofthouse-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:13:22Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star NAT LOFTHOUSE Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Nat Lofthouse Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903450632573",
+   "title": "Neil Diamond 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "neil-diamond-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:13:22Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star NEIL DIAMOND 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Neil Diamond 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903451943293",
+   "title": "Neil Young 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "neil-young-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:13:23Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star NEIL YOUNG 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Neil Young 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903455351165",
+   "title": "Niall Horan 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "niall-horan-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:13:23Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star NIALL HORAN 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Niall Horan 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903455875453",
+   "title": "Nicki Minaj 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "nicki-minaj-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:13:24Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star NICKI MINAJ 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Nicki Minaj 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903458595197",
+   "title": "Oasis 7 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "oasis-7-signed-autographed-music-star-print",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:18:54Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star OASIS 7 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Oasis 7 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903459676541",
+   "title": "Olly Murs 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "olly-murs-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:13:25Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star OLLY MURS 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Olly Murs 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903461183869",
+   "title": "Paloma Faith 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "paloma-faith-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:14:44Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star PALOMA FAITH 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Paloma Faith 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903462396285",
+   "title": "Paloma Faith 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "paloma-faith-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:14:45Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star PALOMA FAITH 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Paloma Faith 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903464362365",
+   "title": "Paul Weller 5 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "paul-weller-5-signed-autographed-music-star-print",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:18:54Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star PAUL WELLER 5 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Paul Weller 5 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903464886653",
+   "title": "Peter Andre 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "peter-andre-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:14:46Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star PETER ANDRE 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Peter Andre 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903465673085",
+   "title": "Peter Andre 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "peter-andre-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:14:47Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star PETER ANDRE 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Peter Andre 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903466393981",
+   "title": "Phil Collins 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "phil-collins-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:14:48Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star PHIL COLLINS 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Phil Collins 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903467409789",
+   "title": "Pink 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "pink-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:14:48Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star PINK 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Pink 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903468949885",
+   "title": "Plan B 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "plan-b-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:14:49Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star PLAN B 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Plan B 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903469703549",
+   "title": "Plan B 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "plan-b-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:14:49Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star PLAN B 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Plan B 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903472193917",
+   "title": "Radiohead 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "radiohead-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:14:50Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star RADIOHEAD 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Radiohead 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903478878589",
+   "title": "Rod Stewart – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "rod-stewart-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:15:54Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star ROD STEWART Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Rod Stewart Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903480222077",
+   "title": "Roy Orbison 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "roy-orbison-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:15:55Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star ROY ORBISON 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Roy Orbison 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903481008509",
+   "title": "Run Dmc – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "run-dmc-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:15:55Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star RUN DMC Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Run Dmc Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903481926013",
+   "title": "Sam Smith 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "sam-smith-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:15:56Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star SAM SMITH 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Sam Smith 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903482286461",
+   "title": "Selena Gomez – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "selena-gomez-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:15:57Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star SELENA GOMEZ Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Selena Gomez Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903483433341",
+   "title": "Selena Gomez 3 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "selena-gomez-3-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:18:53Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star SELENA GOMEZ 3 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Selena Gomez 3 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903484350845",
+   "title": "Shawn Mendes – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "shawn-mendes-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:15:58Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star SHAWN MENDES Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Shawn Mendes Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903485464957",
+   "title": "Sigur Ros Full – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "sigur-ros-full-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:15:58Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star SIGUR ROS FULL Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Sigur Ros Full Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903486775677",
+   "title": "Slash 5 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "slash-5-signed-autographed-music-star-print",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:18:55Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star SLASH 5 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Slash 5 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903488086397",
+   "title": "Snoop Dogg 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "snoop-dogg-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:16:00Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star SNOOP DOGG 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Snoop Dogg 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903489233277",
+   "title": "Spice Girls 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "spice-girls-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:04Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star SPICE GIRLS 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Spice Girls 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903492313469",
+   "title": "Stormzy 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "stormzy-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:04Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star STORMZY 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Stormzy 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903493558653",
+   "title": "The Clash 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "the-clash-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:05Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star THE CLASH 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-The Clash 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903494017405",
+   "title": "The Clash 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "the-clash-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:06Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star THE CLASH 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-The Clash 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903495491965",
+   "title": "The Doors 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "the-doors-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:06Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star THE DOORS 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-The Doors 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903496868221",
+   "title": "The Jam Final – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "the-jam-final-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:07Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star THE JAM_FINAL Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-The Jam Final Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903498047869",
+   "title": "The National 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "the-national-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:08Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star THE NATIONAL 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-The National 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903498211709",
+   "title": "The National 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "the-national-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:08Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star THE NATIONAL 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-The National 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903502373245",
+   "title": "Tina Turner 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "tina-turner-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:09Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star TINA TURNER 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Tina Turner 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903503913341",
+   "title": "Tom Odell 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "tom-odell-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:09Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star TOM ODELL 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Tom Odell 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903505191293",
+   "title": "Tom Petty 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "tom-petty-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:44Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star TOM PETTY 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Tom Petty 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903506829693",
+   "title": "Tommy Steele 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "tommy-steele-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:44Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star TOMMY STEELE 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Tommy Steele 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903507943805",
+   "title": "Troye Sivan 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "troye-sivan-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:45Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star TROYE SIVAN 1 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Troye Sivan 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903510892925",
+   "title": "Una Healy 1 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "una-healy-1-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:45Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star UNA HEALY (1) Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Una Healy 1 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903514562941",
+   "title": "Westlife 2 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "westlife-2-signed-autographed-music-star-print-copy",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:17:46Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star WESTLIFE 2 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Westlife 2 Signed Merch Autographed Music Star Display Poster Print</p>"
+  },
+  {
+   "id": "gid://shopify/Product/14903483400573",
+   "title": "Selena Gomez 3 – Printed Signature Music Star Print – Reproduction Print",
+   "handle": "selena-gomez-3-signed-autographed-music-star-print",
+   "status": "ACTIVE",
+   "updatedAt": "2026-10-05T18:18:52Z",
+   "tags": [
+    "Display Poster Print",
+    "Other Console Posters",
+    "Signed Athletics Prints",
+    "Signed Print",
+    "SignedAutographedPrint",
+    "Signedposter",
+    "signedprint"
+   ],
+   "seo": {
+    "title": null,
+    "description": null
+   },
+   "descriptionHtml": "<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">MUSIC Star SELENA GOMEZ 3 Autograph Print</span></p> <p>? YOU WON'T FIND A BETTER PRODUCT FOR THE PRICE - Just like the real thing but without the cost, Fans and collectors of any age will be delighted to receive this authentic-looking display that makes for a unique addition to their collectors' memorabilia</p><p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Available in poster sizes A4 A3 A2 A1 - Framed or Print Only</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Choose from A4 or A3 Poster or Have it EXCLUSIVELY FRAMED!</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">A High Quality framed or un-framed Signed Print  They are High-Quality Prints in Full Colour and framed in Sleek Black or Classy Silver Frames. You can even choose if you want your print in A3 or A4.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">The A3 frames have a clip on the back to be hung on a wall to show-off to your friends and family and A4 frames have a stand to easily display on any surface. The perfect Birthday or Christmas present for any fan.</span></p> <p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">If you have any questions or would like a different famous person you cannot see on our website then please get in touch! You can contact us via Email, Phone or Facebook and we will get back to you!</span></p>-<p><span style=\"color: #131313; font-family: Barlow, Arial, Helvetica, sans-serif; font-size: 16px;\">Poster &amp; Framed Print Product Description</span></p> <p>-Selena Gomez 3 Signed Merch Autographed Music Star Display Poster Print</p>"
+  }
+ ]
+}

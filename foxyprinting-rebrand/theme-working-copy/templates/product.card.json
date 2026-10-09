@@ -1,0 +1,83 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "f1": {
+          "type": "field",
+          "settings": {
+            "label": "Name on the front",
+            "kind": "text",
+            "max": 18,
+            "required": true
+          }
+        },
+        "f2": {
+          "type": "field",
+          "settings": {
+            "label": "Age",
+            "kind": "text",
+            "max": 3,
+            "required": false
+          }
+        },
+        "f3": {
+          "type": "field",
+          "settings": {
+            "label": "Message inside",
+            "kind": "textarea",
+            "max": 200,
+            "required": false
+          }
+        },
+        "t1": {
+          "type": "tab",
+          "settings": {
+            "heading": "About our cards",
+            "content": "<p>Printed inside and out on thick 350gsm card with a white envelope. Choose to have it posted direct to the recipient at checkout.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "t1"
+      ],
+      "settings": {
+        "default_mockup": "card",
+        "personaliser_heading": "Personalise your card",
+        "use_product_image": true
+      }
+    },
+    "reviews": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_reviews": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judgeme_reviews"
+      ],
+      "settings": {
+        "heading": "",
+        "tinted": false
+      }
+    },
+    "related": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Add a gift",
+        "limit": 4,
+        "tinted": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "reviews",
+    "related"
+  ]
+}

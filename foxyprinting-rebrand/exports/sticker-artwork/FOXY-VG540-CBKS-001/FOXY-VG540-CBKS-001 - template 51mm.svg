@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="134mm" height="70mm" viewBox="0 0 134 70">
+<title>Custom Bakery Stickers - FOXY-VG540-CBKS-001</title>
+<g id="Artwork" inkscape:groupmode="layer" inkscape:label="Artwork">
+<circle cx="33.5" cy="33.5" r="28.5" fill="#ffa6e6"/>
+<circle cx="33.5" cy="33.5" r="23.7" fill="none" stroke="#ff33b2" stroke-width="0.4"/>
+<rect x="24.96" y="22.56" width="17.08" height="8.54" rx="1" fill="#ffffff" stroke="#ff33b2" stroke-width="0.35" stroke-dasharray="1.2,0.8"/>
+<rect x="72" y="5" width="57" height="57" fill="#ffa6e6"/>
+<rect x="76.8" y="9.8" width="47.4" height="47.4" rx="1.5" fill="none" stroke="#ff33b2" stroke-width="0.4"/>
+<rect x="90.43" y="20.61" width="20.13" height="10.07" rx="1" fill="#ffffff" stroke="#ff33b2" stroke-width="0.35" stroke-dasharray="1.2,0.8"/>
+</g>
+<g id="Text" inkscape:groupmode="layer" inkscape:label="Text">
+<text x="33.5" y="27.4" font-family="'Poppins', sans-serif" font-weight="700" font-size="1.61" text-anchor="middle" fill="#737373">YOUR LOGO HERE</text>
+<text x="33.5" y="37.9" font-family="'Pacifico', sans-serif" font-weight="400" font-size="5.69" text-anchor="middle" fill="#66293d">Your Bakery</text>
+<text x="33.5" y="43.52" font-family="'Poppins', sans-serif" font-weight="700" font-size="2.61" text-anchor="middle" fill="#66293d">FRESHLY BAKED WITH LOVE</text>
+<text x="100.5" y="26.31" font-family="'Poppins', sans-serif" font-weight="700" font-size="1.89" text-anchor="middle" fill="#737373">YOUR LOGO HERE</text>
+<text x="100.5" y="38.68" font-family="'Pacifico', sans-serif" font-weight="400" font-size="6.71" text-anchor="middle" fill="#66293d">Your Bakery</text>
+<text x="100.5" y="45.31" font-family="'Poppins', sans-serif" font-weight="700" font-size="3.08" text-anchor="middle" fill="#66293d">FRESHLY BAKED WITH LOVE</text>
+</g>
+<g id="CUT" inkscape:groupmode="layer" inkscape:label="CUT">
+<circle cx="33.5" cy="33.5" r="25.5" fill="none" stroke="#ff0000" stroke-width="0.09"/>
+<rect x="75" y="8" width="51" height="51" fill="none" stroke="#ff0000" stroke-width="0.09"/>
+</g>
+<g id="Guides" inkscape:groupmode="layer" inkscape:label="Guides" style="display:none">
+<circle cx="33.5" cy="33.5" r="28.5" fill="none" stroke="#4dff00" stroke-width="0.2" stroke-dasharray="1,1"/>
+<circle cx="33.5" cy="33.5" r="22.5" fill="none" stroke="#ff00ff" stroke-width="0.2" stroke-dasharray="1,1"/>
+<text x="33.5" y="67" font-family="'Poppins', sans-serif" font-weight="700" font-size="2.12" text-anchor="middle" fill="#4d4d4d">CIRCLE 51 mm  (+3 mm bleed, 3 mm safe)</text>
+<rect x="72" y="5" width="57" height="57" fill="none" stroke="#4dff00" stroke-width="0.2" stroke-dasharray="1,1"/>
+<rect x="78" y="11" width="45" height="45" fill="none" stroke="#ff00ff" stroke-width="0.2" stroke-dasharray="1,1"/>
+<text x="100.5" y="67" font-family="'Poppins', sans-serif" font-weight="700" font-size="2.12" text-anchor="middle" fill="#4d4d4d">SQUARE 51 x 51 mm  (+3 mm bleed, 3 mm safe)</text>
+</g>
+</svg>

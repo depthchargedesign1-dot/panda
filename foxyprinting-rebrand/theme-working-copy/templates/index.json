@@ -1,0 +1,973 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-banner",
+      "blocks": {
+        "main": {
+          "type": "main",
+          "settings": {
+            "image": "shopify://shop_images/foxy-hero-kids-birthday-cards.png",
+            "colour": "orange",
+            "eyebrow": "Our bestsellers",
+            "heading": "Kids' birthday cards",
+            "text": "Add their name, age and your own message, and watch it appear live on the card. Printed and posted next working day.",
+            "button_label": "Shop kids' cards",
+            "button_link": "shopify://collections/kids-cards",
+            "button2_label": "Gifts for kids",
+            "button2_link": "shopify://collections/all"
+          }
+        },
+        "side1": {
+          "type": "side",
+          "settings": {
+            "image": "shopify://shop_images/foxy-side-christmas-eve-box.png",
+            "colour": "purple",
+            "eyebrow": "Christmas 2026",
+            "heading": "Christmas Eve boxes",
+            "text": "Personalised with their name",
+            "button_label": "Shop boxes",
+            "button_link": "shopify://collections/new-christmas-eve-boxes"
+          }
+        },
+        "side2": {
+          "type": "side",
+          "settings": {
+            "image": "shopify://shop_images/foxy-side-can-cups-tumblers.png",
+            "colour": "teal",
+            "eyebrow": "Trending",
+            "heading": "Glass can cups & tumblers",
+            "text": "With your name, permanently printed",
+            "button_label": "Shop drinkware",
+            "button_link": "shopify://collections/new-glass-can-cups"
+          }
+        }
+      },
+      "block_order": [
+        "main",
+        "side1",
+        "side2"
+      ],
+      "settings": {}
+    },
+    "usps": {
+      "type": "usp-bar",
+      "blocks": {
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "emoji": "🚚",
+            "title": "Fast UK dispatch",
+            "text": "Most orders out in 1–2 working days"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "emoji": "👀",
+            "title": "Live preview",
+            "text": "See your design before you buy"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "emoji": "🖨️",
+            "title": "Printed in the UK",
+            "text": "In our own workshop, on our own kit"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "emoji": "💯",
+            "title": "Happiness promise",
+            "text": "Not right? We'll reprint it"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "settings": {}
+    },
+    "categories": {
+      "type": "category-circles",
+      "blocks": {
+        "c1": {
+          "type": "category",
+          "settings": {
+            "collection": "all-cards",
+            "label": "Birthday Cards",
+            "image": "shopify://shop_images/foxy-cat-birthday-cards.png",
+            "emoji": "🎂"
+          }
+        },
+        "c2": {
+          "type": "category",
+          "settings": {
+            "collection": "mugs",
+            "label": "Mugs",
+            "image": "shopify://shop_images/foxy-cat-mugs.png",
+            "emoji": "☕"
+          }
+        },
+        "c3": {
+          "type": "category",
+          "settings": {
+            "collection": "baby-vests",
+            "label": "Baby Grows",
+            "image": "shopify://shop_images/foxy-cat-baby-grows.png",
+            "emoji": "👶"
+          }
+        },
+        "c4": {
+          "type": "category",
+          "settings": {
+            "collection": "new-glass-can-cups",
+            "label": "Tumblers & Cups",
+            "image": "shopify://shop_images/foxy-cat-tumblers-cups.png",
+            "emoji": "🥤"
+          }
+        },
+        "c5": {
+          "type": "category",
+          "settings": {
+            "collection": "t-shirts",
+            "label": "T-Shirts & Hoodies",
+            "image": "shopify://shop_images/foxy-cat-tees-hoodies.png",
+            "emoji": "👕"
+          }
+        },
+        "c6": {
+          "type": "category",
+          "settings": {
+            "collection": "personalised-pet-products",
+            "label": "Pet Gifts",
+            "image": "shopify://shop_images/foxy-cat-pet-gifts.png",
+            "emoji": "🐶"
+          }
+        },
+        "c7": {
+          "type": "category",
+          "settings": {
+            "collection": "all-retro-gaming-keyrings",
+            "label": "Keyrings & Magnets",
+            "image": "shopify://shop_images/foxy-cat-keyrings-magnets.png",
+            "emoji": "🔑"
+          }
+        },
+        "c8": {
+          "type": "category",
+          "settings": {
+            "collection": "personalised-bath-towels",
+            "label": "Towels",
+            "image": "shopify://shop_images/foxy-cat-towels.png",
+            "emoji": "🛁"
+          }
+        },
+        "c9": {
+          "type": "category",
+          "settings": {
+            "collection": "christmas-novelty-gifts",
+            "label": "Christmas",
+            "image": "shopify://shop_images/foxy-cat-christmas.png",
+            "emoji": "🎄"
+          }
+        },
+        "c10": {
+          "type": "category",
+          "settings": {
+            "collection": "new-halloween",
+            "label": "Halloween",
+            "image": "shopify://shop_images/foxy-cat-halloween.png",
+            "emoji": "🎃"
+          }
+        },
+        "c11": {
+          "type": "category",
+          "settings": {
+            "collection": "all-retro-game-cases",
+            "label": "Retro Gaming",
+            "image": "shopify://shop_images/foxy-cat-retro-gaming.png",
+            "emoji": "🎮"
+          }
+        },
+        "c12": {
+          "type": "category",
+          "settings": {
+            "collection": "business-cards",
+            "label": "Business Printing",
+            "image": "shopify://shop_images/foxy-cat-business-printing.png",
+            "emoji": "💼"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8",
+        "c9",
+        "c10",
+        "c11",
+        "c12"
+      ],
+      "settings": {
+        "heading": "Shop by category",
+        "link_label": "See all categories",
+        "link": "shopify://collections/all"
+      }
+    },
+    "christmas": {
+      "type": "occasion-countdown",
+      "settings": {
+        "colour": "pink",
+        "date": "2026-12-18 12:00"
+      }
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Bestselling personalised gifts",
+        "subheading": "Our customers' favourites this month",
+        "collection": "bestsellers",
+        "limit": 8
+      }
+    },
+    "how": {
+      "type": "steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "emoji": "🎁",
+            "title": "Pick your gift",
+            "text": "Choose from thousands of cards, mugs, clothing, keepsakes and more."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "emoji": "✏️",
+            "title": "Make it theirs",
+            "text": "Type a name, add a message or upload a photo and watch the live preview update."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "emoji": "🚚",
+            "title": "We print & post",
+            "text": "Printed in our UK workshop and dispatched fast."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "new_ranges": {
+      "type": "feature-grid",
+      "blocks": {
+        "f1": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-acrylic-photo-gifts.png",
+            "emoji": "💎",
+            "tag": "UV printed",
+            "title": "Acrylic photo blocks",
+            "text": "Crystal-clear keepsakes, night lights and music plaques.",
+            "link": "shopify://collections/new-acrylic-photo-gifts"
+          }
+        },
+        "f2": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-can-cups-tumblers.png",
+            "emoji": "🥤",
+            "tag": "UV DTF",
+            "title": "Can cups & tumblers",
+            "text": "Your name on glass, steel and more — dishwasher tough.",
+            "link": "shopify://collections/new-glass-can-cups"
+          }
+        },
+        "f3": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-leavers-hoodies.png",
+            "emoji": "👕",
+            "tag": "DTF clothing",
+            "title": "Tees, hoodies & leavers",
+            "text": "Full-colour printing on any garment, no minimum.",
+            "link": "shopify://collections/hoodies"
+          }
+        },
+        "f4": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-boxes-packaging.png",
+            "emoji": "📦",
+            "tag": "Cut to shape",
+            "title": "Boxes & packaging",
+            "text": "Christmas Eve boxes, cupcake boxes, game cases and more.",
+            "link": "shopify://collections/new-party-boxes"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {}
+    },
+    "christmas_products": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Christmas gifts they'll treasure",
+        "collection": "christmas-novelty-gifts",
+        "limit": 8,
+        "tinted": true
+      }
+    },
+    "reviews": {
+      "type": "reviews",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Fantastic card",
+            "quote": "Absolutely fantastic card! My grandson will be so thrilled that he has a card with his favourite supercar on it. Superb quality card and very quick delivery. Thank you.",
+            "name": "Jean M.",
+            "verified": true,
+            "product": "Personalised kids' birthday card"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Brother loved the card",
+            "quote": "My brother is a Motörhead/Lemmy big fan and he absolutely loved his birthday card. I ordered in New Zealand and he received it in plenty of time in England.",
+            "name": "Kevin T.",
+            "verified": true,
+            "product": "Personalised music birthday card"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Excellent card",
+            "quote": "Excellent card, excellent print. Fantastic service and fast delivery. Would definitely recommend the product and company.",
+            "name": "Glennis L.",
+            "verified": true,
+            "product": "Personalised A4 card"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Absolutely brilliant service",
+            "quote": "Absolutely brilliant service. Great quality and very fast delivery. Would recommend and will use again.",
+            "name": "John B.",
+            "verified": true,
+            "product": "Custom photo face mask"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "High quality item",
+            "quote": "High quality item, competitively priced and would definitely return for more.",
+            "name": "D. Gray",
+            "verified": true,
+            "product": "Personalised football club certificates"
+          }
+        },
+        "r6": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Great quality",
+            "quote": "Great quality, fast delivery — this was exactly what I wanted, thank you.",
+            "name": "Tracey B.",
+            "verified": true,
+            "product": "Personalised birthday card"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "settings": {
+        "heading": "Customers love Foxy",
+        "subheading": "415 reviews on Judge.me · 411 from verified buyers",
+        "link_label": "Read all reviews",
+        "link": ""
+      }
+    },
+    "business": {
+      "type": "feature-grid",
+      "blocks": {
+        "b1": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-business-cards.png",
+            "emoji": "🪪",
+            "tag": "From £19.99",
+            "title": "Business cards",
+            "text": "Standard, rounded, spot-gloss and metal.",
+            "link": "shopify://collections/business-cards"
+          }
+        },
+        "b2": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-stickers-labels.png",
+            "emoji": "🏷️",
+            "tag": "From £14.99",
+            "title": "Stickers & labels",
+            "text": "Die-cut, kiss-cut and product labels.",
+            "link": "shopify://collections/all-phone-case"
+          }
+        },
+        "b3": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-review-stand.png",
+            "emoji": "⭐",
+            "tag": "Trending",
+            "title": "Tap-to-review stands",
+            "text": "NFC + QR stands that get you Google reviews.",
+            "link": "shopify://collections/new-signs-displays"
+          }
+        },
+        "b4": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-workwear.png",
+            "emoji": "👔",
+            "tag": "Workwear",
+            "title": "Branded clothing",
+            "text": "Logo polos, hi-vis and teamwear.",
+            "link": "shopify://collections/new-workwear"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "heading": "Printing for your business",
+        "subheading": "Everything you'd get from the big online printers, made locally by us",
+        "tinted": false
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {}
+    },
+    "face_masks": {
+      "type": "promo-hero",
+      "blocks": {
+        "l1": {
+          "type": "link",
+          "settings": {
+            "label": "Best sellers",
+            "link": "shopify://collections/best-selling-face-masks"
+          }
+        },
+        "l2": {
+          "type": "link",
+          "settings": {
+            "label": "Personalised masks",
+            "link": "shopify://collections/personalised-face-masks"
+          }
+        },
+        "l3": {
+          "type": "link",
+          "settings": {
+            "label": "Footballers",
+            "link": "shopify://collections/footballer-face-masks"
+          }
+        },
+        "l4": {
+          "type": "link",
+          "settings": {
+            "label": "Film stars",
+            "link": "shopify://collections/movie-actor-face-masks"
+          }
+        },
+        "l5": {
+          "type": "link",
+          "settings": {
+            "label": "TV stars",
+            "link": "shopify://collections/film-movie-celebrities"
+          }
+        },
+        "l6": {
+          "type": "link",
+          "settings": {
+            "label": "Reality TV",
+            "link": "shopify://collections/reality-tv-face-masks"
+          }
+        },
+        "l7": {
+          "type": "link",
+          "settings": {
+            "label": "Music stars",
+            "link": "shopify://collections/music-celebrities"
+          }
+        },
+        "l8": {
+          "type": "link",
+          "settings": {
+            "label": "Politicians & royals",
+            "link": "shopify://collections/politicians-and-royals"
+          }
+        },
+        "l9": {
+          "type": "link",
+          "settings": {
+            "label": "Comedians",
+            "link": "shopify://collections/comedians"
+          }
+        },
+        "l10": {
+          "type": "link",
+          "settings": {
+            "label": "Sports stars",
+            "link": "shopify://collections/sport-celebrities"
+          }
+        },
+        "l99": {
+          "type": "link",
+          "settings": {
+            "label": "Your own face from a photo",
+            "link": "shopify://products/personalised-photo-face-masks"
+          }
+        }
+      },
+      "block_order": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "l5",
+        "l6",
+        "l7",
+        "l8",
+        "l9",
+        "l10",
+        "l99"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/foxy-hero-celebrity-masks-2026.png",
+        "colour": "pink",
+        "eyebrow": "Party favourite",
+        "heading": "Celebrity face masks",
+        "text": "Footballers, TV favourites, pop stars and more, printed on 350gsm card with eye holes and elastic. Or send us a photo and we'll make a mask of anyone.",
+        "button_label": "Shop face masks",
+        "button_link": "shopify://collections/all-facemasks",
+        "button2_label": "Make your own",
+        "button2_link": "shopify://products/personalised-photo-face-masks"
+      }
+    },
+    "mask_categories": {
+      "type": "feature-grid",
+      "blocks": {
+        "m1": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-best-sellers.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "Customer favourites",
+            "title": "Best sellers",
+            "text": "The masks everyone orders again and again.",
+            "link": "shopify://collections/best-selling-face-masks"
+          }
+        },
+        "m2": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-personalised.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "Order just 1",
+            "title": "Personalised face masks",
+            "text": "Your own photo on a card mask, for stag, hen and birthdays.",
+            "link": "shopify://collections/personalised-face-masks"
+          }
+        },
+        "m3": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-footballers.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "1,000+ masks",
+            "title": "Footballers",
+            "text": "Players and managers for match day and stag dos.",
+            "link": "shopify://collections/footballer-face-masks"
+          }
+        },
+        "m4": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-film-stars.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "1,600+ masks",
+            "title": "Film stars",
+            "text": "Big-screen faces for a red carpet night in.",
+            "link": "shopify://collections/movie-actor-face-masks"
+          }
+        },
+        "m5": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-tv-stars.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "250+ masks",
+            "title": "TV stars",
+            "text": "Soap legends, sitcom heroes and telly favourites.",
+            "link": "shopify://collections/film-movie-celebrities"
+          }
+        },
+        "m6": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-reality-tv.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "300+ masks",
+            "title": "Reality TV",
+            "text": "Villa, dance floor and TOWIE-style glam.",
+            "link": "shopify://collections/reality-tv-face-masks"
+          }
+        },
+        "m7": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-music-stars.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "550+ masks",
+            "title": "Music stars",
+            "text": "Pop icons and rock legends for a singalong party.",
+            "link": "shopify://collections/music-celebrities"
+          }
+        },
+        "m8": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-politicians-royals.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "250+ masks",
+            "title": "Politicians & royals",
+            "text": "Prime ministers, presidents and the royals.",
+            "link": "shopify://collections/politicians-and-royals"
+          }
+        },
+        "m9": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-comedians.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "200+ masks",
+            "title": "Comedians",
+            "text": "Comedy legends guaranteed to get a laugh.",
+            "link": "shopify://collections/comedians"
+          }
+        },
+        "m10": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-sports-stars.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "1,000+ masks",
+            "title": "Sports stars",
+            "text": "Darts, boxing, golf, tennis, F1 and more.",
+            "link": "shopify://collections/sport-celebrities"
+          }
+        },
+        "m11": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-darts.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "75+ masks",
+            "title": "Darts players",
+            "text": "Oche heroes for a big night at the darts.",
+            "link": "shopify://collections/lake-side-darts-face-masks"
+          }
+        },
+        "m12": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/foxy-tile-masks-formula-1.png",
+            "emoji": "🎭",
+            "colour": "auto",
+            "tag": "150+ masks",
+            "title": "Formula 1",
+            "text": "Drivers and team bosses for race day.",
+            "link": "shopify://collections/f1-face-masks"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8",
+        "m9",
+        "m10",
+        "m11",
+        "m12"
+      ],
+      "settings": {
+        "heading": "Shop celebrity masks by category",
+        "subheading": "Over 6,000 masks of the faces everyone knows, printed on 350gsm card",
+        "tinted": false
+      }
+    },
+    "football_posters": {
+      "type": "promo-hero",
+      "blocks": {
+        "l1": {
+          "type": "link",
+          "settings": {
+            "label": "Footballers",
+            "link": "shopify://collections/football-player-autograph"
+          }
+        },
+        "l2": {
+          "type": "link",
+          "settings": {
+            "label": "American football",
+            "link": "shopify://collections/football-posters"
+          }
+        },
+        "l3": {
+          "type": "link",
+          "settings": {
+            "label": "A6 football card packs",
+            "link": "shopify://collections/signed-a6-football-poster-card-packs"
+          }
+        },
+        "l4": {
+          "type": "link",
+          "settings": {
+            "label": "Rugby",
+            "link": "shopify://collections/rugby-star-autograph"
+          }
+        },
+        "l5": {
+          "type": "link",
+          "settings": {
+            "label": "Boxing",
+            "link": "shopify://collections/boxer-autograph"
+          }
+        },
+        "l6": {
+          "type": "link",
+          "settings": {
+            "label": "MMA & wrestling",
+            "link": "shopify://collections/mma-wrestling-star-autograph"
+          }
+        },
+        "l7": {
+          "type": "link",
+          "settings": {
+            "label": "Golf",
+            "link": "shopify://collections/golfer-autograph"
+          }
+        },
+        "l8": {
+          "type": "link",
+          "settings": {
+            "label": "Formula 1",
+            "link": "shopify://collections/formula-1-star-autograph"
+          }
+        },
+        "l9": {
+          "type": "link",
+          "settings": {
+            "label": "Horse racing",
+            "link": "shopify://collections/horse-racing-star-autograph"
+          }
+        },
+        "l10": {
+          "type": "link",
+          "settings": {
+            "label": "Snooker",
+            "link": "shopify://collections/snooker-star-autograph"
+          }
+        },
+        "l11": {
+          "type": "link",
+          "settings": {
+            "label": "All sports & stars",
+            "link": "shopify://collections/signed-autographed-prints"
+          }
+        }
+      },
+      "block_order": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "l5",
+        "l6",
+        "l7",
+        "l8",
+        "l9",
+        "l10",
+        "l11"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/foxy-home-football-posters-room.jpg",
+        "colour": "teal",
+        "eyebrow": "For the football fan",
+        "heading": "Football star poster prints",
+        "text": "Reproduction prints with the player's signature printed on, in A4 to A1 or ready framed in black or silver. Prints from £6.99.",
+        "button_label": "Shop football prints",
+        "button_link": "shopify://collections/football-player-autograph",
+        "button2_label": "All sports prints",
+        "button2_link": "shopify://collections/signed-autographed-prints"
+      }
+    },
+    "personalised_masks": {
+      "type": "promo-hero",
+      "blocks": {
+        "p1": {
+          "type": "link",
+          "settings": {
+            "label": "Stag do",
+            "link": "shopify://collections/stag-do-face-masks"
+          }
+        },
+        "p2": {
+          "type": "link",
+          "settings": {
+            "label": "Hen party",
+            "link": "shopify://collections/hen-party-face-masks"
+          }
+        },
+        "p3": {
+          "type": "link",
+          "settings": {
+            "label": "Birthday",
+            "link": "shopify://products/personalised-birthday-face-masks"
+          }
+        },
+        "p4": {
+          "type": "link",
+          "settings": {
+            "label": "Wedding photo booth",
+            "link": "shopify://products/wedding-photo-booth-face-masks"
+          }
+        },
+        "p5": {
+          "type": "link",
+          "settings": {
+            "label": "Leaving do & retirement",
+            "link": "shopify://products/leaving-do-retirement-face-masks"
+          }
+        },
+        "p6": {
+          "type": "link",
+          "settings": {
+            "label": "Office & Christmas parties",
+            "link": "shopify://products/office-christmas-party-face-masks"
+          }
+        },
+        "p7": {
+          "type": "link",
+          "settings": {
+            "label": "Mix & match multipack",
+            "link": "shopify://products/mix-and-match-photo-face-mask-multipack"
+          }
+        },
+        "p8": {
+          "type": "link",
+          "settings": {
+            "label": "All personalised masks",
+            "link": "shopify://collections/personalised-face-masks"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/hf_20261002_185839_687c62a3-273b-45d4-a2c4-9babd8a0b1da.png",
+        "colour": "orange",
+        "eyebrow": "No minimum – order just 1",
+        "heading": "Your face on a party mask",
+        "text": "Upload a photo and we'll print it on a full A4 card face mask. Ready cut, DIY or on a stick, from 1 to 50 masks, dispatched the next working day.",
+        "button_label": "Upload your photo",
+        "button_link": "shopify://products/personalised-photo-face-masks",
+        "button2_label": "Stag & hen masks",
+        "button2_link": "shopify://collections/stag-do-face-masks"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "usps",
+    "categories",
+    "christmas",
+    "bestsellers",
+    "personalised_masks",
+    "face_masks",
+    "mask_categories",
+    "how",
+    "new_ranges",
+    "football_posters",
+    "christmas_products",
+    "reviews",
+    "business",
+    "newsletter"
+  ]
+}

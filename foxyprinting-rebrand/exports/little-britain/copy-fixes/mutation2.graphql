@@ -1,0 +1,16 @@
+mutation LBFollowUps($p8125549805819: ProductUpdateInput!, $p8195091595515: ProductUpdateInput!, $p9530623624: ProductUpdateInput!, $p4328415592523: ProductUpdateInput!, $p9530620744: ProductUpdateInput!, $p16063694635389: ProductUpdateInput!, $p8249158926587: ProductUpdateInput!, $files: [FileUpdateInput!]!) {
+  u8125549805819: productUpdate(product: $p8125549805819) { product { id } userErrors { field message } }
+  u8195091595515: productUpdate(product: $p8195091595515) { product { id } userErrors { field message } }
+  u9530623624: productUpdate(product: $p9530623624) { product { id } userErrors { field message } }
+  u4328415592523: productUpdate(product: $p4328415592523) { product { id } userErrors { field message } }
+  u9530620744: productUpdate(product: $p9530620744) { product { id } userErrors { field message } }
+  u16063694635389: productUpdate(product: $p16063694635389) { product { id } userErrors { field message } }
+  u8249158926587: productUpdate(product: $p8249158926587) { product { id } userErrors { field message } }
+  r9530634184: tagsRemove(id: "gid://shopify/Product/9530634184", tags: ["mask-film-stars", "MOVIES"]) { node { id } userErrors { field message } }
+  r9530648776: tagsRemove(id: "gid://shopify/Product/9530648776", tags: ["mask-film-stars", "MOVIES"]) { node { id } userErrors { field message } }
+  a8125549805819: tagsAdd(id: "gid://shopify/Product/8125549805819", tags: ["third-party-name"]) { node { id } userErrors { field message } }
+  a8195091595515: tagsAdd(id: "gid://shopify/Product/8195091595515", tags: ["third-party-name"]) { node { id } userErrors { field message } }
+  a9530634184: tagsAdd(id: "gid://shopify/Product/9530634184", tags: ["mask-comedians", "TV STARS"]) { node { id } userErrors { field message } }
+  a9530648776: tagsAdd(id: "gid://shopify/Product/9530648776", tags: ["mask-comedians", "TV STARS"]) { node { id } userErrors { field message } }
+  alts: fileUpdate(files: $files) { files { id alt } userErrors { field message } }
+}

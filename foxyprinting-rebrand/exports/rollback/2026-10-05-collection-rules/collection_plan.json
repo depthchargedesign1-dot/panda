@@ -1,0 +1,379 @@
+{
+ "all-mugs": {
+  "id": "gid://shopify/Collection/427275976",
+  "before": 14372,
+  "predicted": 7665,
+  "appliedDisjunctively": true,
+  "rules": [
+   [
+    "TYPE",
+    "CONTAINS",
+    "mug"
+   ],
+   [
+    "TITLE",
+    "ENDS_WITH",
+    "mug"
+   ],
+   [
+    "TITLE",
+    "CONTAINS",
+    "mug –"
+   ],
+   [
+    "TITLE",
+    "CONTAINS",
+    "mug -"
+   ],
+   [
+    "TITLE",
+    "CONTAINS",
+    "mug design"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Keep Calm Support"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Championship Football team"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "League One Football Team"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "League Two Football Team"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "National League South"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "National League North"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "International Football Team"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Premier league Football Team"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Scottish Football Teams"
+   ]
+  ]
+ },
+ "football-celebrity-face-mask-party-pack": {
+  "id": "gid://shopify/Collection/685256212861",
+  "before": 1116,
+  "predicted": 31,
+  "appliedDisjunctively": false,
+  "rules": [
+   [
+    "TAG",
+    "EQUALS",
+    "mask-footballers"
+   ],
+   [
+    "TITLE",
+    "CONTAINS",
+    "pack"
+   ]
+  ]
+ },
+ "football-team-face-coverings": {
+  "id": "gid://shopify/Collection/388582342907",
+  "before": 301,
+  "predicted": 68,
+  "appliedDisjunctively": false,
+  "rules": [
+   [
+    "TAG",
+    "EQUALS",
+    "football face covering"
+   ],
+   [
+    "TITLE",
+    "CONTAINS",
+    "Face Covering"
+   ]
+  ]
+ },
+ "mothersday-mugs": {
+  "id": "gid://shopify/Collection/418980232",
+  "before": 43,
+  "predicted": 1,
+  "appliedDisjunctively": false,
+  "rules": [
+   [
+    "TAG",
+    "EQUALS",
+    "mothers day"
+   ],
+   [
+    "TAG",
+    "EQUALS",
+    "printed mug"
+   ]
+  ]
+ },
+ "all-personalised-prints": {
+  "id": "gid://shopify/Collection/429844104",
+  "before": 56,
+  "predicted": 235,
+  "appliedDisjunctively": true,
+  "rules": [
+   [
+    "TAG",
+    "EQUALS",
+    "Personalised Word Art"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Pet Portrait"
+   ],
+   [
+    "TAG",
+    "EQUALS",
+    "personalised poster"
+   ]
+  ]
+ },
+ "other-console-posters": {
+  "id": "gid://shopify/Collection/433225032",
+  "before": 9883,
+  "predicted": 165,
+  "appliedDisjunctively": true,
+  "rules": [
+   [
+    "TYPE",
+    "EQUALS",
+    "Intellivison posters"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "NEO GEO POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Amiga CD32 POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "ODDESY POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "coleco posters"
+   ]
+  ]
+ },
+ "all-retro-game-posters": {
+  "id": "gid://shopify/Collection/435534664",
+  "before": 13767,
+  "predicted": 4096,
+  "appliedDisjunctively": true,
+  "rules": [
+   [
+    "TAG",
+    "EQUALS",
+    "ATARI POSTERS"
+   ],
+   [
+    "TAG",
+    "EQUALS",
+    "PlayStation Posters"
+   ],
+   [
+    "TAG",
+    "EQUALS",
+    "ALL SEGA POSTERS"
+   ],
+   [
+    "TAG",
+    "EQUALS",
+    "NINTENDO POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "NES POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "SNES POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Sega Master Megadrive POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Playstation 1 POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Sega Saturn posters"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Game Cube POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Sega Dreamcast POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Sega Master System POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "GameBoy posters"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Mega CD Posters , ALL SEGA POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "ATARI 5200 POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "ATARI 2600 POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "PLAYSTATION 4 POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Intellivison posters"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "NEO GEO POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "ATARI 7800 POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "ATARI JAGUAR CD POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Jaguar CD POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "ATARI JAGUAR POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Amiga CD32 POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "ODDESY POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "Sega 32x POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "ATARI LYNX POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "ATARI XE POSTERS"
+   ],
+   [
+    "TYPE",
+    "EQUALS",
+    "coleco posters"
+   ]
+  ]
+ },
+ "male-movie-stars": {
+  "id": "gid://shopify/Collection/417579656",
+  "before": 390,
+  "predicted": 200,
+  "appliedDisjunctively": false,
+  "rules": [
+   [
+    "TAG",
+    "EQUALS",
+    "male movie stars"
+   ],
+   [
+    "TYPE",
+    "CONTAINS",
+    "mug"
+   ]
+  ]
+ },
+ "female-movie-stars": {
+  "id": "gid://shopify/Collection/417579912",
+  "before": 203,
+  "predicted": 110,
+  "appliedDisjunctively": false,
+  "rules": [
+   [
+    "TAG",
+    "EQUALS",
+    "Female Movie Stars"
+   ],
+   [
+    "TYPE",
+    "CONTAINS",
+    "mug"
+   ]
+  ]
+ }
+}

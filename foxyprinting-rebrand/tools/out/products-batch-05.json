@@ -1,0 +1,616 @@
+[
+ {
+  "title": "Personalised Gin Balloon Glass",
+  "handle": "personalised-gin-balloon-glass",
+  "descriptionHtml": "<p><strong>Personalised Gin Balloon Glass</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Gin, wine, pint and whisky glasses with dishwasher-tough UV DTF prints.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Glassware",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glassware",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UVDTF-PGBG-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Wine Glass",
+  "handle": "personalised-wine-glass",
+  "descriptionHtml": "<p><strong>Personalised Wine Glass</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Gin, wine, pint and whisky glasses with dishwasher-tough UV DTF prints.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Glassware",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glassware",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-UVDTF-PWG-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Pint Glass",
+  "handle": "personalised-pint-glass",
+  "descriptionHtml": "<p><strong>Personalised Pint Glass</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Gin, wine, pint and whisky glasses with dishwasher-tough UV DTF prints.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Glassware",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glassware",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-UVDTF-PPG-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Whisky Tumbler",
+  "handle": "personalised-whisky-tumbler",
+  "descriptionHtml": "<p><strong>Personalised Whisky Tumbler</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Gin, wine, pint and whisky glasses with dishwasher-tough UV DTF prints.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Glassware",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glassware",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "13.99",
+    "sku": "FOXY-UVDTF-PWT-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Prosecco Flute",
+  "handle": "personalised-prosecco-flute",
+  "descriptionHtml": "<p><strong>Personalised Prosecco Flute</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Gin, wine, pint and whisky glasses with dishwasher-tough UV DTF prints.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Glassware",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-glassware",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Single"
+     },
+     {
+      "name": "Pair"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Single"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-UVDTF-PPF-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Pair"
+     }
+    ],
+    "price": "22.99",
+    "sku": "FOXY-UVDTF-PPF-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Name Bauble",
+  "handle": "personalised-name-bauble",
+  "descriptionHtml": "<p><strong>Personalised Name Bauble</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Name baubles, photo ornaments, Santa keys and memorial decorations.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Baubles & Decorations",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-baubles",
+   "dept-occasions",
+   "machine-uvdtf",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Colour",
+    "values": [
+     {
+      "name": "Red"
+     },
+     {
+      "name": "Gold"
+     },
+     {
+      "name": "Silver"
+     },
+     {
+      "name": "Clear"
+     },
+     {
+      "name": "Green"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Red"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-UVDTF-PNB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Gold"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-UVDTF-PNB-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Silver"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-UVDTF-PNB-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Clear"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-UVDTF-PNB-04",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Colour",
+      "name": "Green"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-UVDTF-PNB-05",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "bauble"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Photo Bauble",
+  "handle": "personalised-photo-bauble",
+  "descriptionHtml": "<p><strong>Personalised Photo Bauble</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Name baubles, photo ornaments, Santa keys and memorial decorations.</p><p>Personalise it with: photo upload, name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Baubles & Decorations",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-baubles",
+   "dept-occasions",
+   "machine-uvdtf",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-UVDTF-PPB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "bauble"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Baby's First Christmas Bauble",
+  "handle": "baby-s-first-christmas-bauble",
+  "descriptionHtml": "<p><strong>Baby's First Christmas Bauble</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Name baubles, photo ornaments, Santa keys and memorial decorations.</p><p>Personalise it with: name, year. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Baubles & Decorations",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-baubles",
+   "dept-occasions",
+   "machine-uvdtf",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-UVDTF-BSFCB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "bauble"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Year\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Memorial Robin Bauble",
+  "handle": "memorial-robin-bauble",
+  "descriptionHtml": "<p><strong>Memorial Robin Bauble</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Name baubles, photo ornaments, Santa keys and memorial decorations.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Baubles & Decorations",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-baubles",
+   "dept-occasions",
+   "machine-uvdtf",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-UVDTF-MRB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "bauble"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Santa's Magic Key",
+  "handle": "personalised-santa-s-magic-key",
+  "descriptionHtml": "<p><strong>Personalised Santa's Magic Key</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Name baubles, photo ornaments, Santa keys and memorial decorations.</p><p>Personalise it with: family name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Baubles & Decorations",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-baubles",
+   "dept-occasions",
+   "machine-uv",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-UV-PSSMK-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "bauble"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Family name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

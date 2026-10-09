@@ -1,0 +1,595 @@
+# Product fact sheets
+
+**No proofs (owner, 2 Oct 2026):** we don't offer proofs on any product **except pet portraits**, where the owner emails a proof. Never write "free digital proof" or "proof on request" anywhere else. Use: "We print exactly what you enter, so please check names and spelling in the live preview before you order." Reason (owner): proofs are possible, but waiting for customer replies delays orders, so we do not advertise them; the live preview does the job. Lines below that still mention proofs are superseded by this rule.
+
+**Rule:** every product family has its own materials, sizes, care instructions, delivery details and buyer questions. Write each description **only** from the matching sheet below, so a face mask never gets card specs and a Christmas Eve box never gets mug care instructions.
+
+- **ASK** means the owner hasn't confirmed it yet. Ask once, then record the answer here and commit it.
+- If a family isn't listed, ask the owner for its facts before writing the copy, then add a new sheet.
+- Business details you can use anywhere: made in-house in North Yorkshire, UK · phone 01439 771468 · custom designs on request.
+
+---
+
+## Personalised cards (birthday, age, kids, occasion)
+- **Material:** 350gsm silk art board (thicker than typical 240gsm cards).
+- **Size:** printed A4, folded to A5. Printed inside and out if wanted.
+- **Finish:** machine cut and folded.
+- **Includes:** free white envelope. Posted in a board-backed envelope so it arrives flat.
+- **Delivery:** Royal Mail 1st Class, dispatched the same day, or the next working day at busy times.
+- **Personalisation:** name, age, front message, inside message (live preview).
+- **Buyer questions:** Can I add a message inside? Can you post it straight to them? (**ASK**: is direct-to-recipient sending offered?)
+- **Google category:** Arts & Entertainment > Party & Celebration > Gift Giving > Greeting & Note Cards
+- **age_group:** `kids` for kids' cards, `adult` for adult cards.
+
+## Face masks (celebrity / fancy dress / party)
+- **Material:** 350gsm silk card, full-colour digital print (Versant press), semi-waterproof (per the celebrity-face-mask-listing skill spec).
+- **Size (owner, 2 Oct 2026):** every face mask, celebrity and personalised, is 297 x 210 mm (A4).
+- **Construction:** Ready Cut masks are cut to shape with the eye holes cut; DIY masks are printed only. Elastic and sticky tabs (or a stick and stickers) are supplied for the customer to attach (see the options below).
+- **Packaging:** board-backed envelope.
+- **Uses:** parties, stag and hen dos, fancy dress, birthdays, sports events, weddings (photo booths).
+- **Range:** 8,000+ designs; custom masks from a photo on request.
+- **Price point (older, replaced below):** Ready to Wear £2.99; DIY (print only) £1.50 (skill spec, Oct 2026).
+- **Single masks: options and prices (owner, 6 Oct 2026).** Every single mask (one mask: celebrity, character or YouTuber) has the same two options and prices. Packs, pairs, couples and multi-mask sets keep their own prices and options.
+  - Option 1 **"Style"**: **Ready Cut** (cut to the face shape, eye holes cut) or **DIY** (printed only; the customer cuts it out).
+  - Option 2 **"Fitting"**: **Elastic** (elastic and sticky tabs supplied for the customer to attach) or **Stick** (a stick and stickers supplied for the customer to attach). A stick costs 50p more. Never say the elastic, tabs or stick are pre-attached.
+  - Prices: Ready Cut + Elastic **£2.99**; Ready Cut + Stick **£3.49**; DIY + Elastic **£1.50**; DIY + Stick **£2.00**.
+  - SKUs: the old SKU + `-RC-E`, `-RC-S`, `-DIY-E`, `-DIY-S`. Import files: `exports/face-masks/2026-10-06-single-mask-prices/`.
+- **Notes:** use the `celebrity-face-mask-listing` skill for these. Never say or imply the mask is official or endorsed. Not suitable for children under 3 (elastic): **ASK** to confirm the wording.
+- **Google category:** Apparel & Accessories > Costumes & Accessories > Masks
+- **age_group:** `adult`
+
+## Mugs (11oz ceramic, sublimation)
+- **Material:** white ceramic, 11oz (approx. 325ml), C-handle, high-gloss finish.
+- **Print:** sublimation. Dishwasher and microwave safe. Avoid abrasive scourers.
+- **Packaging:** protective packaging for UK delivery.
+- **Variants on new ranges:** **ASK** (e.g. 15oz, magic or colour-change, inner colour).
+- **Price point:** £6.99–£8.99.
+- **Google category:** Home & Garden > Kitchen & Dining > Tableware > Drinkware > Mugs
+- **age_group:** `adult`
+
+## Baby grows / baby vests
+- **Garment:** 100% cotton, soft feel, short sleeve, nickel-free poppers.
+- **Blank brand:** previously Mothercare / Sainsbury's TU. **ASK** which blanks are used now (needed for sizes and fit).
+- **Print:** currently laser transfer with no leftover white edges; DTF on the new kit. **ASK** which method the listing should state.
+- **Care:** wash and iron inside out.
+- **Sizes (owner, 9 Oct 2026):** 4 sizes: 0–3 months, 3–6 months, 6–9 months, 9–12 months.
+- **Google category:** Apparel & Accessories > Clothing > Baby & Toddler Clothing > Baby One-Pieces
+- **age_group:** `newborn` or `infant`
+- **ASK (9 Oct 2026, description rewrite):** the 2,004 older £8.99 vest listings have one "Default Title" variant (no size option) and no personalisation box, yet all are tagged "Add Name On Back" and the old copy said "email or message any personalisation". How does the customer choose the size and give the name for the back? (Infinite Options set? order notes? message?) The new copy only says "four sizes" and "let us know the name when you order".
+
+## Christmas Eve boxes (new: flatbed cutter + print)
+- **Material / board:** **ASK** (e.g. kraft, white or printed rigid board, thickness).
+- **Size:** **ASK** (internal dimensions, e.g. 30 × 20 × 10 cm).
+- **Assembly:** **ASK** (flat-packed for self-assembly, or folded and ready to use).
+- **Contents:** empty box, or optional fillers? **ASK**.
+- **Personalisation:** name, optional year ("Christmas Eve 2026"), design choice.
+- **Delivery and cut-off:** **ASK** (last order date for Christmas).
+- **Buyer questions:** How big is it, and will PJs, a book and a DVD fit? Is it reusable every year?
+- **Google category:** Home & Garden > Decor > Seasonal & Holiday Decorations
+- **age_group:** `kids`
+
+## Santa sacks & stockings
+- **Fabric / size / closure:** **ASK** (e.g. cotton or canvas drawstring, 50 × 70 cm).
+- **Personalisation:** name, design. Custom character design is available as a £5 upgrade.
+- **Google category:** Home & Garden > Decor > Seasonal & Holiday Decorations > Holiday Stockings (stockings) / Home & Garden > Decor > Seasonal & Holiday Decorations (sacks)
+- **age_group:** `kids`
+- **ASK (9 Oct 2026, description rewrite of the 1,094 old "Holiday Stockings" listings: 733 sacks, 361 stockings):** the old copy only gives partial facts, to confirm: "UK made, Cotton or Hessian", "All Cotton Bags can be washed, Hessian bags must be hand washed", XL sack "70 x 50 cm with a white drawstring cord at the top" (stated on 72 listings only). Please confirm: (1) XL sack fabric and size (cotton? 70 × 50 cm?); (2) the "Large" and "Small" sack sizes and fabric (396 titles say Large, 20 say Small); (3) the old-style stockings' fabric, size and hanging loop (361 listings, no size stated anywhere); (4) washing for each; (5) how the name is printed (sublimation or DTF?). The rewrite waits on these answers.
+
+### Personalised reindeer stocking (owner, 5 Oct 2026)
+- **Design:** cream hessian-weave stocking with a tan hessian cuff, red tartan ribbon trim under the cuff, red hanging loop, felt appliqué leaping reindeer with a red nose and tartan scarf, printed swirl antlers.
+- **Size:** 45 × 25 cm.
+- **Personalisation:** name, DTF printed (heat-pressed transfer) onto the hessian cuff in-house (owner corrected from sublimation, 5 Oct 2026).
+- **Care:** wipe clean only (do not machine wash).
+- **Price:** £14.99.
+
+## Glass can cups & tumblers (new: UV DTF)
+- **Sizes / capacity:** **ASK** (e.g. 16oz glass can with bamboo lid and straw; 20/30/40oz steel tumbler).
+- **Print:** UV DTF permanent print, kept 10 mm below the rim. Hand wash recommended (**ASK** whether they're dishwasher-safe).
+- **Google category:** Home & Garden > Kitchen & Dining > Tableware > Drinkware > Tumblers
+- **age_group:** `adult`
+
+## Acrylic / slate / wood / metal gifts (new: Roland LEF-300 UV)
+- **Print:** direct UV print with white ink and optional gloss, scratch-resistant.
+- **Sizes, thickness and stands:** **ASK** per item.
+- **Google category:** Home & Garden > Decor (photo blocks: Home & Garden > Decor > Picture Frames)
+
+## T-shirts, hoodies, school leavers (new: DTF)
+- **Blanks:** **ASK** (suggested Gildan Softstyle, AWDis Just Hoods).
+- **Print:** DTF, soft feel, stretches with the fabric, lasts wash after wash.
+- **Care:** wash at 30°C inside out, don't iron directly on the print.
+- **Sizes:** **ASK** (kids and adult size charts).
+- **Google category:** Apparel & Accessories > Clothing > Shirts & Tops (hoodies: check the current Google taxonomy for the hoodie/sweatshirt path before setting it)
+
+## Magnets, keyrings, coasters, towels, game cases
+- Facts **ASK**. Pull them from the current live listings first, then confirm with the owner.
+
+### Retro game magnets, keyrings, posters and coasters: what the live listings say (gathered 9 Oct 2026, TO CONFIRM)
+These come from the old eBay-style copy on the live listings (about 3,900 magnets, 3,000 keyrings, 3,300 retro game posters and 630 coasters). The description rewrite for these families waits on the owner confirming them.
+- **Fridge magnets (£2.99):** "image printed on 300gsm glossy card and inserted into a high quality Perspex magnet", "each magnet measures 80mm x 55mm", "posted in a bubble jiffy bag" (stated on about 2,970 listings). **ASK:** is this still the blank used, and is it a flexible magnetic back or a fixed magnet?
+- **Keyrings (£2.99):** "image printed on 300gsm glossy card", "each keyring measures 40mm x 50mm", "posted in a bubble jiffy bag" (stated on about 3,650 listings). **ASK:** what is the keyring itself (clear acrylic/Perspex insert keyring? metal split ring or chain?).
+- **Retro game posters:** "professionally printed on 170gsm silk", "posted in a hard back envelope". Most use the standard poster sizes and frames above. **ASK:** about 1,000 retro posters have a single £2.99 option with no size named. What size is that (A4? A5?)? Is the paper still 170gsm silk, when the poster sheet above has paper as ASK?
+- **Coasters (£3.99, 634 listings):** "MDF drinks coaster, sublimation printed"; 32 listings add "square hardboard coaster 90 x 90 mm, cork-backed MDF, bright glossy finish". **ASK:** are all 634 the 90 × 90 mm cork-backed square? How should they be cleaned (wipe clean only)?
+- **Note (IP):** most of these designs reproduce real game box art and console logos, which CLAUDE.md keeps off Google/Meta/TikTok. Rewritten copy will use the video-game disclaimer, but box art carries more risk than a fan design. That is the owner's call.
+
+### Blank replacement game cases (empty, no artwork, no game) (added 6 Oct 2026)
+Drafted 6 Oct 2026 as DRAFT products, one per format the existing case range sells most (SNES, NES, Mega Drive/Genesis, Master System, Game Boy/Game Boy Color, PS1). No supplier for case blanks is in `longforte-plan.md`.
+- **From the live case listings (6 Oct 2026, to confirm):** sold as "Case", "Cover" or "Both"; case-only price is usually **£3.99**; "Supplied in a board backed envelope for sending"; covers printed on 130gsm gloss art. The listings name the case as "UGC - Ultimate Game Case" (cartridge formats) and "Original Black DVD case" (PS1), but they are inconsistent (Game Boy listings say "Ultimate Nintendo NES Game Case"), so the exact case per format is **ASK**.
+- **Desk research only (not confirmed, not used in copy):** UGC-style universal cartridge cases are widely listed at about 134.5 x 185 x 24.5mm and sold as fitting SNES, N64, Mega Drive/Genesis and 32X cartridges (stoneagegamer.com, retailer listings). Source: web search 6 Oct 2026.
+- **ASK:**
+  - which case blank is used for each format (UGC style, NES-style, DVD-style or jewel case for PS1), and the supplier;
+  - dimensions of each case;
+  - material (polypropylene? clear outer sleeve for a cover? cartridge holder/insert inside?);
+  - colour (clear/black) per format;
+  - pack sizes (single only, or packs of 5/10?) and pack prices;
+  - does the PS1 case hold one disc or two, and does it have a manual clip;
+  - does the Game Boy case also fit Game Boy Color and Game Boy Advance cartridges;
+  - dispatch time and postage for blank cases.
+- **Copy rules:** no publisher box art, no console logos; console names only to describe compatibility ("fits SNES cartridges"). Video-game disclaimer with "No game, cartridge or disc is included." Tag `third-party-name`.
+- **Google category:** Electronics > Video Game Console Accessories (same as the personalised video game case). **age_group:** `adult`. **custom_product:** `true` (no GTIN). **color:** ASK (left unset on the drafts until the case colour is confirmed).
+
+---
+
+## Football team kit & fan gifts (added 2 Oct 2026)
+Owner answers 2 Oct 2026, plus supplier facts from longforte.com (search snippets; check in the trade account before costing).
+- **Footballs:** size 5 (adult/match) plus a junior size (owner: "size 5 + size 3 or 4"; listed as Size 5 and Size 4). Sublimation-printed panels with team name, badge and player names. Panel material, bladder and weight: **ASK**.
+- **Shin pads:** children's polymer shin pads, ultra-hard, bright white glossy finish, sold as a pair, Small / Medium / Large. Printed by sublimation. Exact size per letter: **ASK**. Source: https://www.longforte.com/products/polymer-football-shinpads
+- **Football socks:** adult sublimation football socks, 45cm, 100% polyester. Source: https://www.longforte.com/products/adult-sublimation-football-socks-45cm
+- **Boot bag:** 100% polyester sublimation drawstring sports bag. Size: **ASK**. Source: https://www.longforte.com/products/blank-sublimation-100-polyester-sports-drawstring-bag-with-pu
+- **Satin scarf:** premium sports scarf with tassels, 16.5cm x 142cm, polyester, shiny glossy satin surface, printable on both sides. Source: https://www.longforte.com/products/sublimation-premium-sports-fashion-scarf-with-tassels
+- **Knitted bobble hat:** fully custom knitted design (jacquard knit in your team colours with the name knitted in). Owner confirmed 2 Oct 2026. Minimum order, lead time, yarn and size: **ASK**.
+- **Stadium / terrace flags:** 3 sizes: 3ft x 2ft, 5ft x 3ft, 8ft x 5ft (owner, 2 Oct 2026). 8ft x 5ft (about 244 x 152cm) is the largest size allowed into Wembley without special permission (supplier info, check before quoting). Fabric, finish and print side (owner's existing listing, confirmed for launch 6 Oct 2026): 115gsm knitted polyester; digitally printed in the UK and hand-stitched; strong 25mm edge binding; eyelets on all 4 edges; single-sided print (double-sided on request: customer gets in touch for a quote); fire label on every flag, certificate available on request; indoor and outdoor use; fully customisable with any wording the customer wants; FREE UK delivery. Prices (owner, 6 Oct 2026): 3ft x 2ft £19.99, 5ft x 3ft £34.99, 8ft x 5ft £59.99. **Fast turnaround** (owner, 6 Oct 2026): emphasise it in titles (" – Fast Turnaround"), the first "Why you’ll love it" bullet and the meta description; never state a number of days. Exact dispatch time: **ASK**. Wash care: not given, don't state it. **Multi-buy (owner approved, live 6 Oct 2026):** automatic discount "Terrace flag multi-buy: buy 3+, save 10%" on the Football Terrace Flags collection (tag `DCD Terrace Flags`); combines with order and shipping discounts, not with product discounts. Every terrace flag description carries the sentence just above its Delivery heading.
+- **Corner flags:** set of 4, offered two ways: flags with poles, or flags only to fit existing poles (owner, 2 Oct 2026). Flag size, pole height and pole fitting: **ASK**.
+- **Car flag:** 100% polyester, 43cm plastic stand, window clip and fastener. Source: https://www.longforte.com/products/sublimation-car-flag
+- **Pennants:** 18cm x 26cm, premium polyester, bamboo stick and cord; blanks come in packs of 10 (white, green, blue, red). Source: https://www.longforte.com/products/flags-banners-pack-of-10-x-pennant-18cm-x-26cm-white
+- **Bunting:** 9m with about 30 A4 flags, printable both sides. Source: https://www.longforte.com/products/sublimation-bunting-9-metre-a4-size
+- **Rules:** these are for the customer's OWN team (grassroots, Sunday league, school). Never show a real club crest or name in images or titles. If a listing names a pro club, follow the football disclaimer in CLAUDE.md.
+- **Google category:** footballs `Sporting Goods > Athletics > Soccer > Soccer Balls`; shin pads `Sporting Goods > Athletics > Soccer > Soccer Protective Gear > Soccer Shin Guards`; socks `Apparel & Accessories > Clothing > Activewear`; scarves `Apparel & Accessories > Clothing Accessories > Scarves & Shawls > Scarves`; bobble hats `Apparel & Accessories > Clothing Accessories > Hats`; flags `Home & Garden > Decor > Flags & Windsocks`; corner flags `Sporting Goods > Athletics > Soccer > Soccer Corner Flags`. Check every path in Google's taxonomy before use.
+- **age_group:** shin pads and junior footballs `kids`; everything else `adult` unless the title is for a child.
+
+---
+
+## Personalised bobble hats (Ralawise blank) (added 6 Oct 2026)
+Owner, 6 Oct 2026: these are Ralawise blanks; we'll buy lots of them and resell them with club logos, business logos or as workwear. **Never name Ralawise or Beechfield to customers.**
+- **Blank:** Beechfield **B472 Stadium Beanie** (Ralawise; also listed as BB472 / BC472). Identified from the old listing's spec, which matches the B472 feature list word for word (TearAway label, cuffed design for optimal decoration, contrasting pom pom and striped cuff, double layer knit, classic colour combinations), and from the colourways (Black/Classic Red/White, Black/Gold, Classic Red/White, French Navy/Red/White, Kelly Green/White, Bright Royal/White, French Navy/White, Black/White).
+  Sources (search results, 6 Oct 2026; the pages themselves were blocked from here): https://shop.ralawise.com/en-GB/beechfield/stadium-beanie/ · https://beechfieldbrands.com/products/b472-stadium-beanie · https://www.superlogo.co.uk/stadium-beanie-b472-sl · https://www.amazon.co.uk/Beechfield-B472-Stadium-Beanie/dp/B0BFXS8LXX (Black/Gold). Check the colour list in the Ralawise trade account before buying stock.
+- **Material:** 100% soft-touch acrylic. **Weight:** 85g (stockist listings).
+- **Build:** double-layer knit; cuffed (turn-up) design; striped cuff; contrasting pom pom; TearAway label (so the hat carries no maker's label once rebranded); BSCI and REACH certified (old listing).
+- **Size:** one size (adult). Measurements (height, width, cuff depth): **ASK**.
+- **Care:** machine wash warm, do not iron, do not dry clean (old listing / supplier care).
+- **Colours on the store (8):** Black/Classic Red/White, Black/Gold, Black/White, Royal/White (supplier: Bright Royal/White), Classic Red/White, French Navy/Red/White, Navy/White (supplier: French Navy/White), Kelly Green/White.
+- **Personalisation:** the customer's own badge or logo, printed in full colour on the front of the cuff (existing title: "Printed Full Colour Badge"). Optional club/business name and a line of text under the design. Customers must have the right to use the badge or logo (own club, school or business). Never offer professional club crests or "any badge for any team".
+- **Print method:** describe only as "printed in full colour". Internal SKU machine code is DTF (as for the B10 cap, FOXY-DTF-PC-NN); exact transfer method on knit: **ASK**.
+- **What if no logo is supplied:** the badge/logo upload is the first personalisation field, so the theme makes it required. The old listing said a hat with no badge sent "will arrive as sample image": **ASK** whether that still stands (not used in copy).
+- **Price:** £8.50 each (existing). Bulk/team pricing: **ASK** (copy only says bulk and team orders are welcome, ring 01439 771468).
+- **Delivery:** posted by Royal Mail; we work Monday to Friday (old listing). Dispatch time: **ASK** (don't promise one). Postage options and costs are shown at checkout.
+- **SKUs:** FOXY-DTF-PBH-01 to FOXY-DTF-PBH-08 (order as listed above).
+- **Google:** `Apparel & Accessories > Clothing Accessories > Hats`; gender `unisex`; age_group `adult`; custom_product `true`.
+- **Pairing ideas:** personalised football scarf, personalised cap (B10), team flags, staff T-shirts/hoodies with the same logo.
+
+---
+
+# Photo gifts range on sublimation blanks (added 2 Oct 2026)
+Supplier facts from longforte.com search results (see longforte-plan.md for sources). Check prices and specs in the trade account. Never name the supplier to customers.
+
+All families below: printed in-house by dye-sublimation in our North Yorkshire workshop, made to order, live preview before adding to basket, free digital proof on request, phone 01439 771468 for urgent dates. Delivery: "postage options and costs are shown at checkout" (no dispatch times). **ASK** for every family: dispatch time, packaging.
+
+### Photo slates
+- **Material:** natural black/grey rock slate, textured natural edges, white sublimation-coated print area.
+- **Sizes:** 10x15cm landscape (glossy); 15x15cm and 30x30cm square (glossy); 15cm round with display stands; 15x15cm heart (gloss or matt).
+- **Print:** dye-sublimation, full colour.
+- **Includes:** round slate comes with stands. Other slates: stand/hanging fixings **ASK**.
+- **Care:** **ASK** (wipe clean only is likely, not confirmed).
+- **Personalisation:** photo, name, message (heart: names and date).
+- **Google category:** Home & Garden > Decor > Picture Frames
+- **age_group:** `adult`
+
+### Metal photo panels
+- **Material:** 1.15mm ultra HD gloss white aluminium; square option in gloss silver aluminium.
+- **Sizes:** 4x6in, 5x7in, 6x7.8in (15x20cm), 8x10in; panoramic 12x5in (30.5x12.7cm); silver square 11.5x11.5in (29.2cm).
+- **Print:** dye-sublimation.
+- **Includes:** desk panel has a small black self-adhesive easel (38x89mm). Wall fixings for other panels **ASK**.
+- **Care:** **ASK**.
+- **Personalisation:** photo, text/caption.
+- **Google category:** Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork (desk panel: Picture Frames; panoramic sign: Decorative Plaques)
+- **age_group:** `adult`
+
+### Photo clocks
+- **Material/sizes:** MDF 30cm round, white printable face; glass 20cm round, 30cm round, 20cm square (square printed on reverse, seen through glass, white back panel); aluminium 1.15mm, 19.8cm round or 22.8cm square; solid rock slate 25x40cm with white coating.
+- **Includes:** clock mechanism and hands. MDF, round aluminium and slate clocks take 1 x AA. **ASK:** is the battery included? Mechanism on the square aluminium clock?
+- **Care:** **ASK**.
+- **Personalisation:** photo, name (MDF: number style).
+- **Google category:** Home & Garden > Decor > Clocks > Wall Clocks
+- **age_group:** `adult`
+
+### Glass photo frames
+- **Material:** glass (clear) or frosted glass; photo printed onto the glass.
+- **Sizes:** 13x18cm with back stand; 20x20cm smooth edge; 23x18cm double mirror border with built-in metal stand; frosted 11x16cm; frosted 14.5x27.5cm landscape on metal rods.
+- **Care:** **ASK**.
+- **Personalisation:** photo, names/message, date.
+- **Google category:** Home & Garden > Decor > Picture Frames
+- **age_group:** `adult`
+
+### Photo plaques & ceramic tiles
+- **Material/sizes:** glossy MDF photo panel 10x15, 15x20, 18x27, 29.5x29.5, 30x40cm (self-standing or wall mounted); round MDF plaque 12in, 1.5cm thick, black bevelled edge; glossy ceramic tiles 4.25x4.25, 6x6, 6x8, 8x8, 8x10, 8x12in; 4in white ceramic heart tile with curved edge.
+- **Includes:** **ASK** whether tiles come with an easel/stand; fixings for the round plaque **ASK**.
+- **Care:** **ASK**.
+- **Personalisation:** photo, name, message/caption, award and year (award plaque).
+- **Google category:** Home & Garden > Decor > Decorative Plaques
+- **age_group:** `adult`
+
+### Coasters & placemats
+- **Material/sizes:** slate coaster 10cm round (natural black slate, glossy white surface), single or set of 4; frosted glass coaster 10cm round (0.3cm thick) or 10cm square; MDF coaster square 9.5cm with cork base, round 9.5cm and rectangle 8.9x12.7cm without cork; MDF placemat 20x26cm or 20x28cm with black cork backing, boxed 20x28cm option; hardboard kids placemat 19x23cm, no cork base.
+- **Care / heat resistance / dishwasher:** **ASK** (not stated by supplier).
+- **Personalisation:** photo, name/initials; kids mat: name, theme, photo.
+- **Google category:** coasters Home & Garden > Kitchen & Dining > Barware > Coasters; placemats Home & Garden > Linens & Bedding > Table Linens > Placemats
+- **age_group:** `adult`; kids placemat `kids`.
+
+### Tumblers, travel mugs & bottles
+- **Material/sizes:** 40oz 201 stainless steel tumbler, glossy white, handle, lid and straw (white / premium white); 16oz white stainless tumbler with straw; 14oz white insulated stainless travel mug; 12oz double-walled ceramic travel mug with silicone lid; 720ml stainless tumbler/bottle with one-touch lid; aluminium bottles 500ml or 600ml white, 600ml with red lids (two lids).
+- **ASK:** dishwasher-safe, leakproof, hot/cold hold times.
+- **Personalisation:** name, photo, pattern.
+- **Google category:** Tumblers (Drinkware); ceramic travel mug Mugs; bottles Home & Garden > Kitchen & Dining > Food & Beverage Carriers > Water Bottles
+- **age_group:** `adult`
+
+### Speciality mugs & glassware
+- **Material/sizes:** 12oz enamel-coated steel camping mug with silver rim (white, blue, red, green, yellow); 12oz conical latte mug, white outside with coloured inside and handle (black, red, yellow, light blue) or all white; 11oz colour-changing mug (black or red, reveals print when hot); 11oz white mug with printed red heart inside; 550ml can-shaped glass cup with bamboo lid (rubber seal, not leakproof) and straw, 11.5cm print area, six colours, plus 750ml frosted; frosted glass beer steins 16oz trigger handle and 22oz (650ml) slim handle in clear frosted, pink, blue, green.
+- **Dishwasher:** confirmed only for latte mugs. Enamel, colour-changing, heart mug, glass cups, steins **ASK**.
+- **Google category:** Mugs; glass can cup Tumblers; steins Beer Glasses.
+- **age_group:** `adult`
+
+### Kids & school
+- **Material/sizes:** 6oz polymer unbreakable mug, BPA-free, dishwasher safe (white, yellow, red, green, blue, pink); 13oz (400ml) stainless kids sippy cup with spout and two handles; small plastic lunchbox BPA-free with printable aluminium insert (white, pink, blue); kids lunch bag with printable Velcro panel (red, blue, black, pink) 4 x 19.5 x 10cm as listed; pencil cases linen 10x24cm, canvas 10x24.5cm, MDF 20.5x4.2cm; baby bibs 100% polyester, coloured border, string ties (pink, blue, red, orange, green, teal).
+- **ASK:** sippy cup dishwasher-safe, lunch bag insulation, bib size/washing.
+- **Google category:** mug Mugs; sippy cup Baby & Toddler > Nursing & Feeding > Sippy Cups; lunch bag/box Lunch Boxes & Totes; pencil case Office Supplies > Filing & Organization > Pen & Pencil Cases; bib Baby & Toddler > Nursing & Feeding > Bibs
+- **age_group:** `kids`
+
+### Cushions & textiles
+- **Material/sizes:** 40cm cushion covers in super soft, canvas, satin, cream satin, twill (zip closure), 45cm satin; 9-panel black 40x40cm cover; blankets 75x100cm and 110x150cm, 100% polyester microfibre fleece-like; tea towels half panama 46.5x69.5cm, waffle 100% polyester 40x60cm; adult apron with pocket, white or cream canvas; linen tote 37x42cm, short black handles.
+- **ASK:** cushion inner/pad (sold as cover only), washing instructions for all textiles.
+- **Google category:** Throw Pillows; Blankets; Kitchen Towels; Aprons; Luggage & Bags > Shopping Totes
+- **age_group:** `adult`
+
+### Keyrings & fridge magnets (lf-keyrings-magnets, plus Pet Photo Keyring)
+- **Material:** metal keyring with gloss white printable insert, supplied with gift box (round, oblong, hexagonal, slim rectangle, slim round; slim round print area 3.5 x 3.5cm). MDF double-sided keyring (round, square, T-shirt). 3-in-1 metal nail clipper / bottle opener keyring with gloss white insert. Fridge magnets: glass rectangle 5 x 7cm; MDF round 6cm, square 7.5cm; flexible rubber heart 5cm. Musical fridge magnet: black, plays music and records a voice message.
+- **Sizes:** as above. Metal keyring overall sizes (other than slim round print area): **ASK**. Double-sided keyring sizes: **ASK**. Musical magnet size: **ASK**.
+- **Print:** dye-sublimation in-house, print is part of the surface and won't peel.
+- **Includes:** metal photo keyring comes in a gift box. Other packaging: **ASK**.
+- **Care:** **ASK** (no supplier care info found).
+- **Batteries (musical magnet):** included or not, battery type, recording length: **ASK**.
+- **Personalisation:** photo, name, message (keyrings); photo front + photo/text back (MDF); photo + name (magnets). Live preview; free digital proof on request.
+- **Google category:** Apparel & Accessories > Handbag & Wallet Accessories > Keychains (keyrings); Home & Garden > Decor > Refrigerator Magnets (magnets)
+- **age_group:** `adult`
+
+### Christmas ornaments & stocking (lf-christmas-ornaments)
+- **Material:** mirror-finish bauble with printable aluminium insert, string and white box (red, blue, gold, silver, green). Aluminium double-sided hanging ornaments: round 7.6cm, tree 8.3 x 10.1cm, snowflake 7.6cm, stocking 7.6 x 9cm, dog bone 6 x 9.8cm, snowman 6 x 10.6cm, bell 9.8 x 10.5cm, heart 7.6cm. MDF double-sided hanging ornaments with red ribbon (round 5cm, star, heart, tree, snowman, reindeer, square, rectangle). Stocking: canvas and polyester, 20.5 x 45cm, red border, red hanging loop.
+- **Sizes:** as above; bauble diameter and MDF shape sizes other than round 5cm: **ASK**.
+- **Print:** dye-sublimation in-house.
+- **Includes:** bauble comes with string and white box; metal ornaments ribbon/hanger: **ASK**; MDF ornaments have red ribbon.
+- **Care:** stocking washing: **ASK**.
+- **Personalisation:** photo, name, year (pet name for dog bone). Live preview.
+- **Google category:** Home & Garden > Decor > Seasonal & Holiday Decorations > Holiday Ornaments; stocking: Home & Garden > Decor > Seasonal & Holiday Decorations > Holiday Stockings
+- **age_group:** `adult` (stocking `kids`)
+
+### Plush toys (lf-plush-toys)
+- **Material:** teddy bear (cream or dark brown), approx 8in, with removable 100% polyester printable t-shirt. Bunny rabbit plush (white, pink, light brown, grey). Mini bunny keyring. Mini cream teddy keyring with removable mini white t-shirt.
+- **Sizes:** teddy approx 8in. Bunny size, bunny print area/placement, keyring sizes: **ASK**.
+- **Print:** dye-sublimation in-house.
+- **Safety / age suitability (CE/UKCA, under-3s):** **ASK**.
+- **Care / washing:** **ASK**.
+- **Personalisation:** name, message, photo, date of birth. Live preview.
+- **Google category:** Toys & Games > Toys > Dolls, Playsets & Toy Figures > Stuffed Animals
+- **age_group:** `kids`
+
+### Jigsaws (lf-jigsaws)
+- **Material:** cardboard A4 80 pieces; cardboard A3 300 pieces pearl finish; cardboard 24 x 19cm 30 pieces; magnetic heart 19 x 19cm 75 pieces, pearl white; MDF round 17cm 24 pieces in presentation case.
+- **Box / packaging (cardboard jigsaws):** **ASK**.
+- **Print:** dye-sublimation in-house.
+- **Safety / small parts age warning:** **ASK**.
+- **Personalisation:** photo, message, name(s). Live preview.
+- **Google category:** Toys & Games > Puzzles > Jigsaw Puzzles
+- **age_group:** `kids` for the 30-piece kids jigsaw, otherwise `adult`
+
+### Pet gifts (lf-pet-gifts)
+- **Material:** adjustable white polyester pet bandana with adjustable strap and lead clip (small, medium, large; satin medium 63 x 32cm). White heavyweight ceramic dog bowl. Pet photo keyring as metal keyring above (oblong, round, hexagonal) with gift box.
+- **Sizes:** bandana S/M/L measurements: **ASK**. Dog bowl diameter/capacity: **ASK**.
+- **Care:** bowl dishwasher-safe: **ASK**; bandana washing: **ASK**.
+- **Print:** dye-sublimation in-house.
+- **Personalisation:** pet name, pattern, phone number, photo. Live preview.
+- **Google category:** Animals & Pet Supplies > Pet Supplies > Pet Apparel (bandana); Animals & Pet Supplies > Pet Supplies > Pet Bowls, Feeders & Waterers (bowl); Apparel & Accessories > Handbag & Wallet Accessories > Keychains (keyring)
+- **age_group:** `adult`
+- **Note:** Pet ID Tag not created in this range: a product with handle `personalised-pet-id-tag` already exists (range-pet-clothing, UV).
+
+---
+
+## Printed glassware: full-colour UV DTF (added 2 Oct 2026)
+Owner answers, 2 Oct 2026.
+- **Selling point:** full-colour UV DTF prints (logos, photos, names, any colours), not plain engraving like most shops.
+- **Blanks stocked:** nonic pint glass 20oz; stout tulip pint glass; champagne flute; gin balloon glass; whisky (rocks) tumbler. Capacities other than the 20oz pint: **ASK**.
+- **Print areas (owner, 8 Oct 2026):** pint glass **90 x 130 mm** (w x h); whisky tumbler **50 x 50 mm**. Whisky tumbler capacity: **ASK**.
+- **Print:** UV DTF, permanent full-colour print on the outside of the glass, kept 10mm below the rim.
+- **Care (owner's wording):** hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle.
+- **Uses:** milestone birthdays (18th, 21st, 30th, 40th, 50th, 60th) on flutes; dads, home bars and pubs on pints; business, pub and brewery logos; weddings and hen dos.
+- **Trademarks:** never use "Guinness", the harp or any brewery or brand name or logo. Call it a "stout glass" or "tulip pint glass". Customers' own logos are fine (they confirm they have the rights).
+- **Google category:** `Home & Garden > Kitchen & Dining > Tableware > Drinkware` (choose the matching child: Beer Glasses, Stemware or Tumblers; check tax.yml).
+- **age_group:** `adult`.
+
+## Home bar, garden bar & man cave (added 2 Oct 2026)
+Owner confirmed they can make: sublimation metal pub and bar signs, rubber-backed bar runners and mats, a hanging double-sided garden pub sign, and acrylic, wood or UV-printed bar plaques and "licence" signs.
+- **Metal signs:** printed on the 1.15mm gloss white aluminium sheets (see "Metal photo panels" sheet for sizes). Owner, 8 Oct 2026, asked about fixings/outdoors: "Metal signs fine" (meaning not yet confirmed: holes/fixings and outdoor use still **ASK** — don't promise either).
+- **Bar coasters (owner, 8 Oct 2026):** sublimation-printed coaster, **90 x 90 mm**, **dishwasher safe** ("Yes safe"). Print area 90 x 90 mm + 3 mm bleed.
+- **Bar runners and mats (owner confirmed 8 Oct 2026):** sizes **Small 440mm x 250mm** and **Large 880mm x 250mm** (250mm deep, NOT 330mm; the owner's 330mm instruction earlier on 8 Oct was a mistake). Rubber-backed, dye-sublimation printed, **dishwasher safe**. Option values read exactly "Small 440mm x 250mm" / "Large 880mm x 250mm". Rubber thickness still **ASK**.
+- **Hanging garden pub sign:** double-sided. Material, size and bracket: **ASK** (owner to confirm).
+- **Plaques and licence signs:** material options acrylic, wood or UV print. Sizes: **ASK**.
+- **Google category:** signs and plaques `Home & Garden > Decor > Decorative Plaques`; bar runners `Home & Garden > Kitchen & Dining > Barware`, child as fits (check tax.yml).
+- **age_group:** `adult`.
+
+## Gaming & desk mats: large sublimation mats (added 2 Oct 2026)
+- **Sizes:** 2 sizes, listed as "Large" and "Extra Large". Exact dimensions **ASK** (owner to confirm later), so leave dimensions out of the copy until then.
+- **Print:** dye-sublimation, full colour, edge to edge. Base, thickness and stitched edge: **ASK**, unless the existing live XL mouse mat listing states them.
+- **Designs:** the owner's Dropbox designs in `/DCD TEAMWEAR2/cut files/Nicole Cut Files/Gaming mats/For Amazon/GAMING MATS/` (cute and pet designs with mockups), plus new original gaming designs (pixel and arcade style, no game, console or publisher names or characters) and pet-photo personalised mats.
+- **Google category:** `Electronics > Electronics Accessories > Computer Accessories > Mouse Pads` (check tax.yml).
+- **age_group:** `adult` (kids only if the design is clearly for children).
+
+---
+
+## Posters & prints: standard sizes and frames (from the live poster listings, 2 Oct 2026)
+- **Print only:** A4 £4.99, A3 £8.99, A2 £12.99, A1 £19.99, A0 £24.99.
+- **Framed (owner, 4 Oct 2026):** A4 + Black, Silver, Gold or White frame £19.99; A3 + Black, Silver, Gold or White frame £24.99. (Was £14.99 / £19.99.)
+- **Paper stock, finish, frame material and glazing:** **ASK**.
+- **Celebrity and athlete posters:** "unofficial", with the celebrity disclaimer (sports disclaimer for athletes and clubs). Never "signed" or "autographed" unless it's a Printed Signature reproduction (see signed-prints rule).
+- **Google category:** `Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork`. **age_group:** `adult`.
+
+## A6 poster card packs: Printed Signature star cards (added 8 Oct 2026, from the owner's live A6 pack listings)
+- **What it is:** a pack of **6 A6 cards**, each a mini version of one of our Printed Signature star posters (photo collage, name plate and a printed signature). Football club packs are the original range (40 live, £4.99); music and film star packs added 8 Oct 2026.
+- **Size:** A6, 148 x 105 mm (landscape artwork). **Card:** printed on **350gsm premium card stock** (from the live listings).
+- **Price:** **£4.99** per pack of 6, one variant (no size or frame options). SKU `FOXY-PRESS-<initials>-01`.
+- **Signatures:** printed reproductions, never hand-signed; signed-print disclaimer + celebrity disclaimer at the end of every description. Never "signed", "autographed", "limited edition", "memorabilia", "collectible" or "official".
+- **Uses:** pin-board and bedroom wall displays, scrapbooks, party bags, stocking fillers, a cheap add-on to a full-size poster.
+- **Delivery:** postage options and costs are shown at checkout. Dispatch time, envelope/backing board and finish (gloss/silk/matt): **ASK**.
+- **Google category:** `Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork`. **age_group:** `adult`. gender `unisex`, condition `new`, colour `Multicolor`.
+- **Channels:** packs whose card photos show brand/sports logos (e.g. sponsor kit, magazine covers, award-show backdrops) stay on Online Store + Shop only.
+
+## Personalised name word art prints (Pink / Blue Letter A–Z) (added 8 Oct 2026, from the owner's original listing copy)
+- **Design:** one big letter (A–Z) in pink or blue, filled with the customer's words. The first word (their name) shows once, prominently; the other 20–30 words repeat randomly in different sizes, fonts and shades.
+- **Customer input:** name + a list of 20–30 single words or short phrases (max 3 words each), separated by commas. No shapes, icons, emoji or accented letters. We print exactly what they type. Store boxes: `foxy.personalise_fields` = "Name (shown largest)", "Your words message (20–30 words, separated by commas)"; template `personalised`, mockup `photo`.
+- **Sizes:** print only A4 (210 x 297 mm), A3 (297 x 420 mm), A2 (420 x 594 mm), A1 (594 x 841 mm); framed A4 or A3 in black or silver Premium Display frames (thick, chunky, very professional, not cheap thin frames). A3 frames have a clip on the back to hang; A4 frames have a stand.
+- **Paper:** A4 350gsm card; A3 170gsm gloss; A2 and A1 210gsm gloss.
+- **Delivery:** posted the next working day (same day if ordered before 12pm), Royal Mail.
+- **Not sold any more:** greeting card version and white (or gold) frames. Don't mention them.
+- **ASK:** frame material/depth and glazing (see posters sheet).
+
+## Pet portraits: "your pet as a historical character" (added 2 Oct 2026)
+- **Designs:** 15 characters, 2 versions each (owner's artwork in Dropbox `/!! BEN JOE OWEN NEW PRODUCTS XMAS 2026 !!!/PET PORTRAITS - Copy`): Admiral, Churchill, Cleopatra, Custer, Henry VIII, Kitchener, Lincoln, Mona Lisa, Mozart, Napoleon, Pearl Earring, Roman Emperor, Shakespeare, Victoria, Washington.
+- **How it works (owner, 2 Oct 2026):** the customer uploads a photo of their cat or dog. Our team puts their pet into the character and emails a proof before printing. An AI live preview with a watermark is planned next.
+- **Sizes and prices (owner: poster prices + £10):** print only A4 £14.99, A3 £18.99, A2 £22.99, A1 £29.99, A0 £34.99; framed A4 (Black, Silver, Gold or White) £24.99; framed A3 (Black, Silver, Gold or White) £29.99.
+- **Photo tips for customers:** a clear, well-lit, front-facing photo of the pet's face works best.
+- **Google category:** posters path above. **age_group:** `adult`.
+
+## Golf towels, wheelie bin stickers, door hangers, Valentine's teddies (added 2 Oct 2026)
+Owner: list now, add specs later.
+- **Golf towels:** size, fabric, clip or hook, and print method: **ASK**. Google: `Sporting Goods > Outdoor Recreation > Golf > Golf Towels`.
+- **Wheelie bin stickers (owner, 5 Oct 2026):** each sticker is A5 (210 × 148 mm), printed on laminated outdoor vinyl that lasts 5+ years outside. Packs: single £4.99, pair £8.99, pack of 4 £14.99 (the 36-design listing; the older Design 1–9 listings stay at £9.99 a pair). Google: `Home & Garden > Decor > Home Decor Decals`.
+- **Door hangers:** read and reuse the facts on the existing live door hanger listings (e.g. "Pack of 4"). Otherwise **ASK**. Rude designs are `adult`.
+- **Valentine's teddies:** if they're the same teddy-with-printed-t-shirt as the photo-gifts plush sheet, use that sheet. Otherwise **ASK**.
+- **Baby grows:** see the "Baby grows / baby vests" sheet (sizes and blank are still **ASK**). Football club designs need the football disclaimer and the `third-party-name` tag.
+
+## Cufflinks: personalised square (added 2 Oct 2026)
+Source: the Longforte "Cufflinks – Chrome – Square" sublimation blank, plus the owner's own stock box "(S) Square Cufflinks Gift Box (Sets)" (photo from the owner).
+- **Material:** zinc alloy cufflink, chrome finish, with a printable aluminium insert. The print is dye-sublimated into the insert.
+- **Print area:** 16 x 16 mm per cufflink. Initials, dates, short words, simple logos and close-up face photos work best.
+- **Includes:** one pair (2 cufflinks), presented in the square cufflink gift box (owner's stock).
+- **Personalisation:** a different design on each cufflink is fine (e.g. initials on the left, the wedding date on the right), or a photo or logo on both. Live preview, plus a digital proof on request.
+- **Care:** wipe the face clean with a soft dry cloth. Don't use jewellery cleaner or soak them.
+- **Google:** `Apparel & Accessories > Clothing Accessories > Cufflinks`; age_group `adult`; colour `Silver`.
+- **Variants (owner, 2 Oct 2026):** Style is Flat Square or Curved Square; Colour is Chrome or Rose Gold. All four are £14.99 (owner confirmed). The product is Active.
+- **ASK:** print area and material of the curved square (Longforte "Premier Range") version; gift box size and colour name (the photo shows a teal/blue box); multi-pair prices for groomsmen and ushers.
+
+## Roll labels: 20 x 40 mm yellow, black print (added 2 Oct 2026)
+Source: the owner's stock roll (photo, 2 Oct 2026).
+- **Label:** 20 x 40 mm rectangle with rounded corners, bright yellow, on a roll of **1,000** (owner).
+- **Print:** black only.
+- **Products:** personalised tool labels (Active; owner confirmed prices on 2 Oct 2026) and allergen warning stickers (Active since 2 Oct 2026, owner approved). Both use the same packs and prices: 50 £4.99, 100 £6.99, 250 £11.99, 500 £17.99, 1,000 £27.99. Further ideas: stock/QR labels and cable labels.
+- **Allergen stickers:** they highlight allergens only. Always say they don't replace a full ingredients label and that the buyer is responsible for the wording. Never claim they meet Natasha's Law or any other labelling law.
+- **Google:** `Office Supplies > General Office Supplies > Labels & Tags`; age_group `adult`; colour `Yellow`.
+- **ASK:**
+  - paper or synthetic (polypropylene)? This decides whether we can say waterproof, oil-resistant or outdoor use;
+  - permanent or removable adhesive;
+  - thermal transfer or direct thermal printing? Direct thermal fades in sunlight;
+- Until answered, don't claim waterproof, weatherproof, outdoor, oil-proof, smudge-proof or long-lasting.
+
+## Christmas Santa & reindeer cushion covers (added 2 Oct 2026)
+Source: the owner's photos of the printed blank (2 Oct 2026).
+- **Blank:** a ready-printed Christmas cover. Santa and a reindeer peep over a large white panel, with a snowy village along the bottom, snowflakes and a polka-dot border. Two colourways: **Pink** and **Turquoise**.
+- **Size:** 40 x 40 cm (owner).
+- **Fabric:** heavy-quality polyester linen (owner), with a visible weave.
+- **Closure:** concealed zip along one edge (photo).
+- **Personalisation:** name and/or message printed in the white panel. The customer chooses the font and text colour in the personaliser.
+- **Options:** cover only, or with cushion insert (owner). Live and Active since 2 Oct 2026 (owner approved). Prices (owner confirmed): cover £14.99, with insert £19.99.
+- **Care:** the existing live Santa & reindeer cushion listing says "Gentle machine wash at 30°C; avoid bleach, tumble dry, ironing and dry cleaning". Reuse that wording.
+- **Google:** `Home & Garden > Decor > Throw Pillows`; age_group `kids`; colour Pink or Turquoise (product level `Multicolor`).
+- **ASK:** insert filling (the insert is sold to fit the 40 cm cover).
+- **Related:** older live listings use the same blank with 5 pre-made designs (handle `personalized-kids-christmas-cushion-custom-name-message-print-santa-reindeer-festive-pillow-with-snowy-village-design-soft-decorative-holiday-gift`).
+
+## Personalised cap (added 2 Oct 2026)
+- **Blank:** Beechfield Original 5 Panel Cap (B10) from Ralawise (owner).
+- **Colours (24):** Black, White, French Navy, Bright Royal, Bright Red, Burgundy, Bottle Green, Kelly Green, Emerald, Olive, Lime, Yellow, Gold, Orange, Classic Pink, Fuchsia, Purple, Sky Blue, Surf Blue, Light Grey, Graphite, Natural, Sand, Chocolate. Taken from supplier listings, because Ralawise's site couldn't be read from here; remove any that aren't in stock.
+- **Price:** £12.99 for every colour (owner). SKUs FOXY-DTF-PC-01 (Black) to FOXY-DTF-PC-24.
+- **Print:** DTF, full colour.
+- **ASK:** fabric content, closure type and size (one size?).
+
+## Pet apparel: Portman & Pooch dog clothing (Ralawise blanks) (added 8 Oct 2026)
+Store range: 7 "Personalised Dog ..." products (PP001 raglan tee, PP002 fleece hoodie, PP003 denim, PP004 puffer, PP005 varsity, PP006 parka, PP008 football tee), product type `Personalised Dog Clothing`, tags `range-pet-clothing` + `personalised-dog-clothing`, in collections Pet Bandanas & Accessories (`new-pet-clothing`) and Personalised Pet Products. Never name Portman & Pooch or Ralawise to customers.
+
+### Dog varsity jacket (PP005) - confirmed from shop.ralawise.com/portman-pooch/dogs-varsity-jacket/ (8 Oct 2026) and portmanandpooch.com/products/varsity-jacket
+- **Code:** PP005; colour entry codes PP005BLAC (Black), PP005NAVY (Navy), PP005PINK (Pink, "Mid Pink"). Full Ralawise size SKU codes: **ASK** (trade account; not shown publicly). Store SKUs: `FOXY-PP005-<BLA|NAV|PIN>-<size>`.
+- **Fabric:** 94% polyester, 6% elastane; rib 92% polyester, 8% elastane; 280gsm. Satin-finish fabric, contrast ribbed sleeves and back hem.
+- **Features:** reinforced snap-poppers under the belly (no zips); reinforced slit to wear over a harness; adjustable back leg straps; ribbed back hem. Accreditations: Amfori BSCI, ISO14001, REACH.
+- **Sizes (back length, cm):** XS 25, S 30, M 35, L 40, XL 45, 2XL 50, 3XL 55, 4XL 60. **3XL and 4XL in Black only** (Ralawise). Chest/neck measurements: **ASK** (not published).
+- **Print area (Ralawise, L x W):** XS 10x10cm, S 14x14, M 19x16.5, L 20x18, XL 23x18, 2XL 24x19. 3XL/4XL: **ASK**.
+- **Care (supplier):** max 30°C mild process; do not bleach, tumble dry, iron or dry clean.
+- **Print method and press settings:** **ASK** (internal: printed in-house; care says "do not iron", so test-press).
+- **Personalisation:** optional "Dog’s name (optional)" and optional "Number (optional)" (owner, 8 Oct 2026). A plain jacket can be ordered.
+- **Price:** £27.99 all sizes (set when the range was created on 6 Oct; same as the football tee). Ralawise trade price: **ASK** (login only).
+- **Dispatch time / postage:** **ASK** (copy says postage options are shown at checkout).
+- **Images:** Ralawise packshots (`pp005_<colour>_ft.jpg`) only; Ralawise says it is "not authorised to distribute lifestyle imagery on behalf of this brand", so don't use Portman & Pooch lifestyle photos.
+- **Google:** `Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Apparel`; gender `unisex`; age_group `adult`; custom_product `true`; color `Multicolor`.
+- **Pairing ideas:** personalised dog bandana, stainless steel pet bowl with name, pet ID tag, matching owner varsity-style hoodie or T-shirt with the dog's name.
+
+### Rest of the range (PP001, PP002, PP003, PP004, PP006, PP008): confirmed from shop.ralawise.com/portman-pooch/<page>/ (8 Oct 2026)
+All: back length XS 25, S 30, M 35, L 40, XL 45, 2XL 50, 3XL 55, 4XL 60 cm; reinforced harness slit (PP008: reinforced harness loop); Amfori BSCI, ISO14001, REACH. Personalisation (owner, 8 Oct 2026): "Dog’s name (optional)", plus "Number (optional)" on PP001, PP002, PP005, PP008. Prices unchanged. Print method / press settings: **ASK**.
+- **PP001 raglan T-shirt** (`dogs-raglan-t-shirt`): 95% cotton, 5% elastane, 190gsm jersey; contrast raglan sleeves; pullover; adjustable back leg straps. Colours PP001BKWH Black/White, PP001BLAC Black, PP001NAVY Navy, PP001NYWH Navy/White, PP001PKWH Pink/White; **3XL/4XL Black and Black/White only**. Care 30°C mild; no bleach, tumble dry, iron or dry clean. Print area (L x W) XS 10x10cm, S 15x10, M 18x15, L/XL/2XL 23x18. £10.99.
+- **PP002 hoodie** (`dogs-hoodie`): 95% cotton, 5% elastane, 300gsm fleece-back jersey; ribbed sleeves and back hem; pullover; adjustable back leg straps. Colours PP002BLAC, PP002GREY, PP002NAVY, PP002PINK; **3XL/4XL Black and Grey only**. Care as PP001. Print area as PP001. £20.99.
+- **PP003 denim jacket** (`dogs-denim-jacket`): 37% cotton, 32% polyester, 15% viscose, 8% lyocell, 4% acrylic, 4% polyamide, 270gsm; stretchy; raw-edge sleeves; snap-poppers under the belly. Colours PP003INDI Indigo, PP003BLAC Black; **3XL/4XL Indigo only**. Care: hand wash max 40°C; no bleach, tumble dry, iron or dry clean. Print area XS 9x9cm, S 14x10, M 18x11.5, L 20x13, XL/2XL 23x18. £28.99.
+- **PP004 puffer jacket** (`dogs-puffer-jacket`): shell and lining 100% nylon (34gsm), filling 100% polyester (200gsm); snap-poppers; adjustable back leg straps; decoration panel with a concealed platen sheath. Colours PP004BLAC Black, PP004GREY Grey; all sizes. Care: hand wash max 40°C. Print area is a narrow strip: XS 2.5x10cm, S 4x10, M 4x15, L/XL 6x18, 2XL 8x19 (so name only). £35.99.
+- **PP006 parka** (`dogs-parka-jacket`): 57% polyester, 43% elastomultiester, 166gsm; filling and lining 100% polyester; padded; faux-fur trim; snap-poppers; adjustable back leg straps. Colours PP006KHAK Khaki, PP006BLAC Black; all sizes. Care: hand wash max 40°C. Print area XS 10x10cm, S 13x13, M 20x13, L 23x14, XL/2XL 23x18. £35.99.
+- **PP008 football T-shirt** (`dogs-football-t-shirt`): body 100% polyester, mesh 100% polyester, 170gsm; pullover; back leg loops. Colours PP008WHRN White/Red/Navy, PP008NYNW Navy/Navy/White, PP008REWG Red/White/Green, PP008YEWG Yellow/White/Green (store names: White/Red/Navy, Navy, Red, Yellow); all sizes. Care 30°C mild. Print area: **ASK** (not published; PP001 areas used as placeholder). £27.99.
+- 3XL/4XL print areas: **ASK** for every garment. Chest/neck measurements: **ASK**.
+
+## Personalised adult T-shirt: AWDis 150 T (AT001) (added 2 Oct 2026)
+- **Blank:** AWDis 150 T (AT001) from Ralawise (owner). Relaxed fit, unisex, 150gsm, 100% cotton PurePrint (Heather Grey is 90% cotton, 10% viscose). Ribbed crew neck, taped back neck, twin-needle stitching, side seams.
+- **Colours (25):** Arctic White, Deep Black, Heather Grey, Solid Charcoal, New French Navy, Royal Blue, Sapphire Blue, Sky Blue, Cornflower Blue, Airforce Blue, Fire Red, Burgundy, Hot Pink, Baby Pink, Purple, Dusty Lilac, Bottle Green, Kelly Green, Earthy Green, Seafoam, Sun Yellow, Orange Crush, Desert Sand, Natural Stone, Mocha Brown. Taken from supplier listings; remove any that aren't in stock.
+- **Sizes and measurements (cm, ±2):**
+
+| Size | S | M | L | XL | 2XL | 3XL | 4XL | 5XL |
+|---|---|---|---|---|---|---|---|---|
+| Chest (pit to pit) | 48 | 52 | 56 | 60 | 65 | 70 | 75 | 80 |
+| Body length | 71 | 73 | 75 | 77 | 79 | 82 | 85 | 88 |
+| Sleeve | 22 | 23 | 24 | 25 | 26 | 27 | 27 | 27 |
+
+- **Size guide:** page `size-guide-adult-t-shirt`, linked through the product metafield `foxy.size_guide` (page reference). The theme shows a "Size guide" button next to Size.
+- **Prices:** S to XL £14.99 and 2XL £16.99 (existing); 3XL to 5XL £17.99 (estimate, **ASK** owner).
+
+## Party bunting: printed card (collection `party-buntin`, added 2 Oct 2026)
+Source: the existing live listings, which carry the owner's own wording.
+- **Flags:** standard flags are A5 (210 x 148 mm), printed on 300gsm silk card, semi-waterproof. Extra large flags are A4 (297 x 210 mm), same card (owner, 2 Oct 2026).
+- **What's included:** as named in the variants, e.g. "3m Ribbon & 16 Standard Bunting Flags" or "3m Ribbon & 16 EXTRA LARGE Bunting Flags". Per-metre listings (e.g. VE Day) are priced per metre (1m, 2m, 5m, 10m, 20m).
+- **Assembly:** "simply thread and hang", meaning the customer threads the flags onto the ribbon.
+- **Personalisation:** child's name, age and party details (owner's existing wording: "customised with your child's name, age and any special party information").
+- **Use:** indoors, or outdoors in dry weather. Semi-waterproof card, not fully waterproof.
+- **Google category:** `Arts & Entertainment > Party & Celebration > Party Supplies > Banners`; age_group `kids` for children's birthday bunting, `adult` for VE Day, coronation, adult and hen/stag bunting.
+- **ASK:** flag spacing on the ribbon, ribbon colour, and dispatch time.
+
+## Pillow treat / favour boxes (added 2 Oct 2026)
+Source: the live listing `personalised-pillow-treat-boxes` (FOXY-CUT-PPTB) and the owner's request on 2 Oct 2026.
+- **Made:** printed and cut in-house in North Yorkshire on the flatbed cutter. They are supplied flat or empty, ready for sweets, confetti or small gifts.
+- **Personalisation:** name(s), age or date, and a short message. The customer picks a theme design. **No proofs** (owner, 2 Oct 2026): we print exactly what the customer types.
+- **Quantities and prices (owner asked for multi-buy pricing):**
+
+  | Boxes | Price | Per box |
+  |---|---|---|
+  | 10 | £6.99 | 70p |
+  | 20 | £12.99 | 65p |
+  | 30 | £17.99 | 60p |
+  | 50 | £27.99 | 56p |
+  | 100 | £49.99 | 50p |
+  | 200 | £89.99 | 45p |
+  | 500 | £199.99 | 40p |
+
+  For comparison, UK personalised pillow boxes sell at about 49p each for 50 and 20–50p each for 100+.
+- **Two listings:**
+  - Kids' party: generic, unbranded themes only. No cartoon or game characters, no console logos. Themes: Dinosaur, Unicorn, Mermaid, Superhero, Gaming, Space, Pirate, Football, Fairy Princess, Jungle Animals.
+  - Weddings and celebrations: Wedding, Engagement, Christmas, Christening, Baby Shower, Hen Party, Anniversary, Thank You.
+- **Google category:** `Arts & Entertainment > Party & Celebration > Gift Giving > Gift Wrapping > Gift Boxes & Tins`. age_group `kids` for the kids' listing and `adult` for weddings and celebrations.
+- **ASK:**
+  - box size (closed dimensions);
+  - card weight and finish;
+  - whether the boxes arrive flat or folded;
+  - dispatch time for 200 and 500 boxes.
+
+## Custom business stickers: print and cut (added 2 Oct 2026)
+Source: the owner's messages of 2 Oct 2026 and `plan/large-format-plan.md` §3B and §3G.
+- **Made on:** the Roland VG2-540 / VG2-640 print-and-cut, contour cut to shape. Supplied on backing sheets or rolls, as the owner's photos show: die-cut, kiss-cut and round stickers.
+- **Materials offered (owner confirmed):**
+  - gloss vinyl and matt vinyl;
+  - **waterproof & tearproof** (laminated);
+  - **metallic** (gold or silver);
+  - **clear**;
+  - clear and white **window cling**, sold as a separate listing.
+- **Shapes:** circle, square, rectangle, oval, or custom die-cut to the outline of the design.
+- **Artwork (owner, 2 Oct 2026):** the customer supplies their own artwork or logo. Our team may tidy it up for free before printing (e.g. cleaning edges, adding the cut line). **No proofs.** Don't offer a design-from-scratch service or mention a design fee.
+- **For businesses:** logo stickers, packaging seals, "thank you" stickers, product and jar labels.
+- **Outdoor life (owner, 2 Oct 2026):** up to 3 years outdoors.
+- **RRP (owner approved 2 Oct 2026),** price per pack of 50:
+  - sizes: 25 mm £9.99, 38 mm £12.99, 51 mm £14.99, 64 mm £17.99, 76 mm £19.99, 102 mm £24.99;
+  - quantity multipliers: 100 ×1.6, 250 ×3.2, 500 ×5.5, 1,000 ×9;
+  - material uplifts: waterproof & tearproof +15%, clear +20%, metallic +30%;
+  - round to .99.
+- **Food and cosmetic labels:** we print the customer's own wording. Allergen, ingredient and weight wording is their responsibility.
+- **Google category:** `Office Supplies > General Office Supplies > Labels`, or for sticker packs `Arts & Entertainment > Hobbies & Creative Arts > Arts & Crafts > Art & Crafting Materials > Embellishments & Trims > Decorative Stickers`. Use **Labels** for business sticker listings. **age_group:** `adult`.
+- **ASK:**
+  - vinyl and laminate brand;
+  - dishwasher or freezer suitability;
+  - minimum and maximum size;
+  - dispatch time.
+
+## Personalised photo party face masks (added 2 Oct 2026, owner priority)
+Source: the face mask sheet above, plus the live "N X Personalised Custom Photo Party Face Masks" listings.
+- **Made from:** the customer's own photo. Printed in full colour on 350gsm silk card, semi-waterproof, in a board-backed envelope.
+- **Styles:**
+  - **Ready Cut:** cut to the face shape, eye holes cut, elastic and sticky tabs supplied.
+  - **DIY:** printed only; the customer cuts it out; elastic and tabs supplied.
+- **No minimum:** order just 1. Multipacks are available. Owner's wording: "Any Name Any Person or Image".
+- **Uses:** stag dos (the groom's face), hen parties (the bride's face), birthdays, weddings and photo booths, leaving dos and retirements, office and Christmas parties, sports teams.
+- **Current price ladder** (live listings, packs of 5–50):
+  - DIY ≈ £1 a mask (5 for £4, 12 for £11, 50 for £49);
+  - Ready Cut ≈ £2 a mask (5 for £7, 12 for £23, 50 for £99);
+  - single custom mask £2.49.
+- **Market, Oct 2026:**
+  - FunkyBunky: single £4.99, 10 ready-to-wear £28;
+  - Party People: DIY 99p, ready-to-wear £1.49;
+  - celebrity-facemasks.com (our sister site): 10 DIY £8, single £1.99.
+- **Google:**
+  - category `Apparel & Accessories > Costumes & Accessories > Masks`;
+  - custom_product true; age_group adult; gender unisex;
+  - custom_label_0 `personalised-masks`.
+- **Dispatch (owner, 2 Oct 2026):** next working day.
+- **On a Stick (owner, 2 Oct 2026):** offered as a third style. The mask is cut to shape, and a stick and stickers are supplied for the customer to attach it (instead of elastic).
+- **Elastic (owner, 2 Oct 2026):** Ready Cut and DIY masks come with elastic and sticky tabs supplied for the customer to attach. Never say they are pre-attached. Price: Ready Cut + 50p a mask, rounded up to .99 (owner approved, 2 Oct 2026).
+- **No proofs (owner, 2 Oct 2026):** we print the photo as supplied. Never promise a proof on masks; ask for a clear, front-facing, well-lit photo instead.
+- **Mixed faces (owner, 2 Oct 2026):** yes, one pack can mix different faces.
+- **Prices (owner approved, 2 Oct 2026):** the ladder in `plan/personalised-masks-plan.md`.
+- **ASK:**
+  - the maximum number of different faces in one pack.
+
+## Halloween treat boxes (owner, 5 Oct 2026)
+- **Style:** gable box with a carry handle (front and back handle panels with a cut handle hole), black or orange designs with ghosts, pumpkins and stars, name on the front.
+- **Finished size:** 100 × 60 × 100 mm (width × depth × body height, not counting the handle).
+- **Production:** printed on SRA3 (320 × 450 mm), one box per sheet, cut and scored on the flatbed cutter. Cut line = spot colour `CutContour`, score line = spot colour `Crease`, each on its own layer.
+
+## Sticker & label production artwork: open questions (added 6 Oct 2026)
+Templates for the VG540 business stickers, the 20 x 40 mm roll labels and an SRA4 kiss-cut sheet layout are in `exports/sticker-artwork/` and Dropbox (`tools/artwork/sticker_templates.py`). These products have **no size on the listing or in a fact sheet**, so no artwork was made yet:
+- **ASK:** Personalised Sweet Jar (FOXY-UVDTF-PSJ-01): label/print size and shape on the jar, and the jar size.
+- **ASK:** Waterproof Kids Name Labels (FOXY-UVDTF-WKNL-01): label size(s) and shape, and how many per sheet.
+- **ASK:** Bike & Riding Helmet Name Decals (FOXY-UVDTF-PBRHND-01): decal size, how many decals per order.
+- **ASK:** Personalised Gift Tags (FOXY-CUT-PGTPO2-01): tag size, shape, card weight, hole/string.
+- **ASK:** Custom Die-Cut Stickers (FOXY-CUT-CDCS-01), Custom Product Labels (FOXY-CUT-PLCJC-01), Thank You for Your Order Stickers (FOXY-CUT-TYFYOS-01): sticker size(s) and material (the listings have no size option).
+- **ASK:** Kiss-Cut Sticker Sheets (FOXY-CUT-KCSS-01): finished sheet size and material (template drawn on the SRA4 cutter sheet only).
+- **ASK:** VG540 business stickers: the second dimension for rectangle and oval shapes (the listings give one size figure).
+- **ASK:** Roll labels: corner radius (template drawn at 2 mm).
+- Controller and laptop skins (FOXY-UVDTF-CGCS / CLS) need the exact skin die-lines for each model before artwork can be made.
+
+---
+
+## Football bundles (self-initiated drafts, 6 Oct 2026, awaiting owner approval)
+Built as normal products (not Shopify fixed bundles: the 8 hat colours are separate products, and a fixed bundle splits into component lines at checkout, which risks losing the logo upload). Copy uses only the component sheets above. Product type `Football Bundles` (kept out of the clothing multi-buy so discounts don't stack); tag `foxy-bundle`; SKU prefix `FOXY-BNDL-`.
+- **Club Winter Pack** (`personalised-club-winter-pack-bobble-hat-scarf`): 1 personalised bobble hat (choice of the 8 hat colours) + 1 custom satin football scarf. Separate £8.50 + £14.99 = £23.49; pack **£20.99** (compare-at £23.49). SKUs FOXY-BNDL-CWP-01..08 (same colour order as FOXY-DTF-PBH-01..08).
+- **Matchday Pack** (`personalised-matchday-pack-flag-car-flag-bunting`): 1 personalised terrace flag 3ft x 2ft (any design from the Football Terrace Flags range, named by the customer) + 1 custom football car flag + 1 personalised club bunting 9m. Separate £19.99 + £9.99 + £24.99 = £54.97; pack **£49.49** (compare-at £54.97). SKU FOXY-BNDL-MDP-01.
+- **Team Kit Bundle** (hat + B10 cap + club hoodie): not made, because there's no club/team hoodie-with-logo listing yet. **ASK** the owner for the hoodie blank, sizes and price (see the T-shirts/hoodies sheet).
+- **ASK:** does the pack ship as one parcel, and is delivery free on the Matchday Pack (terrace flags alone have free UK delivery)?
+
+
+## PerfectDraft Maxi Skins (82 live listings, added 9 Oct 2026 for the description rewrite)
+- **From the live listings (to confirm):** fits the **standard PerfectDraft machine, not the PerfectDraft Pro**; "premium gloss finish"; "waterproof and durable"; printed in the UK. Product type is blank on all 82.
+- **ASK:**
+  - Is it a **magnet** or a **vinyl sticker**? The titles say "Vinyl Sticker", the handles say "magnetic skin / maxi magnet".
+  - Size (mm) and which panel of the machine it covers.
+  - Material and thickness; is it laminated?
+  - Does it peel off cleanly (no residue) and can it be repositioned?
+  - Care: wipe clean only?
+  - Dispatch time and packaging (posted flat with a board?).
+  - Any designs showing a club crest, band or film logo: these stay on the website only (owner's 6 Oct channel rule).
+- **Copy rules:** "PerfectDraft" only to describe fit ("fits the standard PerfectDraft machine"). Brands/logos disclaimer naming PerfectDraft plus the design's own name (film, band, club). Tag `third-party-name`.
+
+## Personalised novelty sock (`871770423332`, added 9 Oct 2026)
+- **From the listing:** sizes Medium / Large / Extra Large, same price; personalised with a name.
+- **ASK:** material, actual size of each option, print method, how the customer gives the name (there's no personalisation box on the product), care.

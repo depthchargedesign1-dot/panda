@@ -1,0 +1,100 @@
+{
+ "data": {
+  "nodes": [
+   {
+    "id": "gid://shopify/Product/7161645957307",
+    "variants": {
+     "nodes": [
+      {
+       "id": "gid://shopify/ProductVariant/41833247080635",
+       "title": "A4 Print Only",
+       "sku": "FOXY-POSTER-COPY-OF-PERSONALISED-CROWN-3-WORD-AR-A4"
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336246141",
+       "title": "A3 Print Only",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336278909",
+       "title": "A2 Print Only",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336311677",
+       "title": "A1 Print Only",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336344445",
+       "title": "A4 Print + Black Frame",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336377213",
+       "title": "A4 Print + Silver Frame",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336409981",
+       "title": "A3 Print + Black Frame",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336442749",
+       "title": "A3 Print + Silver Frame",
+       "sku": null
+      }
+     ]
+    }
+   },
+   {
+    "id": "gid://shopify/Product/7164602155195",
+    "variants": {
+     "nodes": [
+      {
+       "id": "gid://shopify/ProductVariant/41843536494779",
+       "title": "A4 Print Only",
+       "sku": "FOXY-POSTER-COPY-OF-PERSONALISED-SIRIUS-WORD-ART-A4"
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336475517",
+       "title": "A3 Print Only",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336508285",
+       "title": "A2 Print Only",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336541053",
+       "title": "A1 Print Only",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336573821",
+       "title": "A4 Print + Black Frame",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336606589",
+       "title": "A4 Print + Silver Frame",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336639357",
+       "title": "A3 Print + Black Frame",
+       "sku": null
+      },
+      {
+       "id": "gid://shopify/ProductVariant/58862336672125",
+       "title": "A3 Print + Silver Frame",
+       "sku": null
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,963 @@
+[
+ {
+  "key": "club_coaster",
+  "id": "gid://shopify/Product/16066101281149",
+  "title": "Personalised Club Colours Coaster – Your Club Badge & Team Name – Matches Our Club Bar Mats",
+  "handle": "personalised-club-colours-coaster",
+  "url": "https://foxyprinting.co.uk/products/personalised-club-colours-coaster",
+  "status": "ACTIVE",
+  "productType": "Coasters",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PCCC-01",
+    "price": "3.99",
+    "colour": "Red & White",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-02",
+    "price": "3.99",
+    "colour": "Red & White Stripes",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-03",
+    "price": "3.99",
+    "colour": "Blue & White",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-04",
+    "price": "3.99",
+    "colour": "Blue & White Stripes",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-05",
+    "price": "3.99",
+    "colour": "Black & White Stripes",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-06",
+    "price": "3.99",
+    "colour": "Green & White",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-07",
+    "price": "3.99",
+    "colour": "Green & White Hoops",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-08",
+    "price": "3.99",
+    "colour": "Sky Blue & White",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-09",
+    "price": "3.99",
+    "colour": "Navy & White",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-10",
+    "price": "3.99",
+    "colour": "Black & Orange",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-11",
+    "price": "3.99",
+    "colour": "Black & Yellow",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-12",
+    "price": "3.99",
+    "colour": "Yellow & Black",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-13",
+    "price": "3.99",
+    "colour": "Blue & Yellow",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-14",
+    "price": "3.99",
+    "colour": "Blue & Red",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-15",
+    "price": "3.99",
+    "colour": "Green & Yellow",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-16",
+    "price": "3.99",
+    "colour": "Yellow & Red",
+    "size": null
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-17",
+    "price": "3.99",
+    "colour": "Claret & Blue",
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Club or team name",
+   "Club badge upload",
+   "Welcome line (optional)",
+   "Est. year (optional)"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Club Colours Coaster – Your Club Badge & Team Name – Matches Our Club Bar Mats - FOXY-SUB-PCCC-01"
+ },
+ {
+  "key": "club_pint",
+  "id": "gid://shopify/Product/16066101608829",
+  "title": "Personalised Club Colours Pint Glass – Your Club Badge & Team Name – 17 Team Colours",
+  "handle": "personalised-club-colours-pint-glass",
+  "url": "https://foxyprinting.co.uk/products/personalised-club-colours-pint-glass",
+  "status": "ACTIVE",
+  "productType": "Personalised Glassware",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PCCPG-01",
+    "price": "11.99",
+    "colour": "Red & White",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-02",
+    "price": "11.99",
+    "colour": "Red & White Stripes",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-03",
+    "price": "11.99",
+    "colour": "Blue & White",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-04",
+    "price": "11.99",
+    "colour": "Blue & White Stripes",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-05",
+    "price": "11.99",
+    "colour": "Black & White Stripes",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-06",
+    "price": "11.99",
+    "colour": "Green & White",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-07",
+    "price": "11.99",
+    "colour": "Green & White Hoops",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-08",
+    "price": "11.99",
+    "colour": "Sky Blue & White",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-09",
+    "price": "11.99",
+    "colour": "Navy & White",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-10",
+    "price": "11.99",
+    "colour": "Black & Orange",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-11",
+    "price": "11.99",
+    "colour": "Black & Yellow",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-12",
+    "price": "11.99",
+    "colour": "Yellow & Black",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-13",
+    "price": "11.99",
+    "colour": "Blue & Yellow",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-14",
+    "price": "11.99",
+    "colour": "Blue & Red",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-15",
+    "price": "11.99",
+    "colour": "Green & Yellow",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-16",
+    "price": "11.99",
+    "colour": "Yellow & Red",
+    "size": null
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-17",
+    "price": "11.99",
+    "colour": "Claret & Blue",
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Club or team name",
+   "Club badge upload",
+   "Welcome line (optional)",
+   "Est. year (optional)"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Club Colours Pint Glass – Your Club Badge & Team Name – 17 Team Colours - FOXY-UVDTF-PCCPG-01"
+ },
+ {
+  "key": "rustic_pint",
+  "id": "gid://shopify/Product/16066101739901",
+  "title": "Personalised Home Bar Pint Glass – Rustic Established Design – Your Bar Name & Year",
+  "handle": "personalised-home-bar-pint-glass-rustic-established",
+  "url": "https://foxyprinting.co.uk/products/personalised-home-bar-pint-glass-rustic-established",
+  "status": "ACTIVE",
+  "productType": "Personalised Glassware",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PRHBPG-01",
+    "price": "11.99",
+    "colour": null,
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Bar name",
+   "Welcome line (optional)",
+   "Est. year"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Home Bar Pint Glass – Rustic Established Design – Your Bar Name & Year - FOXY-UVDTF-PRHBPG-01"
+ },
+ {
+  "key": "man_cave_pint",
+  "id": "gid://shopify/Product/16066101903741",
+  "title": "Personalised Man Cave Pint Glass – Gold & Charcoal Welcome Design – Your Name",
+  "handle": "personalised-man-cave-pint-glass",
+  "url": "https://foxyprinting.co.uk/products/personalised-man-cave-pint-glass",
+  "status": "ACTIVE",
+  "productType": "Personalised Glassware",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PMCPG-01",
+    "price": "11.99",
+    "colour": null,
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Name",
+   "Est. year (optional)"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Man Cave Pint Glass – Gold & Charcoal Welcome Design – Your Name - FOXY-UVDTF-PMCPG-01"
+ },
+ {
+  "key": "beer_pint",
+  "id": "gid://shopify/Product/16066102133117",
+  "title": "Personalised Beer O’Clock Pint Glass – Retro Orange Design – Your Bar Name",
+  "handle": "personalised-beer-oclock-pint-glass",
+  "url": "https://foxyprinting.co.uk/products/personalised-beer-oclock-pint-glass",
+  "status": "ACTIVE",
+  "productType": "Personalised Glassware",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PBOCPG-01",
+    "price": "11.99",
+    "colour": null,
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Bar name"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Beer O’Clock Pint Glass – Retro Orange Design – Your Bar Name - FOXY-UVDTF-PBOCPG-01"
+ },
+ {
+  "key": "union_pint",
+  "id": "gid://shopify/Product/16066102231421",
+  "title": "Personalised Union Jack Bar Pint Glass – British Flag Design – Your Bar Name & Year",
+  "handle": "personalised-union-jack-bar-pint-glass",
+  "url": "https://foxyprinting.co.uk/products/personalised-union-jack-bar-pint-glass",
+  "status": "ACTIVE",
+  "productType": "Personalised Glassware",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PUJBPG-01",
+    "price": "11.99",
+    "colour": null,
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Bar name",
+   "Welcome line (optional)",
+   "Est. year (optional)"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Union Jack Bar Pint Glass – British Flag Design – Your Bar Name & Year - FOXY-UVDTF-PUJBPG-01"
+ },
+ {
+  "key": "best_bar_pint",
+  "id": "gid://shopify/Product/16066102296957",
+  "title": "Personalised Best Bar in Town Pint Glass – Cream & Brown Design – Your Bar Name & Year",
+  "handle": "personalised-best-bar-in-town-pint-glass",
+  "url": "https://foxyprinting.co.uk/products/personalised-best-bar-in-town-pint-glass",
+  "status": "ACTIVE",
+  "productType": "Personalised Glassware",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PBBTPG-01",
+    "price": "11.99",
+    "colour": null,
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Bar name",
+   "Welcome line (optional)",
+   "Est. year"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Best Bar in Town Pint Glass – Cream & Brown Design – Your Bar Name & Year - FOXY-UVDTF-PBBTPG-01"
+ },
+ {
+  "key": "my_rules_tumbler",
+  "id": "gid://shopify/Product/16066102362493",
+  "title": "Personalised My Bar My Rules Whisky Tumbler – Navy & Gold Design – Your Name",
+  "handle": "personalised-my-bar-my-rules-whisky-tumbler",
+  "url": "https://foxyprinting.co.uk/products/personalised-my-bar-my-rules-whisky-tumbler",
+  "status": "ACTIVE",
+  "productType": "Personalised Glassware",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PMBMRWT-01",
+    "price": "13.99",
+    "colour": null,
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Name",
+   "Est. year (optional)"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised My Bar My Rules Whisky Tumbler – Navy & Gold Design – Your Name - FOXY-UVDTF-PMBMRWT-01"
+ },
+ {
+  "key": "vintage_tumbler",
+  "id": "gid://shopify/Product/16066102395261",
+  "title": "Personalised Vintage Established Bar Whisky Tumbler – Black & White Design – Your Bar Name",
+  "handle": "personalised-vintage-established-whisky-tumbler",
+  "url": "https://foxyprinting.co.uk/products/personalised-vintage-established-whisky-tumbler",
+  "status": "ACTIVE",
+  "productType": "Personalised Glassware",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PVEBWT-01",
+    "price": "13.99",
+    "colour": null,
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Bar name",
+   "Welcome line (optional)",
+   "Est. year"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Vintage Established Bar Whisky Tumbler – Black & White Design – Your Bar Name - FOXY-UVDTF-PVEBWT-01"
+ },
+ {
+  "key": "walnut_tumbler",
+  "id": "gid://shopify/Product/16066102526333",
+  "title": "Personalised Walnut & Gold Bar Whisky Tumbler – Gentleman’s Bar Design – Your Bar Name",
+  "handle": "personalised-walnut-gold-bar-whisky-tumbler",
+  "url": "https://foxyprinting.co.uk/products/personalised-walnut-gold-bar-whisky-tumbler",
+  "status": "ACTIVE",
+  "productType": "Personalised Glassware",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PWGBWT-01",
+    "price": "13.99",
+    "colour": null,
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Bar name",
+   "Welcome line (optional)",
+   "Est. year"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Walnut & Gold Bar Whisky Tumbler – Gentleman’s Bar Design – Your Bar Name - FOXY-UVDTF-PWGBWT-01"
+ },
+ {
+  "key": "man_cave_tumbler",
+  "id": "gid://shopify/Product/16066103148925",
+  "title": "Personalised Man Cave Whisky Tumbler – Gold & Charcoal Welcome Design – Your Name",
+  "handle": "personalised-man-cave-whisky-tumbler",
+  "url": "https://foxyprinting.co.uk/products/personalised-man-cave-whisky-tumbler",
+  "status": "ACTIVE",
+  "productType": "Personalised Glassware",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PMCWT-01",
+    "price": "13.99",
+    "colour": null,
+    "size": null
+   }
+  ],
+  "personalise_fields": [
+   "Name",
+   "Est. year (optional)"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Man Cave Whisky Tumbler – Gold & Charcoal Welcome Design – Your Name - FOXY-UVDTF-PMCWT-01"
+ },
+ {
+  "key": "club_sign",
+  "id": "gid://shopify/Product/16066103247229",
+  "title": "Personalised Club Colours Bar Sign – Metal Sign with Your Club Badge & Name – 17 Team Colours",
+  "handle": "personalised-club-colours-bar-sign",
+  "url": "https://foxyprinting.co.uk/products/personalised-club-colours-bar-sign",
+  "status": "ACTIVE",
+  "productType": "Metal Signs",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PCCBS-01",
+    "price": "19.99",
+    "colour": "Red & White",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-02",
+    "price": "24.99",
+    "colour": "Red & White",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-03",
+    "price": "19.99",
+    "colour": "Red & White Stripes",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-04",
+    "price": "24.99",
+    "colour": "Red & White Stripes",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-05",
+    "price": "19.99",
+    "colour": "Blue & White",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-06",
+    "price": "24.99",
+    "colour": "Blue & White",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-07",
+    "price": "19.99",
+    "colour": "Blue & White Stripes",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-08",
+    "price": "24.99",
+    "colour": "Blue & White Stripes",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-09",
+    "price": "19.99",
+    "colour": "Black & White Stripes",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-10",
+    "price": "24.99",
+    "colour": "Black & White Stripes",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-11",
+    "price": "19.99",
+    "colour": "Green & White",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-12",
+    "price": "24.99",
+    "colour": "Green & White",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-13",
+    "price": "19.99",
+    "colour": "Green & White Hoops",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-14",
+    "price": "24.99",
+    "colour": "Green & White Hoops",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-15",
+    "price": "19.99",
+    "colour": "Sky Blue & White",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-16",
+    "price": "24.99",
+    "colour": "Sky Blue & White",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-17",
+    "price": "19.99",
+    "colour": "Navy & White",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-18",
+    "price": "24.99",
+    "colour": "Navy & White",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-19",
+    "price": "19.99",
+    "colour": "Black & Orange",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-20",
+    "price": "24.99",
+    "colour": "Black & Orange",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-21",
+    "price": "19.99",
+    "colour": "Black & Yellow",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-22",
+    "price": "24.99",
+    "colour": "Black & Yellow",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-23",
+    "price": "19.99",
+    "colour": "Yellow & Black",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-24",
+    "price": "24.99",
+    "colour": "Yellow & Black",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-25",
+    "price": "19.99",
+    "colour": "Blue & Yellow",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-26",
+    "price": "24.99",
+    "colour": "Blue & Yellow",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-27",
+    "price": "19.99",
+    "colour": "Blue & Red",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-28",
+    "price": "24.99",
+    "colour": "Blue & Red",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-29",
+    "price": "19.99",
+    "colour": "Green & Yellow",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-30",
+    "price": "24.99",
+    "colour": "Green & Yellow",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-31",
+    "price": "19.99",
+    "colour": "Yellow & Red",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-32",
+    "price": "24.99",
+    "colour": "Yellow & Red",
+    "size": "8 x 10in"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-33",
+    "price": "19.99",
+    "colour": "Claret & Blue",
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-34",
+    "price": "24.99",
+    "colour": "Claret & Blue",
+    "size": "8 x 10in"
+   }
+  ],
+  "personalise_fields": [
+   "Club or team name",
+   "Club badge upload",
+   "Welcome line (optional)",
+   "Est. year (optional)"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Club Colours Bar Sign – Metal Sign with Your Club Badge & Name – 17 Team Colours - FOXY-SUB-PCCBS-01"
+ },
+ {
+  "key": "rustic_sign",
+  "id": "gid://shopify/Product/16066103509373",
+  "title": "Personalised Rustic Established Home Bar Sign – Metal Sign with Your Bar Name & Year",
+  "handle": "personalised-rustic-established-home-bar-sign",
+  "url": "https://foxyprinting.co.uk/products/personalised-rustic-established-home-bar-sign",
+  "status": "ACTIVE",
+  "productType": "Metal Signs",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PREHBS-01",
+    "price": "19.99",
+    "colour": null,
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PREHBS-02",
+    "price": "24.99",
+    "colour": null,
+    "size": "8 x 10in"
+   }
+  ],
+  "personalise_fields": [
+   "Bar name",
+   "Welcome line (optional)",
+   "Est. year"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Rustic Established Home Bar Sign – Metal Sign with Your Bar Name & Year - FOXY-SUB-PREHBS-01"
+ },
+ {
+  "key": "my_cave_sign",
+  "id": "gid://shopify/Product/16066103607677",
+  "title": "Personalised My Cave My Rules Metal Sign – Navy & Gold Home Bar Sign – Your Name",
+  "handle": "personalised-my-cave-my-rules-metal-sign",
+  "url": "https://foxyprinting.co.uk/products/personalised-my-cave-my-rules-metal-sign",
+  "status": "ACTIVE",
+  "productType": "Metal Signs",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PMCMRS-01",
+    "price": "19.99",
+    "colour": null,
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PMCMRS-02",
+    "price": "24.99",
+    "colour": null,
+    "size": "8 x 10in"
+   }
+  ],
+  "personalise_fields": [
+   "Name",
+   "Est. year (optional)"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised My Cave My Rules Metal Sign – Navy & Gold Home Bar Sign – Your Name - FOXY-SUB-PMCMRS-01"
+ },
+ {
+  "key": "beer_sign",
+  "id": "gid://shopify/Product/16066103705981",
+  "title": "Personalised Beer O’Clock Home Bar Sign – Retro Orange Metal Sign – Your Bar Name",
+  "handle": "personalised-beer-oclock-home-bar-sign",
+  "url": "https://foxyprinting.co.uk/products/personalised-beer-oclock-home-bar-sign",
+  "status": "ACTIVE",
+  "productType": "Metal Signs",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PBOCHBS-01",
+    "price": "19.99",
+    "colour": null,
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PBOCHBS-02",
+    "price": "24.99",
+    "colour": null,
+    "size": "8 x 10in"
+   }
+  ],
+  "personalise_fields": [
+   "Bar name"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Beer O’Clock Home Bar Sign – Retro Orange Metal Sign – Your Bar Name - FOXY-SUB-PBOCHBS-01"
+ },
+ {
+  "key": "union_sign",
+  "id": "gid://shopify/Product/16066103869821",
+  "title": "Personalised Union Jack Home Bar Sign – British Flag Metal Sign – Your Bar Name & Year",
+  "handle": "personalised-union-jack-home-bar-sign",
+  "url": "https://foxyprinting.co.uk/products/personalised-union-jack-home-bar-sign",
+  "status": "ACTIVE",
+  "productType": "Metal Signs",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PUJHBS-01",
+    "price": "19.99",
+    "colour": null,
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PUJHBS-02",
+    "price": "24.99",
+    "colour": null,
+    "size": "8 x 10in"
+   }
+  ],
+  "personalise_fields": [
+   "Bar name",
+   "Welcome line (optional)",
+   "Est. year (optional)"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Union Jack Home Bar Sign – British Flag Metal Sign – Your Bar Name & Year - FOXY-SUB-PUJHBS-01"
+ },
+ {
+  "key": "best_bar_sign",
+  "id": "gid://shopify/Product/16066104033661",
+  "title": "Personalised Best Bar in Town Metal Sign – Cream & Brown Home Bar Sign – Your Bar Name & Year",
+  "handle": "personalised-best-bar-in-town-metal-sign",
+  "url": "https://foxyprinting.co.uk/products/personalised-best-bar-in-town-metal-sign",
+  "status": "ACTIVE",
+  "productType": "Metal Signs",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PBBTMS-01",
+    "price": "19.99",
+    "colour": null,
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PBBTMS-02",
+    "price": "24.99",
+    "colour": null,
+    "size": "8 x 10in"
+   }
+  ],
+  "personalise_fields": [
+   "Bar name",
+   "Welcome line (optional)",
+   "Est. year"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Best Bar in Town Metal Sign – Cream & Brown Home Bar Sign – Your Bar Name & Year - FOXY-SUB-PBBTMS-01"
+ },
+ {
+  "key": "walnut_sign",
+  "id": "gid://shopify/Product/16066104263037",
+  "title": "Personalised Walnut & Gold Home Bar Sign – Gentleman’s Bar Metal Sign – Your Bar Name & Year",
+  "handle": "personalised-walnut-gold-home-bar-sign",
+  "url": "https://foxyprinting.co.uk/products/personalised-walnut-gold-home-bar-sign",
+  "status": "ACTIVE",
+  "productType": "Metal Signs",
+  "channels": [
+   "Online Store",
+   "Shop",
+   "Google & YouTube",
+   "Facebook & Instagram",
+   "TikTok"
+  ],
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PWGHBS-01",
+    "price": "19.99",
+    "colour": null,
+    "size": "12 x 5in panoramic"
+   },
+   {
+    "sku": "FOXY-SUB-PWGHBS-02",
+    "price": "24.99",
+    "colour": null,
+    "size": "8 x 10in"
+   }
+  ],
+  "personalise_fields": [
+   "Bar name",
+   "Welcome line (optional)",
+   "Est. year"
+  ],
+  "dropbox_folder": "/AI DESIGNS 2026/Personalised Walnut & Gold Home Bar Sign – Gentleman’s Bar Metal Sign – Your Bar Name & Year - FOXY-SUB-PWGHBS-01"
+ }
+]

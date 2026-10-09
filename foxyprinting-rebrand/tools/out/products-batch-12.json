@@ -1,0 +1,627 @@
+[
+ {
+  "title": "Small Business Printed Mailer Boxes",
+  "handle": "small-business-printed-mailer-boxes",
+  "descriptionHtml": "<p><strong>Small Business Printed Mailer Boxes</strong> - printed and precision-cut in our UK workshop.</p><p>Mug boxes, bauble boxes, golf ball boxes and letterbox gifts.</p><p>Personalise it with: logo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Gift Boxes & Letterbox Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-gift-packaging",
+   "dept-boxes-packaging",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "25"
+     },
+     {
+      "name": "50"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "25"
+     }
+    ],
+    "price": "49.99",
+    "sku": "FOXY-CUT-SBPMB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "50"
+     }
+    ],
+    "price": "84.99",
+    "sku": "FOXY-CUT-SBPMB-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Logo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Video Game Case - Put Yourself on the Cover",
+  "handle": "personalised-video-game-case-put-yourself-on-the-cover",
+  "descriptionHtml": "<p><strong>Personalised Video Game Case - Put Yourself on the Cover</strong> - printed and precision-cut in our UK workshop.</p><p>Put anyone on the cover of their own video game - plus our 3,300+ replacement cases.</p><p>Personalise it with: photo upload, game title, name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Custom Video Game Cases",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-custom-game-cases",
+   "dept-fan-shop-retro",
+   "machine-cut",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Style",
+    "values": [
+     {
+      "name": "Modern console style"
+     },
+     {
+      "name": "Retro 16-bit style"
+     },
+     {
+      "name": "Handheld style"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Style",
+      "name": "Modern console style"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-CUT-PVGCPYOT-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Style",
+      "name": "Retro 16-bit style"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-CUT-PVGCPYOT-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Style",
+      "name": "Handheld style"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-CUT-PVGCPYOT-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Game title\", \"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Birthday Game Case Card",
+  "handle": "personalised-birthday-game-case-card",
+  "descriptionHtml": "<p><strong>Personalised Birthday Game Case Card</strong> - printed and precision-cut in our UK workshop.</p><p>Put anyone on the cover of their own video game - plus our 3,300+ replacement cases.</p><p>Personalise it with: photo upload, name, age. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Custom Video Game Cases",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-custom-game-cases",
+   "dept-fan-shop-retro",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-CUT-PBGCC-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Name\", \"Age\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Glitter Card Cake Topper",
+  "handle": "personalised-glitter-card-cake-topper",
+  "descriptionHtml": "<p><strong>Personalised Glitter Card Cake Topper</strong> - printed and precision-cut in our UK workshop.</p><p>Die-cut cake toppers, pop-up cards, photo booth props and gift tags.</p><p>Personalise it with: name, age. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Cake Toppers, 3D Cards & Party Paper",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-papercraft",
+   "dept-cards-invitations",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-CUT-PGCCT-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Age\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Cupcake Toppers (Set of 12)",
+  "handle": "personalised-cupcake-toppers-set-of-12",
+  "descriptionHtml": "<p><strong>Personalised Cupcake Toppers (Set of 12)</strong> - printed and precision-cut in our UK workshop.</p><p>Die-cut cake toppers, pop-up cards, photo booth props and gift tags.</p><p>Personalise it with: name, age, theme. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Cake Toppers, 3D Cards & Party Paper",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-papercraft",
+   "dept-cards-invitations",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "4.99",
+    "sku": "FOXY-CUT-PCTSO1-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Age\", \"Theme\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Pop-Up 3D Birthday Card",
+  "handle": "pop-up-3d-birthday-card",
+  "descriptionHtml": "<p><strong>Pop-Up 3D Birthday Card</strong> - printed and precision-cut in our UK workshop.</p><p>Die-cut cake toppers, pop-up cards, photo booth props and gift tags.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Cake Toppers, 3D Cards & Party Paper",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-papercraft",
+   "dept-cards-invitations",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-CUT-PU3BC-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Photo Booth Props (Set of 20)",
+  "handle": "photo-booth-props-set-of-20",
+  "descriptionHtml": "<p><strong>Photo Booth Props (Set of 20)</strong> - printed and precision-cut in our UK workshop.</p><p>Die-cut cake toppers, pop-up cards, photo booth props and gift tags.</p><p>Personalise it with: names, date. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Cake Toppers, 3D Cards & Party Paper",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-papercraft",
+   "dept-cards-invitations",
+   "machine-cut",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-CUT-PBPSO2-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Names\", \"Date\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Gift Tags (Pack of 20)",
+  "handle": "personalised-gift-tags-pack-of-20",
+  "descriptionHtml": "<p><strong>Personalised Gift Tags (Pack of 20)</strong> - printed and precision-cut in our UK workshop.</p><p>Die-cut cake toppers, pop-up cards, photo booth props and gift tags.</p><p>Personalise it with: from name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Cake Toppers, 3D Cards & Party Paper",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-papercraft",
+   "dept-cards-invitations",
+   "machine-cut",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "4.99",
+    "sku": "FOXY-CUT-PGTPO2-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"From name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Card Jigsaw",
+  "handle": "personalised-card-jigsaw",
+  "descriptionHtml": "<p><strong>Personalised Card Jigsaw</strong> - printed and precision-cut in our UK workshop.</p><p>Die-cut cake toppers, pop-up cards, photo booth props and gift tags.</p><p>Personalise it with: photo upload, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Cake Toppers, 3D Cards & Party Paper",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-papercraft",
+   "dept-cards-invitations",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A4"
+     },
+     {
+      "name": "A3"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A4"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-CUT-PCJ-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A3"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-CUT-PCJ-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Spot-Gloss (Raised UV) Business Cards",
+  "handle": "spot-gloss-raised-uv-business-cards",
+  "descriptionHtml": "<p><strong>Spot-Gloss (Raised UV) Business Cards</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Premium business cards (spot-gloss, metal, rounded), flyers, leaflets and more.</p><p>Personalise it with: artwork upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Business Cards & Stationery",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-business-stationery",
+   "dept-business-printing",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Quantity",
+    "values": [
+     {
+      "name": "100"
+     },
+     {
+      "name": "250"
+     },
+     {
+      "name": "500"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "100"
+     }
+    ],
+    "price": "29.99",
+    "sku": "FOXY-UV-SGRUBC-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "250"
+     }
+    ],
+    "price": "44.99",
+    "sku": "FOXY-UV-SGRUBC-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Quantity",
+      "name": "500"
+     }
+    ],
+    "price": "64.99",
+    "sku": "FOXY-UV-SGRUBC-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Artwork upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

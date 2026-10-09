@@ -1,0 +1,54 @@
+{
+  "current": {
+    "color_primary": "#FF6A13",
+    "color_pink": "#FF2D87",
+    "color_purple": "#7A2BF5",
+    "color_teal": "#00B8A9",
+    "color_yellow": "#FFC83D",
+    "color_ink": "#1D1240",
+    "color_background": "#FFFFFF",
+    "color_tint": "#FFF4EA",
+    "color_sale": "#E8133A",
+    "social_facebook_link": "https://www.facebook.com/FoxyPrinting",
+    "social_instagram_link": "https://www.instagram.com/foxyprinting",
+    "social_tiktok_link": "https://www.tiktok.com/@foxyprinting",
+    "social_x_link": "https://x.com/foxyprinting",
+    "blocks": {
+      "judgeme_core": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "inbox_chat": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "greeting_message": "👋 Hi, message us with any questions. We're happy to help!",
+          "button_color": "#FF6A13",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "highest"
+        }
+      },
+      "simprosys_core": {
+        "type": "shopify://apps/simprosys-google-shopping-feed/blocks/core_settings_block/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
+        "disabled": false,
+        "settings": {}
+      },
+      "omnisend_embed": {
+        "type": "shopify://apps/omnisend-email-marketing-sms/blocks/app-embed/44704aa2-794f-4c5d-8c8e-039c841158e9",
+        "disabled": false,
+        "settings": {}
+      },
+      "delivery_timer": {
+        "type": "shopify://apps/delivery-timer/blocks/global_deliverytimer/bace9725-6846-4fad-8461-027a1ac43ad8",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Foxy Pop": {}
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "defaults": {
+    "brand_name": "Foxy Printing",
+    "manufacturer": "Foxy Printing",
+    "quantity": 20,
+    "fulfillment_latency": "ASK",
+    "merchant_shipping_group_name": "ASK",
+    "recommended_browse_nodes": "ASK",
+    "country_of_origin": "ASK"
+  },
+  "groups": [
+    {
+      "key": "number-plate-mug-br3w-up",
+      "ids": ["gid://shopify/Product/16063708922237"],
+      "feed_product_type": "DRINKING_CUP",
+      "variation_theme": "Style",
+      "child_title": "{parent} - {value} Band",
+      "extra_keywords": "personalized novelty registration plate coffee cup cuppa tea drinker gift for dad grandad mum office secret santa",
+      "attributes": {"color_name": "White", "material_type": "Ceramic", "capacity": "325 ml (11oz)", "care_instructions": "Dishwasher and microwave safe; avoid abrasive scourers"}
+    },
+    {
+      "key": "personalised-bobble-hat",
+      "ids": [
+        "gid://shopify/Product/8062691082491",
+        "gid://shopify/Product/8062691967227",
+        "gid://shopify/Product/8062692327675",
+        "gid://shopify/Product/8062692720891",
+        "gid://shopify/Product/8062693114107",
+        "gid://shopify/Product/8062693769467",
+        "gid://shopify/Product/8062694555899",
+        "gid://shopify/Product/8062695309563"
+      ],
+      "feed_product_type": "HAT",
+      "variation_theme": "Color",
+      "title": "Foxy Printing Personalised Bobble Hat with Your Logo - Striped Cuff Pom Pom Beanie - One Size Adult",
+      "child_title": "{parent} - {value}",
+      "title_max": 125,
+      "child_values": {
+        "gid://shopify/Product/8062691082491": "Black, Red & White",
+        "gid://shopify/Product/8062691967227": "Black & Gold",
+        "gid://shopify/Product/8062692327675": "Black & White",
+        "gid://shopify/Product/8062692720891": "Royal Blue & White",
+        "gid://shopify/Product/8062693114107": "Red & White",
+        "gid://shopify/Product/8062693769467": "Navy, Red & White",
+        "gid://shopify/Product/8062694555899": "Navy & White",
+        "gid://shopify/Product/8062695309563": "Green & White"
+      },
+      "color_map": {
+        "gid://shopify/Product/8062691082491": "Black",
+        "gid://shopify/Product/8062691967227": "Black",
+        "gid://shopify/Product/8062692327675": "Black",
+        "gid://shopify/Product/8062692720891": "Blue",
+        "gid://shopify/Product/8062693114107": "Red",
+        "gid://shopify/Product/8062693769467": "Blue",
+        "gid://shopify/Product/8062694555899": "Blue",
+        "gid://shopify/Product/8062695309563": "Green"
+      },
+      "weight_g": 85,
+      "extra_keywords": "personalized custom logo woolly winter hat pompom knitted beanie club team school staff uniform company branded",
+      "attributes": {"size_name": "One Size", "material_type": "100% Acrylic", "care_instructions": "Machine wash warm; do not iron; do not dry clean", "target_gender": "Unisex", "age_range_description": "Adult"}
+    },
+    {
+      "key": "personalised-england-terrace-flag",
+      "ids": ["gid://shopify/Product/8783850930427"],
+      "feed_product_type": "FLAG",
+      "variation_theme": "Size",
+      "child_title": "{parent} - {value}",
+      "extra_keywords": "personalized custom st george banner with name text supporters pub stadium tournament fans away day",
+      "attributes": {"material_type": "Polyester", "color_name": "Red & White"}
+    }
+  ]
+}
