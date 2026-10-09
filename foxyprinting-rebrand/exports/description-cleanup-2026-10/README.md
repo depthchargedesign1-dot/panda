@@ -62,3 +62,110 @@ All 80 are PerfectDraft Maxi Skins. The "brackets" are Word leftovers (`<!--[if 
 
 ## 5. Family description rewrites: next
 Order: Baby Vest, Kids Cards, Gaming Cards, Movie Cards, Holiday Stockings (+ dedupe), Coasters, SNES cases, NES/SNES posters/magnets/keyrings, Football Posters. Three samples per family will be added here before each full file. Families whose facts are **ASK** in `plan/product-facts.md` wait for the owner's answers.
+
+## 6. Baby vests / baby grows: IMPORT FILE READY (9 Oct 2026)
+- `baby-vest/baby-vest-descriptions.csv`: **2,004 products** (all ACTIVE £8.99 single-variant "Baby Vest" listings), columns `Handle, Body (HTML)` only, 3.4 MB. Import with "overwrite matching handles". The 67 newer £12.99 vests already have new copy and aren't in the file.
+- Every row was checked:
+  - one H2, then H3s;
+  - no inline styles, spans or images;
+  - 180–350 words;
+  - none of the banned words (design slogans in quotes are allowed, e.g. "I Have The Best Dad Ever");
+  - the disclaimer is the last block where a name appears.
+- **Disclaimers:**
+  - 862 football designs: sports template with the real club (spelling fixed: Bournmouth, Milwall, Tettenham, Gillngham…; Scottish clubs name the SPFL; England/Scotland/Wales name the FA);
+  - 28 film/TV designs: Star Wars, Batman, Harry Potter, Game of Thrones, Pokémon, Frozen, Star Trek;
+  - 10 band designs (Happy Mondays, Oasis);
+  - 4 game designs (PlayStation, Xbox, Call of Duty);
+  - 2 brand puns (Apple and Nintendo).
+- **`third-party-name` tag: DONE via API** on those 906 products (re-counted afterwards: 908 Baby Vests carry the tag, including 2 that already had it). Not in the CSV, because a Tags column would wipe the other tags.
+- Facts used: the baby grow sheet only (100% cotton, short sleeve, nickel-free poppers, wash and iron inside out, 4 sizes 0–3 to 9–12 months, made in North Yorkshire). No blank brand or print method is named (both still **ASK**).
+- **ASK (added to the fact sheet):** these listings have **no size option and no personalisation box**, but the old copy said "email us your personalisation" and every listing is tagged "Add Name On Back". How does a customer pick the size and give the name? Until then the copy says "it comes in four sizes" and "let us know the name when you order", without saying how.
+- **Channel note:** 862 are football designs; titles like "…Personalised FOOTBALL TEAM Baby Grow" may show club crests. Under the 6 Oct rule those must stay off Google/Facebook/TikTok. That's not checked here.
+- Review: `baby-vest/review.csv` (handle, kind, name used in the disclaimer, word count), `baby-vest/samples.html`. Generator: `tools/baby_vest_copy.py`.
+
+**3 samples:**
+
+`me-and-my-aunty-love-lincoln-city-personalised-football-team-baby-grow`
+
+```html
+<p>Start them young with our Me and My Aunty Love Lincoln City baby grow, a fan-made Lincoln City baby vest that's perfect for match days, a baby shower or a new arrival.</p>
+<h2>Me and My Aunty Love Lincoln City baby grow for Lincoln City fans</h2>
+<p>The front reads “Me and My Aunty Love Lincoln City” in a bold football fan design. It's a lovely gift from an aunty who wants to pass on the football bug. It comes in four sizes, from 0–3 months up to 9–12 months. Want their name on the back? Tell us the name when you order and we'll add it.</p>
+<h3>Why you'll love it</h3>
+<ul>
+<li>Soft 100% cotton, kind to delicate skin</li>
+<li>Printed in-house in North Yorkshire, UK, and made to order</li>
+<li>A lovely gift for a baby shower</li>
+<li>Four sizes from newborn (0–3 months) to 9–12 months</li>
+<li>Wash and iron inside out to keep the print looking good</li>
+</ul>
+<h3>Size &amp; details</h3>
+<ul>
+<li>Sizes: 0–3 months, 3–6 months, 6–9 months, 9–12 months</li>
+<li>Material: 100% cotton, soft feel</li>
+<li>Style: short sleeve baby vest with nickel-free poppers</li>
+<li>Care: wash and iron inside out</li>
+<li>Printed in North Yorkshire, UK</li>
+</ul>
+<h3>Delivery</h3>
+<p>Each baby grow is printed to order in our North Yorkshire workshop. Postage options and costs are shown at checkout.</p>
+<p>Buying for a baby shower? Add a personalised card and the Me and My Aunty Love Lincoln City baby grow is ready to give. Custom designs on request: call 01439 771468.</p>
+<h3>Please note</h3>
+<p class="disclaimer">This is an unofficial, fan-made design created and printed by Foxy Printing. It is not endorsed by, sponsored by, or affiliated with Lincoln City, the Premier League, the English Football League or any club, league or player. Club and player names are used only to describe the design and who it's for. All trademarks belong to their respective owners.</p>
+```
+
+`i-have-the-best-dad-ever-personalised-baby-boy-girl-unisex-short-sleeve-bodysuit`
+
+```html
+<p>Say it with a slogan: our I Have The Best Dad Ever baby grow reads “I Have The Best Dad Ever” and is made in-house in our North Yorkshire workshop.</p>
+<h2>I Have The Best Dad Ever baby grow</h2>
+<p>The front of the vest reads “I Have The Best Dad Ever”. It makes a thoughtful gift from Dad or for a proud dad. It comes in four sizes, from 0–3 months up to 9–12 months. We can also add a name on the back, so just let us know the name you'd like when you order.</p>
+<h3>Why you'll love it</h3>
+<ul>
+<li>Short sleeves and nickel-free poppers for quick, easy nappy changes</li>
+<li>Printed in-house in North Yorkshire, UK, and made to order</li>
+<li>A lovely gift for a hospital bag surprise</li>
+<li>Four sizes from newborn (0–3 months) to 9–12 months</li>
+<li>Wash and iron inside out to keep the print looking good</li>
+</ul>
+<h3>Size &amp; details</h3>
+<ul>
+<li>Sizes: 0–3 months, 3–6 months, 6–9 months, 9–12 months</li>
+<li>Material: 100% cotton, soft feel</li>
+<li>Style: short sleeve baby vest with nickel-free poppers</li>
+<li>Care: wash and iron inside out</li>
+<li>Printed in North Yorkshire, UK</li>
+</ul>
+<h3>Delivery</h3>
+<p>Each baby grow is printed to order in our North Yorkshire workshop. Postage options and costs are shown at checkout.</p>
+<p>Buying for a baby shower? Add a personalised card and the I Have The Best Dad Ever baby grow is ready to give. Custom designs on request: call 01439 771468.</p>
+```
+
+`future-jedi-master-personalised-baby-boy-girl-unisex-short-sleeve-bodysuit`
+
+```html
+<p>Our Future Jedi Master baby grow is a sweet, funny way to dress a little one, printed with “Future Jedi Master” and made to order here in North Yorkshire.</p>
+<h2>Future Jedi Master baby grow</h2>
+<p>The front of the vest reads “Future Jedi Master”. It's a fun outfit for everyday wear and a guaranteed photo moment. It comes in four sizes, from 0–3 months up to 9–12 months. A name on the back makes it even more special: just let us know it when you order.</p>
+<h3>Why you'll love it</h3>
+<ul>
+<li>Soft 100% cotton, kind to delicate skin</li>
+<li>Short sleeves and nickel-free poppers for quick, easy nappy changes</li>
+<li>Printed in-house in North Yorkshire, UK, and made to order</li>
+<li>A lovely gift for a new arrival</li>
+<li>Four sizes from newborn (0–3 months) to 9–12 months</li>
+</ul>
+<h3>Size &amp; details</h3>
+<ul>
+<li>Sizes: 0–3 months, 3–6 months, 6–9 months, 9–12 months</li>
+<li>Material: 100% cotton, soft feel</li>
+<li>Style: short sleeve baby vest with nickel-free poppers</li>
+<li>Care: wash and iron inside out</li>
+<li>Printed in North Yorkshire, UK</li>
+</ul>
+<h3>Delivery</h3>
+<p>Each baby grow is printed to order in our North Yorkshire workshop. Postage options and costs are shown at checkout.</p>
+<p>Make it a set with a matching personalised mug for the proud parents. Want a different slogan? We do custom designs on request: call 01439 771468.</p>
+<h3>Please note</h3>
+<p class="disclaimer">This is an unofficial design inspired by Star Wars. It is not official merchandise and is not endorsed by, sponsored by, or connected with Star Wars, Lucasfilm or Disney, or any of their licensees. All names, characters and trademarks belong to their respective owners.</p>
+```

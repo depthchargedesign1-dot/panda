@@ -55,6 +55,7 @@
 - **Sizes (owner, 9 Oct 2026):** 4 sizes: 0–3 months, 3–6 months, 6–9 months, 9–12 months.
 - **Google category:** Apparel & Accessories > Clothing > Baby & Toddler Clothing > Baby One-Pieces
 - **age_group:** `newborn` or `infant`
+- **ASK (9 Oct 2026, description rewrite):** the 2,004 older £8.99 vest listings have one "Default Title" variant (no size option) and no personalisation box, yet all are tagged "Add Name On Back" and the old copy said "email or message any personalisation". How does the customer choose the size and give the name for the back? (Infinite Options set? order notes? message?) The new copy only says "four sizes" and "let us know the name when you order".
 
 ## Christmas Eve boxes (new: flatbed cutter + print)
 - **Material / board:** **ASK** (e.g. kraft, white or printed rigid board, thickness).
