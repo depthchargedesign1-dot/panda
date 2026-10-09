@@ -51,6 +51,7 @@ def words(body):
 
 def fix_q(s):
     # "Wubben?Moy", "Left?Back": a lost non-breaking hyphen
+    s = s.replace("Le?Tissier", "Le Tissier")
     return re.sub(r"(?<=\w)\?(?=\w)", "-", s)
 
 
@@ -225,6 +226,7 @@ COUNTRIES = {"England": "the FA", "Argentina": "the Argentine Football Associati
 def subject_of(title):
     t = fix_q(title)
     head = re.split(r"\s+[–-]\s+", t)[0]
+    head = re.sub(r"\s*\bMC?\d{3,5}\w*", "", head)  # stock codes such as "MC1597Autographed"
     head = re.sub(r"\s*\b(Football )?(Poster Print|Poster|Print)\b.*$", "", head).strip()
     for _ in range(4):
         head = re.sub(r"\s+(England|Argentina|Spain|Wolves|Liverpool FC|Newcastle United|Tribute|World Cup Champions 20\d\d|Football)$", "", head).strip()
@@ -504,8 +506,8 @@ def film_poster(p):
                         "Give a horror fan's wall some menace with this {film} poster print, printed to order in our North Yorkshire workshop.",
                         "Looking for a gift for a horror film fan? This {film} poster print is ready for a den, home cinema or bedroom wall."], key, "o").format(**e)
         h2 = pick(["{film} poster print", "{film} horror movie poster print"], key, "h").format(**e)
-        feat = re.search(r"Featuring (the )?(.+?), this", old)
-        lead = "The print shows the poster artwork for " + e["film"] + (", " + esc(feat.group(2)).rstrip(".") if feat and len(feat.group(2)) < 110 else "") + "."
+        feat = re.search(r"Featuring (.+?), this", old)
+        lead = "The print shows the poster artwork for " + e["film"] + (", featuring " + esc(feat.group(1)).rstrip(".") if feat and len(feat.group(1)) < 110 else "") + "."
     sent, sbl, items, fr = size_block(p, key)
     detail = lead + " " + sent + (" " + pick(FRAME_LINE, key, "f") if fr else "")
     bullets = [pick(MADE, key, "m"), ("Six designs that work together as a gallery wall" if is_set else "Full-colour print of the classic poster artwork")] + sbl + [
@@ -610,13 +612,18 @@ def mask_name(p):
     return name
 
 
+KPOP_GROUPS = (r"ENHYPEN|SEVENTEEN|TXT|TOMORROW X TOGETHER|ATEEZ|BLACKPINK|NewJeans|LE SSERAFIM|aespa|KATSEYE|BOYNEXTDOOR|"
+               r"TWS|Hearts2Hearts|xikers|Sidemen|BABYMONSTER|ILLIT|tripleS|KiiiKiii|izna|MEOVV|P1Harmony")
+
+
 def mask_group(p, name):
+    # Only accept a bracketed name when it is a known group: the old copy often
+    # brackets the member's real name instead, e.g. "DK (Lee Seok-min)".
     old = text(p["descriptionHtml"])
     m = re.search(re.escape(name) + r"\s*\(([^)]{2,30})\)", old)
-    if m:
+    if m and re.fullmatch(KPOP_GROUPS, m.group(1).strip()):
         return m.group(1).strip()
-    m = re.search(r"(ENHYPEN|SEVENTEEN|TXT|TOMORROW X TOGETHER|ATEEZ|BLACKPINK|NewJeans|LE SSERAFIM|aespa|KATSEYE|BOYNEXTDOOR|"
-                  r"TWS|Hearts2Hearts|xikers|Sidemen|BABYMONSTER|ILLIT|tripleS|KiiiKiii|izna|MEOVV)", old)
+    m = re.search("(" + KPOP_GROUPS + ")", old)
     return m.group(1) if m else None
 
 
@@ -749,7 +756,9 @@ MANUAL = {}
 
 def clean_title(t):
     t2 = re.sub(r"\s*[–-]\s*[^–-]*\b(Memorabilia|Collectible|Collector)\b[^–-]*$", "", t, flags=re.I)
-    t2 = re.sub(r"\b(Autographed|Limited Edition)\s*", "", t2, flags=re.I)
+    if re.search(r"\bM?C?\d{3,5}Autographed", t2):
+        t2 = re.sub(r"\s*\bM?C?\d{3,5}Autographed", " Printed Signature", t2)
+    t2 = re.sub(r"(Autographed|Limited Edition)\s*", "", t2, flags=re.I)
     t2 = re.sub(r"\s*\bMemorabilia\b", "", t2, flags=re.I)
     t2 = re.sub(r"\s{2,}", " ", t2).strip(" –-")
     t2 = fix_q(t2)
