@@ -29,6 +29,7 @@ Before each reminder, Claude checks the previous file landed on the live store (
 | 18 | any time (independent) | description-cleanup-2026-10/cards/kids-cards-descriptions.csv (1,185 Kids Cards: Handle + Body (HTML) only) | to do |
 | 19 | any time (independent) | description-cleanup-2026-10/cards/gaming-cards-descriptions.csv (1,060 Gaming Cards) | to do |
 | 20 | any time (independent) | description-cleanup-2026-10/cards/movie-cards-descriptions.csv (876 Movie Cards) | to do |
+| 21 | any time (independent) | description-cleanup-2026-10/cards-2/ALL-cards-2-descriptions.csv (2,770 sport, celebrity, musician, music, Bollywood/WWE/game, animal and Valentines cards merged into one file: Handle + Body (HTML) only) | to do |
 
 Merged on 8 Oct (owner: "merge any we can to save time"): 13 queued files -> 7. Parts 4–7 hold all 6,458 mug descriptions (incl. 194 rude) and 13,250 signed prints; every product's rows are in one file; rows checked 46,810 = 46,810. Old per-job files are kept for reference only — don't import them. Masks and mugs/prints have different columns, so they are never mixed in one file (a blank cell would wipe that field).
 
