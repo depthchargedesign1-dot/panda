@@ -12,8 +12,8 @@ Before each reminder, Claude checks the previous file landed on the live store (
 | 4 | as soon as #3 finishes | import-queue-2026-10-08/1-TEST-3-masks.csv (2 KB: check the 3 masks show Ready Cut/DIY x Elastic/Stick at £2.99/£3.49/£1.50/£2.00) | DONE 13:12 UTC 8 Oct (all 3 checked live: options + prices correct) |
 | 5 | straight after the test looks right | import-queue-2026-10-08/2-ALL-single-masks.csv (all 6,729 single masks, 4.6 MB; replaces old masks 01–04) | DONE (last rows updated 17:38 UTC 8 Oct) |
 | 6 | next | import-queue-2026-10-08/3-TEST-6-mugs-3-prints.csv (check 6 mugs + 3 prints) | DONE 21:36 UTC 8 Oct (checked live: 3 poster titles clean, Cerrone curly quotes fixed, mugs updated) |
-| 7 | next | import-queue-2026-10-08/4-mugs-and-prints-part1.csv (14.5 MB; now also rewrites 1,435 poster descriptions) | IMPORTING (owner started it ~21:45 UTC 8 Oct, overnight). Sent 8 Oct ~21:15 UTC (owner asked for a big file). SAFEGUARD checked: no live Status/Title changes since 16:50 UTC on its handles. File 3 still not imported; it's independent, so it can follow |
-| 8 | next | import-queue-2026-10-08/5-mugs-and-prints-part2.csv (13.9 MB; now also rewrites 5,133 poster descriptions) | to do |
+| 7 | next | import-queue-2026-10-08/4-mugs-and-prints-part1.csv (14.5 MB; now also rewrites 1,435 poster descriptions) | DONE (last rows updated 23:21 UTC 8 Oct; checked 06:55 UTC 9 Oct: Jonny May 2, Joost Luiten 2, Jordan Ibe 1 posters and a Worlds Best mug match the file) |
+| 8 | next | import-queue-2026-10-08/5-mugs-and-prints-part2.csv (13.9 MB; now also rewrites 5,133 poster descriptions) | SENT 06:58 UTC 9 Oct. SAFEGUARD checked against a full live export at 06:57 UTC: all statuses match; titles differ only where the file is meant to change them (3,699 lose "– Reproduction Print" per the owner's 6 Oct rule, 11 garbled accents fixed) |
 | 9 | next | import-queue-2026-10-08/6-mugs-and-prints-part3.csv (6.7 MB; now also rewrites 3,069 poster descriptions) | to do |
 | 10 | next | import-queue-2026-10-08/7-mugs-and-prints-part4.csv (8.5 MB; now also rewrites 3,736 poster descriptions) | to do |
 
