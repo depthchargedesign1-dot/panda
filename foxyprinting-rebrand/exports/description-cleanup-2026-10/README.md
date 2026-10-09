@@ -169,3 +169,110 @@ Order: Baby Vest, Kids Cards, Gaming Cards, Movie Cards, Holiday Stockings (+ de
 <h3>Please note</h3>
 <p class="disclaimer">This is an unofficial design inspired by Star Wars. It is not official merchandise and is not endorsed by, sponsored by, or connected with Star Wars, Lucasfilm or Disney, or any of their licensees. All names, characters and trademarks belong to their respective owners.</p>
 ```
+
+## 7. Character birthday cards (Kids, Gaming, Movie Cards): IMPORT FILES READY (9 Oct 2026)
+- `cards/kids-cards-descriptions.csv` (1,185), `cards/gaming-cards-descriptions.csv` (1,060), `cards/movie-cards-descriptions.csv` (876): all ACTIVE old-HTML listings in those three types. Columns `Handle, Body (HTML)` only (1.6–1.9 MB each). Overwrite matching handles.
+- Facts used: the personalised cards sheet only:
+  - 350gsm silk art board, printed A4 and folded to A5, machine cut and folded;
+  - printed inside and out if wanted;
+  - free white envelope, posted flat in a board-backed envelope;
+  - Royal Mail 1st Class, same day or next working day at busy times.
+- These listings have **no live preview or personalisation box of their own**, so the copy says "add the name, age and message when you order" (the same wording as their current SEO meta), plus the house line about checking spelling.
+- The theme name comes from each title, with the old boilerplate removed ("THEME INSPIRED Kids Adult Personalised Birthday Card…", "(SA060917)"), design numbers kept as "(design 3)", and capitals and roman numerals tidied.
+- **Disclaimers:**
+  - every card names someone else's character, show, film or game, so 3,117 get one (4 generic designs such as "Elephant 3D" don't);
+  - Kids/Movie Cards use the TV/film template ("its makers or rights holders");
+  - Gaming Cards use the video-game template ("the game's publisher or any console maker");
+  - Movie Cards add a sentence for the named actors.
+- **`third-party-name` tag:** being added through the API (see the status line).
+- **Owner note:** these designs use other people's character artwork. A disclaimer helps, but it doesn't give permission (see the note in CLAUDE.md). They're also 2017-era listings with odd titles ("Usa Gotg Chi Rocket", "Metroidsamusreturns"). Retiring the weakest sellers may be worth more than a rewrite.
+- Review: `cards/review.csv` (theme name used for each handle), `cards/samples.html`. Generator: `tools/cards_copy.py`.
+
+**3 samples:**
+
+`personalised-kids-teletubbies-1-kidshows-birthday-card-sa`
+
+```html
+<p>Make their day with a personalised Teletubbies birthday card, printed on thick card in our North Yorkshire workshop and posted 1st Class.</p>
+<h2>Teletubbies birthday card with name and age</h2>
+<p>It's a Teletubbies inspired design (design 1), personalised with the name and age of the birthday little fan. We can print inside and out, so add your own inside message when you order. We print exactly what you enter, so please double-check names and spelling.</p>
+<h3>Why you'll love it</h3>
+<ul>
+<li>Printed on 350gsm silk art board, much thicker than the usual 240gsm card</li>
+<li>Printed A4 and folded to A5, then machine cut and folded for a crisp finish</li>
+<li>Personalised with their name, age and your own message</li>
+<li>Printed inside and out if you want a message inside</li>
+<li>Posted flat in a board-backed envelope so it arrives uncreased</li>
+</ul>
+<h3>Size &amp; details</h3>
+<ul>
+<li>Size: printed A4, folded to A5</li>
+<li>Card: 350gsm silk art board</li>
+<li>Finish: machine cut and folded</li>
+<li>Includes: free white envelope</li>
+<li>Personalisation: name, age, front message and inside message</li>
+</ul>
+<h3>Delivery</h3>
+<p>Sent Royal Mail 1st Class, dispatched the same day, or the next working day at busy times. It's posted flat in a board-backed envelope.</p>
+<p>Buying for a little fan? Add a personalised mug or poster for a matching gift. Custom card designs on request: call 01439 771468.</p>
+<h3>Please note</h3>
+<p class="disclaimer">This is an unofficial design inspired by Teletubbies. It is not official merchandise and is not endorsed by, sponsored by, or connected with Teletubbies, its makers or rights holders, or any of their licensees. All names, characters and trademarks belong to their respective owners.</p>
+```
+
+`personalised-final-fantasy-xiii-1-game-birthday-card-sa`
+
+```html
+<p>Looking for a card for a Final Fantasy XIII fan? This personalised Final Fantasy XIII birthday card is made to order with the name, age and message you choose.</p>
+<h2>Personalised Final Fantasy XIII birthday card</h2>
+<p>You get a Final Fantasy XIII inspired card (design 1), printed with the name and age you give us. Want a message inside? Add it when you order and we'll print that as well. We print exactly what you enter, so please double-check names and spelling.</p>
+<h3>Why you'll love it</h3>
+<ul>
+<li>Printed A4 and folded to A5, then machine cut and folded for a crisp finish</li>
+<li>Personalised with their name, age and your own message</li>
+<li>Printed inside and out if you want a message inside</li>
+<li>Comes with a free white envelope</li>
+<li>Posted flat in a board-backed envelope so it arrives uncreased</li>
+</ul>
+<h3>Size &amp; details</h3>
+<ul>
+<li>Size: printed A4, folded to A5</li>
+<li>Card: 350gsm silk art board</li>
+<li>Finish: machine cut and folded</li>
+<li>Includes: free white envelope</li>
+<li>Personalisation: name, age, front message and inside message</li>
+</ul>
+<h3>Delivery</h3>
+<p>Sent Royal Mail 1st Class, dispatched the same day, or the next working day at busy times. It's posted flat in a board-backed envelope.</p>
+<p>Buying for a gamer? Add a personalised mug or poster for a matching gift. Custom card designs on request: call 01439 771468.</p>
+<h3>Please note</h3>
+<p class="disclaimer">This is an unofficial, fan-made card produced by Foxy Printing, inspired by Final Fantasy XIII. It is not made, endorsed or licensed by the game's publisher or any console maker. All trademarks, characters and game titles belong to their respective owners and are used only to identify the theme.</p>
+```
+
+`jennifer-lawrence-in-the-hunger-games-catching-fire-movie-birthday-card-sa`
+
+```html
+<p>Looking for a card for a Jennifer Lawrence In The Hunger Games Catching Fire fan? This personalised Jennifer Lawrence In The Hunger Games Catching Fire birthday card is made to order with the name, age and message you choose.</p>
+<h2>Personalised Jennifer Lawrence In The Hunger Games Catching Fire inspired birthday card</h2>
+<p>You get a Jennifer Lawrence In The Hunger Games Catching Fire inspired card, printed with the name and age you give us. Want a message inside? Add it when you order and we'll print that as well. We print exactly what you enter, so please double-check names and spelling.</p>
+<h3>Why you'll love it</h3>
+<ul>
+<li>Printed on 350gsm silk art board, much thicker than the usual 240gsm card</li>
+<li>Printed A4 and folded to A5, then machine cut and folded for a crisp finish</li>
+<li>Personalised with their name, age and your own message</li>
+<li>Comes with a free white envelope</li>
+<li>Posted flat in a board-backed envelope so it arrives uncreased</li>
+</ul>
+<h3>Size &amp; details</h3>
+<ul>
+<li>Size: printed A4, folded to A5</li>
+<li>Card: 350gsm silk art board</li>
+<li>Finish: machine cut and folded</li>
+<li>Includes: free white envelope</li>
+<li>Personalisation: name, age, front message and inside message</li>
+</ul>
+<h3>Delivery</h3>
+<p>Sent Royal Mail 1st Class, dispatched the same day, or the next working day at busy times. It's posted flat in a board-backed envelope.</p>
+<p>Pair the personalised Jennifer Lawrence In The Hunger Games Catching Fire birthday card with a personalised mug for a birthday gift that's sorted in one go. Custom cards on request: call 01439 771468.</p>
+<h3>Please note</h3>
+<p class="disclaimer">This is an unofficial design inspired by Jennifer Lawrence In The Hunger Games Catching Fire. It is not official merchandise and is not endorsed by, sponsored by, or connected with Jennifer Lawrence In The Hunger Games Catching Fire, its makers or rights holders, or any of their licensees. All names, characters and trademarks belong to their respective owners. Any actors or public figures named or pictured have not endorsed, sponsored or approved this product, and Foxy Printing has no connection with them. Their names are used only to describe the design.</p>
+```
