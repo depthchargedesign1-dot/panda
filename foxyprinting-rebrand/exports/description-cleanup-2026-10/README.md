@@ -315,7 +315,7 @@ Order: Baby Vest, Kids Cards, Gaming Cards, Movie Cards, Holiday Stockings (+ de
   - "Ibu-Wallpaper" (no usable theme).
   - These go with the Funny/Adult card pass.
 - **Not covered yet:** Funny Cards (298) and Adult Cards (251). Their slogans include heavy profanity and homophobic slurs ("Faggot", "Poof", "Bender"; same owner question as the slur mugs), so they need a hand-checked pass. The slurs should probably be archived rather than rewritten.
-- **`third-party-name` tag:** being added through the API to the 2,298 named designs (`cards-2/tag-ids.txt`).
+- **`third-party-name` tag: DONE via API** on the 2,298 named designs, with no userErrors. In the recount, every product left untagged is a generic design with no disclaimer.
 - **Samples:**
 
 **Personalised Valtteri Bottas F1 THEME INSPIRED PERSONALISED Kids Adult Birthday Card 3** (`personalised-valtteri-bottas-birthday-card-3`, kind: f1)
