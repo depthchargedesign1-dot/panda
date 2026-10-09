@@ -17,6 +17,7 @@
 
   var VERSION = 'WA1';
   var GRID = 260; // occupancy grid cells across the page width
+  var DETAIL_GRID = 400; // finer grid for picture-style artwork (dogs, figures)
   var PAPER = { A4: [210, 297], A3: [297, 420], A2: [420, 594], A1: [594, 841] };
   var BLEED_MM = 3;
   var MAX_PRINT_PIXELS = 16.7e6; // iOS Safari's canvas limit; also keeps the upload a sensible size
@@ -93,7 +94,8 @@
     var src = [0, 0, iw, ih];
     if (opts.rawImage) { src = contentBox(img, iw, ih); iw = src[2]; ih = src[3]; }
     var landscape = iw > ih * 1.05;
-    var gw = GRID, gh = Math.round(GRID * (landscape ? 1 / Math.SQRT2 : Math.SQRT2));
+    var grid = opts.grid || GRID;
+    var gw = grid, gh = Math.round(grid * (landscape ? 1 / Math.SQRT2 : Math.SQRT2));
     // Artwork area: the mask image already includes its paper margins when it came from make_masks.py.
     var margin = opts.fromPhoto ? 0.04 : 0.09;
     var aw = gw * (1 - 2 * margin), ah = gh - gw * 2 * margin;
@@ -141,8 +143,11 @@
     var lsum = 0, lsq = 0;
     for (i = 0; i < n; i++) if (inside[i]) { var L = (0.2126 * px[i * 4] + 0.7152 * px[i * 4 + 1] + 0.0722 * px[i * 4 + 2]) / 255; lsum += L; lsq += L * L; }
     var lstd = Math.sqrt(Math.max(0, lsq / cnt - (lsum / cnt) * (lsum / cnt)));
+    var detailed = !opts.rawImage && lstd > 0.13;
+    // Picture designs get a finer grid so many more, smaller words can draw the face/figure.
+    if (detailed && !opts.grid) return buildShape(img, Object.assign({}, opts, { grid: DETAIL_GRID }));
     return {
-      detailed: !opts.rawImage && lstd > 0.13, lstd: lstd,
+      detailed: detailed, lstd: lstd,
       gw: gw, gh: gh, landscape: landscape, inside: inside, col: col, count: cnt,
       cx: sx / cnt, cy: sy / cnt, box: [minX, minY, maxX, maxY],
       ink: rgbCss(printable(mix(avg, [0, 0, 0], 0.55))),
@@ -520,6 +525,19 @@
         i.disabled = true; i.removeAttribute('data-required'); i.required = false;
       });
       // The theme keeps "Add to basket" disabled until the old panel's confirm box is ticked; our own box replaces it.
+      // The Infinite Options app's own word box ("Enter words of your choice…") duplicates the designer:
+      // hide it and switch its fields off, including fields the app adds after the page has loaded.
+      var io = form.querySelector('#infiniteoptions-container');
+      var quietIO = function () {
+        if (!io || state.failed) return;
+        io.querySelectorAll('input, textarea, select').forEach(function (i) {
+          i.disabled = true; i.required = false; i.removeAttribute('required'); i.removeAttribute('data-required');
+        });
+      };
+      if (io) {
+        quietIO();
+        if (window.MutationObserver) { state.ioObserver = new MutationObserver(quietIO); state.ioObserver.observe(io, { childList: true, subtree: true }); }
+      }
       var oldConfirm = form.querySelector('[data-personaliser] [data-confirm]');
       if (oldConfirm) { oldConfirm.disabled = false; oldConfirm.checked = true; oldConfirm.dispatchEvent(new Event('change', { bubbles: true })); }
     }
@@ -660,6 +678,9 @@
         form.querySelectorAll('[data-personaliser] [data-field]').forEach(function (i, n) { if (n === 0) i.setAttribute('data-required', ''); });
       }
       Object.keys(hidden).forEach(function (k) { if (hidden[k]) hidden[k].disabled = true; });
+      if (state.ioObserver) state.ioObserver.disconnect();
+      var ioBox = form && form.querySelector('#infiniteoptions-container');
+      if (ioBox) ioBox.querySelectorAll('input, textarea, select').forEach(function (i) { i.disabled = false; });
       preview.remove();
       if (myThumb) myThumb.parentNode.remove();
       if (photo) photo.hidden = false;

@@ -1,5 +1,6 @@
 /* Word Art Designer – product page panel + stage preview */
-form.wa-ready [data-personaliser] { display: none !important; }
+form.wa-ready [data-personaliser],
+form.wa-ready #infiniteoptions-container { display: none !important; }
 .wa { margin: 18px 0 6px; padding: 18px; border: 2px solid #EEE9F7; border-radius: 18px; background: #FBF9FF; }
 .wa__head h2 { margin: 0 0 4px; font-size: 1.25rem; }
 .wa__head p { margin: 0 0 14px; font-size: .95rem; opacity: .85; }

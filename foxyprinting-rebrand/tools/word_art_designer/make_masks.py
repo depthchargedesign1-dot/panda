@@ -120,7 +120,14 @@ def shape_from_paper(crop, letter=False):
     k = max(3, int(min(h, w) * 0.025)) | 1
     ink_u8 = ink.astype(np.uint8)
     solid = cv2.morphologyEx(ink_u8, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k)))
-    solid = ndi.binary_fill_holes(solid).astype(np.uint8)
+    # Fill only small gaps between words. Big white areas inside the artwork stay open: they are part of
+    # the design (a beagle's white blaze and muzzle, the hole in a 6, 8 or 0).
+    holes = ndi.binary_fill_holes(solid) & ~solid.astype(bool)
+    hl, hn = ndi.label(holes)
+    if hn:
+        hs = ndi.sum(holes, hl, range(1, hn + 1))
+        small = np.isin(hl, 1 + np.where(hs < 0.006 * h * w)[0])
+        solid = (solid.astype(bool) | small).astype(np.uint8)
     # drop specks (< 0.4% of the paper)
     lab, n = ndi.label(solid)
     if n:
