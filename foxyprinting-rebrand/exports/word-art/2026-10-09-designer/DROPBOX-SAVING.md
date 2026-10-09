@@ -8,11 +8,11 @@ The goal: `/WORD ART ORDERS/<order number> - <product title> - <size>.png` appea
 
 | | How it works | Good | Not so good |
 |---|---|---|---|
-| **A. Shopify Flow (recommended)** | Flow's "Order created" trigger loops over the line items. Any line with a `_Print file` sends one HTTP request to Dropbox's `files/save_url`, and Dropbox downloads the file from Shopify straight into the folder. | Free, built into Shopify, runs within seconds of every order, works when no one is at a computer, and needs no Claude session. | A one-off setup: a small Dropbox app plus its key, pasted into Flow by you. |
-| B. Zapier / Make | "Shopify: New order" → "Dropbox: Upload file" from the URL. | No code, easy to read. | Monthly fee once you're past the free tasks; one more account to look after. |
+| **A. Shopify Flow (free)** | Flow's "Order created" trigger loops over the line items. Any line with a `_Print file` sends one HTTP request to Dropbox's `files/save_url`, and Dropbox downloads the file from Shopify straight into the folder. | Free, built into Shopify, runs within seconds of every order, works when no one is at a computer, and needs no Claude session. | A one-off setup: a small Dropbox app plus its key, pasted into Flow by you. |
+| **B. Zapier / Make (easiest; also the main session's advice)** | "Shopify: New paid order" → for each line item whose `_Print file` starts with `https://` → "Dropbox: Upload file" from that URL. | No code, and Zapier handles the Dropbox login itself, so there are no keys to look after. | Monthly fee once you're past the free tasks; one more account to look after. |
 | C. Scheduled Claude routine | A routine checks new orders every hour and saves the files. | Nothing to set up in Dropbox. | The Dropbox connector can't save binary files or save from a link, so it would still need a Dropbox key in the environment. It's slower, costs usage, and depends on Claude being available. |
 
-**Recommendation: A (Shopify Flow).** It's the most reliable and costs nothing.
+**Recommendation:** for the easiest setup, **B (Zapier/Make)**: connect Shopify and Dropbox, map the line item's `_Print file` to the file, and name it `/WORD ART ORDERS/<order number> - <product title> - <variant title>.png`. Choose **A (Flow)** if you'd rather not pay for Zapier; the steps are below. Only upload when `_Print file` starts with `https://`. In the rare case the browser couldn't make the file, that property says "Not attached" instead.
 
 ## Setting up option A (about 15 minutes, done by you; never paste keys into chat)
 
