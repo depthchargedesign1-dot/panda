@@ -567,3 +567,19 @@ Built as normal products (not Shopify fixed bundles: the 8 hat colours are separ
 - **Team Kit Bundle** (hat + B10 cap + club hoodie): not made, because there's no club/team hoodie-with-logo listing yet. **ASK** the owner for the hoodie blank, sizes and price (see the T-shirts/hoodies sheet).
 - **ASK:** does the pack ship as one parcel, and is delivery free on the Matchday Pack (terrace flags alone have free UK delivery)?
 
+
+## PerfectDraft Maxi Skins (82 live listings, added 9 Oct 2026 for the description rewrite)
+- **From the live listings (to confirm):** fits the **standard PerfectDraft machine, not the PerfectDraft Pro**; "premium gloss finish"; "waterproof and durable"; printed in the UK. Product type is blank on all 82.
+- **ASK:**
+  - Is it a **magnet** or a **vinyl sticker**? The titles say "Vinyl Sticker", the handles say "magnetic skin / maxi magnet".
+  - Size (mm) and which panel of the machine it covers.
+  - Material and thickness; is it laminated?
+  - Does it peel off cleanly (no residue) and can it be repositioned?
+  - Care: wipe clean only?
+  - Dispatch time and packaging (posted flat with a board?).
+  - Any designs showing a club crest, band or film logo: these stay on the website only (owner's 6 Oct channel rule).
+- **Copy rules:** "PerfectDraft" only to describe fit ("fits the standard PerfectDraft machine"). Brands/logos disclaimer naming PerfectDraft plus the design's own name (film, band, club). Tag `third-party-name`.
+
+## Personalised novelty sock (`871770423332`, added 9 Oct 2026)
+- **From the listing:** sizes Medium / Large / Extra Large, same price; personalised with a name.
+- **ASK:** material, actual size of each option, print method, how the customer gives the name (there's no personalisation box on the product), care.

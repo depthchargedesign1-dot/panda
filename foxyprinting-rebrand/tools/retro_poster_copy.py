@@ -13,13 +13,15 @@ import os
 import re
 import sys
 
-SRC, OUT = sys.argv[1], sys.argv[2]
-os.makedirs(OUT, exist_ok=True)
-
-P, V = {}, collections.defaultdict(list)
-for line in open(SRC):
-    o = json.loads(line)
-    (V[o["__parentId"]].append(o) if "__parentId" in o else P.__setitem__(o["id"], o))
+def _load(src, out):
+    global SRC, OUT, P, V
+    SRC, OUT = src, out
+    os.makedirs(OUT, exist_ok=True)
+    
+    P, V = {}, collections.defaultdict(list)
+    for line in open(SRC):
+        o = json.loads(line)
+        (V[o["__parentId"]].append(o) if "__parentId" in o else P.__setitem__(o["id"], o))
 
 # ---------- consoles ----------
 # key: (regex on title, regex on productType, short, long, maker for disclaimer, maker short for prose)
@@ -350,126 +352,128 @@ def mv_size_items(vs):
     return items, prints, cols if frames else {}
 
 
-rows, mvrows, odd, fallbacks = [], [], [], []
-single_299 = 0
-for pid, p in P.items():
-    vs = V[pid]
-    v0 = vs[0] if vs else None
-    is_single = len(vs) == 1 and v0["title"] == "Default Title"
-    reason = None
-    mv = None
-    ptl = (p["productType"] + " " + p["title"]).lower()
-    gaming = not re.search(r"signed|autograph", ptl) and (detect_console("", p["productType"]) or re.search(r"retro gam|game (?:style )?inspired", p["title"], re.I))
-    if is_single and v0["price"] == "2.99":
-        single_299 += 1
-    if not gaming:
-        reason = "not a retro gaming poster (" + p["productType"] + ")"
-    elif not is_single:
-        mv = mv_size_items(vs) if len(vs) > 1 else None
-        if mv is None:
-            reason = f"{len(vs)} variant(s), not a single Default Title (prices {', '.join(sorted(set(v['price'] for v in vs)))})"
-    elif v0["price"] != "2.99":
-        reason = f"single variant at {v0['price']}"
-    elif re.search(r"request", p["title"], re.I):
-        reason = "request-a-poster product, needs its own copy"
-    if reason:
-        odd.append(dict(handle=p["handle"], title=p["title"], productType=p["productType"], status=p["status"],
-                        variants=len(vs), prices=" ".join(sorted(set(v["price"] for v in vs))), reason=reason))
-        continue
-    con = detect_console(p["title"], p["productType"])
-    cs, cl, maker = (con[1], con[2], con[3]) if con else ("retro console", "retro console", None)
-    if not con:
-        fallbacks.append((p["handle"], p["title"], "console"))
-    g = parse_game(p["title"], odyssey=bool(con and con[0] == "odyssey"),
-                   lead=bool(con and con[0] in ("intellivision", "saturn", "32x", "odyssey", "snes")))
-    key = p["handle"]
-    if mv:
-        size_items = mv[0]
-    else:
-        size_items = [f"Sizes: {join_or(sizes_for(p['title']))} (A4 is 210 x 297 mm)", "Print only, no frame"]
-    if g is None:
-        fallbacks.append((p["handle"], p["title"], "game name"))
-    gname = g if g else (cs if con else "Classic Game")
-    b = body(gname, gname, cs, cl, maker, size_items, key, framed=bool(mv and mv[2]))
-    st = seo_title(gname)
-    md = meta_desc(gname, key, mv=bool(mv and mv[2]))
-    if md is None:
-        fallbacks.append((p["handle"], p["title"], "meta length"))
-        md = (f"Fan-made {gname} retro gaming poster, printed to order and posted flat."[:150]).rsplit(" ", 1)[0] + "."
-    tags = list(p["tags"])
-    if "third-party-name" not in tags:
-        tags.append("third-party-name")
-    row = {
-        "Handle": p["handle"], "Title": p["title"], "Body (HTML)": b, "Tags": ", ".join(tags),
-        "SEO Title": st, "SEO Description": md,
-        "_game": g or "", "_console": cs, "_ptype": p["productType"], "_status": p["status"],
-        "_has_options_tag": "Poster Options" in p["tags"], "_maker": maker or "",
-    }
-    if mv:
-        row.update({"_variants": len(vs), "_prices": " | ".join(f"{v['title']}={v['price']}" for v in vs), "_mv": True})
-        mvrows.append(row)
-    else:
-        row.update({"Option1 Name": "Title", "Option1 Value": "Default Title", "Variant SKU": v0["sku"], "Variant Price": "4.99",
-                    "_old_price": v0["price"], "_mv": False})
-        rows.append(row)
+if __name__ == "__main__":
+    _load(sys.argv[1], sys.argv[2])
+    rows, mvrows, odd, fallbacks = [], [], [], []
+    single_299 = 0
+    for pid, p in P.items():
+        vs = V[pid]
+        v0 = vs[0] if vs else None
+        is_single = len(vs) == 1 and v0["title"] == "Default Title"
+        reason = None
+        mv = None
+        ptl = (p["productType"] + " " + p["title"]).lower()
+        gaming = not re.search(r"signed|autograph", ptl) and (detect_console("", p["productType"]) or re.search(r"retro gam|game (?:style )?inspired", p["title"], re.I))
+        if is_single and v0["price"] == "2.99":
+            single_299 += 1
+        if not gaming:
+            reason = "not a retro gaming poster (" + p["productType"] + ")"
+        elif not is_single:
+            mv = mv_size_items(vs) if len(vs) > 1 else None
+            if mv is None:
+                reason = f"{len(vs)} variant(s), not a single Default Title (prices {', '.join(sorted(set(v['price'] for v in vs)))})"
+        elif v0["price"] != "2.99":
+            reason = f"single variant at {v0['price']}"
+        elif re.search(r"request", p["title"], re.I):
+            reason = "request-a-poster product, needs its own copy"
+        if reason:
+            odd.append(dict(handle=p["handle"], title=p["title"], productType=p["productType"], status=p["status"],
+                            variants=len(vs), prices=" ".join(sorted(set(v["price"] for v in vs))), reason=reason))
+            continue
+        con = detect_console(p["title"], p["productType"])
+        cs, cl, maker = (con[1], con[2], con[3]) if con else ("retro console", "retro console", None)
+        if not con:
+            fallbacks.append((p["handle"], p["title"], "console"))
+        g = parse_game(p["title"], odyssey=bool(con and con[0] == "odyssey"),
+                       lead=bool(con and con[0] in ("intellivision", "saturn", "32x", "odyssey", "snes")))
+        key = p["handle"]
+        if mv:
+            size_items = mv[0]
+        else:
+            size_items = [f"Sizes: {join_or(sizes_for(p['title']))} (A4 is 210 x 297 mm)", "Print only, no frame"]
+        if g is None:
+            fallbacks.append((p["handle"], p["title"], "game name"))
+        gname = g if g else (cs if con else "Classic Game")
+        b = body(gname, gname, cs, cl, maker, size_items, key, framed=bool(mv and mv[2]))
+        st = seo_title(gname)
+        md = meta_desc(gname, key, mv=bool(mv and mv[2]))
+        if md is None:
+            fallbacks.append((p["handle"], p["title"], "meta length"))
+            md = (f"Fan-made {gname} retro gaming poster, printed to order and posted flat."[:150]).rsplit(" ", 1)[0] + "."
+        tags = list(p["tags"])
+        if "third-party-name" not in tags:
+            tags.append("third-party-name")
+        row = {
+            "Handle": p["handle"], "Title": p["title"], "Body (HTML)": b, "Tags": ", ".join(tags),
+            "SEO Title": st, "SEO Description": md,
+            "_game": g or "", "_console": cs, "_ptype": p["productType"], "_status": p["status"],
+            "_has_options_tag": "Poster Options" in p["tags"], "_maker": maker or "",
+        }
+        if mv:
+            row.update({"_variants": len(vs), "_prices": " | ".join(f"{v['title']}={v['price']}" for v in vs), "_mv": True})
+            mvrows.append(row)
+        else:
+            row.update({"Option1 Name": "Title", "Option1 Value": "Default Title", "Variant SKU": v0["sku"], "Variant Price": "4.99",
+                        "_old_price": v0["price"], "_mv": False})
+            rows.append(row)
 
-COLS = ["Handle", "Title", "Body (HTML)", "Tags", "SEO Title", "SEO Description", "Option1 Name", "Option1 Value", "Variant SKU", "Variant Price"]
-rows.sort(key=lambda r: r["Handle"])
-
-
-def write(path, rs):
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=COLS, extrasaction="ignore")
-        w.writeheader()
-        w.writerows(rs)
+    COLS = ["Handle", "Title", "Body (HTML)", "Tags", "SEO Title", "SEO Description", "Option1 Name", "Option1 Value", "Variant SKU", "Variant Price"]
+    rows.sort(key=lambda r: r["Handle"])
 
 
-# test file: 3 different consoles
-seen, test = set(), []
-for want in ("Mega Drive", "SNES", "PlayStation"):
-    for r in rows:
-        if r["_console"] == want and r["_game"] and r["Handle"] not in seen:
-            test.append(r); seen.add(r["Handle"]); break
-write(os.path.join(OUT, "00-TEST-3-products.csv"), test)
-CHUNK = 5000
-for i in range(0, len(rows), CHUNK):
-    part = rows[i:i + CHUNK]
-    write(os.path.join(OUT, f"{i // CHUNK + 1:02d}-retro-posters-{i + 1}-{i + len(part)}.csv"), part)
-
-MV_COLS = ["Handle", "Body (HTML)", "Tags", "SEO Title", "SEO Description"]
-mvrows.sort(key=lambda r: r["Handle"])
+    def write(path, rs):
+        with open(path, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=COLS, extrasaction="ignore")
+            w.writeheader()
+            w.writerows(rs)
 
 
-def write_mv(path, rs):
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=MV_COLS, extrasaction="ignore")
-        w.writeheader()
-        w.writerows(rs)
+    # test file: 3 different consoles
+    seen, test = set(), []
+    for want in ("Mega Drive", "SNES", "PlayStation"):
+        for r in rows:
+            if r["_console"] == want and r["_game"] and r["Handle"] not in seen:
+                test.append(r); seen.add(r["Handle"]); break
+    write(os.path.join(OUT, "00-TEST-3-products.csv"), test)
+    CHUNK = 5000
+    for i in range(0, len(rows), CHUNK):
+        part = rows[i:i + CHUNK]
+        write(os.path.join(OUT, f"{i // CHUNK + 1:02d}-retro-posters-{i + 1}-{i + len(part)}.csv"), part)
+
+    MV_COLS = ["Handle", "Body (HTML)", "Tags", "SEO Title", "SEO Description"]
+    mvrows.sort(key=lambda r: r["Handle"])
 
 
-test = [r for r in mvrows if r["Handle"] in ("crash-bandicoot-ps1-retro-gaming-poster-a4-a3-a2-or-a1", "sega-saturn-legend-of-oasis")]
-test += [r for r in mvrows if r["_console"] == "NES" and r["_game"].startswith("Double Dragon")][:1]
-write_mv(os.path.join(OUT, "00-TEST-3-multivariant.csv"), test)
-MV_CHUNK = 1500
-for i in range(0, len(mvrows), MV_CHUNK):
-    part = mvrows[i:i + MV_CHUNK]
-    write_mv(os.path.join(OUT, f"02-retro-posters-multivariant-{i // MV_CHUNK + 1}-{i + 1}-{i + len(part)}.csv"), part)
-with open(os.path.join(OUT, "parsed_names_multivariant.csv"), "w", newline="", encoding="utf-8") as f:
-    w = csv.writer(f); w.writerow(["handle", "current title", "parsed game", "console", "status", "has Poster Options tag", "SEO title", "variants (title=price)"])
-    for r in mvrows:
-        w.writerow([r["Handle"], r["Title"], r["_game"], r["_console"], r["_status"], r["_has_options_tag"], r["SEO Title"], r["_prices"]])
-json.dump(mvrows, open(os.path.join(OUT, "_mvrows.json"), "w"))
-print("multivariant rows", len(mvrows))
-with open(os.path.join(OUT, "odd_ones.csv"), "w", newline="", encoding="utf-8") as f:
-    w = csv.DictWriter(f, fieldnames=["handle", "title", "productType", "status", "variants", "prices", "reason"])
-    w.writeheader(); w.writerows(sorted(odd, key=lambda r: (r["reason"], r["handle"])))
-with open(os.path.join(OUT, "parse_fallbacks.csv"), "w", newline="", encoding="utf-8") as f:
-    w = csv.writer(f); w.writerow(["handle", "title", "what failed"]); w.writerows(fallbacks)
-with open(os.path.join(OUT, "parsed_names.csv"), "w", newline="", encoding="utf-8") as f:
-    w = csv.writer(f); w.writerow(["handle", "current title", "parsed game", "console", "status", "has Poster Options tag", "SEO title"])
-    for r in rows:
-        w.writerow([r["Handle"], r["Title"], r["_game"], r["_console"], r["_status"], r["_has_options_tag"], r["SEO Title"]])
-json.dump(rows, open(os.path.join(OUT, "_rows.json"), "w"))
-print("products", len(P), "single-variant at 2.99", single_299, "rows", len(rows), "odd", len(odd), "fallbacks", len(fallbacks))
-print(collections.Counter(r["reason"].split(" (")[0] for r in odd))
-print(collections.Counter(r["_console"] for r in rows))
+    def write_mv(path, rs):
+        with open(path, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=MV_COLS, extrasaction="ignore")
+            w.writeheader()
+            w.writerows(rs)
+
+
+    test = [r for r in mvrows if r["Handle"] in ("crash-bandicoot-ps1-retro-gaming-poster-a4-a3-a2-or-a1", "sega-saturn-legend-of-oasis")]
+    test += [r for r in mvrows if r["_console"] == "NES" and r["_game"].startswith("Double Dragon")][:1]
+    write_mv(os.path.join(OUT, "00-TEST-3-multivariant.csv"), test)
+    MV_CHUNK = 1500
+    for i in range(0, len(mvrows), MV_CHUNK):
+        part = mvrows[i:i + MV_CHUNK]
+        write_mv(os.path.join(OUT, f"02-retro-posters-multivariant-{i // MV_CHUNK + 1}-{i + 1}-{i + len(part)}.csv"), part)
+    with open(os.path.join(OUT, "parsed_names_multivariant.csv"), "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["handle", "current title", "parsed game", "console", "status", "has Poster Options tag", "SEO title", "variants (title=price)"])
+        for r in mvrows:
+            w.writerow([r["Handle"], r["Title"], r["_game"], r["_console"], r["_status"], r["_has_options_tag"], r["SEO Title"], r["_prices"]])
+    json.dump(mvrows, open(os.path.join(OUT, "_mvrows.json"), "w"))
+    print("multivariant rows", len(mvrows))
+    with open(os.path.join(OUT, "odd_ones.csv"), "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["handle", "title", "productType", "status", "variants", "prices", "reason"])
+        w.writeheader(); w.writerows(sorted(odd, key=lambda r: (r["reason"], r["handle"])))
+    with open(os.path.join(OUT, "parse_fallbacks.csv"), "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["handle", "title", "what failed"]); w.writerows(fallbacks)
+    with open(os.path.join(OUT, "parsed_names.csv"), "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["handle", "current title", "parsed game", "console", "status", "has Poster Options tag", "SEO title"])
+        for r in rows:
+            w.writerow([r["Handle"], r["Title"], r["_game"], r["_console"], r["_status"], r["_has_options_tag"], r["SEO Title"]])
+    json.dump(rows, open(os.path.join(OUT, "_rows.json"), "w"))
+    print("products", len(P), "single-variant at 2.99", single_299, "rows", len(rows), "odd", len(odd), "fallbacks", len(fallbacks))
+    print(collections.Counter(r["reason"].split(" (")[0] for r in odd))
+    print(collections.Counter(r["_console"] for r in rows))
