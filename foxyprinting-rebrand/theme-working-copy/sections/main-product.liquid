@@ -172,6 +172,9 @@
         {%- comment -%} Infinite Options (ShopPad) renders its fields here when the app is enabled for this product. {%- endcomment -%}
         <div id="infiniteoptions-container"></div>
 
+        {%- comment -%} Word Art Designer: only on products tagged "Word Art" / "wa-upload" (it hides the panel below while it runs). {%- endcomment -%}
+        {% render 'word-art-designer', product: product %}
+
         {%- if has_fields -%}
           <div class="personaliser {{ accent_class }}" data-personaliser>
             <div class="personaliser__head">
