@@ -505,9 +505,9 @@ window.LEAVERS_PHOTOS = {
     "name": "Burgundy / Heather Grey",
     "hex": "#6B1A2C",
     "trim": "#A8AAAF",
-    "front": "ld-varsity-jacket-burgundy--heather-grey-front.jpg",
+    "front": "ld-varsity-jacket-burgundy--heather-grey-front-v2.jpg",
     "back": "ld-varsity-jacket-burgundy--heather-grey-back-v3.jpg",
-    "real": false
+    "real": true
    },
    {
     "id": "fire-red--white",

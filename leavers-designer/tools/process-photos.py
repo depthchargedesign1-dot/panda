@@ -250,6 +250,7 @@ VARSITY_REAL = {
     'jet-black--heather-grey': 'jh043_black_grey.jpg',
     'jet-black--fire-red': 'jh043_black_red.jpg',
     'jet-black--sun-yellow': 'jh043_black_yellow.jpg',
+    'burgundy--heather-grey': 'jh043_burgundy_grey.jpg',
 }
 VARSITY_WAYS = [
     ('jet-black', 'white'), ('jet-black', 'fire-red'), ('jet-black', 'sun-yellow'), ('jet-black', 'hot-pink'),
