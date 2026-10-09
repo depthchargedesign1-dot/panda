@@ -52,7 +52,7 @@
 - **Blank brand:** previously Mothercare / Sainsbury's TU. **ASK** which blanks are used now (needed for sizes and fit).
 - **Print:** currently laser transfer with no leftover white edges; DTF on the new kit. **ASK** which method the listing should state.
 - **Care:** wash and iron inside out.
-- **Sizes:** **ASK** (e.g. 0–3m, 3–6m, 6–12m, 12–18m).
+- **Sizes (owner, 9 Oct 2026):** 4 sizes: 0–3 months, 3–6 months, 6–9 months, 9–12 months.
 - **Google category:** Apparel & Accessories > Clothing > Baby & Toddler Clothing > Baby One-Pieces
 - **age_group:** `newborn` or `infant`
 

@@ -1,0 +1,34 @@
+{
+ "category_id": "116724",
+ "location": "Kirkbymoorside, North Yorkshire",
+ "postcode": "YO62 6AR",
+ "quantity": 3,
+ "price_multiplier": 1.0,
+ "shipping_profile": "FOXY Royal Mail 24",
+ "return_profile": "FOXY 30 Day Returns",
+ "payment_profile": "FOXY Payment",
+ "title_rule": "mask",
+ "postage_text": "Printed to order in our North Yorkshire workshop and posted with Royal Mail. The postage choices and prices are shown above, next to the price.",
+ "returns_text": "30-day returns on standard items (buyer pays return postage). Items made from your own photo or name are made to order, so they can only be returned if they arrive faulty or damaged &ndash; message us straight away and we'll put it right.",
+ "option_rename": {
+  "Quantity": "Number of Masks"
+ },
+ "item_specifics": {
+  "Brand": "Foxy Printing",
+  "Type": "Face Mask",
+  "Theme": "Celebrity",
+  "Material": "Card",
+  "Size": "One Size",
+  "Department": "Adults",
+  "Occasion": "Fancy Dress",
+  "Features": "Eye Holes",
+  "Country/Region of Manufacture": "United Kingdom"
+ },
+ "badges": [
+  "Thick 350gsm silk card",
+  "A4 adult size",
+  "Ready Cut or DIY",
+  "Printed in the UK"
+ ],
+ "personalised_regex": "^$"
+}

@@ -86,7 +86,22 @@ Notes on the counts:
 2. **B-B:** 875 with club or brand names, e.g. "Me and My Uncle Love Arsenal" and "My Daddy Drives A BMW". Check them first.
 3. **Blocked until the owner answers the size question below.** eBay requires a Size item specific for baby clothing, and the fact sheet still says ASK.
 
-## What I need from the owner before the first CSV
+## Owner's answers (9 Oct 2026)
+
+- **Celebrity test: yes**, do the 50-mask test ("we have sold masks on eBay before").
+- **Postage:** charge postage, unless eBay promotes free postage. In that case give free postage and put the price up. I found no evidence that eBay UK ranks free postage higher, so the first files charge postage through the `FOXY Royal Mail 24` policy (£2.99, £0 per additional item, matching Shopify). See `shop/SHOP-SETUP.md`.
+- **Quantity:** 3 per listing or variation.
+- **Baby grows:** 4 sizes: 0–3, 3–6, 6–9 and 9–12 months (now in `plan/product-facts.md`).
+- **Personalisation:** use eBay's **Personalise** item specific plus instructions. It needs "message to seller" turned on (`shop/SHOP-SETUP.md` step 2).
+- **Selling limits:** "great", no limit worries.
+- **eBay shop and template:** built in `shop/` and `templates/listing.html`.
+
+Not uploaded yet: the 24 tier-B masks.
+- Several are adult performers (Johnny Sins, Bonnie Blue, Lilly Phillips) or "evil" parody masks of real people (Phillip Schofield, Diddy, Peter Mandelson, Tommy Robinson).
+- These carry extra eBay risk: the adult-content and offensive-material policies, plus defamation complaints.
+- They stay off eBay unless the owner asks for them.
+
+## Original questions (answered above, kept for reference)
 
 1. **Go / no-go on celebrity items (tier C):** yes to a 50-mask test, or keep celebrity items off eBay?
 2. **eBay category IDs** for masks, posters, mugs and baby grows. Seller Hub > Create listing > search the item; the ID shows there. I won't guess them, because a wrong ID rejects the row.
@@ -100,14 +115,14 @@ Notes on the counts:
 
 ## Next steps (Claude)
 
-1. Build `tools/ebay_csv.py`. It turns a batch from these lists into an eBay upload CSV in the same format as the number plate mug files:
+1. ~~Build `tools/ebay_csv.py`~~ Done 9 Oct. It turns a batch from these lists into an eBay upload CSV in the same format as the number plate mug files:
    - an `Add` action and `CustomLabel` = Shopify SKU;
    - the title cut to 80 characters;
    - item specifics;
    - pictures from Shopify, up to 12;
    - variations, such as Style/Fitting for masks and Size/Frame for posters;
    - a clean HTML description with the Shopify-only lines removed (live preview, basket, phone number), keeping the disclaimer.
-2. Make the first files: `M-A-01` (7 personalised masks) and `M-B-01` (24 masks, check first). When the owner OKs it, also make the 50-mask test.
+2. ~~Make the first files~~ Done 9 Oct: `uploads/M-A-01-personalised-photo-masks.csv` and `uploads/M-TEST-50-celebrity-masks.csv` (see `uploads/README.md`).
 3. Keep `STATUS.md` updated with each upload and anything eBay rejects.
 
 To rebuild the lists after the range changes, run a new Shopify export (query in `tools/build_lists.py`), then:

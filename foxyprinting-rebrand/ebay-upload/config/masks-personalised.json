@@ -1,0 +1,75 @@
+{
+ "category_id": "116724",
+ "location": "Kirkbymoorside, North Yorkshire",
+ "postcode": "YO62 6AR",
+ "quantity": 3,
+ "price_multiplier": 1.0,
+ "shipping_profile": "FOXY Royal Mail 24",
+ "return_profile": "FOXY 30 Day Returns",
+ "payment_profile": "FOXY Payment",
+ "title_rule": "mask",
+ "postage_text": "Printed to order in our North Yorkshire workshop and posted with Royal Mail. The postage choices and prices are shown above, next to the price.",
+ "returns_text": "30-day returns on standard items (buyer pays return postage). Items made from your own photo or name are made to order, so they can only be returned if they arrive faulty or damaged &ndash; message us straight away and we'll put it right.",
+ "option_rename": {
+  "Quantity": "Number of Masks"
+ },
+ "item_specifics": {
+  "Brand": "Foxy Printing",
+  "Type": "Face Mask",
+  "Theme": "Party",
+  "Material": "Card",
+  "Size": "One Size",
+  "Department": "Adults",
+  "Occasion": "Party",
+  "Features": "Eye Holes|Personalised",
+  "Country/Region of Manufacture": "United Kingdom"
+ },
+ "badges": [
+  "Your own photo",
+  "350gsm silk card",
+  "A4 adult size",
+  "Printed in the UK"
+ ],
+ "personalised_regex": "personalised|groom's face|bride's face|your own face|your photo",
+ "personalise_instructions": "Type the name(s) for the masks here. After you buy, send the face photo(s) through eBay messages (front-facing, good light).",
+ "personalise_box": "Use the <strong>Personalise</strong> box next to <strong>Buy It Now</strong> to tell us the name(s) for your masks. After you buy, send us the face photo(s) through eBay messages &ndash; a clear, front-facing photo in good light works best. We'll make the masks from your photo and post them out.",
+ "titles": {
+  "hen-party-face-masks": "Personalised Hen Party Face Masks Bride's Face Card Party Masks Order 1 or More",
+  "leaving-do-retirement-face-masks": "Personalised Leaving Do Retirement Face Masks Your Photo Card Party Masks",
+  "office-christmas-party-face-masks": "Personalised Office Christmas Party Face Masks Your Photo Card Party Masks",
+  "personalised-birthday-face-masks": "Personalised Birthday Face Masks Your Photo Card Party Mask Order Just 1",
+  "personalised-photo-face-masks": "Personalised Photo Face Mask Your Own Face Card Party Mask Order Just 1",
+  "stag-do-face-masks": "Personalised Stag Do Face Masks Groom's Face Card Party Masks Order 1 or More",
+  "wedding-photo-booth-face-masks": "Personalised Wedding Photo Booth Face Masks Bride & Groom Card Party Masks"
+ },
+ "replace": [
+  [
+   "can go in the spare upload boxes",
+   "can go in the same eBay message"
+  ],
+  [
+   "\\b[Uu]pload (a|your|several|the)\\b",
+   "send us \\1"
+  ],
+  [
+   "\\bupload photos\\b",
+   "send photos"
+  ],
+  [
+   "\\b[Uu]pload\\b",
+   "send"
+  ],
+  [
+   "\\buploaded\\b",
+   "sent"
+  ],
+  [
+   "in the boxes above",
+   "through eBay messages after you buy"
+  ],
+  [
+   "\\badd (her|his|their|a|the couple's) names?(?: and age)?(?: if you like)?",
+   "type \\1 name in the Personalise box"
+  ]
+ ]
+}
