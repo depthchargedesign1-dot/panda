@@ -103,6 +103,14 @@
 ## Magnets, keyrings, coasters, towels, game cases
 - Facts **ASK**. Pull them from the current live listings first, then confirm with the owner.
 
+### Retro game magnets, keyrings, posters and coasters: what the live listings say (gathered 9 Oct 2026, TO CONFIRM)
+These come from the old eBay-style copy on the live listings (about 3,900 magnets, 3,000 keyrings, 3,300 retro game posters and 630 coasters). The description rewrite for these families waits on the owner confirming them.
+- **Fridge magnets (£2.99):** "image printed on 300gsm glossy card and inserted into a high quality Perspex magnet", "each magnet measures 80mm x 55mm", "posted in a bubble jiffy bag" (stated on about 2,970 listings). **ASK:** is this still the blank used, and is it a flexible magnetic back or a fixed magnet?
+- **Keyrings (£2.99):** "image printed on 300gsm glossy card", "each keyring measures 40mm x 50mm", "posted in a bubble jiffy bag" (stated on about 3,650 listings). **ASK:** what is the keyring itself (clear acrylic/Perspex insert keyring? metal split ring or chain?).
+- **Retro game posters:** "professionally printed on 170gsm silk", "posted in a hard back envelope". Most use the standard poster sizes and frames above. **ASK:** about 1,000 retro posters have a single £2.99 option with no size named. What size is that (A4? A5?)? Is the paper still 170gsm silk, when the poster sheet above has paper as ASK?
+- **Coasters (£3.99, 634 listings):** "MDF drinks coaster, sublimation printed"; 32 listings add "square hardboard coaster 90 x 90 mm, cork-backed MDF, bright glossy finish". **ASK:** are all 634 the 90 × 90 mm cork-backed square? How should they be cleaned (wipe clean only)?
+- **Note (IP):** most of these designs reproduce real game box art and console logos, which CLAUDE.md keeps off Google/Meta/TikTok. Rewritten copy will use the video-game disclaimer, but box art carries more risk than a fan design. That is the owner's call.
+
 ### Blank replacement game cases (empty, no artwork, no game) (added 6 Oct 2026)
 Drafted 6 Oct 2026 as DRAFT products, one per format the existing case range sells most (SNES, NES, Mega Drive/Genesis, Master System, Game Boy/Game Boy Color, PS1). No supplier for case blanks is in `longforte-plan.md`.
 - **From the live case listings (6 Oct 2026, to confirm):** sold as "Case", "Cover" or "Both"; case-only price is usually **£3.99**; "Supplied in a board backed envelope for sending"; covers printed on 130gsm gloss art. The listings name the case as "UGC - Ultimate Game Case" (cartridge formats) and "Original Black DVD case" (PS1), but they are inconsistent (Game Boy listings say "Ultimate Nintendo NES Game Case"), so the exact case per format is **ASK**.
