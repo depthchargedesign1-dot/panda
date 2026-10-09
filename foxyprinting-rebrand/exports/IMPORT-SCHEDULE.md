@@ -1,4 +1,7 @@
-# Shopify CSV import schedule (owner: one file each morning and one at bedtime)
+# Shopify CSV import schedule
+
+**ALL FILES DONE (9 Oct 2026, 12:22 UTC).** Import reminder routine switched off.
+ (owner: one file each morning and one at bedtime)
 
 Files no longer need a slot each: import the next one as soon as Shopify's "import complete" email arrives. Always tick "Overwrite products with matching handles". Wait for Shopify's "import complete" email before the next file.
 Before each reminder, Claude checks the previous file landed on the live store (spot-check handles) and ticks it off here.
@@ -15,7 +18,7 @@ Before each reminder, Claude checks the previous file landed on the live store (
 | 7 | next | import-queue-2026-10-08/4-mugs-and-prints-part1.csv (14.5 MB; now also rewrites 1,435 poster descriptions) | DONE (last rows updated 23:21 UTC 8 Oct; checked 06:55 UTC 9 Oct: Jonny May 2, Joost Luiten 2, Jordan Ibe 1 posters and a Worlds Best mug match the file) |
 | 8 | next | import-queue-2026-10-08/5-mugs-and-prints-part2.csv (13.9 MB; now also rewrites 5,133 poster descriptions) | DONE (last rows updated 09:00 UTC 9 Oct; checked 09:15 UTC: Ian Wright 2, Ian Snodin 2, Pedro 2 match the file; Miguel Almirón accents fixed) |
 | 9 | next | import-queue-2026-10-08/6-mugs-and-prints-part3.csv (6.7 MB; now also rewrites 3,069 poster descriptions) | DONE (last rows updated 10:53 UTC 9 Oct; checked 10:58 UTC: Beau Brinkley, Beau Allen 2, Stuart Pearce titles match the file) |
-| 10 | next | import-queue-2026-10-08/7-mugs-and-prints-part4.csv (8.5 MB; now also rewrites 3,736 poster descriptions) | SENT ~11:00 UTC 9 Oct. SAFEGUARD: live export (06:57) + all changes since 06:50 (16,210 products): all 3,737 statuses match; titles differ only where intended (2,849 lose "– Reproduction Print"); the only product changed today (Mervyn King darts poster, 09:46) has the same title, status and description as the file |
+| 10 | next | import-queue-2026-10-08/7-mugs-and-prints-part4.csv (8.5 MB; now also rewrites 3,736 poster descriptions) | DONE (last rows updated 12:21:57 UTC 9 Oct; checked 12:25 UTC: Ben Garland 1, The Weeknd 2026, Zara Larsson, Mervyn King match the file; 0 poster titles left with "Reproduction Print") |
 
 Merged on 8 Oct (owner: "merge any we can to save time"): 13 queued files -> 7. Parts 4–7 hold all 6,458 mug descriptions (incl. 194 rude) and 13,250 signed prints; every product's rows are in one file; rows checked 46,810 = 46,810. Old per-job files are kept for reference only — don't import them. Masks and mugs/prints have different columns, so they are never mixed in one file (a blank cell would wipe that field).
 
