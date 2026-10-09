@@ -10,7 +10,7 @@
  *       <order>_school-logo.<ext>                                    (customer's original logo, if any)
  *
  * When everything for an order is saved, the order is tagged "leavers-files-saved" in Shopify so it is never done twice.
- * Runs every 15 minutes from .github/workflows/leavers-print-files.yml; can also be run by hand:
+ * Runs every morning at 7am UK time from .github/workflows/leavers-print-files.yml; can also be run by hand:
  *
  *   node leavers-designer/tools/order-sync.mjs [--order 1042] [--dry-run]
  *

@@ -56,7 +56,7 @@ An uploaded logo is stored by Shopify with the first basket line, and its CDN UR
 
 ## Automatic print files in Dropbox
 
-`tools/order-sync.mjs` runs every 15 minutes from `.github/workflows/leavers-print-files.yml`. For each new order containing leavers lines, it saves files to `Dropbox/Leavers Hoodie and Jackets ORDERS/<order number>/`:
+`tools/order-sync.mjs` runs every morning at 7am UK time from `.github/workflows/leavers-print-files.yml`. For each new order containing leavers lines, it saves files to `Dropbox/Leavers Hoodie and Jackets ORDERS/<order number>/`:
 
 - the 300 dpi transparent PNGs for every print area of every line
 - a proof JPG of the front and back on the real garment
