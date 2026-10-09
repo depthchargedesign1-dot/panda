@@ -25,6 +25,7 @@ Before each reminder, Claude checks the previous file landed on the live store (
 | 14 | next | google-fields/2026-10-09-full/03-google-fields.csv | to do |
 | 15 | next | google-fields/2026-10-09-full/04-google-fields.csv (12,381 products) | to do |
 | 16 | any time (independent of 11–15) | description-cleanup-2026-10/seo-fill/seo-fill-01.csv (3,484 active products, mostly retro gaming posters: Handle + SEO Title + SEO Description only; built by the description/SEO session) | to do |
+| 17 | any time (independent) | description-cleanup-2026-10/baby-vest/baby-vest-descriptions.csv (2,004 Baby Vests: Handle + Body (HTML) only, new house-style descriptions) | to do |
 
 Merged on 8 Oct (owner: "merge any we can to save time"): 13 queued files -> 7. Parts 4–7 hold all 6,458 mug descriptions (incl. 194 rude) and 13,250 signed prints; every product's rows are in one file; rows checked 46,810 = 46,810. Old per-job files are kept for reference only — don't import them. Masks and mugs/prints have different columns, so they are never mixed in one file (a blank cell would wipe that field).
 
