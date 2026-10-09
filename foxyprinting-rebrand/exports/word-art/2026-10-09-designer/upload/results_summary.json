@@ -1,0 +1,53 @@
+{
+ "date": "2026-10-09",
+ "files_created": 219,
+ "files_ready": 219,
+ "files_failed": 0,
+ "filecreate_batches": {
+  "1": 50,
+  "2": 50,
+  "3": 50,
+  "4": 50,
+  "5": 19
+ },
+ "alt_title_check": "all 219 alts end with the paired product's current title",
+ "metafields_set": {
+  "foxy.word_art_mask": 219,
+  "foxy.word_art_off": 13,
+  "total": 232,
+  "calls": 10
+ },
+ "errors": [],
+ "verified_sample": [
+  {
+   "productId": "gid://shopify/Product/7161493749947",
+   "fileId": "gid://shopify/MediaImage/69888354091389",
+   "ok": true
+  },
+  {
+   "productId": "gid://shopify/Product/7161521897659",
+   "fileId": "gid://shopify/MediaImage/69888354550141",
+   "ok": true
+  },
+  {
+   "productId": "gid://shopify/Product/7161551945915",
+   "fileId": "gid://shopify/MediaImage/69888363233661",
+   "ok": true
+  },
+  {
+   "productId": "gid://shopify/Product/7161471238331",
+   "fileId": "gid://shopify/MediaImage/69888353436029",
+   "ok": true
+  },
+  {
+   "productId": "gid://shopify/Product/7164581249211",
+   "fileId": "gid://shopify/MediaImage/69888374342013",
+   "ok": true
+  },
+  {
+   "productId": "gid://shopify/Product/7164594323643",
+   "word_art_off": "true",
+   "ok": true
+  }
+ ]
+}
