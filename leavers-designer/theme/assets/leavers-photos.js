@@ -425,7 +425,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1C1C1F",
     "trim": "#F4F4F2",
     "front": "ld-varsity-jacket-jet-black--white-front.jpg",
-    "back": "ld-varsity-jacket-jet-black--white-back-v2.jpg",
+    "back": "ld-varsity-jacket-jet-black--white-back-v3.jpg",
     "real": true
    },
    {
@@ -434,7 +434,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1C1C1F",
     "trim": "#C3132C",
     "front": "ld-varsity-jacket-jet-black--fire-red-front.jpg",
-    "back": "ld-varsity-jacket-jet-black--fire-red-back-v2.jpg",
+    "back": "ld-varsity-jacket-jet-black--fire-red-back-v3.jpg",
     "real": true
    },
    {
@@ -443,7 +443,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1C1C1F",
     "trim": "#F4C20D",
     "front": "ld-varsity-jacket-jet-black--sun-yellow-front.jpg",
-    "back": "ld-varsity-jacket-jet-black--sun-yellow-back-v2.jpg",
+    "back": "ld-varsity-jacket-jet-black--sun-yellow-back-v3.jpg",
     "real": true
    },
    {
@@ -452,7 +452,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1C1C1F",
     "trim": "#E2317D",
     "front": "ld-varsity-jacket-jet-black--hot-pink-front.jpg",
-    "back": "ld-varsity-jacket-jet-black--hot-pink-back-v2.jpg",
+    "back": "ld-varsity-jacket-jet-black--hot-pink-back-v3.jpg",
     "real": false
    },
    {
@@ -461,7 +461,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1C1C1F",
     "trim": "#A8AAAF",
     "front": "ld-varsity-jacket-jet-black--heather-grey-front.jpg",
-    "back": "ld-varsity-jacket-jet-black--heather-grey-back-v2.jpg",
+    "back": "ld-varsity-jacket-jet-black--heather-grey-back-v3.jpg",
     "real": true
    },
    {
@@ -470,7 +470,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1C1C1F",
     "trim": "#3E4045",
     "front": "ld-varsity-jacket-jet-black--charcoal-front.jpg",
-    "back": "ld-varsity-jacket-jet-black--charcoal-back-v2.jpg",
+    "back": "ld-varsity-jacket-jet-black--charcoal-back-v3.jpg",
     "real": false
    },
    {
@@ -479,7 +479,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1F2A44",
     "trim": "#F4F4F2",
     "front": "ld-varsity-jacket-oxford-navy--white-front.jpg",
-    "back": "ld-varsity-jacket-oxford-navy--white-back-v2.jpg",
+    "back": "ld-varsity-jacket-oxford-navy--white-back-v3.jpg",
     "real": false
    },
    {
@@ -488,7 +488,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1F2A44",
     "trim": "#A8AAAF",
     "front": "ld-varsity-jacket-oxford-navy--heather-grey-front.jpg",
-    "back": "ld-varsity-jacket-oxford-navy--heather-grey-back-v2.jpg",
+    "back": "ld-varsity-jacket-oxford-navy--heather-grey-back-v3.jpg",
     "real": false
    },
    {
@@ -497,7 +497,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1F2A44",
     "trim": "#6B1A2C",
     "front": "ld-varsity-jacket-oxford-navy--burgundy-front.jpg",
-    "back": "ld-varsity-jacket-oxford-navy--burgundy-back-v2.jpg",
+    "back": "ld-varsity-jacket-oxford-navy--burgundy-back-v3.jpg",
     "real": false
    },
    {
@@ -506,7 +506,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#6B1A2C",
     "trim": "#A8AAAF",
     "front": "ld-varsity-jacket-burgundy--heather-grey-front.jpg",
-    "back": "ld-varsity-jacket-burgundy--heather-grey-back-v2.jpg",
+    "back": "ld-varsity-jacket-burgundy--heather-grey-back-v3.jpg",
     "real": false
    },
    {
@@ -515,7 +515,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#C3132C",
     "trim": "#F4F4F2",
     "front": "ld-varsity-jacket-fire-red--white-front.jpg",
-    "back": "ld-varsity-jacket-fire-red--white-back-v2.jpg",
+    "back": "ld-varsity-jacket-fire-red--white-back-v3.jpg",
     "real": false
    },
    {
@@ -524,7 +524,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#2149A6",
     "trim": "#F4F4F2",
     "front": "ld-varsity-jacket-royal-blue--white-front.jpg",
-    "back": "ld-varsity-jacket-royal-blue--white-back-v2.jpg",
+    "back": "ld-varsity-jacket-royal-blue--white-back-v3.jpg",
     "real": false
    },
    {
@@ -533,7 +533,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1677C6",
     "trim": "#A8AAAF",
     "front": "ld-varsity-jacket-sapphire--heather-grey-front.jpg",
-    "back": "ld-varsity-jacket-sapphire--heather-grey-back-v2.jpg",
+    "back": "ld-varsity-jacket-sapphire--heather-grey-back-v3.jpg",
     "real": false
    },
    {
@@ -542,7 +542,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#1F8A3D",
     "trim": "#F4F4F2",
     "front": "ld-varsity-jacket-kelly-green--white-front.jpg",
-    "back": "ld-varsity-jacket-kelly-green--white-back-v2.jpg",
+    "back": "ld-varsity-jacket-kelly-green--white-back-v3.jpg",
     "real": false
    },
    {
@@ -551,7 +551,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#4B2A82",
     "trim": "#F4F4F2",
     "front": "ld-varsity-jacket-purple--white-front.jpg",
-    "back": "ld-varsity-jacket-purple--white-back-v2.jpg",
+    "back": "ld-varsity-jacket-purple--white-back-v3.jpg",
     "real": false
    },
    {
@@ -560,7 +560,7 @@ window.LEAVERS_PHOTOS = {
     "hex": "#A8AAAF",
     "trim": "#F4F4F2",
     "front": "ld-varsity-jacket-heather-grey--white-front.jpg",
-    "back": "ld-varsity-jacket-heather-grey--white-back-v2.jpg",
+    "back": "ld-varsity-jacket-heather-grey--white-back-v3.jpg",
     "real": false
    }
   ],
