@@ -65,3 +65,5 @@ Shopify ✅ · Dropbox ✅ (never delete) · Google Drive ✅ · Gmail ✅ (draf
 - Shopify MCP blocks unpublish, bulk mutations, and probably delete.
 - Uploading local files to Higgsfield from here is blocked, but the Higgsfield sandbox can download, edit and PUT files to a `media_upload` URL; then `fileCreate` from that Higgsfield URL. Shopify staged URLs must never go to Higgsfield.
 - foxyprinting.co.uk and Higgsfield CloudFront are not reachable from this machine. cdn.shopify.com and *.dl.dropboxusercontent.com ARE allowed now (owner added them 6 Oct): download Dropbox art with download_link + local curl, render locally, upload with stagedUploadsCreate (PUT, Content-Type header only) + productCreateMedia.
+
+- 9 Oct 2026: full catalogue audit (`exports/catalogue-audit/2026-10-09/README.md`). Google fields import files 11–15 in IMPORT-SCHEDULE (54,381 products; the 2 Oct google-fields files were never imported). Side sessions: footballer/comedian/boxing posters session_013qv4tqAg6dA4sJ32remQ8M; celebrity pillow cases + cufflinks session_017WeW2xhJb2EJRujKogs3BC.

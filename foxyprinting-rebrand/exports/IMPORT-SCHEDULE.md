@@ -1,6 +1,6 @@
 # Shopify CSV import schedule
 
-**ALL FILES DONE (9 Oct 2026, 12:22 UTC).** Import reminder routine switched off.
+**Files 0–10 DONE (9 Oct 2026, 12:22 UTC).** New: Google fields files 11–15 below (from the 9 Oct full audit, `catalogue-audit/2026-10-09/README.md`).
  (owner: one file each morning and one at bedtime)
 
 Files no longer need a slot each: import the next one as soon as Shopify's "import complete" email arrives. Always tick "Overwrite products with matching handles". Wait for Shopify's "import complete" email before the next file.
@@ -19,6 +19,11 @@ Before each reminder, Claude checks the previous file landed on the live store (
 | 8 | next | import-queue-2026-10-08/5-mugs-and-prints-part2.csv (13.9 MB; now also rewrites 5,133 poster descriptions) | DONE (last rows updated 09:00 UTC 9 Oct; checked 09:15 UTC: Ian Wright 2, Ian Snodin 2, Pedro 2 match the file; Miguel Almirón accents fixed) |
 | 9 | next | import-queue-2026-10-08/6-mugs-and-prints-part3.csv (6.7 MB; now also rewrites 3,069 poster descriptions) | DONE (last rows updated 10:53 UTC 9 Oct; checked 10:58 UTC: Beau Brinkley, Beau Allen 2, Stuart Pearce titles match the file) |
 | 10 | next | import-queue-2026-10-08/7-mugs-and-prints-part4.csv (8.5 MB; now also rewrites 3,736 poster descriptions) | DONE (last rows updated 12:21:57 UTC 9 Oct; checked 12:25 UTC: Ben Garland 1, The Weeknd 2026, Zara Larsson, Mervyn King match the file; 0 poster titles left with "Reproduction Print") |
+| 11 | next | google-fields/2026-10-09-full/00-TEST-3-products.csv (3 products: check a signed print, a GameCube poster and a magnet show the new Google fields and nothing else changed) | to do |
+| 12 | after the test | google-fields/2026-10-09-full/01-google-fields.csv (14,000 products; Handle + 7 Google metafields only) | to do |
+| 13 | next | google-fields/2026-10-09-full/02-google-fields.csv | to do |
+| 14 | next | google-fields/2026-10-09-full/03-google-fields.csv | to do |
+| 15 | next | google-fields/2026-10-09-full/04-google-fields.csv (12,381 products) | to do |
 
 Merged on 8 Oct (owner: "merge any we can to save time"): 13 queued files -> 7. Parts 4–7 hold all 6,458 mug descriptions (incl. 194 rude) and 13,250 signed prints; every product's rows are in one file; rows checked 46,810 = 46,810. Old per-job files are kept for reference only — don't import them. Masks and mugs/prints have different columns, so they are never mixed in one file (a blank cell would wipe that field).
 
