@@ -410,6 +410,9 @@ def _svg_el(e, o, out, defs, cid):
     elif k == "circle":
         d = f' stroke-dasharray="{e["dash"][0]} {e["dash"][1]}"' if e.get("dash") else ""
         out.append(f'<circle cx="{e["x"] + o:.2f}" cy="{e["y"] + o:.2f}" r="{e["r"]:.2f}"{st()}{d}/>')
+    elif k == "ellipse":
+        d = f' stroke-dasharray="{e["dash"][0]} {e["dash"][1]}"' if e.get("dash") else ""
+        out.append(f'<ellipse cx="{e["x"] + o:.2f}" cy="{e["y"] + o:.2f}" rx="{e["rx"]:.2f}" ry="{e["ry"]:.2f}"{st()}{d}/>')
     elif k == "line":
         out.append(f'<line x1="{e["x1"] + o:.2f}" y1="{e["y1"] + o:.2f}" x2="{e["x2"] + o:.2f}" y2="{e["y2"] + o:.2f}" stroke="{e["stroke"]}" stroke-width="{e["sw"]:.2f}"/>')
     elif k == "poly":
@@ -498,6 +501,11 @@ def write_pdf(els, w, h, path, title, cut=None):
             if e.get("dash"):
                 c.setDash(e["dash"][0] * mm, e["dash"][1] * mm)
             c.circle(X(e["x"]), Y(e["y"]), e["r"] * mm, stroke=s, fill=f)
+            c.setDash()
+        elif k == "ellipse":
+            if e.get("dash"):
+                c.setDash(e["dash"][0] * mm, e["dash"][1] * mm)
+            c.ellipse(X(e["x"] - e["rx"]), Y(e["y"] + e["ry"]), X(e["x"] + e["rx"]), Y(e["y"] - e["ry"]), stroke=s, fill=f)
             c.setDash()
         elif k == "line":
             c.line(X(e["x1"]), Y(e["y1"]), X(e["x2"]), Y(e["y2"]))
@@ -645,6 +653,18 @@ def _draw_list(img, els, o, k):
                 else:
                     hw = swp / 2
                     d.ellipse([box[0] - hw, box[1] - hw, box[2] + hw, box[3] + hw], outline=stroke, width=swp)
+        elif t == "ellipse":
+            box = [P(e["x"] - e["rx"]), P(e["y"] - e["ry"]), P(e["x"] + e["rx"]), P(e["y"] + e["ry"])]
+            if fill:
+                d.ellipse(box, fill=fill)
+            if stroke:
+                if e.get("dash"):
+                    n = int(math.pi * (e["rx"] + e["ry"]) / sum(e["dash"]))
+                    for i in range(n):
+                        a0 = 360 * i / n
+                        d.arc(box, a0, a0 + 360 / n * e["dash"][0] / sum(e["dash"]), fill=stroke, width=swp)
+                else:
+                    d.ellipse(box, outline=stroke, width=swp)
         elif t == "line":
             d.line([P(e["x1"]), P(e["y1"]), P(e["x2"]), P(e["y2"])], fill=stroke, width=swp)
         elif t == "poly":
