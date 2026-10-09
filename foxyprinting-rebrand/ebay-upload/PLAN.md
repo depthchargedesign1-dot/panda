@@ -136,3 +136,9 @@ Sources for the eBay rules above:
 - [eBay UK autographed items policy](https://www.ebay.co.uk/help/policies/prohibited-restricted-items/autographed-items-policy?id=4283).
 - [eBay UK bulk listing tools](https://www.ebay.co.uk/help/selling/ebay-tools/bulk-listing-tools?id=4160).
 - File size and daily limit: eBay community posts ([1](https://community.ebay.com/t5/Seller-Tools/File-Exchange-Limit-Increase-Requests-Here/m-p/34682433/highlight/true), [2](https://community.ebay.com/t5/Seller-Tools/File-Exchange-Limit-Increase-Requests-Here/m-p/32530508/highlight/true)), not official.
+
+## eBay account facts (owner's screenshot, 9 Oct 2026)
+
+- Monthly limits: 10M items and £10M (423,421 items and £3.6M used), so effectively no limit.
+- **Featured Shop** subscription. Free listing allowances per month (1 Oct to 1 Nov): **fixed price 1,500** (586 used, 914 left) and auctions 600 (3 used). Listings beyond that pay insertion fees, so plan each month's files to fit what's left. E.g. this month: 57 test listings, then up to about 850 more.
+- The account already has many live listings. Check for duplicates of our masks before the upload (browser task 1, step 10).

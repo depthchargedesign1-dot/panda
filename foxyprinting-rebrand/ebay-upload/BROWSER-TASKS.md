@@ -14,6 +14,8 @@ All the files named below are in `foxyprinting-rebrand/ebay-upload/` on branch `
 
 ## Task 1: NOW. Check the eBay account (look only, change nothing)
 
+Already known from the owner's screenshot (9 Oct): the monthly limits are 10M items and £10M (423,421 items and £3.6M used), so limits aren't a worry. The **Featured Shop** allowances run 1 Oct to 1 Nov: fixed price 586 used / 914 left, auctions 3 used / 597 left. The account already has a lot of listings, so step 10 below matters.
+
 Use ebay.co.uk Seller Hub. Report the following:
 1. **Account:** the seller username, business or private account, seller level (Top Rated / Above Standard / Below Standard) and any account warnings or restrictions.
 2. **Selling limits:** Seller Hub > Overview, "monthly limits": the number of items and the amount left.
@@ -23,6 +25,10 @@ Use ebay.co.uk Seller Hub. Report the following:
 6. **Current listings:** the number of active listings, plus unsold and ended ones in the last 90 days. Give the main types of item (masks, mugs and so on).
 7. **Contact details in current listings.** In Seller Hub > Listings > Active, search the listings (and, if possible, the descriptions) for: `01439`, `07`, `@`, `www`, `http`, `.co.uk`, `call`, `phone`, `email`, `whatsapp`, `facebook`, `instagram`. Write down the item number and title of every listing that has any of them.
 8. **Policy problems:** any listings eBay has flagged, removed or marked as problems (Seller Hub > Performance, plus eBay messages about policies, VeRO or intellectual property) in the last 12 months.
+10. **Already listed? (avoid duplicates; eBay's duplicate listings policy).** Search your own active listings for these, and report any that are already listed, with their item numbers:
+    - David Attenborough face mask, Gerwyn Price face mask, Claudia Winkleman face mask, Luke Littler face mask, Spice Girls face masks;
+    - "personalised photo face mask", "stag do face masks", "hen party face masks".
+    Also say what the existing mask listings look like: price, variations, and whether they're in the eBay Shop's categories.
 9. **Apps:** any apps already connected to the eBay account (Account > Permissions or Third-party app access), e.g. an old Shopify channel.
 
 ## Task 2: NOW. Take contact details out of current eBay listings
