@@ -41,7 +41,31 @@ Follow `shop/SHOP-SETUP.md` steps 1–3:
 - Shop logo, billboard and description: the images are in `shop/` (store-logo-300.png, store-billboard-1280x288.jpg). Download them from GitHub, then upload them in eBay.
 - Make the shop categories in `SHOP-SETUP.md` and report their numbers.
 
-## Task 4: NOW (after 1–3). Connect Shopify to eBay with CedCommerce
+## Task 3b: NOW. Full account settings check and completion (owner, 9 Oct: "check all my policies, all the settings, all the details for the store and setup; complete it all so it's fully functional")
+
+Go through every area below in Seller Hub and My eBay > Account. For each setting, note what it was, then fix it to the target. If something needs the owner's decision or money (marked **ASK**), stop and ask the owner. Report a before → after table.
+
+| Area | Target |
+|---|---|
+| Business details (Account > Personal info) | Business seller. Business name **Foxy Printing**, trading address Kirkbymoorside YO62 6AR (the owner confirms the full address), a business email the owner chooses. eBay shows these to buyers by law, which is allowed. They don't go in listings. VAT number: **ASK** whether registered. |
+| Payments and payouts | Bank account verified, payout schedule (**ASK**: daily or weekly), no holds or verification requests outstanding. Report any "action needed". |
+| Postage preferences | Item location Kirkbymoorside, YO62 6AR. Combined postage on: £0 for each extra item, matching `FOXY Royal Mail 24`. Dispatch time to match the policy. Royal Mail / Click & Drop link: report whether it's connected, and **ASK** before connecting. Domestic only for now (no eBay International Shipping until the owner says). |
+| Business policies | Only the three FOXY policies are the defaults. Old policies: list them and **ASK** before deleting any. Returns: 30 days, buyer pays. Personalised items can be returned only if faulty, as stated in the listing. |
+| Buyer requirements / blocked buyers | Block buyers with unpaid item strikes (2 in 12 months) and buyers outside the postage area. Keep the rest at eBay's defaults. |
+| Communication | "Message to seller" (Personalise box) ON. Automatic replies/FAQs: add one FAQ, "How do I send my photo? Send it to us through eBay messages after you buy." No contact details in any reply. |
+| Offers / Best Offer | Off for now (made-to-order low prices). **ASK** if the owner wants it. |
+| Out-of-stock option | ON, so listings at quantity 0 stay alive and keep their sales history. |
+| Feedback | Automatic positive feedback to buyers once they've paid: ON. |
+| Promoted listings | **ASK**: none until the owner sets a budget or ad rate. Don't switch on general/standard campaigns. |
+| Time away / holiday | Off. Report if it's on. |
+| Shop (Store) | Name, logo, billboard and description from `shop/SHOP-SETUP.md`. Shop categories made. Shop subscription level: report it, and **ASK** before changing it. Shop newsletters: off. |
+| Seller Hub > Performance | Report seller level, defects, late dispatch rate and the tracking upload rate. Note anything below standard. |
+| Notifications | Email the owner about new orders, messages and policy notices. |
+| Security | 2-step verification: report whether it's on and suggest the owner turns it on. You don't change it. |
+
+When done, write "eBay account ready" in the report, plus anything still waiting for the owner.
+
+## Task 4: NOW (after 1–3b). Connect Shopify to eBay with CedCommerce
 
 Follow `shop/CEDCOMMERCE-SETUP.md`, "Owner's steps" 2–7, with these settings:
 - **eBay UK only.** Import only the Shopify products tagged `ebay-wave1` (57). Ask the owner before choosing a paid plan.
