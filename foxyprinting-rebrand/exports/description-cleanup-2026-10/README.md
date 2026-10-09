@@ -184,7 +184,7 @@ Order: Baby Vest, Kids Cards, Gaming Cards, Movie Cards, Holiday Stockings (+ de
   - Kids/Movie Cards use the TV/film template ("its makers or rights holders");
   - Gaming Cards use the video-game template ("the game's publisher or any console maker");
   - Movie Cards add a sentence for the named actors.
-- **`third-party-name` tag:** being added through the API (see the status line).
+- **`third-party-name` tag: DONE via API** on 3,117 card products (re-counted afterwards: 1,181/1,185 Kids Cards, 1,060/1,060 Gaming Cards, all Movie Cards; the 4 Kids Cards left untagged are the generic Elephant / Down On The Farm designs, which need no disclaimer). Not in the CSVs, because a Tags column would wipe the other tags.
 - **Owner note:** these designs use other people's character artwork. A disclaimer helps, but it doesn't give permission (see the note in CLAUDE.md). They're also 2017-era listings with odd titles ("Usa Gotg Chi Rocket", "Metroidsamusreturns"). Retiring the weakest sellers may be worth more than a rewrite.
 - Review: `cards/review.csv` (theme name used for each handle), `cards/samples.html`. Generator: `tools/cards_copy.py`.
 
