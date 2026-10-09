@@ -65,19 +65,21 @@ Go through every area below in Seller Hub and My eBay > Account. For each settin
 
 When done, write "eBay account ready" in the report, plus anything still waiting for the owner.
 
-## Task 4: NOW (after 1–3b). Connect Shopify to eBay with CedCommerce
+## Task 4: NOW (after 1–3b). Upload the first two CSV files (owner, 9 Oct: no CedCommerce subscription, use CSV)
 
-Follow `shop/CEDCOMMERCE-SETUP.md`, "Owner's steps" 2–7, with these settings:
-- **eBay UK only.** Import only the Shopify products tagged `ebay-wave1` (57). Ask the owner before choosing a paid plan.
-- **The listings must match the website exactly:** the same title (shortened to 80 characters if needed, keeping the most important words first), the same photos (all of them, up to 24) and **every variation**. Masks have Style × Fitting, and personalised masks have Style × Quantity (3 × 15 = 45). Set prices to the Shopify price for each variation and a fixed quantity of 3 on each.
-- **Personalisation:** on the 7 products tagged `ebay-personalised`, turn on eBay's **Personalise** option and paste the instructions for that product from `shop/PERSONALISE-TEXT.md`.
-- **Description: important.** Some Shopify descriptions include the phone number, the website address or "live preview / add to basket" lines, and **these must not go on eBay**. Find out whether the app can:
-  1. use a description template, or
-  2. take the description from a metafield, or
-  3. find-and-replace or strip text.
+**Don't subscribe to CedCommerce.** If it's already installed, leave it, but don't import or upload anything with it, or the listings would be duplicated.
 
-  Tell the owner which of these exist, and **don't upload until the cloud session has replied.** It will then supply clean eBay descriptions (no contact details) in the form the app needs.
-- Before uploading, report the eBay category the app suggests for the masks (expected: Costume Masks & Eye Masks, 116724), and the item specifics it fills in.
+1. Download these two files from GitHub (open each link, then click "Download raw file"):
+   - https://github.com/depthchargedesign1-dot/panda/blob/claude/foxyprinting-rebrand-shopify-usf2x9/foxyprinting-rebrand/ebay-upload/uploads/M-A-01-personalised-photo-masks.csv
+   - https://github.com/depthchargedesign1-dot/panda/blob/claude/foxyprinting-rebrand-shopify-usf2x9/foxyprinting-rebrand/ebay-upload/uploads/M-TEST-50-celebrity-masks.csv
+2. The three FOXY policies (task 3) must exist first. Their names must match exactly.
+3. Seller Hub > Reports > Uploads > **Upload template**. Upload `M-A-01-personalised-photo-masks.csv` first. Wait for it to finish, then download the **results file** and copy every error or warning word for word.
+4. Open one of the new personalised listings and check:
+   - the Personalise box shows next to Buy It Now (it can take about 15 minutes);
+   - the variations (Style × Number of Masks) and prices look right;
+   - there's no phone number or web address anywhere.
+5. Then upload `M-TEST-50-celebrity-masks.csv` the same way, and get its results file too.
+6. Report the number of listings created, the item numbers, every error, and how one listing looks (a screenshot is fine).
 
 ## Task 5: waiting
 After the report on tasks 1–4, the cloud session writes the next steps here (fixes, uploading the 57, then the following waves).

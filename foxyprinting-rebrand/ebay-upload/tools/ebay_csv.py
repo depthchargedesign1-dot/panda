@@ -77,17 +77,21 @@ def mask_title(title):
 
 # ---------- description ----------
 DROP_SENTENCE = re.compile(r"[^.!?<>]*(live preview|basket|checkout|at checkout|01439|call us|phone|website|"
-                           r"foxyprinting\.co\.uk|click|add to cart|order online|our site)[^.!?<>]*[.!?]?", re.I)
+                           r"foxyprinting\.co\.uk|click|add to cart|order online|our site|contact|e-?mail|whatsapp|"
+                           r"www\.|https?://|\S+@\S+\.\w|07\d{3}\s?\d{6}|(?-i:\bREMEMBER\b))[^.!?<>]*[.!?]?", re.I)
 
 
 def clean_body(h):
     h = re.sub(r'<a\b[^>]*>(.*?)</a>', r'\1', h, flags=re.S | re.I)          # no links off eBay
+    h = re.sub(r'<img\b[^>]*>', '', h, flags=re.I)                           # pictures go in the gallery, not the text
     h = re.sub(r'<(script|style|iframe|form)\b.*?</\1>', '', h, flags=re.S | re.I)
     h = re.sub(r'\s(style|class|id)="[^"]*"', lambda m: m.group(0) if 'disclaimer' in m.group(0) else '', h)
     # drop the Shopify "Delivery" section: eBay shows its own postage box
     h = re.sub(r'<h3>\s*Delivery\s*</h3>\s*<p>.*?</p>', '', h, flags=re.S | re.I)
     h = DROP_SENTENCE.sub('', h)
-    h = re.sub(r'<p>\s*</p>', '', h)
+    for _ in range(3):
+        h = re.sub(r'<(span|strong|em|b)>\s*</\1>', '', h)
+    h = re.sub(r'<p>(\s|&nbsp;|-)*</p>', '', h)
     h = re.sub(r'<h2>', '<h2 style="font-family:\'Baloo 2\',\'Trebuchet MS\',Arial,sans-serif;font-size:21px;color:#FF6A13;margin:18px 0 8px;">', h)
     h = re.sub(r'<h3>', '<h3 style="font-family:\'Baloo 2\',\'Trebuchet MS\',Arial,sans-serif;font-size:18px;color:#7A2BF5;margin:16px 0 6px;">', h)
     h = h.replace('<p class="disclaimer">', '<p style="font-size:12px;color:#6b6585;">')
@@ -112,6 +116,8 @@ def build_description(tpl, title, body_html, cfg, personalised):
     badges = ''.join(badge(t, c) for t, c in zip(cfg.get('badges', []),
                                                 ['#FF6A13', '#FF2D87', '#7A2BF5', '#00B8A9', '#1D1240']))
     box = personalise_box(cfg['personalise_box']) if personalised and cfg.get('personalise_box') else ''
+    if cfg.get('fallback_disclaimer') and 'endorsed' not in body_html:   # Shopify copy without one: eBay still needs it
+        body_html += ('<h3>Please note</h3><p class="disclaimer">' + cfg['fallback_disclaimer'] + '</p>')
     d = (tpl.replace('{{TITLE}}', html.escape(title)).replace('{{INTRO_BADGES}}', badges)
          .replace('{{PERSONALISE_BOX}}', box).replace('{{BODY}}', clean_body(body_html))
          .replace('{{POSTAGE}}', cfg['postage_text']).replace('{{RETURNS}}', cfg['returns_text']))

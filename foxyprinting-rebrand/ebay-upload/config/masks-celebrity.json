@@ -30,5 +30,6 @@
   "Ready Cut or DIY",
   "Printed in the UK"
  ],
- "personalised_regex": "^$"
+ "personalised_regex": "^$",
+ "fallback_disclaimer": "This is an unofficial novelty product made for fun and fancy dress. The person or people shown have not endorsed, sponsored or approved this product, and Foxy Printing has no connection with them. Names are used only to describe the design."
 }
