@@ -21,6 +21,10 @@ the artwork placed on it realistically (perspective, curve/wrap, lighting, textu
 "CAD" mockups (mugkit's drawn mug, flat plates, plain shapes) as product images; they are for proofs only. If there
 is no real photo of the blank, ask Shaun for one instead of drawing it. Live-preview bases should be real photos too
 where possible.
+**Real-photo mockups (listing images):** `foxyprinting-rebrand/tools/artwork/real_mug_mockup.py <MUG BLANK.jpg> <wrap trim 200x70 PNG> out.jpg --side left|right|front`
+bends the wrap round Shaun's real blank mug photo (Dropbox `/RANDOM IMAGES LEFT ON/MUG BLANK.jpg`) and keeps the photo's
+shading/gloss. left = band/left half of the wrap, right = right half, front = middle (handle retouched out). Crop the 3 mm
+bleed off a mugkit 300dpi PNG first. Main image = left + right views side by side. Look at every image before uploading.
 Proof mockups come from mugkit (exact print, never AI) - use them to check the print, not as listing images. Upload them with `mcp__Higgsfield__media_upload` from the
 same sandbox command that built them (see mug-print-artwork), `media_confirm`, use the cloudfront URLs.
 
