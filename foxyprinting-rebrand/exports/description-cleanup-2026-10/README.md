@@ -276,3 +276,129 @@ Order: Baby Vest, Kids Cards, Gaming Cards, Movie Cards, Holiday Stockings (+ de
 <h3>Please note</h3>
 <p class="disclaimer">This is an unofficial design inspired by Jennifer Lawrence In The Hunger Games Catching Fire. It is not official merchandise and is not endorsed by, sponsored by, or connected with Jennifer Lawrence In The Hunger Games Catching Fire, its makers or rights holders, or any of their licensees. All names, characters and trademarks belong to their respective owners. Any actors or public figures named or pictured have not endorsed, sponsored or approved this product, and Foxy Printing has no connection with them. Their names are used only to describe the design.</p>
 ```
+
+## 8. Name-themed cards, batch 2 (Sport, Celebrity, Musician, Music, Bollywood/WWE/Game, Animal, Valentines): IMPORT FILES READY (9 Oct 2026)
+- **Files** (Handle + Body (HTML) only, owner-run import), in `cards-2/`:
+
+  | File | Products |
+  |---|---|
+  | `sport-cards-descriptions.csv` | 601 |
+  | `celebrity-cards-descriptions.csv` | 517 |
+  | `musician-cards-descriptions.csv` | 553 |
+  | `music-cards-descriptions.csv` | 150 |
+  | `bollywood-wwe-game-cards-descriptions.csv` | 572 (product type "Personalised Cards") |
+  | `animal-cards-descriptions.csv` | 219 |
+  | `valentines-cards-descriptions.csv` | 158 |
+
+  All 7 files total 2,770 products.
+- **Generator:** `tools/cards2_copy.py`. Facts come only from the "Personalised cards" sheet, the same as batch 1.
+- **Kinds:** each title is sorted into a kind, which sets the wording and the disclaimer template:
+  - F1 driver/team;
+  - club;
+  - player (+ club);
+  - wrestler (WWE);
+  - boxer;
+  - other sport;
+  - car/bike brand (brand template);
+  - Bollywood (film + actors);
+  - game;
+  - celebrity;
+  - musician/band;
+  - TV character (Game of Thrones, Peaky Blinders, Star Wars);
+  - generic designs.
+- **Names cleaned up:** typos ("Rhianna", "Komabt", "Labradoor"), shouty caps ("System OF A Down") and eBay junk ("Dogs AND Funny Puppy … Kirsten", "Design 2", "(SA)"). "Signed For <club>" cards are written as "<club> fan" cards, so "signed" never appears in the copy.
+- **Generic designs get no disclaimer:** animals, Valentine slogans, "Car Yellow", "Guitar Girl", "Cricket Wicket" and similar. The list is in `GENERIC_NAMES` in the tool.
+- **Valentines Cards** get Valentine's copy (names + message), not birthday copy.
+- **Held back (8, `cards-2/problems.csv`):**
+  - 3 "Record Design … Anniversary Print" listings filed under Valentines Cards (these are prints, not cards; the owner should check what they are);
+  - 4 rude Valentine cards ("Blow Job Voucher", "Nob Jockey", "I Like Best Naked", "Netflix & Chill");
+  - "Ibu-Wallpaper" (no usable theme).
+  - These go with the Funny/Adult card pass.
+- **Not covered yet:** Funny Cards (298) and Adult Cards (251). Their slogans include heavy profanity and homophobic slurs ("Faggot", "Poof", "Bender"; same owner question as the slur mugs), so they need a hand-checked pass. The slurs should probably be archived rather than rewritten.
+- **`third-party-name` tag:** being added through the API to the 2,298 named designs (`cards-2/tag-ids.txt`).
+- **Samples:**
+
+**Personalised Valtteri Bottas F1 THEME INSPIRED PERSONALISED Kids Adult Birthday Card 3** (`personalised-valtteri-bottas-birthday-card-3`, kind: f1)
+
+```html
+<p>Make their day with a personalised Valtteri Bottas F1 birthday card, printed on thick card in our North Yorkshire workshop and posted 1st Class.</p>
+<h2>Personalised Valtteri Bottas birthday card</h2>
+<p>You get a Valtteri Bottas motor racing design (design 3), printed with the name and age you give us. Want a message inside? Add it when you order and we'll print that as well. We print exactly what you enter, so please double-check names and spelling.</p>
+<h3>Why you'll love it</h3>
+<ul>
+<li>Printed on 350gsm silk art board, much thicker than the usual 240gsm card</li>
+<li>Personalised with their name, age and your own message</li>
+<li>Printed inside and out if you want a message inside</li>
+<li>Comes with a free white envelope</li>
+<li>Posted flat in a board-backed envelope so it arrives uncreased</li>
+</ul>
+<h3>Size &amp; details</h3>
+<ul>
+<li>Size: printed A4, folded to A5</li>
+<li>Card: 350gsm silk art board</li>
+<li>Finish: machine cut and folded</li>
+<li>Includes: free white envelope</li>
+<li>Personalisation: name, age, front message and inside message</li>
+</ul>
+<h3>Delivery</h3>
+<p>Sent Royal Mail 1st Class, dispatched the same day, or the next working day at busy times. It's posted flat in a board-backed envelope.</p>
+<p>Can't find the design you're after? We can make a custom birthday card: call 01439 771468.</p>
+<h3>Please note</h3>
+<p class="disclaimer">This is an unofficial, fan-made design created and printed by Foxy Printing. It is not endorsed by, sponsored by, or affiliated with Valtteri Bottas, Formula 1, or any club, team, league or player. Names are used only to describe the design and who it's for. All trademarks belong to their respective owners.</p>
+```
+
+**Jaime Lannister Personalised INSPIRED STYLE Game Of Thrones Birthday Card New 2017** (`jaime-lannister-card`, kind: show)
+
+```html
+<p>Looking for a card for a TV and film fan? This personalised Jaime Lannister birthday card is made to order with the name, age and message you choose.</p>
+<h2>Jaime Lannister birthday card with name and age</h2>
+<p>It's a Jaime Lannister design inspired by Game of Thrones, personalised with the name and age of the birthday TV and film fan. We can print inside and out, so add your own inside message when you order. We print exactly what you enter, so please double-check names and spelling.</p>
+<h3>Why you'll love it</h3>
+<ul>
+<li>Printed A4 and folded to A5, then machine cut and folded for a crisp finish</li>
+<li>Personalised with their name, age and your own message</li>
+<li>Printed inside and out if you want a message inside</li>
+<li>Comes with a free white envelope</li>
+<li>Posted flat in a board-backed envelope so it arrives uncreased</li>
+</ul>
+<h3>Size &amp; details</h3>
+<ul>
+<li>Size: printed A4, folded to A5</li>
+<li>Card: 350gsm silk art board</li>
+<li>Finish: machine cut and folded</li>
+<li>Includes: free white envelope</li>
+<li>Personalisation: name, age, front message and inside message</li>
+</ul>
+<h3>Delivery</h3>
+<p>Sent Royal Mail 1st Class, dispatched the same day, or the next working day at busy times. It's posted flat in a board-backed envelope.</p>
+<p>Can't find the design you're after? We can make a custom birthday card: call 01439 771468.</p>
+<h3>Please note</h3>
+<p class="disclaimer">This is an unofficial design inspired by Game of Thrones. It is not official merchandise and is not endorsed by, sponsored by, or connected with Game of Thrones, its makers or rights holders, or any of their licensees. Any actors pictured have not endorsed, sponsored or approved this product, and Foxy Printing has no connection with them. All names, characters and trademarks belong to their respective owners.</p>
+```
+
+**PERSONALISED HIS OR HERS Boyfriend Girlfriend Hubby Wife Lover Style KE179 Valentines Day Card** (`his-or-hers-valentines-day-card-ke179-valentines-day-card`, kind: valentine)
+
+```html
+<p>Say it properly this year with a personalised Valentine's Day card, printed on thick card in our North Yorkshire workshop and posted 1st Class.</p>
+<h2>Personalised Valentine's Day card with names</h2>
+<p>The front shows a His or Hers Valentine's design (design 179). Add both names and your own front message when you order, and we can print a message inside too. We print exactly what you enter, so please double-check names and spelling.</p>
+<h3>Why you'll love it</h3>
+<ul>
+<li>Printed on 350gsm silk art board, much thicker than the usual 240gsm card</li>
+<li>Printed A4 and folded to A5, then machine cut and folded for a crisp finish</li>
+<li>Personalised with your names and your own message</li>
+<li>Comes with a free white envelope</li>
+<li>Posted flat in a board-backed envelope so it arrives uncreased</li>
+</ul>
+<h3>Size &amp; details</h3>
+<ul>
+<li>Size: printed A4, folded to A5</li>
+<li>Card: 350gsm silk art board</li>
+<li>Finish: machine cut and folded</li>
+<li>Includes: free white envelope</li>
+<li>Personalisation: names, front message and inside message</li>
+</ul>
+<h3>Delivery</h3>
+<p>Sent Royal Mail 1st Class, dispatched the same day, or the next working day at busy times. It's posted flat in a board-backed envelope.</p>
+<p>Pair it with a personalised mug for a Valentine's gift that's sorted in one go. Custom designs on request: call 01439 771468.</p>
+```

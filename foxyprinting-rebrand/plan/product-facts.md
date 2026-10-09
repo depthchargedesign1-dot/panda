@@ -73,6 +73,7 @@
 - **Personalisation:** name, design. Custom character design is available as a £5 upgrade.
 - **Google category:** Home & Garden > Decor > Seasonal & Holiday Decorations > Holiday Stockings (stockings) / Home & Garden > Decor > Seasonal & Holiday Decorations (sacks)
 - **age_group:** `kids`
+- **ASK (9 Oct 2026, description rewrite of the 1,094 old "Holiday Stockings" listings: 733 sacks, 361 stockings):** the old copy only gives partial facts, to confirm: "UK made, Cotton or Hessian", "All Cotton Bags can be washed, Hessian bags must be hand washed", XL sack "70 x 50 cm with a white drawstring cord at the top" (stated on 72 listings only). Please confirm: (1) XL sack fabric and size (cotton? 70 × 50 cm?); (2) the "Large" and "Small" sack sizes and fabric (396 titles say Large, 20 say Small); (3) the old-style stockings' fabric, size and hanging loop (361 listings, no size stated anywhere); (4) washing for each; (5) how the name is printed (sublimation or DTF?). The rewrite waits on these answers.
 
 ### Personalised reindeer stocking (owner, 5 Oct 2026)
 - **Design:** cream hessian-weave stocking with a tan hessian cuff, red tartan ribbon trim under the cuff, red hanging loop, felt appliqué leaping reindeer with a red nose and tartan scarf, printed swirl antlers.
