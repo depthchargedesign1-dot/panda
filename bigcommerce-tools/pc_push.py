@@ -62,10 +62,13 @@ def cmd_shipping(scratch, apply):
 
 
 # ------------------------------------------------------------- prices ----
-def cmd_prices(scratch, apply, limit=None):
+def cmd_prices(scratch, apply, limit=None, shard=None):
     P = json.load(open(f"{scratch}/products.json"))
     skip = done_ids(scratch, "adjuster")
     todo = [p for p in P if p["id"] not in skip]
+    if shard:
+        k, n = shard
+        todo = [p for p in todo if p["id"] % n == k]
     if limit: todo = todo[:limit]
     print(f"{len(todo)} products to price (A5 £{A5_PRICE:.2f}, A4 £{A4_PRICE:.2f}, A6 {'£'+A6_PRICE if A6_PRICE else 'same as A5'}); {len(skip)} already done")
     if not apply:
@@ -149,8 +152,9 @@ def main(argv):
     apply = "--apply" in argv
     ids = {int(x) for x in argv[argv.index("--ids") + 1].split(",")} if "--ids" in argv else None
     limit = int(argv[argv.index("--limit") + 1]) if "--limit" in argv else None
+    shard = tuple(int(x) for x in argv[argv.index("--shard") + 1].split("/")) if "--shard" in argv else None
     if cmd == "shipping": cmd_shipping(scratch, apply)
-    elif cmd == "prices": cmd_prices(scratch, apply, limit)
+    elif cmd == "prices": cmd_prices(scratch, apply, limit, shard)
     elif cmd == "descriptions": cmd_descriptions(scratch, apply, ids, limit)
     else: print(__doc__); return 2
     return 0
