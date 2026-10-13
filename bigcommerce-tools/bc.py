@@ -59,8 +59,28 @@ def creds(store: str) -> tuple[str, str]:
 
 
 def api(store: str, path: str, params: dict | None = None, method: str = "GET",
-        body: dict | None = None, timeout: int = 30):
-    """Call the BigCommerce Management API. Returns parsed JSON (or None for 204)."""
+        body=None, timeout: int = 30, retries: int = 5):
+    """Call the BigCommerce Management API. Returns parsed JSON (or None for 204).
+    Retries on 429 (honouring X-Rate-Limit-Time-Reset-Ms) and on 5xx/network errors."""
+    import time
+    last = None
+    for attempt in range(retries):
+        try:
+            return _api_once(store, path, params, method, body, timeout)
+        except BCError as e:
+            last = e
+            msg = str(e)
+            if "HTTP 429" in msg:
+                wait = getattr(e, "reset_ms", 30000) / 1000.0
+            elif "HTTP 5" in msg or "could not reach" in msg:
+                wait = 2 * (attempt + 1)
+            else:
+                raise
+            time.sleep(min(wait, 60))
+    raise last
+
+
+def _api_once(store, path, params, method, body, timeout):
     store_hash, token = creds(store)
     url = API_BASE.format(hash=store_hash, path=path.lstrip("/"))
     if params:
@@ -80,13 +100,16 @@ def api(store: str, path: str, params: dict | None = None, method: str = "GET",
             return json.loads(raw)
     except urllib.error.HTTPError as e:
         detail = e.read().decode("utf-8", "replace")[:600]
+        reset_ms = int(e.headers.get("X-Rate-Limit-Time-Reset-Ms", "30000") or 30000)
         hint = {
             401: "token rejected: check the access token",
             403: "token lacks the scope for this endpoint, or the store hash is wrong",
             404: "endpoint or store hash not found",
             429: "rate limited: wait and retry",
         }.get(e.code, "")
-        raise BCError(f"HTTP {e.code} on {method} {path}: {hint}\n{detail}") from None
+        err = BCError(f"HTTP {e.code} on {method} {path}: {hint}\n{detail}")
+        err.reset_ms = reset_ms
+        raise err from None
     except urllib.error.URLError as e:
         raise BCError(
             f"could not reach api.bigcommerce.com ({e.reason}). "
