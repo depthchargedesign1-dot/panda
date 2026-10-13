@@ -52,6 +52,9 @@ def pick(options, *seed):
     h = int(hashlib.md5("|".join(map(str, seed)).encode()).hexdigest(), 16)
     return options[h % len(options)]
 
+TYPOS = {"comgratulations": "congratulations", "congratuations": "congratulations", "anniversay": "anniversary", "birtday": "birthday",
+         "ramaining": "remaining", "dont": "don't", "cant": "can't", "youre": "you're", "havent": "haven't", "wont": "won't", "im": "I'm", "ill": "I'll",
+         "didnt": "didn't", "isnt": "isn't", "thats": "that's", "whats": "what's", "theyre": "they're", "shouldnt": "shouldn't"}
 CODE_RE = re.compile(r"\b(Mc|Rm|Rmbc|Fun|Td|Gb|Sj|Raf)\s?\d+[a-z]?(-[A-Za-z])?\b", re.I)
 def clean_name(name: str) -> str:
     n = CODE_RE.sub("", name)
@@ -59,8 +62,15 @@ def clean_name(name: str) -> str:
     n = re.sub(r"\((SA|[A-Z]{1,3})\)", "", n)
     n = re.sub(r"\s*-\s*(Solid|Plain)\s+\w+\s*$", "", n, flags=re.I)
     n = re.sub(r"\s+-\s*(Fathers Day Card|Me To You)\s*$", "", n, flags=re.I)
-    n = re.sub(r"\b(Birthday Card|Card)\s*$", "", n, flags=re.I).strip()
-    n = re.sub(r"\s+\d{1,2}\s*$", "", n)          # trailing design number, e.g. "Funny Pug 3"
+    for _ in range(3):
+        n = re.sub(r"\b(Personalised|Personalized)\s+(Photo\s+)?(Father'?s Day|Mother'?s Day|Valentine'?s Day|Birthday|Wedding|Anniversary|Thank You)?\s*Cards?\s*$", "", n, flags=re.I)
+        n = re.sub(r"\b(Father'?s Day|Mother'?s Day|Valentine'?s Day|Birthday|Wedding|Anniversary|Thank You|Photo|Kidshows|Bollywood|Celebrity Fan|Celebrity|Novelty|Wwe)\s+Cards?\s*$", "", n, flags=re.I)
+        n = re.sub(r"\bCards?\s*$", "", n, flags=re.I)
+        n = re.sub(r"\s+\d{1,2}\s*$", "", n)          # trailing design number, e.g. "Funny Pug 3"
+        n = re.sub(r"\s+(Fun|Sa|Bm\d?|Ke|Sj|Full|Portrait|Landscape|Design)\s*$", "", n, flags=re.I)   # trailing design codes
+        n = n.strip(" -.,")
+    n = re.sub(r"\b(Personalised|Personalized)\s+", "", n, flags=re.I)
+    for a, b in TYPOS.items(): n = re.sub(r"\b"+a+r"\b", b, n, flags=re.I)
     n = re.sub(r"\s{2,}", " ", n).strip(" -.,")
     return n
 
@@ -70,7 +80,7 @@ def subject_of(name: str) -> str:
     n = re.sub(r"\b(Mc|Rm|Rmbc|Fun|Td|Gb|Sj)\d+[a-z]?(-[A-Za-z])?\b", "", n, flags=re.I)
     n = re.sub(r"\bNaughty\s*\d+[a-z]?\b", "", n, flags=re.I)
     n = re.sub(r"\((SA|[A-Z]{1,3})\)", "", n)
-    for w in ["Personalised","Personalized","Celebrity Fan","Celebrity","Football Fan Card","Football Birthday Card","Football Card","Birthday Card","Bollywood","Music","Wwe","Kidshows","Funny","Novelty","Card"]:
+    for w in ["Personalised","Personalized","Celebrity Fan","Celebrity","Football Fan Card","Football Birthday Card","Football Card","Birthday Cards","Birthday Card","Bollywood","Music","Wwe","Kidshows","Funny","Novelty","Cards","Card"]:
         n = re.sub(r"\b"+re.escape(w)+r"\b", "", n, flags=re.I)
     n = re.sub(r"\s+\d+\s*$", "", n); n = re.sub(r"\b\d\b", "", n)
     return re.sub(r"\s+", " ", n).strip(" -")
@@ -105,7 +115,7 @@ def tidy_research(r: dict) -> dict:
     return r
 
 def esc(s: str) -> str:
-    return html.escape(s, quote=False)
+    return html.escape(s, quote=False).replace("the The ", "the ").replace("The The ", "The ")
 
 def trim(s: str, n: int) -> str:
     if len(s) <= n: return s
@@ -113,12 +123,20 @@ def trim(s: str, n: int) -> str:
     return cut.rstrip(" ,;:-") + ("" if cut.endswith(".") else "")
 
 # ------------------------------------------------------- copy blocks -----
+AGE_FAMS = {"celeb","club","bollywood","kids","show","rude","funny","birthday","her","him","animals","first","lgbt","golf","unicorn","dance","yoga"}
 def personalise_block(fam, seed):
-    lead = pick([
-        "Choose your size, add a name and age if the design has space for them, and decide whether you want a printed message inside or a blank card to write in yourself.",
-        "Pick A6, A5 or A4, type in a name and age where the design needs one, and tell us if you'd like us to print a message inside.",
-        "Select the size you want, enter any name or age the design calls for, and either leave the inside blank or have us print your words.",
-    ], seed, "p1")
+    if fam in AGE_FAMS:
+        lead = pick([
+            "Choose your size, add a name and age if the design has space for them, and decide whether you want a printed message inside or a blank card to write in yourself.",
+            "Pick A6, A5 or A4, type in a name and age where the design needs one, and tell us if you'd like us to print a message inside.",
+            "Select the size you want, enter any name or age the design calls for, and either leave the inside blank or have us print your words.",
+        ], seed, "p1")
+    else:
+        lead = pick([
+            "Choose your size, add the name or names you'd like on the front, and decide whether you want a printed message inside or a blank card to write in yourself.",
+            "Pick A6, A5 or A4, type in the name or names the design needs, and tell us if you'd like us to print a message inside.",
+            "Select the size you want, enter the names the design calls for, and either leave the inside blank or have us print your words.",
+        ], seed, "p1")
     photo = pick([
         "If the design has a photo space, upload your picture on the product page and we'll drop it in.",
         "Designs with a photo space let you upload a picture straight from your phone or computer.",
@@ -219,7 +237,7 @@ def opening(p, fam, cat, research):
             s1 = pick([
                 f"A personalised birthday card for {nm} fans{comma_who}.",
                 f"Made for anyone who follows {nm}{comma_who}, this personalised birthday card puts their club front and centre.",
-                f"Know a {nm} supporter? This personalised card is made for them.",
+                f"Know someone who supports {nm}? This personalised birthday card is made for them.",
             ], seed, "o")
             s2 = pick([
                 "Add their name and age and it becomes a card no other fan has.",
@@ -252,7 +270,7 @@ def opening(p, fam, cat, research):
                 "We print their name and age on the front, so it's theirs and no one else's.",
                 "Their name and age go on the card, printed by us, so it's a proper one-off.",
             ], seed, "o2")
-        s3 = f" {esc(hook)}." if hook else ""
+        s3 = f" {esc(hook[0].upper() + hook[1:])}." if hook else ""
         return f"<p>{esc(s1)} {esc(s2)}{s3}</p>", nm, who
     # slogan / generic families
     occ = OCCASION.get(fam, "greetings")
@@ -396,7 +414,7 @@ def main():
     for p in P:
         if ids and p["id"] not in ids: continue
         cat = C.get(p["categories"][0], "") if p["categories"] else ""
-        r = research.get(subject_of(p["name"]))
+        r = research.get(subject_of(p["name"])) or research.get(cat)
         out[p["id"]] = build(p, cat, r)
     json.dump(out, open(f"{scratch}/rewrite.json", "w"), indent=1)
     fams = {}
