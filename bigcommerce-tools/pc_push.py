@@ -23,6 +23,7 @@ A5_PRICE = float(os.environ.get("PC_A5_PRICE", "3.49"))
 A4_PRICE = float(os.environ.get("PC_A4_PRICE", "6.99"))
 A6_PRICE = os.environ.get("PC_A6_PRICE")            # unset = same as A5
 SHIP_RATE = float(os.environ.get("PC_SHIP_RATE", "2.99"))
+SHIP_NAME = os.environ.get("PC_SHIP_NAME", "Royal Mail 24 Tracked")
 STORE = "pc"
 
 
@@ -48,13 +49,13 @@ def done_ids(scratch, kind):
 def cmd_shipping(scratch, apply):
     for z in bc.api(STORE, "v2/shipping/zones"):
         for m in bc.api(STORE, f"v2/shipping/zones/{z['id']}/methods"):
-            if m["type"] == "perorder" and "1st class" in m["name"].lower():
+            if m["type"] == "perorder" and ("1st class" in m["name"].lower() or m["name"] == SHIP_NAME):
                 old = m["settings"]["rate"]
-                print(f"zone {z['name']}: '{m['name']}' rate {old} -> {SHIP_RATE}")
-                if apply and float(old) != SHIP_RATE:
+                print(f"zone {z['name']}: '{m['name']}' rate {old} -> '{SHIP_NAME}' rate {SHIP_RATE}")
+                if apply and (float(old) != SHIP_RATE or m["name"] != SHIP_NAME):
                     bc.api(STORE, f"v2/shipping/zones/{z['id']}/methods/{m['id']}", method="PUT",
-                           body={"settings": {"rate": SHIP_RATE}})
-                    log(scratch, {"kind": "shipping", "id": m["id"], "zone": z["id"], "old": old, "new": SHIP_RATE, "ok": True})
+                           body={"name": SHIP_NAME, "settings": {"rate": SHIP_RATE}})
+                    log(scratch, {"kind": "shipping", "id": m["id"], "zone": z["id"], "old": {"name": m["name"], "rate": old}, "new": {"name": SHIP_NAME, "rate": SHIP_RATE}, "ok": True})
                     print("  applied")
     if not apply:
         print("(dry run: add --apply to write)")
@@ -63,7 +64,7 @@ def cmd_shipping(scratch, apply):
 # ------------------------------------------------------------- prices ----
 def cmd_prices(scratch, apply, limit=None):
     P = json.load(open(f"{scratch}/products.json"))
-    skip = done_ids(scratch, "price")
+    skip = done_ids(scratch, "adjuster")
     todo = [p for p in P if p["id"] not in skip]
     if limit: todo = todo[:limit]
     print(f"{len(todo)} products to price (A5 £{A5_PRICE:.2f}, A4 £{A4_PRICE:.2f}, A6 {'£'+A6_PRICE if A6_PRICE else 'same as A5'}); {len(skip)} already done")
@@ -76,25 +77,38 @@ def cmd_prices(scratch, apply, limit=None):
         bc.api(STORE, "v3/catalog/products", method="PUT", body=body)
         for p in chunk:
             log(scratch, {"kind": "price", "id": p["id"], "old": p["price"], "new": A5_PRICE, "ok": True})
-        # 2) size adjusters, one product at a time
+        # 2) size adjusters: update the whole "Choose Card Size" modifier in one PUT per product
         for p in chunk:
-            mods = bc.api(STORE, f"v3/catalog/products/{p['id']}/modifiers")["data"]
+            try:
+                mods = bc.api(STORE, f"v3/catalog/products/{p['id']}/modifiers")["data"]
+            except bc.BCError as e:
+                log(scratch, {"kind": "adjuster", "id": p["id"], "ok": False, "err": str(e)[:200]}); continue
             size = next((m for m in mods if "size" in m["display_name"].lower()), None)
             if not size:
                 log(scratch, {"kind": "adjuster", "id": p["id"], "ok": False, "err": "no size modifier"}); continue
+            vals, old, changed = [], {}, False
             for v in size["option_values"]:
                 lab = v["label"].upper()
                 target = None
                 if lab.startswith("A4"): target = round(A4_PRICE - A5_PRICE, 2)
                 elif lab.startswith("A6") and A6_PRICE: target = round(float(A6_PRICE) - A5_PRICE, 2)
-                elif lab.startswith("A5") or lab.startswith("A6"): target = 0
-                if target is None: continue
                 cur = (v.get("adjusters") or {}).get("price") or {}
-                if cur.get("adjuster") == "relative" and float(cur.get("adjuster_value") or 0) == target:
-                    continue
-                adj = {"adjusters": {"price": {"adjuster": "relative", "adjuster_value": target}}} if target else {"adjusters": {"price": None}}
-                bc.api(STORE, f"v3/catalog/products/{p['id']}/modifiers/{size['id']}/values/{v['id']}", method="PUT", body=adj)
-                log(scratch, {"kind": "adjuster", "id": p["id"], "value_id": v["id"], "label": v["label"], "old": cur, "new": target, "ok": True})
+                old[v["label"]] = cur or None
+                d = {"id": v["id"], "label": v["label"], "sort_order": v["sort_order"], "is_default": v["is_default"]}
+                if target:
+                    d["adjusters"] = {"price": {"adjuster": "relative", "adjuster_value": target}}
+                    if not (cur.get("adjuster") == "relative" and float(cur.get("adjuster_value") or 0) == target): changed = True
+                elif cur:
+                    d["adjusters"] = {"price": None}; changed = True
+                vals.append(d)
+            if not changed:
+                log(scratch, {"kind": "adjuster", "id": p["id"], "ok": True, "note": "already set"}); continue
+            try:
+                bc.api(STORE, f"v3/catalog/products/{p['id']}/modifiers/{size['id']}", method="PUT", body={"option_values": vals})
+                log(scratch, {"kind": "adjuster", "id": p["id"], "modifier_id": size["id"], "old": old, "new": {"A4": round(A4_PRICE - A5_PRICE, 2)}, "ok": True})
+            except bc.BCError as e:
+                log(scratch, {"kind": "adjuster", "id": p["id"], "ok": False, "err": str(e)[:200]})
+                print("  adjuster FAILED", p["id"], str(e).splitlines()[0], flush=True)
         print(f"  priced {min(i+10, len(todo))}/{len(todo)}", flush=True)
 
 

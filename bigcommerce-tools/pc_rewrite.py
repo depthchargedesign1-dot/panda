@@ -14,7 +14,7 @@ import glob, hashlib, html, json, os, re, sys
 # ---------------------------------------------------------------- facts --
 STORE = "Personalised Cards"
 EMAIL = "sales@personalised-cards.co.uk"
-PHONE = os.environ.get("PC_PHONE", "")          # set once the owner confirms
+PHONE = os.environ.get("PC_PHONE", "01439 771468")   # confirmed by the owner, 13 Oct 2026
 POSTAGE = "£2.99"
 SIZES_HTML = (
     "<li>A6: 148 x 105mm, a neat note-size card</li>"
@@ -177,7 +177,7 @@ def delivery_block(seed):
         "Order before 1pm Monday to Friday and we print and post your card the same working day.",
         "Cards ordered before 1pm on a working day are printed and posted that same day.",
     ], seed, "d1")
-    b = f"Standard 1st Class Royal Mail postage is {POSTAGE} per order, and there's a next-day Special Delivery option at checkout if it's urgent."
+    b = f"Royal Mail 24 Tracked postage is {POSTAGE} per order, and there's a next-day Special Delivery option at checkout if it's urgent."
     return f"<p>{a} {b}</p>"
 
 def contact_block():
