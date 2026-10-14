@@ -1,0 +1,19 @@
+# Never commit target software or bulky captures
+*.exe
+*.dll
+*.so
+*.dylib
+*.apk
+*.ipa
+*.asar
+*.pak
+*.pck
+*.unity3d
+*.assets
+*.wasm
+*.zip
+*.7z
+*.rar
+targets/**/bin/
+targets/**/captures/
+node_modules/
