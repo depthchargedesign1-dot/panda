@@ -16,5 +16,5 @@ Company details (footer and quote section):
 - The business has moved: never use the old Kirkbymoorside address.
 
 Before going live:
-- Enquiries go to sales@foxyprinting.co.uk until a Foxy Websites domain and forwarding address exist. Then swap the address in `index.html`.
+- Domain: www.foxywebsites.co.uk (owned). Enquiries go to sales@foxyprinting.co.uk until a forwarding address such as hello@foxywebsites.co.uk -> sales@foxyprinting.co.uk is set up and tested. Then swap the address in `index.html`.
 - The quote form builds a brief for the visitor to copy. To have it email you directly, point it at a form service such as Formspree or your host's form handler.
