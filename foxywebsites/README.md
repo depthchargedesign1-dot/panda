@@ -1,6 +1,6 @@
 # Foxy Websites
 
-One-page website for Foxy Websites (Ben + Claude): website builds on every platform, eBay/Amazon/Etsy shop setup and listings, Google Shopping and broken-site fixes.
+One-page website for Foxy Websites (our in-house design team, with AI tools for the legwork): website builds on every platform, eBay/Amazon/Etsy shop setup and listings, Google Shopping and broken-site fixes.
 
 - `index.html`: the whole site (inline CSS and JS, Google Fonts). Open it in a browser or upload it to any host.
 - `brand/`: the new logo, built from the Foxy fox head. The gamepad cheeks are now `</>` code brackets and four browser dots.

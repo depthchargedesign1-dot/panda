@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Foxy Websites</title>
-<meta name="description" content="Foxy Websites builds, lists and fixes online shops on every platform: Shopify, BigCommerce, WordPress, eBay, Amazon, Etsy and Google Shopping. 30 years of web experience from Ben, working with Claude.">
+<meta name="description" content="Foxy Websites builds, lists and fixes online shops on every platform: Shopify, BigCommerce, WordPress, eBay, Amazon, Etsy and Google Shopping. 30 years of web design experience from our in-house design team.">
 <link rel="canonical" href="https://www.foxywebsites.co.uk/">
 <link rel="icon" href="brand/fox-head.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -187,16 +187,23 @@ p{margin:0}
 @media (max-width:480px){.more-grid{grid-template-columns:1fr}}
 
 /* ---------- duo ---------- */
-.duo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:clamp(48px,7vw,80px)}
+.duo-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:20px;margin-bottom:clamp(48px,7vw,80px)}
 .person{border-radius:24px;padding:clamp(24px,4vw,38px);display:grid;gap:14px;align-content:start}
-.person.shaun{background:var(--fox);color:#fff}
-.person.claude{background:#fff;color:var(--ink)}
+.person.team{background:var(--fox);color:#fff}
+.person.ai{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#fff}
+.person.ai h3{font-size:clamp(1.5rem,2.6vw,1.9rem);color:#fff}
+.person.ai p,.person.ai li{color:var(--mist)}
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.skill{background:rgba(27,18,54,.16);border-radius:14px;padding:14px 16px;display:grid;gap:4px}
+.skill strong{font-size:1rem}
+.skill span{font-size:.9rem;opacity:.92}
+@media (max-width:560px){.skills{grid-template-columns:1fr}}
 .person .role{font:700 .78rem/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;opacity:.85}
 .person h3{font-size:clamp(2rem,4vw,2.8rem)}
 .person ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
 .person li{display:flex;gap:10px;align-items:baseline}
-.person.shaun li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--night);transform:translateY(-2px)}
-.person.claude li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--berry);transform:translateY(-2px)}
+.person.team li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--night);transform:translateY(-2px)}
+.person.ai li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--sun);transform:translateY(-2px)}
 .together{display:grid;gap:10px;margin-bottom:22px}
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;counter-reset:s}
 .steps li{counter-increment:s;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px;display:grid;gap:8px;align-content:start}
@@ -312,7 +319,7 @@ p{margin:0}
       <a href="#websites">Websites</a>
       <a href="#marketplaces">Marketplaces</a>
       <a href="#fixes">Fixes</a>
-      <a href="#how">Ben + Claude</a>
+      <a href="#how">Design team</a>
       <a href="#faq">FAQ</a>
     </nav>
     <a class="btn btn-fox" href="#quote">Get a quote</a>
@@ -336,7 +343,7 @@ p{margin:0}
       <div class="creds">
         <span><i class="dot" style="background:var(--red)"></i>Websites since the dial-up days</span>
         <span><i class="dot" style="background:var(--sun)"></i>12+ platforms</span>
-        <span><i class="dot" style="background:var(--leaf)"></i>One team for site and marketplaces</span>
+        <span><i class="dot" style="background:var(--leaf)"></i>One in-house design team for site and marketplaces</span>
       </div>
     </div>
 
@@ -365,8 +372,8 @@ p{margin:0}
       <span class="big30" aria-hidden="true">30</span>
       <p class="eyebrow">Years on the web</p>
       <h2>We've built through every version of the internet.</h2>
-      <p class="lede">Ben built his first websites by hand when pages loaded line by line over a modem. Every platform since then, every marketplace, every change Google has made to how shops get found, he has worked through it. That's why we can pick up any site, on any system, and know what to do with it.</p>
-      <p class="lede">Today Ben works with Claude, an AI partner, on the heavy lifting. You get three decades of judgement, with the speed to list a whole catalogue in days, not months.</p>
+      <p class="lede">Our design team built their first websites by hand, when pages loaded line by line over a modem. Every platform since then, every marketplace, every change Google has made to how shops get found, they have designed, built and sold through it. That's why we can pick up any site, on any system, and know what to do with it.</p>
+      <p class="lede">That experience is what you pay for: knowing what makes a shop look trustworthy, what makes a product page sell, and what Google and the marketplaces will and won't accept. Today the latest AI tools take care of the legwork, so the team spends its time on design and getting it right.</p>
     </div>
     <ol class="timeline" aria-label="The web we've worked through">
       <li style="--c:var(--red)"><b>Mid 90s</b><strong>Hand-coded HTML</strong><p>Table layouts, dial-up, guestbooks. Learning how the web really works, from the code up.</p></li>
@@ -374,7 +381,7 @@ p{margin:0}
       <li style="--c:var(--sun)"><b>Late 2000s</b><strong>WordPress and social</strong><p>Sites the owner can edit themselves. Blogs, SEO and Facebook pages arrive.</p></li>
       <li style="--c:var(--leaf)"><b>2010s</b><strong>Shopify, Amazon and Etsy</strong><p>Hosted shop platforms, marketplace sellers, mobile-first design and Google Shopping feeds.</p></li>
       <li style="--c:var(--sky)"><b>2020s</b><strong>Everywhere at once</strong><p>One stock list feeding a website, eBay, Amazon, Etsy, TikTok Shop and Google, all kept in sync.</p></li>
-      <li style="--c:var(--berry)"><b>Now</b><strong>Ben + Claude</strong><p>Experience plus AI. Bigger jobs done faster, every piece still checked by a person.</p></li>
+      <li style="--c:var(--berry)"><b>Now</b><strong>Design-led, AI-assisted</strong><p>The same hands-on design team, with AI doing the repetitive jobs. Bigger projects done faster, every piece designed and checked by people.</p></li>
     </ol>
   </div>
 </section>
@@ -510,36 +517,39 @@ p{margin:0}
   </div>
 </section>
 
-<!-- SHAUN + CLAUDE -->
+<!-- DESIGN TEAM -->
 <section class="band night" id="how">
   <div class="wrap">
     <div class="head">
       <p class="eyebrow">Who you work with</p>
-      <h2>Ben and Claude. One person, one AI, 30 years of know-how.</h2>
-      <p class="lede">You deal with Ben from first chat to launch day. Claude takes on the big, repetitive work so the job gets done faster, and Ben checks every piece before it goes live.</p>
+      <h2>A real design team with 30 years behind it.</h2>
+      <p class="lede">Your project is designed, built and checked by our in-house design team, from the first chat to launch day and after. AI now does the legwork in the background, so the team can put its time into the design, the detail and the results.</p>
     </div>
     <div class="duo-grid">
-      <article class="person shaun">
-        <p class="role">The web designer</p>
-        <h3>Ben</h3>
-        <p>30 years building websites and online shops. Your one point of contact.</p>
-        <ul>
-          <li>Talks through what you sell and who buys it</li>
-          <li>Plans the platforms and how they link up</li>
-          <li>Designs the look and the customer journey</li>
-          <li>Checks and signs off everything before launch</li>
-        </ul>
+      <article class="person team">
+        <p class="role">The heart of every project</p>
+        <h3>The Design Team</h3>
+        <p>Designers and web builders who have made websites, online shops and printed brands since the 90s. You talk to the same people throughout.</p>
+        <div class="skills">
+          <div class="skill"><strong>Web design &amp; UX</strong><span>Layouts, colours and customer journeys that make people trust you and buy.</span></div>
+          <div class="skill"><strong>Shop builds &amp; development</strong><span>Themes, custom features, apps and integrations on every platform.</span></div>
+          <div class="skill"><strong>Marketplace know-how</strong><span>eBay, Amazon and Etsy rules, categories and listing formats learnt the hard way.</span></div>
+          <div class="skill"><strong>Product pages &amp; imagery</strong><span>Photos, mockups and page layouts that answer buyers' questions.</span></div>
+          <div class="skill"><strong>SEO &amp; Google Shopping</strong><span>Titles, feeds and Merchant Center set up so customers find you.</span></div>
+          <div class="skill"><strong>Branding &amp; print</strong><span>Logos and brand looks from a design and print business, so online matches offline.</span></div>
+        </div>
       </article>
-      <article class="person claude">
-        <p class="role" style="color:var(--berry)">The AI partner</p>
-        <h3 style="color:var(--berry)">Claude</h3>
-        <p>An AI model made by Anthropic, working alongside Ben on every project.</p>
+      <article class="person ai">
+        <p class="role" style="color:var(--sun)">Behind the scenes</p>
+        <h3>AI does the legwork</h3>
+        <p>We use the latest AI models as tools, the same way we use design software. They speed up the repetitive jobs; the design team decides and checks everything.</p>
         <ul>
-          <li>Writes product descriptions and SEO titles at scale</li>
-          <li>Builds bulk listing files for eBay, Amazon and Etsy</li>
-          <li>Works through feed errors and broken code line by line</li>
-          <li>Writes and tests custom features and integrations</li>
+          <li>First drafts of product descriptions and SEO titles</li>
+          <li>Building bulk listing files for big catalogues</li>
+          <li>Scanning feeds and code for errors</li>
+          <li>Checking and tidying product data</li>
         </ul>
+        <p><strong style="color:#fff">Nothing goes live without a person signing it off.</strong></p>
       </article>
     </div>
     <div class="together">
@@ -626,7 +636,7 @@ p{margin:0}
       <details open><summary>Can you work on a site someone else built?</summary><p>Yes. Most of our fix and listing work is on existing shops. We'll take a look first, tell you what we find, and only then quote.</p></details>
       <details><summary>Can you move my eBay shop to my own website?</summary><p>Yes. We bring your products, photos and descriptions across to Shopify, BigCommerce or WooCommerce, and keep your eBay shop running alongside it if you want both.</p></details>
       <details><summary>Will one stock list work across my site, eBay, Amazon and Etsy?</summary><p>Yes. We set up connector apps so an item sold on one channel comes off stock everywhere, and the orders land in one place.</p></details>
-      <details><summary>You use AI. Does that mean my site will look generic?</summary><p>No. Claude helps with the volume work, like writing hundreds of product descriptions or building listing files. The design, the decisions and the final check are Ben's, and nothing goes live until he's happy with it.</p></details>
+      <details><summary>Do you use AI? Will my site look generic?</summary><p>Your site is designed by people, not generated. We use the latest AI models for the legwork, like first drafts of hundreds of product descriptions, building bulk listing files and checking feeds for errors. The design, the decisions and the final check are all down to our design team, and nothing goes live until they're happy with it.</p></details>
       <details><summary>Google has suspended my Merchant Center account. Can you help?</summary><p>Yes. Suspensions for misrepresentation, missing policies or price mismatches are some of the most common jobs we do. We fix the cause on your site first, then request the review.</p></details>
       <details><summary>How much does it cost?</summary><p>Every job is different, so we give you a fixed price after a free look at what you need. No hourly surprises.</p></details>
       <details><summary>Do you look after sites after launch?</summary><p>Yes. Care plans cover updates, backups, fixes and new listings each month, or you can call on us whenever you need us.</p></details>
@@ -655,7 +665,7 @@ p{margin:0}
       </div>
     </div>
     <div class="foot-base">
-      <span>© 2026 Foxy Websites, part of DepthChargeDesign &amp; Print Ltd. Websites, marketplaces and fixes, by Ben + Claude.</span>
+      <span>© 2026 Foxy Websites, part of DepthChargeDesign &amp; Print Ltd. Websites, marketplaces and fixes, by our in-house design team.</span>
       <span>Sister company: <a href="https://foxyprinting.co.uk" target="_blank" rel="noopener">Foxy Printing</a></span>
     </div>
   </div>
