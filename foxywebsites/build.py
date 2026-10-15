@@ -76,7 +76,7 @@ PAGES = [
   dict(slug='shopify-websites', nav='Shopify', sub='Shops, themes, apps and channels', icon='shopify', group='web',
     c='var(--leaf)', logos=['shopify'],
     title='Shopify Web Design & Store Setup | Foxy Websites',
-    desc='Shopify web design, store setup, custom themes and apps from a UK design team with 30 years of experience. Fixed-price quotes, real people, Helmsley, North Yorkshire.',
+    desc='Shopify web design, store setup, custom themes and apps from a UK design team with 30 years of experience. Fixed-price quotes from real people.',
     eyebrow='Shopify websites', h1='Shopify shops that look good and <em>sell</em>.',
     lede='From a brand-new store to a full redesign, we set up Shopify properly: the theme, the product pages, payments, delivery and the sales channels that put your products on Google, Facebook and TikTok.',
     glance=['Store setup from scratch or a redesign','Custom theme sections and product pages','Payments, shipping, tax and apps','Google, Shop, Facebook and TikTok channels','Product personalisers with live previews'],
@@ -104,7 +104,7 @@ PAGES = [
   dict(slug='bigcommerce-websites', nav='BigCommerce', sub='Big catalogues and B2B', icon='bigcommerce', group='web',
     c='var(--sky)', logos=['bigcommerce'],
     title='BigCommerce Web Design & Development | Foxy Websites',
-    desc='BigCommerce store design, Stencil theme work, bulk product imports and multi-channel selling for larger catalogues and trade customers. UK design team, fixed-price quotes.',
+    desc='BigCommerce store design, Stencil theme work, bulk product imports and multi-channel selling for big catalogues and trade customers. Fixed-price quotes.',
     eyebrow='BigCommerce websites', h1='BigCommerce stores for <em>bigger</em> catalogues.',
     lede='BigCommerce handles large ranges, lots of variants and trade pricing well. We design and build the store, import your products in bulk and connect it to eBay, Amazon and Google.',
     glance=['Store build and Stencil theme design','Bulk product and category imports','Customer groups and trade price lists','eBay, Amazon and Google channels','Order and stock reporting'],
@@ -132,7 +132,7 @@ PAGES = [
   dict(slug='wordpress-woocommerce-websites', nav='WordPress & WooCommerce', sub='Sites and shops you can edit', icon='wordpress', group='web',
     c='var(--berry)', logos=['wordpress','woocommerce'],
     title='WordPress & WooCommerce Web Design | Foxy Websites',
-    desc='WordPress websites and WooCommerce shops designed and built by a UK team with 30 years of experience. Custom themes, security, backups and SEO. Fixed-price quotes.',
+    desc='WordPress websites and WooCommerce shops designed and built by a UK team with 30 years of experience. Custom themes, security, backups and SEO.',
     eyebrow='WordPress & WooCommerce', h1='WordPress sites and WooCommerce shops you can <em>run yourself</em>.',
     lede='Business websites, blogs and online shops on WordPress, designed to your brand, built to be fast and secure, and simple for you to update.',
     glance=['Custom WordPress themes and page layouts','WooCommerce shops and payments','Plugins set up properly, not piled up','Security, backups and updates','Blog and SEO structure'],
@@ -160,7 +160,7 @@ PAGES = [
   dict(slug='wix-squarespace-websites', nav='Wix & Squarespace', sub='Quick sites for local businesses', icon='wix', group='web',
     c='var(--fox)', logos=['wix','squarespace'],
     title='Wix & Squarespace Website Design | Foxy Websites',
-    desc='Professional Wix and Squarespace website design for trades, makers and local businesses. Bookings, forms, simple shops and Google Business Profile set up. Fixed-price quotes.',
+    desc='Professional Wix and Squarespace website design for trades, makers and local businesses. Bookings, forms, simple shops and Google Business Profile.',
     eyebrow='Wix & Squarespace', h1='Good-looking sites for <em>local businesses</em>, fast.',
     lede='When you need a professional website quickly and want to edit it yourself, Wix and Squarespace are a great choice. We design it, write it with you and get it found on Google.',
     glance=['Design and build from your content','Bookings, enquiry forms and simple shops','Google Business Profile set up','Domain and business email','Basic SEO and Google Search Console'],
@@ -188,7 +188,7 @@ PAGES = [
   dict(slug='magento-opencart-support', nav='Magento & OpenCart', sub='Support or a safe move off', icon='magento', group='web',
     c='var(--red)', logos=['magento','opencart'],
     title='Magento & OpenCart Support and Migration | Foxy Websites',
-    desc='Help with older Magento and OpenCart shops: fixes, updates and extension problems, or a safe move to Shopify or BigCommerce with your products, customers and Google rankings kept.',
+    desc='Help with older Magento and OpenCart shops: fixes, updates and extension problems, or a safe move to Shopify or BigCommerce with rankings kept.',
     eyebrow='Magento & OpenCart', h1='Older shop systems, <em>kept running</em> or moved safely.',
     lede='Magento and OpenCart shops can be costly to keep secure and up to date. We fix what\'s broken today, and when you\'re ready, move you to a modern platform without losing products, customers or rankings.',
     glance=['Fixes, updates and extension problems','Security clean-ups','Moves to Shopify or BigCommerce','Products, customers and orders carried over','301 redirects to protect Google rankings'],
@@ -216,7 +216,7 @@ PAGES = [
   dict(slug='custom-websites', nav='Hand-built websites', sub='Custom code, tools and integrations', icon='code', group='web',
     c='var(--sun)', logos=[],
     title='Custom Website Design & Development | Foxy Websites',
-    desc='Hand-built websites, landing pages, product designers, calculators and custom integrations from a UK design team. Fast, lightweight and built for your exact needs.',
+    desc='Hand-built websites, landing pages, product designers, calculators and custom integrations from a UK design team. Fast and built for your needs.',
     eyebrow='Hand-built websites', h1='Custom-coded sites when a platform <em>gets in the way</em>.',
     lede='Sometimes a platform is overkill, or can\'t do what you need. We hand-build fast websites, landing pages and custom tools like product designers, quote calculators and integrations.',
     glance=['Landing pages and one-page sites','Product designers with live previews','Quote and price calculators','Custom integrations and APIs','Hosting, SSL and speed tuning'],
@@ -243,8 +243,8 @@ PAGES = [
 
   dict(slug='ebay-shop-design', nav='eBay', sub='Shop design, templates and bulk listing', icon='ebay', group='market',
     c='var(--red)', logos=['ebay'],
-    title='eBay Shop Design, Listing Templates & Bulk Listing | Foxy Websites',
-    desc='eBay shop creation, store design, mobile-friendly listing templates and bulk listing by upload file. Shopify to eBay connectors and listing error fixes. UK design team.',
+    title='eBay Shop Design & Bulk Listing | Foxy Websites',
+    desc='eBay shop creation, store design, mobile-friendly listing templates and bulk listing. Shopify to eBay connectors and listing error fixes.',
     eyebrow='eBay shops', h1='eBay shops that look like a <em>proper brand</em>.',
     lede='From opening your eBay Store to thousands of live listings. We design the shop, build a listing template that works on phones, load your products in bulk and connect it all to your website.',
     glance=['eBay Store creation and setup','Shop logo, billboard and description','Mobile-friendly listing template','Bulk listing with item specifics','Shopify to eBay stock sync'],
@@ -271,8 +271,8 @@ PAGES = [
 
   dict(slug='amazon-seller-setup', nav='Amazon', sub='Seller Central, listings and connectors', icon='amazon', group='market',
     c='var(--sun)', logos=['amazon'],
-    title='Amazon Seller Setup & Product Listing Service | Foxy Websites',
-    desc='Amazon Seller Central setup, product listing with category templates and feeds, Shopify to Amazon connectors, A+ content and suppressed listing fixes. UK design team.',
+    title='Amazon Seller Setup & Listing Service | Foxy Websites',
+    desc='Amazon Seller Central setup, product listings built to Amazon\'s rules, Shopify to Amazon connectors, A+ content and suppressed listing fixes.',
     eyebrow='Amazon selling', h1='Amazon set up <em>right</em> the first time.',
     lede='Amazon is strict about how products are listed. We handle Seller Central, the listing files and the connectors, so your products go live without being suppressed.',
     glance=['Seller Central account setup','Listings built from Amazon\'s templates','Shopify and WooCommerce connectors','A+ content and Brand Store','Personalised products with Amazon Custom'],
@@ -300,7 +300,7 @@ PAGES = [
   dict(slug='etsy-shop-setup', nav='Etsy', sub='Shop setup, SEO and sync', icon='etsy', group='market',
     c='var(--fox)', logos=['etsy'],
     title='Etsy Shop Setup, Branding & Listing SEO | Foxy Websites',
-    desc='Etsy shop setup, banners and branding, listings with titles and all 13 tags written for Etsy search, personalisation options and Etsy to Shopify sync. UK design team.',
+    desc='Etsy shop setup, banners and branding, listings with titles and all 13 tags written for Etsy search, personalisation options and Shopify sync.',
     eyebrow='Etsy shops', h1='Etsy shops that <em>get found</em>.',
     lede='Etsy rewards good titles, tags and photos. We set up your shop, design the branding, write listings that match what buyers search for, and connect it to your own website.',
     glance=['Shop setup, policies and delivery','Banner, shop icon and About page','Titles and all 13 tags for Etsy search','Personalisation and variations','Etsy and Shopify sync'],
@@ -327,8 +327,8 @@ PAGES = [
 
   dict(slug='google-shopping-merchant-center', nav='Google Shopping', sub='Merchant Center, feeds and fixes', icon='google', group='market',
     c='var(--sky)', logos=['google','googleads','searchconsole'],
-    title='Google Shopping & Merchant Center Setup and Fixes | Foxy Websites',
-    desc='Google Merchant Center setup, product feeds, disapproval fixes and misrepresentation suspension help. Free listings and Shopping ads set up by a UK design team.',
+    title='Google Shopping & Merchant Center Fixes | Foxy Websites',
+    desc='Google Merchant Center setup, product feeds, disapproval fixes and misrepresentation suspension help. Free listings and Shopping ads set up.',
     eyebrow='Google Shopping', h1='Your products on Google, <em>approved</em> and showing.',
     lede='Shoppers compare products on Google before they buy. We set up Merchant Center, clean up your product feed, fix disapprovals and suspensions, and get you into free listings and Shopping ads.',
     glance=['Merchant Center setup and verification','Clean product feeds from your shop','Disapproval and warning fixes','Misrepresentation suspension help','Free listings and Shopping ads'],
@@ -355,7 +355,7 @@ PAGES = [
 
   dict(slug='social-shops-tiktok-facebook-instagram', nav='TikTok, Facebook & Instagram', sub='Social shops and more marketplaces', icon='tiktok', group='market',
     c='var(--leaf)', logos=['tiktok','facebook','instagram','onbuy'],
-    title='TikTok Shop, Facebook & Instagram Shop Setup | Foxy Websites',
+    title='TikTok Shop & Instagram Shop Setup | Foxy Websites',
     desc='TikTok Shop, Facebook and Instagram shop setup with your product catalogue synced from your website. Plus OnBuy and Google Business Profile. UK design team.',
     eyebrow='Social shops & more', h1='Sell where people <em>scroll</em>.',
     lede='TikTok Shop, Facebook and Instagram let people buy without leaving the app. We connect your catalogue, set up the shops and keep everything in sync with your website.',
@@ -383,8 +383,8 @@ PAGES = [
 
   dict(slug='website-repairs', nav='Website repairs', sub='Broken sites, hacks and errors', icon='wrench', group='fix',
     c='var(--red)', logos=['shopify','wordpress','woocommerce','bigcommerce','wix','squarespace'],
-    title='Website Repair & Fix Service: Broken, Hacked or Slow Sites | Foxy Websites',
-    desc='Website repairs for broken, hacked or slow sites on Shopify, WordPress, WooCommerce, BigCommerce, Wix and more. Checkout errors, SSL warnings and email problems fixed. UK team.',
+    title='Website Repairs: Broken, Hacked or Slow | Foxy Websites',
+    desc='Repairs for broken, hacked or slow sites on Shopify, WordPress, WooCommerce, BigCommerce, Wix and more. Checkout, SSL and email problems fixed.',
     eyebrow='Website repairs', h1='Broken website? <em>We\'ll fix it.</em>',
     lede='Send us the error message, a screenshot, or just "it\'s stopped working". We find the cause, fix it, and tell you in plain English what went wrong.',
     glance=['Site down or white screen','Checkout not taking payments','Hacked sites and malware','"Not secure" SSL warnings','Slow pages and email problems'],
@@ -411,8 +411,8 @@ PAGES = [
 
   dict(slug='website-migrations', nav='Platform moves', sub='eBay to Shopify, WooCommerce to Shopify...', icon='move', group='fix',
     c='var(--fox)', logos=['ebay','woocommerce','magento','shopify','bigcommerce'],
-    title='Website Migration Service: Move to Shopify or BigCommerce | Foxy Websites',
-    desc='Move your shop from eBay, WooCommerce, Magento, Wix or BigCommerce to Shopify or BigCommerce with products, customers, orders and Google rankings kept. UK design team.',
+    title='Website Migration to Shopify & More | Foxy Websites',
+    desc='Move your shop from eBay, WooCommerce, Magento or Wix to Shopify or BigCommerce with products, customers, orders and Google rankings kept.',
     eyebrow='Platform moves', h1='Move platforms <em>without losing</em> anything.',
     lede='eBay to Shopify, WooCommerce to Shopify, Magento to BigCommerce and more. We move your products, customers and orders, and keep your Google rankings with proper redirects.',
     glance=['Products, images and variants moved','Customers and order history carried over','301 redirects for every old URL','Test site before you switch','Launch day checks with you'],
@@ -439,8 +439,8 @@ PAGES = [
 
   dict(slug='product-listing-seo', nav='Product listing & SEO copy', sub='Bulk uploads, product pages and photos', icon='list', group='fix',
     c='var(--berry)', logos=['shopify','ebay','amazon','etsy','google'],
-    title='Product Listing, Bulk Upload & SEO Product Descriptions | Foxy Websites',
-    desc='Bulk product uploads, SEO product descriptions, product page design, photos and mockups for Shopify, eBay, Amazon, Etsy and Google Shopping. Written by a UK design team.',
+    title='Product Listing & SEO Descriptions | Foxy Websites',
+    desc='Bulk product uploads, SEO product descriptions, product page design, photos and mockups for Shopify, eBay, Amazon, Etsy and Google Shopping.',
     eyebrow='Product listing & SEO', h1='Hundreds of products, <em>listed properly</em>.',
     lede='Product listing is where most shops fall behind. We write, price and load your products in bulk, with SEO descriptions, clean data and images that sell, on your website and every marketplace.',
     glance=['Bulk uploads by CSV or feed','SEO product descriptions in UK English','Product page design','Photos, mockups and white-background images','Personalisation options'],
@@ -964,8 +964,8 @@ def home_page():
 {faq_block(faqs, 'Things people ask us.')}
 </main>
 {cta_band()}{footer()}'''
-    return head('Web Design & Online Shops in Helmsley, York | Foxy Websites',
-                'Foxy Websites designs, builds and fixes online shops on Shopify, BigCommerce and WordPress, and sets up eBay, Amazon, Etsy and Google Shopping. 30 years of experience, North Yorkshire.',
+    return head('Web Design & Online Shops, Helmsley York | Foxy Websites',
+                'We design, build and fix online shops on Shopify, BigCommerce and WordPress, and set up eBay, Amazon, Etsy and Google Shopping. 30 years\' experience.',
                 'index.html', [faq_ld(faqs)]) + body
 
 def team_page():
@@ -1065,7 +1065,7 @@ def team_page():
 </main>
 {cta_band()}{footer()}'''
     return head('Our Web Design Team: 30 Years of Experience | Foxy Websites',
-                'Meet the Foxy Websites design team in Helmsley, North Yorkshire: 30 years of web design, ecommerce, marketplace and print experience, with AI tools for the legwork.',
+                'Meet our design team in Helmsley, North Yorkshire: 30 years of web design, ecommerce, marketplace and print experience, with AI for the legwork.',
                 'design-team.html', [crumbs_ld([('Home', 'index.html'), ('Design team', 'design-team.html')]), faq_ld(faqs)]) + body
 
 def contact_page():
@@ -1131,7 +1131,7 @@ def contact_page():
 </main>
 {footer()}'''
     return head('Contact Us & Get a Website Quote | Foxy Websites',
-                'Get a fixed-price quote for a new website, eBay, Amazon or Etsy shop, Google Shopping or a website repair. Call 01439 771468 or send us your brief. Helmsley, North Yorkshire.',
+                'Get a fixed-price quote for a website, eBay, Amazon or Etsy shop, Google Shopping or a repair. Call 01439 771468 or send us your brief.',
                 'contact.html', [crumbs_ld([('Home', 'index.html'), ('Contact', 'contact.html')])]) + body
 
 def privacy_page():
