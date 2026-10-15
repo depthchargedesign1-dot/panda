@@ -8,7 +8,7 @@ Create these three policies. The **names must match exactly**, because the CSV f
 
 | Policy name (type exactly) | What to set |
 |---|---|
-| `FOXY Royal Mail 24` | **Postage.** Domestic service 1: Royal Mail Tracked 24 or 1st Class, £2.99 for the first item. Each additional item: **£0.00**, so a buyer who orders 4 masks pays postage once, like on the website. Service 2 (optional): Royal Mail Special Delivery Guaranteed, £12.99. Set the dispatch (handling) time you can keep to. Item location: Kirkbymoorside, YO62 6AR. |
+| `FOXY Royal Mail 24` | **Postage.** Domestic service 1: Royal Mail Tracked 24 or 1st Class, £2.99 for the first item. Each additional item: **£0.00**, so a buyer who orders 4 masks pays postage once, like on the website. Service 2 (optional): Royal Mail Special Delivery Guaranteed, £12.99. Set the dispatch (handling) time you can keep to. Item location: Helmsley, YO62 5DQ. |
 | `FOXY 30 Day Returns` | **Returns.** Accepted, within 30 days, buyer pays return postage. This is the same as the website's refund policy. Personalised items (made from the buyer's photo or name) can only be returned if faulty, and the listing text already says so. |
 | `FOXY Payment` | **Payment.** eBay's managed payments default; nothing else is needed. |
 
@@ -40,7 +40,7 @@ Notes from other sellers:
 
 Store description (918 characters):
 
-> Foxy Printing is a family print shop in Kirkbymoorside, North Yorkshire. We print everything to order in our own workshop: celebrity and personalised party face masks, novelty and personalised mugs, posters and word art prints, baby grows, cards and party printing.
+> Foxy Printing is a family print shop in Helmsley, North Yorkshire. We print everything to order in our own workshop: celebrity and personalised party face masks, novelty and personalised mugs, posters and word art prints, baby grows, cards and party printing.
 >
 > Our face masks are printed in full colour on thick 350gsm silk card at full A4 adult size. Choose Ready Cut (face shape and eye holes cut, elastic supplied) or DIY (printed only), on elastic or on a stick. Ideal for stag and hen dos, birthdays, leaving dos, photo booths and fancy dress.
 >

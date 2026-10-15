@@ -23,7 +23,7 @@ The free plan only allows a one-time upload of about 10 products and manages up 
 
 1. **Business policies in eBay first.** Do step 1 of `SHOP-SETUP.md` (`FOXY Royal Mail 24`, `FOXY 30 Day Returns`, `FOXY Payment`) and step 2 ("message to seller" on). CedCommerce reads the policies from eBay, so they have to exist first.
 2. **Install:** Shopify admin > Apps > search "CedCommerce eBay Integration" > Install. Approve the permissions.
-3. **Connect eBay:** choose **eBay UK (ebay.co.uk)**, log in to the Foxy eBay seller account in the eBay window and accept. Item location: Kirkbymoorside, YO62 6AR, United Kingdom.
+3. **Connect eBay:** choose **eBay UK (ebay.co.uk)**, log in to the Foxy eBay seller account in the eBay window and accept. Item location: Helmsley, YO62 5DQ, United Kingdom.
 4. **Import only the wave:** in the app's product import, choose **Import by filter > Tag = `ebay-wave1`**. Don't import everything.
 5. **Order settings:** turn on order sync (eBay orders come into Shopify), with inventory at 3 per listing (owner's rule: quantity 3). In the app's inventory or price rules, set a **fixed quantity of 3**, not Shopify stock.
 6. **Make two profiles (templates)** in the app:

@@ -53,9 +53,9 @@ Go through every area below in Seller Hub and My eBay > Account. For each settin
 
 | Area | Target |
 |---|---|
-| Business details (Account > Personal info) | Business seller. Business name **Foxy Printing**, trading address Kirkbymoorside YO62 6AR (the owner confirms the full address), a business email the owner chooses. eBay shows these to buyers by law, which is allowed. They don't go in listings. VAT number: **ASK** whether registered. |
+| Business details (Account > Personal info) | Business seller. Business name **Foxy Printing**, trading address **DepthChargeDesign & Print Ltd, Unit 1, Balmforth Business Park, Sawmill Lane, Helmsley, York YO62 5DQ** (the Shopify store's billing address; never the old Kirkbymoorside address), a business email the owner chooses. eBay shows these to buyers by law, which is allowed. They don't go in listings. VAT number: **ASK** whether registered. |
 | Payments and payouts | Bank account verified, payout schedule (**ASK**: daily or weekly), no holds or verification requests outstanding. Report any "action needed". |
-| Postage preferences | Item location Kirkbymoorside, YO62 6AR. Combined postage on: £0 for each extra item, matching `FOXY Royal Mail 24`. Dispatch time to match the policy. Royal Mail / Click & Drop link: report whether it's connected, and **ASK** before connecting. Domestic only for now (no eBay International Shipping until the owner says). |
+| Postage preferences | Item location Helmsley, YO62 5DQ. Combined postage on: £0 for each extra item, matching `FOXY Royal Mail 24`. Dispatch time to match the policy. Royal Mail / Click & Drop link: report whether it's connected, and **ASK** before connecting. Domestic only for now (no eBay International Shipping until the owner says). |
 | Business policies | Only the three FOXY policies are the defaults. Old policies: list them and **ASK** before deleting any. Returns: 30 days, buyer pays. Personalised items can be returned only if faulty, as stated in the listing. |
 | Buyer requirements / blocked buyers | Block buyers with unpaid item strikes (2 in 12 months) and buyers outside the postage area. Keep the rest at eBay's defaults. |
 | Communication | "Message to seller" (Personalise box) ON. Automatic replies/FAQs: add one FAQ, "How do I send my photo? Send it to us through eBay messages after you buy." No contact details in any reply. |
