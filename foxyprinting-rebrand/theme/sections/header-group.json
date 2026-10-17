@@ -1,0 +1,142 @@
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement": {
+      "type": "announcement-bar",
+      "blocks": {
+        "a1": {
+          "type": "announcement",
+          "settings": {
+            "text": "🚚 Free UK delivery on orders over £30"
+          }
+        },
+        "a2": {
+          "type": "announcement",
+          "settings": {
+            "text": "🎄 Christmas Eve boxes & name baubles are here — order early!"
+          }
+        },
+        "a3": {
+          "type": "announcement",
+          "settings": {
+            "text": "👀 See your personalisation live before you buy"
+          }
+        }
+      },
+      "block_order": [
+        "a1",
+        "a2",
+        "a3"
+      ],
+      "settings": {
+        "interval": 5
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "d1": {
+          "type": "department",
+          "settings": {
+            "menu_item": "Christmas",
+            "colour": "pink",
+            "highlight": true,
+            "promo_eyebrow": "Order by 18 Dec",
+            "promo_heading": "Christmas Eve boxes, baubles & matching jumpers",
+            "promo_button": "Shop Christmas",
+            "promo_image": "shopify://shop_images/foxy-mega-christmas.png",
+            "promo_link": "shopify://collections/new-christmas-eve-boxes"
+          }
+        },
+        "d2": {
+          "type": "department",
+          "settings": {
+            "menu_item": "Personalised Gifts",
+            "colour": "orange",
+            "promo_eyebrow": "New",
+            "promo_heading": "Acrylic photo blocks & LED night lights",
+            "promo_image": "shopify://shop_images/foxy-mega-personalised-gifts.png",
+            "promo_link": "shopify://collections/new-acrylic-photo-gifts"
+          }
+        },
+        "d3": {
+          "type": "department",
+          "settings": {
+            "menu_item": "Home & Drinkware",
+            "colour": "teal",
+            "promo_eyebrow": "Trending",
+            "promo_heading": "Glass can cups & 40oz tumblers with your name",
+            "promo_image": "shopify://shop_images/foxy-mega-drinkware.png",
+            "promo_link": "shopify://collections/new-glass-can-cups"
+          }
+        },
+        "d4": {
+          "type": "department",
+          "settings": {
+            "menu_item": "Business Printing",
+            "colour": "purple",
+            "promo_eyebrow": "For your business",
+            "promo_heading": "Stickers, labels & review stands",
+            "promo_image": "shopify://shop_images/foxy-mega-business.png",
+            "promo_link": "shopify://collections/business-cards"
+          }
+        },
+        "d5": {
+          "type": "department",
+          "settings": {
+            "menu_item": "Photo Gifts",
+            "colour": "teal",
+            "promo_eyebrow": "New range",
+            "promo_heading": "Photo slates, metal prints, cushions & tumblers",
+            "promo_button": "Shop photo gifts",
+            "promo_image": "shopify://shop_images/foxy-promo-photo-gifts.png",
+            "promo_link": "shopify://collections/personalised-photo-slates"
+          }
+        },
+        "d6": {
+          "type": "department",
+          "settings": {
+            "menu_item": "Football",
+            "colour": "yellow",
+            "promo_eyebrow": "For your team",
+            "promo_heading": "Team footballs, stadium flags & knitted bobble hats",
+            "promo_button": "Shop football",
+            "promo_image": "shopify://shop_images/foxy-promo-football.png",
+            "promo_link": "shopify://collections/personalised-football-merchandise"
+          }
+        },
+        "d7": {
+          "type": "department",
+          "settings": {
+            "menu_item": "Celebrity Masks",
+            "colour": "pink",
+            "promo_eyebrow": "Party favourite",
+            "promo_heading": "Celebrity face masks for parties, stag & hen dos",
+            "promo_button": "Shop masks",
+            "promo_image": "shopify://shop_images/foxy-mega-celebrity-masks.png",
+            "promo_link": "shopify://collections/all-facemasks"
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d7",
+        "d5",
+        "d6",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "menu": "foxy-mega-menu",
+        "logo": "shopify://shop_images/FoxyPrinting-lOGO-new-number-2026-orange-white-text.png",
+        "logo_width": 110
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}

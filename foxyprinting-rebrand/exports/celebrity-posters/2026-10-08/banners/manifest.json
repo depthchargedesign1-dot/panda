@@ -1,0 +1,296 @@
+{
+ "date": "2026-10-08",
+ "metafield": "foxy.header_image (file_reference)",
+ "builder": "tools/poster_banners.py",
+ "note": "Only the first 5 images in PICKS are used per banner (build count=5). No headline baked in: the theme overlays the collection title on desktop.",
+ "collections": [
+  {
+   "handle": "celebrity-posters",
+   "title": "Celebrity Posters",
+   "collection": "gid://shopify/Collection/690682167677",
+   "header_file": "gid://shopify/MediaImage/69884517220733",
+   "filename": "foxy-header-celebrity-posters.jpg",
+   "alt": "Celebrity Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-celebrity-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/TYSON_20FURY_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Cristiano_20Ronaldo_201_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/KOBE_20BRYANT_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/TaylorSwift.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/Eminem_48ce7a7a-f4d4-4eb9-9aba-fcf8bb89fa8d.jpg"
+   ]
+  },
+  {
+   "handle": "football-star-posters",
+   "title": "Football Star Posters",
+   "collection": "gid://shopify/Collection/690682298749",
+   "header_file": "gid://shopify/MediaImage/69884517384573",
+   "filename": "foxy-header-football-star-posters.jpg",
+   "alt": "Football Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-football-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Cristiano_20Ronaldo_201_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/KYLIAN_20MBAPPE_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/KENNY_20DALGLISH_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/HENRIK_20LARSSON_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/BOBBY_20MOORE_20__20PELE_20-_20Poster_20Only.jpg"
+   ]
+  },
+  {
+   "handle": "music-star-posters",
+   "title": "Music Star Posters",
+   "collection": "gid://shopify/Collection/690682200445",
+   "header_file": "gid://shopify/MediaImage/69884517515645",
+   "filename": "foxy-header-music-star-posters.jpg",
+   "alt": "Music Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-music-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/LANA_20DEL_20REY_20_1_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/TaylorSwift.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/Adele_06ce0487-a112-41d6-9326-cd836e9524d5.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/Eminem_48ce7a7a-f4d4-4eb9-9aba-fcf8bb89fa8d.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/CentralCee.jpg"
+   ]
+  },
+  {
+   "handle": "film-star-posters",
+   "title": "Film Star Posters",
+   "collection": "gid://shopify/Collection/690682233213",
+   "header_file": "gid://shopify/MediaImage/69884517351805",
+   "filename": "foxy-header-film-star-posters.jpg",
+   "alt": "Film Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-film-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Keanu_20Reeves_203_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Dylan_20O_Brien_202_20-_20POSTER_20ONLY_3659413c-fd2a-4ba6-87a3-9177f5fb0898.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/COLUMBO_PETER-Silver.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Terminator_2-Silver.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/David_Tennant-Black.jpg"
+   ]
+  },
+  {
+   "handle": "tv-star-posters",
+   "title": "TV Star Posters",
+   "collection": "gid://shopify/Collection/690682265981",
+   "header_file": "gid://shopify/MediaImage/69884517646717",
+   "filename": "foxy-header-tv-star-posters.jpg",
+   "alt": "TV Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-tv-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/TOM_20HARDY_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/VERA_20LYNN_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/STEPHEN_20MERCHANT_20RICKY_20GERVAIS_20AND_20KARL_20PILKINGTON_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/JEFFREY_20DEAN_20MORGAN_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/ANDREW_20LINCOLN_20__20NORMAN_20REEDUS_202_20-_20POSTER_20ONLY.jpg"
+   ]
+  },
+  {
+   "handle": "nfl-american-football-posters",
+   "title": "NFL & American Football Star Posters",
+   "collection": "gid://shopify/Collection/690682331517",
+   "header_file": "gid://shopify/MediaImage/69884517548413",
+   "filename": "foxy-header-nfl-american-football-posters.jpg",
+   "alt": "NFL & American Football Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-nfl-american-football-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/PEYTON_20MANNING_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/NICK_20FOLES_20_1_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Julio_20Jones_201_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/ODELL_20BECKHAM_20JR_20_1_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/RUSSELL_20WILSON_202_20-_20POSTER_20ONLY.jpg"
+   ]
+  },
+  {
+   "handle": "boxing-star-posters",
+   "title": "Boxing Star Posters",
+   "collection": "gid://shopify/Collection/690682364285",
+   "header_file": "gid://shopify/MediaImage/69884517187965",
+   "filename": "foxy-header-boxing-star-posters.jpg",
+   "alt": "Boxing Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-boxing-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/TYSON_20FURY_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/ROCKY_20MARCIANO_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/MUHAMMAD_20ALI_20__20GEORGE_20FOREMAN_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/NIGEL_20BENN_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/OleksandrUsyktopboxerAutographedPrintLandscape.jpg"
+   ]
+  },
+  {
+   "handle": "ufc-mma-wrestling-posters",
+   "title": "UFC, MMA & Wrestling Posters",
+   "collection": "gid://shopify/Collection/690682397053",
+   "header_file": "gid://shopify/MediaImage/69884517679485",
+   "filename": "foxy-header-ufc-mma-wrestling-posters.jpg",
+   "alt": "UFC, MMA & Wrestling Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-ufc-mma-wrestling-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/CONOR_20McGREGOR_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Israel_20Adesanya_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Michael_20Bisping_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Rose_20Namajunas_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/MaxHolloway.jpg"
+   ]
+  },
+  {
+   "handle": "darts-snooker-star-posters",
+   "title": "Darts & Snooker Star Posters",
+   "collection": "gid://shopify/Collection/690682429821",
+   "header_file": "gid://shopify/MediaImage/69884517286269",
+   "filename": "foxy-header-darts-snooker-star-posters.jpg",
+   "alt": "Darts & Snooker Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-darts-snooker-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/LukeLittlerworlddartschampion2026.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/JUDD_TRUMP_2_-_POSTER_ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/STEVE_DAVIS_-_POSTER_ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Michael_Van_Gerwen-Black.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/Gary_Anderson-Black.jpg"
+   ]
+  },
+  {
+   "handle": "cricket-star-posters",
+   "title": "Cricket Star Posters",
+   "collection": "gid://shopify/Collection/690682462589",
+   "header_file": "gid://shopify/MediaImage/69884517253501",
+   "filename": "foxy-header-cricket-star-posters.jpg",
+   "alt": "Cricket Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-cricket-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/JOE_20ROOT_20__20BEN_20STOKES_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/JAMES_20ANDERSON_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/VIRAT_20KOHLI_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/ANDREW_20FLINTOFF_202_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/SHANE_20WARNE-_20POSTER_20ONLY.jpg"
+   ]
+  },
+  {
+   "handle": "rugby-star-posters",
+   "title": "Rugby Star Posters",
+   "collection": "gid://shopify/Collection/690682495357",
+   "header_file": "gid://shopify/MediaImage/69884517581181",
+   "filename": "foxy-header-rugby-star-posters.jpg",
+   "alt": "Rugby Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-rugby-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/henrypollockengland.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/DAN_20CARTER_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/finnrussellscotland.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/DAN_20BIGGAR_201_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/marcussmithengland.jpg"
+   ]
+  },
+  {
+   "handle": "golf-star-posters",
+   "title": "Golf Star Posters",
+   "collection": "gid://shopify/Collection/690682528125",
+   "header_file": "gid://shopify/MediaImage/69884517417341",
+   "filename": "foxy-header-golf-star-posters.jpg",
+   "alt": "Golf Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-golf-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/JORDAN_20SPIETH_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/JUSTIN_20ROSE_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/JOHN_20DALY_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/LUKE_20DONALD_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/PHIL_20MICKELSON_20-_20POSTER_20ONLY.jpg"
+   ]
+  },
+  {
+   "handle": "tennis-star-posters",
+   "title": "Tennis Star Posters",
+   "collection": "gid://shopify/Collection/690682560893",
+   "header_file": "gid://shopify/MediaImage/69884517613949",
+   "filename": "foxy-header-tennis-star-posters.jpg",
+   "alt": "Tennis Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-tennis-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/RafaelNadalM626-BlackFrame__14994.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/NOVAK_20DJOKOVIC_20_1_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/TIM_20HENMAN_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/SteffiGrafM646-BlackFrame__54394.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/JOHN_20MCENROE_202_20-_20POSTER_20ONLY.jpg"
+   ]
+  },
+  {
+   "handle": "horse-racing-star-posters",
+   "title": "Horse Racing Star Posters",
+   "collection": "gid://shopify/Collection/690682593661",
+   "header_file": "gid://shopify/MediaImage/69884517450109",
+   "filename": "foxy-header-horse-racing-star-posters.jpg",
+   "alt": "Horse Racing Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-horse-racing-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/FRANKIE_20DETTORI_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/APMcCOY-BLACKFRAME__29558.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/RUBYWALSH-BLACKFRAME__07477.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/LESTER_20PIGGOTT_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/HAYLEY_20TURNER_202_20-_20POSTER_20ONLY.jpg"
+   ]
+  },
+  {
+   "handle": "f1-motorsport-star-posters",
+   "title": "F1 & Motorsport Star Posters",
+   "collection": "gid://shopify/Collection/690682626429",
+   "header_file": "gid://shopify/MediaImage/69884517319037",
+   "filename": "foxy-header-f1-motorsport-star-posters.jpg",
+   "alt": "F1 & Motorsport Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-f1-motorsport-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/AYRTON_20SENNA_20HITCHING_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/TOTO_20WOLFF_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/LandoNorrisF1DriverAutographedPrintLandscape.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/LewisHamiltonF1DriverAutographedPrintLandscape.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/GeorgeRussellF1DriverAutographedPrintLandscape.jpg"
+   ]
+  },
+  {
+   "handle": "athletics-olympic-star-posters",
+   "title": "Athletics & Olympic Star Posters",
+   "collection": "gid://shopify/Collection/690682724733",
+   "header_file": "gid://shopify/MediaImage/69884517122429",
+   "filename": "foxy-header-athletics-olympic-star-posters.jpg",
+   "alt": "Athletics & Olympic Star Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-athletics-olympic-star-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/MARK_20CAVENDISH_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/TOM_20DALEY_20-_20Poster_20Only.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/GERAINT_20THOMAS_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/UsainBolt.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/NadiaCoMAneci.jpg"
+   ]
+  },
+  {
+   "handle": "basketball-baseball-hockey-posters",
+   "title": "Basketball, Baseball & Ice Hockey Posters",
+   "collection": "gid://shopify/Collection/690682757501",
+   "header_file": "gid://shopify/MediaImage/69884517155197",
+   "filename": "foxy-header-basketball-baseball-hockey-posters.jpg",
+   "alt": "Basketball, Baseball & Ice Hockey Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-basketball-baseball-hockey-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/KOBE_20BRYANT_20_1_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/LARRY_20BIRD_202_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/products/KAWHI_20LEONARD_20_1_20-_20POSTER_20ONLY.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/AllenIversoncopy2-WhiteFrame__38951.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/Zdeno_Chara_M1257_-_Print_Only__48073.jpg"
+   ]
+  },
+  {
+   "handle": "icons-legends-posters",
+   "title": "Authors, Scientists & Icons Posters",
+   "collection": "gid://shopify/Collection/690682790269",
+   "header_file": "gid://shopify/MediaImage/69884517482877",
+   "filename": "foxy-header-icons-legends-posters.jpg",
+   "alt": "Authors, Scientists & Icons Posters banner",
+   "cdn": "https://cdn.shopify.com/s/files/1/1774/9115/files/foxy-header-icons-legends-posters.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/StephenKingM275-WhiteFrame__82023.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/ElonMusk-BlackFrame__61133.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/AgathaChristieM182-BlackFrame__74820.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/Stephen_Hawking_M452_-_Print_Only__30198.jpg",
+    "https://cdn.shopify.com/s/files/1/1774/9115/files/RichardFeynmanM449-BlackFrame__15489.jpg"
+   ]
+  }
+ ]
+}

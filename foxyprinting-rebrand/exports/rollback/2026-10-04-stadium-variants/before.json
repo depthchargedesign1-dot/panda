@@ -1,0 +1,388 @@
+{
+ "captured": "2026-10-04",
+ "notes": {
+  "descriptions": "Older 8: the only description change is removal of the trailing paragraph in removed_description_paragraph (it was the last block of descriptionHtml). To roll back, append it again. Old Trafford description not changed.",
+  "publications_before": "Older 8 published on Online Store, Buy Button, POS, Facebook & Instagram, Snapchat Ads, Inbox, Shop, Google & YouTube, Mobile App, Cdiscount. Old Trafford: not published anywhere."
+ },
+ "removed_description_paragraph": "<p><b>Please Note</b> – Not all options include a frame. We offer both print-only and framed choices — be sure to select a framed option if you would like your poster to arrive ready to hang.</p>",
+ "products": [
+  {
+   "id": "gid://shopify/Product/15959797989757",
+   "stadium": "Allianz Arena",
+   "status": "ACTIVE",
+   "tags": [
+    "Display Poster Print",
+    "DisplayWallArt",
+    "Football Poster Print",
+    "stadium-poster",
+    "third-party-name"
+   ],
+   "options": [
+    {
+     "id": "gid://shopify/ProductOption/18918741934461",
+     "name": "Title",
+     "values": [
+      {
+       "id": "gid://shopify/ProductOptionValue/15277341671805",
+       "name": "Default Title"
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/58393146425725",
+     "title": "Default Title",
+     "sku": "Display-AllianzArenaMunich",
+     "price": "6.99",
+     "taxable": true,
+     "inventoryPolicy": "DENY",
+     "tracked": true,
+     "requiresShipping": true
+    }
+   ],
+   "mm-google-shopping.mpn": {
+    "id": "gid://shopify/Metafield/203260562899325",
+    "value": "Display-AllianzArenaMunich",
+    "type": "single_line_text_field"
+   },
+   "media_count": 1
+  },
+  {
+   "id": "gid://shopify/Product/15959819813245",
+   "stadium": "Estadio Azteca",
+   "status": "ACTIVE",
+   "tags": [
+    "Display Poster Print",
+    "DisplayWallArt",
+    "Football Poster Print",
+    "stadium-poster",
+    "third-party-name"
+   ],
+   "options": [
+    {
+     "id": "gid://shopify/ProductOption/18918770180477",
+     "name": "Title",
+     "values": [
+      {
+       "id": "gid://shopify/ProductOptionValue/15277488832893",
+       "name": "Default Title"
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/58393255281021",
+     "title": "Default Title",
+     "sku": "Display-EstadioAzteca",
+     "price": "6.99",
+     "taxable": true,
+     "inventoryPolicy": "DENY",
+     "tracked": true,
+     "requiresShipping": true
+    }
+   ],
+   "mm-google-shopping.mpn": {
+    "id": "gid://shopify/Metafield/203260563259773",
+    "value": "Display-EstadioAzteca",
+    "type": "single_line_text_field"
+   },
+   "media_count": 1
+  },
+  {
+   "id": "gid://shopify/Product/15959828005245",
+   "stadium": "Santiago Bernabeu",
+   "status": "ACTIVE",
+   "tags": [
+    "Display Poster Print",
+    "DisplayWallArt",
+    "Football Poster Print",
+    "stadium-poster",
+    "third-party-name"
+   ],
+   "options": [
+    {
+     "id": "gid://shopify/ProductOption/18918778634621",
+     "name": "Title",
+     "values": [
+      {
+       "id": "gid://shopify/ProductOptionValue/15277510558077",
+       "name": "Default Title"
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/58393274810749",
+     "title": "Default Title",
+     "sku": "Display-SantiagoBernabeu",
+     "price": "6.99",
+     "taxable": true,
+     "inventoryPolicy": "DENY",
+     "tracked": true,
+     "requiresShipping": true
+    }
+   ],
+   "mm-google-shopping.mpn": {
+    "id": "gid://shopify/Metafield/203260563751293",
+    "value": "Display-SantiagoBernabeu",
+    "type": "single_line_text_field"
+   },
+   "media_count": 1
+  },
+  {
+   "id": "gid://shopify/Product/15959831019901",
+   "stadium": "Camp Nou",
+   "status": "ACTIVE",
+   "tags": [
+    "Display Poster Print",
+    "DisplayWallArt",
+    "Football Poster Print",
+    "stadium-poster",
+    "third-party-name"
+   ],
+   "options": [
+    {
+     "id": "gid://shopify/ProductOption/18918781911421",
+     "name": "Title",
+     "values": [
+      {
+       "id": "gid://shopify/ProductOptionValue/15277546307965",
+       "name": "Default Title"
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/58393279529341",
+     "title": "Default Title",
+     "sku": "Display-CampNou",
+     "price": "6.99",
+     "taxable": true,
+     "inventoryPolicy": "DENY",
+     "tracked": true,
+     "requiresShipping": true
+    }
+   ],
+   "mm-google-shopping.mpn": {
+    "id": "gid://shopify/Metafield/203260564013437",
+    "value": "Display-CampNou",
+    "type": "single_line_text_field"
+   },
+   "media_count": 1
+  },
+  {
+   "id": "gid://shopify/Product/15959833149821",
+   "stadium": "La Bombonera",
+   "status": "ACTIVE",
+   "tags": [
+    "Display Poster Print",
+    "DisplayWallArt",
+    "Football Poster Print",
+    "stadium-poster",
+    "third-party-name"
+   ],
+   "options": [
+    {
+     "id": "gid://shopify/ProductOption/18918784205181",
+     "name": "Title",
+     "values": [
+      {
+       "id": "gid://shopify/ProductOptionValue/15277552894333",
+       "name": "Default Title"
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/58393285820797",
+     "title": "Default Title",
+     "sku": "Display-LaBombonera",
+     "price": "6.99",
+     "taxable": true,
+     "inventoryPolicy": "DENY",
+     "tracked": true,
+     "requiresShipping": true
+    }
+   ],
+   "mm-google-shopping.mpn": {
+    "id": "gid://shopify/Metafield/203260564341117",
+    "value": "Display-LaBombonera",
+    "type": "single_line_text_field"
+   },
+   "media_count": 1
+  },
+  {
+   "id": "gid://shopify/Product/15959835902333",
+   "stadium": "Maracana",
+   "status": "ACTIVE",
+   "tags": [
+    "Display Poster Print",
+    "DisplayWallArt",
+    "Football Poster Print",
+    "stadium-poster",
+    "third-party-name"
+   ],
+   "options": [
+    {
+     "id": "gid://shopify/ProductOption/18918787449213",
+     "name": "Title",
+     "values": [
+      {
+       "id": "gid://shopify/ProductOptionValue/15277563085181",
+       "name": "Default Title"
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/58393295520125",
+     "title": "Default Title",
+     "sku": "Display-Maracana",
+     "price": "6.99",
+     "taxable": true,
+     "inventoryPolicy": "DENY",
+     "tracked": true,
+     "requiresShipping": true
+    }
+   ],
+   "mm-google-shopping.mpn": {
+    "id": "gid://shopify/Metafield/203260564537725",
+    "value": "Display-Maracana",
+    "type": "single_line_text_field"
+   },
+   "media_count": 1
+  },
+  {
+   "id": "gid://shopify/Product/15959840457085",
+   "stadium": "San Siro",
+   "status": "ACTIVE",
+   "tags": [
+    "Display Poster Print",
+    "DisplayWallArt",
+    "Football Poster Print",
+    "stadium-poster",
+    "third-party-name"
+   ],
+   "options": [
+    {
+     "id": "gid://shopify/ProductOption/18918792855933",
+     "name": "Title",
+     "values": [
+      {
+       "id": "gid://shopify/ProductOptionValue/15277587399037",
+       "name": "Default Title"
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/58393323110781",
+     "title": "Default Title",
+     "sku": "Display-SanSiro",
+     "price": "6.99",
+     "taxable": true,
+     "inventoryPolicy": "DENY",
+     "tracked": true,
+     "requiresShipping": true
+    }
+   ],
+   "mm-google-shopping.mpn": {
+    "id": "gid://shopify/Metafield/203260565193085",
+    "value": "Display-SanSiro",
+    "type": "single_line_text_field"
+   },
+   "media_count": 1
+  },
+  {
+   "id": "gid://shopify/Product/15959844389245",
+   "stadium": "Wembley",
+   "status": "ACTIVE",
+   "tags": [
+    "Display Poster Print",
+    "DisplayWallArt",
+    "Football Poster Print",
+    "stadium-poster",
+    "third-party-name"
+   ],
+   "options": [
+    {
+     "id": "gid://shopify/ProductOption/18918797541757",
+     "name": "Title",
+     "values": [
+      {
+       "id": "gid://shopify/ProductOptionValue/15277602144637",
+       "name": "Default Title"
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/58393341886845",
+     "title": "Default Title",
+     "sku": "Display-Wembley",
+     "price": "6.99",
+     "taxable": true,
+     "inventoryPolicy": "DENY",
+     "tracked": true,
+     "requiresShipping": true
+    }
+   ],
+   "mm-google-shopping.mpn": {
+    "id": "gid://shopify/Metafield/203260565684605",
+    "value": "Display-Wembley",
+    "type": "single_line_text_field"
+   },
+   "media_count": 1
+  },
+  {
+   "id": "gid://shopify/Product/16058970866045",
+   "stadium": "Old Trafford",
+   "status": "DRAFT",
+   "tags": [
+    "Display Poster Print",
+    "DisplayWallArt",
+    "Football Poster Print",
+    "stadium-poster",
+    "third-party-name"
+   ],
+   "options": [
+    {
+     "id": "gid://shopify/ProductOption/19039098503549",
+     "name": "Title",
+     "values": [
+      {
+       "id": "gid://shopify/ProductOptionValue/15664276504957",
+       "name": "Default Title"
+      }
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/58817642037629",
+     "title": "Default Title",
+     "sku": "Display-OldTrafford",
+     "price": "6.99",
+     "taxable": true,
+     "inventoryPolicy": "CONTINUE",
+     "tracked": false,
+     "requiresShipping": true
+    }
+   ],
+   "mm-google-shopping.mpn": {
+    "id": "gid://shopify/Metafield/203260572434813",
+    "value": "Display-OldTrafford",
+    "type": "single_line_text_field"
+   },
+   "media_count": 1
+  }
+ ]
+}

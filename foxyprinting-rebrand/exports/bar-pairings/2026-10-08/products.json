@@ -1,0 +1,2772 @@
+[
+ {
+  "key": "club_coaster",
+  "product": {
+   "title": "Personalised Club Colours Coaster – Your Club Badge & Team Name – Matches Our Club Bar Mats",
+   "handle": "personalised-club-colours-coaster",
+   "vendor": "Foxy Printing",
+   "productType": "Coasters",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-coaster-2026",
+    "bar-pairings-2026-10-08",
+    "club coaster",
+    "clubhouse",
+    "drinks-coaster-2026",
+    "football club gift",
+    "football-coaster-2026",
+    "foxy-new-2026",
+    "home bar",
+    "io-football",
+    "io-home-bar",
+    "machine-sublimation",
+    "personalised",
+    "range-home-bar",
+    "team colours"
+   ],
+   "seo": {
+    "title": "Personalised Club Colours Coaster | Foxy Printing",
+    "description": "A personalised club colours coaster with your own badge and team name, in 17 colourways to match our club bar mats. Cork-backed and printed in the UK."
+   },
+   "descriptionHtml": "<p>A personalised club colours coaster is the little finishing touch for any clubhouse bar, supporters’ lounge or home bar where the team comes first. Pick your club’s colours, upload your badge and add the team name, and every pint has its own spot to land on.</p>\n<h2>Personalised club colours coaster with your badge</h2>\n<p>Choose from 17 team colourways, from red and white stripes to claret and blue, then upload your club badge and type the club or team name. You can change the small ‘Welcome to’ line and add the year the club was formed, or leave those boxes blank and we keep the design as shown. The live preview shows it as you type. We print exactly what you enter, so please check names and spelling in the live preview before you order. Please only upload badges your club has the right to use.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Designed to match our personalised club bar mats, in the same 17 team colours</li>\n<li>Your own badge printed in the white circle, so it works for any football, rugby, cricket or darts club</li>\n<li>Bright glossy finish with a cork back that protects the bar top or table</li>\n<li>Dye-sublimation print, so the colours are part of the surface rather than a sticker</li>\n<li>Handy for raffles, presentation nights and thank-you gifts for volunteers</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Square coaster, 90 x 90 mm</li>\n<li>Cork-backed MDF with a bright glossy finish</li>\n<li>Print: dye-sublimation, full colour</li>\n<li>Sold as a single coaster</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Pair it with a club bar mat and a personalised club colours pint glass and the clubhouse bar is ready for match day.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Barware > Coasters"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-SUB-PCCC-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "photo"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Club or team name\", \"Club badge upload\", \"Welcome line (optional)\", \"Est. year (optional)\"]"
+    }
+   ],
+   "productOptions": [
+    {
+     "name": "Team colours",
+     "values": [
+      {
+       "name": "Red & White"
+      },
+      {
+       "name": "Red & White Stripes"
+      },
+      {
+       "name": "Blue & White"
+      },
+      {
+       "name": "Blue & White Stripes"
+      },
+      {
+       "name": "Black & White Stripes"
+      },
+      {
+       "name": "Green & White"
+      },
+      {
+       "name": "Green & White Hoops"
+      },
+      {
+       "name": "Sky Blue & White"
+      },
+      {
+       "name": "Navy & White"
+      },
+      {
+       "name": "Black & Orange"
+      },
+      {
+       "name": "Black & Yellow"
+      },
+      {
+       "name": "Yellow & Black"
+      },
+      {
+       "name": "Blue & Yellow"
+      },
+      {
+       "name": "Blue & Red"
+      },
+      {
+       "name": "Green & Yellow"
+      },
+      {
+       "name": "Yellow & Red"
+      },
+      {
+       "name": "Claret & Blue"
+      }
+     ]
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PCCC-01",
+    "shape": "coaster",
+    "colour": "Red & White",
+    "colour_key": "red_white",
+    "gcolour": "Red/White",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-01 - 90x90mm - Red and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-02",
+    "shape": "coaster",
+    "colour": "Red & White Stripes",
+    "colour_key": "red_white_stripes",
+    "gcolour": "Red/White",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-02 - 90x90mm - Red and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-03",
+    "shape": "coaster",
+    "colour": "Blue & White",
+    "colour_key": "blue_white",
+    "gcolour": "Blue/White",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-03 - 90x90mm - Blue and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-04",
+    "shape": "coaster",
+    "colour": "Blue & White Stripes",
+    "colour_key": "blue_white_stripes",
+    "gcolour": "Blue/White",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-04 - 90x90mm - Blue and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-05",
+    "shape": "coaster",
+    "colour": "Black & White Stripes",
+    "colour_key": "black_white_stripes",
+    "gcolour": "Black/White",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-05 - 90x90mm - Black and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-06",
+    "shape": "coaster",
+    "colour": "Green & White",
+    "colour_key": "green_white",
+    "gcolour": "Green/White",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-06 - 90x90mm - Green and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-07",
+    "shape": "coaster",
+    "colour": "Green & White Hoops",
+    "colour_key": "green_white_hoops",
+    "gcolour": "Green/White",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-07 - 90x90mm - Green and White Hoops - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-08",
+    "shape": "coaster",
+    "colour": "Sky Blue & White",
+    "colour_key": "sky_blue_white",
+    "gcolour": "Blue/White",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-08 - 90x90mm - Sky Blue and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-09",
+    "shape": "coaster",
+    "colour": "Navy & White",
+    "colour_key": "navy_white",
+    "gcolour": "Navy/White",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-09 - 90x90mm - Navy and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-10",
+    "shape": "coaster",
+    "colour": "Black & Orange",
+    "colour_key": "black_orange",
+    "gcolour": "Orange/Black",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-10 - 90x90mm - Black and Orange - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-11",
+    "shape": "coaster",
+    "colour": "Black & Yellow",
+    "colour_key": "black_yellow",
+    "gcolour": "Black/Yellow",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-11 - 90x90mm - Black and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-12",
+    "shape": "coaster",
+    "colour": "Yellow & Black",
+    "colour_key": "yellow_black",
+    "gcolour": "Yellow/Black",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-12 - 90x90mm - Yellow and Black - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-13",
+    "shape": "coaster",
+    "colour": "Blue & Yellow",
+    "colour_key": "blue_yellow",
+    "gcolour": "Blue/Yellow",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-13 - 90x90mm - Blue and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-14",
+    "shape": "coaster",
+    "colour": "Blue & Red",
+    "colour_key": "blue_red",
+    "gcolour": "Blue/Red",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-14 - 90x90mm - Blue and Red - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-15",
+    "shape": "coaster",
+    "colour": "Green & Yellow",
+    "colour_key": "green_yellow",
+    "gcolour": "Green/Yellow",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-15 - 90x90mm - Green and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-16",
+    "shape": "coaster",
+    "colour": "Yellow & Red",
+    "colour_key": "yellow_red",
+    "gcolour": "Yellow/Red",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-16 - 90x90mm - Yellow and Red - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCC-17",
+    "shape": "coaster",
+    "colour": "Claret & Blue",
+    "colour_key": "claret_blue",
+    "gcolour": "Claret/Blue",
+    "price": "3.99",
+    "print": "FOXY-SUB-PCCC-17 - 90x90mm - Claret and Blue - PRINT"
+   }
+  ],
+  "kind": "coaster"
+ },
+ {
+  "key": "club_pint",
+  "product": {
+   "title": "Personalised Club Colours Pint Glass – Your Club Badge & Team Name – 17 Team Colours",
+   "handle": "personalised-club-colours-pint-glass",
+   "vendor": "Foxy Printing",
+   "productType": "Personalised Glassware",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-pairings-2026-10-08",
+    "beer glass",
+    "club pint glass",
+    "clubhouse",
+    "dept-home-drinkware",
+    "football club gift",
+    "foxy-new-2026",
+    "home bar",
+    "io-football",
+    "io-home-bar",
+    "machine-uvdtf",
+    "personalised",
+    "pint glass",
+    "range-glassware",
+    "range-home-bar",
+    "team colours"
+   ],
+   "seo": {
+    "title": "Personalised Club Colours Pint Glass | Foxy Printing",
+    "description": "A personalised club colours pint glass with your own badge and team name in full colour. 17 colourways to match our club bar mats, printed in the UK."
+   },
+   "descriptionHtml": "<p>This personalised club colours pint glass puts your own badge and team name on a proper 20oz pint, in the colours you wear every Saturday. It’s a great one for players, coaches, committee members and the fans who never miss a game.</p>\n<h2>A personalised club colours pint glass for your team</h2>\n<p>Choose your team colours from the 17 options, upload your club badge and type the club or team name. The ‘Welcome to’ line and the year the club was formed are optional, so leave them blank to keep the design as shown. Check everything in the live preview first. We print exactly what you enter, so please check names and spelling in the live preview before you order. Please only upload badges your club has the right to use.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Printed in full colour with UV DTF, so the badge keeps its real colours instead of a plain etched outline</li>\n<li>The same 17 team colourways as our personalised club bar mats and coasters</li>\n<li>A 20oz nonic pint that suits lager, bitter or cider</li>\n<li>Lovely as a player of the season prize, a thank-you for the coach or a birthday gift for a lifelong fan</li>\n<li>Order one for every player and the whole squad gets a matching glass</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Glass: 20oz nonic pint glass</li>\n<li>Print: full-colour UV DTF on the outside of the glass, kept 10mm below the rim</li>\n<li>Care: hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle</li>\n<li>Made to order in our North Yorkshire workshop</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Add a matching club colours coaster and bar mat, and the clubhouse bar looks like it was kitted out by the club shop.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Beer Glasses"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-UVDTF-PCCPG-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "drinkware"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Club or team name\", \"Club badge upload\", \"Welcome line (optional)\", \"Est. year (optional)\"]"
+    }
+   ],
+   "productOptions": [
+    {
+     "name": "Team colours",
+     "values": [
+      {
+       "name": "Red & White"
+      },
+      {
+       "name": "Red & White Stripes"
+      },
+      {
+       "name": "Blue & White"
+      },
+      {
+       "name": "Blue & White Stripes"
+      },
+      {
+       "name": "Black & White Stripes"
+      },
+      {
+       "name": "Green & White"
+      },
+      {
+       "name": "Green & White Hoops"
+      },
+      {
+       "name": "Sky Blue & White"
+      },
+      {
+       "name": "Navy & White"
+      },
+      {
+       "name": "Black & Orange"
+      },
+      {
+       "name": "Black & Yellow"
+      },
+      {
+       "name": "Yellow & Black"
+      },
+      {
+       "name": "Blue & Yellow"
+      },
+      {
+       "name": "Blue & Red"
+      },
+      {
+       "name": "Green & Yellow"
+      },
+      {
+       "name": "Yellow & Red"
+      },
+      {
+       "name": "Claret & Blue"
+      }
+     ]
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PCCPG-01",
+    "shape": "pint",
+    "colour": "Red & White",
+    "colour_key": "red_white",
+    "gcolour": "Red/White",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-01 - transfer 70x90mm - Red and White - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-02",
+    "shape": "pint",
+    "colour": "Red & White Stripes",
+    "colour_key": "red_white_stripes",
+    "gcolour": "Red/White",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-02 - transfer 70x90mm - Red and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-03",
+    "shape": "pint",
+    "colour": "Blue & White",
+    "colour_key": "blue_white",
+    "gcolour": "Blue/White",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-03 - transfer 70x90mm - Blue and White - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-04",
+    "shape": "pint",
+    "colour": "Blue & White Stripes",
+    "colour_key": "blue_white_stripes",
+    "gcolour": "Blue/White",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-04 - transfer 70x90mm - Blue and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-05",
+    "shape": "pint",
+    "colour": "Black & White Stripes",
+    "colour_key": "black_white_stripes",
+    "gcolour": "Black/White",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-05 - transfer 70x90mm - Black and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-06",
+    "shape": "pint",
+    "colour": "Green & White",
+    "colour_key": "green_white",
+    "gcolour": "Green/White",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-06 - transfer 70x90mm - Green and White - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-07",
+    "shape": "pint",
+    "colour": "Green & White Hoops",
+    "colour_key": "green_white_hoops",
+    "gcolour": "Green/White",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-07 - transfer 70x90mm - Green and White Hoops - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-08",
+    "shape": "pint",
+    "colour": "Sky Blue & White",
+    "colour_key": "sky_blue_white",
+    "gcolour": "Blue/White",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-08 - transfer 70x90mm - Sky Blue and White - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-09",
+    "shape": "pint",
+    "colour": "Navy & White",
+    "colour_key": "navy_white",
+    "gcolour": "Navy/White",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-09 - transfer 70x90mm - Navy and White - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-10",
+    "shape": "pint",
+    "colour": "Black & Orange",
+    "colour_key": "black_orange",
+    "gcolour": "Orange/Black",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-10 - transfer 70x90mm - Black and Orange - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-11",
+    "shape": "pint",
+    "colour": "Black & Yellow",
+    "colour_key": "black_yellow",
+    "gcolour": "Black/Yellow",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-11 - transfer 70x90mm - Black and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-12",
+    "shape": "pint",
+    "colour": "Yellow & Black",
+    "colour_key": "yellow_black",
+    "gcolour": "Yellow/Black",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-12 - transfer 70x90mm - Yellow and Black - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-13",
+    "shape": "pint",
+    "colour": "Blue & Yellow",
+    "colour_key": "blue_yellow",
+    "gcolour": "Blue/Yellow",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-13 - transfer 70x90mm - Blue and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-14",
+    "shape": "pint",
+    "colour": "Blue & Red",
+    "colour_key": "blue_red",
+    "gcolour": "Blue/Red",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-14 - transfer 70x90mm - Blue and Red - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-15",
+    "shape": "pint",
+    "colour": "Green & Yellow",
+    "colour_key": "green_yellow",
+    "gcolour": "Green/Yellow",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-15 - transfer 70x90mm - Green and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-16",
+    "shape": "pint",
+    "colour": "Yellow & Red",
+    "colour_key": "yellow_red",
+    "gcolour": "Yellow/Red",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-16 - transfer 70x90mm - Yellow and Red - PRINT"
+   },
+   {
+    "sku": "FOXY-UVDTF-PCCPG-17",
+    "shape": "pint",
+    "colour": "Claret & Blue",
+    "colour_key": "claret_blue",
+    "gcolour": "Claret/Blue",
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PCCPG-17 - transfer 70x90mm - Claret and Blue - PRINT"
+   }
+  ],
+  "kind": "pint"
+ },
+ {
+  "key": "rustic_pint",
+  "product": {
+   "title": "Personalised Home Bar Pint Glass – Rustic Established Design – Your Bar Name & Year",
+   "handle": "personalised-home-bar-pint-glass-rustic-established",
+   "vendor": "Foxy Printing",
+   "productType": "Personalised Glassware",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-pairings-2026-10-08",
+    "beer glass",
+    "dept-home-drinkware",
+    "established sign",
+    "foxy-new-2026",
+    "gift for dad",
+    "home bar",
+    "home bar pint glass",
+    "io-home-bar",
+    "machine-uvdtf",
+    "man cave",
+    "personalised",
+    "pint glass",
+    "range-glassware",
+    "range-home-bar",
+    "rustic bar"
+   ],
+   "seo": {
+    "title": "Personalised Home Bar Pint Glass – Rustic | Foxy Printing",
+    "description": "A personalised home bar pint glass in our rustic Established design – add your bar name and year. Full-colour print on a 20oz pint, made in the UK."
+   },
+   "descriptionHtml": "<p>A personalised home bar pint glass is the easiest way to make the shed bar, the garage bar or the corner of the kitchen feel like the local. This one wears our rustic Established design: warm wood tones, gold frame lines and your bar name front and centre.</p>\n<h2>Personalised home bar pint glass with your bar name</h2>\n<p>Type in your bar name and the year it opened. We print ‘Welcome to’ above the name, and you can change that line if you’d rather say something else. The live preview shows your wording on the design before you add it to the basket. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Full-colour UV DTF print, so the wood-look panel and gold detail come out in proper colour</li>\n<li>Matches our Rustic Established and Vintage Wood bar mat runners</li>\n<li>A 20oz nonic pint, the classic British pub shape</li>\n<li>Good for Father’s Day, a housewarming or the day the home bar finally opens</li>\n<li>Made to order, so every glass carries your own bar name</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Glass: 20oz nonic pint glass</li>\n<li>Print: full-colour UV DTF on the outside of the glass, kept 10mm below the rim</li>\n<li>Care: hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle</li>\n<li>Made to order in our North Yorkshire workshop</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Make a set for the regulars, or pair it with the matching rustic home bar sign for over the bar.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Beer Glasses"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-UVDTF-PRHBPG-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "drinkware"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\", \"Welcome line (optional)\", \"Est. year\"]"
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PRHBPG-01",
+    "shape": "pint",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PRHBPG-01 - transfer 70x90mm - PRINT"
+   }
+  ],
+  "kind": "pint"
+ },
+ {
+  "key": "man_cave_pint",
+  "product": {
+   "title": "Personalised Man Cave Pint Glass – Gold & Charcoal Welcome Design – Your Name",
+   "handle": "personalised-man-cave-pint-glass",
+   "vendor": "Foxy Printing",
+   "productType": "Personalised Glassware",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-pairings-2026-10-08",
+    "beer gift",
+    "beer glass",
+    "dept-home-drinkware",
+    "foxy-new-2026",
+    "gift for dad",
+    "gift for him",
+    "home bar",
+    "io-home-bar",
+    "machine-uvdtf",
+    "man cave",
+    "man cave gift",
+    "personalised",
+    "pint glass",
+    "range-glassware",
+    "range-home-bar"
+   ],
+   "seo": {
+    "title": "Personalised Man Cave Pint Glass | Foxy Printing",
+    "description": "A personalised man cave pint glass with his name on our gold and charcoal Welcome design. Full-colour print on a 20oz pint glass, made to order in the UK."
+   },
+   "descriptionHtml": "<p>Every man cave needs its own glassware, and a personalised man cave pint glass with his name on it is the one nobody else is allowed to borrow. It carries the gold stripes and charcoal background of our Man Cave Welcome bar mat.</p>\n<h2>Personalised man cave pint glass with his name</h2>\n<p>Add a name – Steve’s, Dad’s, Grandad’s or a nickname – and it’s printed in gold above the words MAN CAVE. You can add the year the cave was established too, or leave it blank. Use the live preview to see the layout. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Charcoal, cream and gold design printed in full colour with UV DTF</li>\n<li>Pairs with our Man Cave Welcome bar mat runner and the Name Man Cave mat</li>\n<li>Generous 20oz nonic pint for lager, ale or a pint of cider</li>\n<li>A gift that suits birthdays, Father’s Day and Christmas stockings alike</li>\n<li>Printed in our own workshop, not sent off to a factory</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Glass: 20oz nonic pint glass</li>\n<li>Print: full-colour UV DTF on the outside of the glass, kept 10mm below the rim</li>\n<li>Care: hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle</li>\n<li>Made to order in our North Yorkshire workshop</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Team it with the My Bar My Rules whisky tumbler for the man who likes a dram after his pint.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Beer Glasses"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-UVDTF-PMCPG-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "drinkware"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Name\", \"Est. year (optional)\"]"
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PMCPG-01",
+    "shape": "pint",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PMCPG-01 - transfer 70x90mm - PRINT"
+   }
+  ],
+  "kind": "pint"
+ },
+ {
+  "key": "beer_pint",
+  "product": {
+   "title": "Personalised Beer O’Clock Pint Glass – Retro Orange Design – Your Bar Name",
+   "handle": "personalised-beer-oclock-pint-glass",
+   "vendor": "Foxy Printing",
+   "productType": "Personalised Glassware",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-pairings-2026-10-08",
+    "beer glass",
+    "beer lover gift",
+    "beer o'clock",
+    "dept-home-drinkware",
+    "foxy-new-2026",
+    "funny pint glass",
+    "garden bar",
+    "gift for him",
+    "home bar",
+    "io-home-bar",
+    "machine-uvdtf",
+    "personalised",
+    "pint glass",
+    "range-glassware",
+    "range-home-bar"
+   ],
+   "seo": {
+    "title": "Personalised Beer O’Clock Pint Glass | Foxy Printing",
+    "description": "It’s beer o’clock somewhere. A personalised pint glass with a retro orange Beer O’Clock design and your bar name, printed in full colour in the UK."
+   },
+   "descriptionHtml": "<p>A personalised Beer O’Clock pint glass is for the person who checks the time at four o’clock on a Friday and decides that’s close enough. Bright retro orange, a cheerful script ‘Beer’ and your bar name along the bottom.</p>\n<h2>Personalised Beer O’Clock pint glass</h2>\n<p>Type the name of your bar, shed or garden pub, and it’s printed as ‘At The Shed’, ‘At Dave’s Bar’ and so on under the Beer O’Clock lettering. The live preview shows exactly where it sits. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Retro orange and cream design printed in full colour with UV DTF</li>\n<li>Matches our Beer O’Clock Bottles and It’s Beer O’Clock bar mats</li>\n<li>20oz nonic pint, roomy enough for a proper head on top</li>\n<li>A fun Secret Santa, birthday or retirement gift for any beer fan</li>\n<li>Your own bar name makes it a one-off</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Glass: 20oz nonic pint glass</li>\n<li>Print: full-colour UV DTF on the outside of the glass, kept 10mm below the rim</li>\n<li>Care: hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle</li>\n<li>Made to order in our North Yorkshire workshop</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Hang the matching Beer O’Clock home bar sign over the fridge and nobody will ever ask what time it is again.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Beer Glasses"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-UVDTF-PBOCPG-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "drinkware"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\"]"
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PBOCPG-01",
+    "shape": "pint",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PBOCPG-01 - transfer 70x90mm - PRINT"
+   }
+  ],
+  "kind": "pint"
+ },
+ {
+  "key": "union_pint",
+  "product": {
+   "title": "Personalised Union Jack Bar Pint Glass – British Flag Design – Your Bar Name & Year",
+   "handle": "personalised-union-jack-bar-pint-glass",
+   "vendor": "Foxy Printing",
+   "productType": "Personalised Glassware",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-pairings-2026-10-08",
+    "beer glass",
+    "british gift",
+    "dept-home-drinkware",
+    "foxy-new-2026",
+    "gift for dad",
+    "great britain",
+    "home bar",
+    "io-home-bar",
+    "machine-uvdtf",
+    "personalised",
+    "pint glass",
+    "pub gift",
+    "range-glassware",
+    "range-home-bar",
+    "union jack"
+   ],
+   "seo": {
+    "title": "Personalised Union Jack Bar Pint Glass | Foxy Printing",
+    "description": "A personalised Union Jack pint glass with your bar name and year on a bold British flag design. Full-colour print on a 20oz pint glass, made in the UK."
+   },
+   "descriptionHtml": "<p>Nothing says a proper British pub like the flag, and this personalised Union Jack bar pint glass puts your bar name on a white plaque right in the middle of it. It’s made to sit alongside our Distressed Union Jack bar mat.</p>\n<h2>Personalised Union Jack bar pint glass</h2>\n<p>Add your bar name and, if you like, the year it opened. ‘Welcome to’ sits above the name and can be changed or left as it is. Everything shows in the live preview while you type. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Red, white and blue flag printed in full colour with UV DTF, edge to edge across the design</li>\n<li>Partners our Distressed Union Jack bar mat runner</li>\n<li>20oz nonic pint – the shape you get in a British pub</li>\n<li>Great for jubilee parties, England match days and patriotic dads</li>\n<li>Each glass printed to order with your own wording</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Glass: 20oz nonic pint glass</li>\n<li>Print: full-colour UV DTF on the outside of the glass, kept 10mm below the rim</li>\n<li>Care: hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle</li>\n<li>Made to order in our North Yorkshire workshop</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Complete the look with the matching Union Jack home bar sign above the optics.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Beer Glasses"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-UVDTF-PUJBPG-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "drinkware"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\", \"Welcome line (optional)\", \"Est. year (optional)\"]"
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PUJBPG-01",
+    "shape": "pint",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PUJBPG-01 - transfer 70x90mm - PRINT"
+   }
+  ],
+  "kind": "pint"
+ },
+ {
+  "key": "best_bar_pint",
+  "product": {
+   "title": "Personalised Best Bar in Town Pint Glass – Cream & Brown Design – Your Bar Name & Year",
+   "handle": "personalised-best-bar-in-town-pint-glass",
+   "vendor": "Foxy Printing",
+   "productType": "Personalised Glassware",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-pairings-2026-10-08",
+    "beer glass",
+    "best bar in town",
+    "dept-home-drinkware",
+    "foxy-new-2026",
+    "gift for her",
+    "gift for him",
+    "home bar",
+    "home bar gift",
+    "housewarming gift",
+    "io-home-bar",
+    "machine-uvdtf",
+    "personalised",
+    "pint glass",
+    "range-glassware",
+    "range-home-bar"
+   ],
+   "seo": {
+    "title": "Personalised Best Bar in Town Pint Glass | Foxy Printing",
+    "description": "Welcome to the best bar in town. A personalised pint glass with your bar name and year on a cream and brown design, printed in full colour in the UK."
+   },
+   "descriptionHtml": "<p>Every home bar owner secretly believes theirs is the best in town, and this personalised Best Bar in Town pint glass says it for them. A cream panel, a handwritten-style ‘Welcome to the’ and your bar name on a brown plaque.</p>\n<h2>Personalised Best Bar in Town pint glass</h2>\n<p>Enter your bar name and the year it opened and they’re printed together on the brown plaque, like ‘The Fox | Est. 2021’. You can swap the ‘Welcome to the’ line for your own short greeting. Preview it live before ordering. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Soft cream and chocolate-brown design in full colour, printed with UV DTF</li>\n<li>Matches our Best Bar in Town and Best Bar Cream bar mat runners</li>\n<li>20oz nonic pint glass, ideal for beer, cider or a long drink</li>\n<li>A thoughtful housewarming, anniversary or new-garden-bar present</li>\n<li>Made in-house for each order</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Glass: 20oz nonic pint glass</li>\n<li>Print: full-colour UV DTF on the outside of the glass, kept 10mm below the rim</li>\n<li>Care: hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle</li>\n<li>Made to order in our North Yorkshire workshop</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Hang the matching Best Bar in Town metal sign and the whole bar ties together.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Beer Glasses"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-UVDTF-PBBTPG-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "drinkware"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\", \"Welcome line (optional)\", \"Est. year\"]"
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PBBTPG-01",
+    "shape": "pint",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "price": "11.99",
+    "print": "FOXY-UVDTF-PBBTPG-01 - transfer 70x90mm - PRINT"
+   }
+  ],
+  "kind": "pint"
+ },
+ {
+  "key": "my_rules_tumbler",
+  "product": {
+   "title": "Personalised My Bar My Rules Whisky Tumbler – Navy & Gold Design – Your Name",
+   "handle": "personalised-my-bar-my-rules-whisky-tumbler",
+   "vendor": "Foxy Printing",
+   "productType": "Personalised Glassware",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-pairings-2026-10-08",
+    "dept-home-drinkware",
+    "foxy-new-2026",
+    "gift for dad",
+    "home bar",
+    "io-home-bar",
+    "machine-uvdtf",
+    "man cave",
+    "my bar my rules",
+    "personalised",
+    "range-glassware",
+    "range-home-bar",
+    "whisky gift",
+    "whisky glass",
+    "whisky tumbler"
+   ],
+   "seo": {
+    "title": "Personalised My Bar My Rules Whisky Tumbler | Foxy Printing",
+    "description": "My bar, my rules. A personalised whisky tumbler with a name on our navy and gold design, printed in full colour. A great gift for home bar owners."
+   },
+   "descriptionHtml": "<p>A personalised My Bar My Rules whisky tumbler is for the person who runs a tight ship behind their own bar – their measures, their music, their rules. Navy and gold, just like our My Cave My Rules bar mat, with their name on top.</p>\n<h2>Personalised My Bar My Rules whisky tumbler</h2>\n<p>Type a name, such as ‘Dave’s Bar’ or ‘Grandad’s’, and it sits above the big MY BAR MY RULES lettering. Add the year the bar opened if you want it along the bottom. See it in the live preview first. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Bold navy, white and gold design printed in full colour with UV DTF</li>\n<li>Pairs with our My Cave My Rules navy bar mat runner</li>\n<li>A classic whisky tumbler for a dram, a rum or an old fashioned</li>\n<li>Brilliant for 50th and 60th birthdays, Father’s Day or retirement</li>\n<li>Each tumbler is printed to order with your own name</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Glass: classic whisky (rocks) tumbler</li>\n<li>Print: full-colour UV DTF on the outside of the glass, kept 10mm below the rim</li>\n<li>Care: hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle</li>\n<li>Made to order in our North Yorkshire workshop</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Add the My Cave My Rules metal sign and the bar has its house rules on the wall too.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Tumblers"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-UVDTF-PMBMRWT-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "drinkware"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Name\", \"Est. year (optional)\"]"
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PMBMRWT-01",
+    "shape": "tumbler",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "price": "13.99",
+    "print": "FOXY-UVDTF-PMBMRWT-01 - transfer 70x60mm - PRINT"
+   }
+  ],
+  "kind": "tumbler"
+ },
+ {
+  "key": "vintage_tumbler",
+  "product": {
+   "title": "Personalised Vintage Established Bar Whisky Tumbler – Black & White Design – Your Bar Name",
+   "handle": "personalised-vintage-established-whisky-tumbler",
+   "vendor": "Foxy Printing",
+   "productType": "Personalised Glassware",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-pairings-2026-10-08",
+    "dept-home-drinkware",
+    "established",
+    "foxy-new-2026",
+    "gift for him",
+    "home bar",
+    "io-home-bar",
+    "machine-uvdtf",
+    "personalised",
+    "range-glassware",
+    "range-home-bar",
+    "vintage bar",
+    "whisky gift",
+    "whisky glass",
+    "whisky tumbler"
+   ],
+   "seo": {
+    "title": "Personalised Vintage Bar Whisky Tumbler | Foxy Printing",
+    "description": "A personalised whisky tumbler in our vintage black Established design – add your bar name and year. Full-colour print, made to order in North Yorkshire."
+   },
+   "descriptionHtml": "<p>Sharp, simple and a little bit old-school, this personalised vintage bar whisky tumbler takes the black and white look of our Vintage Black Established bar mat and puts it on a proper short glass.</p>\n<h2>Personalised vintage bar whisky tumbler with your bar name</h2>\n<p>Add your bar name and the year it was established, for example ‘Jack’s Bar – Established 2020’. ‘Welcome to’ sits above the name and can be changed. The live preview shows the finished layout. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Crisp black panel with white lettering and corner details, printed in full colour with UV DTF</li>\n<li>Matches our Vintage Black Established bar mat runner</li>\n<li>Heavy-looking classic whisky tumbler for a neat dram or on the rocks</li>\n<li>A smart gift for a new home bar, a milestone birthday or the best man</li>\n<li>Personalised to order in our own workshop</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Glass: classic whisky (rocks) tumbler</li>\n<li>Print: full-colour UV DTF on the outside of the glass, kept 10mm below the rim</li>\n<li>Care: hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle</li>\n<li>Made to order in our North Yorkshire workshop</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Order a pair so there’s always one for a guest – or add a personalised home bar pint glass for the beer drinkers.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Tumblers"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-UVDTF-PVEBWT-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "drinkware"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\", \"Welcome line (optional)\", \"Est. year\"]"
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PVEBWT-01",
+    "shape": "tumbler",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "price": "13.99",
+    "print": "FOXY-UVDTF-PVEBWT-01 - transfer 70x60mm - PRINT"
+   }
+  ],
+  "kind": "tumbler"
+ },
+ {
+  "key": "walnut_tumbler",
+  "product": {
+   "title": "Personalised Walnut & Gold Bar Whisky Tumbler – Gentleman’s Bar Design – Your Bar Name",
+   "handle": "personalised-walnut-gold-bar-whisky-tumbler",
+   "vendor": "Foxy Printing",
+   "productType": "Personalised Glassware",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-pairings-2026-10-08",
+    "dept-home-drinkware",
+    "foxy-new-2026",
+    "gentlemans bar",
+    "home bar",
+    "io-home-bar",
+    "machine-uvdtf",
+    "personalised",
+    "range-glassware",
+    "range-home-bar",
+    "retirement gift",
+    "walnut and gold",
+    "whisky gift",
+    "whisky glass",
+    "whisky tumbler"
+   ],
+   "seo": {
+    "title": "Personalised Walnut & Gold Whisky Tumbler | Foxy Printing",
+    "description": "A personalised whisky tumbler with a walnut and gold gentleman’s bar design, your bar name and year. Full-colour print, made to order in North Yorkshire."
+   },
+   "descriptionHtml": "<p>Dark walnut, fine gold lines and a widely spaced bar name: this personalised walnut and gold whisky tumbler has the feel of a members’ club bar. It’s made to go with our Walnut & Gold bar mat runner.</p>\n<h2>Personalised walnut and gold whisky tumbler</h2>\n<p>Enter the bar name and year established, and change the small ‘Welcome to’ line if you like. The gold lettering is spaced out across the panel, so shorter names look especially smart. Check it in the live preview. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Rich walnut-brown panel with gold detailing, printed in full colour with UV DTF</li>\n<li>Matches our Walnut & Gold and Crown & Copper bar mat runners</li>\n<li>Classic rocks-style whisky tumbler</li>\n<li>A refined retirement, anniversary or 60th birthday present</li>\n<li>Printed to order, so it carries your own bar name and year</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Glass: classic whisky (rocks) tumbler</li>\n<li>Print: full-colour UV DTF on the outside of the glass, kept 10mm below the rim</li>\n<li>Care: hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle</li>\n<li>Made to order in our North Yorkshire workshop</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Pair it with the matching walnut and gold home bar sign for a bar corner that looks properly finished.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Tumblers"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-UVDTF-PWGBWT-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "drinkware"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\", \"Welcome line (optional)\", \"Est. year\"]"
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PWGBWT-01",
+    "shape": "tumbler",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "price": "13.99",
+    "print": "FOXY-UVDTF-PWGBWT-01 - transfer 70x60mm - PRINT"
+   }
+  ],
+  "kind": "tumbler"
+ },
+ {
+  "key": "man_cave_tumbler",
+  "product": {
+   "title": "Personalised Man Cave Whisky Tumbler – Gold & Charcoal Welcome Design – Your Name",
+   "handle": "personalised-man-cave-whisky-tumbler",
+   "vendor": "Foxy Printing",
+   "productType": "Personalised Glassware",
+   "status": "ACTIVE",
+   "tags": [
+    "bar-pairings-2026-10-08",
+    "dept-home-drinkware",
+    "foxy-new-2026",
+    "gift for dad",
+    "home bar",
+    "io-home-bar",
+    "machine-uvdtf",
+    "man cave",
+    "man cave gift",
+    "personalised",
+    "range-glassware",
+    "range-home-bar",
+    "whisky gift",
+    "whisky glass",
+    "whisky tumbler"
+   ],
+   "seo": {
+    "title": "Personalised Man Cave Whisky Tumbler | Foxy Printing",
+    "description": "A personalised man cave whisky tumbler with his name on a charcoal and gold Welcome design. Full-colour print on a classic tumbler, made in the UK."
+   },
+   "descriptionHtml": "<p>For the evenings when a pint won’t do, a personalised man cave whisky tumbler keeps the man cave theme going into the whisky cabinet. Charcoal and gold with his name above MAN CAVE.</p>\n<h2>Personalised man cave whisky tumbler with his name</h2>\n<p>Type his name – Dad’s, Grandad’s, Mike’s – and add the year the man cave was established if you want it printed underneath. The live preview shows how it fits. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Charcoal background with gold stripes and cream lettering, printed in full colour with UV DTF</li>\n<li>Matches our Man Cave Welcome and Man Cave Slate bar mats</li>\n<li>Classic short tumbler for whisky, brandy or a cocktail</li>\n<li>Great for Father’s Day, birthdays and Christmas</li>\n<li>Printed in-house for each order</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Glass: classic whisky (rocks) tumbler</li>\n<li>Print: full-colour UV DTF on the outside of the glass, kept 10mm below the rim</li>\n<li>Care: hand wash recommended to keep the print bright; if you must, top rack of the dishwasher on a gentle cycle</li>\n<li>Made to order in our North Yorkshire workshop</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Buy it with the matching man cave pint glass and he’s covered whatever he’s drinking.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Tumblers"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-UVDTF-PMCWT-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "drinkware"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Name\", \"Est. year (optional)\"]"
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-UVDTF-PMCWT-01",
+    "shape": "tumbler",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "price": "13.99",
+    "print": "FOXY-UVDTF-PMCWT-01 - transfer 70x60mm - PRINT"
+   }
+  ],
+  "kind": "tumbler"
+ },
+ {
+  "key": "club_sign",
+  "product": {
+   "title": "Personalised Club Colours Bar Sign – Metal Sign with Your Club Badge & Name – 17 Team Colours",
+   "handle": "personalised-club-colours-bar-sign",
+   "vendor": "Foxy Printing",
+   "productType": "Metal Signs",
+   "status": "ACTIVE",
+   "tags": [
+    "bar sign",
+    "bar-pairings-2026-10-08",
+    "club bar sign",
+    "clubhouse",
+    "football club gift",
+    "foxy-new-2026",
+    "home bar",
+    "io-football",
+    "io-home-bar",
+    "machine-sublimation",
+    "metal sign",
+    "personalised",
+    "range-home-bar",
+    "team colours"
+   ],
+   "seo": {
+    "title": "Personalised Club Colours Bar Sign | Foxy Printing",
+    "description": "A personalised metal bar sign in your club colours with your own badge and team name. 17 colourways, two sizes, printed on gloss aluminium in the UK."
+   },
+   "descriptionHtml": "<p>A personalised club colours bar sign gives the clubhouse bar, the supporters’ room or a fan’s home bar a proper welcome. Choose your team colours, upload the badge and add the club name, and it’s printed on gloss white aluminium.</p>\n<h2>Personalised club colours bar sign with your badge and club name</h2>\n<p>Pick one of 17 colourways and a size: the long 12 x 5in panoramic shows your badge at both ends with the club name in the middle, and the taller 8 x 10in puts the badge at the top. Change the ‘Welcome to’ line or add the year the club was formed if you like. The live preview shows your details. We print exactly what you enter, so please check names and spelling in the live preview before you order. Please only upload badges your club has the right to use.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Printed by dye-sublimation on 1.15mm gloss white aluminium, so colours look rich and the print won’t peel</li>\n<li>The same 17 team colours as our club bar mats, coasters and pint glasses</li>\n<li>Two sizes: 12 x 5in panoramic for over the bar, or 8 x 10in for a wall or shelf</li>\n<li>Your own badge, so it works for football, rugby, cricket, darts or bowls clubs</li>\n<li>A great end-of-season gift for the clubhouse or a long-serving volunteer</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Material: 1.15mm ultra HD gloss white aluminium</li>\n<li>Sizes: 12 x 5in panoramic (30.5 x 12.7cm) or 8 x 10in</li>\n<li>Print: full-colour dye-sublimation</li>\n<li>Wall fixings and outdoor use: not confirmed yet, so please get in touch if you need them</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Add a club colours bar mat and a set of coasters, and the bar looks like it belongs to the club.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Decor > Decorative Plaques"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-SUB-PCCBS-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "flat"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Club or team name\", \"Club badge upload\", \"Welcome line (optional)\", \"Est. year (optional)\"]"
+    }
+   ],
+   "productOptions": [
+    {
+     "name": "Team colours",
+     "values": [
+      {
+       "name": "Red & White"
+      },
+      {
+       "name": "Red & White Stripes"
+      },
+      {
+       "name": "Blue & White"
+      },
+      {
+       "name": "Blue & White Stripes"
+      },
+      {
+       "name": "Black & White Stripes"
+      },
+      {
+       "name": "Green & White"
+      },
+      {
+       "name": "Green & White Hoops"
+      },
+      {
+       "name": "Sky Blue & White"
+      },
+      {
+       "name": "Navy & White"
+      },
+      {
+       "name": "Black & Orange"
+      },
+      {
+       "name": "Black & Yellow"
+      },
+      {
+       "name": "Yellow & Black"
+      },
+      {
+       "name": "Blue & Yellow"
+      },
+      {
+       "name": "Blue & Red"
+      },
+      {
+       "name": "Green & Yellow"
+      },
+      {
+       "name": "Yellow & Red"
+      },
+      {
+       "name": "Claret & Blue"
+      }
+     ]
+    },
+    {
+     "name": "Size",
+     "values": [
+      {
+       "name": "12 x 5in panoramic"
+      },
+      {
+       "name": "8 x 10in"
+      }
+     ]
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PCCBS-01",
+    "shape": "wide",
+    "colour": "Red & White",
+    "colour_key": "red_white",
+    "gcolour": "Red/White",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-01 - 12x5in - Red and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-02",
+    "shape": "tall",
+    "colour": "Red & White",
+    "colour_key": "red_white",
+    "gcolour": "Red/White",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-02 - 8x10in - Red and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-03",
+    "shape": "wide",
+    "colour": "Red & White Stripes",
+    "colour_key": "red_white_stripes",
+    "gcolour": "Red/White",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-03 - 12x5in - Red and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-04",
+    "shape": "tall",
+    "colour": "Red & White Stripes",
+    "colour_key": "red_white_stripes",
+    "gcolour": "Red/White",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-04 - 8x10in - Red and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-05",
+    "shape": "wide",
+    "colour": "Blue & White",
+    "colour_key": "blue_white",
+    "gcolour": "Blue/White",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-05 - 12x5in - Blue and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-06",
+    "shape": "tall",
+    "colour": "Blue & White",
+    "colour_key": "blue_white",
+    "gcolour": "Blue/White",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-06 - 8x10in - Blue and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-07",
+    "shape": "wide",
+    "colour": "Blue & White Stripes",
+    "colour_key": "blue_white_stripes",
+    "gcolour": "Blue/White",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-07 - 12x5in - Blue and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-08",
+    "shape": "tall",
+    "colour": "Blue & White Stripes",
+    "colour_key": "blue_white_stripes",
+    "gcolour": "Blue/White",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-08 - 8x10in - Blue and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-09",
+    "shape": "wide",
+    "colour": "Black & White Stripes",
+    "colour_key": "black_white_stripes",
+    "gcolour": "Black/White",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-09 - 12x5in - Black and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-10",
+    "shape": "tall",
+    "colour": "Black & White Stripes",
+    "colour_key": "black_white_stripes",
+    "gcolour": "Black/White",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-10 - 8x10in - Black and White Stripes - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-11",
+    "shape": "wide",
+    "colour": "Green & White",
+    "colour_key": "green_white",
+    "gcolour": "Green/White",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-11 - 12x5in - Green and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-12",
+    "shape": "tall",
+    "colour": "Green & White",
+    "colour_key": "green_white",
+    "gcolour": "Green/White",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-12 - 8x10in - Green and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-13",
+    "shape": "wide",
+    "colour": "Green & White Hoops",
+    "colour_key": "green_white_hoops",
+    "gcolour": "Green/White",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-13 - 12x5in - Green and White Hoops - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-14",
+    "shape": "tall",
+    "colour": "Green & White Hoops",
+    "colour_key": "green_white_hoops",
+    "gcolour": "Green/White",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-14 - 8x10in - Green and White Hoops - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-15",
+    "shape": "wide",
+    "colour": "Sky Blue & White",
+    "colour_key": "sky_blue_white",
+    "gcolour": "Blue/White",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-15 - 12x5in - Sky Blue and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-16",
+    "shape": "tall",
+    "colour": "Sky Blue & White",
+    "colour_key": "sky_blue_white",
+    "gcolour": "Blue/White",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-16 - 8x10in - Sky Blue and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-17",
+    "shape": "wide",
+    "colour": "Navy & White",
+    "colour_key": "navy_white",
+    "gcolour": "Navy/White",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-17 - 12x5in - Navy and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-18",
+    "shape": "tall",
+    "colour": "Navy & White",
+    "colour_key": "navy_white",
+    "gcolour": "Navy/White",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-18 - 8x10in - Navy and White - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-19",
+    "shape": "wide",
+    "colour": "Black & Orange",
+    "colour_key": "black_orange",
+    "gcolour": "Orange/Black",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-19 - 12x5in - Black and Orange - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-20",
+    "shape": "tall",
+    "colour": "Black & Orange",
+    "colour_key": "black_orange",
+    "gcolour": "Orange/Black",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-20 - 8x10in - Black and Orange - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-21",
+    "shape": "wide",
+    "colour": "Black & Yellow",
+    "colour_key": "black_yellow",
+    "gcolour": "Black/Yellow",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-21 - 12x5in - Black and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-22",
+    "shape": "tall",
+    "colour": "Black & Yellow",
+    "colour_key": "black_yellow",
+    "gcolour": "Black/Yellow",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-22 - 8x10in - Black and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-23",
+    "shape": "wide",
+    "colour": "Yellow & Black",
+    "colour_key": "yellow_black",
+    "gcolour": "Yellow/Black",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-23 - 12x5in - Yellow and Black - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-24",
+    "shape": "tall",
+    "colour": "Yellow & Black",
+    "colour_key": "yellow_black",
+    "gcolour": "Yellow/Black",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-24 - 8x10in - Yellow and Black - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-25",
+    "shape": "wide",
+    "colour": "Blue & Yellow",
+    "colour_key": "blue_yellow",
+    "gcolour": "Blue/Yellow",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-25 - 12x5in - Blue and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-26",
+    "shape": "tall",
+    "colour": "Blue & Yellow",
+    "colour_key": "blue_yellow",
+    "gcolour": "Blue/Yellow",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-26 - 8x10in - Blue and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-27",
+    "shape": "wide",
+    "colour": "Blue & Red",
+    "colour_key": "blue_red",
+    "gcolour": "Blue/Red",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-27 - 12x5in - Blue and Red - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-28",
+    "shape": "tall",
+    "colour": "Blue & Red",
+    "colour_key": "blue_red",
+    "gcolour": "Blue/Red",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-28 - 8x10in - Blue and Red - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-29",
+    "shape": "wide",
+    "colour": "Green & Yellow",
+    "colour_key": "green_yellow",
+    "gcolour": "Green/Yellow",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-29 - 12x5in - Green and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-30",
+    "shape": "tall",
+    "colour": "Green & Yellow",
+    "colour_key": "green_yellow",
+    "gcolour": "Green/Yellow",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-30 - 8x10in - Green and Yellow - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-31",
+    "shape": "wide",
+    "colour": "Yellow & Red",
+    "colour_key": "yellow_red",
+    "gcolour": "Yellow/Red",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-31 - 12x5in - Yellow and Red - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-32",
+    "shape": "tall",
+    "colour": "Yellow & Red",
+    "colour_key": "yellow_red",
+    "gcolour": "Yellow/Red",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-32 - 8x10in - Yellow and Red - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-33",
+    "shape": "wide",
+    "colour": "Claret & Blue",
+    "colour_key": "claret_blue",
+    "gcolour": "Claret/Blue",
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PCCBS-33 - 12x5in - Claret and Blue - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PCCBS-34",
+    "shape": "tall",
+    "colour": "Claret & Blue",
+    "colour_key": "claret_blue",
+    "gcolour": "Claret/Blue",
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PCCBS-34 - 8x10in - Claret and Blue - PRINT"
+   }
+  ],
+  "kind": "sign"
+ },
+ {
+  "key": "rustic_sign",
+  "product": {
+   "title": "Personalised Rustic Established Home Bar Sign – Metal Sign with Your Bar Name & Year",
+   "handle": "personalised-rustic-established-home-bar-sign",
+   "vendor": "Foxy Printing",
+   "productType": "Metal Signs",
+   "status": "ACTIVE",
+   "tags": [
+    "bar sign",
+    "bar-pairings-2026-10-08",
+    "established sign",
+    "foxy-new-2026",
+    "gift for dad",
+    "home bar",
+    "home bar sign",
+    "io-home-bar",
+    "machine-sublimation",
+    "metal sign",
+    "personalised",
+    "pub sign",
+    "range-home-bar",
+    "rustic bar",
+    "shed bar"
+   ],
+   "seo": {
+    "title": "Personalised Rustic Home Bar Sign | Foxy Printing",
+    "description": "A personalised rustic home bar sign with your bar name and year established, printed on gloss aluminium. Two sizes, made to order in North Yorkshire."
+   },
+   "descriptionHtml": "<p>A personalised rustic home bar sign tells everyone who walks in that this is a proper bar with a proper name. Warm wood-look planks, a double gold frame and ‘Established’ along the bottom, to match our Rustic Established bar mat.</p>\n<h2>Personalised rustic home bar sign with your bar name</h2>\n<p>Type your bar name and the year it opened, then choose the long 12 x 5in panoramic or the taller 8 x 10in. You can change the ‘Welcome to’ line too. The live preview shows the layout as you type. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Wood-look design with gold detailing, dye-sublimated onto 1.15mm gloss white aluminium</li>\n<li>Matches our Rustic Established and Vintage Wood bar mat runners and the rustic home bar pint glass</li>\n<li>Panoramic size fits neatly above the optics or the bar back</li>\n<li>Colours are sealed into the metal surface, so there’s no sticker to peel</li>\n<li>A housewarming or Father’s Day gift that gets pride of place</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Material: 1.15mm ultra HD gloss white aluminium</li>\n<li>Sizes: 12 x 5in panoramic (30.5 x 12.7cm) or 8 x 10in</li>\n<li>Print: full-colour dye-sublimation</li>\n<li>Wall fixings and outdoor use: not confirmed yet, so please get in touch if you need them</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Finish the set with the matching rustic home bar pint glass for the landlord.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Decor > Decorative Plaques"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-SUB-PREHBS-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "flat"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\", \"Welcome line (optional)\", \"Est. year\"]"
+    }
+   ],
+   "productOptions": [
+    {
+     "name": "Size",
+     "values": [
+      {
+       "name": "12 x 5in panoramic"
+      },
+      {
+       "name": "8 x 10in"
+      }
+     ]
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PREHBS-01",
+    "shape": "wide",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PREHBS-01 - 12x5in - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PREHBS-02",
+    "shape": "tall",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PREHBS-02 - 8x10in - PRINT"
+   }
+  ],
+  "kind": "sign"
+ },
+ {
+  "key": "my_cave_sign",
+  "product": {
+   "title": "Personalised My Cave My Rules Metal Sign – Navy & Gold Home Bar Sign – Your Name",
+   "handle": "personalised-my-cave-my-rules-metal-sign",
+   "vendor": "Foxy Printing",
+   "productType": "Metal Signs",
+   "status": "ACTIVE",
+   "tags": [
+    "bar sign",
+    "bar-pairings-2026-10-08",
+    "foxy-new-2026",
+    "gift for him",
+    "home bar",
+    "home bar sign",
+    "io-home-bar",
+    "machine-sublimation",
+    "man cave gift",
+    "man cave sign",
+    "metal sign",
+    "my cave my rules",
+    "personalised",
+    "pub sign",
+    "range-home-bar"
+   ],
+   "seo": {
+    "title": "Personalised My Cave My Rules Metal Sign | Foxy Printing",
+    "description": "My cave, my rules. A personalised navy and gold metal sign with a name and year for the man cave or home bar. Two sizes, printed on gloss aluminium."
+   },
+   "descriptionHtml": "<p>Put the house rules where everyone can see them. This personalised My Cave My Rules metal sign is navy and gold, with a name across the top, and it matches our My Cave My Rules bar mat runner.</p>\n<h2>Personalised My Cave My Rules metal sign</h2>\n<p>Add a name – ‘Dave’s Bar’, ‘Dad’s Shed’, ‘Grandad’s’ – and, if you like, the year the cave was established. Choose the 12 x 5in panoramic or the 8 x 10in. Watch it build in the live preview. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Navy, white and gold design dye-sublimated onto 1.15mm gloss white aluminium</li>\n<li>Matches our My Cave My Rules bar mat and the My Bar My Rules whisky tumbler</li>\n<li>Two sizes to suit a door, a wall or the space above the bar</li>\n<li>Bright, glossy finish that brings the gold detail to life</li>\n<li>A man cave gift for birthdays, Christmas and Father’s Day</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Material: 1.15mm ultra HD gloss white aluminium</li>\n<li>Sizes: 12 x 5in panoramic (30.5 x 12.7cm) or 8 x 10in</li>\n<li>Print: full-colour dye-sublimation</li>\n<li>Wall fixings and outdoor use: not confirmed yet, so please get in touch if you need them</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Pair it with the My Bar My Rules whisky tumbler for a gift set that says it all.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Decor > Decorative Plaques"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-SUB-PMCMRS-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "flat"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Name\", \"Est. year (optional)\"]"
+    }
+   ],
+   "productOptions": [
+    {
+     "name": "Size",
+     "values": [
+      {
+       "name": "12 x 5in panoramic"
+      },
+      {
+       "name": "8 x 10in"
+      }
+     ]
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PMCMRS-01",
+    "shape": "wide",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PMCMRS-01 - 12x5in - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PMCMRS-02",
+    "shape": "tall",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PMCMRS-02 - 8x10in - PRINT"
+   }
+  ],
+  "kind": "sign"
+ },
+ {
+  "key": "beer_sign",
+  "product": {
+   "title": "Personalised Beer O’Clock Home Bar Sign – Retro Orange Metal Sign – Your Bar Name",
+   "handle": "personalised-beer-oclock-home-bar-sign",
+   "vendor": "Foxy Printing",
+   "productType": "Metal Signs",
+   "status": "ACTIVE",
+   "tags": [
+    "bar sign",
+    "bar-pairings-2026-10-08",
+    "beer o'clock",
+    "foxy-new-2026",
+    "funny bar sign",
+    "garden bar sign",
+    "gift for him",
+    "home bar",
+    "home bar sign",
+    "io-home-bar",
+    "machine-sublimation",
+    "metal sign",
+    "personalised",
+    "pub sign",
+    "range-home-bar"
+   ],
+   "seo": {
+    "title": "Personalised Beer O’Clock Home Bar Sign | Foxy Printing",
+    "description": "A personalised Beer O’Clock home bar sign in retro orange with your bar name, printed on gloss aluminium. Two sizes, made to order in the UK."
+   },
+   "descriptionHtml": "<p>Some bars have a clock; this one just has a personalised Beer O’Clock home bar sign. Retro orange with cream lettering, a big script ‘Beer’ and your bar name along the bottom.</p>\n<h2>Personalised Beer O’Clock home bar sign</h2>\n<p>Type the name of your bar, shed or garden pub and it’s printed as ‘At The Shed’ under the Beer O’Clock lettering. Choose 12 x 5in panoramic or 8 x 10in. The live preview shows your wording on the sign. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Cheerful orange and cream design dye-sublimated onto 1.15mm gloss white aluminium</li>\n<li>Matches our Beer O’Clock Bottles and It’s Beer O’Clock bar mats and the Beer O’Clock pint glass</li>\n<li>Panoramic size suits a shelf edge or the top of the bar</li>\n<li>Glossy metal finish that wipes over easily</li>\n<li>A fun gift for a birthday, retirement or a new garden bar</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Material: 1.15mm ultra HD gloss white aluminium</li>\n<li>Sizes: 12 x 5in panoramic (30.5 x 12.7cm) or 8 x 10in</li>\n<li>Print: full-colour dye-sublimation</li>\n<li>Wall fixings and outdoor use: not confirmed yet, so please get in touch if you need them</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Grab a Beer O’Clock pint glass to go with it and the joke is complete.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Decor > Decorative Plaques"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-SUB-PBOCHBS-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "flat"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\"]"
+    }
+   ],
+   "productOptions": [
+    {
+     "name": "Size",
+     "values": [
+      {
+       "name": "12 x 5in panoramic"
+      },
+      {
+       "name": "8 x 10in"
+      }
+     ]
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PBOCHBS-01",
+    "shape": "wide",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PBOCHBS-01 - 12x5in - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PBOCHBS-02",
+    "shape": "tall",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PBOCHBS-02 - 8x10in - PRINT"
+   }
+  ],
+  "kind": "sign"
+ },
+ {
+  "key": "union_sign",
+  "product": {
+   "title": "Personalised Union Jack Home Bar Sign – British Flag Metal Sign – Your Bar Name & Year",
+   "handle": "personalised-union-jack-home-bar-sign",
+   "vendor": "Foxy Printing",
+   "productType": "Metal Signs",
+   "status": "ACTIVE",
+   "tags": [
+    "bar sign",
+    "bar-pairings-2026-10-08",
+    "british gift",
+    "foxy-new-2026",
+    "gift for dad",
+    "home bar",
+    "home bar sign",
+    "io-home-bar",
+    "machine-sublimation",
+    "metal sign",
+    "personalised",
+    "pub sign",
+    "range-home-bar",
+    "union jack"
+   ],
+   "seo": {
+    "title": "Personalised Union Jack Home Bar Sign | Foxy Printing",
+    "description": "A personalised Union Jack home bar sign with your bar name and year on the British flag, printed on gloss aluminium. Two sizes, made in the UK."
+   },
+   "descriptionHtml": "<p>A personalised Union Jack home bar sign gives your bar a proper British welcome. The flag fills the sign from edge to edge, with your bar name on a white plaque in the centre, just like our Distressed Union Jack bar mat.</p>\n<h2>Personalised Union Jack home bar sign with your bar name</h2>\n<p>Enter your bar name and, if you like, the year it opened and your own ‘Welcome to’ line. Pick the 12 x 5in panoramic or the 8 x 10in. Everything shows in the live preview. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Red, white and blue flag dye-sublimated onto 1.15mm gloss white aluminium</li>\n<li>Matches our Distressed Union Jack bar mat and the Union Jack bar pint glass</li>\n<li>Bold enough to read from across the room</li>\n<li>Perfect for England match days, jubilee parties and patriotic dads</li>\n<li>Each sign made to order with your own wording</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Material: 1.15mm ultra HD gloss white aluminium</li>\n<li>Sizes: 12 x 5in panoramic (30.5 x 12.7cm) or 8 x 10in</li>\n<li>Print: full-colour dye-sublimation</li>\n<li>Wall fixings and outdoor use: not confirmed yet, so please get in touch if you need them</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Add the Union Jack bar pint glass and the British-themed bar is sorted.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Decor > Decorative Plaques"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-SUB-PUJHBS-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "flat"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\", \"Welcome line (optional)\", \"Est. year (optional)\"]"
+    }
+   ],
+   "productOptions": [
+    {
+     "name": "Size",
+     "values": [
+      {
+       "name": "12 x 5in panoramic"
+      },
+      {
+       "name": "8 x 10in"
+      }
+     ]
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PUJHBS-01",
+    "shape": "wide",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PUJHBS-01 - 12x5in - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PUJHBS-02",
+    "shape": "tall",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PUJHBS-02 - 8x10in - PRINT"
+   }
+  ],
+  "kind": "sign"
+ },
+ {
+  "key": "best_bar_sign",
+  "product": {
+   "title": "Personalised Best Bar in Town Metal Sign – Cream & Brown Home Bar Sign – Your Bar Name & Year",
+   "handle": "personalised-best-bar-in-town-metal-sign",
+   "vendor": "Foxy Printing",
+   "productType": "Metal Signs",
+   "status": "ACTIVE",
+   "tags": [
+    "bar sign",
+    "bar-pairings-2026-10-08",
+    "best bar in town",
+    "foxy-new-2026",
+    "gift for her",
+    "gift for him",
+    "home bar",
+    "home bar sign",
+    "housewarming gift",
+    "io-home-bar",
+    "machine-sublimation",
+    "metal sign",
+    "personalised",
+    "pub sign",
+    "range-home-bar"
+   ],
+   "seo": {
+    "title": "Personalised Best Bar in Town Sign | Foxy Printing",
+    "description": "Welcome to the best bar in town. A personalised metal sign with your bar name and year in cream and brown, printed on gloss aluminium in the UK."
+   },
+   "descriptionHtml": "<p>Make it official: your bar is the best in town. This personalised Best Bar in Town metal sign has a soft cream background, a handwritten-style ‘Welcome to the’ and your bar name and year on a brown plaque.</p>\n<h2>Personalised Best Bar in Town metal sign</h2>\n<p>Add your bar name and year established and they’re printed together on the plaque, for example ‘The Fox | Est. 2021’. Change the greeting line if you’d like your own. Choose 12 x 5in panoramic or 8 x 10in, and check the live preview. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Cream and chocolate-brown design dye-sublimated onto 1.15mm gloss white aluminium</li>\n<li>Matches our Best Bar in Town and Best Bar Cream bar mats and the Best Bar in Town pint glass</li>\n<li>A softer look that suits kitchens, garden rooms and conservatory bars</li>\n<li>Smooth gloss finish with crisp, sharp text</li>\n<li>A housewarming or anniversary gift with a smile built in</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Material: 1.15mm ultra HD gloss white aluminium</li>\n<li>Sizes: 12 x 5in panoramic (30.5 x 12.7cm) or 8 x 10in</li>\n<li>Print: full-colour dye-sublimation</li>\n<li>Wall fixings and outdoor use: not confirmed yet, so please get in touch if you need them</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Pick up the matching Best Bar in Town pint glass for the first round.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Decor > Decorative Plaques"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-SUB-PBBTMS-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "flat"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\", \"Welcome line (optional)\", \"Est. year\"]"
+    }
+   ],
+   "productOptions": [
+    {
+     "name": "Size",
+     "values": [
+      {
+       "name": "12 x 5in panoramic"
+      },
+      {
+       "name": "8 x 10in"
+      }
+     ]
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PBBTMS-01",
+    "shape": "wide",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PBBTMS-01 - 12x5in - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PBBTMS-02",
+    "shape": "tall",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PBBTMS-02 - 8x10in - PRINT"
+   }
+  ],
+  "kind": "sign"
+ },
+ {
+  "key": "walnut_sign",
+  "product": {
+   "title": "Personalised Walnut & Gold Home Bar Sign – Gentleman’s Bar Metal Sign – Your Bar Name & Year",
+   "handle": "personalised-walnut-gold-home-bar-sign",
+   "vendor": "Foxy Printing",
+   "productType": "Metal Signs",
+   "status": "ACTIVE",
+   "tags": [
+    "bar sign",
+    "bar-pairings-2026-10-08",
+    "foxy-new-2026",
+    "gentlemans bar",
+    "gift for him",
+    "home bar",
+    "home bar sign",
+    "io-home-bar",
+    "machine-sublimation",
+    "metal sign",
+    "personalised",
+    "pub sign",
+    "range-home-bar",
+    "retirement gift",
+    "walnut and gold"
+   ],
+   "seo": {
+    "title": "Personalised Walnut & Gold Home Bar Sign | Foxy Printing",
+    "description": "A personalised walnut and gold home bar sign with your bar name and year, printed on gloss aluminium. Two sizes, made to order in North Yorkshire."
+   },
+   "descriptionHtml": "<p>Dark walnut, gold chevrons and a widely spaced bar name give this personalised walnut and gold home bar sign the look of a members’ club. It matches our Walnut & Gold bar mat runner and whisky tumbler.</p>\n<h2>Personalised walnut and gold home bar sign</h2>\n<p>Enter your bar name and year established, and change the ‘Welcome to’ line if you like. Choose the 12 x 5in panoramic or the 8 x 10in. The live preview shows how your name sits on the sign. We print exactly what you enter, so please check names and spelling in the live preview before you order.</p>\n<h3>Why you’ll love it</h3>\n<ul>\n<li>Walnut-brown and gold design dye-sublimated onto 1.15mm gloss white aluminium</li>\n<li>Matches our Walnut & Gold and Crown & Copper bar mats and the walnut and gold whisky tumbler</li>\n<li>Understated style that suits a study bar, drinks cabinet or snug</li>\n<li>Glossy finish that makes the gold detail glow</li>\n<li>A distinguished retirement or 60th birthday present</li>\n</ul>\n<h3>Size &amp; details</h3>\n<ul>\n<li>Material: 1.15mm ultra HD gloss white aluminium</li>\n<li>Sizes: 12 x 5in panoramic (30.5 x 12.7cm) or 8 x 10in</li>\n<li>Print: full-colour dye-sublimation</li>\n<li>Wall fixings and outdoor use: not confirmed yet, so please get in touch if you need them</li>\n</ul>\n<h3>Delivery</h3>\n<p>Every order is made to order in our North Yorkshire workshop. Postage options and costs are shown at checkout, and if you have a date to hit, give us a ring on 01439 771468 before you order.</p>\n<p>Pair it with the walnut and gold whisky tumbler for a gift set with real presence.</p>",
+   "templateSuffix": "personalised",
+   "metafields": [
+    {
+     "namespace": "mm-google-shopping",
+     "key": "custom_product",
+     "type": "boolean",
+     "value": "true"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "condition",
+     "type": "single_line_text_field",
+     "value": "new"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "google_product_category",
+     "type": "single_line_text_field",
+     "value": "Home & Garden > Decor > Decorative Plaques"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "gender",
+     "type": "single_line_text_field",
+     "value": "unisex"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "age_group",
+     "type": "single_line_text_field",
+     "value": "adult"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "color",
+     "type": "single_line_text_field",
+     "value": "Multicolor"
+    },
+    {
+     "namespace": "mm-google-shopping",
+     "key": "mpn",
+     "type": "single_line_text_field",
+     "value": "FOXY-SUB-PWGHBS-01"
+    },
+    {
+     "namespace": "foxy",
+     "key": "mockup",
+     "type": "single_line_text_field",
+     "value": "flat"
+    },
+    {
+     "namespace": "foxy",
+     "key": "personalise_fields",
+     "type": "list.single_line_text_field",
+     "value": "[\"Bar name\", \"Welcome line (optional)\", \"Est. year\"]"
+    }
+   ],
+   "productOptions": [
+    {
+     "name": "Size",
+     "values": [
+      {
+       "name": "12 x 5in panoramic"
+      },
+      {
+       "name": "8 x 10in"
+      }
+     ]
+    }
+   ]
+  },
+  "variants": [
+   {
+    "sku": "FOXY-SUB-PWGHBS-01",
+    "shape": "wide",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "12 x 5in panoramic",
+    "price": "19.99",
+    "print": "FOXY-SUB-PWGHBS-01 - 12x5in - PRINT"
+   },
+   {
+    "sku": "FOXY-SUB-PWGHBS-02",
+    "shape": "tall",
+    "colour": null,
+    "colour_key": null,
+    "gcolour": null,
+    "size": "8 x 10in",
+    "price": "24.99",
+    "print": "FOXY-SUB-PWGHBS-02 - 8x10in - PRINT"
+   }
+  ],
+  "kind": "sign"
+ }
+]

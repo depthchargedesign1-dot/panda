@@ -1,0 +1,713 @@
+[
+ {
+  "title": "Personalised Acrylic Photo Block",
+  "handle": "personalised-acrylic-photo-block",
+  "descriptionHtml": "<p><strong>Personalised Acrylic Photo Block</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Crystal-clear acrylic blocks, plaques and night lights printed edge-to-edge with white + gloss.</p><p>Personalise it with: photo upload, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Acrylic Photo Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-acrylic-photo-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "10 x 15 cm"
+     },
+     {
+      "name": "15 x 15 cm"
+     },
+     {
+      "name": "15 x 20 cm"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "10 x 15 cm"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UV-PAPB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "15 x 15 cm"
+     }
+    ],
+    "price": "22.99",
+    "sku": "FOXY-UV-PAPB-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "15 x 20 cm"
+     }
+    ],
+    "price": "26.99",
+    "sku": "FOXY-UV-PAPB-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Our Song Acrylic Music Plaque",
+  "handle": "our-song-acrylic-music-plaque",
+  "descriptionHtml": "<p><strong>Our Song Acrylic Music Plaque</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Crystal-clear acrylic blocks, plaques and night lights printed edge-to-edge with white + gloss.</p><p>Personalise it with: photo upload, song title, artist, names. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Acrylic Photo Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-acrylic-photo-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A5 with stand"
+     },
+     {
+      "name": "A4 with stand"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A5 with stand"
+     }
+    ],
+    "price": "17.99",
+    "sku": "FOXY-UV-OSAMP-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A4 with stand"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-UV-OSAMP-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Song title\", \"Artist\", \"Names\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised LED Acrylic Night Light",
+  "handle": "personalised-led-acrylic-night-light",
+  "descriptionHtml": "<p><strong>Personalised LED Acrylic Night Light</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Crystal-clear acrylic blocks, plaques and night lights printed edge-to-edge with white + gloss.</p><p>Personalise it with: photo upload, name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Acrylic Photo Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-acrylic-photo-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Warm white base"
+     },
+     {
+      "name": "Colour-changing base"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Warm white base"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-UV-PLANL-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Colour-changing base"
+     }
+    ],
+    "price": "29.99",
+    "sku": "FOXY-UV-PLANL-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Photo Fridge Magnet (Acrylic)",
+  "handle": "personalised-photo-fridge-magnet-acrylic",
+  "descriptionHtml": "<p><strong>Personalised Photo Fridge Magnet (Acrylic)</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Crystal-clear acrylic blocks, plaques and night lights printed edge-to-edge with white + gloss.</p><p>Personalise it with: photo upload, name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Acrylic Photo Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-acrylic-photo-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Single"
+     },
+     {
+      "name": "Set of 4"
+     },
+     {
+      "name": "Set of 9"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Single"
+     }
+    ],
+    "price": "4.99",
+    "sku": "FOXY-UV-PPFMA-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Set of 4"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UV-PPFMA-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Set of 9"
+     }
+    ],
+    "price": "27.99",
+    "sku": "FOXY-UV-PPFMA-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Photo Keyring (Double-Sided Acrylic)",
+  "handle": "personalised-photo-keyring-double-sided-acrylic",
+  "descriptionHtml": "<p><strong>Personalised Photo Keyring (Double-Sided Acrylic)</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Crystal-clear acrylic blocks, plaques and night lights printed edge-to-edge with white + gloss.</p><p>Personalise it with: photo upload, name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Acrylic Photo Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-acrylic-photo-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Rectangle"
+     },
+     {
+      "name": "Heart"
+     },
+     {
+      "name": "Circle"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Rectangle"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-UV-PPKDSA-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Heart"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-UV-PPKDSA-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Circle"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-UV-PPKDSA-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Acrylic Cake Topper (Printed)",
+  "handle": "personalised-acrylic-cake-topper-printed",
+  "descriptionHtml": "<p><strong>Personalised Acrylic Cake Topper (Printed)</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Crystal-clear acrylic blocks, plaques and night lights printed edge-to-edge with white + gloss.</p><p>Personalise it with: name, age. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Acrylic Photo Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-acrylic-photo-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "15 cm"
+     },
+     {
+      "name": "20 cm"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "15 cm"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-UV-PACTP-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "20 cm"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-UV-PACTP-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Age\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Acrylic Door Plaque",
+  "handle": "personalised-acrylic-door-plaque",
+  "descriptionHtml": "<p><strong>Personalised Acrylic Door Plaque</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Crystal-clear acrylic blocks, plaques and night lights printed edge-to-edge with white + gloss.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Acrylic Photo Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-acrylic-photo-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A5"
+     },
+     {
+      "name": "A4"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A5"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UV-PADP-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A4"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UV-PADP-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Acrylic Photo Bookmark",
+  "handle": "personalised-acrylic-photo-bookmark",
+  "descriptionHtml": "<p><strong>Personalised Acrylic Photo Bookmark</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Crystal-clear acrylic blocks, plaques and night lights printed edge-to-edge with white + gloss.</p><p>Personalise it with: photo upload, name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Acrylic Photo Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-acrylic-photo-gifts",
+   "dept-personalised-gifts",
+   "machine-uv",
+   "wave-2",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-UV-PAPB2-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Photo Slate Coasters",
+  "handle": "personalised-photo-slate-coasters",
+  "descriptionHtml": "<p><strong>Personalised Photo Slate Coasters</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Natural slate printed in full colour - coasters, plaques, house signs and memorials.</p><p>Personalise it with: photo upload, name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Slate & Stone Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-slate-stone-gifts",
+   "dept-home-drinkware",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Single"
+     },
+     {
+      "name": "Set of 4"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Single"
+     }
+    ],
+    "price": "5.99",
+    "sku": "FOXY-UV-PPSC-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Set of 4"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-UV-PPSC-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Photo Slate Plaque",
+  "handle": "personalised-photo-slate-plaque",
+  "descriptionHtml": "<p><strong>Personalised Photo Slate Plaque</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Natural slate printed in full colour - coasters, plaques, house signs and memorials.</p><p>Personalise it with: photo upload, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Slate & Stone Gifts",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-slate-stone-gifts",
+   "dept-home-drinkware",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "20 x 20 cm"
+     },
+     {
+      "name": "30 x 20 cm"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "20 x 20 cm"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UV-PPSP-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "30 x 20 cm"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-UV-PPSP-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

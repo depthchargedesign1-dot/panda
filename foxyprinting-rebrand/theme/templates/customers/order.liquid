@@ -1,0 +1,16 @@
+<div class="section"><div class="page-width">
+  <p><a href="{{ routes.account_url }}">← {{ 'customer.account.title' | t }}</a></p>
+  <h1>{{ order.name }}</h1>
+  <p>{{ order.created_at | date: '%d %B %Y' }} · {{ order.financial_status_label }} · {{ order.fulfillment_status_label }}</p>
+  <ul class="cart-items">
+    {%- for item in order.line_items -%}
+      <li class="cart-item" style="grid-template-columns:1fr auto">
+        <div><strong>{{ item.title }}</strong> × {{ item.quantity }}
+          {%- if item.properties.size > 0 -%}<ul class="cart-item__props">{%- for p in item.properties -%}{%- if p.last != blank -%}<li>{{ p.first }}: {{ p.last }}</li>{%- endif -%}{%- endfor -%}</ul>{%- endif -%}
+        </div>
+        <strong>{{ item.final_line_price | money }}</strong>
+      </li>
+    {%- endfor -%}
+  </ul>
+  <p style="text-align:right;font-size:1.2rem"><strong>{{ order.total_price | money }}</strong></p>
+</div></div>

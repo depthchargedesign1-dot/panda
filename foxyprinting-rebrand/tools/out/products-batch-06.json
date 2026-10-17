@@ -1,0 +1,655 @@
+[
+ {
+  "title": "Pet's First Christmas Bauble",
+  "handle": "pet-s-first-christmas-bauble",
+  "descriptionHtml": "<p><strong>Pet's First Christmas Bauble</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Name baubles, photo ornaments, Santa keys and memorial decorations.</p><p>Personalise it with: pet name, photo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Personalised Baubles & Decorations",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-baubles",
+   "dept-occasions",
+   "machine-uvdtf",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-UVDTF-PSFCB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "bauble"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Pet name\", \"Photo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Scented Candle",
+  "handle": "personalised-scented-candle",
+  "descriptionHtml": "<p><strong>Personalised Scented Candle</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Personalised candles, sweet jars and treat tins.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Candles & Jars",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-candles-jars",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Scent",
+    "values": [
+     {
+      "name": "Vanilla"
+     },
+     {
+      "name": "Cinnamon Christmas"
+     },
+     {
+      "name": "Fresh Linen"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Scent",
+      "name": "Vanilla"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UVDTF-PSC-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Scent",
+      "name": "Cinnamon Christmas"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UVDTF-PSC-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Scent",
+      "name": "Fresh Linen"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UVDTF-PSC-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Sweet Jar",
+  "handle": "personalised-sweet-jar",
+  "descriptionHtml": "<p><strong>Personalised Sweet Jar</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Personalised candles, sweet jars and treat tins.</p><p>Personalise it with: name, e.g. grandad's sweets. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Candles & Jars",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-candles-jars",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Empty"
+     },
+     {
+      "name": "Filled with retro sweets"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Empty"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-UVDTF-PSJ-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Filled with retro sweets"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-UVDTF-PSJ-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"e.g. Grandad's Sweets\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Tooth Fairy Tin",
+  "handle": "personalised-tooth-fairy-tin",
+  "descriptionHtml": "<p><strong>Personalised Tooth Fairy Tin</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Personalised candles, sweet jars and treat tins.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Candles & Jars",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-candles-jars",
+   "dept-home-drinkware",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-UVDTF-PTFT-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Waterproof Kids Name Labels",
+  "handle": "waterproof-kids-name-labels",
+  "descriptionHtml": "<p><strong>Waterproof Kids Name Labels</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Waterproof name labels, bottles and lunchboxes for nursery and school.</p><p>Personalise it with: name, icon. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "School Labels, Bottles & Lunchboxes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-kids-labels-bottles",
+   "dept-baby-kids",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Pack",
+    "values": [
+     {
+      "name": "30 labels"
+     },
+     {
+      "name": "60 labels"
+     },
+     {
+      "name": "120 labels"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Pack",
+      "name": "30 labels"
+     }
+    ],
+    "price": "8.99",
+    "sku": "FOXY-UVDTF-WKNL-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Pack",
+      "name": "60 labels"
+     }
+    ],
+    "price": "13.99",
+    "sku": "FOXY-UVDTF-WKNL-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Pack",
+      "name": "120 labels"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UVDTF-WKNL-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Icon\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Kids School Water Bottle",
+  "handle": "personalised-kids-school-water-bottle",
+  "descriptionHtml": "<p><strong>Personalised Kids School Water Bottle</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Waterproof name labels, bottles and lunchboxes for nursery and school.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "School Labels, Bottles & Lunchboxes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-kids-labels-bottles",
+   "dept-baby-kids",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "12.99",
+    "sku": "FOXY-UVDTF-PKSWB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "drinkware"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Kids Lunch Box",
+  "handle": "personalised-kids-lunch-box",
+  "descriptionHtml": "<p><strong>Personalised Kids Lunch Box</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Waterproof name labels, bottles and lunchboxes for nursery and school.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "School Labels, Bottles & Lunchboxes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-kids-labels-bottles",
+   "dept-baby-kids",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-UVDTF-PKLB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Bike / Riding Helmet Name Decals",
+  "handle": "personalised-bike-riding-helmet-name-decals",
+  "descriptionHtml": "<p><strong>Personalised Bike / Riding Helmet Name Decals</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>Waterproof name labels, bottles and lunchboxes for nursery and school.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "School Labels, Bottles & Lunchboxes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-kids-labels-bottles",
+   "dept-baby-kids",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "6.99",
+    "sku": "FOXY-UVDTF-PBRHND-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Custom Games Controller Skin",
+  "handle": "custom-games-controller-skin",
+  "descriptionHtml": "<p><strong>Custom Games Controller Skin</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>UV DTF decals for controllers, consoles, laptops and PerfectDraft machines.</p><p>Personalise it with: name, photo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Controller & Console Skins",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-gamer-skins",
+   "dept-fan-shop-retro",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Controller",
+    "values": [
+     {
+      "name": "PS5 DualSense"
+     },
+     {
+      "name": "Xbox Series"
+     },
+     {
+      "name": "Switch Pro"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Controller",
+      "name": "PS5 DualSense"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-UVDTF-CGCS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Controller",
+      "name": "Xbox Series"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-UVDTF-CGCS-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Controller",
+      "name": "Switch Pro"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-UVDTF-CGCS-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Photo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Custom Laptop Skin",
+  "handle": "custom-laptop-skin",
+  "descriptionHtml": "<p><strong>Custom Laptop Skin</strong> - finished with a permanent, dishwasher-tough UV DTF print.</p><p>UV DTF decals for controllers, consoles, laptops and PerfectDraft machines.</p><p>Personalise it with: photo upload. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Controller & Console Skins",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-gamer-skins",
+   "dept-fan-shop-retro",
+   "machine-uvdtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "13 inch"
+     },
+     {
+      "name": "15 inch"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "13 inch"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-UVDTF-CLS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "15 inch"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-UVDTF-CLS-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Photo upload\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

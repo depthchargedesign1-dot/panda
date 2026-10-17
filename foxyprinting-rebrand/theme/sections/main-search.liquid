@@ -1,0 +1,38 @@
+{%- comment -%} The site searches exact words by wrapping them in quotes; Shopify returns those quotes as &quot;. {%- endcomment -%}
+{%- assign shown_terms = search.terms | remove: '&quot;' | remove: '"' | strip -%}
+{%- assign exact_search = false -%}
+{%- if search.terms contains '&quot;' or search.terms contains '"' -%}{%- assign exact_search = true -%}{%- endif -%}
+<div class="section search-page">
+  <div class="page-width">
+    <h1>{{ 'general.search' | t }}</h1>
+    <form action="{{ routes.search_url }}" method="get" role="search">
+      <input type="search" name="q" value="{{ shown_terms | escape }}" aria-label="{{ 'general.search' | t }}" placeholder="{{ 'general.search_placeholder' | t }}">
+      <input type="hidden" name="options[prefix]" value="last">
+      <button class="btn" type="submit">{{ 'general.search' | t }}</button>
+    </form>
+    {%- if search.performed -%}
+      {%- if search.results_count == 0 and exact_search -%}
+        {%- comment -%} No exact-word match (e.g. a typo): run the normal, more forgiving search instead. {%- endcomment -%}
+        <script>location.replace({{ routes.search_url | json }} + '?q=' + encodeURIComponent({{ shown_terms | json }}) + '&options%5Bprefix%5D=last&loose=1');</script>
+      {%- endif -%}
+      <p class="search-page__note" data-loose-note hidden>No exact matches, so here are the closest matches.</p>
+      <script>if (/[?&]loose=1/.test(location.search)) document.querySelector('[data-loose-note]').hidden = false;</script>
+      {%- paginate search.results by 24 -%}
+        <p>{{ 'general.search_results' | t: count: search.results_count, terms: shown_terms }}</p>
+        <ul class="product-grid">
+          {%- for item in search.results -%}
+            {%- if item.object_type == 'product' -%}
+              <li>{% render 'product-card', product: item %}</li>
+            {%- else -%}
+              <li><a href="{{ item.url }}" style="font-weight:800">{{ item.title }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+        {%- if paginate.pages > 1 -%}<div class="pagination">{{ paginate | default_pagination }}</div>{%- endif -%}
+      {%- endpaginate -%}
+    {%- endif -%}
+  </div>
+</div>
+{% schema %}
+{ "name": "Search results" }
+{% endschema %}

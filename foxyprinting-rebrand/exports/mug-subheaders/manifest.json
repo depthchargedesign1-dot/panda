@@ -1,0 +1,274 @@
+{
+ "date": "2026-10-06",
+ "all_mugs": {
+  "collection": "gid://shopify/Collection/427275976",
+  "metafield": "foxy.subcollections (list.collection_reference, definition 318833951101)"
+ },
+ "metafield_definitions": {
+  "foxy.subcollections": "gid://shopify/MetafieldDefinition/318833951101",
+  "foxy.compact_header": "gid://shopify/MetafieldDefinition/318833983869"
+ },
+ "mug_subcollections": [
+  {
+   "handle": "funny-number-plate-mugs",
+   "collection": "gid://shopify/Collection/690580980093",
+   "header_file": "gid://shopify/MediaImage/69872408625533",
+   "filename": "foxy-subheader-funny-number-plate-mugs.jpg",
+   "source_higgsfield_job": "local composite of BR3W UP both-ends mockup (tools/number_plate_subheader.py)",
+   "url": "https://foxyprinting.co.uk/collections/funny-number-plate-mugs"
+  },
+  {
+   "handle": "all-football-mugs",
+   "collection": "gid://shopify/Collection/429615304",
+   "header_file": "gid://shopify/MediaImage/69872607953277",
+   "filename": "foxy-subheader-all-football-mugs.jpg",
+   "source_higgsfield_job": "ba2e22c2-3ca8-4c93-9dd5-4e1f684c17ca",
+   "url": "https://foxyprinting.co.uk/collections/all-football-mugs"
+  },
+  {
+   "handle": "adult-mugs-rude",
+   "collection": "gid://shopify/Collection/417456712",
+   "header_file": "gid://shopify/MediaImage/69872607986045",
+   "filename": "foxy-subheader-adult-mugs-rude.jpg",
+   "source_higgsfield_job": "003ef1ff-b48a-4799-9d87-cf318f4af6d1 (replaced 510135fd: bare-bottom print)",
+   "url": "https://foxyprinting.co.uk/collections/adult-mugs-rude"
+  },
+  {
+   "handle": "occupational-mugs",
+   "collection": "gid://shopify/Collection/417461320",
+   "header_file": "gid://shopify/MediaImage/69872608018813",
+   "filename": "foxy-subheader-occupational-mugs.jpg",
+   "source_higgsfield_job": "5fa3965f-b6c7-4aa5-9f1b-42bfacea938d",
+   "url": "https://foxyprinting.co.uk/collections/occupational-mugs"
+  },
+  {
+   "handle": "personalised-name-mugs",
+   "collection": "gid://shopify/Collection/417461256",
+   "header_file": "gid://shopify/MediaImage/69872608051581",
+   "filename": "foxy-subheader-personalised-name-mugs.jpg",
+   "source_higgsfield_job": "6330ce3f-4102-4160-9ed1-e793a1da99dc",
+   "url": "https://foxyprinting.co.uk/collections/personalised-name-mugs"
+  },
+  {
+   "handle": "id-rather-be-mugs",
+   "collection": "gid://shopify/Collection/417456264",
+   "header_file": "gid://shopify/MediaImage/69872608084349",
+   "filename": "foxy-subheader-id-rather-be-mugs.jpg",
+   "source_higgsfield_job": "d7a90fd9-6403-4456-bba2-6c1228841712",
+   "url": "https://foxyprinting.co.uk/collections/id-rather-be-mugs"
+  },
+  {
+   "handle": "motor-mugs",
+   "collection": "gid://shopify/Collection/429858376",
+   "header_file": "gid://shopify/MediaImage/69872608117117",
+   "filename": "foxy-subheader-motor-mugs.jpg",
+   "source_higgsfield_job": "f31984b3-f398-47fb-855d-c25afaee671b",
+   "url": "https://foxyprinting.co.uk/collections/motor-mugs"
+  },
+  {
+   "handle": "my-future-husband",
+   "collection": "gid://shopify/Collection/424779592",
+   "header_file": "gid://shopify/MediaImage/69872608149885",
+   "filename": "foxy-subheader-my-future-husband.jpg",
+   "source_higgsfield_job": "2d852ae7-0eb4-428e-bfe1-76ad0c45244f",
+   "url": "https://foxyprinting.co.uk/collections/my-future-husband"
+  },
+  {
+   "handle": "this-girl-this-guy-mugs",
+   "collection": "gid://shopify/Collection/417455688",
+   "header_file": "gid://shopify/MediaImage/69872608182653",
+   "filename": "foxy-subheader-this-girl-this-guy-mugs.jpg",
+   "source_higgsfield_job": "15e23cf5-2e9b-4531-95e7-ca1ad0983940",
+   "url": "https://foxyprinting.co.uk/collections/this-girl-this-guy-mugs"
+  },
+  {
+   "handle": "funny-mugs-1",
+   "collection": "gid://shopify/Collection/417453576",
+   "header_file": "gid://shopify/MediaImage/69872608215421",
+   "filename": "foxy-subheader-funny-mugs-1.jpg",
+   "source_higgsfield_job": "3546e78d-5aeb-40ae-878c-bd2d5695bacb",
+   "url": "https://foxyprinting.co.uk/collections/funny-mugs-1"
+  },
+  {
+   "handle": "rude-swear-word-mugs",
+   "collection": "gid://shopify/Collection/668341109117",
+   "header_file": "gid://shopify/MediaImage/69872608248189",
+   "filename": "foxy-subheader-rude-swear-word-mugs.jpg",
+   "source_higgsfield_job": "67daf066-d6e9-41a2-9811-caad0e0ad80a",
+   "url": "https://foxyprinting.co.uk/collections/rude-swear-word-mugs"
+  },
+  {
+   "handle": "office-humour-mugs",
+   "collection": "gid://shopify/Collection/417461384",
+   "header_file": "gid://shopify/MediaImage/69872608280957",
+   "filename": "foxy-subheader-office-humour-mugs.jpg",
+   "source_higgsfield_job": "f13fbf3d-3987-4d34-b08d-2781c5c114cf",
+   "url": "https://foxyprinting.co.uk/collections/office-humour-mugs"
+  },
+  {
+   "handle": "coach-and-teacher-mugs",
+   "collection": "gid://shopify/Collection/421032072",
+   "header_file": "gid://shopify/MediaImage/69872608313725",
+   "filename": "foxy-subheader-coach-and-teacher-mugs.jpg",
+   "source_higgsfield_job": "faee4851-0794-4b82-b709-a1f4aa831562",
+   "url": "https://foxyprinting.co.uk/collections/coach-and-teacher-mugs"
+  },
+  {
+   "handle": "this-is-my-birthday-mug",
+   "collection": "gid://shopify/Collection/437654280",
+   "header_file": "gid://shopify/MediaImage/69872608346493",
+   "filename": "foxy-subheader-this-is-my-birthday-mug.jpg",
+   "source_higgsfield_job": "31db206e-9d6f-4b7d-bebc-8c85081b01df",
+   "url": "https://foxyprinting.co.uk/collections/this-is-my-birthday-mug"
+  }
+ ],
+ "compact_auto_banners": [
+  {
+   "group": "skins",
+   "file": "gid://shopify/MediaImage/69872790897021",
+   "filename": "foxy-header-skins-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "pets",
+   "file": "gid://shopify/MediaImage/69872790929789",
+   "filename": "foxy-header-pets-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "baby",
+   "file": "gid://shopify/MediaImage/69872790962557",
+   "filename": "foxy-header-baby-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "christmas",
+   "file": "gid://shopify/MediaImage/69872790995325",
+   "filename": "foxy-header-christmas-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "halloween",
+   "file": "gid://shopify/MediaImage/69872791028093",
+   "filename": "foxy-header-halloween-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "easter",
+   "file": "gid://shopify/MediaImage/69872791060861",
+   "filename": "foxy-header-easter-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "love",
+   "file": "gid://shopify/MediaImage/69872791093629",
+   "filename": "foxy-header-love-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "commemorative",
+   "file": "gid://shopify/MediaImage/69872791126397",
+   "filename": "foxy-header-commemorative-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "retro",
+   "file": "gid://shopify/MediaImage/69872791159165",
+   "filename": "foxy-header-retro-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "prints",
+   "file": "gid://shopify/MediaImage/69872791191933",
+   "filename": "foxy-header-prints-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "masks",
+   "file": "gid://shopify/MediaImage/69872791224701",
+   "filename": "foxy-header-masks-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "business",
+   "file": "gid://shopify/MediaImage/69872791257469",
+   "filename": "foxy-header-business-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "kids",
+   "file": "gid://shopify/MediaImage/69872791290237",
+   "filename": "foxy-header-kids-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "stickers",
+   "file": "gid://shopify/MediaImage/69872791323005",
+   "filename": "foxy-header-stickers-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "gaming",
+   "file": "gid://shopify/MediaImage/69872791355773",
+   "filename": "foxy-header-gaming-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "bar",
+   "file": "gid://shopify/MediaImage/69872791388541",
+   "filename": "foxy-header-bar-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "drinkware",
+   "file": "gid://shopify/MediaImage/69872791421309",
+   "filename": "foxy-header-drinkware-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "mugs",
+   "file": "gid://shopify/MediaImage/69872791454077",
+   "filename": "foxy-header-mugs-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "party",
+   "file": "gid://shopify/MediaImage/69872791486845",
+   "filename": "foxy-header-party-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "cards",
+   "file": "gid://shopify/MediaImage/69872791519613",
+   "filename": "foxy-header-cards-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "sports",
+   "file": "gid://shopify/MediaImage/69872791552381",
+   "filename": "foxy-header-sports-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "clothing",
+   "file": "gid://shopify/MediaImage/69872791585149",
+   "filename": "foxy-header-clothing-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  },
+  {
+   "group": "gifts",
+   "file": "gid://shopify/MediaImage/69872791617917",
+   "filename": "foxy-header-gifts-compact.jpg",
+   "method": "pad left edge to 1800x600"
+  }
+ ],
+ "theme": {
+  "copy": "gid://shopify/OnlineStoreTheme/189453861245",
+  "name": "Foxy Pop 2026 – mug tiles",
+  "duplicated_from": "gid://shopify/OnlineStoreTheme/189420994941 (live, field fix)",
+  "changed": [
+   "sections/main-collection.liquid"
+  ],
+  "preview": "https://foxyprinting.co.uk/collections/all-mugs?preview_theme_id=189453861245"
+ }
+}

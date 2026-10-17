@@ -1,0 +1,72 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Foxy Pop",
+    "theme_version": "1.0.0",
+    "theme_author": "Foxy Printing",
+    "theme_documentation_url": "https://foxyprinting.co.uk",
+    "theme_support_url": "https://foxyprinting.co.uk/pages/contact"
+  },
+  {
+    "name": "Colours",
+    "settings": [
+      { "type": "header", "content": "Brand palette" },
+      { "type": "color", "id": "color_primary", "label": "Foxy orange (primary buttons, highlights)", "default": "#FF6A13" },
+      { "type": "color", "id": "color_pink", "label": "Hot pink", "default": "#FF2D87" },
+      { "type": "color", "id": "color_purple", "label": "Party purple", "default": "#7A2BF5" },
+      { "type": "color", "id": "color_teal", "label": "Teal", "default": "#00B8A9" },
+      { "type": "color", "id": "color_yellow", "label": "Sunshine yellow", "default": "#FFC83D" },
+      { "type": "header", "content": "Base" },
+      { "type": "color", "id": "color_ink", "label": "Text", "default": "#1D1240" },
+      { "type": "color", "id": "color_background", "label": "Background", "default": "#FFFFFF" },
+      { "type": "color", "id": "color_tint", "label": "Soft tint (section backgrounds)", "default": "#FFF4EA" },
+      { "type": "color", "id": "color_sale", "label": "Sale / badge", "default": "#E8133A" }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      { "type": "font_picker", "id": "type_heading_font", "label": "Headings", "default": "poppins_n7" },
+      { "type": "font_picker", "id": "type_body_font", "label": "Body", "default": "nunito_sans_n4" }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      { "type": "range", "id": "page_width", "label": "Page width", "min": 1000, "max": 1600, "step": 20, "unit": "px", "default": 1360 },
+      { "type": "range", "id": "corner_radius", "label": "Corner roundness", "min": 0, "max": 28, "step": 2, "unit": "px", "default": 16 },
+      { "type": "image_picker", "id": "favicon", "label": "Favicon" }
+    ]
+  },
+  {
+    "name": "Product cards",
+    "settings": [
+      { "type": "checkbox", "id": "card_show_vendor", "label": "Show vendor", "default": false },
+      { "type": "checkbox", "id": "card_show_secondary_image", "label": "Show second image on hover", "default": true },
+      { "type": "text", "id": "card_personalise_badge", "label": "Badge for personalised products", "default": "Personalise me" },
+      { "type": "text", "id": "card_personalise_tag", "label": "Product tag that triggers the badge", "default": "personalised" },
+      { "type": "text", "id": "card_trending_tag", "label": "Product tag that triggers the Trending badge", "default": "trending" }
+    ]
+  },
+  {
+    "name": "Personaliser",
+    "settings": [
+      { "type": "paragraph", "content": "The live preview reads the product metafields foxy.mockup (card, drinkware, apparel, bauble, box, flat) and foxy.personalise_fields (list of field labels). Products without metafields fall back to the blocks on the product page section." },
+      { "type": "text", "id": "personaliser_fonts", "label": "Font choices (comma separated Google font names)", "default": "Baloo 2, Pacifico, Caveat, Bebas Neue, Playfair Display" },
+      { "type": "text", "id": "personaliser_colours", "label": "Text colour choices (comma separated hex)", "default": "#1D1240, #FFFFFF, #FF6A13, #FF2D87, #7A2BF5, #00B8A9, #D4AF37" },
+      { "type": "checkbox", "id": "personaliser_require_confirm", "label": "Require 'I've checked spelling' tick before adding to basket", "default": true }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      { "type": "text", "id": "social_facebook_link", "label": "Facebook", "default": "https://www.facebook.com/FoxyPrinting" },
+      { "type": "text", "id": "social_instagram_link", "label": "Instagram" },
+      { "type": "text", "id": "social_tiktok_link", "label": "TikTok" },
+      { "type": "text", "id": "social_pinterest_link", "label": "Pinterest" },
+      { "type": "text", "id": "social_youtube_link", "label": "YouTube" },
+      { "type": "text", "id": "social_linkedin_link", "label": "LinkedIn" },
+      { "type": "text", "id": "social_x_link", "label": "X (Twitter)" }
+    ]
+  }
+]

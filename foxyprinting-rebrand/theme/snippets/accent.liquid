@@ -1,0 +1,13 @@
+{%- comment -%}
+  Outputs a rotating accent class so every repeated element gets a different brand colour.
+  Usage: {% render 'accent', index: forloop.index0 %}  or  {% render 'accent', name: block.settings.colour %}
+{%- endcomment -%}
+{%- liquid
+  if name != blank and name != 'auto'
+    echo 'accent-' | append: name
+  else
+    assign accents = 'orange,pink,purple,teal,yellow' | split: ','
+    assign i = index | default: 0 | modulo: 5
+    echo 'accent-' | append: accents[i]
+  endif
+-%}

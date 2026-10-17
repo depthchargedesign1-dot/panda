@@ -1,0 +1,8 @@
+{
+  "name": "foxy-theme-preview",
+  "private": true,
+  "type": "module",
+  "description": "Offline preview of the Foxy Pop Shopify theme",
+  "scripts": { "data": "python3 make_data.py", "render": "node render.mjs ../../preview/site" },
+  "dependencies": { "liquidjs": "^10.0.0" }
+}

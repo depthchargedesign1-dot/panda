@@ -1,0 +1,22 @@
+[
+ {"club":"Arsenal","stadium":"Emirates Stadium","city":"London","key":"EmiratesStadium","lettering":"EMIRATES STADIUM","sponsor_name":"Emirates"},
+ {"club":"Aston Villa","stadium":"Villa Park","city":"Birmingham","key":"VillaPark","lettering":"VILLA PARK"},
+ {"club":"AFC Bournemouth","stadium":"Dean Court","city":"Bournemouth","key":"DeanCourt","lettering":"DEAN COURT","note":"currently sponsor-named Vitality Stadium; historic ground name used"},
+ {"club":"Brentford","stadium":"Brentford Community Stadium","city":"London","key":"BrentfordCommunityStadium","lettering":"BRENTFORD COMMUNITY STADIUM","note":"currently sponsor-named Gtech Community Stadium"},
+ {"club":"Brighton & Hove Albion","stadium":"Falmer Stadium","city":"Brighton","key":"FalmerStadium","lettering":"FALMER STADIUM","note":"currently sponsor-named American Express (Amex) Stadium"},
+ {"club":"Chelsea","stadium":"Stamford Bridge","city":"London","key":"StamfordBridge","lettering":"STAMFORD BRIDGE"},
+ {"club":"Coventry City","stadium":"Coventry Arena","city":"Coventry","key":"CoventryArena","lettering":"COVENTRY ARENA","note":"promoted 2026; currently sponsor-named Coventry Building Society (CBS) Arena"},
+ {"club":"Crystal Palace","stadium":"Selhurst Park","city":"London","key":"SelhurstPark","lettering":"SELHURST PARK"},
+ {"club":"Everton","stadium":"Everton Stadium","city":"Liverpool","key":"EvertonStadium","lettering":"EVERTON STADIUM","note":"Bramley-Moore Dock; currently sponsor-named Hill Dickinson Stadium"},
+ {"club":"Fulham","stadium":"Craven Cottage","city":"London","key":"CravenCottage","lettering":"CRAVEN COTTAGE"},
+ {"club":"Hull City","stadium":"Hull City Stadium","city":"Hull","key":"HullCityStadium","lettering":"HULL CITY STADIUM","note":"promoted 2026; currently sponsor-named MKM Stadium; UEFA name used"},
+ {"club":"Ipswich Town","stadium":"Portman Road","city":"Ipswich","key":"PortmanRoad","lettering":"PORTMAN ROAD","note":"promoted 2026"},
+ {"club":"Leeds United","stadium":"Elland Road","city":"Leeds","key":"EllandRoad","lettering":"ELLAND ROAD"},
+ {"club":"Liverpool","stadium":"Anfield","city":"Liverpool","key":"Anfield","lettering":"ANFIELD"},
+ {"club":"Manchester City","stadium":"Etihad Stadium","city":"Manchester","key":"EtihadStadium","lettering":"ETIHAD STADIUM","sponsor_name":"Etihad"},
+ {"club":"Manchester United","stadium":"Old Trafford","city":"Manchester","key":"OldTrafford","skip":"already exists as draft gid://shopify/Product/16058970866045"},
+ {"club":"Newcastle United","stadium":"St James' Park","city":"Newcastle upon Tyne","key":"StJamesPark","lettering":"ST JAMES' PARK"},
+ {"club":"Nottingham Forest","stadium":"City Ground","city":"Nottingham","key":"CityGround","lettering":"CITY GROUND"},
+ {"club":"Sunderland","stadium":"Stadium of Light","city":"Sunderland","key":"StadiumOfLight","lettering":"STADIUM OF LIGHT"},
+ {"club":"Tottenham Hotspur","stadium":"Tottenham Hotspur Stadium","city":"London","key":"TottenhamHotspurStadium","lettering":"TOTTENHAM HOTSPUR STADIUM"}
+]

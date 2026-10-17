@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-06",
+  "method": "re-read via Admin API nodes() after the push; all userErrors empty; descriptions, SEO, titles, tags and Lou alt text match after2.json; status ACTIVE, prices and handles unchanged",
+  "titles": {
+    "8225435910395": "David Walliams Face Mask – Fancy Dress Cardboard Costume Mask (unchanged)",
+    "9530623624": "David Walliams 2 Face Mask – Fancy Dress Cardboard Costume Mask",
+    "4328415592523": "David Walliams 3 Face Mask – Fancy Dress Cardboard Costume Mask",
+    "9530620744": "David Walliams 4 Face Mask – Fancy Dress Cardboard Costume Mask"
+  },
+  "tags": {
+    "9530634184": ["celebrity-face-mask", "FACEBOOK", "mask-comedians", "third-party-name", "TV STARS"],
+    "9530648776": ["celebrity-face-mask", "FACEBOOK", "mask-comedians", "third-party-name", "TV STARS"],
+    "8125549805819": "third-party-name added",
+    "8195091595515": "third-party-name added"
+  },
+  "prices": {"8125549805819": "5.99", "8195091595515": "5.90", "16063694635389": ["4.99", "2.99"], "8249158926587": "2.50"}
+}

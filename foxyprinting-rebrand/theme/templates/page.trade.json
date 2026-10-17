@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "kind": "trade",
+        "heading": "Apply for a trade or designer account",
+        "button": "Send my application",
+        "success": "Thanks for applying! We'll review your details and get back to you within a few working days."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "form"
+  ]
+}

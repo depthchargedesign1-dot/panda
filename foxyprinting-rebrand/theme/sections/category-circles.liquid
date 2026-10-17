@@ -1,0 +1,52 @@
+<div class="section section--tight">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <div class="section-heading"><h2>{{ section.settings.heading }}</h2>
+        {%- if section.settings.link != blank -%}<a class="section-heading__link" href="{{ section.settings.link }}">{{ section.settings.link_label }} →</a>{%- endif -%}
+      </div>
+    {%- endif -%}
+    <div class="cat-row">
+      {%- for block in section.blocks -%}
+        {%- assign col = block.settings.collection -%}
+        <a class="cat-tile {% render 'accent', index: forloop.index0 %}" href="{{ block.settings.link | default: col.url }}" {{ block.shopify_attributes }}>
+          <span class="cat-tile__circle">
+            {%- if block.settings.image -%}
+              {{ block.settings.image | image_url: width: 300 | image_tag: loading: 'lazy', alt: '' }}
+            {%- elsif col.image -%}
+              {{ col.image | image_url: width: 300 | image_tag: loading: 'lazy', alt: '' }}
+            {%- else -%}
+              <span class="cat-tile__emoji" aria-hidden="true">{{ block.settings.emoji }}</span>
+            {%- endif -%}
+          </span>
+          <span class="cat-tile__label">{{ block.settings.label | default: col.title }}</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Category circles",
+  "max_blocks": 24,
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Shop by category" },
+    { "type": "text", "id": "link_label", "label": "Link label", "default": "See all categories" },
+    { "type": "url", "id": "link", "label": "Link" }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        { "type": "collection", "id": "collection", "label": "Collection" },
+        { "type": "text", "id": "label", "label": "Label (optional)" },
+        { "type": "image_picker", "id": "image", "label": "Image (optional)" },
+        { "type": "text", "id": "emoji", "label": "Emoji fallback", "default": "🎁" },
+        { "type": "url", "id": "link", "label": "Custom link (optional)" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Category circles", "blocks": [{ "type": "category" }, { "type": "category" }, { "type": "category" }, { "type": "category" }, { "type": "category" }, { "type": "category" }] }]
+}
+{% endschema %}

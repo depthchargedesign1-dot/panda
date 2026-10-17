@@ -1,0 +1,52 @@
+{
+ "date": "2026-10-08",
+ "request": "Owner approved (via coordinator): upgrade PP001/2/3/4/6/8 like the varsity jacket",
+ "products": {
+  "PP001": "https://foxyprinting.co.uk/products/personalised-dog-raglan-t-shirt",
+  "PP002": "https://foxyprinting.co.uk/products/personalised-dog-fleece-hoodie",
+  "PP003": "https://foxyprinting.co.uk/products/personalised-dog-denim-jacket",
+  "PP004": "https://foxyprinting.co.uk/products/personalised-dog-puffer-jacket",
+  "PP006": "https://foxyprinting.co.uk/products/personalised-dog-parka-jacket",
+  "PP008": "https://foxyprinting.co.uk/products/personalised-dog-football-t-shirt"
+ },
+ "files": {
+  "before.json": "products before the change",
+  "after.json": "re-read after the change",
+  "products.py": "Ralawise facts + colour photo URLs",
+  "listing_copy.py": "titles, copy, SEO, fields",
+  "description_PP00x.html": "rendered copy",
+  "media_map.json": "new media ids per colour + mockup",
+  "variant_payloads.json": "variant image + not-orderable updates",
+  "product_updates.json": "productUpdate inputs",
+  "metafields.json": "metafieldsSet inputs",
+  "make_mockups.py": "example name/number mockups"
+ },
+ "not_orderable": {
+  "PP001": [
+   "Navy 3XL/4XL",
+   "Navy/White 3XL/4XL",
+   "Pink/White 3XL/4XL"
+  ],
+  "PP002": [
+   "Navy 3XL/4XL",
+   "Pink 3XL/4XL"
+  ],
+  "PP003": [
+   "Black 3XL/4XL"
+  ]
+ },
+ "how_not_orderable": "inventory tracked + policy DENY (0 stock, shows sold out); not deleted",
+ "prices": "unchanged (PP001 10.99, PP002 20.99, PP003 28.99, PP004 35.99, PP006 35.99, PP008 27.99)",
+ "publications": [
+  "Online Store",
+  "Shop",
+  "Google & YouTube",
+  "Facebook & Instagram",
+  "TikTok"
+ ],
+ "artwork": {
+  "generator": "tools/artwork/dog_clothing_templates.py",
+  "dropbox": "/AI DESIGNS 2026/<Personalised Dog ...> - <first SKU>/ (README, PDF links, SVGs, Fonts copied from the varsity folder); sizes match local",
+  "pdf_zips": "https://cdn.shopify.com/s/files/1/1774/9115/files/dog-PP00x-print-pdfs.zip?v=1791455845 (md5 verified)"
+ }
+}

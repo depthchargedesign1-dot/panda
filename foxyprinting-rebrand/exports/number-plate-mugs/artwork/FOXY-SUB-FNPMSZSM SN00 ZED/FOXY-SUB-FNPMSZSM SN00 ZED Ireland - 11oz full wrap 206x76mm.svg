@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foxy Printing | Funny Number Plate Mug – SN00 ZED (Snoozed) – Monday Morning Mug – 11oz Ceramic | Ireland | 11oz sublimation wrap: trim 200 x 70 mm, bleed 3 mm (page 206 x 76 mm), safe area 3 mm. Font: Barlow Condensed (SIL OFL 1.1). -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="206mm" height="76mm" viewBox="0 0 206 76">
+<g id="Background" inkscape:groupmode="layer" inkscape:label="Background (bleed)"><rect width="206.0" height="76.0" fill="#FFFFFF"/></g>
+<g id="plate" inkscape:groupmode="layer" inkscape:label="Number plate (full wrap)">
+<clipPath id="platec"><rect x="6.000" y="6.000" width="194.0" height="64.0" rx="7"/></clipPath>
+<rect x="6.000" y="6.000" width="194.0" height="64.0" rx="7" fill="#FFD100" stroke="#8A8A8A" stroke-width="0.25"/>
+<g clip-path="url(#platec)"><rect id="plateband" x="6.000" y="6.000" width="30.0" height="64.0" fill="#003DA5"/></g>
+<svg x="9.500" y="13.000" width="23.000" height="11.500" viewBox="0 0 3 1.5"><rect width="1" height="1.5" fill="#169B62"/><rect x="1" width="1" height="1.5" fill="#FFFFFF"/><rect x="2" width="1" height="1.5" fill="#FF883E"/></svg>
+<text x="21.000" y="63.000" font-family="Barlow Condensed" font-weight="700" font-size="14.286" fill="#FFFFFF" text-anchor="middle">IRL</text>
+<g id="platereg" font-family="Barlow Condensed" font-weight="700" font-size="38.046" letter-spacing="1.332" fill="#111111"><text x="46.164" y="51.316">SN00</text><text x="135.724" y="51.316">ZED</text></g>
+<rect x="8.200" y="8.200" width="189.600" height="59.600" rx="5.2" fill="none" stroke="#111111" stroke-width="1.0"/></g>
+<g id="Guides" inkscape:groupmode="layer" inkscape:label="Guides (do not print)" style="display:none" fill="none" stroke-width="0.2"><rect x="3.0" y="3.0" width="200.0" height="70.0" stroke="#00AEEF" stroke-dasharray="2,1"/><rect x="6.0" y="6.0" width="194.0" height="64.0" stroke="#EC008C" stroke-dasharray="1,1"/></g>
+</svg>

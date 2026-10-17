@@ -1,0 +1,327 @@
+{
+ "x21": {
+  "sku": "FOXY-OTHER-PERSONALIZED-WELCOME-NAME-DRINKS-COA",
+  "title": "Personalised Welcome Name Coaster – Blush Script Design – 90mm Drinks Coaster for a Home Bar",
+  "handle": "personalized-welcome-name-drinks-coaster-2",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-WELCOME-NAME-DRINKS-COA - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-WELCOME-NAME-DRINKS-COA - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf",
+   "GreatVibes-Regular.ttf"
+  ],
+  "fields": [
+   "Name",
+   "Welcome line (optional)"
+  ]
+ },
+ "x22": {
+  "sku": "FOXY-OTHER-PERSONALIZED-YOUR-BAR-NAME-DRINKS-CO",
+  "title": "Personalised Bar Coaster – Emerald Flourish Design – Your Name & Est. Year – 90mm Drinks Coaster",
+  "handle": "personalized-your-bar-name-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-YOUR-BAR-NAME-DRINKS-CO - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-YOUR-BAR-NAME-DRINKS-CO - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "GreatVibes-Regular.ttf"
+  ],
+  "fields": [
+   "Your name",
+   "Est. year (optional)"
+  ]
+ },
+ "x23": {
+  "sku": "FOXY-OTHER-PERSONALIZED-BAR-NAME-CROWN-DRINKS-C",
+  "title": "Personalised Bar Name Coaster – Crown & Copper Design – 90mm Drinks Coaster for a Home Pub",
+  "handle": "personalized-bar-name-crown-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-CROWN-DRINKS-C - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-CROWN-DRINKS-C - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf"
+  ],
+  "fields": [
+   "Bar name – line 1",
+   "Bar name – line 2 (optional)"
+  ]
+ },
+ "x24": {
+  "sku": "FOXY-OTHER-PERSONALIZED-BAR-NAME-PURPLE-DRINKS",
+  "title": "Personalised Bar Name Coaster – Plum Filigree Design – 90mm Drinks Coaster for a Gin Bar",
+  "handle": "personalized-bar-name-purple-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-PURPLE-DRINKS - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-PURPLE-DRINKS - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf"
+  ],
+  "fields": [
+   "Bar name – line 1",
+   "Bar name – line 2 (optional)"
+  ]
+ },
+ "x25": {
+  "sku": "FOXY-OTHER-PERSONALIZED-WELCOME-BAR-NAME-DRINKS",
+  "title": "Personalised Welcome Bar Coaster – Teal Welcome Design – Your Bar Name – 90mm Drinks Coaster",
+  "handle": "personalized-welcome-bar-name-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-WELCOME-BAR-NAME-DRINKS - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-WELCOME-BAR-NAME-DRINKS - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf"
+  ],
+  "fields": [
+   "Bar name",
+   "Welcome line (optional)"
+  ]
+ },
+ "x26": {
+  "sku": "FOXY-OTHER-PERSONALIZED-BAR-NAME-DRINKS-COASTER",
+  "title": "Personalised Bar Name Coaster – Walnut & Gold Design – 90mm Drinks Coaster for a Home Bar",
+  "handle": "personalized-bar-name-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-DRINKS-COASTER - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-DRINKS-COASTER - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf"
+  ],
+  "fields": [
+   "Bar name – line 1",
+   "Bar name – line 2 (optional)"
+  ]
+ },
+ "x27": {
+  "sku": "FOXY-OTHER-PERSONALIZED-BAR-NAME-ESTABLISH-DATE",
+  "title": "Personalised Bar Name Established Coaster – Olive Oval Design – Name & Year – 90mm Drinks Coaster",
+  "handle": "personalized-bar-name-establish-date-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-ESTABLISH-DATE - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-ESTABLISH-DATE - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf",
+   "Montserrat-Bold.ttf"
+  ],
+  "fields": [
+   "Bar name – line 1",
+   "Bar name – line 2 (optional)",
+   "Est. year (optional)",
+   "Welcome line (optional)"
+  ]
+ },
+ "x28": {
+  "sku": "FOXY-OTHER-PERSONALIZED-BAR-NAME-ESTABLISH-DATE-2",
+  "title": "Personalised Rustic Established Bar Coaster – Wood Effect – Your Bar Name & Year – 90mm Drinks Coaster",
+  "handle": "personalized-bar-name-establish-date-drinks-coaster-2",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-ESTABLISH-DATE-2 - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-ESTABLISH-DATE-2 - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf",
+   "Montserrat-Medium.ttf"
+  ],
+  "fields": [
+   "Bar name – line 1",
+   "Bar name – line 2 (optional)",
+   "Est. year (optional)"
+  ]
+ },
+ "x29": {
+  "sku": "FOXY-OTHER-PERSONALIZED-BAR-NAME-BILLIARDS-DRIN",
+  "title": "Personalised Pool Ball Bar Coaster – Rainbow Bubbles Design – Letters on Pool Balls – 90mm Drinks Coaster",
+  "handle": "personalized-bar-name-billiards-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-BILLIARDS-DRIN - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-BILLIARDS-DRIN - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Bold.ttf",
+   "Montserrat-Bold.ttf"
+  ],
+  "fields": [
+   "Top row letters (up to 3)",
+   "Bottom row letters (up to 4)",
+   "Welcome line (optional)"
+  ]
+ },
+ "x30": {
+  "sku": "FOXY-OTHER-PERSONALIZED-BAR-NAME-ENJOY-YOUR-TIM",
+  "title": "Personalised Bar Name Coaster – Ruby Script Design – Enjoy Your Time – 90mm Drinks Coaster",
+  "handle": "personalized-bar-name-enjoy-your-time-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-ENJOY-YOUR-TIM - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-BAR-NAME-ENJOY-YOUR-TIM - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf",
+   "GreatVibes-Regular.ttf"
+  ],
+  "fields": [
+   "Bar name"
+  ]
+ },
+ "o01": {
+  "sku": "FOXY-OTHER-PERSONALIZED-MAN-CAVE-DRINKS-COASTER",
+  "title": "Personalised Man Cave Coaster – Slate & Gold Design – Your Name & Est. Year – 90mm Drinks Coaster",
+  "handle": "personalized-man-cave-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-MAN-CAVE-DRINKS-COASTER - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-MAN-CAVE-DRINKS-COASTER - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf",
+   "Cinzel-SemiBold.ttf"
+  ],
+  "fields": [
+   "Whose cave? e.g. Dave’s (optional)",
+   "Est. year (optional)"
+  ]
+ },
+ "o02": {
+  "sku": "FOXY-OTHER-PERSONALIZED-COME-IN-BUD-DRINKS-COAS",
+  "title": "Personalised Well Come In Bud Coaster – Funny Man Cave Drinks Coaster – Your Name – 90mm",
+  "handle": "personalized-come-in-bud-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-COME-IN-BUD-DRINKS-COAS - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-COME-IN-BUD-DRINKS-COAS - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Bold.ttf"
+  ],
+  "fields": [
+   "Name to replace ‘Bud’ (optional)"
+  ]
+ },
+ "o03": {
+  "sku": "FOXY-OTHER-PERSONALIZED-MY-CAVE-MY-RULES-DRINKS",
+  "title": "Personalised My Cave My Rules Coaster – Navy & Gold Design – Your Name – 90mm Man Cave Drinks Coaster",
+  "handle": "personalized-my-cave-my-rules-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-MY-CAVE-MY-RULES-DRINKS - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-MY-CAVE-MY-RULES-DRINKS - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "ZillaSlab-Bold.ttf"
+  ],
+  "fields": [
+   "Whose cave? e.g. Dave’s (optional)"
+  ]
+ },
+ "o04": {
+  "sku": "FOXY-OTHER-PERSONALIZED-INITIAL-DRINKS-COASTER",
+  "title": "Personalised Initial Coaster – Midnight & Red Monogram Design – 90mm Drinks Coaster",
+  "handle": "personalized-initial-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-INITIAL-DRINKS-COASTER - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-INITIAL-DRINKS-COASTER - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "PlayfairDisplay-Regular.ttf"
+  ],
+  "fields": [
+   "Initial"
+  ]
+ },
+ "o05": {
+  "sku": "FOXY-OTHER-PERSONALIZED-MY-CAVE-MY-RULES-DRINKS-2",
+  "title": "Personalised Man Cave Take a Sip Coaster – Whisky Glass Design – Your Name – 90mm Drinks Coaster",
+  "handle": "personalized-my-cave-my-rules-drinks-coaster-1",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-MY-CAVE-MY-RULES-DRINKS-2 - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-MY-CAVE-MY-RULES-DRINKS-2 - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "PlayfairDisplay-Regular.ttf"
+  ],
+  "fields": [
+   "Whose cave? e.g. Dave’s (optional)"
+  ]
+ },
+ "o06": {
+  "sku": "FOXY-OTHER-PERSONALIZED-MY-CAVE-MY-RULES-2-DRIN",
+  "title": "Personalised My Cave My Rules Whiskey Coaster – Orange & Black Design – Your Name – 90mm Drinks Coaster",
+  "handle": "personalized-my-cave-my-rules-2-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-MY-CAVE-MY-RULES-2-DRIN - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-MY-CAVE-MY-RULES-2-DRIN - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf"
+  ],
+  "fields": [
+   "Whose cave? e.g. Dave’s (optional)"
+  ]
+ },
+ "o07": {
+  "sku": "FOXY-OTHER-PERSONALIZED-YOUR-NAME-DRINKS-COASTE",
+  "title": "Personalised Welcome Name Coaster – Burgundy Welcome Design – Your Name in Script – 90mm Drinks Coaster",
+  "handle": "personalized-your-name-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-YOUR-NAME-DRINKS-COASTE - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-YOUR-NAME-DRINKS-COASTE - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Allura-Regular.ttf",
+   "Cinzel-Regular.ttf"
+  ],
+  "fields": [
+   "Name",
+   "Welcome line (optional)"
+  ]
+ },
+ "o08": {
+  "sku": "FOXY-OTHER-PERSONALIZED-ENJOY-MY-MAN-CAVE-DRINK",
+  "title": "Personalised Enjoy My Man Cave Coaster – Teal Retro Design – Your Name – 90mm Drinks Coaster",
+  "handle": "personalized-enjoy-my-man-cave-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-ENJOY-MY-MAN-CAVE-DRINK - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-ENJOY-MY-MAN-CAVE-DRINK - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "Cinzel-Regular.ttf",
+   "Montserrat-Bold.ttf"
+  ],
+  "fields": [
+   "Whose cave? e.g. Dave’s (optional)"
+  ]
+ },
+ "o09": {
+  "sku": "FOXY-OTHER-PERSONALIZED-WELCOME-MAN-CAVE-DRINKS",
+  "title": "Personalised Welcome Man Cave Coaster – Blue & Gold Ribbon Design – Your Name – 90mm Drinks Coaster",
+  "handle": "personalized-welcome-man-cave-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-WELCOME-MAN-CAVE-DRINKS - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-WELCOME-MAN-CAVE-DRINKS - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "PlayfairDisplay-Regular.ttf"
+  ],
+  "fields": [
+   "Whose cave? e.g. Dave’s (optional)"
+  ]
+ },
+ "o10": {
+  "sku": "FOXY-OTHER-PERSONALIZED-YOUR-TEXT-HERE-DRINKS-C",
+  "title": "Personalised Your Text Coaster – Golden Lions Design – Three Lines of Text – 90mm Drinks Coaster",
+  "handle": "personalized-your-text-here-drinks-coaster",
+  "files": [
+   "FOXY-OTHER-PERSONALIZED-YOUR-TEXT-HERE-DRINKS-C - 90x90mm coaster - PRINT.pdf",
+   "FOXY-OTHER-PERSONALIZED-YOUR-TEXT-HERE-DRINKS-C - 90x90mm coaster - PRINT.svg"
+  ],
+  "fonts": [
+   "PlayfairDisplay-Regular.ttf"
+  ],
+  "fields": [
+   "Line 1",
+   "Line 2",
+   "Line 3 (optional)"
+  ]
+ }
+}

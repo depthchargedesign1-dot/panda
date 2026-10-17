@@ -1,0 +1,129 @@
+{%- comment -%}
+  Word Art Designer (owner, 9 Oct 2026): the customer types a name and their words, and they fill our artwork
+  shape; Shuffle makes a new layout. Add to basket attaches a print-ready PNG as the line property "_Print file".
+  Shows on every product tagged "Word Art" (so new word art products get it automatically) or "wa-upload"
+  ("Create your own": the customer's picture becomes the shape).
+  Shape: product.metafields.foxy.word_art_mask (RGBA PNG from tools/word_art_designer/make_masks.py), else the
+  "print only" photo, else the featured image.
+  Render inside the product form: {% render 'word-art-designer', product: product %}
+{%- endcomment -%}
+{%- liquid
+  assign wa_on = false
+  assign wa_upload = false
+  if product.tags contains 'Word Art'
+    assign wa_on = true
+  endif
+  if product.tags contains 'wa-upload'
+    assign wa_on = true
+    assign wa_upload = true
+  endif
+  if product.metafields.foxy.word_art_off.value == true
+    assign wa_on = false
+  endif
+-%}
+{%- if wa_on -%}
+  {%- liquid
+    assign wa_mask = ''
+    if product.metafields.foxy.word_art_mask.value != blank
+      assign wa_mask = product.metafields.foxy.word_art_mask.value | image_url: width: 640
+    endif
+    assign wa_image = ''
+    for m in product.media
+      if m.media_type == 'image'
+        assign alt_lc = m.alt | downcase
+        if alt_lc contains 'print only'
+          assign wa_image = m | image_url: width: 900
+          break
+        endif
+      endif
+    endfor
+    if wa_image == '' and product.featured_media
+      assign wa_image = product.featured_media | image_url: width: 900
+    endif
+    assign wa_scheme = product.metafields.foxy.word_art_scheme.value | default: 'original'
+    assign wa_font = product.metafields.foxy.word_art_font.value | default: 'anton'
+  -%}
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@600&family=Baloo+2:wght@800&family=Fredoka:wght@600&family=Pacifico&family=Lobster&family=Permanent+Marker&family=Abril+Fatface&display=swap" rel="stylesheet">
+  {{ 'word-art-designer.css' | asset_url | stylesheet_tag }}
+  <div class="wa" data-word-art>
+    <div class="wa__head">
+      <h2>✏️ Design your word art</h2>
+      <p>Type a name and your words. We fill the {% if wa_upload %}shape of your picture{% else %}design{% endif %} with them, and you can shuffle until you love it.</p>
+    </div>
+    <canvas class="wa__mini" data-wa-mini aria-hidden="true"></canvas>
+
+    {%- if wa_upload -%}
+      <div class="field">
+        <label class="field__label" for="WaUpload-{{ product.id }}">Your picture or silhouette</label>
+        <input id="WaUpload-{{ product.id }}" type="file" accept="image/png,image/jpeg,image/webp" data-wa-upload>
+        <small class="wa__hint">Works best with one clear shape on a white or see-through background (a pet, a heart, a house…).</small>
+      </div>
+    {%- endif -%}
+
+    <div class="field">
+      <label class="field__label" for="WaName-{{ product.id }}">Name (shown largest)</label>
+      <input id="WaName-{{ product.id }}" type="text" maxlength="30" autocomplete="off" placeholder="e.g. Olivia" data-wa-name>
+    </div>
+    <div class="field">
+      <label class="field__label" for="WaWords-{{ product.id }}">Your words, separated by commas</label>
+      <textarea id="WaWords-{{ product.id }}" rows="4" maxlength="900" placeholder="e.g. Kind, Funny, Dancing, Pizza, Nanny Sue, Best friend, Unicorns, Brave" data-wa-words></textarea>
+      <small class="wa__hint" data-wa-count></small>
+    </div>
+
+    <button type="button" class="btn btn--outline wa__shuffle" data-wa-shuffle>🔀 Shuffle the layout</button>
+
+    <div class="field">
+      <span class="field__label">Colours</span>
+      <div class="wa__schemes">
+        <button type="button" data-wa-scheme="original" aria-pressed="{% if wa_scheme == 'original' %}true{% else %}false{% endif %}" title="Original colours" style="--sw:conic-gradient(#e53935,#fdd835,#43a047,#1e88e5,#8e24aa,#e53935)"><span>Original</span></button>
+        <button type="button" data-wa-scheme="rainbow" aria-pressed="{% if wa_scheme == 'rainbow' %}true{% else %}false{% endif %}" title="Rainbow" style="--sw:linear-gradient(90deg,#E53935,#FB8C00,#FDD835,#43A047,#1E88E5,#8E24AA)"><span>Rainbow</span></button>
+        <button type="button" data-wa-scheme="pink" aria-pressed="{% if wa_scheme == 'pink' %}true{% else %}false{% endif %}" title="Pinks" style="--sw:linear-gradient(135deg,#E91E63,#FF80AB)"><span>Pinks</span></button>
+        <button type="button" data-wa-scheme="blue" aria-pressed="{% if wa_scheme == 'blue' %}true{% else %}false{% endif %}" title="Blues" style="--sw:linear-gradient(135deg,#0D47A1,#64B5F6)"><span>Blues</span></button>
+        <button type="button" data-wa-scheme="purple" aria-pressed="{% if wa_scheme == 'purple' %}true{% else %}false{% endif %}" title="Purples" style="--sw:linear-gradient(135deg,#4A148C,#CE93D8)"><span>Purples</span></button>
+        <button type="button" data-wa-scheme="teal" aria-pressed="{% if wa_scheme == 'teal' %}true{% else %}false{% endif %}" title="Teal and mint" style="--sw:linear-gradient(135deg,#00695C,#80CBC4)"><span>Teal</span></button>
+        <button type="button" data-wa-scheme="warm" aria-pressed="{% if wa_scheme == 'warm' %}true{% else %}false{% endif %}" title="Sunset" style="--sw:linear-gradient(135deg,#C62828,#F9A825)"><span>Sunset</span></button>
+        <button type="button" data-wa-scheme="gold" aria-pressed="{% if wa_scheme == 'gold' %}true{% else %}false{% endif %}" title="Gold and brown" style="--sw:linear-gradient(135deg,#5D4037,#D4A017)"><span>Gold</span></button>
+        <button type="button" data-wa-scheme="mono" aria-pressed="{% if wa_scheme == 'mono' %}true{% else %}false{% endif %}" title="Black and grey" style="--sw:linear-gradient(135deg,#000,#9E9E9E)"><span>Black</span></button>
+      </div>
+    </div>
+    <div class="field">
+      <span class="field__label">Font</span>
+      <div class="wa__fonts">
+        {%- assign wa_fonts = 'anton:Anton:Anton:400,oswald:Oswald:Oswald:600,baloo:Baloo:Baloo 2:800,fredoka:Fredoka:Fredoka:600,pacifico:Pacifico:Pacifico:400,lobster:Lobster:Lobster:400,marker:Marker:Permanent Marker:400,abril:Abril:Abril Fatface:400,mix:Mix:Pacifico:400' | split: ',' -%}
+        {%- for f in wa_fonts -%}
+          {%- assign fp = f | split: ':' -%}
+          <button type="button" data-wa-font="{{ fp[0] }}" aria-pressed="{% if wa_font == fp[0] %}true{% else %}false{% endif %}" style="font-family:'{{ fp[2] }}';font-weight:{{ fp[3] }}">{% if fp[0] == 'mix' %}Mix it up{% else %}{{ fp[1] }}{% endif %}</button>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    {%- if settings.personaliser_require_confirm -%}
+      <label class="confirm"><input type="checkbox" data-wa-confirm> <span>I’ve checked the spelling and I’m happy with my design</span></label>
+    {%- endif -%}
+    <p class="wa__note">We print exactly the design you see, made sharp at full size for the size you pick. Tip: shuffle a few times to find your favourite layout.</p>
+    <p class="wa__msg" data-wa-msg role="status" aria-live="polite"></p>
+
+    <input type="hidden" name="properties[Name]" data-wa-prop="name" disabled>
+    <input type="hidden" name="properties[Words]" data-wa-prop="words" disabled>
+    <input type="hidden" name="properties[Colours]" data-wa-prop="colours" disabled>
+    <input type="hidden" name="properties[Font]" data-wa-prop="font" disabled>
+    <input type="hidden" name="properties[Layout code]" data-wa-prop="code" disabled>
+
+    <script type="application/json">
+      {
+        "productId": {{ product.id | json }},
+        "handle": {{ product.handle | json }},
+        "title": {{ product.title | json }},
+        "maskUrl": {{ wa_mask | json }},
+        "imageUrl": {{ wa_image | json }},
+        "upload": {{ wa_upload | json }},
+        "defaultScheme": {{ wa_scheme | json }},
+        "defaultFont": {{ wa_font | json }},
+        "cartAddUrl": {{ routes.cart_add_url | append: '.js' | json }},
+        "cartUrl": {{ routes.cart_url | json }}
+      }
+    </script>
+  </div>
+  <script src="{{ 'word-art-designer.js' | asset_url }}" defer></script>
+{%- endif -%}

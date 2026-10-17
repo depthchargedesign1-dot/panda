@@ -1,0 +1,14 @@
+mutation LBCopyFix($p9369892744: ProductUpdateInput!, $p8125539352827: ProductUpdateInput!, $p9530634184: ProductUpdateInput!, $p9530648776: ProductUpdateInput!, $p9530623624: ProductUpdateInput!, $p4328415592523: ProductUpdateInput!, $p8225435910395: ProductUpdateInput!, $p9530620744: ProductUpdateInput!) {
+  u9369892744: productUpdate(product: $p9369892744) { product { id } userErrors { field message } }
+  u8125539352827: productUpdate(product: $p8125539352827) { product { id } userErrors { field message } }
+  u9530634184: productUpdate(product: $p9530634184) { product { id } userErrors { field message } }
+  u9530648776: productUpdate(product: $p9530648776) { product { id } userErrors { field message } }
+  u9530623624: productUpdate(product: $p9530623624) { product { id } userErrors { field message } }
+  u4328415592523: productUpdate(product: $p4328415592523) { product { id } userErrors { field message } }
+  u8225435910395: productUpdate(product: $p8225435910395) { product { id } userErrors { field message } }
+  u9530620744: productUpdate(product: $p9530620744) { product { id } userErrors { field message } }
+  t9530623624: tagsAdd(id: "gid://shopify/Product/9530623624", tags: ["third-party-name"]) { node { id } userErrors { field message } }
+  t4328415592523: tagsAdd(id: "gid://shopify/Product/4328415592523", tags: ["third-party-name"]) { node { id } userErrors { field message } }
+  t8225435910395: tagsAdd(id: "gid://shopify/Product/8225435910395", tags: ["third-party-name"]) { node { id } userErrors { field message } }
+  t8249158926587: tagsAdd(id: "gid://shopify/Product/8249158926587", tags: ["third-party-name"]) { node { id } userErrors { field message } }
+}

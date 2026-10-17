@@ -1,0 +1,97 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "reviews": {
+      "type": "reviews",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Fantastic card",
+            "quote": "Absolutely fantastic card! My grandson will be so thrilled that he has a card with his favourite supercar on it. Superb quality card and very quick delivery. Thank you.",
+            "name": "Jean M.",
+            "verified": true,
+            "product": "Personalised kids' birthday card"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Brother loved the card",
+            "quote": "My brother is a Motörhead/Lemmy big fan and he absolutely loved his birthday card. I ordered in New Zealand and he received it in plenty of time in England.",
+            "name": "Kevin T.",
+            "verified": true,
+            "product": "Personalised music birthday card"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Excellent card",
+            "quote": "Excellent card, excellent print. Fantastic service and fast delivery. Would definitely recommend the product and company.",
+            "name": "Glennis L.",
+            "verified": true,
+            "product": "Personalised A4 card"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Absolutely brilliant service",
+            "quote": "Absolutely brilliant service. Great quality and very fast delivery. Would recommend and will use again.",
+            "name": "John B.",
+            "verified": true,
+            "product": "Custom photo face mask"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "High quality item",
+            "quote": "High quality item, competitively priced and would definitely return for more.",
+            "name": "D. Gray",
+            "verified": true,
+            "product": "Personalised football club certificates"
+          }
+        },
+        "r6": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Great quality",
+            "quote": "Great quality, fast delivery — this was exactly what I wanted, thank you.",
+            "name": "Tracey B.",
+            "verified": true,
+            "product": "Personalised birthday card"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "settings": {
+        "heading": "What our customers say",
+        "subheading": "415 reviews on Judge.me · 411 from verified buyers",
+        "link_label": "Read all reviews",
+        "link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "reviews"
+  ]
+}

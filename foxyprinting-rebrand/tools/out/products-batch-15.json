@@ -1,0 +1,585 @@
+[
+ {
+  "title": "Mummy & Me Matching T-Shirts",
+  "handle": "mummy-me-matching-t-shirts",
+  "descriptionHtml": "<p><strong>Mummy & Me Matching T-Shirts</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Love-themed keepsakes for Valentine's and Mother's Day.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Valentine's & Mother's Day",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-valentines-mothers-day",
+   "dept-occasions",
+   "machine-dtf",
+   "wave-2",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Who",
+    "values": [
+     {
+      "name": "Adult"
+     },
+     {
+      "name": "Kids"
+     },
+     {
+      "name": "Baby"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Who",
+      "name": "Adult"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-DTF-MMMTS-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Who",
+      "name": "Kids"
+     }
+    ],
+    "price": "11.99",
+    "sku": "FOXY-DTF-MMMTS-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Who",
+      "name": "Baby"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-MMMTS-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Easter Egg Hunt Kit",
+  "handle": "personalised-easter-egg-hunt-kit",
+  "descriptionHtml": "<p><strong>Personalised Easter Egg Hunt Kit</strong> - printed and precision-cut in our UK workshop.</p><p>Egg hunt kits, Easter bags and egg boxes.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Easter",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-easter",
+   "dept-occasions",
+   "machine-cut",
+   "wave-2",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-CUT-PEEHK-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Easter Basket Bag",
+  "handle": "personalised-easter-basket-bag",
+  "descriptionHtml": "<p><strong>Personalised Easter Basket Bag</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Egg hunt kits, Easter bags and egg boxes.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Easter",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-easter",
+   "dept-occasions",
+   "machine-dtf",
+   "wave-2",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-PEBB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Easter Egg Box",
+  "handle": "personalised-easter-egg-box",
+  "descriptionHtml": "<p><strong>Personalised Easter Egg Box</strong> - printed and precision-cut in our UK workshop.</p><p>Egg hunt kits, Easter bags and egg boxes.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Easter",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-easter",
+   "dept-occasions",
+   "machine-cut",
+   "wave-2",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "4.99",
+    "sku": "FOXY-CUT-PEEB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Acrylic Wedding Welcome Sign",
+  "handle": "acrylic-wedding-welcome-sign",
+  "descriptionHtml": "<p><strong>Acrylic Wedding Welcome Sign</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Welcome signs, table numbers, favours and stationery.</p><p>Personalise it with: names, date. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Weddings & Engagements",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-weddings",
+   "dept-occasions",
+   "machine-uv",
+   "wave-3",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A3"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A3"
+     }
+    ],
+    "price": "49.99",
+    "sku": "FOXY-UV-AWWS-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Names\", \"Date\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Acrylic Wedding Table Numbers (Set of 10)",
+  "handle": "acrylic-wedding-table-numbers-set-of-10",
+  "descriptionHtml": "<p><strong>Acrylic Wedding Table Numbers (Set of 10)</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Welcome signs, table numbers, favours and stationery.</p><p>Personalise it with: names, date. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Weddings & Engagements",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-weddings",
+   "dept-occasions",
+   "machine-uv",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "34.99",
+    "sku": "FOXY-UV-AWTNSO1-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Names\", \"Date\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Acrylic Place Names (Pack of 10)",
+  "handle": "personalised-acrylic-place-names-pack-of-10",
+  "descriptionHtml": "<p><strong>Personalised Acrylic Place Names (Pack of 10)</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Welcome signs, table numbers, favours and stationery.</p><p>Personalise it with: guest names list. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Weddings & Engagements",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-weddings",
+   "dept-occasions",
+   "machine-uv",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UV-PAPNPO1-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Guest names list\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Wedding Invitations (Pack of 25)",
+  "handle": "wedding-invitations-pack-of-25",
+  "descriptionHtml": "<p><strong>Wedding Invitations (Pack of 25)</strong> - printed on premium stock in our UK workshop.</p><p>Welcome signs, table numbers, favours and stationery.</p><p>Personalise it with: names, date, venue. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Weddings & Engagements",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-weddings",
+   "dept-occasions",
+   "machine-press",
+   "wave-3",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "34.99",
+    "sku": "FOXY-PRESS-WIPO2-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Names\", \"Date\", \"Venue\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Pet Memorial Slate Plaque",
+  "handle": "pet-memorial-slate-plaque",
+  "descriptionHtml": "<p><strong>Pet Memorial Slate Plaque</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Gentle, beautifully printed keepsakes for loved ones and pets.</p><p>Personalise it with: pet name, photo upload, dates. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Memorial & Remembrance",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-memorial",
+   "dept-occasions",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "21.99",
+    "sku": "FOXY-UV-PMSP-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Pet name\", \"Photo upload\", \"Dates\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Memorial Acrylic Photo Plaque",
+  "handle": "memorial-acrylic-photo-plaque",
+  "descriptionHtml": "<p><strong>Memorial Acrylic Photo Plaque</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Gentle, beautifully printed keepsakes for loved ones and pets.</p><p>Personalise it with: name, photo upload, dates. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Memorial & Remembrance",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-memorial",
+   "dept-occasions",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A5"
+     },
+     {
+      "name": "A4"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A5"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UV-MAPP-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A4"
+     }
+    ],
+    "price": "26.99",
+    "sku": "FOXY-UV-MAPP-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Photo upload\", \"Dates\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

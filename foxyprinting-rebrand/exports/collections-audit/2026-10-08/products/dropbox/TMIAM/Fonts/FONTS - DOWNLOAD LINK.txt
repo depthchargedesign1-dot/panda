@@ -1,0 +1,12 @@
+Fonts used (both SIL Open Font License 1.1, free for commercial use):
+
+Bebas Neue Regular
+  Source: https://fonts.google.com/specimen/Bebas+Neue
+  Download (Shopify Files): https://cdn.shopify.com/s/files/1/1774/9115/files/BebasNeue-Regular.ttf?v=1791283074
+
+Pacifico Regular
+  Source: https://fonts.google.com/specimen/Pacifico
+  Download (Shopify Files): https://cdn.shopify.com/s/files/1/1774/9115/files/Pacifico-Regular.ttf?v=1791457254
+
+Install both before opening the SVG in Illustrator, or the live text will show in a substitute font.
+Licence: OFL.txt in this folder.

@@ -1,0 +1,11 @@
+Personalised Dog Varsity Jacket - FOXY-PP005-BLA-XS
+Print PDFs (real layers Artwork / Text / CUT / Guides, TrimBox + BleedBox, live Bebas Neue text) in Shopify Files.
+Same artwork as the SVGs in this folder. 3XL and 4XL use the 2XL file until the owner confirms their print area.
+
+XS  100 x 100 mm: https://cdn.shopify.com/s/files/1/1774/9115/files/dog-varsity-jacket-name-number-XS-100x100mm.pdf?v=1791451920
+S   140 x 140 mm: https://cdn.shopify.com/s/files/1/1774/9115/files/dog-varsity-jacket-name-number-S-140x140mm.pdf?v=1791451920
+M   165 x 190 mm: https://cdn.shopify.com/s/files/1/1774/9115/files/dog-varsity-jacket-name-number-M-165x190mm.pdf?v=1791451920
+L   180 x 200 mm: https://cdn.shopify.com/s/files/1/1774/9115/files/dog-varsity-jacket-name-number-L-180x200mm.pdf?v=1791451920
+XL  180 x 230 mm: https://cdn.shopify.com/s/files/1/1774/9115/files/dog-varsity-jacket-name-number-XL-180x230mm.pdf?v=1791451920
+2XL 190 x 240 mm: https://cdn.shopify.com/s/files/1/1774/9115/files/dog-varsity-jacket-name-number-2XL-190x240mm.pdf?v=1791451920
+(sizes are width across the back x length along the back, trim; add 3 mm bleed each edge)

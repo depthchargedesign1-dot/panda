@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_primary }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {%- comment -%} Script fonts used only by the live personaliser preview. {%- endcomment -%}
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&family=Pacifico&family=Playfair+Display:wght@700&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- endif -%}
+
+    <title>
+      {{ page_title }}
+      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    </title>
+    {% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+
+    {% render 'meta-tags' %}
+
+    {{ content_for_header }}
+
+    {% render 'microdata-schema' %}
+
+    {%- liquid
+      assign heading_font = settings.type_heading_font
+      assign body_font = settings.type_body_font
+      assign body_font_bold = body_font | font_modify: 'weight', 'bold'
+    -%}
+    <style>
+      {{ heading_font | font_face: font_display: 'swap' }}
+      {{ body_font | font_face: font_display: 'swap' }}
+      {{ body_font_bold | font_face: font_display: 'swap' }}
+
+      :root {
+        --fx-primary: {{ settings.color_primary }};
+        --fx-pink: {{ settings.color_pink }};
+        --fx-purple: {{ settings.color_purple }};
+        --fx-teal: {{ settings.color_teal }};
+        --fx-yellow: {{ settings.color_yellow }};
+        --fx-ink: {{ settings.color_ink }};
+        --fx-bg: {{ settings.color_background }};
+        --fx-tint: {{ settings.color_tint }};
+        --fx-sale: {{ settings.color_sale }};
+        --fx-font-heading: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+        --fx-font-heading-weight: {{ heading_font.weight }};
+        --fx-font-body: {{ body_font.family }}, {{ body_font.fallback_families }};
+        --fx-font-body-weight: {{ body_font.weight }};
+        --fx-radius: {{ settings.corner_radius }}px;
+        --fx-page-width: {{ settings.page_width }}px;
+      }
+    </style>
+
+    {{ 'foxy.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'foxy.js' | asset_url }}" defer="defer"></script>
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  </head>
+
+  <body class="template-{{ template.name | handle }}{% if template.suffix %} template-{{ template.name | handle }}--{{ template.suffix | handle }}{% endif %}">
+    <a class="skip-link" href="#MainContent">{{ 'accessibility.skip_to_content' | t }}</a>
+
+    {% sections 'header-group' %}
+
+    <main id="MainContent" class="main" role="main" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+
+    {% sections 'footer-group' %}
+
+    <script>
+      window.FoxyTheme = {
+        routes: {
+          cart_add_url: '{{ routes.cart_add_url }}',
+          cart_url: '{{ routes.cart_url }}',
+          search_url: '{{ routes.search_url }}'
+        },
+        strings: {
+          addToCart: {{ 'products.product.add_to_cart' | t | json }},
+          soldOut: {{ 'products.product.sold_out' | t | json }},
+          unavailable: {{ 'products.product.unavailable' | t | json }}
+        },
+        moneyFormat: {{ shop.money_format | json }}
+      };
+    </script>
+    <script>
+      /* Store search: Shopify matches parts of words and typos ("bin" also finds Robin, Fabinho, Philbin…), so a
+         short search returned 1,000 loose results. Search for the exact words first; the results page falls back
+         to the loose search when nothing matches exactly. The in-collection search box is left alone. */
+      document.addEventListener('submit', function (e) {
+        var form = e.target;
+        if (!form.matches || !form.matches('form[role="search"]') || form.hasAttribute('data-col-search-form')) return;
+        var q = form.querySelector('input[name="q"]');
+        if (!q || !q.value.trim() || q.value.indexOf('"') !== -1) return;
+        q.value = q.value.trim().split(/\s+/).map(function (w) { return '"' + w + '"'; }).join(' ');
+      });
+    </script>
+  </body>
+</html>

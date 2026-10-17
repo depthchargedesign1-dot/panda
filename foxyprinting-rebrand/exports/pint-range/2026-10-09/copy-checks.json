@@ -1,0 +1,90 @@
+{
+ "face": {
+  "title_len": 97,
+  "seo_title_len": 50,
+  "seo_desc_len": 158,
+  "words": 349,
+  "h2": 1,
+  "ok": true,
+  "prefix": "FOXY-UVDTF-PFHOPG",
+  "variants": 1,
+  "smallest_text_pt": 11.3
+ },
+ "dad": {
+  "title_len": 101,
+  "seo_title_len": 53,
+  "seo_desc_len": 153,
+  "words": 303,
+  "h2": 1,
+  "ok": true,
+  "prefix": "FOXY-UVDTF-PDNPG",
+  "variants": 1,
+  "smallest_text_pt": 68.0
+ },
+ "no1": {
+  "title_len": 100,
+  "seo_title_len": 52,
+  "seo_desc_len": 155,
+  "words": 299,
+  "h2": 1,
+  "ok": true,
+  "prefix": "FOXY-UVDTF-PN1PG",
+  "variants": 1,
+  "smallest_text_pt": 17.0
+ },
+ "prom": {
+  "title_len": 98,
+  "seo_title_len": 54,
+  "seo_desc_len": 160,
+  "words": 316,
+  "h2": 1,
+  "ok": true,
+  "prefix": "FOXY-UVDTF-PPROMPG",
+  "variants": 12,
+  "smallest_text_pt": 21.3
+ },
+ "wedding": {
+  "title_len": 112,
+  "seo_title_len": 56,
+  "seo_desc_len": 154,
+  "words": 303,
+  "h2": 1,
+  "ok": true,
+  "prefix": "FOXY-UVDTF-PWPPG",
+  "variants": 12,
+  "smallest_text_pt": 13.0
+ },
+ "vintage": {
+  "title_len": 110,
+  "seo_title_len": 56,
+  "seo_desc_len": 156,
+  "words": 296,
+  "h2": 1,
+  "ok": true,
+  "prefix": "FOXY-UVDTF-PVBPG",
+  "variants": 1,
+  "smallest_text_pt": 11.3
+ },
+ "pet": {
+  "title_len": 80,
+  "seo_title_len": 49,
+  "seo_desc_len": 149,
+  "words": 336,
+  "h2": 1,
+  "ok": true,
+  "prefix": "FOXY-UVDTF-PPFPG",
+  "variants": 1,
+  "smallest_text_pt": 11.3
+ },
+ "pub": {
+  "title_len": 94,
+  "seo_title_len": 55,
+  "seo_desc_len": 156,
+  "words": 291,
+  "h2": 1,
+  "ok": true,
+  "prefix": "FOXY-UVDTF-PSAPG",
+  "variants": 1,
+  "smallest_text_pt": 10.8
+ }
+}

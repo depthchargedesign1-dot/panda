@@ -1,0 +1,9 @@
+{"id":"gid://shopify/Menu/229551752","handle":"celebrity-face-masks","title":"Celebrity Face Masks","items":[
+{"id":"gid://shopify/MenuItem/803276744","title":"Request ANY Celebrity Facemask","type":"PRODUCT","url":"/products/request-any-facemask","resourceId":"gid://shopify/Product/9520767240","tags":[]},
+{"id":"gid://shopify/MenuItem/803277384","title":"Upload Your Face!","type":"PRODUCT","url":"/products/make-your-own-facemask","resourceId":"gid://shopify/Product/9519617608","tags":[]},
+{"id":"gid://shopify/MenuItem/796608456","title":"TV Star Face Masks","type":"COLLECTION","url":"/collections/tv-star-masks","resourceId":"gid://shopify/Collection/429859208","tags":[]},
+{"id":"gid://shopify/MenuItem/796608520","title":"Film Star Face Masks","type":"COLLECTION","url":"/collections/movie-actor-face-masks","resourceId":"gid://shopify/Collection/427971336","tags":[]},
+{"id":"gid://shopify/MenuItem/796608584","title":"Sports Celebrities","type":"COLLECTION","url":"/collections/sport-celebrities","resourceId":"gid://shopify/Collection/426041032","tags":[]},
+{"id":"gid://shopify/MenuItem/796608648","title":"Politicians & Royals","type":"COLLECTION","url":"/collections/politicians-and-royals","resourceId":"gid://shopify/Collection/426041608","tags":[]},
+{"id":"gid://shopify/MenuItem/796608776","title":"Music Celebrities","type":"COLLECTION","url":"/collections/music-celebrities","resourceId":"gid://shopify/Collection/426042568","tags":[]},
+{"id":"gid://shopify/MenuItem/799786504","title":"Comedians","type":"COLLECTION","url":"/collections/comedians","resourceId":"gid://shopify/Collection/427268552","tags":[]}]}

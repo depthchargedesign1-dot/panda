@@ -1,0 +1,178 @@
+[
+ {
+  "title": "Birth Announcement Print",
+  "handle": "birth-announcement-print",
+  "descriptionHtml": "<p><strong>Birth Announcement Print</strong> - printed on premium stock in our UK workshop.</p><p>Announcements, milestone cards and birth keepsakes.</p><p>Personalise it with: name, date, weight, time. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "New Baby & Pregnancy",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-new-baby",
+   "dept-baby-kids",
+   "machine-press",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "A4"
+     },
+     {
+      "name": "A3"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A4"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-PRESS-BAP-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "A3"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-PRESS-BAP-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "card"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Date\", \"Weight\", \"Time\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Pregnancy Announcement Scan Frame Plaque",
+  "handle": "pregnancy-announcement-scan-frame-plaque",
+  "descriptionHtml": "<p><strong>Pregnancy Announcement Scan Frame Plaque</strong> - printed direct with vivid, scratch-resistant UV inks.</p><p>Announcements, milestone cards and birth keepsakes.</p><p>Personalise it with: scan photo upload, due date. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "New Baby & Pregnancy",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-new-baby",
+   "dept-baby-kids",
+   "machine-uv",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-UV-PASFP-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "flat"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Scan photo upload\", \"Due date\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Baby Keepsake Box (Printed)",
+  "handle": "baby-keepsake-box-printed",
+  "descriptionHtml": "<p><strong>Baby Keepsake Box (Printed)</strong> - printed and precision-cut in our UK workshop.</p><p>Announcements, milestone cards and birth keepsakes.</p><p>Personalise it with: name, birth date. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "New Baby & Pregnancy",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-new-baby",
+   "dept-baby-kids",
+   "machine-cut",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-CUT-BKBP-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "box"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Birth date\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

@@ -1,0 +1,78 @@
+{%- comment -%}
+  Search inside one collection plus quick sub-category chips.
+  - Typing filters the chips instantly (e.g. "roblox" shows the Roblox chips).
+  - Enter searches products in this collection only (storefront search scoped by
+    product type or tag). Set the collection metafield foxy.search_scope to a tag
+    to override the automatic scope.
+  - Chips come from the tags used by products in this collection; tag pages use
+    the standard /collections/<handle>/<tag> URL.
+  Params: exclude (comma-separated tags to hide), limit (chips shown before "more").
+{%- endcomment -%}
+{%- liquid
+  assign scope_tag = collection.metafields.foxy.search_scope.value
+  assign scope_type = collection.products.first.type
+  if scope_tag == blank
+    # Tag-based collections: find a tag shared by every product on this page.
+    for tag in collection.products.first.tags
+      assign in_all = true
+      for p in collection.products limit: 24
+        unless p.tags contains tag
+          assign in_all = false
+          break
+        endunless
+      endfor
+      if in_all
+        assign scope_tag = tag
+        break
+      endif
+    endfor
+  endif
+  if scope_tag != blank
+    assign scope = 'tag:"' | append: scope_tag | append: '"'
+  elsif scope_type != blank
+    assign scope = 'product_type:"' | append: scope_type | append: '"'
+  else
+    assign scope = ''
+  endif
+  assign exclude_list = exclude | downcase | split: ','
+  assign limit = limit | default: 18
+  assign shown = 0
+-%}
+<div class="col-search" data-col-search data-scope="{{ scope | escape }}" data-search-url="{{ routes.search_url }}">
+  <form class="col-search__form" action="{{ routes.search_url }}" method="get" role="search" data-col-search-form>
+    <input type="hidden" name="type" value="product">
+    <input type="hidden" name="q" value="" data-col-search-q>
+    <label class="visually-hidden" for="ColSearch-{{ collection.id }}">{{ 'collections.search_within' | t: title: collection.title }}</label>
+    <span class="col-search__icon" aria-hidden="true">🔍</span>
+    <input id="ColSearch-{{ collection.id }}" class="col-search__input" type="search" autocomplete="off"
+      placeholder="{{ 'collections.search_within' | t: title: collection.title }}" data-col-search-input>
+    <button class="btn btn--small col-search__btn" type="submit">{{ 'collections.search' | t }}</button>
+  </form>
+
+  {%- if collection.all_tags.size > 0 -%}
+    <div class="col-search__chips" data-col-search-chips>
+      {%- if current_tags.size > 0 -%}
+        <a class="col-chip col-chip--clear" href="{{ collection.url }}">✕ {{ 'collections.all_in' | t: title: collection.title }}</a>
+      {%- endif -%}
+      {%- for tag in collection.all_tags -%}
+        {%- liquid
+          assign t = tag | downcase
+          if exclude_list contains t
+            continue
+          endif
+          if t contains 'foxy-' or t contains 'range-' or t contains 'dept-' or t contains 'machine-' or t contains 'wave-'
+            continue
+          endif
+          assign shown = shown | plus: 1
+        -%}
+        <a class="col-chip{% if current_tags contains tag %} is-active{% endif %}{% if shown > limit %} is-extra{% endif %}"
+          href="{{ collection.url }}/{{ tag | handle }}" data-chip="{{ t | escape }}">{{ tag }}</a>
+      {%- endfor -%}
+      {%- assign extra = shown | minus: limit -%}
+      {%- if extra > 0 -%}
+        <button type="button" class="col-chip col-chip--more" data-col-search-more aria-expanded="false">{{ 'collections.more_types' | t: count: extra }}</button>
+      {%- endif -%}
+      <p class="col-search__empty" data-col-search-empty hidden>{{ 'collections.no_types' | t }}</p>
+    </div>
+  {%- endif -%}
+</div>

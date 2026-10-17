@@ -1,0 +1,756 @@
+[
+ {
+  "title": "Club / Team Hoodie with Logo",
+  "handle": "club-team-hoodie-with-logo",
+  "descriptionHtml": "<p><strong>Club / Team Hoodie with Logo</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Leavers hoodies with every name on the back, plus club and team wear.</p><p>Personalise it with: logo upload, name, number. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "School Leavers & Club Hoodies",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-school-leavers",
+   "dept-clothing",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "Kids"
+     },
+     {
+      "name": "Adult"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Kids"
+     }
+    ],
+    "price": "22.99",
+    "sku": "FOXY-DTF-CTHWL-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "Adult"
+     }
+    ],
+    "price": "26.99",
+    "sku": "FOXY-DTF-CTHWL-02",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Logo upload\", \"Name\", \"Number\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Matching Family Christmas Jumper",
+  "handle": "matching-family-christmas-jumper",
+  "descriptionHtml": "<p><strong>Matching Family Christmas Jumper</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Matching family Christmas jumpers, PJs and Christmas Eve tees.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Christmas Jumpers & Pyjamas",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-clothing",
+   "dept-occasions",
+   "machine-dtf",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Who",
+    "values": [
+     {
+      "name": "Adult"
+     },
+     {
+      "name": "Kids"
+     },
+     {
+      "name": "Baby"
+     },
+     {
+      "name": "Dog"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Who",
+      "name": "Adult"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-DTF-MFCJ-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Who",
+      "name": "Kids"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-DTF-MFCJ-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Who",
+      "name": "Baby"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-DTF-MFCJ-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Who",
+      "name": "Dog"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-DTF-MFCJ-04",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Christmas Pyjamas",
+  "handle": "personalised-christmas-pyjamas",
+  "descriptionHtml": "<p><strong>Personalised Christmas Pyjamas</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Matching family Christmas jumpers, PJs and Christmas Eve tees.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Christmas Jumpers & Pyjamas",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-clothing",
+   "dept-occasions",
+   "machine-dtf",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Who",
+    "values": [
+     {
+      "name": "Adult"
+     },
+     {
+      "name": "Kids"
+     },
+     {
+      "name": "Baby"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Who",
+      "name": "Adult"
+     }
+    ],
+    "price": "24.99",
+    "sku": "FOXY-DTF-PCP-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Who",
+      "name": "Kids"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-DTF-PCP-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Who",
+      "name": "Baby"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-DTF-PCP-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "My First Christmas Baby Grow",
+  "handle": "my-first-christmas-baby-grow",
+  "descriptionHtml": "<p><strong>My First Christmas Baby Grow</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Matching family Christmas jumpers, PJs and Christmas Eve tees.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Christmas Jumpers & Pyjamas",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-christmas-clothing",
+   "dept-occasions",
+   "machine-dtf",
+   "wave-1",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "0-3 m"
+     },
+     {
+      "name": "3-6 m"
+     },
+     {
+      "name": "6-12 m"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "0-3 m"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-MFCBG-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "3-6 m"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-MFCBG-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "6-12 m"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-MFCBG-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Baby Bib",
+  "handle": "personalised-baby-bib",
+  "descriptionHtml": "<p><strong>Personalised Baby Bib</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Baby grows, bibs, vests and announcement tees.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Baby Clothing & Keepsakes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-baby-clothing",
+   "dept-baby-kids",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "7.99",
+    "sku": "FOXY-DTF-PBB-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Baby Vest",
+  "handle": "personalised-baby-vest",
+  "descriptionHtml": "<p><strong>Personalised Baby Vest</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Baby grows, bibs, vests and announcement tees.</p><p>Personalise it with: name, message. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Baby Clothing & Keepsakes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-baby-clothing",
+   "dept-baby-kids",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "0-3 m"
+     },
+     {
+      "name": "3-6 m"
+     },
+     {
+      "name": "6-12 m"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "0-3 m"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-PBV-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "3-6 m"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-PBV-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "6-12 m"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-PBV-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Message\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Cake Smash First Birthday Outfit",
+  "handle": "cake-smash-first-birthday-outfit",
+  "descriptionHtml": "<p><strong>Cake Smash First Birthday Outfit</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Baby grows, bibs, vests and announcement tees.</p><p>Personalise it with: name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Baby Clothing & Keepsakes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-baby-clothing",
+   "dept-baby-kids",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "12-18 m"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "12-18 m"
+     }
+    ],
+    "price": "14.99",
+    "sku": "FOXY-DTF-CSFBO-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Baby Blanket (Fleece)",
+  "handle": "personalised-baby-blanket-fleece",
+  "descriptionHtml": "<p><strong>Personalised Baby Blanket (Fleece)</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Baby grows, bibs, vests and announcement tees.</p><p>Personalise it with: name, birth date. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Baby Clothing & Keepsakes",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-baby-clothing",
+   "dept-baby-kids",
+   "machine-dtf",
+   "wave-0",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Title",
+    "values": [
+     {
+      "name": "Default Title"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Title",
+      "name": "Default Title"
+     }
+    ],
+    "price": "19.99",
+    "sku": "FOXY-DTF-PBBF-01",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Name\", \"Birth date\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Dog Bandana",
+  "handle": "personalised-dog-bandana",
+  "descriptionHtml": "<p><strong>Personalised Dog Bandana</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Bandanas, dog hoodies, pet blankets, ID tags and bowls.</p><p>Personalise it with: pet name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Pet Bandanas & Accessories",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-pet-clothing",
+   "dept-pets",
+   "machine-dtf",
+   "wave-0",
+   "personalised",
+   "trending"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "S"
+     },
+     {
+      "name": "M"
+     },
+     {
+      "name": "L"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "S"
+     }
+    ],
+    "price": "8.99",
+    "sku": "FOXY-DTF-PDB-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "M"
+     }
+    ],
+    "price": "8.99",
+    "sku": "FOXY-DTF-PDB-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "L"
+     }
+    ],
+    "price": "9.99",
+    "sku": "FOXY-DTF-PDB-03",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Pet name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ },
+ {
+  "title": "Personalised Dog Hoodie",
+  "handle": "personalised-dog-hoodie",
+  "descriptionHtml": "<p><strong>Personalised Dog Hoodie</strong> - pressed with a soft-feel, stretch-friendly DTF print that lasts wash after wash.</p><p>Bandanas, dog hoodies, pet blankets, ID tags and bowls.</p><p>Personalise it with: pet name. See a live preview before you add it to your basket.</p><ul><li>Made to order in the UK</li><li>Free digital proof on request</li><li>Fast dispatch - see delivery options at checkout</li></ul>",
+  "vendor": "Foxy Printing",
+  "productType": "Pet Bandanas & Accessories",
+  "status": "DRAFT",
+  "tags": [
+   "foxy-new-2026",
+   "range-pet-clothing",
+   "dept-pets",
+   "machine-dtf",
+   "wave-1",
+   "personalised"
+  ],
+  "productOptions": [
+   {
+    "name": "Size",
+    "values": [
+     {
+      "name": "XS"
+     },
+     {
+      "name": "S"
+     },
+     {
+      "name": "M"
+     },
+     {
+      "name": "L"
+     }
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "XS"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-DTF-PDH-01",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "S"
+     }
+    ],
+    "price": "16.99",
+    "sku": "FOXY-DTF-PDH-02",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "M"
+     }
+    ],
+    "price": "17.99",
+    "sku": "FOXY-DTF-PDH-03",
+    "inventoryPolicy": "CONTINUE"
+   },
+   {
+    "optionValues": [
+     {
+      "optionName": "Size",
+      "name": "L"
+     }
+    ],
+    "price": "18.99",
+    "sku": "FOXY-DTF-PDH-04",
+    "inventoryPolicy": "CONTINUE"
+   }
+  ],
+  "metafields": [
+   {
+    "namespace": "foxy",
+    "key": "mockup",
+    "type": "single_line_text_field",
+    "value": "apparel"
+   },
+   {
+    "namespace": "foxy",
+    "key": "personalise_fields",
+    "type": "list.single_line_text_field",
+    "value": "[\"Pet name\"]"
+   }
+  ],
+  "templateSuffix": "personalised"
+ }
+]

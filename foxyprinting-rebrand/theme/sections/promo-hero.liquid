@@ -1,0 +1,67 @@
+{%- comment -%}
+  Full-width promo banner (same look as the main hero tile) with a row of quick links underneath.
+  Used on the homepage for celebrity face masks; reusable for any range.
+{%- endcomment -%}
+<div class="section section--tight">
+  <div class="page-width">
+    <div class="hero-tile hero-tile--main promo-hero {% render 'accent', name: section.settings.colour %}{% if section.settings.image %} hero-tile--has-image{% endif %}{% if section.settings.dark_text %} hero-tile--dark-text{% endif %}">
+      <div class="hero-tile__media">
+        {%- if section.settings.image -%}
+          {{ section.settings.image | image_url: width: 1800 | image_tag: loading: 'lazy', widths: '800,1200,1800', sizes: '100vw', alt: section.settings.image.alt | default: section.settings.heading }}
+        {%- endif -%}
+      </div>
+      <div class="hero-tile__content">
+        {%- if section.settings.eyebrow != blank -%}<span class="hero-tile__eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2 class="hero-tile__title">{{ section.settings.heading }}</h2>
+        {%- if section.settings.text != blank -%}<p class="hero-tile__text">{{ section.settings.text }}</p>{%- endif -%}
+        <div class="hero-tile__cta-row">
+          {%- if section.settings.button_label != blank -%}<a class="btn btn--white" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>{%- endif -%}
+          {%- if section.settings.button2_label != blank -%}<a class="btn btn--ink" href="{{ section.settings.button2_link }}">{{ section.settings.button2_label }}</a>{%- endif -%}
+        </div>
+      </div>
+    </div>
+    {%- if section.blocks.size > 0 -%}
+      <nav class="promo-hero__links" aria-label="{{ section.settings.heading | escape }}">
+        {%- for block in section.blocks -%}
+          <a class="col-chip" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{{ block.settings.label }}</a>
+        {%- endfor -%}
+      </nav>
+    {%- endif -%}
+  </div>
+</div>
+
+{% stylesheet %}
+  .promo-hero { min-height: 420px; }
+  .promo-hero__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
+  @media (max-width: 749px) {
+    .promo-hero__links { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; padding-bottom: 6px; }
+    .promo-hero__links .col-chip { flex: 0 0 auto; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Promo banner + links",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Background image" },
+    { "type": "select", "id": "colour", "label": "Colour", "default": "pink", "options": [
+      { "value": "orange", "label": "Orange" }, { "value": "pink", "label": "Pink" }, { "value": "purple", "label": "Purple" }, { "value": "teal", "label": "Teal" }, { "value": "yellow", "label": "Yellow" } ] },
+    { "type": "checkbox", "id": "dark_text", "label": "Dark text", "default": false },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Celebrity face masks" },
+    { "type": "textarea", "id": "text", "label": "Text" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop face masks" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "text", "id": "button2_label", "label": "Second button label" },
+    { "type": "url", "id": "button2_link", "label": "Second button link" }
+  ],
+  "blocks": [
+    { "type": "link", "name": "Quick link", "settings": [
+      { "type": "text", "id": "label", "label": "Label", "default": "Footballers" },
+      { "type": "url", "id": "link", "label": "Link" }
+    ] }
+  ],
+  "max_blocks": 14,
+  "presets": [{ "name": "Promo banner + links" }]
+}
+{% endschema %}
