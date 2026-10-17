@@ -52,11 +52,12 @@ def photo_slot(cx, cy, rw, rh, label, live, stroke=INK):
 
 
 # ------------------------------------------------------------------ 1. Face photo "Hands Off!" pint
-def face_pint(name="AVA’S", line2="HANDS OFF!"):
+def face_pint(name="AVA’S", line2="HANDS OFF!", word="PINT"):
     els = photo_slot(CX, 52, 21, 26, "YOUR PHOTO", "Face_photo_upload")
     s = fit(name, POPB, 13.0, 56, 0.3)
     els.append(T(name, CX, 92, POPB, s, INK, sp=0.3, live="Name"))
-    els.append(T("PINT", CX, 92 + s * 0.98, POPB, s, INK, sp=0.3))
+    w = fit(word, POPB, s, 56, 0.3)
+    els.append(T(word, CX, 92 + s * 0.98, POPB, w, INK, sp=0.3))
     els.append(T(line2, CX, 92 + s * 0.98 + 7.5, POPB, 5.2, INK, sp=0.4, live="Bottom_line"))
     return els
 

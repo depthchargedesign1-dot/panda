@@ -21,7 +21,7 @@ A = D.A
 def check(p):
     words = len(re.sub(r"<[^>]+>", " ", p["html"]).split())
     return dict(title_len=len(p["title"]), seo_title_len=len(p["seo_title"]), seo_desc_len=len(p["seo_desc"]), words=words,
-                h2=p["html"].count("<h2>"), ok=(len(p["title"]) <= 150 and len(p["seo_title"]) <= 60 and 140 <= len(p["seo_desc"]) <= 160
+                h2=p["html"].count("<h2>"), ok=(len(p["title"]) <= 150 and len(p["seo_title"]) <= 60 and 140 <= len(p["seo_desc"]) <= 155
                                                  and 180 <= words <= 350 and p["html"].count("<h2>") == 1))
 
 
